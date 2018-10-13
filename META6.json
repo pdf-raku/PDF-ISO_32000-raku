@@ -1,0 +1,14 @@
+{
+    "perl"        : "6.*",
+    "name"        : "PDF::To::Cairo",
+    "version"     : "0.0.2",
+    "license"     : "Artistic-2.0",
+    "api"         : "PDF-1.7",
+    "auth"        : "github:p6-pdf",
+    "description" : "Cairo rendering backend for PDF::Content",
+    "depends"     : [ "Color", "Cairo", "PDF::Content", "PDF::Class", "PDF::Font::Loader" ],
+    "source-url"  : "git://github.com/p6-pdf/PDF-To-Cairo-p6.git",
+    "provides"    : {
+        "PDF::To::Cairo" : "lib/PDF/To/Cairo.pm"
+     }
+}
