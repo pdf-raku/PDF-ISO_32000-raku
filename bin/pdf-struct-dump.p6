@@ -34,6 +34,7 @@ sub MAIN(Str $infile,           #= input PDF
          Number :$page,         #= page to dump
          Number :$*max-depth = 6,    #= depth to ascend/descend struct tree
          Str    :$*search-tag,
+         Number :$*select,
          UInt   :$obj-num = 0,
          UInt   :$gen-num = 0,
          Bool   :$*render = True,
@@ -64,6 +65,7 @@ sub MAIN(Str $infile,           #= input PDF
         my @plan;
         @plan.push: deref($Pg);
         @plan = search-up(@plan, ($*search-tag // 'Table'), $*max-depth);
+        @plan = @plan[$_ - 1] with $*select;
         for @plan -> $p {
             dump-struct($_, :depth(0)) with $p;
         }
@@ -340,7 +342,8 @@ multi sub dump-struct($_, :$tags, :$depth) is default {
 }
 
 sub dump-tag(PDF::Content::Tag $tag, :$depth! is copy) {
-    my $text = html-escape($tag.children.map(*.gist).join: '');
+    # join text strings. discard this, and child marked content tags for now
+    my $text = html-escape($tag.children.grep(Str).join: '');
     say pad($depth, $text);
 }
 

@@ -3,8 +3,8 @@
     <Caption>
       <P>
         Table
-        35
-        –  String Object Types 
+        34
+        –  PDF data types 
         <Span/>
       </P>
     </Caption>
@@ -20,45 +20,14 @@
             Description
           </P>
         </TH>
+        <TH>
+          <P>
+            Sub-Clause
+          </P>
+        </TH>
       </TR>
     </THead>
     <TBody>
-      <TR>
-        <TD>
-          <P>
-            text string
-          </P>
-        </TD>
-        <TD>
-          <P>
-            Shall be used for human-readable text, such as text annotations, bookmark names, article names, and document information. These strings shall be encoded using either PDFDocEncoding or UTF-16BE with a leading byte-order marker. 
-          </P>
-          <P>
-            This type is described in 
-            <Link>
-              7.9.2.2, "Text String Type."
-            </Link>
-             
-          </P>
-        </TD>
-      </TR>
-      <TR>
-        <TD>
-          <P>
-            PDFDocEncoded string
-          </P>
-        </TD>
-        <TD>
-          <P>
-            Shall be used for characters and glyphs that are represented in a single byte, using PDFDocEncoding. This type is described in 
-            <Link>
-              7.9.2.3, "PDFDocEncoded String 
-              Type."
-            </Link>
-             
-          </P>
-        </TD>
-      </TR>
       <TR>
         <TD>
           <P>
@@ -67,7 +36,58 @@
         </TD>
         <TD>
           <P>
-            Shall be used for characters that are represented in a single byte using ASCII encoding. 
+            Bytes containing ASCII characters
+          </P>
+        </TD>
+        <TD>
+          <P>
+            <Link>
+              7.9.2
+            </Link>
+            <Link>
+              7.9.2.4
+            </Link>
+            <Span/>
+          </P>
+        </TD>
+      </TR>
+      <TR>
+        <TD>
+          <P>
+            array
+          </P>
+        </TD>
+        <TD>
+          <P>
+            Array object
+          </P>
+        </TD>
+        <TD>
+          <P>
+            <Link>
+              7.3.6
+            </Link>
+            <Span/>
+          </P>
+        </TD>
+      </TR>
+      <TR>
+        <TD>
+          <P>
+            boolean
+          </P>
+        </TD>
+        <TD>
+          <P>
+            Boolean value
+          </P>
+        </TD>
+        <TD>
+          <P>
+            <Link>
+              7.3.2
+            </Link>
+            <Span/>
           </P>
         </TD>
       </TR>
@@ -79,14 +99,347 @@
         </TD>
         <TD>
           <P>
-            Shall be used for binary data represented as a series of bytes, where each byte can be any value representable in 8 bits. The string may represent characters but the encoding is not known. The bytes of the string need not represent characters. This type shall be used for data such as MD5 hash values, signature certificates, and Web Capture identification values. 
+            A series of bytes that shall represent characters or other binary data. If such a type represents characters, the encoding shall be determined by the context.
+          </P>
+        </TD>
+        <TD>
+          <P>
+            <Link>
+              7.9.2
+            </Link>
+            <Span/>
+          </P>
+        </TD>
+      </TR>
+      <TR>
+        <TD>
+          <P>
+            date
+          </P>
+        </TD>
+        <TD>
+          <P>
+            Date (ASCII string)
+          </P>
+        </TD>
+        <TD>
+          <P>
+            <Link>
+              7.9.4
+            </Link>
+            <Span/>
+          </P>
+        </TD>
+      </TR>
+      <TR>
+        <TD>
+          <P>
+            dictionary
+          </P>
+        </TD>
+        <TD>
+          <P>
+            Dictionary object
+          </P>
+        </TD>
+        <TD>
+          <P>
+            <Link>
+              7.3.7
+            </Link>
+            <Span/>
+          </P>
+        </TD>
+      </TR>
+      <TR>
+        <TD>
+          <P>
+            file specification
+          </P>
+        </TD>
+        <TD>
+          <P>
+            File specification (string or dictionary)
+          </P>
+        </TD>
+        <TD>
+          <P>
+            <Link>
+              7.11
+            </Link>
+            <Span/>
+          </P>
+        </TD>
+      </TR>
+      <TR>
+        <TD>
+          <P>
+            function
+          </P>
+        </TD>
+        <TD>
+          <P>
+            Function (dictionary or stream)
+          </P>
+        </TD>
+        <TD>
+          <P>
+            <Link>
+              7.10
+            </Link>
+            <Span/>
+          </P>
+        </TD>
+      </TR>
+      <TR>
+        <TD>
+          <P>
+            integer
+          </P>
+        </TD>
+        <TD>
+          <P>
+            Integer number
+          </P>
+        </TD>
+        <TD>
+          <P>
+            <Link>
+            </Link>
+            <Span/>
+          </P>
+        </TD>
+      </TR>
+      <TR>
+        <TD>
+          <P>
+            name
+          </P>
+        </TD>
+        <TD>
+          <P>
+            Name object
+          </P>
+        </TD>
+        <TD>
+          <P>
+            <Link>
+              7.3.5
+            </Link>
+            <Span/>
+          </P>
+        </TD>
+      </TR>
+      <TR>
+        <TD>
+          <P>
+            name tree
+          </P>
+        </TD>
+        <TD>
+          <P>
+            Name tree (dictionary)
+          </P>
+        </TD>
+        <TD>
+          <P>
+            <Link>
+              7.9.6
+            </Link>
+            <Span/>
+          </P>
+        </TD>
+      </TR>
+      <TR>
+        <TD>
+          <P>
+            null
+          </P>
+        </TD>
+        <TD>
+          <P>
+            Null object
+          </P>
+        </TD>
+        <TD>
+          <P>
+            <Link>
+              7.3.9
+            </Link>
+            <Span/>
+          </P>
+        </TD>
+      </TR>
+      <TR>
+        <TD>
+          <P>
+            number
+          </P>
+        </TD>
+        <TD>
+          <P>
+            Number (integer or real)
+          </P>
+        </TD>
+        <TD>
+          <P>
+            <Link>
+            </Link>
+            <Span/>
+          </P>
+        </TD>
+      </TR>
+      <TR>
+        <TD>
+          <P>
+            number tree
+          </P>
+        </TD>
+        <TD>
+          <P>
+            Number tree (dictionary)
+          </P>
+        </TD>
+        <TD>
+          <P>
+            <Link>
+              7.9.7
+            </Link>
+            <Span/>
+          </P>
+        </TD>
+      </TR>
+      <TR>
+        <TD>
+          <P>
+            PDFDocEncoded string
+          </P>
+        </TD>
+        <TD>
+          <P>
+            Bytes containing a string that shall be encoded using PDFDocEncoding
+          </P>
+        </TD>
+        <TD>
+          <P>
+            <Link>
+              7.9.2
+            </Link>
+            <Span/>
+          </P>
+        </TD>
+      </TR>
+      <TR>
+        <TD>
+          <P>
+            rectangle
+          </P>
+        </TD>
+        <TD>
+          <P>
+            Rectangle (array)
+          </P>
+        </TD>
+        <TD>
+          <P>
+            <Link>
+              7.9.5
+            </Link>
+            <Span/>
+          </P>
+        </TD>
+      </TR>
+      <TR>
+        <TD>
+          <P>
+            stream
+          </P>
+        </TD>
+        <TD>
+          <P>
+            Stream object
+          </P>
+        </TD>
+        <TD>
+          <P>
+            <Link>
+              7.3.8
+            </Link>
+            <Span/>
+          </P>
+        </TD>
+      </TR>
+      <TR>
+        <TD>
+          <P>
+            string
+          </P>
+        </TD>
+        <TD>
+          <P>
+            Any string that is not a text string.
           </P>
           <P>
-            This type is described in 
+            Beginning with PDF 1.7, this type is further qualified as the types: PDFDocEncoded string, ASCII string, and byte string.
+          </P>
+        </TD>
+        <TD>
+          <P>
             <Link>
-              7.9.2.4, "Byte String Type."
+              7.9.2
             </Link>
-             
+            <Span/>
+          </P>
+        </TD>
+      </TR>
+      <TR>
+        <TD>
+          <P>
+            text string
+          </P>
+        </TD>
+        <TD>
+          <P>
+            Bytes that represent characters that shall be encoded using either PDFDocEncoding or UTF-16BE with a leading byte-order marker (as defined in 
+            <Link>
+              “Text String Type”
+            </Link>
+             on 
+            <Link>
+              page 86
+            </Link>
+            .)
+          </P>
+        </TD>
+        <TD>
+          <P>
+            <Link>
+              7.9.2.2
+            </Link>
+            <Link>
+              7.9.2
+            </Link>
+            <Span/>
+          </P>
+        </TD>
+      </TR>
+      <TR>
+        <TD>
+          <P>
+            text stream
+          </P>
+        </TD>
+        <TD>
+          <P>
+            Text stream
+          </P>
+        </TD>
+        <TD>
+          <P>
+            <Link>
+              7.9.3
+            </Link>
+            <Span/>
           </P>
         </TD>
       </TR>
