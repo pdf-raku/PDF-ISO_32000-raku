@@ -33,6 +33,7 @@ multi sub grok(TableTag :$name!, :@data!, :attr($)) {
         say '';
         say "role $*role-name \{";
         for @entries -> $entry {
+            next if $entry ~~ /other/;
             say "    method $entry \{...\};";
         }
         say '}';

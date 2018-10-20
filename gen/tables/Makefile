@@ -19,7 +19,7 @@ define table_to_html
 endef
 
 all : tables
-tables : Stream_entries.html Standard_filters.html LZW_and_Flate_filter_params.html CCITTFax_filter_params.html File_trailer_entries.html Object_stream_entries.html Cross_reference_stream_entries.html Cross_reference_stream_fields.html Encryption_entries.html Additional_encryption_entries.html User_access_permissions.html Catalog_entries.html Pages_entries.html Page_entries.html Catalog_Name_tree_entries.html Resource_entries.html PDF_data_types.html String_object_data_types.html Name_tree_node_entries.html Number_tree_node_entries.html Function_common_entries.html Type_0_function_entries.html Type_2_function_entries.html Type_3_function_entries.html Type_4_function_operators.html File_specification_entries.html Embedded_file_stream_entries.html Embedded_file_parameter_entries.html Operator_categories.html Device_independent_graphics_state.html Device_dependent_graphics_state.html Graphics_state_operators.html Graphics_state_dict_entries.html Path_construction_operators.html Path_painting_operators.html Clipping_path_operators.html Colour_space_families.html CalGray_colour_space_entries.html CalRGB_colour_space_entries.html Lab_colour_space_entries.html ICC_profile_entries.html ICC_profile_versions.html ICC_profile_types.html ICC_profile_ranges.html Rendering_intents.html DeviceN_colour_space_attribute_entries.html DeviceN_process_entries.html DeviceN_mixing_hints_entries.html Colour_operators.html Type_1_Pattern_entries.html Type_2_Pattern_entries.html Shading_operator.html Shading_common_entries.html Type_1_Shading_entries.html Type_2_Shading_entries.html Type_3_Shading_entries.html Type_4_Shading_entries.html Type_5_Shading_entries.html Type_6_Shading_entries.html Data_values_in_a_coons_patch_mesh.html Data_values_in_a_tensor_product_patch_mesh.html XObject_operator.html Postscript_XObject_entries.html Image_entries.html Default_decode_arrays.html Alternate_Image_entries.html Inline_Image_operators.html Inline_Image_entries.html Inline_Image_additional_operators.html Type_1_Form_entries.html Group_Attributes_entries.html Reference_entries.html Optional_Content_Group_entries.html Optional_Content_Group_Membership_entries.html Optional_Content_Group_Properties_entries.html Optional_Content_Group_Configuration_entries.html Optional_Content_Group_Usage_entries.html Optional_Content_Group_Application_entries.html Text_state_parameters.html Text_state_operators.html Text_rendering_modes.html Text_object_operators.html Text_position_operators.html Text_showing_operators.html Font_types.html Type_1_Font_entries.html Type_3_Font_entries.html Type_3_Font_operators.html Encoding_entries.html MacOS_encoding_differences.html CIDSystemInfo_entries.html CIDFont_entries.html CJK_CMap_names.html Character_collections_for_CMaps.html CMap_stream_entries.html 
+tables : Stream_entries.html Standard_filters.html LZW_and_Flate_filter_params.html CCITTFax_filter_params.html File_trailer_entries.html Object_stream_entries.html Cross_reference_stream_entries.html Cross_reference_stream_fields.html Encryption_entries.html Additional_encryption_entries.html User_access_permissions.html Catalog_entries.html Pages_entries.html Page_entries.html Catalog_Name_tree_entries.html Resource_entries.html PDF_data_types.html String_object_data_types.html Name_tree_node_entries.html Number_tree_node_entries.html Function_common_entries.html Type_0_Function_entries.html Type_2_Function_entries.html Type_3_Function_entries.html Type_4_Function_operators.html File_specification_entries.html Embedded_file_stream_entries.html Embedded_file_parameter_entries.html Operator_categories.html Device_independent_graphics_state.html Device_dependent_graphics_state.html Graphics_state_operators.html Graphics_state_entries.html Path_construction_operators.html Path_painting_operators.html Clipping_path_operators.html Colour_space_families.html CalGray_colour_space_entries.html CalRGB_colour_space_entries.html Lab_colour_space_entries.html ICC_profile_entries.html ICC_profile_versions.html ICC_profile_types.html ICC_profile_ranges.html Rendering_intents.html DeviceN_colour_space_attributes_entries.html DeviceN_process_entries.html DeviceN_mixing_hints_entries.html Colour_operators.html Type_1_Pattern_entries.html Type_2_Pattern_entries.html Shading_operator.html Shading_common_entries.html Type_1_Shading_entries.html Type_2_Shading_entries.html Type_3_Shading_entries.html Type_4_Shading_entries.html Type_5_Shading_entries.html Type_6_Shading_entries.html Data_values_in_a_coons_patch_mesh.html Data_values_in_a_tensor_product_patch_mesh.html XObject_operator.html Postscript_XObject_entries.html Image_entries.html Default_decode_arrays.html Alternate_Image_entries.html Inline_Image_operators.html Inline_Image_entries.html Inline_Image_additional_operators.html Type_1_Form_entries.html Group_Attributes_entries.html Reference_entries.html Optional_Content_Group_entries.html Optional_Content_Group_Membership_entries.html Optional_Content_Group_Properties_entries.html Optional_Content_Group_Configuration_entries.html Optional_Content_Group_Usage_entries.html Optional_Content_Group_Application_entries.html Text_state_parameters.html Text_state_operators.html Text_rendering_modes.html Text_object_operators.html Text_position_operators.html Text_showing_operators.html Font_types.html Type_1_Font_entries.html Type_3_Font_entries.html Type_3_Font_operators.html Encoding_entries.html MacOS_encoding_differences.html CIDSystemInfo_entries.html CIDFont_entries.html CJK_CMap_names.html Character_collections_for_CMaps.html CMap_stream_entries.html Type_0_Font_entries.html
 
 # Table 5
 Stream_entries.html :
@@ -106,19 +106,19 @@ Function_common_entries.html :
 	$(call table_to_html,101) > $@
 
 # Table 39
-Type_0_function_entries.html :
+Type_0_Function_entries.html :
 	$(call table_to_html,102) > $@
 
 # Table 40
-Type_2_function_entries.html :
+Type_2_Function_entries.html :
 	$(call table_to_html,104) > $@
 
 # Table 41
-Type_3_function_entries.html :
+Type_3_Function_entries.html :
 	$(call table_to_html,105) > $@
 
 # Table 42
-Type_4_function_operators.html :
+Type_4_Function_operators.html :
 	$(call table_to_html,106) > $@
 
 # Table 44
@@ -150,7 +150,7 @@ Graphics_state_operators.html :
 	$(call table_to_html,135,--select=2) > $@
 
 # Table 58
-Graphics_state_dict_entries.html :
+Graphics_state_entries.html :
 	$(call table_to_html,136) > $@
 
 # Table 59
@@ -202,7 +202,7 @@ Rendering_intents.html :
 	$(call table_to_html,163) > $@
 
 # Table 71
-DeviceN_colour_space_attribute_entries.html :
+DeviceN_colour_space_attributes_entries.html :
 	$(call table_to_html,169) > $@
 
 # Table 72
@@ -400,3 +400,8 @@ Character_collections_for_CMaps.html :
 # Table 120
 CMap_stream_entries.html :
 	$(call table_to_html,285) > $@
+
+# Table 121
+Type_0_Font_entries.html :
+	$(call table_to_html,287) > $@
+
