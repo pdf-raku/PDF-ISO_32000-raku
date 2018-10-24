@@ -15,11 +15,13 @@
 
 PDF_SPEC=../../src/PDF32000_2008.pdf
 define table_to_html
-    (echo '<Html><Head/><Body>' && perl6 ../../bin/pdf-struct-dump.p6 --/atts --max-depth=8 --search-tag=Table --page=$(1) $(2) $(PDF_SPEC) && echo '</Body></Html>')
+    (echo '<Html><Head/><Body>' && USE_PDF_NATIVE=1 perl6 -I ../lib -I ~/git/PDF-Class-p6 -I ../../../PDF-p6 ../../bin/pdf-struct-dump.p6 --/atts --max-depth=8 --search-tag=Table --page=$(1) $(2) $(PDF_SPEC) && echo '</Body></Html>')
 endef
 
 all : tables
-tables : Stream_entries.html Standard_filters.html LZW_and_Flate_filter_params.html CCITTFax_filter_params.html File_trailer_entries.html Object_stream_entries.html Cross_reference_stream_entries.html Cross_reference_stream_fields.html Encryption_entries.html Additional_encryption_entries.html User_access_permissions.html Catalog_entries.html Pages_entries.html Page_entries.html Catalog_Name_tree_entries.html Resource_entries.html PDF_data_types.html String_object_data_types.html Name_tree_node_entries.html Number_tree_node_entries.html Function_common_entries.html Type_0_Function_entries.html Type_2_Function_entries.html Type_3_Function_entries.html Type_4_Function_operators.html File_specification_entries.html Embedded_file_stream_entries.html Embedded_file_parameter_entries.html Operator_categories.html Device_independent_graphics_state.html Device_dependent_graphics_state.html Graphics_state_operators.html Graphics_state_entries.html Path_construction_operators.html Path_painting_operators.html Clipping_path_operators.html Colour_space_families.html CalGray_colour_space_entries.html CalRGB_colour_space_entries.html Lab_colour_space_entries.html ICC_profile_entries.html ICC_profile_versions.html ICC_profile_types.html ICC_profile_ranges.html Rendering_intents.html DeviceN_colour_space_attributes_entries.html DeviceN_process_entries.html DeviceN_mixing_hints_entries.html Colour_operators.html Type_1_Pattern_entries.html Type_2_Pattern_entries.html Shading_operator.html Shading_common_entries.html Type_1_Shading_entries.html Type_2_Shading_entries.html Type_3_Shading_entries.html Type_4_Shading_entries.html Type_5_Shading_entries.html Type_6_Shading_entries.html Data_values_in_a_coons_patch_mesh.html Data_values_in_a_tensor_product_patch_mesh.html XObject_operator.html Postscript_XObject_entries.html Image_entries.html Default_decode_arrays.html Alternate_Image_entries.html Inline_Image_operators.html Inline_Image_entries.html Inline_Image_additional_operators.html Type_1_Form_entries.html Group_Attributes_entries.html Reference_entries.html Optional_Content_Group_entries.html Optional_Content_Group_Membership_entries.html Optional_Content_Group_Properties_entries.html Optional_Content_Group_Configuration_entries.html Optional_Content_Group_Usage_entries.html Optional_Content_Group_Application_entries.html Text_state_parameters.html Text_state_operators.html Text_rendering_modes.html Text_object_operators.html Text_position_operators.html Text_showing_operators.html Font_types.html Type_1_Font_entries.html Type_3_Font_entries.html Type_3_Font_operators.html Encoding_entries.html MacOS_encoding_differences.html CIDSystemInfo_entries.html CIDFont_entries.html CJK_CMap_names.html Character_collections_for_CMaps.html CMap_stream_entries.html Type_0_Font_entries.html Font_descriptor_entries.html Font_descriptor_flags.html CIDFont_descriptor_additional_entries.html Glyph_classes_in_CJK_fonts.html Embedded_font_organisation.html Embedded_font_stream_additional_entries.html Soft-mask_entries.html Transparency_group_additional_entries.html Viewer_preferences_entries.html Destination_syntax.html Outline_entries.html Outline_item_entries.html 
+tables : Stream_entries.html Standard_filters.html LZW_and_Flate_filter_params.html CCITTFax_filter_params.html File_trailer_entries.html Object_stream_entries.html Cross_reference_stream_entries.html Cross_reference_stream_fields.html Encryption_entries.html Additional_encryption_entries.html User_access_permissions.html Catalog_entries.html Pages_entries.html Page_entries.html Catalog_Name_tree_entries.html Resource_entries.html PDF_data_types.html String_object_data_types.html Name_tree_node_entries.html Number_tree_node_entries.html Function_common_entries.html Type_0_Function_entries.html Type_2_Function_entries.html Type_3_Function_entries.html Type_4_Function_operators.html File_specification_entries.html Embedded_file_stream_entries.html Embedded_file_parameter_entries.html Operator_categories.html Device_independent_graphics_state.html Device_dependent_graphics_state.html Graphics_state_operators.html Graphics_state_entries.html Path_construction_operators.html Path_painting_operators.html Clipping_path_operators.html Colour_space_families.html CalGray_colour_space_entries.html CalRGB_colour_space_entries.html Lab_colour_space_entries.html ICC_profile_entries.html ICC_profile_versions.html ICC_profile_types.html ICC_profile_ranges.html Rendering_intents.html DeviceN_colour_space_attributes_entries.html DeviceN_process_entries.html DeviceN_mixing_hints_entries.html Colour_operators.html Type_1_Pattern_entries.html Type_2_Pattern_entries.html Shading_operator.html Shading_common_entries.html Type_1_Shading_entries.html Type_2_Shading_entries.html Type_3_Shading_entries.html Type_4_Shading_entries.html Type_5_Shading_entries.html Type_6_Shading_entries.html Data_values_in_a_coons_patch_mesh.html Data_values_in_a_tensor_product_patch_mesh.html XObject_operator.html Postscript_XObject_entries.html Image_entries.html Default_decode_arrays.html Alternate_Image_entries.html Inline_Image_operators.html Inline_Image_entries.html Inline_Image_additional_operators.html Type_1_Form_entries.html Group_Attributes_entries.html Reference_entries.html Optional_Content_Group_entries.html Optional_Content_Group_Membership_entries.html Optional_Content_Group_Properties_entries.html Optional_Content_Group_Configuration_entries.html Optional_Content_Group_Usage_entries.html Optional_Content_Group_Application_entries.html Text_state_parameters.html Text_state_operators.html Text_rendering_modes.html Text_object_operators.html Text_position_operators.html Text_showing_operators.html Font_types.html Type_1_Font_entries.html Type_3_Font_entries.html Type_3_Font_operators.html Encoding_entries.html MacOS_encoding_differences.html CIDSystemInfo_entries.html CIDFont_entries.html CJK_CMap_names.html Character_collections_for_CMaps.html CMap_stream_entries.html Type_0_Font_entries.html Font_descriptor_entries.html Font_descriptor_flags.html CIDFont_descriptor_additional_entries.html Glyph_classes_in_CJK_fonts.html Embedded_font_organisation.html Embedded_font_stream_additional_entries.html Soft-mask_entries.html Transparency_group_additional_entries.html Viewer_preferences_entries.html Destination_syntax.html Outline_entries.html Outline_item_entries.html \
+Outline_item_flags.html Collection_entries.html Collection_schema_entries.html Collection_field_entries.html Collection_sort_entries.html Page_label_entries.html Thread_entries.html Bead_entries.html Transition_entries.html Navigation_node_entries.html Annotation_entries.html Annotation_flags.html Border_style_entries.html Border_effect_entries.html Appearance_entries.html Annotation_types.html Annotation_markup_additional_entries.html Annotation_states.html Text_annotation_additional_entries.html Link_annotation_additional_entries.html \
+
 
 # Table 5
 Stream_entries.html :
@@ -452,4 +454,84 @@ Outline_entries.html :
 # Table 153
 Outline_item_entries.html :
 	$(call table_to_html,376,--select=2) > $@
+
+# Table 154
+Outline_item_flags.html :
+	$(call table_to_html,377) > $@
+
+# Table 155
+Collection_entries.html :
+	$(call table_to_html,379,--select=1) > $@
+
+# Table 156
+Collection_schema_entries.html :
+	$(call table_to_html,379,--select=2) > $@
+
+# Table 157
+Collection_field_entries.html :
+	$(call table_to_html,380) > $@
+
+# Table 158
+Collection_sort_entries.html :
+	$(call table_to_html,381) > $@
+
+# Table 159
+Page_label_entries.html :
+	$(call table_to_html,383) > $@
+
+# Table 160
+Thread_entries.html :
+	$(call table_to_html,384,--select=1) > $@
+
+# Table 161
+Bead_entries.html :
+	$(call table_to_html,384,--select=2) > $@
+
+# Table 162
+Transition_entries.html :
+	$(call table_to_html,387) > $@
+
+# Table 163
+Navigation_node_entries.html :
+	$(call table_to_html,388) > $@
+
+# Table 164
+Annotation_entries.html :
+	$(call table_to_html,391) > $@
+
+# Table 165
+Annotation_flags.html :
+	$(call table_to_html,393) > $@
+
+# Table 166
+Border_style_entries.html :
+	$(call table_to_html,394) > $@
+
+# Table 167
+Border_effect_entries.html :
+	$(call table_to_html,395) > $@
+
+# Table 168
+Appearance_entries.html :
+	$(call table_to_html,397) > $@
+
+# Table 169
+Annotation_types.html :
+	$(call table_to_html,398) > $@
+
+# Table 170
+Annotation_markup_additional_entries.html :
+	$(call table_to_html,399) > $@
+
+# Table 171
+Annotation_states.html :
+	$(call table_to_html,401) > $@
+
+# Table 172
+Text_annotation_additional_entries.html :
+	$(call table_to_html,402,--select=1) > $@
+
+# Table 173
+Link_annotation_additional_entries.html :
+	$(call table_to_html,402,--select=2) > $@
 

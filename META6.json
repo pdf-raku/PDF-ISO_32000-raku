@@ -6,9 +6,8 @@
     "api"         : "PDF-1.7",
     "auth"        : "github:p6-pdf",
     "description" : "PDF Specification Mining and Code Generation tools",
-    "depends"     : [ "PDF", "PDF::Class", "PDF::Font::Loader" ],
+    "depends"     : [ "PDF", "PDF::Class", "PDF::Font::Loader", "XML::Parser::Tiny", "PDF::Native" ],
     "source-url"  : "git://github.com/p6-pdf/PDF-Specification-p6.git",
     "provides"    : {
-//        "PDF::Specification" : "lib/PDF/Specification"
      }
 }
