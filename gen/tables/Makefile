@@ -21,6 +21,7 @@ endef
 all : tables
 tables : Stream_entries.html Standard_filters.html LZW_and_Flate_filter_params.html CCITTFax_filter_params.html File_trailer_entries.html Object_stream_entries.html Cross_reference_stream_entries.html Cross_reference_stream_fields.html Encryption_entries.html Additional_encryption_entries.html User_access_permissions.html Catalog_entries.html Pages_entries.html Page_entries.html Catalog_Name_tree_entries.html Resource_entries.html PDF_data_types.html String_object_data_types.html Name_tree_node_entries.html Number_tree_node_entries.html Function_common_entries.html Type_0_Function_entries.html Type_2_Function_entries.html Type_3_Function_entries.html Type_4_Function_operators.html File_specification_entries.html Embedded_file_stream_entries.html Embedded_file_parameter_entries.html Operator_categories.html Device_independent_graphics_state.html Device_dependent_graphics_state.html Graphics_state_operators.html Graphics_state_entries.html Path_construction_operators.html Path_painting_operators.html Clipping_path_operators.html Colour_space_families.html CalGray_colour_space_entries.html CalRGB_colour_space_entries.html Lab_colour_space_entries.html ICC_profile_entries.html ICC_profile_versions.html ICC_profile_types.html ICC_profile_ranges.html Rendering_intents.html DeviceN_colour_space_attributes_entries.html DeviceN_process_entries.html DeviceN_mixing_hints_entries.html Colour_operators.html Type_1_Pattern_entries.html Type_2_Pattern_entries.html Shading_operator.html Shading_common_entries.html Type_1_Shading_entries.html Type_2_Shading_entries.html Type_3_Shading_entries.html Type_4_Shading_entries.html Type_5_Shading_entries.html Type_6_Shading_entries.html Data_values_in_a_coons_patch_mesh.html Data_values_in_a_tensor_product_patch_mesh.html XObject_operator.html Postscript_XObject_entries.html Image_entries.html Default_decode_arrays.html Alternate_Image_entries.html Inline_Image_operators.html Inline_Image_entries.html Inline_Image_additional_operators.html Type_1_Form_entries.html Group_Attributes_entries.html Reference_entries.html Optional_Content_Group_entries.html Optional_Content_Group_Membership_entries.html Optional_Content_Group_Properties_entries.html Optional_Content_Group_Configuration_entries.html Optional_Content_Group_Usage_entries.html Optional_Content_Group_Application_entries.html Text_state_parameters.html Text_state_operators.html Text_rendering_modes.html Text_object_operators.html Text_position_operators.html Text_showing_operators.html Font_types.html Type_1_Font_entries.html Type_3_Font_entries.html Type_3_Font_operators.html Encoding_entries.html MacOS_encoding_differences.html CIDSystemInfo_entries.html CIDFont_entries.html CJK_CMap_names.html Character_collections_for_CMaps.html CMap_stream_entries.html Type_0_Font_entries.html Font_descriptor_entries.html Font_descriptor_flags.html CIDFont_descriptor_additional_entries.html Glyph_classes_in_CJK_fonts.html Embedded_font_organisation.html Embedded_font_stream_additional_entries.html Soft-mask_entries.html Transparency_group_additional_entries.html Viewer_preferences_entries.html Destination_syntax.html Outline_entries.html Outline_item_entries.html \
 Outline_item_flags.html Collection_entries.html Collection_schema_entries.html Collection_field_entries.html Collection_sort_entries.html Page_label_entries.html Thread_entries.html Bead_entries.html Transition_entries.html Navigation_node_entries.html Annotation_entries.html Annotation_flags.html Border_style_entries.html Border_effect_entries.html Appearance_entries.html Annotation_types.html Annotation_markup_additional_entries.html Annotation_states.html Text_annotation_additional_entries.html Link_annotation_additional_entries.html \
+Free_text_annotation_additional_entries.html Line_annotation_additional_entries.html Line_ending_styles.html Square_or_circle_annotation_additional_entries.html Polygon_or_polyline_annotation_additional_entries.html Text_markup_annotation_additional_entries.html Caret_annotation_additional_entries.html Rubber_stamp_annotation_additional_entries.html Ink_annotation_additional_entries.html Popup_annotation_additional_entries.html File_attachment_annotation_additional_entries.html Sound_annotation_additional_entries.html Movie_annotation_additional_entries.html Screen_annotation_additional_entries.html Widget_annotation_additional_entries.html Appearance_characteristics_entries.html Watermark_annotation_additional_entries.html Fixed_print_entries.html Redaction_annotation_additional_entries.html Action_common_entries.html Annotation_additional_actions_entries.html Page_additional_actions_entries.html Form_additional_actions_entries.html Catalog_additional_actions_entries.html Action_types.html \
 
 
 # Table 5
@@ -145,7 +146,7 @@ Device_independent_graphics_state.html :
 
 # Table 53
 Device_dependent_graphics_state.html :
-	$(call table_to_html,130) > $@
+	$(call table_to_html,131) > $@
 
 # Table 57
 Graphics_state_operators.html :
@@ -534,4 +535,104 @@ Text_annotation_additional_entries.html :
 # Table 173
 Link_annotation_additional_entries.html :
 	$(call table_to_html,402,--select=2) > $@
+
+# Table 174
+Free_text_annotation_additional_entries.html :
+	$(call table_to_html,405) > $@
+
+# Table 175
+Line_annotation_additional_entries.html :
+	$(call table_to_html,406) > $@
+
+# Table 176
+Line_ending_styles.html :
+	$(call table_to_html,408) > $@
+
+# Table 177
+Square_or_circle_annotation_additional_entries.html :
+	$(call table_to_html,409) > $@
+
+# Table 178
+Polygon_or_polyline_annotation_additional_entries.html :
+	$(call table_to_html,410) > $@
+
+# Table 179
+Text_markup_annotation_additional_entries.html :
+	$(call table_to_html,411) > $@
+
+# Table 180
+Caret_annotation_additional_entries.html :
+	$(call table_to_html,412) > $@
+
+# Table 181
+Rubber_stamp_annotation_additional_entries.html :
+	$(call table_to_html,413,--select=1) > $@
+
+# Table 182
+Ink_annotation_additional_entries.html :
+	$(call table_to_html,413,--select=2) > $@
+
+# Table 183
+Popup_annotation_additional_entries.html :
+	$(call table_to_html,414,--select=1) > $@
+
+# Table 184
+File_attachment_annotation_additional_entries.html :
+	$(call table_to_html,414,--select=2) > $@
+
+# Table 185
+Sound_annotation_additional_entries.html :
+	$(call table_to_html,415,--select=1) > $@
+
+# Table 186
+Movie_annotation_additional_entries.html :
+	$(call table_to_html,415,--select=2) > $@
+
+# Table 187
+Screen_annotation_additional_entries.html :
+	$(call table_to_html,415,--select=3) > $@
+
+# Table 188
+Widget_annotation_additional_entries.html :
+	$(call table_to_html,416) > $@
+
+# Table 189
+Appearance_characteristics_entries.html :
+	$(call table_to_html,417) > $@
+
+# Table 190
+Watermark_annotation_additional_entries.html :
+	$(call table_to_html,419,--select=1) > $@
+
+# Table 191
+Fixed_print_entries.html :
+	$(call table_to_html,419,--select=2) > $@
+
+# Table 192
+Redaction_annotation_additional_entries.html :
+	$(call table_to_html,421) > $@
+
+# Table 193
+Action_common_entries.html :
+	$(call table_to_html,422) > $@
+
+# Table 194
+Annotation_additional_actions_entries.html :
+	$(call table_to_html,423) > $@
+
+# Table 195
+Page_additional_actions_entries.html :
+	$(call table_to_html,424,--select=1) > $@
+
+# Table 196
+Form_additional_actions_entries.html :
+	$(call table_to_html,424,--select=2) > $@
+
+# Table 197
+Catalog_additional_actions_entries.html :
+	$(call table_to_html,425,--select=1) > $@
+
+# Table 198
+Action_types.html :
+	$(call table_to_html,425,--select=2) > $@
 
