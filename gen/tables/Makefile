@@ -823,7 +823,7 @@ Embedded_file_stream_entries_FDF_additional.html :
 
 # Table 245
 JavaScript_entries.html :
-	$(call table_to_html,469,--select=2) > $@
+	$(call table_to_html,469,--select=1) > $@
 
 # Table 246
 FDF_field_entries.html :
