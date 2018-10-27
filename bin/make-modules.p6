@@ -32,13 +32,19 @@ multi sub grok(TableTag :$name!, :@data!, :attr($)) {
         say '';
         say "role $*role-name \{";
         for @rows {
-            my $entry = .shift;
+            my $entry = .shift[0];
             my $type = .shift;
             $_ = .Str.trim.subst("\n", ' ', :g).subst(/\s+/, ' ', :g) with $type;
             my @paras = .map({.Str.subst(/[\n|\s]+/, ' ', :g) });
-            my $descr = @paras.join: "\n\t#| ";
             next if $entry ~~ /other/;
-            say "    method $entry \{...\};	#| \[$type\] $descr";
+            if $entry ~~ /^<ident>$/ {
+                my $descr = @paras.join: "\n\t#| ";
+                say "    method $entry \{...\};	#| \[$type\] $descr";
+            }
+            else {
+                my $descr = @paras.join: "\n\t# ";
+                say "    \$?ROLE.^add_method({$entry.perl}, method \{...\}); # $descr";
+            }
         }
         say '}';
     }

@@ -23,7 +23,8 @@ tables : Stream_entries.html Standard_filters.html LZW_and_Flate_filter_params.h
 Outline_item_flags.html Collection_entries.html Collection_schema_entries.html Collection_field_entries.html Collection_sort_entries.html Page_label_entries.html Thread_entries.html Bead_entries.html Transition_entries.html Navigation_node_entries.html Annotation_entries.html Annotation_flags.html Border_style_entries.html Border_effect_entries.html Appearance_entries.html Annotation_types.html Annotation_markup_additional_entries.html Annotation_states.html Text_annotation_additional_entries.html Link_annotation_additional_entries.html \
 Free_text_annotation_additional_entries.html Line_annotation_additional_entries.html Line_ending_styles.html Square_or_circle_annotation_additional_entries.html Polygon_or_polyline_annotation_additional_entries.html Text_markup_annotation_additional_entries.html Caret_annotation_additional_entries.html Rubber_stamp_annotation_additional_entries.html Ink_annotation_additional_entries.html Popup_annotation_additional_entries.html File_attachment_annotation_additional_entries.html Sound_annotation_additional_entries.html Movie_annotation_additional_entries.html Screen_annotation_additional_entries.html Widget_annotation_additional_entries.html Appearance_characteristics_entries.html Watermark_annotation_additional_entries.html Fixed_print_entries.html Redaction_annotation_additional_entries.html Action_common_entries.html Annotation_additional_actions_entries.html Page_additional_actions_entries.html Form_additional_actions_entries.html Catalog_additional_actions_entries.html Action_types.html \
 Goto_action_additional_entries.html Remote_goto_action_additional_entries.html Embedded_goto_action_additional_entries.html Target_entries.html Launch_action_additional_entries.html Windows_launch_parameters_entries.html Thread_action_additional_entries.html URI_action_additional_entries.html URI_entries.html Sound_action_additional_entries.html Movie_action_additional_entries.html Hide_action_additional_entries.html Named_actions.html Named_action_additional_entries.html Set-OCG-state_action_additional_entries.html Rendition_action_additional_entries.html Transition_action_additional_entries.html Goto_3D_view_action_additional_entries.html JavaScript_action_additional_entries.html Interactive_form_entries.html Signature_flags.html Field_common_entries.html Field_flags.html Variable_text_field_entries.html XHTML_rich_text_string_elements.html Body_element_attributes.html CSS2_style_attributes.html Button_field_flags.html Check_box_and_radio_button_additional_entries.html Text_field_flags.html Text_field_entries.html Choice_field_flags.html Choice_field_entries.html Signature_field_entries.html Signature_field_lock_entries.html Signature_field_seed_value_entries.html Certificate_seed_value_entries.html Submit_form_action_entries.html Submit_form_action_flags.html Reset_form_action_entries.html Reset_form_action_flags.html Import-data_action_additional_entries.html FDF_trailer_entries.html FDF_catalog_entries.html FDF_dictionary_entries.html Embedded_file_stream_entries_FDF_additional.html JavaScript_entries.html FDF_field_entries.html  \
-Icon_fit_entries.html FDF_page_entries.html FDF_template_entries.html FDF_named_page_reference_entries.html FDF_annotation_additional_entries.html Signature_entries.html Signature_reference_entries.html DocMDP_transform_entries.html UR_transform_entries.html FieldMDP_transform_entries.html SubFilter_value_algorithm_support.html Permissions_entries.html Viewport_entries.html Measure_entries.html Rectilinear_measure_additional_entries.html Number_format_entries.html Requirement_common_entries.html Requirement_handler_entries.html Rendition_common_entries.html Rendition_MH-BE_entries.html Rendition_critera_entries.html Minimum_bit_depth_entries.html Mimimum_screen_size_entries.html Media_rendition_entries.html Selector_rendition_entries.html Media_clip_entries.html Media_clip_data_entries.html Media_permissions_entries.html Media_clip_data_MH-BE_entries.html Media_clip_section_entries.html Media_clip_section_MH-BE_entries.html Media_play_parameters_entries.html Media_play_parameters_MH-BE.entries.html \
+Icon_fit_entries.html FDF_page_entries.html FDF_template_entries.html FDF_named_page_reference_entries.html FDF_annotation_additional_entries.html Signature_entries.html Signature_reference_entries.html DocMDP_transform_entries.html UR_transform_entries.html FieldMDP_transform_entries.html SubFilter_value_algorithm_support.html Permissions_entries.html Viewport_entries.html Measure_entries.html Rectilinear_measure_additional_entries.html Number_format_entries.html Requirement_common_entries.html Requirement_handler_entries.html Rendition_common_entries.html Rendition_MH-BE_entries.html Rendition_critera_entries.html Minimum_bit_depth_entries.html Mimimum_screen_size_entries.html Media_rendition_entries.html Selector_rendition_entries.html Media_clip_entries.html Media_clip_data_entries.html Media_permissions_entries.html Media_clip_data_MH-BE_entries.html Media_clip_section_entries.html Media_clip_section_MH-BE_entries.html Media_play_parameters_entries.html Media_play_parameters_MH-BE-entries.html \
+Media_duration_entries.html Media_screen_parameters_entries.html Media_screen_parameters_MH-BE_entries.html Floating_window_parameter_entries.html Media_offset_entries.html Media_offset_time_entries.html Media_offset_frame_entries.html Media_offset_marker_entries.html Timespan_entries.html Media_players_entries.html Media_player_info_entries.html Software_identifier_entries.html Monitor_specifier_values.html Sound_object_entries.html Movie_entries.html Movie_activitation_entries.html Slideshow_entries.html Three-D_annotation_entries.html Three-D_activation_entries.html Three-D_stream_entries.html Three-D_animation_entries.html Animation_styles.html Three-D_reference_entries.html Three-D_view_entries.html Projection_entries.html Three-D_background_entries.html Render_mode_entries.html Render_modes.html Three-D_lighting_entries.html Lighting_scheme_styles.html Three-D_cross_section_entries.html \
 
 
 # Table 5
@@ -963,6 +964,130 @@ Media_play_parameters_entries.html :
 	$(call table_to_html,504,--select=2) > $@
 
 # Table 280
-Media_play_parameters_MH-BE.entries.html :
+Media_play_parameters_MH-BE-entries.html :
 	$(call table_to_html,504,--select=3) > $@
 
+# Table 281
+Media_duration_entries.html :
+	$(call table_to_html,506,--select=1) > $@
+
+# Table 282
+Media_screen_parameters_entries.html :
+	$(call table_to_html,506,--select=2) > $@
+
+# Table 283
+Media_screen_parameters_MH-BE_entries.html :
+	$(call table_to_html,507) > $@
+
+# Table 284
+Floating_window_parameter_entries.html :
+	$(call table_to_html,508) > $@
+
+# Table 285
+Media_offset_entries.html :
+	$(call table_to_html,509,--select=1) > $@
+
+# Table 286
+Media_offset_time_entries.html :
+	$(call table_to_html,509,--select=2) > $@
+
+# Table 287
+Media_offset_frame_entries.html :
+	$(call table_to_html,509,--select=3) > $@
+
+# Table 288
+Media_offset_marker_entries.html :
+	$(call table_to_html,509,--select=4) > $@
+
+# Table 289
+Timespan_entries.html :
+	$(call table_to_html,510,--select=1) > $@
+
+# Table 290
+Media_players_entries.html :
+	$(call table_to_html,510,--select=2) > $@
+
+# Table 291
+Media_player_info_entries.html :
+	$(call table_to_html,511) > $@
+
+# Table 292
+Software_identifier_entries.html :
+	$(call table_to_html,512) > $@
+
+# Table 293
+Monitor_specifier_values.html :
+	$(call table_to_html,514,--select=1) > $@
+
+# Table 294
+Sound_object_entries.html :
+	$(call table_to_html,514,--select=2) > $@
+
+# Table 295
+Movie_entries.html :
+	$(call table_to_html,516,--select=1) > $@
+
+# Table 296
+Movie_activitation_entries.html :
+	$(call table_to_html,516,--select=2) > $@
+
+# Table 297
+Slideshow_entries.html :
+	$(call table_to_html,518) > $@
+
+# Table 298
+Three-D_annotation_entries.html :
+	$(call table_to_html,520) > $@
+
+
+# Table 299
+Three-D_activation_entries.html :
+	$(call table_to_html,522) > $@
+
+# Table 300
+Three-D_stream_entries.html :
+	$(call table_to_html,524) > $@
+
+# Table 301
+Three-D_animation_entries.html :
+	$(call table_to_html,525) > $@
+
+# Table 302
+Animation_styles.html :
+	$(call table_to_html,526) > $@
+
+# Table 303
+Three-D_reference_entries.html :
+	$(call table_to_html,527) > $@
+
+# Table 304
+Three-D_view_entries.html :
+	$(call table_to_html,529) > $@
+
+# Table 305
+Projection_entries.html :
+	$(call table_to_html,532) > $@
+
+# Table 306
+Three-D_background_entries.html :
+	$(call table_to_html,535,--select=1) > $@
+
+# Table 307
+Render_mode_entries.html :
+	$(call table_to_html,535,--select=2) > $@
+
+# Table 308
+Render_modes.html :
+	$(call table_to_html,537) > $@
+
+# Table 309
+Three-D_lighting_entries.html :
+	$(call table_to_html,538,--select=1) > $@
+
+# Table 310
+Lighting_scheme_styles.html :
+	$(call table_to_html,538,--select=2) > $@
+
+# Table 311
+Three-D_cross_section_entries.html :
+	$(call table_to_html,540) > $@
