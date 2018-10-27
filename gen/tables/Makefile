@@ -23,6 +23,7 @@ tables : Stream_entries.html Standard_filters.html LZW_and_Flate_filter_params.h
 Outline_item_flags.html Collection_entries.html Collection_schema_entries.html Collection_field_entries.html Collection_sort_entries.html Page_label_entries.html Thread_entries.html Bead_entries.html Transition_entries.html Navigation_node_entries.html Annotation_entries.html Annotation_flags.html Border_style_entries.html Border_effect_entries.html Appearance_entries.html Annotation_types.html Annotation_markup_additional_entries.html Annotation_states.html Text_annotation_additional_entries.html Link_annotation_additional_entries.html \
 Free_text_annotation_additional_entries.html Line_annotation_additional_entries.html Line_ending_styles.html Square_or_circle_annotation_additional_entries.html Polygon_or_polyline_annotation_additional_entries.html Text_markup_annotation_additional_entries.html Caret_annotation_additional_entries.html Rubber_stamp_annotation_additional_entries.html Ink_annotation_additional_entries.html Popup_annotation_additional_entries.html File_attachment_annotation_additional_entries.html Sound_annotation_additional_entries.html Movie_annotation_additional_entries.html Screen_annotation_additional_entries.html Widget_annotation_additional_entries.html Appearance_characteristics_entries.html Watermark_annotation_additional_entries.html Fixed_print_entries.html Redaction_annotation_additional_entries.html Action_common_entries.html Annotation_additional_actions_entries.html Page_additional_actions_entries.html Form_additional_actions_entries.html Catalog_additional_actions_entries.html Action_types.html \
 Goto_action_additional_entries.html Remote_goto_action_additional_entries.html Embedded_goto_action_additional_entries.html Target_entries.html Launch_action_additional_entries.html Windows_launch_parameters_entries.html Thread_action_additional_entries.html URI_action_additional_entries.html URI_entries.html Sound_action_additional_entries.html Movie_action_additional_entries.html Hide_action_additional_entries.html Named_actions.html Named_action_additional_entries.html Set-OCG-state_action_additional_entries.html Rendition_action_additional_entries.html Transition_action_additional_entries.html Goto_3D_view_action_additional_entries.html JavaScript_action_additional_entries.html Interactive_form_entries.html Signature_flags.html Field_common_entries.html Field_flags.html Variable_text_field_entries.html XHTML_rich_text_string_elements.html Body_element_attributes.html CSS2_style_attributes.html Button_field_flags.html Check_box_and_radio_button_additional_entries.html Text_field_flags.html Text_field_entries.html Choice_field_flags.html Choice_field_entries.html Signature_field_entries.html Signature_field_lock_entries.html Signature_field_seed_value_entries.html Certificate_seed_value_entries.html Submit_form_action_entries.html Submit_form_action_flags.html Reset_form_action_entries.html Reset_form_action_flags.html Import-data_action_additional_entries.html FDF_trailer_entries.html FDF_catalog_entries.html FDF_dictionary_entries.html Embedded_file_stream_entries_FDF_additional.html JavaScript_entries.html FDF_field_entries.html  \
+Icon_fit_entries.html FDF_page_entries.html FDF_template_entries.html FDF_named_page_reference_entries.html FDF_annotation_additional_entries.html Signature_entries.html Signature_reference_entries.html DocMDP_transform_entries.html UR_transform_entries.html FieldMDP_transform_entries.html SubFilter_value_algorithm_support.html Permissions_entries.html Viewport_entries.html Measure_entries.html Rectilinear_measure_additional_entries.html Number_format_entries.html Requirement_common_entries.html Requirement_handler_entries.html Rendition_common_entries.html Rendition_MH-BE_entries.html Rendition_critera_entries.html Minimum_bit_depth_entries.html Mimimum_screen_size_entries.html Media_rendition_entries.html Selector_rendition_entries.html Media_clip_entries.html Media_clip_data_entries.html Media_permissions_entries.html Media_clip_data_MH-BE_entries.html Media_clip_section_entries.html Media_clip_section_MH-BE_entries.html Media_play_parameters_entries.html Media_play_parameters_MH-BE.entries.html \
 
 
 # Table 5
@@ -828,4 +829,140 @@ JavaScript_entries.html :
 # Table 246
 FDF_field_entries.html :
 	$(call table_to_html,469,--select=2) > $@
+
+# Table 247
+Icon_fit_entries.html :
+	$(call table_to_html,471,--select=1) > $@
+
+# Table 248
+FDF_page_entries.html :
+	$(call table_to_html,471,--select=2) > $@
+
+# Table 249
+FDF_template_entries.html :
+	$(call table_to_html,472,--select=1) > $@
+
+# Table 250
+FDF_named_page_reference_entries.html :
+	$(call table_to_html,472,--select=2) > $@
+
+# Table 251
+FDF_annotation_additional_entries.html :
+	$(call table_to_html,472,--select=3) > $@
+
+# Table 252
+Signature_entries.html :
+	$(call table_to_html,475) > $@
+
+# Table 253
+Signature_reference_entries.html :
+	$(call table_to_html,477) > $@
+
+# Table 254
+DocMDP_transform_entries.html :
+	$(call table_to_html,479) > $@
+
+# Table 255
+UR_transform_entries.html :
+	$(call table_to_html,480) > $@
+
+# Table 256
+FieldMDP_transform_entries.html :
+	$(call table_to_html,481) > $@
+
+# Table 257
+SubFilter_value_algorithm_support.html :
+	$(call table_to_html,484) > $@
+
+# Table 258
+Permissions_entries.html :
+	$(call table_to_html,485) > $@
+
+# Table 259
+Legal_attestation_entries.html :
+	$(call table_to_html,486) > $@
+
+# Table 260
+Viewport_entries.html :
+	$(call table_to_html,487) > $@
+
+# Table 261
+Measure_entries.html :
+	$(call table_to_html,488) > $@
+
+# Table 262
+Rectilinear_measure_additional_entries.html :
+	$(call table_to_html,489) > $@
+
+# Table 263
+Number_format_entries.html :
+	$(call table_to_html,490) > $@
+
+# Table 264
+Requirement_common_entries.html :
+	$(call table_to_html,492) > $@
+
+# Table 265
+Requirement_handler_entries.html :
+	$(call table_to_html,493) > $@
+
+# Table 266
+Rendition_common_entries.html :
+	$(call table_to_html,497,--select=1) > $@
+
+# Table 267
+Rendition_MH-BE_entries.html :
+	$(call table_to_html,497,--select=2) > $@
+
+# Table 268
+Rendition_critera_entries.html :
+	$(call table_to_html,497,--select=3) > $@
+
+# Table 269
+Minimum_bit_depth_entries.html :
+	$(call table_to_html,498) > $@
+
+# Table 270
+Mimimum_screen_size_entries.html :
+	$(call table_to_html,499,--select=1) > $@
+
+# Table 271
+Media_rendition_entries.html :
+	$(call table_to_html,499,--select=2) > $@
+
+# Table 272
+Selector_rendition_entries.html :
+	$(call table_to_html,500,--select=1) > $@
+
+# Table 273
+Media_clip_entries.html :
+	$(call table_to_html,500,--select=2) > $@
+
+# Table 274
+Media_clip_data_entries.html :
+	$(call table_to_html,500,--select=3) > $@
+
+# Table 275
+Media_permissions_entries.html :
+	$(call table_to_html,502,--select=1) > $@
+
+# Table 276
+Media_clip_data_MH-BE_entries.html :
+	$(call table_to_html,502,--select=2) > $@
+
+# Table 277
+Media_clip_section_entries.html :
+	$(call table_to_html,503) > $@
+
+# Table 278
+Media_clip_section_MH-BE_entries.html :
+	$(call table_to_html,504,--select=1) > $@
+
+# Table 279
+Media_play_parameters_entries.html :
+	$(call table_to_html,504,--select=2) > $@
+
+# Table 280
+Media_play_parameters_MH-BE.entries.html :
+	$(call table_to_html,504,--select=3) > $@
 
