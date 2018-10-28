@@ -4,7 +4,7 @@ use v6;
 
 role ISO_32000::Popup_annotation_additional {
     method Subtype {...};	#| [name] (Required) The type of annotation that this dictionary describes; shallbe Popup for a pop-up annotation.
-    method Parent {...};	#| [dictionary] (Optional; shall be an indirect reference) The parent annotation with which this pop-up annotation shall be associated.
+    method Parent {...};	#| [dictionary] (Optional; is an indirect reference) The parent annotation with which this pop-up annotation is associated.
 	#| If this entry is present, the parent annotation’s Contents, M, C, and Tentries (see Link Ta b l e 168 ) shall override those of the pop-up annotation itself.
     method Open {...};	#| [boolean] (Optional) A flag specifying whether the pop-up annotation shallinitially be displayed open. Default value: false (closed).
 }

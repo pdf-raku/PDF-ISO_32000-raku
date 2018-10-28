@@ -8,7 +8,7 @@ role ISO_32000::Media_clip_data {
     method P {...};	#| [dictionary] (Optional) A media permissions dictionary (see Link Table 275 ) containing permissions that control the use of the media data. Default value: a media permissions dictionary containing default values.
     method Alt {...};	#| [array] (Optional) An array that provides alternate text descriptions for the media clip data in case it cannot be played; see Link 14.9.2.4, “Multi-language Text Arrays.” Span 
     method PL {...};	#| [dictionary] (Optional) A media players dictionary (see Link 13.2.7.2, “Media Players Dictionary” ) that identifies, among other things, players that are legal and not legal for playing the media.
-	#| If the media players dictionary is non-viable, the media clip data shall be non-viable.
-    method MH {...};	#| [dictionary] (Optional) A dictionary whose entries (see Link Ta b l e 276 ) shall be honoured for the media clip data to be considered viable.
+	#| If the media players dictionary is non-viable, the media clip data is non-viable.
+    method MH {...};	#| [dictionary] (Optional) A dictionary whose entries (see Link Ta b l e 276 ) is honoured for the media clip data to be considered viable.
     method BE {...};	#| [dictionary] (Optional) A dictionary whose entries (see Link Ta b l e 276 ) should only be honoured in a “best effort” sense.
 }

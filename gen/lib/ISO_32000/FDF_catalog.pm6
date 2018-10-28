@@ -4,6 +4,6 @@ use v6;
 
 role ISO_32000::FDF_catalog {
     method Version {...};	#| [name] (Optional; PDF 1.4) The version of the FDF specification to which this FDF file conforms (for example, 1.4) if later than the version specified in the file’s header (see Link FDF Header in Link 12.7.7.2, “FDF File Structure” ). If the header specifies a later version, or if this entry is absent, the document conforms to the version specified in the header.
-	#| The value of this entry is a name object, not a number, and therefore shall be preceded by a slash character (/) when written in the FDF file (for example, /1.4).
+	#| The value of this entry is a name object, not a number, and therefore is preceded by a slash character (/) when written in the FDF file (for example, /1.4).
     method FDF {...};	#| [dictionary] (Required) The FDF dictionary for this file (see Link Table 243 ).
 }

@@ -4,7 +4,7 @@ use v6;
 
 role ISO_32000::Variable_text_field {
     method DA {...};	#| [string] (Required; inheritable) The default appearance string containing a sequence of valid page-content graphics or text state operators that define such properties as the field’s text size and colour.
-    method Q {...};	#| [integer] (Optional; inheritable) A code specifying the form of quadding (justification) that shall be used in displaying the text:
+    method Q {...};	#| [integer] (Optional; inheritable) A code specifying the form of quadding (justification) that is used in displaying the text:
 	#| 0 Left-justified
 	#| 1 Centered
 	#| 2 Right-justified

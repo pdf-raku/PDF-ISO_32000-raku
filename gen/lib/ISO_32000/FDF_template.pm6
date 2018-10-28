@@ -4,6 +4,6 @@ use v6;
 
 role ISO_32000::FDF_template {
     method TRef {...};	#| [dictionary] (Required) A named page reference dictionary (see Link Ta b l e 250 ) that shall specify the location of the template.
-    method Fields {...};	#| [array] (Optional) An array of references to FDF field dictionaries (see Link Table 246 ) describing the root fields that shall be imported (those with no ancestors in the field hierarchy).
-    method Rename {...};	#| [boolean] (Optional) A flag that shall specify whether fields imported from the template shall be renamed in the event of name conflicts with existing fields; see the Note in this sub-clause for further discussion. Default value: true.
+    method Fields {...};	#| [array] (Optional) An array of references to FDF field dictionaries (see Link Table 246 ) describing the root fields that is imported (those with no ancestors in the field hierarchy).
+    method Rename {...};	#| [boolean] (Optional) A flag that shall specify whether fields imported from the template is renamed in the event of name conflicts with existing fields; see the Note in this sub-clause for further discussion. Default value: true.
 }

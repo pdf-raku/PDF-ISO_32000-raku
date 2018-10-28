@@ -4,5 +4,5 @@ use v6;
 
 role ISO_32000::FDF_named_page_reference {
     method Name {...};	#| [string] (Required) The name of the referenced page.
-    method F {...};	#| [file specification] (Optional) The file containing the named page. If this entry is absent, it shall be assumed that the page resides in the associated PDF file.
+    method F {...};	#| [file specification] (Optional) The file containing the named page. If this entry is absent, it is assumed that the page resides in the associated PDF file.
 }

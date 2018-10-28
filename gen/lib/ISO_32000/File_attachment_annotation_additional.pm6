@@ -5,7 +5,7 @@ use v6;
 role ISO_32000::File_attachment_annotation_additional {
     method Subtype {...};	#| [name] (Required) The type of annotation that this dictionary describes; shallbe FileAttachment for a file attachment annotation.
     method FS {...};	#| [file specification] (Required) The file associated with this annotation.
-    method Name {...};	#| [name] (Optional) The name of an icon that shall be used in displaying the annotation. Conforming readers shall provide predefined icon appearances for at least the following standard names:
+    method Name {...};	#| [name] (Optional) The name of an icon that is used in displaying the annotation. Conforming readers shall provide predefined icon appearances for at least the following standard names:
 	#| GraphPushPin
 	#| PaperclipTag
 	#| Additional names may be supported as well. Default value: PushPin.

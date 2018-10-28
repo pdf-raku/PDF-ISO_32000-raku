@@ -4,6 +4,6 @@ use v6;
 
 role ISO_32000::Alternate_Image {
     method Image {...};	#| [stream] (Required) The image XObject for the alternate image.
-    method DefaultForPrinting {...};	#| [boolean] (Optional) A flag indicating whether this alternate image shall be the default version to be used for printing. At most one alternate for a given base image shall be so designated. If no alternate has this entry set to true, the base image shall be used for printing by a conforming reader.
+    method DefaultForPrinting {...};	#| [boolean] (Optional) A flag indicating whether this alternate image is the default version to be used for printing. At most one alternate for a given base image is so designated. If no alternate has this entry set to true, the base image is used for printing by a conforming reader.
     method OC {...};	#| [dictionary] (Optional; PDF 1.5) An optional content group (see Link 8.11.2, "Optional Content Groups" ) or optional content membership dictionary (see Link 8.11.2.2, "Optional Content Membership Dictionaries" ) that facilitates the selection of which alternate image to use.
 }

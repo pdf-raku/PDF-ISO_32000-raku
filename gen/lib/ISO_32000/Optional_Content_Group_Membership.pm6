@@ -5,8 +5,8 @@ use v6;
 role ISO_32000::Optional_Content_Group_Membership {
     method Type {...};	#| [name] (Required) The type of PDF object that this dictionary describes; shall beOCMD for an optional content membership dictionary.
     method OCGs {...};	#| [dictionary or array] (Optional) A dictionary or array of dictionaries specifying the optional content groups whose states shall determine the visibility of content controlled by this membership dictionary.
-	#| Null values or references to deleted objects shall be ignored. If this entry is not present, is an empty array, or contains references only to null or deleted objects, the membership dictionary shall have no effect on the visibility of any content.
-    method P {...};	#| [name] (Optional) A name specifying the visibility policy for content belonging to this membership dictionary. Valid values shall be:
+	#| Null values or references to deleted objects is ignored. If this entry is not present, is an empty array, or contains references only to null or deleted objects, the membership dictionary shall have no effect on the visibility of any content.
+    method P {...};	#| [name] (Optional) A name specifying the visibility policy for content belonging to this membership dictionary. Valid values is:
 	#| AllOn visible only if all of the entries in OCGs are ON
 	#| AnyOn visible if any of the entries in OCGs are ON
 	#| AnyOff visible if any of the entries in OCGs are OFF

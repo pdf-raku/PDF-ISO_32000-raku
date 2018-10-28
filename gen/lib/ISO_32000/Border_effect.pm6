@@ -4,8 +4,8 @@ use v6;
 
 role ISO_32000::Border_effect {
     method S {...};	#| [name] (Optional) A name representing the border effect to apply. Possible values are:
-	#| S No effect: the border shall be as described by the annotation dictionary’s BS entry.
-	#| C The border should appear “cloudy”. The width and dash array specified by BS shall be honored.
+	#| S No effect: the border is as described by the annotation dictionary’s BS entry.
+	#| C The border should appear “cloudy”. The width and dash array specified by BS is honored.
 	#| Default value: S.
     method I {...};	#| [number] (Optional; valid only if the value of S is C) A number describing the intensity of the effect, in the range 0 to 2. Default value: 0.
 }
