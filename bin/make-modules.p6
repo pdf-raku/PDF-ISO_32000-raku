@@ -38,7 +38,7 @@ multi sub grok(TableTag :$name!, :@data!, :attr($)) {
             my @paras = .map({.Str.subst(/[\n|\s]+/, ' ', :g)
                               .subst(/«'shall be'»/, 'is', :g)
                              });
-            next if $entry ~~ /:i'other'/;
+            next if $entry ~~ /:i'other'|'any'/;
             if $entry ~~ /^<ident>$/ {
                 my $descr = @paras.join: "\n\t#| ";
                 say "    method $entry \{...\};	#| \[$type\] $descr";

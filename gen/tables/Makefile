@@ -24,8 +24,9 @@ Outline_item_flags.html Collection_entries.html Collection_schema_entries.html C
 Free_text_annotation_additional_entries.html Line_annotation_additional_entries.html Line_ending_styles.html Square_or_circle_annotation_additional_entries.html Polygon_or_polyline_annotation_additional_entries.html Text_markup_annotation_additional_entries.html Caret_annotation_additional_entries.html Rubber_stamp_annotation_additional_entries.html Ink_annotation_additional_entries.html Popup_annotation_additional_entries.html File_attachment_annotation_additional_entries.html Sound_annotation_additional_entries.html Movie_annotation_additional_entries.html Screen_annotation_additional_entries.html Widget_annotation_additional_entries.html Appearance_characteristics_entries.html Watermark_annotation_additional_entries.html Fixed_print_entries.html Redaction_annotation_additional_entries.html Action_common_entries.html Annotation_additional_actions_entries.html Page_additional_actions_entries.html Form_additional_actions_entries.html Catalog_additional_actions_entries.html Action_types.html \
 Goto_action_additional_entries.html Remote_goto_action_additional_entries.html Embedded_goto_action_additional_entries.html Target_entries.html Launch_action_additional_entries.html Windows_launch_parameters_entries.html Thread_action_additional_entries.html URI_action_additional_entries.html URI_entries.html Sound_action_additional_entries.html Movie_action_additional_entries.html Hide_action_additional_entries.html Named_actions.html Named_action_additional_entries.html Set-OCG-state_action_additional_entries.html Rendition_action_additional_entries.html Transition_action_additional_entries.html Goto_3D_view_action_additional_entries.html JavaScript_action_additional_entries.html Interactive_form_entries.html Signature_flags.html Field_common_entries.html Field_flags.html Variable_text_field_entries.html XHTML_rich_text_string_elements.html Body_element_attributes.html CSS2_style_attributes.html Button_field_flags.html Check_box_and_radio_button_additional_entries.html Text_field_flags.html Text_field_entries.html Choice_field_flags.html Choice_field_entries.html Signature_field_entries.html Signature_field_lock_entries.html Signature_field_seed_value_entries.html Certificate_seed_value_entries.html Submit_form_action_entries.html Submit_form_action_flags.html Reset_form_action_entries.html Reset_form_action_flags.html Import-data_action_additional_entries.html FDF_trailer_entries.html FDF_catalog_entries.html FDF_dictionary_entries.html Embedded_file_stream_entries_FDF_additional.html JavaScript_entries.html FDF_field_entries.html  \
 Icon_fit_entries.html FDF_page_entries.html FDF_template_entries.html FDF_named_page_reference_entries.html FDF_annotation_additional_entries.html Signature_entries.html Signature_reference_entries.html DocMDP_transform_entries.html UR_transform_entries.html FieldMDP_transform_entries.html SubFilter_value_algorithm_support.html Permissions_entries.html Viewport_entries.html Measure_entries.html Rectilinear_measure_additional_entries.html Number_format_entries.html Requirement_common_entries.html Requirement_handler_entries.html Rendition_common_entries.html Rendition_MH-BE_entries.html Rendition_critera_entries.html Minimum_bit_depth_entries.html Mimimum_screen_size_entries.html Media_rendition_entries.html Selector_rendition_entries.html Media_clip_entries.html Media_clip_data_entries.html Media_permissions_entries.html Media_clip_data_MH-BE_entries.html Media_clip_section_entries.html Media_clip_section_MH-BE_entries.html Media_play_parameters_entries.html Media_play_parameters_MH-BE-entries.html \
-Media_duration_entries.html Media_screen_parameters_entries.html Media_screen_parameters_MH-BE_entries.html Floating_window_parameter_entries.html Media_offset_entries.html Media_offset_time_entries.html Media_offset_frame_entries.html Media_offset_marker_entries.html Timespan_entries.html Media_players_entries.html Media_player_info_entries.html Software_identifier_entries.html Monitor_specifier_values.html Sound_object_entries.html Movie_entries.html Movie_activitation_entries.html Slideshow_entries.html Three-D_annotation_entries.html Three-D_activation_entries.html Three-D_stream_entries.html Three-D_animation_entries.html Animation_styles.html Three-D_reference_entries.html Three-D_view_entries.html Projection_entries.html Three-D_background_entries.html Render_mode_entries.html Render_modes.html Three-D_lighting_entries.html Lighting_scheme_styles.html Three-D_cross_section_entries.html \
-Three-D_node_entries.html Three-D_external_data_entries.html 
+Media_duration_entries.html Media_screen_parameters_entries.html Media_screen_parameters_MH-BE_entries.html Floating_window_parameter_entries.html Media_offset_entries.html Media_offset_time_entries.html Media_offset_frame_entries.html Media_offset_marker_entries.html Timespan_entries.html Media_players_entries.html Media_player_info_entries.html Software_identifier_entries.html Monitor_specifier_values.html Sound_object_entries.html Movie_entries.html Movie_activitation_entries.html Slideshow_entries.html Three-D_annotation_entries.html Three-D_activation_entries.html Three-D_stream_entries.html Three-D_animation_style_entries.html Animation_styles.html Three-D_reference_entries.html Three-D_view_entries.html Projection_entries.html Three-D_background_entries.html Render_mode_entries.html Render_modes.html Three-D_lighting_scheme_entries.html Lighting_scheme_styles.html Three-D_cross_section_entries.html \
+Three-D_node_entries.html Three-D_external_data_entries.html Predefined_procedure_set.html Metadata_stream_additional_entries.html Metadata_additional_entries.html Info_entries.html Page-piece_entries.html Data_entries.html Marked_content_operators.html Mark_information_entries.html Structure_tree_root_entries.html Structure_tree_element_entries.html Marked_content_reference_entries.html Object_reference_entries.html Structure_element_access_additional_entries.html Attribute_object_entries.html Attribute_object_for_user_properties_entries.html User_property_entries.html Artifact_entries.html Font_characteristic_derivation.html Font_selector_attributes.html Web_Capture_information_entries.html Characters_with_special_meanings.html Web_Capture_content_sets_entries.html Web_Capture_page_set_additional_entries.html Web_Capture_image_set_entries.html \
+
 
 # Table 5
 Stream_entries.html :
@@ -1049,7 +1050,7 @@ Three-D_stream_entries.html :
 	$(call table_to_html,524) > $@
 
 # Table 301
-Three-D_animation_entries.html :
+Three-D_animation_style_entries.html :
 	$(call table_to_html,525) > $@
 
 # Table 302
@@ -1099,3 +1100,103 @@ Three-D_node_entries.html :
 # Table 313
 Three-D_external_data_entries.html :
 	$(call table_to_html,551) > $@
+
+# Table 314
+Predefined_procedure_set.html :
+	$(call table_to_html,555) > $@
+
+# Table 315
+Metadata_stream_additional_entries.html :
+	$(call table_to_html,557,--select=1) > $@
+
+# Table 316
+Metadata_additional_entries.html :
+	$(call table_to_html,557,--select=2) > $@
+
+# Table 317
+Info_entries.html :
+	$(call table_to_html,558) > $@
+
+# Table 318
+Page-piece_entries.html :
+	$(call table_to_html,560,--select=1) > $@
+
+# Table 319
+Data_entries.html :
+	$(call table_to_html,560,--select=2) > $@
+
+# Table 320
+Marked_content_operators.html :
+	$(call table_to_html,561) > $@
+
+# Table 321
+Mark_information_entries.html :
+	$(call table_to_html,564) > $@
+
+# Table 322
+Structure_tree_root_entries.html :
+	$(call table_to_html,565) > $@
+
+# Table 323
+Structure_tree_element_entries.html :
+	$(call table_to_html,566) > $@
+
+# Table 324
+Marked_content_reference_entries.html :
+	$(call table_to_html,569) > $@
+
+# Table 325
+Object_reference_entries.html :
+	$(call table_to_html,572) > $@
+
+# Table 326
+Structure_element_access_additional_entries.html :
+	$(call table_to_html,573) > $@
+
+# Table 327
+Attribute_object_entries.html :
+	$(call table_to_html,575) > $@
+
+# Table 328
+Attribute_object_for_user_properties_entries.html :
+	$(call table_to_html,577,--select=1) > $@
+
+# Table 329
+User_property_entries.html :
+	$(call table_to_html,577,--select=2) > $@
+
+# Table 330
+Artifact_entries.html :
+	$(call table_to_html,583) > $@
+
+# Table 331
+Font_characteristic_derivation.html :
+	$(call table_to_html,588,--select=1) > $@
+
+# Table 332
+Font_selector_attributes.html :
+	$(call table_to_html,588,--select=2) > $@
+
+
+#...todo structure elements and attributes tables 333 - 349
+
+# Table 350
+Web_Capture_information_entries.html :
+	$(call table_to_html,625) > $@
+
+# Table 351
+Characters_with_special_meanings.html :
+	$(call table_to_html,629,--select=1) > $@
+
+# Table 352
+Web_Capture_content_sets_entries.html :
+	$(call table_to_html,629,--select=2) > $@
+
+# Table 353
+Web_Capture_page_set_additional_entries.html :
+	$(call table_to_html,630,--select=1) > $@
+
+# Table 354
+Web_Capture_image_set_entries.html :
+	$(call table_to_html,630,--select=2) > $@
+
