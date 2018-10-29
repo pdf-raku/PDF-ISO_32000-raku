@@ -10,7 +10,7 @@ role ISO_32000::Inline_Image {
     method Filter {...};	#| [F] 
     method Height {...};	#| [H] 
     method ImageMask {...};	#| [IM] 
-    $?ROLE.^add_method("Intent (PDF\n            1.1)", method {...}); # 
+    method Intent  {...};	#| [No abbreviation] 
     method Interpolate {...};	#| [I (uppercase I)] 
     method Width {...};	#| [W] 
 }

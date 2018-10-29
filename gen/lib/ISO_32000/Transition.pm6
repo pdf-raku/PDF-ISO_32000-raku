@@ -13,10 +13,6 @@ role ISO_32000::Transition {
 	#| Glitter Similar to Dissolve, except that the effect sweeps across the page in a wide band moving from one side of the screen to the other in the direction specified by the Di entry.
 	#| R The new page simply replaces the old one with no special transition effect; the D entry is ignored.
 	#| Fly(PDF 1.5) Changes are flown out or in (as specified by M), in the direction specified by Di, to or from a location that is offscreen except when Di is None.
-    method Span	 {...};	#| [Span] Push(PDF 1.5) The old page slides off the screen while the new page slides in, pushing the old page out in the direction specified by Di.
-	#| Cover(PDF 1.5) The new page slides on to the screen in the direction specified by Di, covering the old page.
-	#| Uncover(PDF 1.5) The old page slides off the screen in the direction specified by Di, uncovering the new page in the direction specified by Di.
-	#| Fade(PDF 1.5) The new page gradually becomes visible through the old one.
     method D {...};	#| [number] (Optional) The duration of the transition effect, in seconds. Default value: 1.
     method Dm {...};	#| [name] (Optional; Split and Blinds transition styles only) The dimension in which the specified transition effect shall occur:
 	#| HHorizontal
