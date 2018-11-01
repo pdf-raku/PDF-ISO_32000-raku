@@ -1,2 +1,5 @@
-role ISO_32000[ Str $table! ] {
+sub EXPORT($c? ) {
+    %( do ('ISO_32000-' ~ $c) => (require ::('ISO_32000')::($c)) if $c)
+}
+module ISO_32000 {
 }
