@@ -32,7 +32,7 @@ sub html-escape(Str $_) {
 sub MAIN(Str $infile,           #= input PDF
 	 Str :$password = '',   #= password for the input PDF, if encrypted
          Number :$page,         #= page to dump
-         Number :$*max-depth = 6,    #= depth to ascend/descend struct tree
+         Number :$*max-depth = 10,    #= depth to ascend/descend struct tree
          Str    :$*search-tag,
          Number :$*select,
          UInt   :$obj-num = 0,
@@ -156,7 +156,7 @@ class TextDecoder {
             }
         }
     }
-    method SetFont(Str $font-key, UInt $font-size) {
+    method SetFont(Str $font-key, Numeric $font-size) {
         with $*gfx.resource-entry('Font', $font-key) -> $dict {
             $!current-font = $!cache.font{$dict.obj-num} //= PDF::Font::Loader.load-font: :$dict;
         }
