@@ -4,7 +4,7 @@
 ## Notes:
 ## - Tables aren't mapped to Outlines (outline dicts don't have a /SE entry to
 ##   cross reference the struct-tree).
-## - Need to be dug out of the spec either by bredth-first search of the struct-tree,
+## - Need to be dug out of the spec either by breadth-first search of the struct-tree,
 ##   or page-by-page.
 ## - I've chosen page-by-page. Easier to reference the spec this way.
 ## - Doing them one at a time. Not fast.

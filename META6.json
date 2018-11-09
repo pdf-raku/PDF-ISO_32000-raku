@@ -10,7 +10,7 @@
   "depends": [
     
   ],
-  "description": "Data definitions and table, mined from the PDF ISO-32000 specification",
+  "description": "Data definitions and tables, mined from the PDF ISO-32000 specification",
   "license": "Artistic-2.0",
   "name": "PDF::ISO_32000",
   "perl": "6.*",
@@ -248,7 +248,8 @@
     "ISO_32000::Web_capture_command": "gen/lib/ISO_32000/Web_capture_command.pm6",
     "ISO_32000::Web_capture_command_settings": "gen/lib/ISO_32000/Web_capture_command_settings.pm6",
     "ISO_32000::Widget_annotation_additional": "gen/lib/ISO_32000/Widget_annotation_additional.pm6",
-    "ISO_32000::Windows_launch_parameters": "gen/lib/ISO_32000/Windows_launch_parameters.pm6"
+    "ISO_32000::Windows_launch_parameters": "gen/lib/ISO_32000/Windows_launch_parameters.pm6",
+    "PDF::ISO_32000": "lib/PDF/ISO_32000.pm6"
   },
   "resources": [
     
