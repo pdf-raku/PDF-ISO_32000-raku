@@ -5,7 +5,8 @@
     "David Warring"
   ],
   "build-depends": [
-    "JSON::Tiny"
+    "JSON::Fast",
+    "XML::Parser::Tiny"
   ],
   "depends": [
     

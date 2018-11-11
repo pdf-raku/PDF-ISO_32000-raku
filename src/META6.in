@@ -4,7 +4,7 @@
   "authors" : [
     "David Warring"
   ],
-  "build-depends" : [ "JSON::Tiny" ],
+  "build-depends" : [ "JSON::Fast", "XML::Parser::Tiny" ],
   "depends" : [
   ],
   "description" : "Data definitions and tables, mined from the PDF ISO-32000 specification",
