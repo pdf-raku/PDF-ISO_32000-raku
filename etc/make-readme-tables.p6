@@ -11,16 +11,14 @@ sub MAIN(IO() $readme-in, *@sources) {
         my $role-name-short = $role-name.split('::')[1];
         my $link = "/gen/lib/" ~ $_;
         my $ref = "[$role-name-short]($link)";
-        my @entries = (require ::($role-name)).^methods.map: *.name;
+        my @entries = (require ::($role-name)).^methods.map: {'/' ~ .name};
         say "$ref|{@entries.join: ' '}";
         %entries{$_}.push($ref)
             for @entries;
     }
-    say q:to"END-MD";
-
-    ## Entry to role mappings
-    END-MD
-
+    say '';
+    say '## Entry to role mappings';
+    say '';
     say "Entry|ISO_32000 Roles";
     say "----|-----";
     say "{.key}|{.value.join: ' '}"

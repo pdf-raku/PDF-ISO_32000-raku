@@ -53,3 +53,9 @@ Dumps tagged PDF content as XML.
 At the moment just does enough to semi-reliabily extract content from the PDF ISO-32000 specification documents. Could evolve into a general purpose tool for mining elements from tagged PDF's. 
 
 
+## ISO 3200 Roles
+
+The following interface roles have been mined from the ISO-32000 specification
+
+### Roles and entries
+
