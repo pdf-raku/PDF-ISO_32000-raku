@@ -9,7 +9,7 @@ sub MAIN(IO() $readme-in, *@sources) {
     for @sources.sort {
         my $role-name = .subst(/'.pm6'$/, '').subst(m{'/'}, '::', :g);
         my $role-name-short = $role-name.split('::')[1];
-        my $link = "/master/blob/gen/lib/" ~ $_;
+        my $link = "/gen/lib/" ~ $_;
         my $ref = "[$role-name-short]($link)";
         my @entries = (require ::($role-name)).^methods.map: *.name;
         say "$ref|{@entries.join: ' '}";
