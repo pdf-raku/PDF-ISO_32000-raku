@@ -24,10 +24,6 @@ EOF
 Method 'SpiderInfo' must be implemented by Catalog because it is required by roles: ISO_32000::Catalog.
 at lib/Catalog.pm6 (Catalog):1
 ```
-
-===SORRY!=== Error while compiling /tmp/lib/Catalog.pm6 (Catalog)
-Method 'SpiderInfo' must be implemented by Catalog because it is required by roles: ISO_32000::Catalog.
-
 This module contains:
 
 - a copy of the [PDF-32000 specification](src/PDF32000_2008.pdf)
