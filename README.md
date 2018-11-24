@@ -2,7 +2,7 @@
 
 This library contains XHTML tables that have been mined from the PDF-32000 1.7 specification.
 
-Roles have been generated for tables that represent PDF obbjects:
+Roles have been generated for tables that represent PDF objects:
 
 The roles are named ISO_32000::Xxxx and contain documentation and for each entry in the role, e.g.:
 
@@ -31,7 +31,7 @@ This module contains:
 - [generated interface roles](blob/master/gen/lib/ISO_32000) for building and validating PDF objects
 - scripts and Makefiles for regenerating the XML tables and roles
 
-todo: runtime introspection of resources and generated artifiacts, e.g.:
+todo: run-time introspection of resources and generated artefacts, e.g.:
 
 ```
 use PDF::ISO_32000;
@@ -46,7 +46,7 @@ PDF::ISO_32000.table<Catalog>.interface; # ?? access generated role by table nam
 
 Dumps tagged PDF content as XML.
 
-At the moment just does enough to semi-reliabily extract content from the PDF ISO-32000 specification documents. Could evolve into a general purpose tool for mining elements from tagged PDF's. 
+At the moment just does enough to semi-reliably extract content from the PDF ISO-32000 specification documents. Could evolve into a general purpose tool for mining elements from tagged PDF's. 
 
 
 ## ISO 3200 Roles
