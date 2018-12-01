@@ -6,7 +6,7 @@ use PDF::Catalog;
 use PDF::Content::Graphics;
 use PDF::Page;
 use PDF::StructTreeRoot;
-use PDF::StructElem;
+use PDF::StructElem :StructElemChild;
 use PDF::MCR;
 use PDF::OBJR;
 use PDF::Annot;
@@ -116,7 +116,8 @@ multi sub dump-struct(PDF::StructTreeRoot $root, :$depth = 0) {
     with $root.K -> $k {
         my $elems = $k ~~ List ?? $k.elems !! 1;
         for 0 ..^ $elems {
-            dump-struct($k[$_], :$depth);
+            my StructElemChild $c = $k[$_];
+            dump-struct($c, :$depth);
         }
     }
 }
@@ -201,7 +202,7 @@ sub atts-str(%atts) {
 }
 
 multi sub dump-struct(PDF::StructElem $node, :$tags is copy = %(), :$depth is copy = 0) {
-    say pad($depth, "<!-- struct elem {$node.obj-num} {$node.gen-num} R -->")
+    say pad($depth, "<!-- struct elem {$node.obj-num} {$node.gen-num} R ({$node.WHAT.^name})) -->")
         if $*debug;
     $tags = graphics-tags($_) with $node.Pg;
     my $name = $node.structure-type;
@@ -251,13 +252,14 @@ multi sub dump-struct(PDF::StructElem $node, :$tags is copy = %(), :$depth is co
             }
         }
         else {
-            with $node<K> -> $k {
+            with $node.K -> $k {
                 my $elems = $k ~~ List ?? $k.elems !! 1;
                 say pad($depth, "<$name$att>")
                     unless $name eq 'Span';
         
                 for 0 ..^ $elems {
-                    dump-struct($k[$_], :$tags, :$depth);
+                    my StructElemChild $c = $k[$_];
+                    dump-struct($c, :$tags, :$depth);
                 }
 
                 say pad($depth, "</$name>")
@@ -278,7 +280,8 @@ multi sub dump-struct(PDF::OBJR $_, :$tags is copy, :$depth!) {
 }
 
 my %deref{Any};
-sub deref(Hash $_) is default {
+subset StructNode of Hash where PDF::Page|PDF::StructElem;
+sub deref(StructNode $_) {
     %deref{$_} //= do with .struct-parent -> $i {
         with $*parent-tree {.[$i + 0]}
     } // $_;
@@ -315,7 +318,7 @@ multi sub dump-struct(PDF::MCR $_, :$tags is copy, :$depth!) {
     }
 }
 
-multi sub dump-struct(Hash $_ where !(%deref{$_}:exists), |c) {
+multi sub dump-struct(StructNode $_ where !(%deref{$_}:exists), |c) {
     dump-struct( deref($_), |c);
 }
 
@@ -337,7 +340,7 @@ multi sub dump-struct(List $a, :$depth!, |c) {
 }
 
 multi sub dump-struct($_, :$tags, :$depth) is default {
-    warn "ignoring unknown struct elem of type {.WHAT.^name}";
+    die "unknown struct elem of type {.WHAT.^name}";
     say pad($depth, .perl);
 }
 
