@@ -1,0 +1,47 @@
+{
+  "table": {
+    "caption": "Table 110 – Font types",
+    "head": [
+      "Type",
+      "Subtype Value",
+      "Description"
+    ],
+    "rows": [
+      [
+        "Type 0",
+        "Type0",
+        "(PDF 1.2) A composite font—a font composed of glyphs from a descendant CIDFont"
+      ],
+      [
+        "Type 1",
+        "Type1\n",
+        "A font that defines glyph shapes using Type 1 font technology."
+      ],
+      [
+        "",
+        "MMType1",
+        "A multiple master font—an extension of the Type 1 font that allows the generation of a wide variety of typeface styles from a single font"
+      ],
+      [
+        "Type 3",
+        "Type3",
+        "A font that defines glyphs with streams of PDF graphics operators"
+      ],
+      [
+        "TrueType",
+        "TrueType",
+        "A font based on the TrueType font format"
+      ],
+      [
+        "CIDFont",
+        "CIDFontType0",
+        "(PDF 1.2) A CIDFont whose glyph descriptions are based on Type 1 font technology"
+      ],
+      [
+        "",
+        "CIDFontType2",
+        "(PDF 1.2) A CIDFont whose glyph descriptions are based on TrueType font technology"
+      ]
+    ]
+  }
+}

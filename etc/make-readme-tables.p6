@@ -1,7 +1,7 @@
 use v6;
 
 # Build.pm can also be run standalone 
-sub MAIN(IO() $readme-in, *@sources) {
+sub MAIN(*@sources) {
     say '';
     say "ISO_32000 Reference|Role|Entries";
     say "----|-----|-----";

@@ -15,7 +15,7 @@
 
 PDF_SPEC=../../src/PDF32000_2008.pdf
 define table_to_html
-    (echo '<Html><Head/><Body>' && USE_PDF_NATIVE=1 perl6 -I ../lib -I ~/git/PDF-Class-p6 -I ../../../PDF-p6 ../../bin/pdf-struct-dump.p6 --/atts --max-depth=8 --search-tag=Table --page=$(1) $(2) $(PDF_SPEC) && echo '</Body></Html>')
+    (echo '<Html><Head/><Body>' && USE_PDF_NATIVE=1 perl6 ../../bin/pdf-struct-dump.p6 --/atts --max-depth=8 --search-tag=Table --page=$(1) $(2) $(PDF_SPEC) && echo '</Body></Html>')
 endef
 
 all : tables

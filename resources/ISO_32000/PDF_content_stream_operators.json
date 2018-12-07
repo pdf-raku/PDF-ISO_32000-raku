@@ -1,0 +1,451 @@
+{
+  "table": {
+    "caption": "Table A.1 – PDF content stream operators",
+    "head": [
+      "Operator",
+      "PostScript Equivalent",
+      "Description",
+      "Table"
+    ],
+    "rows": [
+      [
+        "b",
+        "closepath, fill, stroke",
+        "Close, fill, and stroke path using nonzero winding number rule",
+        "Link 60\n"
+      ],
+      [
+        "B",
+        "fill, stroke",
+        "Fill and stroke path using nonzero winding number rule",
+        "Link 60\n"
+      ],
+      [
+        "b*",
+        "closepath, eofill, stroke",
+        "Close, fill, and stroke path using even-odd rule",
+        "Link 60\n"
+      ],
+      [
+        "B*",
+        "eofill, stroke",
+        "Fill and stroke path using even-odd rule",
+        "Link 60\n"
+      ],
+      [
+        "BDC",
+        "",
+        "(PDF 1.2) Begin marked-content sequence with property list",
+        "Link 320\n"
+      ],
+      [
+        "BI",
+        "",
+        "Begin inline image object",
+        "Link 92\n"
+      ],
+      [
+        "BMC",
+        "",
+        "(PDF 1.2) Begin marked-content sequence",
+        "Link 320\n"
+      ],
+      [
+        "BT",
+        "",
+        "Begin text object",
+        "Link 107\n"
+      ],
+      [
+        "BX",
+        "",
+        "(PDF 1.1) Begin compatibility section",
+        "Link 32\n"
+      ],
+      [
+        "c",
+        "curveto",
+        "Append curved segment to path (three control points)",
+        "Link 59\n"
+      ],
+      [
+        "cm",
+        "concat",
+        "Concatenate matrix to current transformation matrix",
+        "Link 57\n"
+      ],
+      [
+        "CS",
+        "setcolorspace",
+        "(PDF 1.1) Set color space for stroking operations",
+        "Link 74\n"
+      ],
+      [
+        "cs",
+        "setcolorspace",
+        "(PDF 1.1) Set color space for nonstroking operations",
+        "Link 74\n"
+      ],
+      [
+        "d",
+        "setdash",
+        "Set line dash pattern",
+        "Link 57\n"
+      ],
+      [
+        "d0",
+        "setcharwidth",
+        "Set glyph width in Type 3 font",
+        "Link 113\n"
+      ],
+      [
+        "d1",
+        "setcachedevice",
+        "Set glyph width and bounding box in Type 3 font",
+        "Link 113\n"
+      ],
+      [
+        "Do",
+        "",
+        "Invoke named XObject",
+        "Link 87\n"
+      ],
+      [
+        "DP",
+        "",
+        "(PDF 1.2) Define marked-content point with property list",
+        "Link 320\n"
+      ],
+      [
+        "EI",
+        "",
+        "End inline image object",
+        "Link 92\n"
+      ],
+      [
+        "EMC",
+        "",
+        "(PDF 1.2) End marked-content sequence",
+        "Link 320\n"
+      ],
+      [
+        "ET",
+        "",
+        "End text object",
+        "Link 107\n"
+      ],
+      [
+        "EX",
+        "",
+        "(PDF 1.1) End compatibility section",
+        "Link 32\n"
+      ],
+      [
+        "f",
+        "fill",
+        "Fill path using nonzero winding number rule",
+        "Link 60\n"
+      ],
+      [
+        "F",
+        "fill",
+        "Fill path using nonzero winding number rule (obsolete)",
+        "Link 60\n"
+      ],
+      [
+        "f*",
+        "eofill",
+        "Fill path using even-odd rule",
+        "Link 60\n"
+      ],
+      [
+        "G",
+        "setgray",
+        "Set gray level for stroking operations",
+        "Link 74\n"
+      ],
+      [
+        "g",
+        "setgray",
+        "Set gray level for nonstroking operations",
+        "Link 74\n"
+      ],
+      [
+        "gs",
+        "",
+        "(PDF 1.2) Set parameters from graphics state parameter dictionary",
+        "Link 57\n"
+      ],
+      [
+        "h",
+        "closepath",
+        "Close subpath",
+        "Link 59\n"
+      ],
+      [
+        "i",
+        "setflat",
+        "Set flatness tolerance",
+        "Link 57\n"
+      ],
+      [
+        "ID",
+        "",
+        "Begin inline image data",
+        "Link 92\n"
+      ],
+      [
+        "j",
+        "setlinejoin",
+        "Set line join style",
+        "Link 57\n"
+      ],
+      [
+        "J",
+        "setlinecap",
+        "Set line cap style",
+        "Link 57\n"
+      ],
+      [
+        "K",
+        "setcmykcolor",
+        "Set CMYK color for stroking operations",
+        "Link 74\n"
+      ],
+      [
+        "k",
+        "setcmykcolor",
+        "Set CMYK color for nonstroking operations",
+        "Link 74\n"
+      ],
+      [
+        "l",
+        "lineto",
+        "Append straight line segment to path",
+        "Link 59\n"
+      ],
+      [
+        "m",
+        "moveto",
+        "Begin new subpath",
+        "Link 59\n"
+      ],
+      [
+        "M",
+        "setmiterlimit",
+        "Set miter limit",
+        "Link 57\n"
+      ],
+      [
+        "MP",
+        "",
+        "(PDF 1.2) Define marked-content point",
+        "Link 320\n"
+      ],
+      [
+        "n",
+        "",
+        "End path without filling or stroking",
+        "Link 60\n"
+      ],
+      [
+        "q",
+        "gsave",
+        "Save graphics state",
+        "Link 57\n"
+      ],
+      [
+        "Q",
+        "grestore",
+        "Restore graphics state",
+        "Link 57\n"
+      ],
+      [
+        "re",
+        "",
+        "Append rectangle to path",
+        "Link 59\n"
+      ],
+      [
+        "RG",
+        "setrgbcolor",
+        "Set RGB color for stroking operations",
+        "Link 74\n"
+      ],
+      [
+        "rg",
+        "setrgbcolor",
+        "Set RGB color for nonstroking operations",
+        "Link 74\n"
+      ],
+      [
+        "ri",
+        "",
+        "Set color rendering intent",
+        "Link 57\n"
+      ],
+      [
+        "s",
+        "closepath, stroke",
+        "Close and stroke path",
+        "Link 60\n"
+      ],
+      [
+        "S",
+        "stroke",
+        "Stroke path",
+        "Link 60\n"
+      ],
+      [
+        "SC",
+        "setcolor",
+        "(PDF 1.1) Set color for stroking operations",
+        "Link 74\n"
+      ],
+      [
+        "sc",
+        "setcolor",
+        "(PDF 1.1) Set color for nonstroking operations",
+        "Link 74\n"
+      ],
+      [
+        "SCN",
+        "setcolor",
+        "(PDF 1.2) Set color for stroking operations (ICCBasedand special colour spaces)",
+        "Link 74\n"
+      ],
+      [
+        "scn",
+        "setcolor",
+        "(PDF 1.2) Set color for nonstroking operations (ICCBased and special colour spaces)",
+        "Link 74\n"
+      ],
+      [
+        "sh",
+        "shfill",
+        "(PDF 1.3) Paint area defined by shading pattern",
+        "Link 77\n"
+      ],
+      [
+        "T*",
+        "",
+        "Move to start of next text line",
+        "Link 108\n"
+      ],
+      [
+        "Tc",
+        "",
+        "Set character spacing",
+        "Link\n"
+      ],
+      [
+        "Td",
+        "",
+        "Move text position",
+        "Link 108\n"
+      ],
+      [
+        "TD",
+        "",
+        "Move text position and set leading",
+        "Link 108\n"
+      ],
+      [
+        "Tf",
+        "selectfont",
+        "Set text font and size",
+        "Link\n"
+      ],
+      [
+        "Tj",
+        "show",
+        "Show text",
+        "Link 109\n"
+      ],
+      [
+        "TJ",
+        "",
+        "Show text, allowing individual glyph positioning",
+        "Link 109\n"
+      ],
+      [
+        "TL",
+        "",
+        "Set text leading",
+        "Link\n"
+      ],
+      [
+        "Tm",
+        "",
+        "Set text matrix and text line matrix",
+        "Link 108\n"
+      ],
+      [
+        "Tr",
+        "",
+        "Set text rendering mode",
+        "Link\n"
+      ],
+      [
+        "Ts",
+        "",
+        "Set text rise",
+        "Link\n"
+      ],
+      [
+        "Tw",
+        "",
+        "Set word spacing",
+        "Link\n"
+      ],
+      [
+        "Tz",
+        "",
+        "Set horizontal text scaling",
+        "Link\n"
+      ],
+      [
+        "v",
+        "curveto",
+        "Append curved segment to path (initial point replicated)",
+        "Link 59\n"
+      ],
+      [
+        "w",
+        "setlinewidth",
+        "Set line width",
+        "Link 57\n"
+      ],
+      [
+        "W",
+        "clip",
+        "Set clipping path using nonzero winding number rule",
+        "Link 61\n"
+      ],
+      [
+        "W*",
+        "eoclip",
+        "Set clipping path using even-odd rule",
+        "Link 61\n"
+      ],
+      [
+        "y",
+        "curveto",
+        "Append curved segment to path (final point replicated)",
+        "Link 59\n"
+      ],
+      [
+        "'",
+        "",
+        "Move to next line and show text",
+        "Link 109\n"
+      ],
+      [
+        "\"",
+        "",
+        "Set word and character spacing, move to next line, and show text",
+        "Link 109\n"
+      ]
+    ]
+  }
+}

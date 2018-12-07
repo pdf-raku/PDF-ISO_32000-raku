@@ -1,0 +1,27 @@
+{
+  "table": {
+    "caption": "Table 271 – Additional entries in a media rendition dictionary",
+    "head": [
+      "Key",
+      "Type",
+      "Value"
+    ],
+    "rows": [
+      [
+        "C",
+        "dictionary",
+        "(Optional) A media clip dictionary that specifies what should be played when the media rendition object is played."
+      ],
+      [
+        "P",
+        "dictionary",
+        "(Required if C is not present, otherwise optional) A media play parametersdictionary that specifies how the media rendition object should be played.\nDefault value: a media play parameters dictionary whose entries all contain their default values."
+      ],
+      [
+        "SP",
+        "dictionary",
+        "(Optional) A media screen parameters dictionary that specifies where the media rendition object should be played.\nDefault value: a media screen parameters dictionary whose entries all contain their default values."
+      ]
+    ]
+  }
+}

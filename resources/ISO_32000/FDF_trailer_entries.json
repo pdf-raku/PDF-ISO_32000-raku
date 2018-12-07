@@ -1,0 +1,17 @@
+{
+  "table": {
+    "caption": "Table 241 – Entry in the FDF trailer dictionary",
+    "head": [
+      "Key",
+      "Type",
+      "Value"
+    ],
+    "rows": [
+      [
+        "Root",
+        "dictionary",
+        "(Required; is an indirect reference) The Catalog object for this FDF file."
+      ]
+    ]
+  }
+}

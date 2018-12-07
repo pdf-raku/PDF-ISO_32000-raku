@@ -1,0 +1,55 @@
+{
+  "table": {
+    "caption": "Table F. 2 – Standard hint tables",
+    "head": [
+      "Key",
+      "Hint table"
+    ],
+    "rows": [
+      [
+        "S",
+        "(Required) Shared object hint table"
+      ],
+      [
+        "T",
+        "(Present only if thumbnail images exist) Thumbnail hint table"
+      ],
+      [
+        "O",
+        "(Present only if a document outline exists) Outline hint table"
+      ],
+      [
+        "A",
+        "(Present only if article threads exist) Thread information hint table"
+      ],
+      [
+        "E",
+        "(Present only if named destinations exist) Named destination hint table"
+      ],
+      [
+        "V",
+        "(Present only if an interactive form dictionary exists) Interactive form hint table"
+      ],
+      [
+        "I",
+        "(Present only if a document information dictionary exists) Information dictionary hint table"
+      ],
+      [
+        "C",
+        "(Present only if a logical structure hierarchy exists; PDF 1.3) Logical structure hint table"
+      ],
+      [
+        "L",
+        "(PDF 1.3) Page label hint table"
+      ],
+      [
+        "R",
+        "(Present only if a renditions name tree exists; PDF 1.5) Renditions name tree hint table"
+      ],
+      [
+        "B",
+        "(Present only if embedded file streams exist; PDF 1.5) Embedded file stream hint table"
+      ]
+    ]
+  }
+}
