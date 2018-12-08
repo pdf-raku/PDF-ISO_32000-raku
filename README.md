@@ -6,6 +6,7 @@ Roles have been generated for tables that represent PDF objects:
 
 The roles are named ISO_32000::Xxxx and contain documentation for each entry in the role, e.g.:
 
+
 ## Tables
 
 Data is available for most of the tables in the PDF-32000 1.7 specification:
@@ -21,7 +22,7 @@ say %info<rows>[0].join(" | "); # Title | text string | (Optional; PDF 1.1) The 
 The index method returns a list that maps table numbers to table names:
 
 ```
-    say PDF::ISO_32000.index[317] # Info_entries
+say PDF::ISO_32000.index[317] # Info_entries
 ```
 
 ## Roles
@@ -49,9 +50,11 @@ at lib/Catalog.pm6 (Catalog):1
 This module contains:
 
 - a copy of the [PDF-32000 specification](src/PDF32000_2008.pdf)
-- [JSON Resources](blob/master/resources/ISO_32000) extracted from the above
-- [generated interface roles](blob/master/gen/lib/ISO_32000) for building and validating PDF objects
+- [JSON Table](resources) extracted from the above
+- [generated interface roles](gen/lib/ISO_32000) for building and validating PDF objects
 - scripts and Makefiles for regenerating the XML tables and roles
+
+todo: run-time introspection of resources and generated artefacts, e.g.:
 
 ```
 use PDF::ISO_32000;
