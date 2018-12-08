@@ -16,6 +16,7 @@ my %info = PDF::ISO_32000.table: "Info_entries";
 say %info<caption>;             # Table 317 – Entries in the document information dictionary
 say %info<head>.join(" | ");    # Key | Type | Value
 say %info<rows>[0].join(" | "); # Title | text string | (Optional; PDF 1.1) The document’s title.
+```
 
 The index method returns a list that maps table numbers to table names:
 
