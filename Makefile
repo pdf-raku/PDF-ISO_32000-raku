@@ -3,5 +3,5 @@ all :
 	&& (cd resources && make all) \
 	&& (cd gen/lib && make all)
 
-test :
+test : all
 	prove -e'perl6 -I .' -v t
