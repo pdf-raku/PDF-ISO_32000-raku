@@ -19,10 +19,10 @@ say %info<head>.join(" | ");    # Key | Type | Value
 say %info<rows>[0].join(" | "); # Title | text string | (Optional; PDF 1.1) The document’s title.
 ```
 
-The index method returns a list that maps table numbers to table names:
+The `table-index` method returns a list that maps table numbers to table names:
 
 ```
-say PDF::ISO_32000.index[317] # Info_entries
+say PDF::ISO_32000.table-index[317] # Info_entries
 ```
 
 ## Roles

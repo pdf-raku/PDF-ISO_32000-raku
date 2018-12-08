@@ -11,6 +11,6 @@ method table($name) {
     from-json($.resources{'ISO_32000/' ~ $name ~ '.json'}.slurp)<table>;
 }
 
-method index {
+method table-index {
     (state $ //= from-json($.resources{'ISO_32000-index.json'}.slurp)).list;
 }
