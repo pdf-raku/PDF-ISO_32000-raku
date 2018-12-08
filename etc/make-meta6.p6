@@ -23,7 +23,6 @@ sub MAIN(IO() $meta6-in, *@sources) {
         }
     }
     given "ISO_32000-index.json" {
-        warn :@resource-index.perl;
         "../../resources/$_".IO.spurt: to-json(@resource-index);
         @resources.unshift: $_;
     }
