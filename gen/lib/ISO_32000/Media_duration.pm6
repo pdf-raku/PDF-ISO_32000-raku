@@ -23,6 +23,6 @@ TThe duration is specified by the T entry
 The media duration dictionary is considered non-viable if the conforming reader does not recognize the value of this entry.
 
 =head2 T [dictionary]
-- (Required if the value of S is T; otherwise ignored) A timespan dictionary specifying an explicit duration. A negative duration is illegal.
+- (Required if the value of S is T; otherwise ignored) A timespan dictionary specifying an explicit duration (see Table 289). A negative duration is illegal.
 
 =end pod

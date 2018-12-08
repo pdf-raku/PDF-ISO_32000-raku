@@ -19,6 +19,6 @@ role ISO_32000::Thread {
 - (Required; is an indirect reference) The first bead in the thread.
 
 =head2 I [dictionary]
-- (Optional) A thread information dictionary containing information about the thread, such as its title, author, and creation date. The contents of this dictionary shall conform to the syntax for the document information dictionary.
+- (Optional) A thread information dictionary containing information about the thread, such as its title, author, and creation date. The contents of this dictionary shall conform to the syntax for the document information dictionary (see 14.3.3, “Document Information Dictionary”).
 
 =end pod

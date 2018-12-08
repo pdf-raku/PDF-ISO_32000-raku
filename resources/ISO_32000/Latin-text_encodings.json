@@ -20,7 +20,7 @@
       ],
       [
         "PDFDocEncoding",
-        "Encoding for text strings in a PDF document outside the document’s content streams. This is one of two encodings (the other being Unicode) that may be used to represent text strings. PDF does not have a predefined encoding named PDFDocEncoding; it is not customary to use this encoding to show text from fonts."
+        "Encoding for text strings in a PDF document outside the document’s content streams. This is one of two encodings (the other being Unicode) that may be used to represent text strings; see\n7.9.2.2, \"Text String Type\"\n. PDF does not have a predefined encoding named PDFDocEncoding; it is not customary to use this encoding to show text from fonts."
       ],
       [
         "MacExpertEncoding",

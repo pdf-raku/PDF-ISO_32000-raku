@@ -29,7 +29,7 @@ role ISO_32000::Floating_window_parameter {
 0 The document window
 1 The application window
 2 The full virtual desktop
-3 The monitor specified by M in the media screen parameters MH or BEdictionary
+3 The monitor specified by M in the media screen parameters MH or BEdictionary (see 9.22)
 Default value: 0.
 
 =head2 P [integer]
@@ -67,7 +67,8 @@ Default value: true
 Default value: 0.
 
 =head2 TT [array]
-- (Optional; meaningful only if T is true) An array providing text to display on the floating window’s title bar..”
+- (Optional; meaningful only if T is true) An array providing text to display on the floating window’s title bar. See
+14.9.2.4, “Multi-language Text Arrays.”
 If this entry is not present, the conforming reader may provide default text.
 
 =end pod

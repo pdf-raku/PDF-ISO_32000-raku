@@ -10,7 +10,7 @@
       [
         "Predictor",
         "integer",
-        "A code that selects the predictor algorithm, if any. If the value of this entry is 1, the filter shall assume that the normal algorithm was used to encode the data, without prediction. If the value is greater than 1, the filter shall assume that the data was differenced before being encoded, and Predictor selects the predictor algorithm. For more information regarding Predictor values greater than 1.\"\nDefault value: 1."
+        "A code that selects the predictor algorithm, if any. If the value of this entry is 1, the filter shall assume that the normal algorithm was used to encode the data, without prediction. If the value is greater than 1, the filter shall assume that the data was differenced before being encoded, and Predictor selects the predictor algorithm. For more information regarding Predictor values greater than 1, see\n7.4.4.4, \"LZW and Flate Predictor Functions.\"\nDefault value: 1."
       ],
       [
         "Colors",

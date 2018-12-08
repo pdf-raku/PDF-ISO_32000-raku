@@ -37,13 +37,13 @@ role ISO_32000::Info {
 - (Optional) If the document was converted to PDF from another format, the name of the conforming product that converted it to PDF.
 
 =head2 CreationDate [date]
-- (Optional) The date and time the document was created, in human-readable form.
+- (Optional) The date and time the document was created, in human-readable form (see 7.9.4, “Dates”).
 
 =head2 ModDate [date]
-- (Required if PieceInfo is present in the document catalogue; otherwise optional; PDF 1.1) The date and time the document was most recently modified, in human-readable form.
+- (Required if PieceInfo is present in the document catalogue; otherwise optional; PDF 1.1) The date and time the document was most recently modified, in human-readable form (see 7.9.4, “Dates”).
 
 =head2 Trapped [name]
-- (Optional; PDF 1.3) A name object indicating whether the document has been modified to include trapping information:
+- (Optional; PDF 1.3) A name object indicating whether the document has been modified to include trapping information (see 14.11.6, “Trapping Support”):
 TrueThe document has been fully trapped; no further trapping is needed. This is the name True, not the boolean value true.
 FalseThe document has not yet been trapped. This is the name False, not the boolean value false.
 UnknownEither it is unknown whether the document has been trapped or it has been partly but not yet fully trapped; some additional trapping may still be needed.

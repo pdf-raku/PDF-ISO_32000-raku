@@ -8,7 +8,7 @@
     "rows": [
       [
         "FontFamily",
-        "A string specifying the preferred font family name. Derived from the FontFamilyentry in the font descriptor."
+        "A string specifying the preferred font family name. Derived from the FontFamilyentry in the font descriptor (see Table 122)."
       ],
       [
         "GenericFontFamily",
@@ -20,7 +20,7 @@
       ],
       [
         "FontStretch",
-        "The stretch value of the font. Derived from FontStretch in the font descriptor."
+        "The stretch value of the font. Derived from FontStretch in the font descriptor (see Table 122)."
       ],
       [
         "FontStyle",
@@ -32,7 +32,7 @@
       ],
       [
         "FontWeight",
-        "The weight (thickness) value of the font. Derived from FontWeight in the font descriptor.\nThe ForceBold flag and the StemV field should not be used to set this attribute."
+        "The weight (thickness) value of the font. Derived from FontWeight in the font descriptor (see Table 122).\nThe ForceBold flag and the StemV field should not be used to set this attribute."
       ]
     ]
   }

@@ -35,12 +35,12 @@
       [
         "Flags",
         "integer",
-        "(Required) A collection of flags defining various characteristics of the font."
+        "(Required) A collection of flags defining various characteristics of the font (see 9.8.2, \"Font Descriptor Flags\")."
       ],
       [
         "FontBBox",
         "rectangle",
-        "(Required, except for Type 3 fonts) A rectangle, expressed in the glyph coordinate system, that shall specify the font bounding box. This should be the smallest rectangle enclosing the shape that would result if all of the glyphs of the font were placed with their origins coincident and then filled."
+        "(Required, except for Type 3 fonts) A rectangle (see 7.9.5, \"Rectangles\"), expressed in the glyph coordinate system, that shall specify the font bounding box. This should be the smallest rectangle enclosing the shape that would result if all of the glyphs of the font were placed with their origins coincident and then filled."
       ],
       [
         "ItalicAngle",
@@ -100,22 +100,22 @@
       [
         "FontFile",
         "stream",
-        "(Optional) A stream containing a Type 1 font program."
+        "(Optional) A stream containing a Type 1 font program (see 9.9, \"Embedded Font Programs\")."
       ],
       [
         "FontFile2",
         "stream",
-        "(Optional; PDF 1.1) A stream containing a TrueType font program."
+        "(Optional; PDF 1.1) A stream containing a TrueType font program (see 9.9, \"Embedded Font Programs\")."
       ],
       [
         "FontFile3",
         "stream",
-        "(Optional; PDF 1.2) A stream containing a font program whose format is specified by the Subtype entry in the stream dictionary.\n"
+        "(Optional; PDF 1.2) A stream containing a font program whose format is specified by the Subtype entry in the stream dictionary (see Table 126).\n"
       ],
       [
         "CharSet",
         "ASCII string or byte string",
-        "(Optional; meaningful only in Type 1 fonts; PDF 1.1) A string listing the character names defined in a font subset. The names in this string is in PDF syntax—that is, each name preceded by a slash (/). The names may appear in any order. The name . notdef is omitted; it shall exist in the font subset. If this entry is absent, the only indication of a font subset is the subset tag in the FontNameentry."
+        "(Optional; meaningful only in Type 1 fonts; PDF 1.1) A string listing the character names defined in a font subset. The names in this string is in PDF syntax—that is, each name preceded by a slash (/). The names may appear in any order. The name . notdef is omitted; it shall exist in the font subset. If this entry is absent, the only indication of a font subset is the subset tag in the FontNameentry (see 9.6.4, \"Font Subsets\")."
       ]
     ]
   }

@@ -23,7 +23,7 @@ role ISO_32000::Web_capture_command {
 - (Optional) The number of levels of pages retrieved from the initial URL. Default value: 1.
 
 =head2 F [integer]
-- (Optional) A set of flags specifying various characteristics of the command. Defaut value: 0.
+- (Optional) A set of flags specifying various characteristics of the command (see Table 357). Defaut value: 0.
 
 =head2 P [string or stream]
 - (Optional) Data that was posted to the URL.
@@ -35,6 +35,6 @@ role ISO_32000::Web_capture_command {
 - (Optional) Additional HTTP request headers sent to the URL.
 
 =head2 S [dictionary]
-- (Optional) A command settings dictionary containing settings used in the conversion process.
+- (Optional) A command settings dictionary containing settings used in the conversion process (see 14.10.5.4, “Command Settings”).
 
 =end pod

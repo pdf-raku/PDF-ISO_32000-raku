@@ -19,12 +19,12 @@ role ISO_32000::Viewport {
 =head2 BBox [rectangle]
 - (Required) A rectangle in default user space coordinates specifying the location of the viewport on the page.
 The two coordinate pairs of the rectangle is specified in normalized form; that is, lower-left followed by upper-right, relative to the measuring coordinate system. This ordering shall determine the orientation of the measuring coordinate system (that is, the direction of the positive x and yaxes) in this viewport, which may have a different rotation from the page.
-The coordinates of this rectangle are independent of the origin of the measuring coordinate system, specified in the O entry of the measurement dictionary specified by Measure.
+The coordinates of this rectangle are independent of the origin of the measuring coordinate system, specified in the O entry (see Table 262) of the measurement dictionary specified by Measure.
 
 =head2 Name [text string]
 - (Optional) A descriptive text string or title of the viewport, intended for use in a user interface.
 
 =head2 Measure [dictionary]
-- (Optional) A measure dictionary that specifies the scale and units that shall apply to measurements taken on the contents within the viewport.
+- (Optional) A measure dictionary (see Table 261) that specifies the scale and units that shall apply to measurements taken on the contents within the viewport.
 
 =end pod

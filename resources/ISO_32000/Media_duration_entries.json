@@ -20,7 +20,7 @@
       [
         "T",
         "dictionary",
-        "(Required if the value of S is T; otherwise ignored) A timespan dictionary specifying an explicit duration. A negative duration is illegal."
+        "(Required if the value of S is T; otherwise ignored) A timespan dictionary specifying an explicit duration (see Table 289). A negative duration is illegal."
       ]
     ]
   }

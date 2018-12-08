@@ -15,7 +15,7 @@
       [
         "D",
         "name, byte string, or array",
-        "(Required) The destination to jump to."
+        "(Required) The destination to jump to (see 12.3.2, “Destinations”)."
       ]
     ]
   }

@@ -19,6 +19,6 @@ role ISO_32000::Requirement_common {
 - (Required) The type of requirement that this dictionary describes. The value is EnableJavaScripts.
 
 =head2 RH [array]
-- (Optional) An array of requirement handler dictionaries. This array lists the requirement handlers that is disabled (not executed) if the conforming reader can check the requirement specified in the S entry.
+- (Optional) An array of requirement handler dictionaries (see Table 265). This array lists the requirement handlers that is disabled (not executed) if the conforming reader can check the requirement specified in the S entry.
 
 =end pod

@@ -21,18 +21,18 @@ role ISO_32000::Type_2_Pattern {
 - (Required) A code identifying the type of pattern that this dictionary describes; is 2 for a shading pattern.
 
 =head2 Shading [dictionary or stream]
-- (Required) A shading object defining the shading pattern’s gradient fill. The contents of the dictionary shall consist of the entries in
-Link Table 78
+- (Required) A shading object (see below) defining the shading pattern’s gradient fill. The contents of the dictionary shall consist of the entries in
+Table 78
 and those in one of Tables
-Link 79
+79
 to
-Link 84
+84
 .
 
 =head2 Matrix [array]
-- (Optional) An array of six numbers specifying the pattern matrix. Default value: the identity matrix [ 1 0 0 1 0 0 ].
+- (Optional) An array of six numbers specifying the pattern matrix (see 8.7.2, "General Properties of Patterns"). Default value: the identity matrix [ 1 0 0 1 0 0 ].
 
 =head2 ExtGState [dictionary]
-- (Optional) A graphics state parameter dictionary containing graphics state parameters to be put into effect temporarily while the shading pattern is painted. Any parameters that are so specified is inherited from the graphics state that was in effect at the beginning of the content stream in which the pattern is defined as a resource.
+- (Optional) A graphics state parameter dictionary (see 8.4.5, "Graphics State Parameter Dictionaries") containing graphics state parameters to be put into effect temporarily while the shading pattern is painted. Any parameters that are so specified is inherited from the graphics state that was in effect at the beginning of the content stream in which the pattern is defined as a resource.
 
 =end pod

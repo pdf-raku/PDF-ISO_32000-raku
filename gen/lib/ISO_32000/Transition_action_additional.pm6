@@ -15,6 +15,6 @@ role ISO_32000::Transition_action_additional {
 - (Required) The type of action that this dictionary describes; is Transfor a transition action.
 
 =head2 Trans [dictionary]
-- (Required) The transition to use for the update of the display.
+- (Required) The transition to use for the update of the display (see Table 162).
 
 =end pod

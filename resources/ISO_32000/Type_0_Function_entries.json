@@ -35,7 +35,7 @@
       [
         "other streamattributes",
         "(various)",
-        "(Optional) Other attributes of the stream that shall provide the sample values, as appropriate."
+        "(Optional) Other attributes of the stream that shall provide the sample values, as appropriate (see Table 5)."
       ]
     ]
   }

@@ -18,7 +18,7 @@ role ISO_32000::Three-D_node {
 - (Optional) The type of PDF object that this dictionary describes; if present, is 3DNode for a 3D node dictionary.
 
 =head2 N [text string]
-- (Required) The name of the node being described by the node dictionary. If the Subtype of the corresponding 3D Stream is U3D, this entry corresponds to the field Node block name, as described in the Universal 3D file formatspecification. In the future, nodes may be described using other 3D conventions.
+- (Required) The name of the node being described by the node dictionary. If the Subtype of the corresponding 3D Stream is U3D, this entry corresponds to the field Node block name, as described in the Universal 3D file formatspecification (see Bibliography). In the future, nodes may be described using other 3D conventions.
 NOTE When comparing this entry to node names for a particular convention (such as Universal 3D), conforming readers shall translate between the PDF text encoding used by PDF and the character encoding specified in the 3D stream.
 
 =head2 O [number]
@@ -30,6 +30,6 @@ If this entry is absent, the viewer shall use the opacity specified for the pare
 If this entry is absent, the viewer shall use the visibility specified for the parent node or for the 3D artwork (in ascending order).
 
 =head2 M [array]
-- (Optional) A 12-element 3D transformation matrix that specifies the position and orientation of this node, relative to its parent, in world coordinates.
+- (Optional) A 12-element 3D transformation matrix that specifies the position and orientation of this node, relative to its parent, in world coordinates (see 13.6.5, “Coordinate Systems for 3D”).
 
 =end pod

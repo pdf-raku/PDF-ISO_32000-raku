@@ -15,7 +15,7 @@
       [
         "BS",
         "dictionary",
-        "(Optional) A border style dictionary specifying the line width and dash pattern that is used in drawing the rectangle or ellipse.\nThe annotation dictionary’s AP entry, if present, shall take precedence over the Rect and BS entries.”"
+        "(Optional) A border style dictionary (see Table 166) specifying the line width and dash pattern that is used in drawing the rectangle or ellipse.\nThe annotation dictionary’s AP entry, if present, shall take precedence over the Rect and BS entries; see\nTable 168\nand\n12.5.5, “Appearance Streams.”"
       ],
       [
         "IC",
@@ -25,7 +25,7 @@
       [
         "BE",
         "dictionary",
-        "(Optional; PDF 1.5) A border effect dictionary describing an effect applied to the border described by the BS entry."
+        "(Optional; PDF 1.5) A border effect dictionary describing an effect applied to the border described by the BS entry (see Table 167)."
       ],
       [
         "RD",

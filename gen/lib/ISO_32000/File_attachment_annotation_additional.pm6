@@ -23,7 +23,10 @@ role ISO_32000::File_attachment_annotation_additional {
 GraphPushPin
 PaperclipTag
 Additional names may be supported as well. Default value: PushPin.
-The annotation dictionary’s AP entry, if present, shall take precedence over the Name entry.”
+The annotation dictionary’s AP entry, if present, shall take precedence over the Name entry; see
+Table 168
+and
+12.5.5, “Appearance Streams.”
 
 
 =end pod

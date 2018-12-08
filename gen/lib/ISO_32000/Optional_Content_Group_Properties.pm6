@@ -13,12 +13,12 @@ role ISO_32000::Optional_Content_Group_Properties {
 =head1 Methods (Entries)
 
 =head2 OCGs [array]
-- (Required) An array of indirect references to all the optional content groups in the document, in any order. Every optional content group is included in this array.
+- (Required) An array of indirect references to all the optional content groups in the document (see 8.11.2, "Optional Content Groups"), in any order. Every optional content group is included in this array.
 
 =head2 D [dictionary]
-- (Required) The default viewing optional content configuration dictionary.
+- (Required) The default viewing optional content configuration dictionary (see 8.11.4.3, "Optional Content Configuration Dictionaries").
 
 =head2 Configs [array]
-- (Optional) An array of alternate optional content configuration dictionaries.
+- (Optional) An array of alternate optional content configuration dictionaries (see 8.11.4.3, "Optional Content Configuration Dictionaries").
 
 =end pod

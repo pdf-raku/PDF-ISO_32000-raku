@@ -29,7 +29,7 @@ U (Underline) A single line along the bottom of the annotation rectangle.
 A conforming reader shall tolerate other border styles that it does not recognize and shall use the default value.
 
 =head2 D [array]
-- (Optional) A dash array defining a pattern of dashes and gaps that shall beused in drawing a dashed border (border style D in the S entry). The dash array is specified in the same format as in the line dash pattern parameter of the graphics state. The dash phase is not specified and is assumed to be 0.
+- (Optional) A dash array defining a pattern of dashes and gaps that shall beused in drawing a dashed border (border style D in the S entry). The dash array is specified in the same format as in the line dash pattern parameter of the graphics state (see 8.4.3.6, “Line Dash Pattern”). The dash phase is not specified and is assumed to be 0.
 EXAMPLE A D entry of [ 3 2 ] specifies a border drawn with 3-point dashes alternating with 2-point gaps.
 Default value: [ 3 ].
 

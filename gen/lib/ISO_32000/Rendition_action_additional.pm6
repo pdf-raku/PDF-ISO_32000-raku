@@ -18,10 +18,10 @@ role ISO_32000::Rendition_action_additional {
 - (Required) The type of action that this dictionary describes; is Renditionfor a rendition action.
 
 =head2 R [dictionary]
-- (Required when OP is present with a value of 0 or 4; otherwise optional) A rendition object.
+- (Required when OP is present with a value of 0 or 4; otherwise optional) A rendition object (see 13.2.3, “Renditions”).
 
 =head2 AN [dictionary]
-- (Required if OP is present with a value of 0, 1, 2, 3 or 4; otherwise optional) An indirect reference to a screen annotation.
+- (Required if OP is present with a value of 0, 1, 2, 3 or 4; otherwise optional) An indirect reference to a screen annotation (see 12.5.6.18, “Screen Annotations”).
 
 =head2 OP [integer]
 - (Required if JS is not present; otherwise optional) The operation to perform when the action is triggered. Valid values is:

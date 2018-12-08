@@ -15,7 +15,7 @@
       [
         "Trans",
         "dictionary",
-        "(Required) The transition to use for the update of the display."
+        "(Required) The transition to use for the update of the display (see Table 162)."
       ]
     ]
   }

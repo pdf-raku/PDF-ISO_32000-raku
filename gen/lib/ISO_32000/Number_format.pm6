@@ -27,7 +27,7 @@ role ISO_32000::Number_format {
 - (Required) A text string specifying a label for displaying the units represented by this dictionary in a user interface; the label should use a universally recognized abbreviation.
 
 =head2 C [number]
-- (Required) The conversion factor used to multiply a value in partial units of the previous number format array element to obtain a value in the units of this dictionary. When this entry is in the first number format dictionary in the array, its meaning (that is, what it is multiplied by) depends on which entry in the rectilinear measure dictionary references the number format array.
+- (Required) The conversion factor used to multiply a value in partial units of the previous number format array element to obtain a value in the units of this dictionary. When this entry is in the first number format dictionary in the array, its meaning (that is, what it is multiplied by) depends on which entry in the rectilinear measure dictionary (see Table 262) references the number format array.
 
 =head2 F [name]
 - (Optional; meaningful only for the last dictionary in a number format array) A name indicating whether and in what manner to display a fractional value from the result of converting to the units of this dictionary by means of the Centry. Valid values is:

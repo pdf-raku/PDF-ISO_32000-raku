@@ -10,12 +10,12 @@
       [
         "t x t y",
         "Td",
-        "Move to the start of the next line, offset from the start of the current line by (t x , t y ). t x and t y shall denote numbers expressed in unscaled text space units. More precisely, this operator shall perform these assignments:\nTmTlm100010txty1Tlm×==\n"
+        "Move to the start of the next line, offset from the start of the current line by (t x , t y). t x and t y shall denote numbers expressed in unscaled text space units. More precisely, this operator shall perform these assignments:\nTmTlm100010txty1Tlm×==\n"
       ],
       [
         "t x t y",
         "TD",
-        "Move to the start of the next line, offset from the start of the current line by (t x , t y ). As a side effect, this operator shall set the leading parameter in the text state. This operator shall have the same effect as this code:\n−t y TL t x t y Td"
+        "Move to the start of the next line, offset from the start of the current line by (t x , t y). As a side effect, this operator shall set the leading parameter in the text state. This operator shall have the same effect as this code:\n−t y TL t x t y Td"
       ],
       [
         "a b c d e f",

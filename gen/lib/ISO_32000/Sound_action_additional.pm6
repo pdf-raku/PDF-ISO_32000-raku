@@ -19,7 +19,7 @@ role ISO_32000::Sound_action_additional {
 - (Required) The type of action that this dictionary describes; is Sound for a sound action.
 
 =head2 Sound [stream]
-- (Required) A sound object defining the sound that is played.
+- (Required) A sound object defining the sound that is played (see 13.3, “Sounds”).
 
 =head2 Volume [number]
 - (Optional) The volume at which to play the sound, in the range −1.0 to 1.0. Default value: 1.0.
@@ -31,6 +31,6 @@ role ISO_32000::Sound_action_additional {
 - (Optional) A flag specifying whether to repeat the sound indefinitely. If this entry is present, the Synchronous entry is ignored. Default value: false.
 
 =head2 Mix [boolean]
-- (Optional) A flag specifying whether to mix this sound with any other sound already playing. If this flag is false, any previously playing sound is stopped before starting this sound; this can be used to stop a repeating sound. Default value: false.
+- (Optional) A flag specifying whether to mix this sound with any other sound already playing. If this flag is false, any previously playing sound is stopped before starting this sound; this can be used to stop a repeating sound (see Repeat). Default value: false.
 
 =end pod

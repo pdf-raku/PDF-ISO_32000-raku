@@ -25,7 +25,7 @@
       [
         "U",
         "dictionary",
-        "(Optional; PDF 1.2) An action that is performed when the mouse button is released inside the annotation’s active area.\nFor backward compatibility, the A entry in an annotation dictionary, if present, takes precedence over this entry."
+        "(Optional; PDF 1.2) An action that is performed when the mouse button is released inside the annotation’s active area.\nFor backward compatibility, the A entry in an annotation dictionary, if present, takes precedence over this entry (see Table 168)."
       ],
       [
         "Fo",

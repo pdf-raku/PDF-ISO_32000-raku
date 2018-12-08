@@ -15,17 +15,17 @@
       [
         "Alt",
         "array",
-        "(Optional) An array that provides alternate text descriptions for the media clip section in case it cannot be played.”\n"
+        "(Optional) An array that provides alternate text descriptions for the media clip section in case it cannot be played; see\n14.9.2.4, “Multi-language Text Arrays.”\n"
       ],
       [
         "MH",
         "dictionary",
-        "(Optional) A dictionary whose entries is honoured for the media clip section to be considered viable."
+        "(Optional) A dictionary whose entries (see Table 278) is honoured for the media clip section to be considered viable."
       ],
       [
         "BE",
         "dictionary",
-        "(Optional) A dictionary whose entries shall only be honoured in a “best effort” sense."
+        "(Optional) A dictionary whose entries (see Table 278) shall only be honoured in a “best effort” sense."
       ]
     ]
   }

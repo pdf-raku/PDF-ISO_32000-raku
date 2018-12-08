@@ -23,10 +23,10 @@ role ISO_32000::Three-D_stream {
 - (Required) A name specifying the format of the 3D data contained in the stream. The only valid value is U3D.
 
 =head2 VA [array]
-- (Optional) An array of 3D view dictionaries, each of which specifies a named preset view of this 3D artwork.
+- (Optional) An array of 3D view dictionaries, each of which specifies a named preset view of this 3D artwork (see Link Section 13.6.4, “3D Views ”).
 
 =head2 DV [(various)]
-- (Optional) An object that specifies the default (initial) view of the 3D artwork. It may be a 3D view dictionary or one of the following types:
+- (Optional) An object that specifies the default (initial) view of the 3D artwork. It may be a 3D view dictionary (see Link Section 13.6.4, “3D Views ”) or one of the following types:
 • An integer specifying an index into the VA array.
 • A text string matching the IN entry in one of the views in the VAarray.
 • A name that indicates the first (F) or last (L) entries in the VAarray.
@@ -40,7 +40,7 @@ The names in this name tree is text strings so as to be encoded in a way that wi
 - (Optional) A JavaScript script that is executed when the 3D stream is instantiated.
 
 =head2 AN [dictionary]
-- (Optional; PDF 1.7) An animation style dictionary indicating the method that conforming readers should use to drive keyframe animations present in this artwork.
+- (Optional; PDF 1.7) An animation style dictionary indicating the method that conforming readers should use to drive keyframe animations present in this artwork (see 13.6.3.2, "3D Animation Style Dictionaries").
 Default value: an animation style dictionary whose Subtype entry has a value of None.
 
 =end pod

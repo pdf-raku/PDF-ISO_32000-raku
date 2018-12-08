@@ -46,91 +46,93 @@ role ISO_32000::Page {
 - (Required; is an indirect reference) The page tree node that is the immediate parent of this page object.
 
 =head2 LastModified [date]
-- (Required if PieceInfo is present; optional otherwise; PDF 1.3) The date and time when the page’s contents were most recently modified. If a page-piece dictionary (PieceInfo) is present, the modification date is used to ascertain which of the application data dictionaries that it contains correspond to the current content of the page.
+- (Required if PieceInfo is present; optional otherwise; PDF 1.3) The date and time (see 7.9.4, "Dates") when the page’s contents were most recently modified. If a page-piece dictionary (PieceInfo) is present, the modification date is used to ascertain which of the application data dictionaries that it contains correspond to the current content of the page (see 14.5, "Page-Piece Dictionaries").
 
 =head2 Resources [dictionary]
-- (Required; inheritable) A dictionary containing any resources required by the page. If the page requires no resources, the value of this entry is an empty dictionary. Omitting the entry entirely indicates that the resources is inherited from an ancestor node in the page tree.
+- (Required; inheritable) A dictionary containing any resources required by the page (see 7.8.3, "Resource Dictionaries"). If the page requires no resources, the value of this entry is an empty dictionary. Omitting the entry entirely indicates that the resources is inherited from an ancestor node in the page tree.
 
 =head2 MediaBox [rectangle]
-- (Required; inheritable) A rectangle, expressed in default user space units, that shall define the boundaries of the physical medium on which the page is displayed or printed.
+- (Required; inheritable) A rectangle (see 7.9.5, "Rectangles"), expressed in default user space units, that shall define the boundaries of the physical medium on which the page is displayed or printed (see 14.11.2, "Page Boundaries").
 
 =head2 CropBox [rectangle]
-- (Optional; inheritable) A rectangle, expressed in default user space units, that shall define the visible region of default user space. When the page is displayed or printed, its contents is clipped (cropped) to this rectangle and then is imposed on the output medium in some implementation-defined manner. Default value: the value of MediaBox.
+- (Optional; inheritable) A rectangle, expressed in default user space units, that shall define the visible region of default user space. When the page is displayed or printed, its contents is clipped (cropped) to this rectangle and then is imposed on the output medium in some implementation-defined manner (see 14.11.2, "Page Boundaries"). Default value: the value of MediaBox.
 
 =head2 BleedBox [rectangle]
-- (Optional; PDF 1.3) A rectangle, expressed in default user space units, that shall define the region to which the contents of the page is clipped when output in a production environment. Default value: the value of CropBox.
+- (Optional; PDF 1.3) A rectangle, expressed in default user space units, that shall define the region to which the contents of the page is clipped when output in a production environment (see 14.11.2, "Page Boundaries"). Default value: the value of CropBox.
 
 =head2 TrimBox [rectangle]
-- (Optional; PDF 1.3) A rectangle, expressed in default user space units, that shall define the intended dimensions of the finished page after trimming. Default value: the value of CropBox.
+- (Optional; PDF 1.3) A rectangle, expressed in default user space units, that shall define the intended dimensions of the finished page after trimming (see 14.11.2, "Page Boundaries"). Default value: the value of CropBox.
 
 =head2 ArtBox [rectangle]
-- (Optional; PDF 1.3) A rectangle, expressed in default user space units, that shall define the extent of the page’s meaningful content (including potential white space) as intended by the page’s creator. Default value: the value of CropBox.
+- (Optional; PDF 1.3) A rectangle, expressed in default user space units, that shall define the extent of the page’s meaningful content (including potential white space) as intended by the page’s creator (see 14.11.2, "Page Boundaries"). Default value: the value of CropBox.
 
 =head2 BoxColorInfo [dictionary]
-- (Optional; PDF 1.4) A box colour information dictionary that shall specify the colours and other visual characteristics that should be used in displaying guidelines on the screen for the various page boundaries. If this entry is absent, the application shall use its own current default settings.
+- (Optional; PDF 1.4) A box colour information dictionary that shall specify the colours and other visual characteristics that should be used in displaying guidelines on the screen for the various page boundaries (see 14.11.2.2, "Display of Page Boundaries"). If this entry is absent, the application shall use its own current default settings.
 
 =head2 Contents [stream or array]
-- (Optional) A content stream that shall describe the contents of this page. If this entry is absent, the page is empty.
-The value is either a single stream or an array of streams. If the value is an array, the effect is as if all of the streams in the array were concatenated, in order, to form a single stream. Conforming writers can create image objects and other resources as they occur, even though they interrupt the content stream. The division between streams may occur only at the boundaries between lexical tokens but is unrelated to the page’s logical content or organization. Applications that consume or produce PDF files need not preserve the existing structure of the Contents array. Conforming writers shall not create a Contents array containing no elements.
+- (Optional) A content stream (see 7.8.2, "Content Streams") that shall describe the contents of this page. If this entry is absent, the page is empty.
+The value is either a single stream or an array of streams. If the value is an array, the effect is as if all of the streams in the array were concatenated, in order, to form a single stream. Conforming writers can create image objects and other resources as they occur, even though they interrupt the content stream. The division between streams may occur only at the boundaries between lexical tokens (see 7.2, "Lexical Conventions") but is unrelated to the page’s logical content or organization. Applications that consume or produce PDF files need not preserve the existing structure of the Contents array. Conforming writers shall not create a Contents array containing no elements.
 
 =head2 Rotate [integer]
 - (Optional; inheritable) The number of degrees by which the page is rotated clockwise when displayed or printed. The value is a multiple of 90. Default value: 0.
 
 =head2 Group [dictionary]
-- (Optional; PDF 1.4) A group attributes dictionary that shall specify the attributes of the page’s page group for use in the transparent imaging model.
+- (Optional; PDF 1.4) A group attributes dictionary that shall specify the attributes of the page’s page group for use in the transparent imaging model (see 11.4.7, "Page Group" and 11.6.6, "Transparency Group XObjects").
 
 =head2 Thumb [stream]
-- (Optional) A stream object that shall define the page’s thumbnail image.
+- (Optional) A stream object that shall define the page’s thumbnail image (see 12.3.4, "Thumbnail Images").
 
 =head2 B [array]
-- (Optional; PDF 1.1; recommended if the page contains article beads) An array that shall contain indirect references to all article beads appearing on the page. The beads is listed in the array in natural reading order.
+- (Optional; PDF 1.1; recommended if the page contains article beads) An array that shall contain indirect references to all article beads appearing on the page (see 12.4.3, "Articles"). The beads is listed in the array in natural reading order.
 NOTE The information in this entry can be created or recreated from the information obtained from the Threads key in the Catalog.
 
 =head2 Dur [number]
-- (Optional; PDF 1.1) The page’s display duration (also called its advance timing): the maximum length of time, in seconds, that the page is displayed during presentations before the viewer application shall automatically advance to the next page. By default, the viewer shall not advance automatically.
+- (Optional; PDF 1.1) The page’s display duration (also called its advance timing): the maximum length of time, in seconds, that the page is displayed during presentations before the viewer application shall automatically advance to the next page (see 12.4.4, "Presentations"). By default, the viewer shall not advance automatically.
 
 =head2 Trans [dictionary]
-- (Optional; PDF 1.1) A transition dictionary describing the transition effect that is used when displaying the page during presentations.
+- (Optional; PDF 1.1) A transition dictionary describing the transition effect that is used when displaying the page during presentations (see 12.4.4, "Presentations").
 
 =head2 Annots [array]
-- (Optional) An array of annotation dictionaries that shall contain indirect references to all annotations associated with the page.
+- (Optional) An array of annotation dictionaries that shall contain indirect references to all annotations associated with the page (see 12.5, "Annotations").
 
 =head2 AA [dictionary]
-- (Optional; PDF 1.2) An additional-actions dictionary that shall define actions to be performed when the page is opened or closed.
+- (Optional; PDF 1.2) An additional-actions dictionary that shall define actions to be performed when the page is opened or closed (see 12.6.3, "Trigger Events").
 (PDF 1.3) additional-actions dictionaries are not inheritable.
 
 =head2 Metadata [stream]
-- (Optional; PDF 1.4) A metadata stream that shall contain metadata for the page.
+- (Optional; PDF 1.4) A metadata stream that shall contain metadata for the page (see 14.3.2, "Metadata Streams").
 
 =head2 PieceInfo [dictionary]
-- (Optional; PDF 1.3) A page-piece dictionary associated with the page.
+- (Optional; PDF 1.3) A page-piece dictionary associated with the page (see 14.5, "Page-Piece Dictionaries").
 
 =head2 StructParents [integer]
-- (Required if the page contains structural content items; PDF 1.3)The integer key of the page’s entry in the structural parent tree.
+- (Required if the page contains structural content items; PDF 1.3)The integer key of the page’s entry in the structural parent tree (see 14.7.4.4, "Finding Structure Elements from Content Items").
 
 =head2 ID [byte string]
-- (Optional; PDF 1.3; indirect reference preferred) The digital identifier of the page’s parent Web Capture content set.
+- (Optional; PDF 1.3; indirect reference preferred) The digital identifier of the page’s parent Web Capture content set (see 14.10.6, "Object Attributes Related to Web Capture").
 
 =head2 PZ [number]
-- (Optional; PDF 1.3) The page’s preferred zoom (magnification) factor: the factor by which it is scaled to achieve the natural display magnification.
+- (Optional; PDF 1.3) The page’s preferred zoom (magnification) factor: the factor by which it is scaled to achieve the natural display magnification (see 14.10.6, "Object Attributes Related to Web Capture").
 
 =head2 SeparationInfo [dictionary]
-- (Optional; PDF 1.3) A separation dictionary that shall contain information needed to generate colour separations for the page.
+- (Optional; PDF 1.3) A separation dictionary that shall contain information needed to generate colour separations for the page (see 14.11.4, "Separation Dictionaries").
 
 =head2 Tabs [name]
-- (Optional; PDF 1.5) A name specifying the tab order that is used for annotations on the page. The possible values is R (row order), C (column order), and S (structure order)..
+- (Optional; PDF 1.5) A name specifying the tab order that is used for annotations on the page. The possible values is R (row order), C (column order), and S (structure order). See
+12.5, "Annotations"
+for details.
 
 =head2 TemplateInstantiated [name]
-- (Required if this page was created from a named page object; PDF 1.5) The name of the originating page object.
+- (Required if this page was created from a named page object; PDF 1.5) The name of the originating page object (see 12.7.6, "Named Pages").
 
 =head2 PresSteps [dictionary]
-- (Optional; PDF 1.5) A navigation node dictionary that shall represent the first node on the page.
+- (Optional; PDF 1.5) A navigation node dictionary that shall represent the first node on the page (see 12.4.4.2, "Sub-page Navigation").
 
 =head2 UserUnit [number]
 - (Optional; PDF 1.6) A positive number that shall give the size of default user space units, in multiples of 1 ⁄ 72 inch. The range of supported values is implementation-dependent.
 Default value: 1.0 (user space unit is 1 ⁄ 72 inch).
 
 =head2 VP [dictionary]
-- (Optional; PDF 1.6) An array of viewport dictionaries that shall specify rectangular regions of the page.
+- (Optional; PDF 1.6) An array of viewport dictionaries (see Table 260) that shall specify rectangular regions of the page.
 
 =end pod

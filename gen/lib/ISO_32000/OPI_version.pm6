@@ -11,6 +11,6 @@ role ISO_32000::OPI_version {
 =head1 Methods (Entries)
 
 =head2 version number [dictionary]
-- (Required; PDF 1.2) An OPI dictionary specifying the attributes of this proxy. The key for this entry is the name 1.3 or 2.0, identifying the version of OPI to which the proxy corresponds.
+- (Required; PDF 1.2) An OPI dictionary specifying the attributes of this proxy (see Tables 369 and 370). The key for this entry is the name 1.3 or 2.0, identifying the version of OPI to which the proxy corresponds.
 
 =end pod

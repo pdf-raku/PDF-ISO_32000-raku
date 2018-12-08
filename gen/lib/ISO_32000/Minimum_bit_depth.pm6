@@ -19,7 +19,7 @@ role ISO_32000::Minimum_bit_depth {
 - (Required) A positive integer (0 or greater) specifying the minimum screen depth (in bits) of the monitor for the rendition to be viable. A negative value shall not be allowed.
 
 =head2 M [integer]
-- (Optional) A monitor specifier that specifies which monitor the value of V should be tested against. If the value is unrecognized, the object shall not be viable.
+- (Optional) A monitor specifier (see Table 270) that specifies which monitor the value of V should be tested against. If the value is unrecognized, the object shall not be viable.
 Default value: 0.
 
 =end pod

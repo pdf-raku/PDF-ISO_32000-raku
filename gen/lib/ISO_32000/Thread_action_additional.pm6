@@ -21,13 +21,13 @@ role ISO_32000::Thread_action_additional {
 
 =head2 D [dictionary, integer, or text string]
 - (Required) The destination thread, specified in one of the following forms:
-An indirect reference to a thread dictionary. In this case, the thread is in the current file.
-The index of the thread within the Threads array of its document’s Catalog. The first thread in the array has index 0.
-The title of the thread as specified in its thread information dictionary. If two or more threads have the same title, the one appearing first in the document Catalog’s Threads array shall beused.
+An indirect reference to a thread dictionary (see 12.4.3, “Articles”). In this case, the thread is in the current file.
+The index of the thread within the Threads array of its document’s Catalog (see 7.7.2, “Document Catalog”). The first thread in the array has index 0.
+The title of the thread as specified in its thread information dictionary (see Table 160). If two or more threads have the same title, the one appearing first in the document Catalog’s Threads array shall beused.
 
 =head2 B [dictionary or integer]
 - (Optional) The bead in the destination thread, specified in one of the following forms:
-An indirect reference to a bead dictionary. In this case, the thread is in the current file.
+An indirect reference to a bead dictionary (see 12.4.3, “Articles”). In this case, the thread is in the current file.
 The index of the bead within its thread. The first bead in a thread has index 0.
 
 =end pod

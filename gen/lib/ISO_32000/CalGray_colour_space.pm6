@@ -13,10 +13,14 @@ role ISO_32000::CalGray_colour_space {
 =head1 Methods (Entries)
 
 =head2 WhitePoint [array]
-- (Required) An array of three numbers [ X W Y W Z W ] specifying the tristimulus value, in the CIE 1931 XYZ space, of the diffuse white point. The numbers X W and Z W is positive, and Y W is equal to 1.0.
+- (Required) An array of three numbers [ X W Y W Z W ] specifying the tristimulus value, in the CIE 1931 XYZ space, of the diffuse white point; see
+8.6.5.3, "CalRGB Colour Spaces"
+, for further discussion. The numbers X W and Z W is positive, and Y W is equal to 1.0.
 
 =head2 BlackPoint [array]
-- (Optional) An array of three numbers [ X B Y B Z B ] specifying the tristimulus value, in the CIE 1931 XYZ space, of the diffuse black point. All three of these numbers is non-negative. Default value: [ 0.0 0.0 0.0 ].
+- (Optional) An array of three numbers [ X B Y B Z B ] specifying the tristimulus value, in the CIE 1931 XYZ space, of the diffuse black point; see
+8.6.5.3, "CalRGB Colour Spaces"
+, for further discussion. All three of these numbers is non-negative. Default value: [ 0.0 0.0 0.0 ].
 
 =head2 Gamma [number]
 - (Optional) A number G defining the gamma for the gray (A)component. G is positive and is generally greater than or equal to 1. Default value: 1.

@@ -15,7 +15,7 @@
       [
         "3DD",
         "stream",
-        "(Required) The 3D stream containing the specification of the 3D artwork."
+        "(Required) The 3D stream (see 13.6.3, “3D Streams”) containing the specification of the 3D artwork."
       ]
     ]
   }

@@ -24,7 +24,7 @@ role ISO_32000::Type_5_Shading {
 - (Required) The number of vertices in each row of the lattice; the value is greater than or equal to 2. The number of rows need not be specified.
 
 =head2 Decode [array]
-- (Required) An array of numbers specifying how to map vertex coordinates and colour components into the appropriate ranges of values. The decoding method is similar to that used in image dictionaries. The ranges is specified as follows:
+- (Required) An array of numbers specifying how to map vertex coordinates and colour components into the appropriate ranges of values. The decoding method is similar to that used in image dictionaries (see 8.9.5.2, "Decode Arrays"). The ranges is specified as follows:
 [ x min x max y min y max c 1,min c 1,max … c n,min c n,max ]
 Only one pair of c values is specified if a Function entry is present.
 

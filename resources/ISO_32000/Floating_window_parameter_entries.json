@@ -20,7 +20,7 @@
       [
         "RT",
         "integer",
-        "(Optional) The window relative to which the floating window is positioned:\n0 The document window\n1 The application window\n2 The full virtual desktop\n3 The monitor specified by M in the media screen parameters MH or BEdictionary\nDefault value: 0."
+        "(Optional) The window relative to which the floating window is positioned:\n0 The document window\n1 The application window\n2 The full virtual desktop\n3 The monitor specified by M in the media screen parameters MH or BEdictionary (see 9.22)\nDefault value: 0."
       ],
       [
         "P",
@@ -50,7 +50,7 @@
       [
         "TT",
         "array",
-        "(Optional; meaningful only if T is true) An array providing text to display on the floating window’s title bar..”\nIf this entry is not present, the conforming reader may provide default text."
+        "(Optional; meaningful only if T is true) An array providing text to display on the floating window’s title bar. See\n14.9.2.4, “Multi-language Text Arrays.”\nIf this entry is not present, the conforming reader may provide default text."
       ]
     ]
   }

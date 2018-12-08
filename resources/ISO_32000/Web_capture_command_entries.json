@@ -20,7 +20,7 @@
       [
         "F",
         "integer",
-        "(Optional) A set of flags specifying various characteristics of the command. Defaut value: 0."
+        "(Optional) A set of flags specifying various characteristics of the command (see Table 357). Defaut value: 0."
       ],
       [
         "P",
@@ -40,7 +40,7 @@
       [
         "S",
         "dictionary",
-        "(Optional) A command settings dictionary containing settings used in the conversion process."
+        "(Optional) A command settings dictionary containing settings used in the conversion process (see 14.10.5.4, “Command Settings”)."
       ]
     ]
   }

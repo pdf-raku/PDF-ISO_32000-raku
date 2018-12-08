@@ -20,12 +20,12 @@
       [
         "DS",
         "text string",
-        "(Optional; PDF 1.5) A default style string, as described in\nLink 12.7.3.4, “Rich Text Strings.”\n"
+        "(Optional; PDF 1.5) A default style string, as described in\n12.7.3.4, “Rich Text Strings.”\n"
       ],
       [
         "RV",
         "text string or text stream",
-        "(Optional; PDF 1.5) A rich text string, as described in\nLink 12.7.3.4, “Rich Text Strings.”\n"
+        "(Optional; PDF 1.5) A rich text string, as described in\n12.7.3.4, “Rich Text Strings.”\n"
       ]
     ]
   }

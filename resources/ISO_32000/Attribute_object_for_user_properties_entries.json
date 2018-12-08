@@ -15,7 +15,7 @@
       [
         "P",
         "array",
-        "(Required) An array of dictionaries, each of which represents a user property."
+        "(Required) An array of dictionaries, each of which represents a user property (see Table 329)."
       ]
     ]
   }

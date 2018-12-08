@@ -21,12 +21,12 @@ role ISO_32000::Screen_annotation_additional {
 - (Optional) The title of the screen annotation.
 
 =head2 MK [dictionary]
-- (Optional) An appearance characteristics dictionary. The I entry of this dictionary provides the icon used in generating the appearance referred to by the screen annotation’s AP entry.
+- (Optional) An appearance characteristics dictionary (see Table 189). The I entry of this dictionary provides the icon used in generating the appearance referred to by the screen annotation’s AP entry.
 
 =head2 A [dictionary]
-- (Optional; PDF 1.1) An action that is performed when the annotation is activated.
+- (Optional; PDF 1.1) An action that is performed when the annotation is activated (see 12.6, “Actions”).
 
 =head2 AA [dictionary]
-- (Optional; PDF 1.2) An additional-actions dictionary defining the screen annotation’s behaviour in response to various trigger events.
+- (Optional; PDF 1.2) An additional-actions dictionary defining the screen annotation’s behaviour in response to various trigger events (see 12.6.3, “Trigger Events”).
 
 =end pod

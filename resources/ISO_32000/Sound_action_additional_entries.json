@@ -15,7 +15,7 @@
       [
         "Sound",
         "stream",
-        "(Required) A sound object defining the sound that is played."
+        "(Required) A sound object defining the sound that is played (see 13.3, “Sounds”)."
       ],
       [
         "Volume",
@@ -35,7 +35,7 @@
       [
         "Mix",
         "boolean",
-        "(Optional) A flag specifying whether to mix this sound with any other sound already playing. If this flag is false, any previously playing sound is stopped before starting this sound; this can be used to stop a repeating sound. Default value: false."
+        "(Optional) A flag specifying whether to mix this sound with any other sound already playing. If this flag is false, any previously playing sound is stopped before starting this sound; this can be used to stop a repeating sound (see Repeat). Default value: false."
       ]
     ]
   }

@@ -42,25 +42,27 @@ This property is only applicable if the digital credential signing contains RSA 
 The Ff entry indicates whether this is treated as a required constraint.
 
 =head2 Cert [dictionary]
-- (Optional) A certificate seed value dictionary containing information about the characteristics of the certificate that is used when signing.
+- (Optional) A certificate seed value dictionary (see Table 235) containing information about the characteristics of the certificate that is used when signing.
 
 =head2 Reasons [array]
 - (Optional) An array of text strings that specifying possible reasons for signing a document. If specified, the reasons supplied in this entry replace those used by conforming products.
 If the Reasons array is provided and the Ff entry indicates that Reasons is a required constraint, one of the reasons in the array is used for the signature dictionary; otherwise, signing shall not take place. If the Ff entry indicates Reasons is an optional constraint, one of the reasons in the array may be chosen or a custom reason can be provided.
-If the Reasons array is omitted or contains a single entry with the value PERIOD (2Eh) and the Ff entry indicates that Reasons is a required constraint, the Reason entry is omitted from the signature dictionary.
+If the Reasons array is omitted or contains a single entry with the value PERIOD (2Eh) and the Ff entry indicates that Reasons is a required constraint, the Reason entry is omitted from the signature dictionary (see Table 252).
 
 =head2 MDP [dictionary]
-- (Optional; PDF 1.6) A dictionary containing a single entry whose key is P and whose value is an integer between 0 and 3. A value of 0 defines the signature as an author signature. The values 1 through 3 is used for certification signatures and correspond to the value of P in a DocMDP transform parameters dictionary.
+- (Optional; PDF 1.6) A dictionary containing a single entry whose key is P and whose value is an integer between 0 and 3. A value of 0 defines the signature as an author signature (see 12.8, “Digital Signatures”). The values 1 through 3 is used for certification signatures and correspond to the value of P in a DocMDP transform parameters dictionary (see Table 254).
 If this MDP key is not present or the MDP dictionary does not contain a P entry, no rules is defined regarding the type of signature or its permissions.
 
 =head2 TimeStamp [dictionary]
 - (Optional; PDF 1.6) A time stamp dictionary containing two entries:
-URL An ASCII string specifying the URL of a time-stamping server, providing a time stamp that is compliant with RFC 3161, Internet X.509 Public Key Infrastructure Time-Stamp Protocol.
+URL An ASCII string specifying the URL of a time-stamping server, providing a time stamp that is compliant with RFC 3161, Internet X.509 Public Key Infrastructure Time-Stamp Protocol (see the Bibliography).
 Ff An integer whose value is 1 (the signature shall have a time stamp) or 0 (the signature need not have a time stamp). Default value: 0.
-NOTE Please.
+NOTE Please see
+12.8.3.3, "PKCS7 Signatures as used in ISO 32000"
+for more details about hashing.
 
 =head2 LegalAttestation [array]
-- (Optional; PDF 1.6) An array of text strings specifying possible legal attestations. The value of the corresponding flag in the Ff entry indicates whether this is a required constraint.
+- (Optional; PDF 1.6) An array of text strings specifying possible legal attestations (see 12.8.5, “Legal Content Attestations”). The value of the corresponding flag in the Ff entry indicates whether this is a required constraint.
 
 =head2 AddRevInfo [boolean]
 - (Optional; PDF 1.7) A flag indicating whether revocation checking is carried out. If AddRevInfo is true, the conforming processor shall perform the following additional tasks when signing the signature field:
@@ -69,7 +71,9 @@ Include the revocation information within the signature value.
 Three SubFilter values have been defined for ISO 32000. For those values the AddRevInfo value is true only if SubFilter is adbe.pkcs7.detached or adbe.pkcs7.sha1. If SubFilter is x509.rsa_sha1, this entry is omitted or set to false. Additional SubFilters may be defined that also use AddRevInfo values.
 If AddRevInfo is true and the Ff entry indicates this is a required constraint, then the preceding tasks is performed. If they cannot be performed, then signing shall fail.
 Default value: false
-NOTE 1 Revocation information is carried in the signature data as specified by PCKS7..
+NOTE 1 Revocation information is carried in the signature data as specified by PCKS7. See
+12.8.3.3, "PKCS7 Signatures as used in ISO 32000"
+.
 NOTE 2 The trust anchors used are determined by the signature handlers for both creation and validation.
 
 =end pod

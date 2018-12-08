@@ -15,12 +15,11 @@ sub elem(Str $tag, @data) {
     @data.map(*.{$tag}).grep: *.defined;
 }
 
-sub tidy($_) {
-    given .[0] // '' {
-        .Str.trim
-           .subst("\n", ' ', :g)
-           .subst(/\s+/, ' ', :g)
-    }
+multi sub tidy(List $_) { tidy(.[0]) }
+multi sub tidy($_) is default {
+    ($_ // '').Str.trim
+        .subst("\n", ' ', :g)
+        .subst(/\s+/, ' ', :g);
 }
 
 multi sub grok(TableTag :$name!, :@data!, :attr($)) {
@@ -36,10 +35,9 @@ multi sub grok(TableTag :$name!, :@data!, :attr($)) {
             $_ = (
                 .<TD>.map({tidy($_)})   .join("\n")
                 .subst(/«"shall be"»/, 'is', :g)
-                .subst(/\s*"(see" .*? ")"/, '', :g)
-                .subst(/\s*"(" <-[)]>* 'Link' <-[)]>* ")"/, '', :g)
                 .subst(/T \s* a \s* b \s* l \s* e/, 'Table', :g)
-                .subst(/[';'|',']?\s*[S|s]ee\nLink [<-[.]>|<after [\d|<[A..Z]>]>"."]*/, '', :g)
+                .subst(/:s "(" (<-[)]>*?)  ")"/, { '(' ~ tidy($0) ~ ')' }, :g)
+                .subst(/:s Link (Table|Annex|Figure|Bibliography|<[0..9.]>+)/, { $0 }, :g)
             );
         }
     }

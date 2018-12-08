@@ -30,7 +30,7 @@
       [
         "EA",
         "boolean",
-        "(Optional) If true, the background shall apply to the entire annotation; if false, the background shall apply only to the rectangle specified by the annotation’s 3D view box. Default value: false."
+        "(Optional) If true, the background shall apply to the entire annotation; if false, the background shall apply only to the rectangle specified by the annotation’s 3D view box (the 3DB entry in Table 298). Default value: false."
       ]
     ]
   }

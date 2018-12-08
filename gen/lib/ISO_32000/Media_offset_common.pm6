@@ -16,9 +16,9 @@ role ISO_32000::Media_offset_common {
 
 =head2 S [name]
 - (Required) The subtype of media offset dictionary. Valid values is:
-T A media offset time dictionary
-F A media offset frame dictionary
-M A media offset marker dictionary
+T A media offset time dictionary (see Table 286)
+F A media offset frame dictionary (see Table 287)
+M A media offset marker dictionary (see Table 288)
 The rendition is considered non-viable if the conforming reader does not recognize the value of this entry.
 
 =end pod

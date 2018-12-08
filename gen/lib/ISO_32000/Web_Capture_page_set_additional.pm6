@@ -20,6 +20,6 @@ role ISO_32000::Web_Capture_page_set_additional {
 
 =head2 TID [byte string]
 - (Optional) A text identifier generated from the text of the page set, as described in
-Link 14.10.3.3, “Digital Identifiers.”
+14.10.3.3, “Digital Identifiers.”
 
 =end pod

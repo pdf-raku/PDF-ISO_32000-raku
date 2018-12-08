@@ -24,9 +24,9 @@ role ISO_32000::Rendition_common {
 - (Optional) A Unicode-encoded text string specifying the name of the rendition for use in a user interface and for name tree lookup by JavaScript actions.
 
 =head2 MH [dictionary]
-- (Optional) A dictionary whose entries is honoured for the rendition to be considered viable.
+- (Optional) A dictionary whose entries (see Table 267) is honoured for the rendition to be considered viable.
 
 =head2 BE [dictionary]
-- (Optional) A dictionary whose entries shall only be honoured in a “best effort” sense.
+- (Optional) A dictionary whose entries (see Table 267) shall only be honoured in a “best effort” sense.
 
 =end pod

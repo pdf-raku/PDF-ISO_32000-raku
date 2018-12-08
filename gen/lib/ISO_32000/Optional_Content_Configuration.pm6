@@ -44,17 +44,17 @@ If the BaseState entry is ON, this entry is redundant.
 If the BaseState entry is OFF, this entry is redundant.
 
 =head2 Intent [name or array]
-- (Optional) A single intent name or an array containing any combination of names. it is used to determine which optional content groups’ states to consider and which to ignore in calculating the visibility of content.
+- (Optional) A single intent name or an array containing any combination of names. it is used to determine which optional content groups’ states to consider and which to ignore in calculating the visibility of content (see 8.11.2.3, "Intent").
 PDF defines two intent names, View and Design. In addition, the name All shall indicate the set of all intents, including those not yet defined. Default value: View. The value is View for the document’s default configuration.
 
 =head2 AS [array]
-- (Optional) An array of usage application dictionaries specifying which usage dictionary categories is consulted by conforming readers to automatically set the states of optional content groups based on external factors, such as the current system language or viewing magnification, and when they shall beapplied.
+- (Optional) An array of usage application dictionaries (see Table 103) specifying which usage dictionary categories (see Table 102) is consulted by conforming readers to automatically set the states of optional content groups based on external factors, such as the current system language or viewing magnification, and when they shall beapplied.
 
 =head2 Order [array]
 - (Optional) An array specifying the order for presentation of optional content groups in a conforming reader’s user interface. The array elements may include the following objects:
 Optional content group dictionaries, whose Name entry shall bedisplayed in the user interface by the conforming reader.
 Arrays of optional content groups which may be displayed by a conforming reader in a tree or outline structure. Each nested array may optionally have as its first element a text string to be used as a non-selectable label in a conforming reader’s user interface.
-Text labels in nested arrays is used to present collections of related optional content groups, and not to communicate actual nesting of content inside multiple layers of groups. To reflect actual nesting of groups in the content, such as for layers with sublayers, nested arrays of groups without a text label is used.
+Text labels in nested arrays is used to present collections of related optional content groups, and not to communicate actual nesting of content inside multiple layers of groups (see Link EXAMPLE 1 in 8.11.4.3, "Optional Content Configuration Dictionaries"). To reflect actual nesting of groups in the content, such as for layers with sublayers, nested arrays of groups without a text label is used (see Link EXAMPLE 2 in 8.11.4.3, "Optional Content Configuration Dictionaries").
 An empty array [] explicitly specifies that no groups shall bepresented.
 In the default configuration dictionary, the default value is an empty array; in other configuration dictionaries, the default is the Order value from the default configuration dictionary.
 Any groups not listed in this array shall not be presented in any user interface that uses the configuration.

@@ -25,7 +25,7 @@
       [
         "D",
         "dictionary",
-        "(Optional) A media duration dictionary. Default value: a dictionary specifying the intrinsic duration."
+        "(Optional) A media duration dictionary (see Table 281). Default value: a dictionary specifying the intrinsic duration (see RC)."
       ],
       [
         "A",

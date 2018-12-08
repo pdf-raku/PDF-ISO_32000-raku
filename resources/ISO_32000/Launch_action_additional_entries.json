@@ -20,7 +20,7 @@
       [
         "Win",
         "dictionary",
-        "(Optional) A dictionary containing Windows-specific launch parameters."
+        "(Optional) A dictionary containing Windows-specific launch parameters (see Table 204)."
       ],
       [
         "Mac",

@@ -50,7 +50,7 @@
       [
         "9",
         "32",
-        "The object number of the first object in the thumbnail shared objects section. This section includes objects (colour spaces, for example) that is referenced from some or all thumbnail objects and are not referenced from any other objects. The thumbnail shared objects is undifferentiated; there is no indication of which shared objects is referenced from any given page’s thumbnail image."
+        "The object number of the first object in the thumbnail shared objects section (a subsection of Link part 9). This section includes objects (colour spaces, for example) that is referenced from some or all thumbnail objects and are not referenced from any other objects. The thumbnail shared objects is undifferentiated; there is no indication of which shared objects is referenced from any given page’s thumbnail image."
       ],
       [
         "10",

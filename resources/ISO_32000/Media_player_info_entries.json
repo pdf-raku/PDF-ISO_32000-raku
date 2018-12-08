@@ -15,7 +15,7 @@
       [
         "PID",
         "dictionary",
-        "(Required) A software identifier dictionary that shall specify the player name, versions, and operating systems to which this media player info dictionary applies."
+        "(Required) A software identifier dictionary (see 13.2.7.4, “Software Identifier Dictionary”) that shall specify the player name, versions, and operating systems to which this media player info dictionary applies."
       ],
       [
         "MH",

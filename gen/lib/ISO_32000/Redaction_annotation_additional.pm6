@@ -22,7 +22,7 @@ role ISO_32000::Redaction_annotation_additional {
 
 =head2 QuadPoints [array]
 - (Optional) An array of 8 x n numbers specifying the coordinates of n quadrilaterals in default user space, as described in
-Link Table 175
+Table 175
 for text markup annotations. If present, these quadrilaterals denote the content region that is intended to be removed. If this entry is not present, the Rect entry denotes the content region that is intended to be removed.
 
 =head2 IC [array]
@@ -38,7 +38,7 @@ for text markup annotations. If present, these quadrilaterals denote the content
 - (Optional) If true, then the text specified by OverlayText should be repeated to fill the redacted region after the affected content has been removed. This entry is ignored if the RO entry is present. Default value: false.
 
 =head2 DA [byte string]
-- (Required if OverlayText is present, ignored otherwise) The appearance string to be used in formatting the overlay text when it is drawn after the affected content has been removed. This entry is ignored if the RO entry is present.
+- (Required if OverlayText is present, ignored otherwise) The appearance string to be used in formatting the overlay text when it is drawn after the affected content has been removed (see 12.7.3.3, “Variable Text”). This entry is ignored if the RO entry is present.
 
 =head2 Q [integer]
 - (Optional) A code specifying the form of quadding (justification) to be used in laying out the overlay text:

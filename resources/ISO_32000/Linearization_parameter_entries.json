@@ -15,7 +15,7 @@
       [
         "L",
         "integer",
-        "(Required) The length of the entire file in bytes. It is exactly equal to the actual length of the PDF file. A mismatch indicates that the file is not linearized and is treated as ordinary PDF, ignoring linearization information."
+        "(Required) The length of the entire file in bytes. It is exactly equal to the actual length of the PDF file. A mismatch indicates that the file is not linearized and is treated as ordinary PDF, ignoring linearization information. (If the mismatch resulted from appending an update, the linearization information may still be correct but requires validation; see Link G.7, \"Accessing an Updated File\" for details.)"
       ],
       [
         "H",
@@ -30,7 +30,7 @@
       [
         "E",
         "integer",
-        "(Required) The offset of the end of the first page, relative to the beginning of the file."
+        "(Required) The offset of the end of the first page (the end of Link EXAMPLE 6 in Link F.3.1, \"General\"), relative to the beginning of the file."
       ],
       [
         "N",
@@ -40,12 +40,12 @@
       [
         "T",
         "integer",
-        "(Required) In documents that use standard main cross-reference tables, this entry shall represent the offset of the white-space character preceding the first entry of the main cross-reference table (the entry for object number 0), relative to the beginning of the file. Note that this differs from the Prev entry in the first-page trailer, which gives the location of the xref line that precedes the table.\n(PDF 1.5) Documents that use cross-reference streams exclusively, this entry shall represent the offset of the main cross-reference stream object."
+        "(Required) In documents that use standard main cross-reference tables (including hybrid-reference files; see 7.5.8.4, \"Compatibility with Applications That Do Not Support Compressed Reference Streams\"), this entry shall represent the offset of the white-space character preceding the first entry of the main cross-reference table (the entry for object number 0), relative to the beginning of the file. Note that this differs from the Prev entry in the first-page trailer, which gives the location of the xref line that precedes the table.\n(PDF 1.5) Documents that use cross-reference streams exclusively (see 7.5.8, \"Cross-Reference Streams\"), this entry shall represent the offset of the main cross-reference stream object."
       ],
       [
         "P",
         "integer",
-        "(Optional) The page number of the first page. Default value: 0."
+        "(Optional) The page number of the first page; see\nLink F.3.4, \"First-Page Cross-Reference Table and Trailer (Part 3)\"\n. Default value: 0."
       ]
     ]
   }

@@ -36,7 +36,7 @@ Default value: 2.2.
 
 =head2 Annots [array]
 - (Optional) An array of names specifying additional annotation-related usage rights for the document. Valid names (PDF 1.5) are Create, Delete, Modify, Copy, Import, and Export, which shall permit the user to perform the named operation on annotations.
-The following names (PDF 1.6) is permitted only when the signature dictionary is referenced from the UR3 entry of the permissions dictionary:
+The following names (PDF 1.6) is permitted only when the signature dictionary is referenced from the UR3 entry of the permissions dictionary (see Table 258):
 OnlinePermits online commenting; that is, the ability to upload or download markup annotations from a server.
 SummaryView Permits a user interface to be shown that summarizes the comments (markup annotations) in a document.
 
@@ -49,7 +49,10 @@ ImportPermits the user to import form data files in FDF, XFDF and text (CSV/TSV)
 ExportPermits the user to export form data files as FDF or XFDF.
 SubmitStandalone Permits the user to submit form data when the document is not open in a Web browser.
 SpawnTemplate Permits new pages to be instantiated from named page templates.
-The following names (PDF 1.6) is permitted only when the signature dictionary is referenced from the UR3 entry of the permissions dictionary.
+The following names (PDF 1.6) is permitted only when the signature dictionary is referenced from the UR3 entry of the permissions dictionary; see
+Table 258
+:
+BarcodePlaintext Permits (PDF 1.6) text form field data to be encoded as a plaintext two-dimensional barcode.
 OnlinePermits (PDF 1.6) the use of forms-specific online mechanisms such as SOAP or Active Data Object.
 
 =head2 Signature [array]

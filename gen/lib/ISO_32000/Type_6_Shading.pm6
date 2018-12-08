@@ -21,10 +21,10 @@ role ISO_32000::Type_6_Shading {
 - (Required) The number of bits used to represent each colour component. The value is 1, 2, 4, 8, 12, or 16.
 
 =head2 BitsPerFlag [integer]
-- (Required) The number of bits used to represent the edge flag for each patch. The value is 2, 4, or 8, but only the least significant 2 bits in each flag value is used. Valid values for the edge flag is 0, 1, 2, and 3.
+- (Required) The number of bits used to represent the edge flag for each patch (see below). The value is 2, 4, or 8, but only the least significant 2 bits in each flag value is used. Valid values for the edge flag is 0, 1, 2, and 3.
 
 =head2 Decode [array]
-- (Required) An array of numbers specifying how to map coordinates and colour components into the appropriate ranges of values. The decoding method is similar to that used in image dictionaries. The ranges is specified as follows:
+- (Required) An array of numbers specifying how to map coordinates and colour components into the appropriate ranges of values. The decoding method is similar to that used in image dictionaries (see 8.9.5.2, "Decode Arrays"). The ranges is specified as follows:
 [ x min x max y min y max c 1,min c 1,max … c n,min c n,max ]
 Only one pair of c values is specified if a Function entry is present.
 

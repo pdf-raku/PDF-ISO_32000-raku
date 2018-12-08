@@ -15,7 +15,7 @@
       [
         "Schema",
         "dictionary",
-        "(Optional) A collection schema dictionary. If absent, the conforming reader may choose useful defaults that are known to exist in a file specification dictionary, such as the file name, file size, and modified date."
+        "(Optional) A collection schema dictionary (see Table 156). If absent, the conforming reader may choose useful defaults that are known to exist in a file specification dictionary, such as the file name, file size, and modified date."
       ],
       [
         "D",
@@ -30,7 +30,7 @@
       [
         "Sort",
         "dictionary",
-        "(Optional) A collection sort dictionary, which specifies the order in which items in the collection is sorted in the user interface."
+        "(Optional) A collection sort dictionary, which specifies the order in which items in the collection is sorted in the user interface (see Table 158)."
       ]
     ]
   }

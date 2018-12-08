@@ -16,9 +16,9 @@ role ISO_32000::Optional_Content_Group_Application {
 - (Required) A name defining the situation in which this usage application dictionary should be used. Shall be one of View, Print, or Export.
 
 =head2 OCGs [array]
-- (Optional) An array listing the optional content groups that shall have their states automatically managed based on information in their usage dictionary. Default value: an empty array, indicating that no groups is affected.
+- (Optional) An array listing the optional content groups that shall have their states automatically managed based on information in their usage dictionary (see 8.11.4.4, "Usage and Usage Application Dictionaries"). Default value: an empty array, indicating that no groups is affected.
 
 =head2 Category [array]
-- (Required) An array of names, each of which corresponds to a usage dictionary entry. When managing the states of the optional content groups in the OCGs array, each of the corresponding categories in the group’s usage dictionary is considered.
+- (Required) An array of names, each of which corresponds to a usage dictionary entry (see Table 102). When managing the states of the optional content groups in the OCGs array, each of the corresponding categories in the group’s usage dictionary is considered.
 
 =end pod

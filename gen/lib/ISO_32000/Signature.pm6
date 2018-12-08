@@ -32,19 +32,19 @@ role ISO_32000::Signature {
 
 =head2 Filter [name]
 - (Required; inheritable) The name of the preferred signature handler to use when validating this signature. If the Prop_Build entry is not present, it is also the name of the signature handler that was used to create the signature. If Prop_Build is present, it may be used to determine the name of the handler that created the signature (which is typically the same as Filter but is not needed to be). A conforming reader may substitute a different handler when verifying the signature, as long as it supports the specified SubFilter format. Example signature handlers are Adobe.PPKLite, Entrust.PPKEF, CICI.SignIt, and VeriSign.PPKVS. The name of the filter (i.e. signature handler) is identified in accordance with the rules defined in
-Link Annex E
+Annex E
 .
 
 =head2 SubFilter [name]
 - (Optional) A name that describes the encoding of the signature value and key information in the signature dictionary. A conforming reader may use any handler that supports this format to validate the signature.
-(PDF 1.6) The following values for public-key cryptographic signatures is used: adbe.x509.rsa_sha1, adbe.pkcs7.detached, and adbe.pkcs7.sha1. Other values may be defined by developers, and when used, is prefixed with the registered developer identification. All prefix names is registered. The prefix “adbe” has been registered by Adobe Systems and the three subfilter names listed above and defined in
-Link 12.8.3, “Signature Interoperability“
+(PDF 1.6) The following values for public-key cryptographic signatures is used: adbe.x509.rsa_sha1, adbe.pkcs7.detached, and adbe.pkcs7.sha1 (see 12.8.3, “Signature Interoperability”). Other values may be defined by developers, and when used, is prefixed with the registered developer identification. All prefix names is registered (see Annex E). The prefix “adbe” has been registered by Adobe Systems and the three subfilter names listed above and defined in
+12.8.3, “Signature Interoperability“
 may be used by any developer.
 
 =head2 Contents [byte string]
-- (Required) The signature value. When ByteRange is present, the value is a hexadecimal string representing the value of the byte range digest.
+- (Required) The signature value. When ByteRange is present, the value is a hexadecimal string (see 7.3.4.3, “Hexadecimal Strings”) representing the value of the byte range digest.
 For public-key signatures, Contents should be either a DER-encoded PKCS1 binary data object or a DER-encoded PKCS7 binary data object.
-Space for the Contents value must be allocated before the message digest is computed.
+Space for the Contents value must be allocated before the message digest is computed. (See 7.3.4, “String Objects“)
 
 =head2 Cert [array or byte string]
 - (Required when SubFilter is adbe.x509.rsa_sha1) An array of byte strings that shall represent the X.509 certificate chain used when signing and verifying signatures that use public-key cryptography, or a byte string if the chain has only one entry. The signing certificate shall appear first in the array; it is used to verify the signature value in Contents, and the other certificates is used to verify the authenticity of the signing certificate.
@@ -54,7 +54,7 @@ If SubFilter is adbe.pkcs7.detached or adbe.pkcs7.sha1, this entry shall not be 
 - (Required for all signatures that are part of a signature field and usage rights signatures referenced from the UR3 entry in the permissions dictionary) An array of pairs of integers (starting byte offset, length in bytes) that shall describe the exact byte range for the digest calculation. Multiple discontiguous byte ranges is used to describe a digest that does not include the signature value (theContents entry) itself.
 
 =head2 Reference [array]
-- (Optional; PDF 1.5) An array of signature reference dictionaries.
+- (Optional; PDF 1.5) An array of signature reference dictionaries (see Table 253).
 
 =head2 Changes [array]
 - (Optional) An array of three integers that shall specify changes to the document that have been made between the previous signature and this signature: in this order, the number of pages altered, the number of fields altered, and the number of fields filled in.
@@ -67,13 +67,13 @@ EXAMPLE 1 From the certificate of the signer.
 =head2 M [date]
 - (Optional) The time of signing. Depending on the signature handler, this may be a normal unverified computer time or a time generated in a verifiable way from a secure time server.
 This value should be used only when the time of signing is not available in the signature.
-EXAMPLE 2 A time stamp can be embedded in a PKCS7 binary data object.
+EXAMPLE 2 A time stamp can be embedded in a PKCS7 binary data object (see 12.8.3.3, “PKCS7 Signatures as used in ISO 32000”).
 
 =head2 Location [text string]
 - (Optional) The CPU host name or physical location of the signing.
 
 =head2 Reason [text string]
-- (Optional) The reason for the signing, such as ( I agree … ).
+- (Optional) The reason for the signing, such as (I agree …).
 
 =head2 ContactInfo [text string]
 - (Optional) Information provided by the signer to enable a recipient to contact the signer to verify the signature.

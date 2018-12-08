@@ -15,7 +15,7 @@
       [
         "S",
         "name",
-        "(Required) The type of action that this dictionary describes."
+        "(Required) The type of action that this dictionary describes; see\nTable 194\nfor specific values."
       ],
       [
         "Next",

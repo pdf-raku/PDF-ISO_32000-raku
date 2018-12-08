@@ -9,18 +9,18 @@
     "rows": [
       [
         "1",
-        "",
+        "See\nTable F. 7\n, item 4",
         "(Optional) The number of preceding pages lacking a thumbnail image. This number indicates how many pages without a thumbnail image lie between the previous entry’s page and this page."
       ],
       [
         "2",
-        "",
-        "A number that, when added to the least number of objects in a thumbnail image, gives the number of objects in this page’s thumbnail image."
+        "See\nTable F. 7\n, item 8",
+        "A number that, when added to the least number of objects in a thumbnail image (Table F. 7 , item 7), gives the number of objects in this page’s thumbnail image."
       ],
       [
         "3",
-        "",
-        "A number that, when added to the least length of a thumbnail image, gives the length of this page’s thumbnail image in bytes."
+        "See\nTable F. 7\n, item 6",
+        "A number that, when added to the least length of a thumbnail image (Table F. 7 , item 5), gives the length of this page’s thumbnail image in bytes."
       ]
     ]
   }

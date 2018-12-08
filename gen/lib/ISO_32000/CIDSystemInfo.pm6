@@ -13,7 +13,7 @@ role ISO_32000::CIDSystemInfo {
 =head1 Methods (Entries)
 
 =head2 Registry [ASCII string]
-- (Required) A string identifying the issuer of the character collection. For information about assigning a registry identifier, contact the Adobe Solutions Network or consult the ASN Web site.
+- (Required) A string identifying the issuer of the character collection. For information about assigning a registry identifier, contact the Adobe Solutions Network or consult the ASN Web site (see the Bibliography).
 
 =head2 Ordering [ASCII string]
 - (Required) A string that uniquely names the character collection within the specified registry.

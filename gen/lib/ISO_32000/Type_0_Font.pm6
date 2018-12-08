@@ -26,12 +26,12 @@ role ISO_32000::Type_0_Font {
 NOTE In principle, this is an arbitrary name, since there is no font program associated directly with a Type 0 font dictionary. The conventions described here ensure maximum compatibility with existing readers.
 
 =head2 Encoding [name or stream]
-- (Required) The name of a predefined CMap, or a stream containing a CMap that maps character codes to font numbers and CIDs. If the descendant is a Type 2 CIDFont whose associated TrueType font program is not embedded in the PDF file, the Encoding entry is a predefined CMap name.
+- (Required) The name of a predefined CMap, or a stream containing a CMap that maps character codes to font numbers and CIDs. If the descendant is a Type 2 CIDFont whose associated TrueType font program is not embedded in the PDF file, the Encoding entry is a predefined CMap name (see 9.7.4.2, "Glyph Selection in CIDFonts").
 
 =head2 DescendantFonts [array]
 - (Required) A one-element array specifying the CIDFont dictionary that is the descendant of this Type 0 font.
 
 =head2 ToUnicode [stream]
-- (Optional) A stream containing a CMap file that maps character codes to Unicode values.
+- (Optional) A stream containing a CMap file that maps character codes to Unicode values (see 9.10, "Extraction of Text Content").
 
 =end pod

@@ -41,18 +41,22 @@ Beginning with PDF 1.5, the special treatment given to the standard 14 fonts is 
 Beginning with PDF 1.5, the special treatment given to the standard 14 fonts is deprecated. Conforming writers should represent all fonts using a complete font descriptor. For backwards capability, conforming readers shall still provide the special treatment identified for the standard 14 fonts.
 
 =head2 Widths [array]
-- (Required except for the standard 14 fonts; indirect reference preferred) An array of (LastChar − FirstChar + 1) widths, each element being the glyph width for the character code that equals FirstChar plus the array index. For character codes outside the range FirstChar to LastChar, the value of MissingWidth from the FontDescriptor entry for this font is used. The glyph widths is measured in units in which 1000 units correspond to 1 unit in text space. These widths is consistent with the actual widths given in the font program. For more information on glyph widths and other glyph metrics.
+- (Required except for the standard 14 fonts; indirect reference preferred) An array of (LastChar − FirstChar + 1) widths, each element being the glyph width for the character code that equals FirstChar plus the array index. For character codes outside the range FirstChar to LastChar, the value of MissingWidth from the FontDescriptor entry for this font is used. The glyph widths is measured in units in which 1000 units correspond to 1 unit in text space. These widths is consistent with the actual widths given in the font program. For more information on glyph widths and other glyph metrics, see
+9.2.4, "Glyph Positioning and Metrics"
+.
 Beginning with PDF 1.5, the special treatment given to the standard 14 fonts is deprecated. Conforming writers should represent all fonts using a complete font descriptor. For backwards capability, conforming readers shall still provide the special treatment identified for the standard 14 fonts.
 
 =head2 FontDescriptor [dictionary]
-- (Required except for the standard 14 fonts; is an indirect reference) A font descriptor describing the font’s metrics other than its glyph widths.
-For the standard 14 fonts, the entries FirstChar, LastChar, Widths, and FontDescriptor shall either all be present or all be absent. Ordinarily, these dictionary keys may be absent; specifying them enables a standard font to be overridden.
+- (Required except for the standard 14 fonts; is an indirect reference) A font descriptor describing the font’s metrics other than its glyph widths (see 9.8, "Font Descriptors" ”\).
+For the standard 14 fonts, the entries FirstChar, LastChar, Widths, and FontDescriptor shall either all be present or all be absent. Ordinarily, these dictionary keys may be absent; specifying them enables a standard font to be overridden; see
+9.6.2.2, "Standard Type 1 Fonts (Standard 14 Fonts)"
+.
 Beginning with PDF 1.5, the special treatment given to the standard 14 fonts is deprecated. Conforming writers should represent all fonts using a complete font descriptor. For backwards capability, conforming readers shall still provide the special treatment identified for the standard 14 fonts.
 
 =head2 Encoding [name or dictionary]
-- (Optional) A specification of the font’s character encoding if different from its built-in encoding. The value of Encoding is either the name of a predefined encoding or an encoding dictionary that shall specify differences from the font’s built-in encoding or from a specified predefined encoding.
+- (Optional) A specification of the font’s character encoding if different from its built-in encoding. The value of Encoding is either the name of a predefined encoding (MacRomanEncoding, MacExpertEncoding, or WinAnsiEncoding, as described in Annex D) or an encoding dictionary that shall specify differences from the font’s built-in encoding or from a specified predefined encoding (see 9.6.6, "Character Encoding").
 
 =head2 ToUnicode [stream]
-- (Optional; PDF 1.2) A stream containing a CMap file that maps character codes to Unicode values.
+- (Optional; PDF 1.2) A stream containing a CMap file that maps character codes to Unicode values (see 9.10, "Extraction of Text Content").
 
 =end pod

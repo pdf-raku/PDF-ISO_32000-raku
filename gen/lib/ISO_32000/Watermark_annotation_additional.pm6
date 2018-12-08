@@ -15,7 +15,7 @@ role ISO_32000::Watermark_annotation_additional {
 - (Required) The type of annotation that this dictionary describes; is Watermark for a watermark annotation.
 
 =head2 FixedPrint [dictionary]
-- (Optional) A fixed print dictionary that specifies how this annotation is drawn relative to the dimensions of the target media. If this entry is not present, the annotation is drawn without any special consideration for the dimensions of the target media.
-If the dimensions of the target media are not known at the time of drawing, drawing is done relative to the dimensions specified by the page’s MediaBox entry.
+- (Optional) A fixed print dictionary (see Table 191) that specifies how this annotation is drawn relative to the dimensions of the target media. If this entry is not present, the annotation is drawn without any special consideration for the dimensions of the target media.
+If the dimensions of the target media are not known at the time of drawing, drawing is done relative to the dimensions specified by the page’s MediaBox entry (see Table 30).
 
 =end pod

@@ -22,7 +22,7 @@ role ISO_32000::Launch_action_additional {
 - (Required if none of the entries Win, Mac, or Unix is present) The application that is launched or the document that shall beopened or printed. If this entry is absent and the conforming readerdoes not understand any of the alternative entries, it shall do nothing.
 
 =head2 Win [dictionary]
-- (Optional) A dictionary containing Windows-specific launch parameters.
+- (Optional) A dictionary containing Windows-specific launch parameters (see Table 204).
 
 =head2 Mac [(undefined)]
 - (Optional) Mac OS–specific launch parameters; not yet defined.

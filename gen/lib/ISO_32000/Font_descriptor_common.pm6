@@ -52,10 +52,10 @@ The specific interpretation of these values varies from font to font.
 EXAMPLE 3 300 in one font may appear most similar to 500 in another.
 
 =head2 Flags [integer]
-- (Required) A collection of flags defining various characteristics of the font.
+- (Required) A collection of flags defining various characteristics of the font (see 9.8.2, "Font Descriptor Flags").
 
 =head2 FontBBox [rectangle]
-- (Required, except for Type 3 fonts) A rectangle, expressed in the glyph coordinate system, that shall specify the font bounding box. This should be the smallest rectangle enclosing the shape that would result if all of the glyphs of the font were placed with their origins coincident and then filled.
+- (Required, except for Type 3 fonts) A rectangle (see 7.9.5, "Rectangles"), expressed in the glyph coordinate system, that shall specify the font bounding box. This should be the smallest rectangle enclosing the shape that would result if all of the glyphs of the font were placed with their origins coincident and then filled.
 
 =head2 ItalicAngle [number]
 - (Required) The angle, expressed in degrees counterclockwise from the vertical, of the dominant vertical strokes of the font.
@@ -93,16 +93,16 @@ The value is negative for fonts that slope to the right, as almost all italic fo
 - (Optional) The width to use for character codes whose widths are not specified in a font dictionary’s Widths array. This shall have a predictable effect only if all such codes map to glyphs whose actual widths are the same as the value of the MissingWidth entry. Default value: 0.
 
 =head2 FontFile [stream]
-- (Optional) A stream containing a Type 1 font program.
+- (Optional) A stream containing a Type 1 font program (see 9.9, "Embedded Font Programs").
 
 =head2 FontFile2 [stream]
-- (Optional; PDF 1.1) A stream containing a TrueType font program.
+- (Optional; PDF 1.1) A stream containing a TrueType font program (see 9.9, "Embedded Font Programs").
 
 =head2 FontFile3 [stream]
-- (Optional; PDF 1.2) A stream containing a font program whose format is specified by the Subtype entry in the stream dictionary.
+- (Optional; PDF 1.2) A stream containing a font program whose format is specified by the Subtype entry in the stream dictionary (see Table 126).
 
 
 =head2 CharSet [ASCII string or byte string]
-- (Optional; meaningful only in Type 1 fonts; PDF 1.1) A string listing the character names defined in a font subset. The names in this string is in PDF syntax—that is, each name preceded by a slash (/). The names may appear in any order. The name . notdef is omitted; it shall exist in the font subset. If this entry is absent, the only indication of a font subset is the subset tag in the FontNameentry.
+- (Optional; meaningful only in Type 1 fonts; PDF 1.1) A string listing the character names defined in a font subset. The names in this string is in PDF syntax—that is, each name preceded by a slash (/). The names may appear in any order. The name . notdef is omitted; it shall exist in the font subset. If this entry is absent, the only indication of a font subset is the subset tag in the FontNameentry (see 9.6.4, "Font Subsets").
 
 =end pod

@@ -20,7 +20,7 @@ role ISO_32000::Movie_activation {
 
 =head2 Start [(various)]
 - (Optional) The starting time of the movie segment to be played. Movie time values is expressed in units of time based on a time scale, which defines the number of units per second. The default time scale is defined in the movie data. The starting time is nominally a non-negative 64-bit integer, specified as follows:
-• If it is representable as an integer, it is specified as such.
+• If it is representable as an integer (subject to the implementation limit for integers, as described in Annex C), it is specified as such.
 • If it is not representable as an integer, it is specified as an 8-byte string representing a 64-bit twos-complement integer, most significant byte first.
 • If it is expressed in a time scale different from that of the movie itself, it is represented as an array of two values: an integer or byte string denoting the starting time, followed by an integer specifying the time scale in units per second.
 If this entry is omitted, the movie is played from the beginning.
@@ -52,7 +52,7 @@ Default value: Once.
 - (Optional) The magnification (zoom) factor at which the movie is played. The presence of this entry implies that the movie is played in a floating window. If the entry is absent, the movie is played in the annotation rectangle.
 The value of the entry is an array of two positive integers, [ numerator denominator ], denoting a rational magnification factor for the movie. The final window size, in pixels, is
 (numerator ÷ denominator) × Aspect
-where the value of Aspect is taken from the movie dictionary.
+where the value of Aspect is taken from the movie dictionary (see Table 295).
 
 =head2 FWPosition [array]
 - (Optional) For floating play windows, the relative position of the window on the screen. The value is an array of two numbers

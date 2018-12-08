@@ -25,7 +25,7 @@
       [
         "Metadata",
         "stream",
-        "(Optional; PDF 1.4) A metadata stream that shall contain metadata for the colour space."
+        "(Optional; PDF 1.4) A metadata stream that shall contain metadata for the colour space (see 14.3.2, \"Metadata Streams\")."
       ]
     ]
   }

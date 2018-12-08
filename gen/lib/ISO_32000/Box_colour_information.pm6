@@ -14,15 +14,15 @@ role ISO_32000::Box_colour_information {
 =head1 Methods (Entries)
 
 =head2 CropBox [dictionary]
-- (Optional) A box style dictionary specifying the visual characteristics for displaying guidelines for the page’s crop box. This entry is ignored if no crop box is defined in the page object.
+- (Optional) A box style dictionary (see Table 361) specifying the visual characteristics for displaying guidelines for the page’s crop box. This entry is ignored if no crop box is defined in the page object.
 
 =head2 BleedBox [dictionary]
-- (Optional) A box style dictionary specifying the visual characteristics for displaying guidelines for the page’s bleed box. This entry is ignored if no bleed box is defined in the page object.
+- (Optional) A box style dictionary (see Table 361) specifying the visual characteristics for displaying guidelines for the page’s bleed box. This entry is ignored if no bleed box is defined in the page object.
 
 =head2 TrimBox [dictionary]
-- (Optional) A box style dictionary specifying the visual characteristics for displaying guidelines for the page’s trim box. This entry is ignored if no trim box is defined in the page object.
+- (Optional) A box style dictionary (see Table 361) specifying the visual characteristics for displaying guidelines for the page’s trim box. This entry is ignored if no trim box is defined in the page object.
 
 =head2 ArtBox [dictionary]
-- (Optional) A box style dictionary specifying the visual characteristics for displaying guidelines for the page’s art box. This entry is ignored if no art box is defined in the page object.
+- (Optional) A box style dictionary (see Table 361) specifying the visual characteristics for displaying guidelines for the page’s art box. This entry is ignored if no art box is defined in the page object.
 
 =end pod

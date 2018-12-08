@@ -17,7 +17,7 @@ role ISO_32000::Popup_annotation_additional {
 
 =head2 Parent [dictionary]
 - (Optional; is an indirect reference) The parent annotation with which this pop-up annotation is associated.
-If this entry is present, the parent annotation’s Contents, M, C, and Tentries shall override those of the pop-up annotation itself.
+If this entry is present, the parent annotation’s Contents, M, C, and Tentries (see Table 168) shall override those of the pop-up annotation itself.
 
 =head2 Open [boolean]
 - (Optional) A flag specifying whether the pop-up annotation shallinitially be displayed open. Default value: false (closed).

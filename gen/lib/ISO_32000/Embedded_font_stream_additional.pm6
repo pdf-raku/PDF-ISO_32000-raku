@@ -27,6 +27,6 @@ role ISO_32000::Embedded_font_stream_additional {
 - (Required if referenced from FontFile3; PDF 1.2) A name specifying the format of the embedded font program. The name is Type1C for Type 1 compact fonts, CIDFontType0C for Type 0 compact CIDFonts, or OpenType for OpenType fonts.
 
 =head2 Metadata [stream]
-- (Optional; PDF 1.4) A metadata stream containing metadata for the embedded font program.
+- (Optional; PDF 1.4) A metadata stream containing metadata for the embedded font program (see 14.3.2, "Metadata Streams").
 
 =end pod

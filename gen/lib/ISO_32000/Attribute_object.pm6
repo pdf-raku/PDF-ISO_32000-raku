@@ -12,7 +12,7 @@ role ISO_32000::Attribute_object {
 
 =head2 O [name]
 - (Required) The name of the conforming product owning the attribute data. The name shall conform to the guidelines described in
-Link Annex E
+Annex E
 .
 
 =end pod

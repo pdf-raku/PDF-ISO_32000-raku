@@ -17,8 +17,8 @@ role ISO_32000::Media_permissions {
 =head2 TF [ASCII string]
 - (Optional) An ASCII string indicating the circumstances under which it is acceptable to write a temporary file in order to play a media clip. Valid values are:
 (TEMPNEVER) Never allowed.
-(TEMPEXTRACT) Allowed only if the document permissions allow content extraction; when bit 5 of the user access permissions is set.
-(TEMPACCESS) Allowed only if the document permissions allow content extraction, including for accessibility purposes; when bits 5 or 10 of the user access permissions are set, or both.
+(TEMPEXTRACT) Allowed only if the document permissions allow content extraction; when bit 5 of the user access permissions (see Table 22) is set.
+(TEMPACCESS) Allowed only if the document permissions allow content extraction, including for accessibility purposes; when bits 5 or 10 of the user access permissions (see Table 22) are set, or both.
 (TEMPALWAYS) Always allowed.
 Default value: (TEMPNEVER).
 An unrecognized value is treated as (TEMPNEVER).

@@ -15,6 +15,6 @@ role ISO_32000::Three-D_reference {
 - (Optional) The type of PDF object that this dictionary describes; if present, is 3DRef for a 3D reference dictionary.
 
 =head2 3DD [stream]
-- (Required) The 3D stream containing the specification of the 3D artwork.
+- (Required) The 3D stream (see 13.6.3, “3D Streams”) containing the specification of the 3D artwork.
 
 =end pod

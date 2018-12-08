@@ -15,7 +15,7 @@
       [
         "N",
         "name",
-        "(Required) The name of the action that is performed."
+        "(Required) The name of the action that is performed (see Table 211)."
       ]
     ]
   }

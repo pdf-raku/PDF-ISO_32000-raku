@@ -15,7 +15,7 @@
       [
         "Subtype",
         "name",
-        "(Required) The style of lighting scheme described by this dictionary."
+        "(Required) The style of lighting scheme described by this dictionary (see Table 310)."
       ]
     ]
   }

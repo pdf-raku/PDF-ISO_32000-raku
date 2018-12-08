@@ -25,7 +25,7 @@
       [
         "Encoding",
         "name or stream",
-        "(Required) The name of a predefined CMap, or a stream containing a CMap that maps character codes to font numbers and CIDs. If the descendant is a Type 2 CIDFont whose associated TrueType font program is not embedded in the PDF file, the Encoding entry is a predefined CMap name."
+        "(Required) The name of a predefined CMap, or a stream containing a CMap that maps character codes to font numbers and CIDs. If the descendant is a Type 2 CIDFont whose associated TrueType font program is not embedded in the PDF file, the Encoding entry is a predefined CMap name (see 9.7.4.2, \"Glyph Selection in CIDFonts\")."
       ],
       [
         "DescendantFonts",
@@ -35,7 +35,7 @@
       [
         "ToUnicode",
         "stream",
-        "(Optional) A stream containing a CMap file that maps character codes to Unicode values."
+        "(Optional) A stream containing a CMap file that maps character codes to Unicode values (see 9.10, \"Extraction of Text Content\")."
       ]
     ]
   }

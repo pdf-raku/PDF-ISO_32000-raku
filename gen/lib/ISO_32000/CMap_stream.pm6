@@ -21,7 +21,7 @@ role ISO_32000::CMap_stream {
 - (Required) The name of the CMap. It is the same as the value of CMapName in the CMap file.
 
 =head2 CIDSystemInfo [dictionary]
-- (Required) A dictionary containing entries that define the character collection for the CIDFont or CIDFonts associated with the CMap.
+- (Required) A dictionary (see 9.7.3, "CIDSystemInfo Dictionaries") containing entries that define the character collection for the CIDFont or CIDFonts associated with the CMap.
 The value of this entry is the same as the value of CIDSystemInfo in the CMap file. (However, it does not need to match the values of CIDSystemInfo for the Identity-H or Identity-V CMaps.)
 
 =head2 WMode [integer]

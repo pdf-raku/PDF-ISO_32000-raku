@@ -23,6 +23,6 @@ role ISO_32000::Object_stream {
 - (Required) The byte offset in the decoded stream of the first compressed object.
 
 =head2 Extends [stream]
-- (Optional) A reference to another object stream, of which the current object stream is considered an extension. Both streams are considered part of a collection of object streams. A given collection consists of a set of streams whose Extends links form a directed acyclic graph.
+- (Optional) A reference to another object stream, of which the current object stream is considered an extension. Both streams are considered part of a collection of object streams (see below). A given collection consists of a set of streams whose Extends links form a directed acyclic graph.
 
 =end pod

@@ -25,7 +25,7 @@ The dictionary shall include either an Annotation or a T entry but not both.
 
 =head2 Operation [name]
 - (Optional) The operation that is performed on the movie:
-PlayStart playing the movie, using the play mode specified by the dictionary’s Mode entry. If the movie is currently paused, it is repositioned to the beginning before playing (or to the starting point specified by the dictionary’s Start entry, if present).
+PlayStart playing the movie, using the play mode specified by the dictionary’s Mode entry (see Table 296). If the movie is currently paused, it is repositioned to the beginning before playing (or to the starting point specified by the dictionary’s Start entry, if present).
 Stop Stop playing the movie.
 Pause Pause a playing movie.
 Resume Resume a paused movie.

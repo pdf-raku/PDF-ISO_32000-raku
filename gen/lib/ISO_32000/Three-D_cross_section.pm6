@@ -20,11 +20,11 @@ role ISO_32000::Three-D_cross_section {
 - (Optional) The type of PDF object that this dictionary describes; if present, is 3DCrossSection for a 3D cross section dictionary.
 
 =head2 C [array]
-- (Optional) A three element array specifying the center of rotation on the cutting plane in world space coordinates.
+- (Optional) A three element array specifying the center of rotation on the cutting plane in world space coordinates (see 13.6.5, “Coordinate Systems for 3D”).
 Default value: [0 0 0] specifying a cutting plane rotating about the origin of the world space.
 
 =head2 O [array]
-- (Required) A three-element array specifying the orientation of the cutting plane in world space, where each value represents the orientation in relation to the X, Y, and Z axes, respectively. Exactly one of the values is null, indicating an initial state of the cutting plane that is perpendicular to the corresponding axis and clipping all geometry on the positive side of that axis. The other two values is numbers indicating the rotation of the plane, in degrees, around their corresponding axes. The order in which these rotations are applied shall match the order in which the values appear in the array.
+- (Required) A three-element array specifying the orientation of the cutting plane in world space, where each value represents the orientation in relation to the X, Y, and Z axes, respectively (see 13.6.5, “Coordinate Systems for 3D”). Exactly one of the values is null, indicating an initial state of the cutting plane that is perpendicular to the corresponding axis and clipping all geometry on the positive side of that axis. The other two values is numbers indicating the rotation of the plane, in degrees, around their corresponding axes. The order in which these rotations are applied shall match the order in which the values appear in the array.
 Default value: [null 0 0] specifying a cutting plane that is perpendicular to the X axis and coplanar with the Y and Z axes.
 
 =head2 PO [number]

@@ -20,12 +20,12 @@
       [
         "IDTree",
         "name tree",
-        "(Required if any structure elements have element identifiers) A name tree that maps element identifiers to the structure elements they denote."
+        "(Required if any structure elements have element identifiers) A name tree that maps element identifiers (see Table 323) to the structure elements they denote."
       ],
       [
         "ParentTree",
         "number tree",
-        "(Required if any structure element contains content items) A number tree used in finding the structure elements to which content items belong. Each integer key in the number tree shall correspond to a single page of the document or to an individual object (such as an annotation or an XObject) that is a content item in its own right. The integer key is the value of the StructParent or StructParents entry in that object. The form of the associated value shall depend on the nature of the object:\nFor an object that is a content item in its own right, the value is an indirect reference to the object’s parent element (the structure element that contains it as a content item).\nFor a page object or content stream containing marked-content sequences that are content items, the value is an array of references to the parent elements of those marked-content sequences.."
+        "(Required if any structure element contains content items) A number tree (see 7.9.7, “Number Trees”) used in finding the structure elements to which content items belong. Each integer key in the number tree shall correspond to a single page of the document or to an individual object (such as an annotation or an XObject) that is a content item in its own right. The integer key is the value of the StructParent or StructParents entry in that object (see 14.7.4.4, “Finding Structure Elements from Content Items”). The form of the associated value shall depend on the nature of the object:\nFor an object that is a content item in its own right, the value is an indirect reference to the object’s parent element (the structure element that contains it as a content item).\nFor a page object or content stream containing marked-content sequences that are content items, the value is an array of references to the parent elements of those marked-content sequences.\nSee\n14.7.4.4, “Finding Structure Elements from Content Items”\nfor further discussion."
       ],
       [
         "ParentTreeNextKey",
@@ -35,12 +35,12 @@
       [
         "RoleMap",
         "dictionary",
-        "(Optional) A dictionary that shall map the names of structure types used in the document to their approximate equivalents in the set of standard structure types."
+        "(Optional) A dictionary that shall map the names of structure types used in the document to their approximate equivalents in the set of standard structure types (see 14.8.4, “Standard Structure Types”)."
       ],
       [
         "ClassMap",
         "dictionary",
-        "(Optional) A dictionary that shall map name objects designating attribute classes to the corresponding attribute objects or arrays of attribute objects."
+        "(Optional) A dictionary that shall map name objects designating attribute classes to the corresponding attribute objects or arrays of attribute objects (see 14.7.5.2, “Attribute Classes”)."
       ]
     ]
   }

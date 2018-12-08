@@ -15,6 +15,6 @@ role ISO_32000::Attribute_object_for_user_properties {
 - (Required) The attribute owner. Shall be UserProperties.
 
 =head2 P [array]
-- (Required) An array of dictionaries, each of which represents a user property.
+- (Required) An array of dictionaries, each of which represents a user property (see Table 329).
 
 =end pod

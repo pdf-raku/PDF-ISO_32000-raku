@@ -15,7 +15,7 @@
       [
         "Nums",
         "array",
-        "(Root and leaf nodes only; is required in leaf nodes; present in the root node if and only if Kids is not present) Shall be an array of the form\n[ key 1 value 1 key 2 value 2 … key n value n ]\nwhere each key i is an integer and the corresponding value i is the object associated with that key. The keys is sorted in numerical order, analogously to the arrangement of keys in a name tree as described in\nLink 7.9.6, \"Name Trees.\""
+        "(Root and leaf nodes only; is required in leaf nodes; present in the root node if and only if Kids is not present) Shall be an array of the form\n[ key 1 value 1 key 2 value 2 … key n value n ]\nwhere each key i is an integer and the corresponding value i is the object associated with that key. The keys is sorted in numerical order, analogously to the arrangement of keys in a name tree as described in\n7.9.6, \"Name Trees.\""
       ],
       [
         "Limits",

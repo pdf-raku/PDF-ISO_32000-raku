@@ -20,6 +20,6 @@ role ISO_32000::Requirement_handler {
 A value of NoOp allows older conforming readers to ignore unrecognized requirements. This value does not add any specific entry to the requirement handler dictionary.
 
 =head2 Script [text string]
-- (Optional; valid only if the S entry has a value of JS) The name of a document-level JavaScript action stored in the document name dictionary. If the conforming reader understands the parent requirement dictionary and can verify the requirement specified in that dictionary, it shall disable execution of the requirement handler identified in this dictionary.
+- (Optional; valid only if the S entry has a value of JS) The name of a document-level JavaScript action stored in the document name dictionary (see 7.7.4, “Name Dictionary”). If the conforming reader understands the parent requirement dictionary and can verify the requirement specified in that dictionary, it shall disable execution of the requirement handler identified in this dictionary.
 
 =end pod

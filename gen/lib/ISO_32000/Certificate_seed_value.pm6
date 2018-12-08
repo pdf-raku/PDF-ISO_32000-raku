@@ -26,10 +26,10 @@ role ISO_32000::Certificate_seed_value {
 Default value: 0.
 
 =head2 Subject [array]
-- (Optional) An array of byte strings containing DER-encoded X.509v3 certificates that are acceptable for signing. X.509v3 certificates are described in RFC 3280, Internet X.509 Public Key Infrastructure, Certificate and Certificate Revocation List (CRL) Profile. The value of the corresponding flag in the Ff entry indicates whether this is a required constraint.
+- (Optional) An array of byte strings containing DER-encoded X.509v3 certificates that are acceptable for signing. X.509v3 certificates are described in RFC 3280, Internet X.509 Public Key Infrastructure, Certificate and Certificate Revocation List (CRL) Profile (see the Bibliography). The value of the corresponding flag in the Ff entry indicates whether this is a required constraint.
 
 =head2 SubjectDN [array of dictionaries]
-- (Optional; PDF 1.7) An array of dictionaries, each specifying a Subject Distinguished Name (DN) that is present within the certificate for it to be acceptable for signing. The certificate ultimately used for the digital signature shall contain all the attributes specified in each of the dictionaries in this array. (PDF keys and values are mapped to certificate attributes and values.) The certificate is not constrained to use only attribute entries from these dictionaries but may contain additional attributes.The Subject Distinguished Name is described in RFC 3280. The key can be any legal attribute identifier (OID). Attribute names shall contain characters in the set a-z A-Z 0-9 and PERIOD.
+- (Optional; PDF 1.7) An array of dictionaries, each specifying a Subject Distinguished Name (DN) that is present within the certificate for it to be acceptable for signing. The certificate ultimately used for the digital signature shall contain all the attributes specified in each of the dictionaries in this array. (PDF keys and values are mapped to certificate attributes and values.) The certificate is not constrained to use only attribute entries from these dictionaries but may contain additional attributes.The Subject Distinguished Name is described in RFC 3280 (see the Bibliography). The key can be any legal attribute identifier (OID). Attribute names shall contain characters in the set a-z A-Z 0-9 and PERIOD.
 Certificate attribute names are used as key names in the dictionaries in this array. Values of the attributes are used as values of the keys. Values is text strings.
 The value of the corresponding flag in the Ff entry indicates whether this entry is a required constraint.
 
@@ -62,7 +62,7 @@ This field shall only be used if the value of Issuer is not empty. The certifica
 - (Optional; PDF 1.7) A name indicating the usage of the URL entry. There are standard uses and there can be implementation-specific uses for this URL. The following value specifies a valid standard usage:
 Browser – The URL references content that is displayed in a web browser to allow enrolling for a new credential if a matching credential is not found. The Ff attribute’s URL bit is ignored for this usage.
 Third parties may extend the use of this attribute with their own attribute values, which shall conform to the guidelines described in
-Link Annex E
+Annex E
 .
 The default value is Browser.
 

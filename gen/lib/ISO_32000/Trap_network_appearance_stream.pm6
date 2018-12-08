@@ -14,10 +14,10 @@ role ISO_32000::Trap_network_appearance_stream {
 =head1 Methods (Entries)
 
 =head2 PCM [name]
-- (Required) The name of the process colour model that was assumed when this trap network was created; equivalent to the PostScript page device parameter ProcessColorModel. Valid values are DeviceGray, DeviceRGB, DeviceCMYK, DeviceCMY, DeviceRGBK, and DeviceN.
+- (Required) The name of the process colour model that was assumed when this trap network was created; equivalent to the PostScript page device parameter ProcessColorModel (see Section 6.2.5 of the PostScript Language Reference, Third Edition). Valid values are DeviceGray, DeviceRGB, DeviceCMYK, DeviceCMY, DeviceRGBK, and DeviceN.
 
 =head2 SeparationColorNames [array]
-- (Optional) An array of names identifying the colorants that were assumed when this network was created; equivalent to the PostScript page device parameter of the same name. Colourants implied by the process colour model PCM are available automatically and need not be explicitly declared. If this entry is absent, the colorants implied by PCM is assumed.
+- (Optional) An array of names identifying the colorants that were assumed when this network was created; equivalent to the PostScript page device parameter of the same name (see Section 6.2.5 of the PostScript Language Reference, Third Edition). Colourants implied by the process colour model PCM are available automatically and need not be explicitly declared. If this entry is absent, the colorants implied by PCM is assumed.
 
 =head2 TrapRegions [array]
 - (Optional) An array of indirect references to TrapRegion objects defining the page’s trapping zones and the associated trapping parameters, as described in Adobe Technical Note 5620, Portable Job Ticket Format. These references refer to objects comprising portions of a PJTF job ticket that is embedded in the PDF file. When the trapping zones and parameters are defined by an external job ticket (or by some other means, such as JDF), this entry is absent.

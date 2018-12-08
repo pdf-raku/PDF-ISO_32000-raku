@@ -20,7 +20,7 @@
       [
         "PaintType",
         "integer",
-        "(Required) A code that determines how the colour of the pattern cell is specified:\na) Coloured tiling pattern. The pattern’s content stream shall specifythe colours used to paint the pattern cell. When the content stream begins execution, the current colour is the one that was initially in effect in the pattern’s parent content stream. This is similar to the definition of the pattern matrix.\nb)Uncoloured tiling pattern. The pattern’s content stream shall not specify any colour information. Instead, the entire pattern cell is painted with a separately specified colour each time the pattern is used. Essentially, the content stream describes a stencil through which the current colour is poured. The content stream shall not invoke operators that specify colours or other colour-related parameters in the graphics state; otherwise, an error occurs (see"
+        "(Required) A code that determines how the colour of the pattern cell is specified:\na) Coloured tiling pattern. The pattern’s content stream shall specifythe colours used to paint the pattern cell. When the content stream begins execution, the current colour is the one that was initially in effect in the pattern’s parent content stream. This is similar to the definition of the pattern matrix; see\n8.7.2, \"General Properties of Patterns\"\n.\nb)Uncoloured tiling pattern. The pattern’s content stream shall not specify any colour information. Instead, the entire pattern cell is painted with a separately specified colour each time the pattern is used. Essentially, the content stream describes a stencil through which the current colour is poured. The content stream shall not invoke operators that specify colours or other colour-related parameters in the graphics state; otherwise, an error occurs (see"
       ],
       [
         "TilingType",
@@ -45,12 +45,12 @@
       [
         "Resources",
         "dictionary",
-        "(Required) A resource dictionary that shall contain all of the named resources required by the pattern’s content stream."
+        "(Required) A resource dictionary that shall contain all of the named resources required by the pattern’s content stream (see 7.8.3, \"Resource Dictionaries\")."
       ],
       [
         "Matrix",
         "array",
-        "(Optional) An array of six numbers specifying the pattern matrix. Default value: the identity matrix [ 1 0 0 1 0 0 ]."
+        "(Optional) An array of six numbers specifying the pattern matrix (see 8.7.2, \"General Properties of Patterns\"). Default value: the identity matrix [ 1 0 0 1 0 0 ]."
       ]
     ]
   }

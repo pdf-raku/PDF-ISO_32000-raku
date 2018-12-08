@@ -10,7 +10,7 @@
       [
         "Registry",
         "ASCII string",
-        "(Required) A string identifying the issuer of the character collection. For information about assigning a registry identifier, contact the Adobe Solutions Network or consult the ASN Web site."
+        "(Required) A string identifying the issuer of the character collection. For information about assigning a registry identifier, contact the Adobe Solutions Network or consult the ASN Web site (see the Bibliography)."
       ],
       [
         "Ordering",

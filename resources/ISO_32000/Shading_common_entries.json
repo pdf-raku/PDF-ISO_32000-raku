@@ -15,7 +15,7 @@
       [
         "ColorSpace",
         "name or array",
-        "(Required) The colour space in which colour values shall beexpressed. This may be any device, CIE-based, or special colour space except a Pattern space.."
+        "(Required) The colour space in which colour values shall beexpressed. This may be any device, CIE-based, or special colour space except a Pattern space. See\n8.7.4.4, \"Colour Space: Special Considerations\"\nfor further information."
       ],
       [
         "Background",

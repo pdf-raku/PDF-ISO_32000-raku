@@ -15,12 +15,12 @@
       [
         "MH",
         "dictionary",
-        "(Optional) A dictionary whose entries is honoured for the media screen parameters to be considered viable."
+        "(Optional) A dictionary whose entries (see Table 283) is honoured for the media screen parameters to be considered viable."
       ],
       [
         "BE",
         "dictionary",
-        "(Optional) A dictionary whose entries should be honoured."
+        "(Optional) A dictionary whose entries (see Table 283) should be honoured."
       ]
     ]
   }

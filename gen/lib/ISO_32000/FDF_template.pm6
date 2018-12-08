@@ -13,10 +13,10 @@ role ISO_32000::FDF_template {
 =head1 Methods (Entries)
 
 =head2 TRef [dictionary]
-- (Required) A named page reference dictionary that shall specify the location of the template.
+- (Required) A named page reference dictionary (see Table 250) that shall specify the location of the template.
 
 =head2 Fields [array]
-- (Optional) An array of references to FDF field dictionaries describing the root fields that is imported (those with no ancestors in the field hierarchy).
+- (Optional) An array of references to FDF field dictionaries (see Table 246) describing the root fields that is imported (those with no ancestors in the field hierarchy).
 
 =head2 Rename [boolean]
 - (Optional) A flag that shall specify whether fields imported from the template is renamed in the event of name conflicts with existing fields; see the Note in this sub-clause for further discussion. Default value: true.

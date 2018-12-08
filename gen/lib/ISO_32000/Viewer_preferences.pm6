@@ -42,7 +42,7 @@ role ISO_32000::Viewer_preferences {
 - (Optional) A flag specifying whether to position the document’s window in the center of the screen. Default value: false.
 
 =head2 DisplayDocTitle [boolean]
-- (Optional; PDF 1.4) A flag specifying whether the window’s title bar should display the document title taken from the Title entry of the document information dictionary. If false, the title bar should instead display the name of the PDF file containing the document. Default value: false.
+- (Optional; PDF 1.4) A flag specifying whether the window’s title bar should display the document title taken from the Title entry of the document information dictionary (see 14.3.3, “Document Information Dictionary”). If false, the title bar should instead display the name of the PDF file containing the document. Default value: false.
 
 =head2 NonFullScreenPageMode [name]
 - (Optional) The document’s page mode, specifying how to display the document on exiting full-screen mode:
@@ -50,7 +50,7 @@ UseNone Neither document outline nor thumbnail images visible
 UseOutlines Document outline visible
 UseThumbs Thumbnail images visible
 UseOC Optional content group panel visible
-This entry is meaningful only if the value of the PageMode entry in the Catalog dictionary is FullScreen; it is ignored otherwise. Default value: UseNone.
+This entry is meaningful only if the value of the PageMode entry in the Catalog dictionary (see 7.7.2, “Document Catalog”) is FullScreen; it is ignored otherwise. Default value: UseNone.
 
 =head2 Direction [name]
 - (Optional; PDF 1.3) The predominant reading order for text:
@@ -59,35 +59,35 @@ R2L Right to left (including vertical writing systems, such as Chinese, Japanese
 This entry has no direct effect on the document’s contents or page numbering but may be used to determine the relative positioning of pages when displayed side by side or printed n-up. Default value: L2R.
 
 =head2 ViewArea [name]
-- (Optional; PDF 1.4) The name of the page boundary representing the area of a page that is displayed when viewing the document on the screen. The value is the key designating the relevant page boundary in the page object. If the specified page boundary is not defined in the page object, its default value is used, as specified in
-Link Table 30
+- (Optional; PDF 1.4) The name of the page boundary representing the area of a page that is displayed when viewing the document on the screen. The value is the key designating the relevant page boundary in the page object (see 7.7.3, “Page Tree” and 14.11.2, “Page Boundaries”). If the specified page boundary is not defined in the page object, its default value is used, as specified in
+Table 30
 . Default value: CropBox.
 This entry is intended primarily for use by prepress applications that interpret or manipulate the page boundaries as described in
-Link 14.11.2, “Page Boundaries.”
+14.11.2, “Page Boundaries.”
 NOTE 1 Most conforming readers disregard it.
 
 =head2 ViewClip [name]
-- (Optional; PDF 1.4) The name of the page boundary to which the contents of a page is clipped when viewing the document on the screen. The value is the key designating the relevant page boundary in the page object. If the specified page boundary is not defined in the page object, its default value is used, as specified in
-Link Table 30
+- (Optional; PDF 1.4) The name of the page boundary to which the contents of a page is clipped when viewing the document on the screen. The value is the key designating the relevant page boundary in the page object (see 7.7.3, “Page Tree” and 14.11.2, “Page Boundaries”). If the specified page boundary is not defined in the page object, its default value is used, as specified in
+Table 30
 . Default value: CropBox.
 This entry is intended primarily for use by prepress applications that interpret or manipulate the page boundaries as described in
-Link 14.11.2, “Page Boundaries.”
+14.11.2, “Page Boundaries.”
 NOTE 2 Most conforming readers disregard it.
 
 =head2 PrintArea [name]
-- (Optional; PDF 1.4) The name of the page boundary representing the area of a page that is rendered when printing the document. The value is the key designating the relevant page boundary in the page object. If the specified page boundary is not defined in the page object, its default value is used, as specified in
-Link Table 30
+- (Optional; PDF 1.4) The name of the page boundary representing the area of a page that is rendered when printing the document. The value is the key designating the relevant page boundary in the page object (see 7.7.3, “Page Tree” and 14.11.2, “Page Boundaries”). If the specified page boundary is not defined in the page object, its default value is used, as specified in
+Table 30
 . Default value: CropBox.
 This entry is intended primarily for use by prepress applications that interpret or manipulate the page boundaries as described in
-Link 14.11.2, “Page Boundaries.”
+14.11.2, “Page Boundaries.”
 NOTE 3 Most conforming readers disregard it.
 
 =head2 PrintClip [name]
-- (Optional; PDF 1.4) The name of the page boundary to which the contents of a page is clipped when printing the document. The value is the key designating the relevant page boundary in the page object. If the specified page boundary is not defined in the page object, its default value is used, as specified in
-Link Table 30
+- (Optional; PDF 1.4) The name of the page boundary to which the contents of a page is clipped when printing the document. The value is the key designating the relevant page boundary in the page object (see 7.7.3, “Page Tree” and 14.11.2, “Page Boundaries”). If the specified page boundary is not defined in the page object, its default value is used, as specified in
+Table 30
 . Default value: CropBox.
 This entry is intended primarily for use by prepress applications that interpret or manipulate the page boundaries as described in
-Link 14.11.2, “Page Boundaries.”
+14.11.2, “Page Boundaries.”
 NOTE 4 Most conforming readers disregard it.
 
 =head2 PrintScaling [name]

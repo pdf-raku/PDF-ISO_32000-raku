@@ -37,7 +37,7 @@ ALaw A-law–encoded samples
 Default value: Raw.
 
 =head2 CO [name]
-- (Optional) The sound compression format used on the sample data. If this entry is absent, sound compression shall not be used; the data contains sampled waveforms that is played at R samples per second per channel.
+- (Optional) The sound compression format used on the sample data. (This is separate from any stream compression specified by the sound object’s Filterentry; see Table 5 and 7.4, “Filters.”) If this entry is absent, sound compression shall not be used; the data contains sampled waveforms that is played at R samples per second per channel.
 
 =head2 CP [(various)]
 - (Optional) Optional parameters specific to the sound compression format used.

@@ -30,7 +30,7 @@ role ISO_32000::Annotation_additional_actions {
 
 =head2 U [dictionary]
 - (Optional; PDF 1.2) An action that is performed when the mouse button is released inside the annotation’s active area.
-For backward compatibility, the A entry in an annotation dictionary, if present, takes precedence over this entry.
+For backward compatibility, the A entry in an annotation dictionary, if present, takes precedence over this entry (see Table 168).
 
 =head2 Fo [dictionary]
 - (Optional; PDF 1.2; widget annotations only) An action that is performed when the annotation receives the input focus.

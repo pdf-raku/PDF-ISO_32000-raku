@@ -19,7 +19,7 @@ role ISO_32000::Media_screen_parameters_MH-BE {
 0 A floating window
 1 A full-screen window that obscures all other windows
 2 A hidden window
-3 The rectangle occupied by the screen annotation associated with the media rendition
+3 The rectangle occupied by the screen annotation (see 12.5.6.18, “Screen Annotations”) associated with the media rendition
 Default value: 3. Unrecognized value in MH: object is non-viable; in BE: treat as default value.
 
 =head2 B [array]
@@ -35,10 +35,10 @@ A value of 0.0 shall indicate full transparency and shall make B irrelevant. It 
 Default value: 1.0 (fully opaque).
 
 =head2 M [integer]
-- (Optional) A monitor specifier that shall specify which monitor in a multi-monitor system, a floating or full-screen window shall appear on. Ignored for other types.
+- (Optional) A monitor specifier (see Table 293) that shall specify which monitor in a multi-monitor system, a floating or full-screen window shall appear on. Ignored for other types.
 Default value: 0 (document monitor). Unrecognized value in MH: object is non-viable; in BE: treat as default value.
 
 =head2 F [dictionary]
-- (Required if the value of W is 0; otherwise ignored) A floating window parameters dictionary that shall specify the size, position, and options used in displaying floating windows.
+- (Required if the value of W is 0; otherwise ignored) A floating window parameters dictionary (see Table 284) that shall specify the size, position, and options used in displaying floating windows.
 
 =end pod

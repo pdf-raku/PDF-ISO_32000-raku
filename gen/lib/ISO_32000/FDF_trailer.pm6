@@ -11,6 +11,6 @@ role ISO_32000::FDF_trailer {
 =head1 Methods (Entries)
 
 =head2 Root [dictionary]
-- (Required; is an indirect reference) The Catalog object for this FDF file.
+- (Required; is an indirect reference) The Catalog object for this FDF file (see 12.7.7.3, “FDF Catalog”).
 
 =end pod

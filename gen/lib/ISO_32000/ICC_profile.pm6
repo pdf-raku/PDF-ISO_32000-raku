@@ -24,6 +24,6 @@ There shall not be conversion of source colour values, such as a tint transforma
 - (Optional) An array of 2 × N numbers [ min 0 max 0 min 1 max 1 … ] that shall specify the minimum and maximum valid values of the corresponding colour components. These values shall match the information in the ICC profile. Default value: [ 0.0 1.0 0.0 1.0 … ].
 
 =head2 Metadata [stream]
-- (Optional; PDF 1.4) A metadata stream that shall contain metadata for the colour space.
+- (Optional; PDF 1.4) A metadata stream that shall contain metadata for the colour space (see 14.3.2, "Metadata Streams").
 
 =end pod

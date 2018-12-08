@@ -26,7 +26,9 @@ role ISO_32000::Type_1_Pattern {
 
 =head2 PaintType [integer]
 - (Required) A code that determines how the colour of the pattern cell is specified:
-a) Coloured tiling pattern. The pattern’s content stream shall specifythe colours used to paint the pattern cell. When the content stream begins execution, the current colour is the one that was initially in effect in the pattern’s parent content stream. This is similar to the definition of the pattern matrix.
+a) Coloured tiling pattern. The pattern’s content stream shall specifythe colours used to paint the pattern cell. When the content stream begins execution, the current colour is the one that was initially in effect in the pattern’s parent content stream. This is similar to the definition of the pattern matrix; see
+8.7.2, "General Properties of Patterns"
+.
 b)Uncoloured tiling pattern. The pattern’s content stream shall not specify any colour information. Instead, the entire pattern cell is painted with a separately specified colour each time the pattern is used. Essentially, the content stream describes a stencil through which the current colour is poured. The content stream shall not invoke operators that specify colours or other colour-related parameters in the graphics state; otherwise, an error occurs (see
 
 =head2 TilingType [integer]
@@ -47,9 +49,9 @@ NOTEXStep and YStep may differ from the dimensions of the pattern cell implied b
 XStep and YStep may be either positive or negative but shall not bezero.
 
 =head2 Resources [dictionary]
-- (Required) A resource dictionary that shall contain all of the named resources required by the pattern’s content stream.
+- (Required) A resource dictionary that shall contain all of the named resources required by the pattern’s content stream (see 7.8.3, "Resource Dictionaries").
 
 =head2 Matrix [array]
-- (Optional) An array of six numbers specifying the pattern matrix. Default value: the identity matrix [ 1 0 0 1 0 0 ].
+- (Optional) An array of six numbers specifying the pattern matrix (see 8.7.2, "General Properties of Patterns"). Default value: the identity matrix [ 1 0 0 1 0 0 ].
 
 =end pod

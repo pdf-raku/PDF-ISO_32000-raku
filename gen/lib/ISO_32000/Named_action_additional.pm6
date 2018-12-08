@@ -15,6 +15,6 @@ role ISO_32000::Named_action_additional {
 - (Required) The type of action that this dictionary describes; is Named for a named action.
 
 =head2 N [name]
-- (Required) The name of the action that is performed.
+- (Required) The name of the action that is performed (see Table 211).
 
 =end pod

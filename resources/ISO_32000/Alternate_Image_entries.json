@@ -20,7 +20,7 @@
       [
         "OC",
         "dictionary",
-        "(Optional; PDF 1.5) An optional content group or optional content membership dictionary that facilitates the selection of which alternate image to use."
+        "(Optional; PDF 1.5) An optional content group (see 8.11.2, \"Optional Content Groups\") or optional content membership dictionary (see 8.11.2.2, \"Optional Content Membership Dictionaries\") that facilitates the selection of which alternate image to use."
       ]
     ]
   }

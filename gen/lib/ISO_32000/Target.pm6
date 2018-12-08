@@ -24,7 +24,7 @@ role ISO_32000::Target {
 - (Required if the value of R is C and the target is associated with a file attachment annotation; otherwise, it is absent) If the value is an integer, it specifies the page number (zero-based) in the current document containing the file attachment annotation. If the value is a string, it specifies a named destination in the current document that provides the page number of the file attachment annotation.
 
 =head2 A [integer or text string]
-- (Required if the value of R is C and the target is associated with a file attachment annotation; otherwise, it is absent) If the value is an integer, it specifies the index (zero-based) of the annotation in the Annots array of the page specified by P. If the value is a text string, it specifies the value of NM in the annotation dictionary.
+- (Required if the value of R is C and the target is associated with a file attachment annotation; otherwise, it is absent) If the value is an integer, it specifies the index (zero-based) of the annotation in the Annots array (see Table 30) of the page specified by P. If the value is a text string, it specifies the value of NM in the annotation dictionary (see Table 164).
 
 =head2 T [dictionary]
 - (Optional) A target dictionary specifying additional path information to the target document. If this entry is absent, the current document is the target file containing the destination.

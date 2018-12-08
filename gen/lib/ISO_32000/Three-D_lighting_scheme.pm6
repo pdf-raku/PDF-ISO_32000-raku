@@ -15,6 +15,6 @@ role ISO_32000::Three-D_lighting_scheme {
 - (Optional) The type of PDF object that this dictionary describes; if present, is 3DLightingScheme.
 
 =head2 Subtype [name]
-- (Required) The style of lighting scheme described by this dictionary.
+- (Required) The style of lighting scheme described by this dictionary (see Table 310).
 
 =end pod

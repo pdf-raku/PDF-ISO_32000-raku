@@ -20,7 +20,7 @@
       [
         "D",
         "name, byte string, or array",
-        "(Required) The destination in the target to jump to."
+        "(Required) The destination in the target to jump to (see 12.3.2, “Destinations”)."
       ],
       [
         "NewWindow",
@@ -30,7 +30,7 @@
       [
         "T",
         "dictionary",
-        "(Optional if F is present; otherwise required) A target dictionary specifying path information to the target document. Each target dictionary specifies one element in the full path to the target and may have nested target dictionaries specifying additional elements."
+        "(Optional if F is present; otherwise required) A target dictionary (see Table 202) specifying path information to the target document. Each target dictionary specifies one element in the full path to the target and may have nested target dictionaries specifying additional elements."
       ]
     ]
   }

@@ -10,7 +10,7 @@
       [
         "Templates",
         "array",
-        "(Required) An array of FDF template dictionaries that shall describe the named pages that serve as templates on the page."
+        "(Required) An array of FDF template dictionaries (see Table 249) that shall describe the named pages that serve as templates on the page."
       ],
       [
         "Info",

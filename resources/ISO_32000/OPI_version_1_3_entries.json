@@ -60,7 +60,7 @@
         "Position",
         "array",
         "%ALDImagePosition",
-        "(Required) An array of eight numbers of the form\n[ ll x ll y ul x ul y ur x ur y lr x lr y ]\nspecifying the location on the page of the cropped image, where (ll x , ll y ) are the user space coordinates of the lower-left corner, (ul x , ul y ) are those of the upper-left corner, (ur x , ur y ) are those of the upper-right corner, and (lr x , lr y ) are those of the lower-right corner. The specified coordinates shall define a parallelogram; that is, they shall satisfy the conditions\nul x ll x ur x lr x\nand\nul y ll y ur y lr y\nThe combination of Position and CropRectdetermines the image’s scaling, rotation, reflection, and skew."
+        "(Required) An array of eight numbers of the form\n[ ll x ll y ul x ul y ur x ur y lr x lr y ]\nspecifying the location on the page of the cropped image, where (ll x , ll y) are the user space coordinates of the lower-left corner, (ul x , ul y) are those of the upper-left corner, (ur x , ur y) are those of the upper-right corner, and (lr x , lr y) are those of the lower-right corner. The specified coordinates shall define a parallelogram; that is, they shall satisfy the conditions\nul x ll x ur x lr x\nand\nul y ll y ur y lr y\nThe combination of Position and CropRectdetermines the image’s scaling, rotation, reflection, and skew."
       ],
       [
         "Resolution",
@@ -78,7 +78,7 @@
         "Color",
         "array",
         "%ALDImageColor",
-        "(Optional) An array of four numbers and a byte string of the form\n[ C M Y K colorName ]\nspecifying the value and name of the colour in which the image is to be rendered. The values of C, M, Y, and K shall all be in the range 0.0 to 1.0. Default value: [ 0.0 0.0 0.0 1.0 ( Black )]."
+        "(Optional) An array of four numbers and a byte string of the form\n[ C M Y K colorName ]\nspecifying the value and name of the colour in which the image is to be rendered. The values of C, M, Y, and K shall all be in the range 0.0 to 1.0. Default value: [ 0.0 0.0 0.0 1.0 (Black)]."
       ],
       [
         "Tint",

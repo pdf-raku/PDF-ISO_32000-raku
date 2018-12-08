@@ -28,6 +28,6 @@ PDF consumers is prepared to encounter other values that may be supported in fut
 - (Optional) The colour of the background, in the colour space defined by CS. Default value: an array [1 1 1] representing the colour white when the value of CS is DeviceRGB.
 
 =head2 EA [boolean]
-- (Optional) If true, the background shall apply to the entire annotation; if false, the background shall apply only to the rectangle specified by the annotation’s 3D view box. Default value: false.
+- (Optional) If true, the background shall apply to the entire annotation; if false, the background shall apply only to the rectangle specified by the annotation’s 3D view box (the 3DB entry in Table 298). Default value: false.
 
 =end pod

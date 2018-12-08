@@ -27,6 +27,6 @@ role ISO_32000::Three-D_external_data {
 - (Required) The 3D view that this markup annotation is associated with. The annotation will be hidden unless this view is currently being used for the 3D annotation specified by 3DA.
 
 =head2 MD5 [byte string]
-- (Optional) A 16-byte string that contains the checksum of the bytes of the 3D stream data that this 3D comment is associated with. The checksum is calculated by applying the standard MD5 message-digest algorithm to the bytes of the stream data. This value is used to determine if artwork data has changed since this 3D comment was created.
+- (Optional) A 16-byte string that contains the checksum of the bytes of the 3D stream data that this 3D comment is associated with. The checksum is calculated by applying the standard MD5 message-digest algorithm (described in Internet RFC 1321, The MD5 Message-Digest Algorithm; see the Bibliography) to the bytes of the stream data. This value is used to determine if artwork data has changed since this 3D comment was created.
 
 =end pod

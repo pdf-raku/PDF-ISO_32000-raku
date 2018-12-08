@@ -15,7 +15,7 @@
       [
         "Colorants",
         "dictionary",
-        "(Optional; PDF 1.4) A dictionary identifying the individual colorants associated with a printer’s mark, such as a colour bar. For each entry in this dictionary, the key is a colorant name and the value is an array defining a Separation colour space for that colorant. The key shall match the colorant name given in that colour space."
+        "(Optional; PDF 1.4) A dictionary identifying the individual colorants associated with a printer’s mark, such as a colour bar. For each entry in this dictionary, the key is a colorant name and the value is an array defining a Separation colour space for that colorant (see 8.6.6.4, “Separation Colour Spaces”). The key shall match the colorant name given in that colour space."
       ]
     ]
   }

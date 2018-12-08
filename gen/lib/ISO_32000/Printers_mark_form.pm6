@@ -15,6 +15,6 @@ role ISO_32000::Printers_mark_form {
 - (Optional; PDF 1.4) A text string representing the printer’s mark in human-readable form and suitable for presentation to the user.
 
 =head2 Colorants [dictionary]
-- (Optional; PDF 1.4) A dictionary identifying the individual colorants associated with a printer’s mark, such as a colour bar. For each entry in this dictionary, the key is a colorant name and the value is an array defining a Separation colour space for that colorant. The key shall match the colorant name given in that colour space.
+- (Optional; PDF 1.4) A dictionary identifying the individual colorants associated with a printer’s mark, such as a colour bar. For each entry in this dictionary, the key is a colorant name and the value is an array defining a Separation colour space for that colorant (see 8.6.6.4, “Separation Colour Spaces”). The key shall match the colorant name given in that colour space.
 
 =end pod

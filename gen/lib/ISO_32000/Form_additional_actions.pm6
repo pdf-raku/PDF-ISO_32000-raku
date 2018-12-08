@@ -23,6 +23,6 @@ role ISO_32000::Form_additional_actions {
 - (Optional; PDF 1.3) A JavaScript action that is performed when the field’s value is changed. This action may check the new value for validity. (The name V stands for “validate.”)
 
 =head2 C [dictionary]
-- (Optional; PDF 1.3) A JavaScript action that is performed to recalculate the value of this field when that of another field changes. (The name C stands for “calculate.”) The order in which the document’s fields are recalculated is defined by the CO entry in the interactive form dictionary.
+- (Optional; PDF 1.3) A JavaScript action that is performed to recalculate the value of this field when that of another field changes. (The name C stands for “calculate.”) The order in which the document’s fields are recalculated is defined by the CO entry in the interactive form dictionary (see 12.7.2, “Interactive Form Dictionary”).
 
 =end pod

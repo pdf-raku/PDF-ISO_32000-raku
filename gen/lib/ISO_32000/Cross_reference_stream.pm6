@@ -26,11 +26,11 @@ The array is sorted in ascending order by object number. Subsections cannot over
 Default value: [0 Size].
 
 =head2 Prev [integer]
--  The byte offset in the decoded stream from the beginning of the file to the beginning of the previous cross-reference stream. This entry has the same function as the Prev entry in the trailer dictionary.
+- (Present only if the file has more than one cross-reference stream; not meaningful in hybrid-reference files; see 7.5.8.4, "Compatibility with Applications That Do Not Support Compressed Reference Streams") The byte offset in the decoded stream from the beginning of the file to the beginning of the previous cross-reference stream. This entry has the same function as the Prev entry in the trailer dictionary (Table 15).
 
 =head2 W [array]
 - (Required) An array of integers representing the size of the fields in a single cross-reference entry.
-Link Table 18
+Table 18
 describes the types of entries and their fields. For PDF 1.5, W always contains three integers; the value of each integer is the number of bytes (in the decoded stream) of the corresponding field.
 EXAMPLE [1 2 1] means that the fields are one byte, two bytes, and one byte, respectively.
 A value of zero for an element in the W array indicates that the corresponding field shall not be present in the stream, and the default value is used, if there is one. If the first element is zero, the type field shall not be present, and shall default to type 1.

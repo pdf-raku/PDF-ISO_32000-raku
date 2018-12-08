@@ -45,17 +45,17 @@
       [
         "Dest",
         "name, byte string, or array",
-        "(Optional; shall not be present if an A entry is present) The destination that is displayed when this item is activated."
+        "(Optional; shall not be present if an A entry is present) The destination that is displayed when this item is activated (see 12.3.2, “Destinations”)."
       ],
       [
         "A",
         "dictionary",
-        "(Optional; PDF 1.1; shall not be present if a Dest entry is present) The action that is performed when this item is activated."
+        "(Optional; PDF 1.1; shall not be present if a Dest entry is present) The action that is performed when this item is activated (see 12.6, “Actions”)."
       ],
       [
         "SE",
         "dictionary",
-        "(Optional; PDF 1.3; is an indirect reference) The structure element to which the item refers.\n(PDF 1.0) An item may also specify a destination (Dest) corresponding to an area of a page where the contents of the designated structure element are displayed."
+        "(Optional; PDF 1.3; is an indirect reference) The structure element to which the item refers (see 14.7.2, “Structure Hierarchy”).\n(PDF 1.0) An item may also specify a destination (Dest) corresponding to an area of a page where the contents of the designated structure element are displayed."
       ],
       [
         "C",
@@ -65,7 +65,7 @@
       [
         "F",
         "integer",
-        "(Optional; PDF 1.4) A set of flags specifying style characteristics for displaying the outline item’s text. Default value: 0."
+        "(Optional; PDF 1.4) A set of flags specifying style characteristics for displaying the outline item’s text (see Table 154). Default value: 0."
       ]
     ]
   }

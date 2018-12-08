@@ -18,8 +18,11 @@ role ISO_32000::Square_or_circle_annotation_additional {
 - (Required) The type of annotation that this dictionary describes; is Square or Circle for a square or circle annotation, respectively.
 
 =head2 BS [dictionary]
-- (Optional) A border style dictionary specifying the line width and dash pattern that is used in drawing the rectangle or ellipse.
-The annotation dictionary’s AP entry, if present, shall take precedence over the Rect and BS entries.”
+- (Optional) A border style dictionary (see Table 166) specifying the line width and dash pattern that is used in drawing the rectangle or ellipse.
+The annotation dictionary’s AP entry, if present, shall take precedence over the Rect and BS entries; see
+Table 168
+and
+12.5.5, “Appearance Streams.”
 
 =head2 IC [array]
 - (Optional; PDF 1.4) An array of numbers that is in the range 0.0 to 1.0 and shall specify the interior color with which to fill the annotation’s rectangle or ellipse. The number of array elements determines the colour space in which the colour is defined:
@@ -29,7 +32,7 @@ The annotation dictionary’s AP entry, if present, shall take precedence over t
 4DeviceCMYK
 
 =head2 BE [dictionary]
-- (Optional; PDF 1.5) A border effect dictionary describing an effect applied to the border described by the BS entry.
+- (Optional; PDF 1.5) A border effect dictionary describing an effect applied to the border described by the BS entry (see Table 167).
 
 =head2 RD [rectangle]
 - (Optional; PDF 1.5) A set of four numbers that shall describe the numerical differences between two rectangles: the Rect entry of the annotation and the actual boundaries of the underlying square or circle. Such a difference may occur in situations where a border effect (described by BE) causes the size of the Rect to increase beyond that of the square or circle.

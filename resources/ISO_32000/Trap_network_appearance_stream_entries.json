@@ -10,12 +10,12 @@
       [
         "PCM",
         "name",
-        "(Required) The name of the process colour model that was assumed when this trap network was created; equivalent to the PostScript page device parameter ProcessColorModel. Valid values are DeviceGray, DeviceRGB, DeviceCMYK, DeviceCMY, DeviceRGBK, and DeviceN."
+        "(Required) The name of the process colour model that was assumed when this trap network was created; equivalent to the PostScript page device parameter ProcessColorModel (see Section 6.2.5 of the PostScript Language Reference, Third Edition). Valid values are DeviceGray, DeviceRGB, DeviceCMYK, DeviceCMY, DeviceRGBK, and DeviceN."
       ],
       [
         "SeparationColorNames",
         "array",
-        "(Optional) An array of names identifying the colorants that were assumed when this network was created; equivalent to the PostScript page device parameter of the same name. Colourants implied by the process colour model PCM are available automatically and need not be explicitly declared. If this entry is absent, the colorants implied by PCM is assumed."
+        "(Optional) An array of names identifying the colorants that were assumed when this network was created; equivalent to the PostScript page device parameter of the same name (see Section 6.2.5 of the PostScript Language Reference, Third Edition). Colourants implied by the process colour model PCM are available automatically and need not be explicitly declared. If this entry is absent, the colorants implied by PCM is assumed."
       ],
       [
         "TrapRegions",

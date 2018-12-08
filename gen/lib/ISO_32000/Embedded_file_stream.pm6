@@ -17,11 +17,11 @@ role ISO_32000::Embedded_file_stream {
 
 =head2 Subtype [name]
 - (Optional) The subtype of the embedded file. The value of this entry is a first-class name, as defined in
-Link Annex E
-. Names without a registered prefix shall conform to the MIME media type names defined in Internet RFC 2046, Multipurpose Internet Mail Extensions (MIME), Part Two: Media Types, with the provision that characters not allowed in names shall use the 2-character hexadecimal code format described in
-Link 7.3.5, "Name Objects."
+Annex E
+. Names without a registered prefix shall conform to the MIME media type names defined in Internet RFC 2046, Multipurpose Internet Mail Extensions (MIME), Part Two: Media Types (see the Bibliography), with the provision that characters not allowed in names shall use the 2-character hexadecimal code format described in
+7.3.5, "Name Objects."
 
 =head2 Params [dictionary]
-- (Optional) An embedded file parameter dictionary that shall contain additional file-specific information.
+- (Optional) An embedded file parameter dictionary that shall contain additional file-specific information (see Table 46).
 
 =end pod

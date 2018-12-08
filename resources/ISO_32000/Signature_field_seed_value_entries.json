@@ -40,32 +40,32 @@
       [
         "Cert",
         "dictionary",
-        "(Optional) A certificate seed value dictionary containing information about the characteristics of the certificate that is used when signing."
+        "(Optional) A certificate seed value dictionary (see Table 235) containing information about the characteristics of the certificate that is used when signing."
       ],
       [
         "Reasons",
         "array",
-        "(Optional) An array of text strings that specifying possible reasons for signing a document. If specified, the reasons supplied in this entry replace those used by conforming products.\nIf the Reasons array is provided and the Ff entry indicates that Reasons is a required constraint, one of the reasons in the array is used for the signature dictionary; otherwise, signing shall not take place. If the Ff entry indicates Reasons is an optional constraint, one of the reasons in the array may be chosen or a custom reason can be provided.\nIf the Reasons array is omitted or contains a single entry with the value PERIOD (2Eh) and the Ff entry indicates that Reasons is a required constraint, the Reason entry is omitted from the signature dictionary."
+        "(Optional) An array of text strings that specifying possible reasons for signing a document. If specified, the reasons supplied in this entry replace those used by conforming products.\nIf the Reasons array is provided and the Ff entry indicates that Reasons is a required constraint, one of the reasons in the array is used for the signature dictionary; otherwise, signing shall not take place. If the Ff entry indicates Reasons is an optional constraint, one of the reasons in the array may be chosen or a custom reason can be provided.\nIf the Reasons array is omitted or contains a single entry with the value PERIOD (2Eh) and the Ff entry indicates that Reasons is a required constraint, the Reason entry is omitted from the signature dictionary (see Table 252)."
       ],
       [
         "MDP",
         "dictionary",
-        "(Optional; PDF 1.6) A dictionary containing a single entry whose key is P and whose value is an integer between 0 and 3. A value of 0 defines the signature as an author signature. The values 1 through 3 is used for certification signatures and correspond to the value of P in a DocMDP transform parameters dictionary.\nIf this MDP key is not present or the MDP dictionary does not contain a P entry, no rules is defined regarding the type of signature or its permissions."
+        "(Optional; PDF 1.6) A dictionary containing a single entry whose key is P and whose value is an integer between 0 and 3. A value of 0 defines the signature as an author signature (see 12.8, “Digital Signatures”). The values 1 through 3 is used for certification signatures and correspond to the value of P in a DocMDP transform parameters dictionary (see Table 254).\nIf this MDP key is not present or the MDP dictionary does not contain a P entry, no rules is defined regarding the type of signature or its permissions."
       ],
       [
         "TimeStamp",
         "dictionary",
-        "(Optional; PDF 1.6) A time stamp dictionary containing two entries:\nURL An ASCII string specifying the URL of a time-stamping server, providing a time stamp that is compliant with RFC 3161, Internet X.509 Public Key Infrastructure Time-Stamp Protocol.\nFf An integer whose value is 1 (the signature shall have a time stamp) or 0 (the signature need not have a time stamp). Default value: 0.\nNOTE Please."
+        "(Optional; PDF 1.6) A time stamp dictionary containing two entries:\nURL An ASCII string specifying the URL of a time-stamping server, providing a time stamp that is compliant with RFC 3161, Internet X.509 Public Key Infrastructure Time-Stamp Protocol (see the Bibliography).\nFf An integer whose value is 1 (the signature shall have a time stamp) or 0 (the signature need not have a time stamp). Default value: 0.\nNOTE Please see\n12.8.3.3, \"PKCS7 Signatures as used in ISO 32000\"\nfor more details about hashing."
       ],
       [
         "LegalAttestation",
         "array",
-        "(Optional; PDF 1.6) An array of text strings specifying possible legal attestations. The value of the corresponding flag in the Ff entry indicates whether this is a required constraint."
+        "(Optional; PDF 1.6) An array of text strings specifying possible legal attestations (see 12.8.5, “Legal Content Attestations”). The value of the corresponding flag in the Ff entry indicates whether this is a required constraint."
       ],
       [
         "AddRevInfo",
         "boolean",
-        "(Optional; PDF 1.7) A flag indicating whether revocation checking is carried out. If AddRevInfo is true, the conforming processor shall perform the following additional tasks when signing the signature field:\nPerform revocation checking of the certificate (and the corresponding issuing certificates) used to sign.\nInclude the revocation information within the signature value.\nThree SubFilter values have been defined for ISO 32000. For those values the AddRevInfo value is true only if SubFilter is adbe.pkcs7.detached or adbe.pkcs7.sha1. If SubFilter is x509.rsa_sha1, this entry is omitted or set to false. Additional SubFilters may be defined that also use AddRevInfo values.\nIf AddRevInfo is true and the Ff entry indicates this is a required constraint, then the preceding tasks is performed. If they cannot be performed, then signing shall fail.\nDefault value: false\nNOTE 1 Revocation information is carried in the signature data as specified by PCKS7..\nNOTE 2 The trust anchors used are determined by the signature handlers for both creation and validation."
+        "(Optional; PDF 1.7) A flag indicating whether revocation checking is carried out. If AddRevInfo is true, the conforming processor shall perform the following additional tasks when signing the signature field:\nPerform revocation checking of the certificate (and the corresponding issuing certificates) used to sign.\nInclude the revocation information within the signature value.\nThree SubFilter values have been defined for ISO 32000. For those values the AddRevInfo value is true only if SubFilter is adbe.pkcs7.detached or adbe.pkcs7.sha1. If SubFilter is x509.rsa_sha1, this entry is omitted or set to false. Additional SubFilters may be defined that also use AddRevInfo values.\nIf AddRevInfo is true and the Ff entry indicates this is a required constraint, then the preceding tasks is performed. If they cannot be performed, then signing shall fail.\nDefault value: false\nNOTE 1 Revocation information is carried in the signature data as specified by PCKS7. See\n12.8.3.3, \"PKCS7 Signatures as used in ISO 32000\"\n.\nNOTE 2 The trust anchors used are determined by the signature handlers for both creation and validation."
       ]
     ]
   }

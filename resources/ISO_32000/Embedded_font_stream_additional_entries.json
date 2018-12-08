@@ -30,7 +30,7 @@
       [
         "Metadata",
         "stream",
-        "(Optional; PDF 1.4) A metadata stream containing metadata for the embedded font program."
+        "(Optional; PDF 1.4) A metadata stream containing metadata for the embedded font program (see 14.3.2, \"Metadata Streams\")."
       ]
     ]
   }

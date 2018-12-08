@@ -17,7 +17,9 @@ role ISO_32000::Stream_common {
 =head1 Methods (Entries)
 
 =head2 Length [integer]
-- (Required) The number of bytes from the beginning of the line following the keyword stream to the last byte just before the keyword endstream. (There may be an additional EOL marker, preceding endstream, that is not included in the count and is not logically part of the stream data.).
+- (Required) The number of bytes from the beginning of the line following the keyword stream to the last byte just before the keyword endstream. (There may be an additional EOL marker, preceding endstream, that is not included in the count and is not logically part of the stream data.) See
+7.3.8.2, "Stream Extent"
+, for further discussion.
 
 =head2 Filter [name or array]
 - (Optional) The name of a filter that is applied in processing the stream data found between the keywords stream and endstream, or an array of zero, one or several names. Multiple filters is specified in the order in which they are to be applied.

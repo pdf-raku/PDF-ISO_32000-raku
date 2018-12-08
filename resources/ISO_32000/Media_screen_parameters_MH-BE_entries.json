@@ -10,7 +10,7 @@
       [
         "W",
         "integer",
-        "(Optional) The type of window that the media object shall play in:\n0 A floating window\n1 A full-screen window that obscures all other windows\n2 A hidden window\n3 The rectangle occupied by the screen annotation associated with the media rendition\nDefault value: 3. Unrecognized value in MH: object is non-viable; in BE: treat as default value."
+        "(Optional) The type of window that the media object shall play in:\n0 A floating window\n1 A full-screen window that obscures all other windows\n2 A hidden window\n3 The rectangle occupied by the screen annotation (see 12.5.6.18, “Screen Annotations”) associated with the media rendition\nDefault value: 3. Unrecognized value in MH: object is non-viable; in BE: treat as default value."
       ],
       [
         "B",
@@ -25,12 +25,12 @@
       [
         "M",
         "integer",
-        "(Optional) A monitor specifier that shall specify which monitor in a multi-monitor system, a floating or full-screen window shall appear on. Ignored for other types.\nDefault value: 0 (document monitor). Unrecognized value in MH: object is non-viable; in BE: treat as default value."
+        "(Optional) A monitor specifier (see Table 293) that shall specify which monitor in a multi-monitor system, a floating or full-screen window shall appear on. Ignored for other types.\nDefault value: 0 (document monitor). Unrecognized value in MH: object is non-viable; in BE: treat as default value."
       ],
       [
         "F",
         "dictionary",
-        "(Required if the value of W is 0; otherwise ignored) A floating window parameters dictionary that shall specify the size, position, and options used in displaying floating windows."
+        "(Required if the value of W is 0; otherwise ignored) A floating window parameters dictionary (see Table 284) that shall specify the size, position, and options used in displaying floating windows."
       ]
     ]
   }

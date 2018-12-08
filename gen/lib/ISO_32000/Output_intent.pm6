@@ -27,7 +27,7 @@ role ISO_32000::Output_intent {
 
 =head2 OutputConditionIdentifier [text string]
 - (Required) A text string identifying the intended output device or production condition in human- or machine-readable form. If human-readable, this string may be used in lieu of an OutputCondition string for presentation to the user.
-A typical value for this entry may be the name of a production condition maintained in an industry-standard registry such as the ICC Characterization Data Registry. If the designated condition matches that in effect at production time, the production software is responsible for providing the corresponding ICC profile as defined in the registry.
+A typical value for this entry may be the name of a production condition maintained in an industry-standard registry such as the ICC Characterization Data Registry (see the Bibliography). If the designated condition matches that in effect at production time, the production software is responsible for providing the corresponding ICC profile as defined in the registry.
 If the intended production condition is not a recognized standard, the value of this entry may be Custom or an application-specific, machine-readable name. The DestOutputProfile entry defines the ICC profile, and the Info entry is used for further human-readable identification.
 
 =head2 RegistryName [text string]
@@ -38,6 +38,6 @@ If the intended production condition is not a recognized standard, the value of 
 
 =head2 DestOutputProfile [stream]
 - (Required if OutputConditionIdentifier does not specify a standard production condition; optional otherwise) An ICC profile stream defining the transformation from the PDF document’s source colours to output device colorants.
-The format of the profile stream is the same as that used in specifying an ICCBased colour space. The output transformation uses the profile’s “from CIE” information (BToA in ICC terminology); the “to CIE” (AToB) information may optionally be used to remap source colour values to some other destination colour space, such as for screen preview or hardcopy proofing.
+The format of the profile stream is the same as that used in specifying an ICCBased colour space (see 8.6.5.5, “ICCBased Colour Spaces”). The output transformation uses the profile’s “from CIE” information (BToA in ICC terminology); the “to CIE” (AToB) information may optionally be used to remap source colour values to some other destination colour space, such as for screen preview or hardcopy proofing.
 
 =end pod

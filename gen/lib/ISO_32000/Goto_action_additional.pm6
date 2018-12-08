@@ -15,6 +15,6 @@ role ISO_32000::Goto_action_additional {
 - (Required) The type of action that this dictionary describes; is GoTofor a go-to action.
 
 =head2 D [name, byte string, or array]
-- (Required) The destination to jump to.
+- (Required) The destination to jump to (see 12.3.2, “Destinations”).
 
 =end pod

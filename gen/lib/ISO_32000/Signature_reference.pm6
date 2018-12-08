@@ -18,8 +18,14 @@ role ISO_32000::Signature_reference {
 - (Optional) The type of PDF object that this dictionary describes; if present, is SigRef for a signature reference dictionary.
 
 =head2 TransformMethod [name]
-- (Required) The name of the transform method that shall guide the modification analysis that takes place when the signature is validated. Valid values is:
-DocMDP Used to detect modifications to a document relative to a signature field that is signed by the originator of a document
+- (Required) The name of the transform method (see Link Section 12.8.2, “Transform Methods ”) that shall guide the modification analysis that takes place when the signature is validated. Valid values is:
+DocMDP Used to detect modifications to a document relative to a signature field that is signed by the originator of a document; see
+12.8.2.2, “DocMDP.”
+UR Used to detect modifications to a document that would invalidate a signature in a rights-enabled document; see
+12.8.2.3, “UR.”
+FieldMDPUsed to detect modifications to a list of form fields specified in TransformParams; see
+12.8.2.4, “FieldMDP.”
+
 
 =head2 TransformParams [dictionary]
 - (Optional) A dictionary specifying transform parameters (variable data) for the transform method specified by TransformMethod. Each method takes its own set of parameters. See each of the sub-clauses specified previously for details on the individual transform parameter dictionaries
