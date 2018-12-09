@@ -1,5 +1,11 @@
 [
-  null,
+  {
+    "A.1": "PDF_content_stream_operators",
+    "C.1": "Architectural_limits",
+    "D.1": "Latin-text_encodings",
+    "D.2": "PDFDocEncoding_Character_Set",
+    "F.": "Thumbnail_hint_table-per_page_entry"
+  },
   "White-space_characters",
   "Delimiter_characters",
   "String_escape_sequences",

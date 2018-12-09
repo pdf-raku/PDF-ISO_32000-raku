@@ -27,6 +27,14 @@ The `table-index` method returns a list that maps table numbers to table names:
 say PDF::ISO_32000.table-index[317] # Info_entries
 ```
 
+The `appendix` method returns a hash index into the Appendix:
+
+```
+my $stream-ops = PDF::ISO_32000.appendix<A.1>;
+say $stream-ops, # PDF_content_stream_operators
+say PDF::ISO_32000.table($stream-ops)<caption>; #  Table A.1 – PDF content stream operators
+```
+
 ## Roles
 
 Roles are available for tables named `*_entries`

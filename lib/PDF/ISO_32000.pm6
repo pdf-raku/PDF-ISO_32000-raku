@@ -14,3 +14,7 @@ method table($name) {
 method table-index {
     (state $ //= from-json($.resources{'ISO_32000-index.json'}.slurp)).list;
 }
+
+multi method appendix {
+    $.table-index[0];
+}
