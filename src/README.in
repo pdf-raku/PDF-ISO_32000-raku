@@ -1,10 +1,12 @@
 # PDF-ISO_32000-p6
 
-This library contains XHTML tables that have been mined from the PDF-32000 1.7 specification.
+This library contains:
 
-Roles have been generated for tables that represent PDF objects:
+- XHTML tables that have been mined from the PDF-32000 1.7 specification.
+- JSON data for the tables
+- Perl 6 Roles for tables that represent PDF objects:
 
-The roles are named ISO_32000::Xxxx and contain documentation for each entry in the role, e.g.:
+The roles are named ISO_32000::Xxxx and contain method stubs and documentation for each entry in the role
 
 
 ## Tables

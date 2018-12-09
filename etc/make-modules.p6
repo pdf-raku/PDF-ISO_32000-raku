@@ -37,7 +37,11 @@ sub build(:$caption, :@head, :@rows) {
             for @pod -> % ( :$entry!, :$type, :$desc ) {
                 say '';
                 say "=head2 $entry [$type]";
-                say "- $_" with $desc;
+                with $desc {
+                    # to avoid confusing POD
+                    s:g/^^'='/V<=>/;
+                    say "- $_";
+                }
             }
             say '';
             say '=end pod';

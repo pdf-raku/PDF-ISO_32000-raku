@@ -1,10 +1,12 @@
 # PDF-ISO_32000-p6
 
-This library contains XHTML tables that have been mined from the PDF-32000 1.7 specification.
+This library contains:
 
-Roles have been generated for tables that represent PDF objects:
+- XHTML tables that have been mined from the PDF-32000 1.7 specification.
+- JSON data for the tables
+- Perl 6 Roles for tables that represent PDF objects:
 
-The roles are named ISO_32000::Xxxx and contain documentation for each entry in the role, e.g.:
+The roles are named ISO_32000::Xxxx and contain method stubs and documentation for each entry in the role
 
 
 ## Tables
@@ -96,6 +98,8 @@ Table 161 – Entries in a bead dictionary|[Bead](/gen/lib/ISO_32000/Bead.pm6)|/
 Table 167 – Entries in a border effect dictionary|[Border_effect](/gen/lib/ISO_32000/Border_effect.pm6)|/S /I
 Table 166 – Entries in a border style dictionary|[Border_style](/gen/lib/ISO_32000/Border_style.pm6)|/Type /W /S /D
 Table 360 – Entries in a box colour information dictionary|[Box_colour_information](/gen/lib/ISO_32000/Box_colour_information.pm6)|/CropBox /BleedBox /TrimBox /ArtBox
+Table 361 – Entries in a box style dictionary|[Box_style](/gen/lib/ISO_32000/Box_style.pm6)|/C /W /S /D
+Table 11 – Optional parameters for the CCITTFaxDecode filter|[CCITTFax_filter](/gen/lib/ISO_32000/CCITTFax_filter.pm6)|/K /EndOfLine /EncodedByteAlign /Columns /Rows /EndOfBlock /BlackIs1 /DamagedRowsBeforeError
 Table 117 – Entries in a CIDFont dictionary|[CIDFont](/gen/lib/ISO_32000/CIDFont.pm6)|/Type /Subtype /BaseFont /CIDSystemInfo /FontDescriptor /DW /W /DW2 /W2 /CIDToGIDMap
 Table 124 – Additional font descriptor entries for CIDFonts|[CIDFont_descriptor_additional](/gen/lib/ISO_32000/CIDFont_descriptor_additional.pm6)|/Style /Lang /FD /CIDSet
 Table 116 – Entries in a CIDSystemInfo dictionary|[CIDSystemInfo](/gen/lib/ISO_32000/CIDSystemInfo.pm6)|/Registry /Ordering /Supplement
@@ -111,10 +115,17 @@ Table 227 – Additional entry specific to check box and radio button fields|[Ch
 Table 231 – Additional entries specific to a choice field|[Choice_field_additional](/gen/lib/ISO_32000/Choice_field_additional.pm6)|/Opt /TI /I
 Table 155 – Entries in a collection dictionary|[Collection](/gen/lib/ISO_32000/Collection.pm6)|/Type /Schema /D /View /Sort
 Table 157 – Entries in a collection field dictionary|[Collection_field](/gen/lib/ISO_32000/Collection_field.pm6)|/Type /Subtype /N /O /V /E
+Table 48 – Entries in a collection item dictionary|[Collection_item](/gen/lib/ISO_32000/Collection_item.pm6)|/Type
 Table 156 – Entries in a collection schema dictionary|[Collection_schema](/gen/lib/ISO_32000/Collection_schema.pm6)|/Type
 Table 158 – Entries in a collection sort dictionary|[Collection_sort](/gen/lib/ISO_32000/Collection_sort.pm6)|/Type /S /A
+Table 49 – Entries in a collection subitem dictionary|[Collection_subitem](/gen/lib/ISO_32000/Collection_subitem.pm6)|/Type /D /P
 Table 17 – Additional entries specific to a cross-reference stream dictionary|[Cross_reference_stream](/gen/lib/ISO_32000/Cross_reference_stream.pm6)|/Type /Size /Index /Prev /W
+Table 14 – Optional parameters for Crypt filters|[Crypt_filter](/gen/lib/ISO_32000/Crypt_filter.pm6)|/Type /Name
+Table 25 – Entries common to all crypt filter dictionaries|[Crypt_filter_common](/gen/lib/ISO_32000/Crypt_filter_common.pm6)|/Type /CFM /AuthEvent /Length
+Table 27 – Additional crypt filter dictionary entries for public-key security handlers|[Crypt_filter_public-key_additional](/gen/lib/ISO_32000/Crypt_filter_public-key_additional.pm6)|/Recipients /EncryptMetadata
+Table 13 – Optional parameter for the DCTDecode filter|[DCT_filter](/gen/lib/ISO_32000/DCT_filter.pm6)|/ColorTransform
 Table 319 – Entries in an data dictionary|[Data](/gen/lib/ISO_32000/Data.pm6)|/LastModified /Private
+Table 50 – Entries in a developer extensions dictionary|[Developer_extensions](/gen/lib/ISO_32000/Developer_extensions.pm6)|/Type /BaseVersion /ExtensionLevel
 Table 71 – Entries in a DeviceN Colour Space Attributes Dictionary|[DeviceN_colour_space_attributes](/gen/lib/ISO_32000/DeviceN_colour_space_attributes.pm6)|/Subtype /Colorants /Process /MixingHints
 Table 73 – Entries in a DeviceN Mixing Hints Dictionary|[DeviceN_mixing_hints](/gen/lib/ISO_32000/DeviceN_mixing_hints.pm6)|/Solidities /PrintingOrder /DotGain
 Table 72 – Entries in a DeviceN Process Dictionary|[DeviceN_process](/gen/lib/ISO_32000/DeviceN_process.pm6)|/ColorSpace /Components
@@ -149,6 +160,7 @@ Table 199 – Additional entries specific to a go-to action|[Goto_action_additio
 Table 58 – Entries in a Graphics State Parameter Dictionary|[Graphics_state](/gen/lib/ISO_32000/Graphics_state.pm6)|/Type /LW /LC /LJ /ML /D /RI /OP /op /OPM /Font /BG /BG2 /UCR /UCR2 /TR /TR2 /HT /FL /SM /SA /BM /SMask /CA /ca /AIS /TK
 Table 96 – Entries Common to all Group Attributes Dictionaries|[Group_Attributes_common](/gen/lib/ISO_32000/Group_Attributes_common.pm6)|/Type /S
 Table 210 – Additional entries specific to a hide action|[Hide_action_additional](/gen/lib/ISO_32000/Hide_action_additional.pm6)|/S /T /H
+Table 19 – Additional entries in a hybrid-reference file’s trailer dictionary|[Hybrid-reference](/gen/lib/ISO_32000/Hybrid-reference.pm6)|/XRefStm
 Table 66 – Additional Entries Specific to an ICC Profile Stream Dictionary|[ICC_profile](/gen/lib/ISO_32000/ICC_profile.pm6)|/N /Alternate /Range /Metadata
 Table 247 – Entries in an icon fit dictionary|[Icon_fit](/gen/lib/ISO_32000/Icon_fit.pm6)|/SW /S /A /FB
 Table 89 – Additional Entries Specific to an Image Dictionary|[Image](/gen/lib/ISO_32000/Image.pm6)|/Type /Subtype /Width /Height /ColorSpace /BitsPerComponent /Intent /ImageMask /Mask /Decode /Interpolate /Alternates /SMask /SMaskInData /Name /StructParent /ID /OPI /Metadata /OC
@@ -157,13 +169,16 @@ Table 317 – Entries in the document information dictionary|[Info](/gen/lib/ISO
 Table 182 – Additional entries specific to an ink annotation|[Ink_annotation_additional](/gen/lib/ISO_32000/Ink_annotation_additional.pm6)|/Subtype /InkList /BS
 Table 93 – Entries in an Inline Image Object|[Inline_Image](/gen/lib/ISO_32000/Inline_Image.pm6)|/BitsPerComponent /ColorSpace /Decode /DecodeParms /Filter /Height /ImageMask /Intent /Interpolate /Width
 Table 218 – Entries in the interactive form dictionary|[Interactive_form](/gen/lib/ISO_32000/Interactive_form.pm6)|/Fields /NeedAppearances /SigFlags /CO /DR /DA /Q /XFA
+Table 12 – Optional parameter for the JBIG2Decode filter|[JBIG2_filter](/gen/lib/ISO_32000/JBIG2_filter.pm6)|/JBIG2Globals
 Table 245 – Entries in the JavaScript dictionary|[JavaScript](/gen/lib/ISO_32000/JavaScript.pm6)|/Before /After /AfterPermsReady /Doc
 Table 217 – Additional entries specific to a JavaScript action|[JavaScript_action_additional](/gen/lib/ISO_32000/JavaScript_action_additional.pm6)|/S /JS
+Table 8 – Optional parameters for LZWDecode and FlateDecode filters|[LZW_and_Flate_filter](/gen/lib/ISO_32000/LZW_and_Flate_filter.pm6)|/Predictor /Colors /BitsPerComponent /Columns /EarlyChange
 Table 65 – Entries in a Lab Colour Space Dictionary|[Lab_colour_space](/gen/lib/ISO_32000/Lab_colour_space.pm6)|/WhitePoint /BlackPoint /Range
 Table 203 – Additional entries specific to a launch action|[Launch_action_additional](/gen/lib/ISO_32000/Launch_action_additional.pm6)|/S /F /Win /Mac /Unix /NewWindow
 Table 175 – Additional entries specific to a line annotation|[Line_annotation_additional](/gen/lib/ISO_32000/Line_annotation_additional.pm6)|/Subtype /L /BS /LE /IC /LL /LLE /Cap /IT /LLO /CP /Measure /CO
 Table F. 1 – Entries in the linearization parameter dictionary|[Linearization_parameter](/gen/lib/ISO_32000/Linearization_parameter.pm6)|/Linearized /L /H /O /E /N /T /P
 Table 173 – Additional entries specific to a link annotation|[Link_annotation_additional](/gen/lib/ISO_32000/Link_annotation_additional.pm6)|/Subtype /A /Dest /H /PA /QuadPoints /BS
+Table 47 – Entries in a Mac OS file information dictionary|[MacOS_file_information](/gen/lib/ISO_32000/MacOS_file_information.pm6)|/Subtype /Creator /ResFork
 Table 321 – Entries in the mark information dictionary|[Mark_information](/gen/lib/ISO_32000/Mark_information.pm6)|/Marked /UserProperties /Suspects
 Table 324 – Entries in a marked-content reference dictionary|[Marked_content_reference](/gen/lib/ISO_32000/Marked_content_reference.pm6)|/Type /Pg /Stm /StmOwn /MCID
 Table 261 – Entries in a measure dictionary|[Measure](/gen/lib/ISO_32000/Measure.pm6)|/Type /Subtype
@@ -223,6 +238,8 @@ Table 88 – Additional Entries Specific to a PostScript XObject Dictionary|[Pos
 Table 362 – Additional entries specific to a printer’s mark annotation|[Printers_mark_annotation](/gen/lib/ISO_32000/Printers_mark_annotation.pm6)|/Subtype /MN
 Table 363 – Additional entries specific to a printer’s mark form dictionary|[Printers_mark_form](/gen/lib/ISO_32000/Printers_mark_form.pm6)|/MarkStyle /Colorants
 Table 305 – Entries in a projection dictionary|[Projection](/gen/lib/ISO_32000/Projection.pm6)|/Subtype /CS /F /N /FOV /PS /OS /OB
+Table 23 – Additional encryption dictionary entries for public-key security handlers|[Public_key_security_handler_additional](/gen/lib/ISO_32000/Public_key_security_handler_additional.pm6)|/Recipients /P
+Table 24 – Public-Key security handler user access permissions|[Public_key_security_user_access](/gen/lib/ISO_32000/Public_key_security_user_access.pm6)|
 Table 262 – Additional entries in a rectilinear measure dictionary|[Rectilinear_measure_additional](/gen/lib/ISO_32000/Rectilinear_measure_additional.pm6)|/R /X /Y /D /A /T /S /O /CYX
 Table 192 – Additional entries specific to a redaction annotation|[Redaction_annotation_additional](/gen/lib/ISO_32000/Redaction_annotation_additional.pm6)|/Subtype /QuadPoints /IC /RO /OverlayText /Repeat /DA /Q
 Table 97 – Entries in a Reference Dictionary|[Reference](/gen/lib/ISO_32000/Reference.pm6)|/F /Page /ID
@@ -249,6 +266,7 @@ Table 234 – Entries in a signature field seed value dictionary|[Signature_fiel
 Table 253 – Entries in a signature reference dictionary|[Signature_reference](/gen/lib/ISO_32000/Signature_reference.pm6)|/Type /TransformMethod /TransformParams /Data /DigestMethod
 Table 297 – Entries in a slideshow dictionary|[Slideshow](/gen/lib/ISO_32000/Slideshow.pm6)|/Type /Subtype /Resources /StartResource
 Table 144 – Entries in a soft-mask dictionary|[Soft-mask](/gen/lib/ISO_32000/Soft-mask.pm6)|/Type /S /G /BC /TR
+Table 146 – Additional entry in a soft-mask image dictionary|[Soft-mask_image_additional](/gen/lib/ISO_32000/Soft-mask_image_additional.pm6)|/Matte
 Table 292 – Entries in a software identifier dictionary|[Software_identifier](/gen/lib/ISO_32000/Software_identifier.pm6)|/Type /U /L /LI /H /HI /OS
 Table 208 – Additional entries specific to a sound action|[Sound_action_additional](/gen/lib/ISO_32000/Sound_action_additional.pm6)|/S /Sound /Volume /Synchronous /Repeat /Mix
 Table 185 – Additional entries specific to a sound annotation|[Sound_annotation_additional](/gen/lib/ISO_32000/Sound_annotation_additional.pm6)|/Subtype /Sound /Name
@@ -285,10 +303,13 @@ Table 366 – Additional entries specific to a trap network annotation|[Trap_net
 Table 367 – Additional entries specific to a trap network appearance stream|[Trap_network_appearance_stream](/gen/lib/ISO_32000/Trap_network_appearance_stream.pm6)|/PCM /SeparationColorNames /TrapRegions /TrapStyles
 Table 121 – Entries in a Type 0 font dictionary|[Type_0_Font](/gen/lib/ISO_32000/Type_0_Font.pm6)|/Type /Subtype /BaseFont /Encoding /DescendantFonts /ToUnicode
 Table 39 – Additional entries specific to a type 0 function dictionary|[Type_0_Function](/gen/lib/ISO_32000/Type_0_Function.pm6)|/Size /BitsPerSample /Order /Encode /Decode
+Table 132 – Additional entries specific to a type 10 halftone dictionary|[Type_10_halftone](/gen/lib/ISO_32000/Type_10_halftone.pm6)|/Type /HalftoneType /HalftoneName /Xsquare /Ysquare /TransferFunction
+Table 133 – Additional entries specific to a type 16 halftone dictionary|[Type_16_halftone](/gen/lib/ISO_32000/Type_16_halftone.pm6)|/Type /HalftoneType /HalftoneName /Width /Height /Width2 /Height2 /TransferFunction
 Table 111 – Entries in a Type 1 font dictionary|[Type_1_Font](/gen/lib/ISO_32000/Type_1_Font.pm6)|/Type /Subtype /Name /BaseFont /FirstChar /LastChar /Widths /FontDescriptor /Encoding /ToUnicode
 Table 95 – Additional Entries Specific to a Type 1 Form Dictionary|[Type_1_Form](/gen/lib/ISO_32000/Type_1_Form.pm6)|/Type /Subtype /FormType /BBox /Matrix /Resources /Group /Ref /Metadata /PieceInfo /LastModified /StructParent /StructParents /OPI /OC /Name
 Table 75 – Additional Entries Specific to a Type 1 Pattern Dictionary|[Type_1_Pattern](/gen/lib/ISO_32000/Type_1_Pattern.pm6)|/Type /PatternType /PaintType /TilingType /BBox /XStep /YStep /Resources /Matrix
 Table 79 – Additional Entries Specific to a Type 1 Shading Dictionary|[Type_1_Shading](/gen/lib/ISO_32000/Type_1_Shading.pm6)|/Domain /Matrix /Function
+Table 130 – Entries in a type 1 halftone dictionary|[Type_1_halftone](/gen/lib/ISO_32000/Type_1_halftone.pm6)|/Type /HalftoneType /HalftoneName /Frequency /Angle /SpotFunction /AccurateScreens /TransferFunction
 Table 40 – Additional entries specific to a type 2 function dictionary|[Type_2_Function](/gen/lib/ISO_32000/Type_2_Function.pm6)|/C0 /C1 /N
 Table 76 – Entries in a Type 2 Pattern Dictionary|[Type_2_Pattern](/gen/lib/ISO_32000/Type_2_Pattern.pm6)|/Type /PatternType /Shading /Matrix /ExtGState
 Table 80 – Additional Entries Specific to a Type 2 Shading Dictionary|[Type_2_Shading](/gen/lib/ISO_32000/Type_2_Shading.pm6)|/Coords /Domain /Function /Extend
@@ -297,7 +318,9 @@ Table 41 – Additional entries specific to a type 3 function dictionary|[Type_3
 Table 81 – Additional Entries Specific to a Type 3 Shading Dictionary|[Type_3_Shading](/gen/lib/ISO_32000/Type_3_Shading.pm6)|/Coords /Domain /Function /Extend
 Table 82 – Additional Entries Specific to a Type 4 Shading Dictionary|[Type_4_Shading](/gen/lib/ISO_32000/Type_4_Shading.pm6)|/BitsPerCoordinate /BitsPerComponent /BitsPerFlag /Decode /Function
 Table 83 – Additional Entries Specific to a Type 5 Shading Dictionary|[Type_5_Shading](/gen/lib/ISO_32000/Type_5_Shading.pm6)|/BitsPerCoordinate /BitsPerComponent /VerticesPerRow /Decode /Function
+Table 134 – Entries in a type 5 halftone dictionary|[Type_5_halftone](/gen/lib/ISO_32000/Type_5_halftone.pm6)|/Type /HalftoneType /HalftoneName /Default
 Table 84 – Additional Entries Specific to a Type 6 Shading Dictionary|[Type_6_Shading](/gen/lib/ISO_32000/Type_6_Shading.pm6)|/BitsPerCoordinate /BitsPerComponent /BitsPerFlag /Decode /Function
+Table 131 – Additional entries specific to a type 6 halftone dictionary|[Type_6_halftone](/gen/lib/ISO_32000/Type_6_halftone.pm6)|/Type /HalftoneType /HalftoneName /Width /Height /TransferFunction
 Table 207 – Entry in a URI dictionary|[URI](/gen/lib/ISO_32000/URI.pm6)|/Base
 Table 206 – Additional entries specific to a URI action|[URI_action_additional](/gen/lib/ISO_32000/URI_action_additional.pm6)|/S /URI /IsMap
 Table 356 – Entries in a URL alias dictionary|[URL_alias](/gen/lib/ISO_32000/URL_alias.pm6)|/U /C
@@ -329,6 +352,7 @@ Entry|ISO_32000 Roles
 /APRef|[FDF_field](/gen/lib/ISO_32000/FDF_field.pm6)
 /AS|[Annotation_common](/gen/lib/ISO_32000/Annotation_common.pm6) [Optional_Content_Configuration](/gen/lib/ISO_32000/Optional_Content_Configuration.pm6)
 /AU|[Source_information](/gen/lib/ISO_32000/Source_information.pm6)
+/AccurateScreens|[Type_1_halftone](/gen/lib/ISO_32000/Type_1_halftone.pm6)
 /AcroForm|[Catalog](/gen/lib/ISO_32000/Catalog.pm6)
 /Action|[FieldMDP_transform](/gen/lib/ISO_32000/FieldMDP_transform.pm6) [Signature_field_lock](/gen/lib/ISO_32000/Signature_field_lock.pm6)
 /ActualText|[Structure_tree_element](/gen/lib/ISO_32000/Structure_tree_element.pm6)
@@ -339,6 +363,7 @@ Entry|ISO_32000 Roles
 /Alternate|[ICC_profile](/gen/lib/ISO_32000/ICC_profile.pm6)
 /AlternatePresentations|[Catalog_Name_tree](/gen/lib/ISO_32000/Catalog_Name_tree.pm6)
 /Alternates|[Image](/gen/lib/ISO_32000/Image.pm6)
+/Angle|[Type_1_halftone](/gen/lib/ISO_32000/Type_1_halftone.pm6)
 /AnnotStates|[Trap_network_annotation](/gen/lib/ISO_32000/Trap_network_annotation.pm6)
 /Annotation|[Movie_action_additional](/gen/lib/ISO_32000/Movie_action_additional.pm6)
 /Annots|[FDF_dictionary](/gen/lib/ISO_32000/FDF_dictionary.pm6) [Page](/gen/lib/ISO_32000/Page.pm6) [UR_transform](/gen/lib/ISO_32000/UR_transform.pm6)
@@ -347,6 +372,7 @@ Entry|ISO_32000 Roles
 /Ascent|[Font_descriptor_common](/gen/lib/ISO_32000/Font_descriptor_common.pm6)
 /Aspect|[Movie](/gen/lib/ISO_32000/Movie.pm6)
 /Attached|[Artifact](/gen/lib/ISO_32000/Artifact.pm6)
+/AuthEvent|[Crypt_filter_common](/gen/lib/ISO_32000/Crypt_filter_common.pm6)
 /Author|[Info](/gen/lib/ISO_32000/Info.pm6)
 /AvgWidth|[Font_descriptor_common](/gen/lib/ISO_32000/Font_descriptor_common.pm6)
 /B|[Media_clip_section_MH-BE](/gen/lib/ISO_32000/Media_clip_section_MH-BE.pm6) [Media_screen_parameters_MH-BE](/gen/lib/ISO_32000/Media_screen_parameters_MH-BE.pm6) [Page](/gen/lib/ISO_32000/Page.pm6) [Sound_object](/gen/lib/ISO_32000/Sound_object.pm6) [Thread_action_additional](/gen/lib/ISO_32000/Thread_action_additional.pm6) [Transition](/gen/lib/ISO_32000/Transition.pm6)
@@ -363,24 +389,27 @@ Entry|ISO_32000 Roles
 /BaseEncoding|[Encoding](/gen/lib/ISO_32000/Encoding.pm6)
 /BaseFont|[CIDFont](/gen/lib/ISO_32000/CIDFont.pm6) [Type_0_Font](/gen/lib/ISO_32000/Type_0_Font.pm6) [Type_1_Font](/gen/lib/ISO_32000/Type_1_Font.pm6)
 /BaseState|[Optional_Content_Configuration](/gen/lib/ISO_32000/Optional_Content_Configuration.pm6)
+/BaseVersion|[Developer_extensions](/gen/lib/ISO_32000/Developer_extensions.pm6)
 /Before|[JavaScript](/gen/lib/ISO_32000/JavaScript.pm6)
-/BitsPerComponent|[Image](/gen/lib/ISO_32000/Image.pm6) [Inline_Image](/gen/lib/ISO_32000/Inline_Image.pm6) [Type_4_Shading](/gen/lib/ISO_32000/Type_4_Shading.pm6) [Type_5_Shading](/gen/lib/ISO_32000/Type_5_Shading.pm6) [Type_6_Shading](/gen/lib/ISO_32000/Type_6_Shading.pm6)
+/BitsPerComponent|[Image](/gen/lib/ISO_32000/Image.pm6) [Inline_Image](/gen/lib/ISO_32000/Inline_Image.pm6) [LZW_and_Flate_filter](/gen/lib/ISO_32000/LZW_and_Flate_filter.pm6) [Type_4_Shading](/gen/lib/ISO_32000/Type_4_Shading.pm6) [Type_5_Shading](/gen/lib/ISO_32000/Type_5_Shading.pm6) [Type_6_Shading](/gen/lib/ISO_32000/Type_6_Shading.pm6)
 /BitsPerCoordinate|[Type_4_Shading](/gen/lib/ISO_32000/Type_4_Shading.pm6) [Type_5_Shading](/gen/lib/ISO_32000/Type_5_Shading.pm6) [Type_6_Shading](/gen/lib/ISO_32000/Type_6_Shading.pm6)
 /BitsPerFlag|[Type_4_Shading](/gen/lib/ISO_32000/Type_4_Shading.pm6) [Type_6_Shading](/gen/lib/ISO_32000/Type_6_Shading.pm6)
 /BitsPerSample|[Type_0_Function](/gen/lib/ISO_32000/Type_0_Function.pm6)
 /Bl|[Annotation_additional_actions](/gen/lib/ISO_32000/Annotation_additional_actions.pm6)
+/BlackIs1|[CCITTFax_filter](/gen/lib/ISO_32000/CCITTFax_filter.pm6)
 /BlackPoint|[CalGray_colour_space](/gen/lib/ISO_32000/CalGray_colour_space.pm6) [CalRGB_colour_space](/gen/lib/ISO_32000/CalRGB_colour_space.pm6) [Lab_colour_space](/gen/lib/ISO_32000/Lab_colour_space.pm6)
 /BleedBox|[Box_colour_information](/gen/lib/ISO_32000/Box_colour_information.pm6) [Page](/gen/lib/ISO_32000/Page.pm6)
 /Border|[Annotation_common](/gen/lib/ISO_32000/Annotation_common.pm6)
 /Bounds|[Type_3_Function](/gen/lib/ISO_32000/Type_3_Function.pm6)
 /BoxColorInfo|[Page](/gen/lib/ISO_32000/Page.pm6)
 /ByteRange|[Signature](/gen/lib/ISO_32000/Signature.pm6)
-/C|[Annotation_common](/gen/lib/ISO_32000/Annotation_common.pm6) [Form_additional_actions](/gen/lib/ISO_32000/Form_additional_actions.pm6) [Media_rendition](/gen/lib/ISO_32000/Media_rendition.pm6) [Number_format](/gen/lib/ISO_32000/Number_format.pm6) [Outline_item](/gen/lib/ISO_32000/Outline_item.pm6) [Page_additional_actions](/gen/lib/ISO_32000/Page_additional_actions.pm6) [Rendition_MH-BE](/gen/lib/ISO_32000/Rendition_MH-BE.pm6) [Rendition_criteria](/gen/lib/ISO_32000/Rendition_criteria.pm6) [Sound_object](/gen/lib/ISO_32000/Sound_object.pm6) [Source_information](/gen/lib/ISO_32000/Source_information.pm6) [Structure_tree_element](/gen/lib/ISO_32000/Structure_tree_element.pm6) [Three-D_background](/gen/lib/ISO_32000/Three-D_background.pm6) [Three-D_cross_section](/gen/lib/ISO_32000/Three-D_cross_section.pm6) [URL_alias](/gen/lib/ISO_32000/URL_alias.pm6) [Web_Capture_information](/gen/lib/ISO_32000/Web_Capture_information.pm6) [Web_capture_command_settings](/gen/lib/ISO_32000/Web_capture_command_settings.pm6)
+/C|[Annotation_common](/gen/lib/ISO_32000/Annotation_common.pm6) [Box_style](/gen/lib/ISO_32000/Box_style.pm6) [Form_additional_actions](/gen/lib/ISO_32000/Form_additional_actions.pm6) [Media_rendition](/gen/lib/ISO_32000/Media_rendition.pm6) [Number_format](/gen/lib/ISO_32000/Number_format.pm6) [Outline_item](/gen/lib/ISO_32000/Outline_item.pm6) [Page_additional_actions](/gen/lib/ISO_32000/Page_additional_actions.pm6) [Rendition_MH-BE](/gen/lib/ISO_32000/Rendition_MH-BE.pm6) [Rendition_criteria](/gen/lib/ISO_32000/Rendition_criteria.pm6) [Sound_object](/gen/lib/ISO_32000/Sound_object.pm6) [Source_information](/gen/lib/ISO_32000/Source_information.pm6) [Structure_tree_element](/gen/lib/ISO_32000/Structure_tree_element.pm6) [Three-D_background](/gen/lib/ISO_32000/Three-D_background.pm6) [Three-D_cross_section](/gen/lib/ISO_32000/Three-D_cross_section.pm6) [URL_alias](/gen/lib/ISO_32000/URL_alias.pm6) [Web_Capture_information](/gen/lib/ISO_32000/Web_Capture_information.pm6) [Web_capture_command_settings](/gen/lib/ISO_32000/Web_capture_command_settings.pm6)
 /C0|[Type_2_Function](/gen/lib/ISO_32000/Type_2_Function.pm6)
 /C1|[Type_2_Function](/gen/lib/ISO_32000/Type_2_Function.pm6)
 /C2W|[Three-D_view](/gen/lib/ISO_32000/Three-D_view.pm6)
 /CA|[Annotation_markup_additional](/gen/lib/ISO_32000/Annotation_markup_additional.pm6) [Appearance_characteristics](/gen/lib/ISO_32000/Appearance_characteristics.pm6) [Graphics_state](/gen/lib/ISO_32000/Graphics_state.pm6)
 /CF|[Encryption_common](/gen/lib/ISO_32000/Encryption_common.pm6)
+/CFM|[Crypt_filter_common](/gen/lib/ISO_32000/Crypt_filter_common.pm6)
 /CI|[File_specification](/gen/lib/ISO_32000/File_specification.pm6)
 /CIDSet|[CIDFont_descriptor_additional](/gen/lib/ISO_32000/CIDFont_descriptor_additional.pm6)
 /CIDSystemInfo|[CIDFont](/gen/lib/ISO_32000/CIDFont.pm6) [CMap_stream](/gen/lib/ISO_32000/CMap_stream.pm6)
@@ -408,8 +437,11 @@ Entry|ISO_32000 Roles
 /Collection|[Catalog](/gen/lib/ISO_32000/Catalog.pm6)
 /Color|[OPI_version_1_3](/gen/lib/ISO_32000/OPI_version_1_3.pm6)
 /ColorSpace|[DeviceN_process](/gen/lib/ISO_32000/DeviceN_process.pm6) [Image](/gen/lib/ISO_32000/Image.pm6) [Inline_Image](/gen/lib/ISO_32000/Inline_Image.pm6) [Resource](/gen/lib/ISO_32000/Resource.pm6) [Separation](/gen/lib/ISO_32000/Separation.pm6) [Shading_common](/gen/lib/ISO_32000/Shading_common.pm6)
+/ColorTransform|[DCT_filter](/gen/lib/ISO_32000/DCT_filter.pm6)
 /ColorType|[OPI_version_1_3](/gen/lib/ISO_32000/OPI_version_1_3.pm6)
 /Colorants|[DeviceN_colour_space_attributes](/gen/lib/ISO_32000/DeviceN_colour_space_attributes.pm6) [Printers_mark_form](/gen/lib/ISO_32000/Printers_mark_form.pm6)
+/Colors|[LZW_and_Flate_filter](/gen/lib/ISO_32000/LZW_and_Flate_filter.pm6)
+/Columns|[CCITTFax_filter](/gen/lib/ISO_32000/CCITTFax_filter.pm6) [LZW_and_Flate_filter](/gen/lib/ISO_32000/LZW_and_Flate_filter.pm6)
 /Comments|[OPI_version_1_3](/gen/lib/ISO_32000/OPI_version_1_3.pm6)
 /Components|[DeviceN_process](/gen/lib/ISO_32000/DeviceN_process.pm6)
 /Configs|[Optional_Content_Group_Properties](/gen/lib/ISO_32000/Optional_Content_Group_Properties.pm6)
@@ -418,12 +450,12 @@ Entry|ISO_32000 Roles
 /Coords|[Type_2_Shading](/gen/lib/ISO_32000/Type_2_Shading.pm6) [Type_3_Shading](/gen/lib/ISO_32000/Type_3_Shading.pm6)
 /Count|[Outline](/gen/lib/ISO_32000/Outline.pm6) [Outline_item](/gen/lib/ISO_32000/Outline_item.pm6) [Pages](/gen/lib/ISO_32000/Pages.pm6)
 /CreationDate|[Annotation_markup_additional](/gen/lib/ISO_32000/Annotation_markup_additional.pm6) [Embedded_file_parameter](/gen/lib/ISO_32000/Embedded_file_parameter.pm6) [Info](/gen/lib/ISO_32000/Info.pm6)
-/Creator|[Info](/gen/lib/ISO_32000/Info.pm6) [Optional_Content_Configuration](/gen/lib/ISO_32000/Optional_Content_Configuration.pm6)
+/Creator|[Info](/gen/lib/ISO_32000/Info.pm6) [MacOS_file_information](/gen/lib/ISO_32000/MacOS_file_information.pm6) [Optional_Content_Configuration](/gen/lib/ISO_32000/Optional_Content_Configuration.pm6)
 /CreatorInfo|[Optional_Content_Group_Usage](/gen/lib/ISO_32000/Optional_Content_Group_Usage.pm6)
 /CropBox|[Box_colour_information](/gen/lib/ISO_32000/Box_colour_information.pm6) [Page](/gen/lib/ISO_32000/Page.pm6)
 /CropFixed|[OPI_version_1_3](/gen/lib/ISO_32000/OPI_version_1_3.pm6)
 /CropRect|[OPI_version_1_3](/gen/lib/ISO_32000/OPI_version_1_3.pm6) [OPI_version_2_0](/gen/lib/ISO_32000/OPI_version_2_0.pm6)
-/D|[Annotation_additional_actions](/gen/lib/ISO_32000/Annotation_additional_actions.pm6) [Appearance](/gen/lib/ISO_32000/Appearance.pm6) [Border_style](/gen/lib/ISO_32000/Border_style.pm6) [Collection](/gen/lib/ISO_32000/Collection.pm6) [Embedded_goto_action_additional](/gen/lib/ISO_32000/Embedded_goto_action_additional.pm6) [Floating_window_parameter](/gen/lib/ISO_32000/Floating_window_parameter.pm6) [Goto_action_additional](/gen/lib/ISO_32000/Goto_action_additional.pm6) [Graphics_state](/gen/lib/ISO_32000/Graphics_state.pm6) [Media_clip_data](/gen/lib/ISO_32000/Media_clip_data.pm6) [Media_clip_section](/gen/lib/ISO_32000/Media_clip_section.pm6) [Number_format](/gen/lib/ISO_32000/Number_format.pm6) [Optional_Content_Group_Properties](/gen/lib/ISO_32000/Optional_Content_Group_Properties.pm6) [Rectilinear_measure_additional](/gen/lib/ISO_32000/Rectilinear_measure_additional.pm6) [Remote_goto_action_additional](/gen/lib/ISO_32000/Remote_goto_action_additional.pm6) [Rendition_criteria](/gen/lib/ISO_32000/Rendition_criteria.pm6) [Thread_action_additional](/gen/lib/ISO_32000/Thread_action_additional.pm6) [Three-D_activation](/gen/lib/ISO_32000/Three-D_activation.pm6) [Transition](/gen/lib/ISO_32000/Transition.pm6) [Windows_launch_parameters](/gen/lib/ISO_32000/Windows_launch_parameters.pm6)
+/D|[Annotation_additional_actions](/gen/lib/ISO_32000/Annotation_additional_actions.pm6) [Appearance](/gen/lib/ISO_32000/Appearance.pm6) [Border_style](/gen/lib/ISO_32000/Border_style.pm6) [Box_style](/gen/lib/ISO_32000/Box_style.pm6) [Collection](/gen/lib/ISO_32000/Collection.pm6) [Collection_subitem](/gen/lib/ISO_32000/Collection_subitem.pm6) [Embedded_goto_action_additional](/gen/lib/ISO_32000/Embedded_goto_action_additional.pm6) [Floating_window_parameter](/gen/lib/ISO_32000/Floating_window_parameter.pm6) [Goto_action_additional](/gen/lib/ISO_32000/Goto_action_additional.pm6) [Graphics_state](/gen/lib/ISO_32000/Graphics_state.pm6) [Media_clip_data](/gen/lib/ISO_32000/Media_clip_data.pm6) [Media_clip_section](/gen/lib/ISO_32000/Media_clip_section.pm6) [Number_format](/gen/lib/ISO_32000/Number_format.pm6) [Optional_Content_Group_Properties](/gen/lib/ISO_32000/Optional_Content_Group_Properties.pm6) [Rectilinear_measure_additional](/gen/lib/ISO_32000/Rectilinear_measure_additional.pm6) [Remote_goto_action_additional](/gen/lib/ISO_32000/Remote_goto_action_additional.pm6) [Rendition_criteria](/gen/lib/ISO_32000/Rendition_criteria.pm6) [Thread_action_additional](/gen/lib/ISO_32000/Thread_action_additional.pm6) [Three-D_activation](/gen/lib/ISO_32000/Three-D_activation.pm6) [Transition](/gen/lib/ISO_32000/Transition.pm6) [Windows_launch_parameters](/gen/lib/ISO_32000/Windows_launch_parameters.pm6)
 /DA|[Free_text_annotation_additional](/gen/lib/ISO_32000/Free_text_annotation_additional.pm6) [Interactive_form](/gen/lib/ISO_32000/Interactive_form.pm6) [Redaction_annotation_additional](/gen/lib/ISO_32000/Redaction_annotation_additional.pm6) [Variable_text_field](/gen/lib/ISO_32000/Variable_text_field.pm6)
 /DIS|[Three-D_activation](/gen/lib/ISO_32000/Three-D_activation.pm6)
 /DL|[Stream_common](/gen/lib/ISO_32000/Stream_common.pm6)
@@ -434,9 +466,11 @@ Entry|ISO_32000 Roles
 /DV|[Field_common](/gen/lib/ISO_32000/Field_common.pm6) [Three-D_stream](/gen/lib/ISO_32000/Three-D_stream.pm6)
 /DW|[CIDFont](/gen/lib/ISO_32000/CIDFont.pm6)
 /DW2|[CIDFont](/gen/lib/ISO_32000/CIDFont.pm6)
+/DamagedRowsBeforeError|[CCITTFax_filter](/gen/lib/ISO_32000/CCITTFax_filter.pm6)
 /Data|[Signature_reference](/gen/lib/ISO_32000/Signature_reference.pm6)
 /Decode|[Image](/gen/lib/ISO_32000/Image.pm6) [Inline_Image](/gen/lib/ISO_32000/Inline_Image.pm6) [Type_0_Function](/gen/lib/ISO_32000/Type_0_Function.pm6) [Type_4_Shading](/gen/lib/ISO_32000/Type_4_Shading.pm6) [Type_5_Shading](/gen/lib/ISO_32000/Type_5_Shading.pm6) [Type_6_Shading](/gen/lib/ISO_32000/Type_6_Shading.pm6)
 /DecodeParms|[Inline_Image](/gen/lib/ISO_32000/Inline_Image.pm6) [Stream_common](/gen/lib/ISO_32000/Stream_common.pm6)
+/Default|[Type_5_halftone](/gen/lib/ISO_32000/Type_5_halftone.pm6)
 /DefaultForPrinting|[Alternate_Image](/gen/lib/ISO_32000/Alternate_Image.pm6)
 /Desc|[File_specification](/gen/lib/ISO_32000/File_specification.pm6)
 /DescendantFonts|[Type_0_Font](/gen/lib/ISO_32000/Type_0_Font.pm6)
@@ -463,18 +497,23 @@ Entry|ISO_32000 Roles
 /EA|[Three-D_background](/gen/lib/ISO_32000/Three-D_background.pm6)
 /EF|[File_specification](/gen/lib/ISO_32000/File_specification.pm6) [UR_transform](/gen/lib/ISO_32000/UR_transform.pm6)
 /EFF|[Encryption_common](/gen/lib/ISO_32000/Encryption_common.pm6)
+/EarlyChange|[LZW_and_Flate_filter](/gen/lib/ISO_32000/LZW_and_Flate_filter.pm6)
 /EmbeddedFDFs|[FDF_dictionary](/gen/lib/ISO_32000/FDF_dictionary.pm6)
 /EmbeddedFiles|[Catalog_Name_tree](/gen/lib/ISO_32000/Catalog_Name_tree.pm6)
 /Encode|[Type_0_Function](/gen/lib/ISO_32000/Type_0_Function.pm6) [Type_3_Function](/gen/lib/ISO_32000/Type_3_Function.pm6)
+/EncodedByteAlign|[CCITTFax_filter](/gen/lib/ISO_32000/CCITTFax_filter.pm6)
 /Encoding|[FDF_dictionary](/gen/lib/ISO_32000/FDF_dictionary.pm6) [Type_0_Font](/gen/lib/ISO_32000/Type_0_Font.pm6) [Type_1_Font](/gen/lib/ISO_32000/Type_1_Font.pm6) [Type_3_Font](/gen/lib/ISO_32000/Type_3_Font.pm6)
 /Encrypt|[File_trailer](/gen/lib/ISO_32000/File_trailer.pm6)
-/EncryptMetadata|[Additional_encryption](/gen/lib/ISO_32000/Additional_encryption.pm6)
+/EncryptMetadata|[Additional_encryption](/gen/lib/ISO_32000/Additional_encryption.pm6) [Crypt_filter_public-key_additional](/gen/lib/ISO_32000/Crypt_filter_public-key_additional.pm6)
+/EndOfBlock|[CCITTFax_filter](/gen/lib/ISO_32000/CCITTFax_filter.pm6)
+/EndOfLine|[CCITTFax_filter](/gen/lib/ISO_32000/CCITTFax_filter.pm6)
 /Event|[Optional_Content_Group_Application](/gen/lib/ISO_32000/Optional_Content_Group_Application.pm6)
 /ExData|[Annotation_markup_additional](/gen/lib/ISO_32000/Annotation_markup_additional.pm6)
 /Export|[Optional_Content_Group_Usage](/gen/lib/ISO_32000/Optional_Content_Group_Usage.pm6)
 /ExtGState|[Resource](/gen/lib/ISO_32000/Resource.pm6) [Type_2_Pattern](/gen/lib/ISO_32000/Type_2_Pattern.pm6)
 /Extend|[Type_2_Shading](/gen/lib/ISO_32000/Type_2_Shading.pm6) [Type_3_Shading](/gen/lib/ISO_32000/Type_3_Shading.pm6)
 /Extends|[Object_stream](/gen/lib/ISO_32000/Object_stream.pm6)
+/ExtensionLevel|[Developer_extensions](/gen/lib/ISO_32000/Developer_extensions.pm6)
 /Extensions|[Catalog](/gen/lib/ISO_32000/Catalog.pm6)
 /F|[Annotation_common](/gen/lib/ISO_32000/Annotation_common.pm6) [Embedded_goto_action_additional](/gen/lib/ISO_32000/Embedded_goto_action_additional.pm6) [FDF_dictionary](/gen/lib/ISO_32000/FDF_dictionary.pm6) [FDF_field](/gen/lib/ISO_32000/FDF_field.pm6) [FDF_named_page_reference](/gen/lib/ISO_32000/FDF_named_page_reference.pm6) [File_specification](/gen/lib/ISO_32000/File_specification.pm6) [Form_additional_actions](/gen/lib/ISO_32000/Form_additional_actions.pm6) [Import-data_action_additional](/gen/lib/ISO_32000/Import-data_action_additional.pm6) [Launch_action_additional](/gen/lib/ISO_32000/Launch_action_additional.pm6) [Media_offset_frame](/gen/lib/ISO_32000/Media_offset_frame.pm6) [Media_screen_parameters_MH-BE](/gen/lib/ISO_32000/Media_screen_parameters_MH-BE.pm6) [Movie](/gen/lib/ISO_32000/Movie.pm6) [Number_format](/gen/lib/ISO_32000/Number_format.pm6) [OPI_version_1_3](/gen/lib/ISO_32000/OPI_version_1_3.pm6) [OPI_version_2_0](/gen/lib/ISO_32000/OPI_version_2_0.pm6) [Outline_item](/gen/lib/ISO_32000/Outline_item.pm6) [Projection](/gen/lib/ISO_32000/Projection.pm6) [Reference](/gen/lib/ISO_32000/Reference.pm6) [Remote_goto_action_additional](/gen/lib/ISO_32000/Remote_goto_action_additional.pm6) [Stream_common](/gen/lib/ISO_32000/Stream_common.pm6) [Submit_form_action](/gen/lib/ISO_32000/Submit_form_action.pm6) [Thread](/gen/lib/ISO_32000/Thread.pm6) [Thread_action_additional](/gen/lib/ISO_32000/Thread_action_additional.pm6) [User_property](/gen/lib/ISO_32000/User_property.pm6) [Web_capture_command](/gen/lib/ISO_32000/Web_capture_command.pm6) [Windows_launch_parameters](/gen/lib/ISO_32000/Windows_launch_parameters.pm6)
 /FB|[Icon_fit](/gen/lib/ISO_32000/Icon_fit.pm6)
@@ -512,6 +551,7 @@ Entry|ISO_32000 Roles
 /FontWeight|[Font_descriptor_common](/gen/lib/ISO_32000/Font_descriptor_common.pm6)
 /Form|[UR_transform](/gen/lib/ISO_32000/UR_transform.pm6)
 /FormType|[Type_1_Form](/gen/lib/ISO_32000/Type_1_Form.pm6)
+/Frequency|[Type_1_halftone](/gen/lib/ISO_32000/Type_1_halftone.pm6)
 /Function|[Type_1_Shading](/gen/lib/ISO_32000/Type_1_Shading.pm6) [Type_2_Shading](/gen/lib/ISO_32000/Type_2_Shading.pm6) [Type_3_Shading](/gen/lib/ISO_32000/Type_3_Shading.pm6) [Type_4_Shading](/gen/lib/ISO_32000/Type_4_Shading.pm6) [Type_5_Shading](/gen/lib/ISO_32000/Type_5_Shading.pm6) [Type_6_Shading](/gen/lib/ISO_32000/Type_6_Shading.pm6)
 /FunctionType|[Function_common](/gen/lib/ISO_32000/Function_common.pm6)
 /Functions|[Type_3_Function](/gen/lib/ISO_32000/Type_3_Function.pm6)
@@ -522,7 +562,10 @@ Entry|ISO_32000 Roles
 /H|[Fixed_print](/gen/lib/ISO_32000/Fixed_print.pm6) [Hide_action_additional](/gen/lib/ISO_32000/Hide_action_additional.pm6) [Linearization_parameter](/gen/lib/ISO_32000/Linearization_parameter.pm6) [Link_annotation_additional](/gen/lib/ISO_32000/Link_annotation_additional.pm6) [Software_identifier](/gen/lib/ISO_32000/Software_identifier.pm6) [User_property](/gen/lib/ISO_32000/User_property.pm6) [Web_capture_command](/gen/lib/ISO_32000/Web_capture_command.pm6) [Widget_annotation_additional](/gen/lib/ISO_32000/Widget_annotation_additional.pm6)
 /HI|[Software_identifier](/gen/lib/ISO_32000/Software_identifier.pm6)
 /HT|[Graphics_state](/gen/lib/ISO_32000/Graphics_state.pm6)
-/Height|[Image](/gen/lib/ISO_32000/Image.pm6) [Inline_Image](/gen/lib/ISO_32000/Inline_Image.pm6)
+/HalftoneName|[Type_10_halftone](/gen/lib/ISO_32000/Type_10_halftone.pm6) [Type_16_halftone](/gen/lib/ISO_32000/Type_16_halftone.pm6) [Type_1_halftone](/gen/lib/ISO_32000/Type_1_halftone.pm6) [Type_5_halftone](/gen/lib/ISO_32000/Type_5_halftone.pm6) [Type_6_halftone](/gen/lib/ISO_32000/Type_6_halftone.pm6)
+/HalftoneType|[Type_10_halftone](/gen/lib/ISO_32000/Type_10_halftone.pm6) [Type_16_halftone](/gen/lib/ISO_32000/Type_16_halftone.pm6) [Type_1_halftone](/gen/lib/ISO_32000/Type_1_halftone.pm6) [Type_5_halftone](/gen/lib/ISO_32000/Type_5_halftone.pm6) [Type_6_halftone](/gen/lib/ISO_32000/Type_6_halftone.pm6)
+/Height|[Image](/gen/lib/ISO_32000/Image.pm6) [Inline_Image](/gen/lib/ISO_32000/Inline_Image.pm6) [Type_16_halftone](/gen/lib/ISO_32000/Type_16_halftone.pm6) [Type_6_halftone](/gen/lib/ISO_32000/Type_6_halftone.pm6)
+/Height2|[Type_16_halftone](/gen/lib/ISO_32000/Type_16_halftone.pm6)
 /HideMenubar|[Viewer_preferences](/gen/lib/ISO_32000/Viewer_preferences.pm6)
 /HideToolbar|[Viewer_preferences](/gen/lib/ISO_32000/Viewer_preferences.pm6)
 /HideWindowUI|[Viewer_preferences](/gen/lib/ISO_32000/Viewer_preferences.pm6)
@@ -551,9 +594,10 @@ Entry|ISO_32000 Roles
 /IsMap|[URI_action_additional](/gen/lib/ISO_32000/URI_action_additional.pm6)
 /Issuer|[Certificate_seed_value](/gen/lib/ISO_32000/Certificate_seed_value.pm6)
 /ItalicAngle|[Font_descriptor_common](/gen/lib/ISO_32000/Font_descriptor_common.pm6)
+/JBIG2Globals|[JBIG2_filter](/gen/lib/ISO_32000/JBIG2_filter.pm6)
 /JS|[JavaScript_action_additional](/gen/lib/ISO_32000/JavaScript_action_additional.pm6) [Rendition_action_additional](/gen/lib/ISO_32000/Rendition_action_additional.pm6)
 /JavaScript|[Catalog_Name_tree](/gen/lib/ISO_32000/Catalog_Name_tree.pm6) [FDF_dictionary](/gen/lib/ISO_32000/FDF_dictionary.pm6)
-/K|[Form_additional_actions](/gen/lib/ISO_32000/Form_additional_actions.pm6) [Structure_tree_element](/gen/lib/ISO_32000/Structure_tree_element.pm6) [Structure_tree_root](/gen/lib/ISO_32000/Structure_tree_root.pm6) [Transparency_group_additional](/gen/lib/ISO_32000/Transparency_group_additional.pm6)
+/K|[CCITTFax_filter](/gen/lib/ISO_32000/CCITTFax_filter.pm6) [Form_additional_actions](/gen/lib/ISO_32000/Form_additional_actions.pm6) [Structure_tree_element](/gen/lib/ISO_32000/Structure_tree_element.pm6) [Structure_tree_root](/gen/lib/ISO_32000/Structure_tree_root.pm6) [Transparency_group_additional](/gen/lib/ISO_32000/Transparency_group_additional.pm6)
 /KeyUsage|[Certificate_seed_value](/gen/lib/ISO_32000/Certificate_seed_value.pm6)
 /Keywords|[Info](/gen/lib/ISO_32000/Info.pm6)
 /Kids|[FDF_field](/gen/lib/ISO_32000/FDF_field.pm6) [Field_common](/gen/lib/ISO_32000/Field_common.pm6) [Name_tree_node](/gen/lib/ISO_32000/Name_tree_node.pm6) [Number_tree_node](/gen/lib/ISO_32000/Number_tree_node.pm6) [Pages](/gen/lib/ISO_32000/Pages.pm6)
@@ -575,7 +619,7 @@ Entry|ISO_32000 Roles
 /Leading|[Font_descriptor_common](/gen/lib/ISO_32000/Font_descriptor_common.pm6)
 /Legal|[Catalog](/gen/lib/ISO_32000/Catalog.pm6)
 /LegalAttestation|[Signature_field_seed_value](/gen/lib/ISO_32000/Signature_field_seed_value.pm6)
-/Length|[Encryption_common](/gen/lib/ISO_32000/Encryption_common.pm6) [Stream_common](/gen/lib/ISO_32000/Stream_common.pm6)
+/Length|[Crypt_filter_common](/gen/lib/ISO_32000/Crypt_filter_common.pm6) [Encryption_common](/gen/lib/ISO_32000/Encryption_common.pm6) [Stream_common](/gen/lib/ISO_32000/Stream_common.pm6)
 /Length1|[Embedded_font_stream_additional](/gen/lib/ISO_32000/Embedded_font_stream_additional.pm6)
 /Length2|[Embedded_font_stream_additional](/gen/lib/ISO_32000/Embedded_font_stream_additional.pm6)
 /Length3|[Embedded_font_stream_additional](/gen/lib/ISO_32000/Embedded_font_stream_additional.pm6)
@@ -603,6 +647,7 @@ Entry|ISO_32000 Roles
 /Marked|[Mark_information](/gen/lib/ISO_32000/Mark_information.pm6)
 /Mask|[Image](/gen/lib/ISO_32000/Image.pm6)
 /Matrix|[CalRGB_colour_space](/gen/lib/ISO_32000/CalRGB_colour_space.pm6) [Fixed_print](/gen/lib/ISO_32000/Fixed_print.pm6) [Type_1_Form](/gen/lib/ISO_32000/Type_1_Form.pm6) [Type_1_Pattern](/gen/lib/ISO_32000/Type_1_Pattern.pm6) [Type_1_Shading](/gen/lib/ISO_32000/Type_1_Shading.pm6) [Type_2_Pattern](/gen/lib/ISO_32000/Type_2_Pattern.pm6)
+/Matte|[Soft-mask_image_additional](/gen/lib/ISO_32000/Soft-mask_image_additional.pm6)
 /MaxLen|[Text_field_additional](/gen/lib/ISO_32000/Text_field_additional.pm6)
 /MaxWidth|[Font_descriptor_common](/gen/lib/ISO_32000/Font_descriptor_common.pm6)
 /Measure|[Line_annotation_additional](/gen/lib/ISO_32000/Line_annotation_additional.pm6) [Polygon_or_polyline_annotation_additional](/gen/lib/ISO_32000/Polygon_or_polyline_annotation_additional.pm6) [Viewport](/gen/lib/ISO_32000/Viewport.pm6)
@@ -621,7 +666,7 @@ Entry|ISO_32000 Roles
 /NP|[Three-D_activation](/gen/lib/ISO_32000/Three-D_activation.pm6)
 /NR|[Three-D_view](/gen/lib/ISO_32000/Three-D_view.pm6)
 /NU|[Media_players](/gen/lib/ISO_32000/Media_players.pm6)
-/Name|[FDF_named_page_reference](/gen/lib/ISO_32000/FDF_named_page_reference.pm6) [File_attachment_annotation_additional](/gen/lib/ISO_32000/File_attachment_annotation_additional.pm6) [Image](/gen/lib/ISO_32000/Image.pm6) [Optional_Content_Configuration](/gen/lib/ISO_32000/Optional_Content_Configuration.pm6) [Optional_Content_Group](/gen/lib/ISO_32000/Optional_Content_Group.pm6) [Rubber_stamp_annotation_additional](/gen/lib/ISO_32000/Rubber_stamp_annotation_additional.pm6) [Signature](/gen/lib/ISO_32000/Signature.pm6) [Sound_annotation_additional](/gen/lib/ISO_32000/Sound_annotation_additional.pm6) [Text_annotation_additional](/gen/lib/ISO_32000/Text_annotation_additional.pm6) [Type_1_Font](/gen/lib/ISO_32000/Type_1_Font.pm6) [Type_1_Form](/gen/lib/ISO_32000/Type_1_Form.pm6) [Type_3_Font](/gen/lib/ISO_32000/Type_3_Font.pm6) [Viewport](/gen/lib/ISO_32000/Viewport.pm6)
+/Name|[Crypt_filter](/gen/lib/ISO_32000/Crypt_filter.pm6) [FDF_named_page_reference](/gen/lib/ISO_32000/FDF_named_page_reference.pm6) [File_attachment_annotation_additional](/gen/lib/ISO_32000/File_attachment_annotation_additional.pm6) [Image](/gen/lib/ISO_32000/Image.pm6) [Optional_Content_Configuration](/gen/lib/ISO_32000/Optional_Content_Configuration.pm6) [Optional_Content_Group](/gen/lib/ISO_32000/Optional_Content_Group.pm6) [Rubber_stamp_annotation_additional](/gen/lib/ISO_32000/Rubber_stamp_annotation_additional.pm6) [Signature](/gen/lib/ISO_32000/Signature.pm6) [Sound_annotation_additional](/gen/lib/ISO_32000/Sound_annotation_additional.pm6) [Text_annotation_additional](/gen/lib/ISO_32000/Text_annotation_additional.pm6) [Type_1_Font](/gen/lib/ISO_32000/Type_1_Font.pm6) [Type_1_Form](/gen/lib/ISO_32000/Type_1_Form.pm6) [Type_3_Font](/gen/lib/ISO_32000/Type_3_Font.pm6) [Viewport](/gen/lib/ISO_32000/Viewport.pm6)
 /Names|[Catalog](/gen/lib/ISO_32000/Catalog.pm6) [Name_tree_node](/gen/lib/ISO_32000/Name_tree_node.pm6)
 /NeedAppearances|[Interactive_form](/gen/lib/ISO_32000/Interactive_form.pm6)
 /NeedsRendering|[Catalog](/gen/lib/ISO_32000/Catalog.pm6)
@@ -656,7 +701,7 @@ Entry|ISO_32000 Roles
 /OutputIntents|[Catalog](/gen/lib/ISO_32000/Catalog.pm6)
 /OverlayText|[Redaction_annotation_additional](/gen/lib/ISO_32000/Redaction_annotation_additional.pm6)
 /Overprint|[OPI_version_1_3](/gen/lib/ISO_32000/OPI_version_1_3.pm6) [OPI_version_2_0](/gen/lib/ISO_32000/OPI_version_2_0.pm6)
-/P|[Additional_encryption](/gen/lib/ISO_32000/Additional_encryption.pm6) [Annotation_common](/gen/lib/ISO_32000/Annotation_common.pm6) [Attribute_object_for_user_properties](/gen/lib/ISO_32000/Attribute_object_for_user_properties.pm6) [Bead](/gen/lib/ISO_32000/Bead.pm6) [DocMDP_transform](/gen/lib/ISO_32000/DocMDP_transform.pm6) [Floating_window_parameter](/gen/lib/ISO_32000/Floating_window_parameter.pm6) [Linearization_parameter](/gen/lib/ISO_32000/Linearization_parameter.pm6) [Media_clip_data](/gen/lib/ISO_32000/Media_clip_data.pm6) [Media_rendition](/gen/lib/ISO_32000/Media_rendition.pm6) [Optional_Content_Group_Membership](/gen/lib/ISO_32000/Optional_Content_Group_Membership.pm6) [Page_label](/gen/lib/ISO_32000/Page_label.pm6) [Rendition_criteria](/gen/lib/ISO_32000/Rendition_criteria.pm6) [Structure_tree_element](/gen/lib/ISO_32000/Structure_tree_element.pm6) [Target](/gen/lib/ISO_32000/Target.pm6) [Three-D_view](/gen/lib/ISO_32000/Three-D_view.pm6) [UR_transform](/gen/lib/ISO_32000/UR_transform.pm6) [Web_capture_command](/gen/lib/ISO_32000/Web_capture_command.pm6) [Windows_launch_parameters](/gen/lib/ISO_32000/Windows_launch_parameters.pm6)
+/P|[Additional_encryption](/gen/lib/ISO_32000/Additional_encryption.pm6) [Annotation_common](/gen/lib/ISO_32000/Annotation_common.pm6) [Attribute_object_for_user_properties](/gen/lib/ISO_32000/Attribute_object_for_user_properties.pm6) [Bead](/gen/lib/ISO_32000/Bead.pm6) [Collection_subitem](/gen/lib/ISO_32000/Collection_subitem.pm6) [DocMDP_transform](/gen/lib/ISO_32000/DocMDP_transform.pm6) [Floating_window_parameter](/gen/lib/ISO_32000/Floating_window_parameter.pm6) [Linearization_parameter](/gen/lib/ISO_32000/Linearization_parameter.pm6) [Media_clip_data](/gen/lib/ISO_32000/Media_clip_data.pm6) [Media_rendition](/gen/lib/ISO_32000/Media_rendition.pm6) [Optional_Content_Group_Membership](/gen/lib/ISO_32000/Optional_Content_Group_Membership.pm6) [Page_label](/gen/lib/ISO_32000/Page_label.pm6) [Public_key_security_handler_additional](/gen/lib/ISO_32000/Public_key_security_handler_additional.pm6) [Rendition_criteria](/gen/lib/ISO_32000/Rendition_criteria.pm6) [Structure_tree_element](/gen/lib/ISO_32000/Structure_tree_element.pm6) [Target](/gen/lib/ISO_32000/Target.pm6) [Three-D_view](/gen/lib/ISO_32000/Three-D_view.pm6) [UR_transform](/gen/lib/ISO_32000/UR_transform.pm6) [Web_capture_command](/gen/lib/ISO_32000/Web_capture_command.pm6) [Windows_launch_parameters](/gen/lib/ISO_32000/Windows_launch_parameters.pm6)
 /PA|[Link_annotation_additional](/gen/lib/ISO_32000/Link_annotation_additional.pm6) [Navigation_node](/gen/lib/ISO_32000/Navigation_node.pm6)
 /PC|[Annotation_additional_actions](/gen/lib/ISO_32000/Annotation_additional_actions.pm6) [Three-D_animation_style](/gen/lib/ISO_32000/Three-D_animation_style.pm6) [Three-D_cross_section](/gen/lib/ISO_32000/Three-D_cross_section.pm6)
 /PCM|[Trap_network_appearance_stream](/gen/lib/ISO_32000/Trap_network_appearance_stream.pm6)
@@ -687,6 +732,7 @@ Entry|ISO_32000 Roles
 /Popup|[Annotation_markup_additional](/gen/lib/ISO_32000/Annotation_markup_additional.pm6)
 /Position|[OPI_version_1_3](/gen/lib/ISO_32000/OPI_version_1_3.pm6)
 /Poster|[Movie](/gen/lib/ISO_32000/Movie.pm6)
+/Predictor|[LZW_and_Flate_filter](/gen/lib/ISO_32000/LZW_and_Flate_filter.pm6)
 /PresSteps|[Page](/gen/lib/ISO_32000/Page.pm6)
 /PreserveRB|[Set-OCG-state_action_additional](/gen/lib/ISO_32000/Set-OCG-state_action_additional.pm6)
 /Prev|[Cross_reference_stream](/gen/lib/ISO_32000/Cross_reference_stream.pm6) [File_trailer](/gen/lib/ISO_32000/File_trailer.pm6) [Navigation_node](/gen/lib/ISO_32000/Navigation_node.pm6) [Outline_item](/gen/lib/ISO_32000/Outline_item.pm6)
@@ -721,6 +767,7 @@ Entry|ISO_32000 Roles
 /Rate|[Movie_activation](/gen/lib/ISO_32000/Movie_activation.pm6)
 /Reason|[Signature](/gen/lib/ISO_32000/Signature.pm6)
 /Reasons|[Signature_field_seed_value](/gen/lib/ISO_32000/Signature_field_seed_value.pm6)
+/Recipients|[Crypt_filter_public-key_additional](/gen/lib/ISO_32000/Crypt_filter_public-key_additional.pm6) [Public_key_security_handler_additional](/gen/lib/ISO_32000/Public_key_security_handler_additional.pm6)
 /Rect|[Annotation_common](/gen/lib/ISO_32000/Annotation_common.pm6)
 /Ref|[Type_1_Form](/gen/lib/ISO_32000/Type_1_Form.pm6)
 /Reference|[Signature](/gen/lib/ISO_32000/Signature.pm6)
@@ -730,12 +777,14 @@ Entry|ISO_32000 Roles
 /Renditions|[Catalog_Name_tree](/gen/lib/ISO_32000/Catalog_Name_tree.pm6)
 /Repeat|[Redaction_annotation_additional](/gen/lib/ISO_32000/Redaction_annotation_additional.pm6) [Sound_action_additional](/gen/lib/ISO_32000/Sound_action_additional.pm6)
 /Requirements|[Catalog](/gen/lib/ISO_32000/Catalog.pm6)
+/ResFork|[MacOS_file_information](/gen/lib/ISO_32000/MacOS_file_information.pm6)
 /Resolution|[OPI_version_1_3](/gen/lib/ISO_32000/OPI_version_1_3.pm6)
 /Resources|[Page](/gen/lib/ISO_32000/Page.pm6) [Slideshow](/gen/lib/ISO_32000/Slideshow.pm6) [Three-D_stream](/gen/lib/ISO_32000/Three-D_stream.pm6) [Type_1_Form](/gen/lib/ISO_32000/Type_1_Form.pm6) [Type_1_Pattern](/gen/lib/ISO_32000/Type_1_Pattern.pm6) [Type_3_Font](/gen/lib/ISO_32000/Type_3_Font.pm6)
 /RoleMap|[Structure_tree_root](/gen/lib/ISO_32000/Structure_tree_root.pm6)
 /Root|[FDF_trailer](/gen/lib/ISO_32000/FDF_trailer.pm6) [File_trailer](/gen/lib/ISO_32000/File_trailer.pm6)
 /Rotate|[Movie](/gen/lib/ISO_32000/Movie.pm6) [Page](/gen/lib/ISO_32000/Page.pm6)
-/S|[Action_common](/gen/lib/ISO_32000/Action_common.pm6) [Border_effect](/gen/lib/ISO_32000/Border_effect.pm6) [Border_style](/gen/lib/ISO_32000/Border_style.pm6) [Collection_sort](/gen/lib/ISO_32000/Collection_sort.pm6) [Embedded_goto_action_additional](/gen/lib/ISO_32000/Embedded_goto_action_additional.pm6) [Goto_3D_view_action_additional](/gen/lib/ISO_32000/Goto_3D_view_action_additional.pm6) [Goto_action_additional](/gen/lib/ISO_32000/Goto_action_additional.pm6) [Group_Attributes_common](/gen/lib/ISO_32000/Group_Attributes_common.pm6) [Hide_action_additional](/gen/lib/ISO_32000/Hide_action_additional.pm6) [Icon_fit](/gen/lib/ISO_32000/Icon_fit.pm6) [Import-data_action_additional](/gen/lib/ISO_32000/Import-data_action_additional.pm6) [JavaScript_action_additional](/gen/lib/ISO_32000/JavaScript_action_additional.pm6) [Launch_action_additional](/gen/lib/ISO_32000/Launch_action_additional.pm6) [Media_clip_common](/gen/lib/ISO_32000/Media_clip_common.pm6) [Media_duration](/gen/lib/ISO_32000/Media_duration.pm6) [Media_offset_common](/gen/lib/ISO_32000/Media_offset_common.pm6) [Movie_action_additional](/gen/lib/ISO_32000/Movie_action_additional.pm6) [Named_action_additional](/gen/lib/ISO_32000/Named_action_additional.pm6) [Output_intent](/gen/lib/ISO_32000/Output_intent.pm6) [Page_label](/gen/lib/ISO_32000/Page_label.pm6) [Rectilinear_measure_additional](/gen/lib/ISO_32000/Rectilinear_measure_additional.pm6) [Remote_goto_action_additional](/gen/lib/ISO_32000/Remote_goto_action_additional.pm6) [Rendition_action_additional](/gen/lib/ISO_32000/Rendition_action_additional.pm6) [Rendition_common](/gen/lib/ISO_32000/Rendition_common.pm6) [Rendition_criteria](/gen/lib/ISO_32000/Rendition_criteria.pm6) [Requirement_common](/gen/lib/ISO_32000/Requirement_common.pm6) [Requirement_handler](/gen/lib/ISO_32000/Requirement_handler.pm6) [Reset_form_action](/gen/lib/ISO_32000/Reset_form_action.pm6) [Set-OCG-state_action_additional](/gen/lib/ISO_32000/Set-OCG-state_action_additional.pm6) [Soft-mask](/gen/lib/ISO_32000/Soft-mask.pm6) [Sound_action_additional](/gen/lib/ISO_32000/Sound_action_additional.pm6) [Source_information](/gen/lib/ISO_32000/Source_information.pm6) [Structure_tree_element](/gen/lib/ISO_32000/Structure_tree_element.pm6) [Submit_form_action](/gen/lib/ISO_32000/Submit_form_action.pm6) [Thread_action_additional](/gen/lib/ISO_32000/Thread_action_additional.pm6) [Timespan](/gen/lib/ISO_32000/Timespan.pm6) [Transition](/gen/lib/ISO_32000/Transition.pm6) [Transition_action_additional](/gen/lib/ISO_32000/Transition_action_additional.pm6) [Transparency_group_additional](/gen/lib/ISO_32000/Transparency_group_additional.pm6) [URI_action_additional](/gen/lib/ISO_32000/URI_action_additional.pm6) [Web_Capture_content_sets](/gen/lib/ISO_32000/Web_Capture_content_sets.pm6) [Web_Capture_image_set](/gen/lib/ISO_32000/Web_Capture_image_set.pm6) [Web_Capture_page_set_additional](/gen/lib/ISO_32000/Web_Capture_page_set_additional.pm6) [Web_capture_command](/gen/lib/ISO_32000/Web_capture_command.pm6)
+/Rows|[CCITTFax_filter](/gen/lib/ISO_32000/CCITTFax_filter.pm6)
+/S|[Action_common](/gen/lib/ISO_32000/Action_common.pm6) [Border_effect](/gen/lib/ISO_32000/Border_effect.pm6) [Border_style](/gen/lib/ISO_32000/Border_style.pm6) [Box_style](/gen/lib/ISO_32000/Box_style.pm6) [Collection_sort](/gen/lib/ISO_32000/Collection_sort.pm6) [Embedded_goto_action_additional](/gen/lib/ISO_32000/Embedded_goto_action_additional.pm6) [Goto_3D_view_action_additional](/gen/lib/ISO_32000/Goto_3D_view_action_additional.pm6) [Goto_action_additional](/gen/lib/ISO_32000/Goto_action_additional.pm6) [Group_Attributes_common](/gen/lib/ISO_32000/Group_Attributes_common.pm6) [Hide_action_additional](/gen/lib/ISO_32000/Hide_action_additional.pm6) [Icon_fit](/gen/lib/ISO_32000/Icon_fit.pm6) [Import-data_action_additional](/gen/lib/ISO_32000/Import-data_action_additional.pm6) [JavaScript_action_additional](/gen/lib/ISO_32000/JavaScript_action_additional.pm6) [Launch_action_additional](/gen/lib/ISO_32000/Launch_action_additional.pm6) [Media_clip_common](/gen/lib/ISO_32000/Media_clip_common.pm6) [Media_duration](/gen/lib/ISO_32000/Media_duration.pm6) [Media_offset_common](/gen/lib/ISO_32000/Media_offset_common.pm6) [Movie_action_additional](/gen/lib/ISO_32000/Movie_action_additional.pm6) [Named_action_additional](/gen/lib/ISO_32000/Named_action_additional.pm6) [Output_intent](/gen/lib/ISO_32000/Output_intent.pm6) [Page_label](/gen/lib/ISO_32000/Page_label.pm6) [Rectilinear_measure_additional](/gen/lib/ISO_32000/Rectilinear_measure_additional.pm6) [Remote_goto_action_additional](/gen/lib/ISO_32000/Remote_goto_action_additional.pm6) [Rendition_action_additional](/gen/lib/ISO_32000/Rendition_action_additional.pm6) [Rendition_common](/gen/lib/ISO_32000/Rendition_common.pm6) [Rendition_criteria](/gen/lib/ISO_32000/Rendition_criteria.pm6) [Requirement_common](/gen/lib/ISO_32000/Requirement_common.pm6) [Requirement_handler](/gen/lib/ISO_32000/Requirement_handler.pm6) [Reset_form_action](/gen/lib/ISO_32000/Reset_form_action.pm6) [Set-OCG-state_action_additional](/gen/lib/ISO_32000/Set-OCG-state_action_additional.pm6) [Soft-mask](/gen/lib/ISO_32000/Soft-mask.pm6) [Sound_action_additional](/gen/lib/ISO_32000/Sound_action_additional.pm6) [Source_information](/gen/lib/ISO_32000/Source_information.pm6) [Structure_tree_element](/gen/lib/ISO_32000/Structure_tree_element.pm6) [Submit_form_action](/gen/lib/ISO_32000/Submit_form_action.pm6) [Thread_action_additional](/gen/lib/ISO_32000/Thread_action_additional.pm6) [Timespan](/gen/lib/ISO_32000/Timespan.pm6) [Transition](/gen/lib/ISO_32000/Transition.pm6) [Transition_action_additional](/gen/lib/ISO_32000/Transition_action_additional.pm6) [Transparency_group_additional](/gen/lib/ISO_32000/Transparency_group_additional.pm6) [URI_action_additional](/gen/lib/ISO_32000/URI_action_additional.pm6) [Web_Capture_content_sets](/gen/lib/ISO_32000/Web_Capture_content_sets.pm6) [Web_Capture_image_set](/gen/lib/ISO_32000/Web_Capture_image_set.pm6) [Web_Capture_page_set_additional](/gen/lib/ISO_32000/Web_Capture_page_set_additional.pm6) [Web_capture_command](/gen/lib/ISO_32000/Web_capture_command.pm6)
 /SA|[Graphics_state](/gen/lib/ISO_32000/Graphics_state.pm6) [Three-D_view](/gen/lib/ISO_32000/Three-D_view.pm6)
 /SE|[Outline_item](/gen/lib/ISO_32000/Outline_item.pm6)
 /SI|[Web_Capture_content_sets](/gen/lib/ISO_32000/Web_Capture_content_sets.pm6)
@@ -762,6 +811,7 @@ Entry|ISO_32000 Roles
 /Sort|[Collection](/gen/lib/ISO_32000/Collection.pm6)
 /Sound|[Sound_action_additional](/gen/lib/ISO_32000/Sound_action_additional.pm6) [Sound_annotation_additional](/gen/lib/ISO_32000/Sound_annotation_additional.pm6)
 /SpiderInfo|[Catalog](/gen/lib/ISO_32000/Catalog.pm6)
+/SpotFunction|[Type_1_halftone](/gen/lib/ISO_32000/Type_1_halftone.pm6)
 /St|[Page_label](/gen/lib/ISO_32000/Page_label.pm6)
 /Start|[Movie_activation](/gen/lib/ISO_32000/Movie_activation.pm6)
 /StartResource|[Slideshow](/gen/lib/ISO_32000/Slideshow.pm6)
@@ -782,7 +832,7 @@ Entry|ISO_32000 Roles
 /Subj|[Annotation_markup_additional](/gen/lib/ISO_32000/Annotation_markup_additional.pm6)
 /Subject|[Certificate_seed_value](/gen/lib/ISO_32000/Certificate_seed_value.pm6) [Info](/gen/lib/ISO_32000/Info.pm6)
 /SubjectDN|[Certificate_seed_value](/gen/lib/ISO_32000/Certificate_seed_value.pm6)
-/Subtype|[Annotation_common](/gen/lib/ISO_32000/Annotation_common.pm6) [Artifact](/gen/lib/ISO_32000/Artifact.pm6) [CIDFont](/gen/lib/ISO_32000/CIDFont.pm6) [Caret_annotation_additional](/gen/lib/ISO_32000/Caret_annotation_additional.pm6) [Collection_field](/gen/lib/ISO_32000/Collection_field.pm6) [DeviceN_colour_space_attributes](/gen/lib/ISO_32000/DeviceN_colour_space_attributes.pm6) [Embedded_file_stream](/gen/lib/ISO_32000/Embedded_file_stream.pm6) [Embedded_font_stream_additional](/gen/lib/ISO_32000/Embedded_font_stream_additional.pm6) [File_attachment_annotation_additional](/gen/lib/ISO_32000/File_attachment_annotation_additional.pm6) [Free_text_annotation_additional](/gen/lib/ISO_32000/Free_text_annotation_additional.pm6) [Image](/gen/lib/ISO_32000/Image.pm6) [Ink_annotation_additional](/gen/lib/ISO_32000/Ink_annotation_additional.pm6) [Line_annotation_additional](/gen/lib/ISO_32000/Line_annotation_additional.pm6) [Link_annotation_additional](/gen/lib/ISO_32000/Link_annotation_additional.pm6) [Measure](/gen/lib/ISO_32000/Measure.pm6) [Metadata_stream_additional](/gen/lib/ISO_32000/Metadata_stream_additional.pm6) [Movie_annotation_additional](/gen/lib/ISO_32000/Movie_annotation_additional.pm6) [Polygon_or_polyline_annotation_additional](/gen/lib/ISO_32000/Polygon_or_polyline_annotation_additional.pm6) [Popup_annotation_additional](/gen/lib/ISO_32000/Popup_annotation_additional.pm6) [Postscript_XObject](/gen/lib/ISO_32000/Postscript_XObject.pm6) [Printers_mark_annotation](/gen/lib/ISO_32000/Printers_mark_annotation.pm6) [Projection](/gen/lib/ISO_32000/Projection.pm6) [Redaction_annotation_additional](/gen/lib/ISO_32000/Redaction_annotation_additional.pm6) [Render_mode](/gen/lib/ISO_32000/Render_mode.pm6) [Rubber_stamp_annotation_additional](/gen/lib/ISO_32000/Rubber_stamp_annotation_additional.pm6) [Screen_annotation_additional](/gen/lib/ISO_32000/Screen_annotation_additional.pm6) [Slideshow](/gen/lib/ISO_32000/Slideshow.pm6) [Sound_annotation_additional](/gen/lib/ISO_32000/Sound_annotation_additional.pm6) [Square_or_circle_annotation_additional](/gen/lib/ISO_32000/Square_or_circle_annotation_additional.pm6) [Text_annotation_additional](/gen/lib/ISO_32000/Text_annotation_additional.pm6) [Text_markup_annotation_additional](/gen/lib/ISO_32000/Text_markup_annotation_additional.pm6) [Three-D_animation_style](/gen/lib/ISO_32000/Three-D_animation_style.pm6) [Three-D_annotation](/gen/lib/ISO_32000/Three-D_annotation.pm6) [Three-D_background](/gen/lib/ISO_32000/Three-D_background.pm6) [Three-D_external_data](/gen/lib/ISO_32000/Three-D_external_data.pm6) [Three-D_lighting_scheme](/gen/lib/ISO_32000/Three-D_lighting_scheme.pm6) [Three-D_stream](/gen/lib/ISO_32000/Three-D_stream.pm6) [Trap_network_annotation](/gen/lib/ISO_32000/Trap_network_annotation.pm6) [Type_0_Font](/gen/lib/ISO_32000/Type_0_Font.pm6) [Type_1_Font](/gen/lib/ISO_32000/Type_1_Font.pm6) [Type_1_Form](/gen/lib/ISO_32000/Type_1_Form.pm6) [Type_3_Font](/gen/lib/ISO_32000/Type_3_Font.pm6) [Watermark_annotation_additional](/gen/lib/ISO_32000/Watermark_annotation_additional.pm6) [Widget_annotation_additional](/gen/lib/ISO_32000/Widget_annotation_additional.pm6)
+/Subtype|[Annotation_common](/gen/lib/ISO_32000/Annotation_common.pm6) [Artifact](/gen/lib/ISO_32000/Artifact.pm6) [CIDFont](/gen/lib/ISO_32000/CIDFont.pm6) [Caret_annotation_additional](/gen/lib/ISO_32000/Caret_annotation_additional.pm6) [Collection_field](/gen/lib/ISO_32000/Collection_field.pm6) [DeviceN_colour_space_attributes](/gen/lib/ISO_32000/DeviceN_colour_space_attributes.pm6) [Embedded_file_stream](/gen/lib/ISO_32000/Embedded_file_stream.pm6) [Embedded_font_stream_additional](/gen/lib/ISO_32000/Embedded_font_stream_additional.pm6) [File_attachment_annotation_additional](/gen/lib/ISO_32000/File_attachment_annotation_additional.pm6) [Free_text_annotation_additional](/gen/lib/ISO_32000/Free_text_annotation_additional.pm6) [Image](/gen/lib/ISO_32000/Image.pm6) [Ink_annotation_additional](/gen/lib/ISO_32000/Ink_annotation_additional.pm6) [Line_annotation_additional](/gen/lib/ISO_32000/Line_annotation_additional.pm6) [Link_annotation_additional](/gen/lib/ISO_32000/Link_annotation_additional.pm6) [MacOS_file_information](/gen/lib/ISO_32000/MacOS_file_information.pm6) [Measure](/gen/lib/ISO_32000/Measure.pm6) [Metadata_stream_additional](/gen/lib/ISO_32000/Metadata_stream_additional.pm6) [Movie_annotation_additional](/gen/lib/ISO_32000/Movie_annotation_additional.pm6) [Polygon_or_polyline_annotation_additional](/gen/lib/ISO_32000/Polygon_or_polyline_annotation_additional.pm6) [Popup_annotation_additional](/gen/lib/ISO_32000/Popup_annotation_additional.pm6) [Postscript_XObject](/gen/lib/ISO_32000/Postscript_XObject.pm6) [Printers_mark_annotation](/gen/lib/ISO_32000/Printers_mark_annotation.pm6) [Projection](/gen/lib/ISO_32000/Projection.pm6) [Redaction_annotation_additional](/gen/lib/ISO_32000/Redaction_annotation_additional.pm6) [Render_mode](/gen/lib/ISO_32000/Render_mode.pm6) [Rubber_stamp_annotation_additional](/gen/lib/ISO_32000/Rubber_stamp_annotation_additional.pm6) [Screen_annotation_additional](/gen/lib/ISO_32000/Screen_annotation_additional.pm6) [Slideshow](/gen/lib/ISO_32000/Slideshow.pm6) [Sound_annotation_additional](/gen/lib/ISO_32000/Sound_annotation_additional.pm6) [Square_or_circle_annotation_additional](/gen/lib/ISO_32000/Square_or_circle_annotation_additional.pm6) [Text_annotation_additional](/gen/lib/ISO_32000/Text_annotation_additional.pm6) [Text_markup_annotation_additional](/gen/lib/ISO_32000/Text_markup_annotation_additional.pm6) [Three-D_animation_style](/gen/lib/ISO_32000/Three-D_animation_style.pm6) [Three-D_annotation](/gen/lib/ISO_32000/Three-D_annotation.pm6) [Three-D_background](/gen/lib/ISO_32000/Three-D_background.pm6) [Three-D_external_data](/gen/lib/ISO_32000/Three-D_external_data.pm6) [Three-D_lighting_scheme](/gen/lib/ISO_32000/Three-D_lighting_scheme.pm6) [Three-D_stream](/gen/lib/ISO_32000/Three-D_stream.pm6) [Trap_network_annotation](/gen/lib/ISO_32000/Trap_network_annotation.pm6) [Type_0_Font](/gen/lib/ISO_32000/Type_0_Font.pm6) [Type_1_Font](/gen/lib/ISO_32000/Type_1_Font.pm6) [Type_1_Form](/gen/lib/ISO_32000/Type_1_Form.pm6) [Type_3_Font](/gen/lib/ISO_32000/Type_3_Font.pm6) [Watermark_annotation_additional](/gen/lib/ISO_32000/Watermark_annotation_additional.pm6) [Widget_annotation_additional](/gen/lib/ISO_32000/Widget_annotation_additional.pm6)
 /Supplement|[CIDSystemInfo](/gen/lib/ISO_32000/CIDSystemInfo.pm6)
 /Suspects|[Mark_information](/gen/lib/ISO_32000/Mark_information.pm6)
 /Sy|[Caret_annotation_additional](/gen/lib/ISO_32000/Caret_annotation_additional.pm6)
@@ -815,6 +865,7 @@ Entry|ISO_32000 Roles
 /Title|[Info](/gen/lib/ISO_32000/Info.pm6) [Outline_item](/gen/lib/ISO_32000/Outline_item.pm6)
 /ToUnicode|[Type_0_Font](/gen/lib/ISO_32000/Type_0_Font.pm6) [Type_1_Font](/gen/lib/ISO_32000/Type_1_Font.pm6) [Type_3_Font](/gen/lib/ISO_32000/Type_3_Font.pm6)
 /Trans|[Page](/gen/lib/ISO_32000/Page.pm6) [Transition_action_additional](/gen/lib/ISO_32000/Transition_action_additional.pm6)
+/TransferFunction|[Type_10_halftone](/gen/lib/ISO_32000/Type_10_halftone.pm6) [Type_16_halftone](/gen/lib/ISO_32000/Type_16_halftone.pm6) [Type_1_halftone](/gen/lib/ISO_32000/Type_1_halftone.pm6) [Type_6_halftone](/gen/lib/ISO_32000/Type_6_halftone.pm6)
 /TransformMethod|[Signature_reference](/gen/lib/ISO_32000/Signature_reference.pm6)
 /TransformParams|[Signature_reference](/gen/lib/ISO_32000/Signature_reference.pm6)
 /Transparency|[OPI_version_1_3](/gen/lib/ISO_32000/OPI_version_1_3.pm6)
@@ -822,7 +873,7 @@ Entry|ISO_32000 Roles
 /TrapStyles|[Trap_network_appearance_stream](/gen/lib/ISO_32000/Trap_network_appearance_stream.pm6)
 /Trapped|[Info](/gen/lib/ISO_32000/Info.pm6)
 /TrimBox|[Box_colour_information](/gen/lib/ISO_32000/Box_colour_information.pm6) [Page](/gen/lib/ISO_32000/Page.pm6)
-/Type|[Action_common](/gen/lib/ISO_32000/Action_common.pm6) [Annotation_common](/gen/lib/ISO_32000/Annotation_common.pm6) [Artifact](/gen/lib/ISO_32000/Artifact.pm6) [Bead](/gen/lib/ISO_32000/Bead.pm6) [Border_style](/gen/lib/ISO_32000/Border_style.pm6) [CIDFont](/gen/lib/ISO_32000/CIDFont.pm6) [CMap_stream](/gen/lib/ISO_32000/CMap_stream.pm6) [Catalog](/gen/lib/ISO_32000/Catalog.pm6) [Certificate_seed_value](/gen/lib/ISO_32000/Certificate_seed_value.pm6) [Collection](/gen/lib/ISO_32000/Collection.pm6) [Collection_field](/gen/lib/ISO_32000/Collection_field.pm6) [Collection_schema](/gen/lib/ISO_32000/Collection_schema.pm6) [Collection_sort](/gen/lib/ISO_32000/Collection_sort.pm6) [Cross_reference_stream](/gen/lib/ISO_32000/Cross_reference_stream.pm6) [DocMDP_transform](/gen/lib/ISO_32000/DocMDP_transform.pm6) [Embedded_file_stream](/gen/lib/ISO_32000/Embedded_file_stream.pm6) [Encoding](/gen/lib/ISO_32000/Encoding.pm6) [FieldMDP_transform](/gen/lib/ISO_32000/FieldMDP_transform.pm6) [File_specification](/gen/lib/ISO_32000/File_specification.pm6) [Fixed_print](/gen/lib/ISO_32000/Fixed_print.pm6) [Floating_window_parameter](/gen/lib/ISO_32000/Floating_window_parameter.pm6) [Font_descriptor_common](/gen/lib/ISO_32000/Font_descriptor_common.pm6) [Graphics_state](/gen/lib/ISO_32000/Graphics_state.pm6) [Group_Attributes_common](/gen/lib/ISO_32000/Group_Attributes_common.pm6) [Image](/gen/lib/ISO_32000/Image.pm6) [Marked_content_reference](/gen/lib/ISO_32000/Marked_content_reference.pm6) [Measure](/gen/lib/ISO_32000/Measure.pm6) [Media_clip_common](/gen/lib/ISO_32000/Media_clip_common.pm6) [Media_duration](/gen/lib/ISO_32000/Media_duration.pm6) [Media_offset_common](/gen/lib/ISO_32000/Media_offset_common.pm6) [Media_permissions](/gen/lib/ISO_32000/Media_permissions.pm6) [Media_play_parameters](/gen/lib/ISO_32000/Media_play_parameters.pm6) [Media_player_info](/gen/lib/ISO_32000/Media_player_info.pm6) [Media_players](/gen/lib/ISO_32000/Media_players.pm6) [Media_screen_parameters](/gen/lib/ISO_32000/Media_screen_parameters.pm6) [Metadata_stream_additional](/gen/lib/ISO_32000/Metadata_stream_additional.pm6) [Minimum_bit_depth](/gen/lib/ISO_32000/Minimum_bit_depth.pm6) [Minimum_screen_size](/gen/lib/ISO_32000/Minimum_screen_size.pm6) [Navigation_node](/gen/lib/ISO_32000/Navigation_node.pm6) [Number_format](/gen/lib/ISO_32000/Number_format.pm6) [OPI_version_1_3](/gen/lib/ISO_32000/OPI_version_1_3.pm6) [OPI_version_2_0](/gen/lib/ISO_32000/OPI_version_2_0.pm6) [Object_reference](/gen/lib/ISO_32000/Object_reference.pm6) [Object_stream](/gen/lib/ISO_32000/Object_stream.pm6) [Optional_Content_Group](/gen/lib/ISO_32000/Optional_Content_Group.pm6) [Optional_Content_Group_Membership](/gen/lib/ISO_32000/Optional_Content_Group_Membership.pm6) [Outline](/gen/lib/ISO_32000/Outline.pm6) [Output_intent](/gen/lib/ISO_32000/Output_intent.pm6) [Page](/gen/lib/ISO_32000/Page.pm6) [Page_label](/gen/lib/ISO_32000/Page_label.pm6) [Pages](/gen/lib/ISO_32000/Pages.pm6) [Postscript_XObject](/gen/lib/ISO_32000/Postscript_XObject.pm6) [Render_mode](/gen/lib/ISO_32000/Render_mode.pm6) [Rendition_common](/gen/lib/ISO_32000/Rendition_common.pm6) [Rendition_criteria](/gen/lib/ISO_32000/Rendition_criteria.pm6) [Requirement_common](/gen/lib/ISO_32000/Requirement_common.pm6) [Requirement_handler](/gen/lib/ISO_32000/Requirement_handler.pm6) [Signature](/gen/lib/ISO_32000/Signature.pm6) [Signature_field_lock](/gen/lib/ISO_32000/Signature_field_lock.pm6) [Signature_field_seed_value](/gen/lib/ISO_32000/Signature_field_seed_value.pm6) [Signature_reference](/gen/lib/ISO_32000/Signature_reference.pm6) [Slideshow](/gen/lib/ISO_32000/Slideshow.pm6) [Soft-mask](/gen/lib/ISO_32000/Soft-mask.pm6) [Software_identifier](/gen/lib/ISO_32000/Software_identifier.pm6) [Sound_object](/gen/lib/ISO_32000/Sound_object.pm6) [Structure_tree_element](/gen/lib/ISO_32000/Structure_tree_element.pm6) [Structure_tree_root](/gen/lib/ISO_32000/Structure_tree_root.pm6) [Thread](/gen/lib/ISO_32000/Thread.pm6) [Three-D_animation_style](/gen/lib/ISO_32000/Three-D_animation_style.pm6) [Three-D_background](/gen/lib/ISO_32000/Three-D_background.pm6) [Three-D_cross_section](/gen/lib/ISO_32000/Three-D_cross_section.pm6) [Three-D_external_data](/gen/lib/ISO_32000/Three-D_external_data.pm6) [Three-D_lighting_scheme](/gen/lib/ISO_32000/Three-D_lighting_scheme.pm6) [Three-D_node](/gen/lib/ISO_32000/Three-D_node.pm6) [Three-D_reference](/gen/lib/ISO_32000/Three-D_reference.pm6) [Three-D_stream](/gen/lib/ISO_32000/Three-D_stream.pm6) [Three-D_view](/gen/lib/ISO_32000/Three-D_view.pm6) [Timespan](/gen/lib/ISO_32000/Timespan.pm6) [Transition](/gen/lib/ISO_32000/Transition.pm6) [Type_0_Font](/gen/lib/ISO_32000/Type_0_Font.pm6) [Type_1_Font](/gen/lib/ISO_32000/Type_1_Font.pm6) [Type_1_Form](/gen/lib/ISO_32000/Type_1_Form.pm6) [Type_1_Pattern](/gen/lib/ISO_32000/Type_1_Pattern.pm6) [Type_2_Pattern](/gen/lib/ISO_32000/Type_2_Pattern.pm6) [Type_3_Font](/gen/lib/ISO_32000/Type_3_Font.pm6) [UR_transform](/gen/lib/ISO_32000/UR_transform.pm6) [Viewport](/gen/lib/ISO_32000/Viewport.pm6) [Web_Capture_content_sets](/gen/lib/ISO_32000/Web_Capture_content_sets.pm6)
+/Type|[Action_common](/gen/lib/ISO_32000/Action_common.pm6) [Annotation_common](/gen/lib/ISO_32000/Annotation_common.pm6) [Artifact](/gen/lib/ISO_32000/Artifact.pm6) [Bead](/gen/lib/ISO_32000/Bead.pm6) [Border_style](/gen/lib/ISO_32000/Border_style.pm6) [CIDFont](/gen/lib/ISO_32000/CIDFont.pm6) [CMap_stream](/gen/lib/ISO_32000/CMap_stream.pm6) [Catalog](/gen/lib/ISO_32000/Catalog.pm6) [Certificate_seed_value](/gen/lib/ISO_32000/Certificate_seed_value.pm6) [Collection](/gen/lib/ISO_32000/Collection.pm6) [Collection_field](/gen/lib/ISO_32000/Collection_field.pm6) [Collection_item](/gen/lib/ISO_32000/Collection_item.pm6) [Collection_schema](/gen/lib/ISO_32000/Collection_schema.pm6) [Collection_sort](/gen/lib/ISO_32000/Collection_sort.pm6) [Collection_subitem](/gen/lib/ISO_32000/Collection_subitem.pm6) [Cross_reference_stream](/gen/lib/ISO_32000/Cross_reference_stream.pm6) [Crypt_filter](/gen/lib/ISO_32000/Crypt_filter.pm6) [Crypt_filter_common](/gen/lib/ISO_32000/Crypt_filter_common.pm6) [Developer_extensions](/gen/lib/ISO_32000/Developer_extensions.pm6) [DocMDP_transform](/gen/lib/ISO_32000/DocMDP_transform.pm6) [Embedded_file_stream](/gen/lib/ISO_32000/Embedded_file_stream.pm6) [Encoding](/gen/lib/ISO_32000/Encoding.pm6) [FieldMDP_transform](/gen/lib/ISO_32000/FieldMDP_transform.pm6) [File_specification](/gen/lib/ISO_32000/File_specification.pm6) [Fixed_print](/gen/lib/ISO_32000/Fixed_print.pm6) [Floating_window_parameter](/gen/lib/ISO_32000/Floating_window_parameter.pm6) [Font_descriptor_common](/gen/lib/ISO_32000/Font_descriptor_common.pm6) [Graphics_state](/gen/lib/ISO_32000/Graphics_state.pm6) [Group_Attributes_common](/gen/lib/ISO_32000/Group_Attributes_common.pm6) [Image](/gen/lib/ISO_32000/Image.pm6) [Marked_content_reference](/gen/lib/ISO_32000/Marked_content_reference.pm6) [Measure](/gen/lib/ISO_32000/Measure.pm6) [Media_clip_common](/gen/lib/ISO_32000/Media_clip_common.pm6) [Media_duration](/gen/lib/ISO_32000/Media_duration.pm6) [Media_offset_common](/gen/lib/ISO_32000/Media_offset_common.pm6) [Media_permissions](/gen/lib/ISO_32000/Media_permissions.pm6) [Media_play_parameters](/gen/lib/ISO_32000/Media_play_parameters.pm6) [Media_player_info](/gen/lib/ISO_32000/Media_player_info.pm6) [Media_players](/gen/lib/ISO_32000/Media_players.pm6) [Media_screen_parameters](/gen/lib/ISO_32000/Media_screen_parameters.pm6) [Metadata_stream_additional](/gen/lib/ISO_32000/Metadata_stream_additional.pm6) [Minimum_bit_depth](/gen/lib/ISO_32000/Minimum_bit_depth.pm6) [Minimum_screen_size](/gen/lib/ISO_32000/Minimum_screen_size.pm6) [Navigation_node](/gen/lib/ISO_32000/Navigation_node.pm6) [Number_format](/gen/lib/ISO_32000/Number_format.pm6) [OPI_version_1_3](/gen/lib/ISO_32000/OPI_version_1_3.pm6) [OPI_version_2_0](/gen/lib/ISO_32000/OPI_version_2_0.pm6) [Object_reference](/gen/lib/ISO_32000/Object_reference.pm6) [Object_stream](/gen/lib/ISO_32000/Object_stream.pm6) [Optional_Content_Group](/gen/lib/ISO_32000/Optional_Content_Group.pm6) [Optional_Content_Group_Membership](/gen/lib/ISO_32000/Optional_Content_Group_Membership.pm6) [Outline](/gen/lib/ISO_32000/Outline.pm6) [Output_intent](/gen/lib/ISO_32000/Output_intent.pm6) [Page](/gen/lib/ISO_32000/Page.pm6) [Page_label](/gen/lib/ISO_32000/Page_label.pm6) [Pages](/gen/lib/ISO_32000/Pages.pm6) [Postscript_XObject](/gen/lib/ISO_32000/Postscript_XObject.pm6) [Render_mode](/gen/lib/ISO_32000/Render_mode.pm6) [Rendition_common](/gen/lib/ISO_32000/Rendition_common.pm6) [Rendition_criteria](/gen/lib/ISO_32000/Rendition_criteria.pm6) [Requirement_common](/gen/lib/ISO_32000/Requirement_common.pm6) [Requirement_handler](/gen/lib/ISO_32000/Requirement_handler.pm6) [Signature](/gen/lib/ISO_32000/Signature.pm6) [Signature_field_lock](/gen/lib/ISO_32000/Signature_field_lock.pm6) [Signature_field_seed_value](/gen/lib/ISO_32000/Signature_field_seed_value.pm6) [Signature_reference](/gen/lib/ISO_32000/Signature_reference.pm6) [Slideshow](/gen/lib/ISO_32000/Slideshow.pm6) [Soft-mask](/gen/lib/ISO_32000/Soft-mask.pm6) [Software_identifier](/gen/lib/ISO_32000/Software_identifier.pm6) [Sound_object](/gen/lib/ISO_32000/Sound_object.pm6) [Structure_tree_element](/gen/lib/ISO_32000/Structure_tree_element.pm6) [Structure_tree_root](/gen/lib/ISO_32000/Structure_tree_root.pm6) [Thread](/gen/lib/ISO_32000/Thread.pm6) [Three-D_animation_style](/gen/lib/ISO_32000/Three-D_animation_style.pm6) [Three-D_background](/gen/lib/ISO_32000/Three-D_background.pm6) [Three-D_cross_section](/gen/lib/ISO_32000/Three-D_cross_section.pm6) [Three-D_external_data](/gen/lib/ISO_32000/Three-D_external_data.pm6) [Three-D_lighting_scheme](/gen/lib/ISO_32000/Three-D_lighting_scheme.pm6) [Three-D_node](/gen/lib/ISO_32000/Three-D_node.pm6) [Three-D_reference](/gen/lib/ISO_32000/Three-D_reference.pm6) [Three-D_stream](/gen/lib/ISO_32000/Three-D_stream.pm6) [Three-D_view](/gen/lib/ISO_32000/Three-D_view.pm6) [Timespan](/gen/lib/ISO_32000/Timespan.pm6) [Transition](/gen/lib/ISO_32000/Transition.pm6) [Type_0_Font](/gen/lib/ISO_32000/Type_0_Font.pm6) [Type_10_halftone](/gen/lib/ISO_32000/Type_10_halftone.pm6) [Type_16_halftone](/gen/lib/ISO_32000/Type_16_halftone.pm6) [Type_1_Font](/gen/lib/ISO_32000/Type_1_Font.pm6) [Type_1_Form](/gen/lib/ISO_32000/Type_1_Form.pm6) [Type_1_Pattern](/gen/lib/ISO_32000/Type_1_Pattern.pm6) [Type_1_halftone](/gen/lib/ISO_32000/Type_1_halftone.pm6) [Type_2_Pattern](/gen/lib/ISO_32000/Type_2_Pattern.pm6) [Type_3_Font](/gen/lib/ISO_32000/Type_3_Font.pm6) [Type_5_halftone](/gen/lib/ISO_32000/Type_5_halftone.pm6) [Type_6_halftone](/gen/lib/ISO_32000/Type_6_halftone.pm6) [UR_transform](/gen/lib/ISO_32000/UR_transform.pm6) [Viewport](/gen/lib/ISO_32000/Viewport.pm6) [Web_Capture_content_sets](/gen/lib/ISO_32000/Web_Capture_content_sets.pm6)
 /U|[Additional_encryption](/gen/lib/ISO_32000/Additional_encryption.pm6) [Annotation_additional_actions](/gen/lib/ISO_32000/Annotation_additional_actions.pm6) [Number_format](/gen/lib/ISO_32000/Number_format.pm6) [Software_identifier](/gen/lib/ISO_32000/Software_identifier.pm6) [URL_alias](/gen/lib/ISO_32000/URL_alias.pm6)
 /U3DPath|[Three-D_view](/gen/lib/ISO_32000/Three-D_view.pm6)
 /UC|[Floating_window_parameter](/gen/lib/ISO_32000/Floating_window_parameter.pm6)
@@ -852,14 +903,15 @@ Entry|ISO_32000 Roles
 /ViewClip|[Viewer_preferences](/gen/lib/ISO_32000/Viewer_preferences.pm6)
 /ViewerPreferences|[Catalog](/gen/lib/ISO_32000/Catalog.pm6)
 /Volume|[Movie_activation](/gen/lib/ISO_32000/Movie_activation.pm6) [Sound_action_additional](/gen/lib/ISO_32000/Sound_action_additional.pm6)
-/W|[Border_style](/gen/lib/ISO_32000/Border_style.pm6) [CIDFont](/gen/lib/ISO_32000/CIDFont.pm6) [Cross_reference_stream](/gen/lib/ISO_32000/Cross_reference_stream.pm6) [Media_screen_parameters_MH-BE](/gen/lib/ISO_32000/Media_screen_parameters_MH-BE.pm6)
+/W|[Border_style](/gen/lib/ISO_32000/Border_style.pm6) [Box_style](/gen/lib/ISO_32000/Box_style.pm6) [CIDFont](/gen/lib/ISO_32000/CIDFont.pm6) [Cross_reference_stream](/gen/lib/ISO_32000/Cross_reference_stream.pm6) [Media_screen_parameters_MH-BE](/gen/lib/ISO_32000/Media_screen_parameters_MH-BE.pm6)
 /W2|[CIDFont](/gen/lib/ISO_32000/CIDFont.pm6)
 /WC|[Catalog_additional_actions](/gen/lib/ISO_32000/Catalog_additional_actions.pm6)
 /WMode|[CMap_stream](/gen/lib/ISO_32000/CMap_stream.pm6)
 /WP|[Catalog_additional_actions](/gen/lib/ISO_32000/Catalog_additional_actions.pm6)
 /WS|[Catalog_additional_actions](/gen/lib/ISO_32000/Catalog_additional_actions.pm6)
 /WhitePoint|[CalGray_colour_space](/gen/lib/ISO_32000/CalGray_colour_space.pm6) [CalRGB_colour_space](/gen/lib/ISO_32000/CalRGB_colour_space.pm6) [Lab_colour_space](/gen/lib/ISO_32000/Lab_colour_space.pm6)
-/Width|[Image](/gen/lib/ISO_32000/Image.pm6) [Inline_Image](/gen/lib/ISO_32000/Inline_Image.pm6)
+/Width|[Image](/gen/lib/ISO_32000/Image.pm6) [Inline_Image](/gen/lib/ISO_32000/Inline_Image.pm6) [Type_16_halftone](/gen/lib/ISO_32000/Type_16_halftone.pm6) [Type_6_halftone](/gen/lib/ISO_32000/Type_6_halftone.pm6)
+/Width2|[Type_16_halftone](/gen/lib/ISO_32000/Type_16_halftone.pm6)
 /Widths|[Type_1_Font](/gen/lib/ISO_32000/Type_1_Font.pm6) [Type_3_Font](/gen/lib/ISO_32000/Type_3_Font.pm6)
 /Win|[Launch_action_additional](/gen/lib/ISO_32000/Launch_action_additional.pm6)
 /X|[Annotation_additional_actions](/gen/lib/ISO_32000/Annotation_additional_actions.pm6) [Rectilinear_measure_additional](/gen/lib/ISO_32000/Rectilinear_measure_additional.pm6)
@@ -867,9 +919,12 @@ Entry|ISO_32000 Roles
 /XHeight|[Font_descriptor_common](/gen/lib/ISO_32000/Font_descriptor_common.pm6)
 /XN|[Three-D_view](/gen/lib/ISO_32000/Three-D_view.pm6)
 /XObject|[Resource](/gen/lib/ISO_32000/Resource.pm6)
+/XRefStm|[Hybrid-reference](/gen/lib/ISO_32000/Hybrid-reference.pm6)
 /XStep|[Type_1_Pattern](/gen/lib/ISO_32000/Type_1_Pattern.pm6)
+/Xsquare|[Type_10_halftone](/gen/lib/ISO_32000/Type_10_halftone.pm6)
 /Y|[Rectilinear_measure_additional](/gen/lib/ISO_32000/Rectilinear_measure_additional.pm6)
 /YStep|[Type_1_Pattern](/gen/lib/ISO_32000/Type_1_Pattern.pm6)
+/Ysquare|[Type_10_halftone](/gen/lib/ISO_32000/Type_10_halftone.pm6)
 /Z|[Rendition_criteria](/gen/lib/ISO_32000/Rendition_criteria.pm6)
 /Zoom|[Optional_Content_Group_Usage](/gen/lib/ISO_32000/Optional_Content_Group_Usage.pm6)
 /ca|[Graphics_state](/gen/lib/ISO_32000/Graphics_state.pm6)

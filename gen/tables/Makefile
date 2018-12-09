@@ -19,15 +19,16 @@ define table_to_html
 endef
 
 all : tables
-tables : White-space_characters.html Delimiter_characters.html String_escape_sequences.html Literal_name_examples.html Stream_common_entries.html Standard_filters.html Typical_LZW_encoding_sequence.html LZW_and_Flate_filter_params.html PNG_predictor_algorithms.html Predictor_values.html \
-CCITTFax_filter_params.html File_trailer_entries.html Object_stream_entries.html Cross_reference_stream_entries.html Cross_reference_stream_fields.html Encryption_common_entries.html Additional_encryption_entries.html User_access_permissions.html Catalog_entries.html Pages_entries.html Page_entries.html Catalog_Name_tree_entries.html Resource_entries.html PDF_data_types.html String_object_data_types.html Name_tree_node_entries.html Number_tree_node_entries.html Function_common_entries.html Type_0_Function_entries.html Type_2_Function_entries.html Type_3_Function_entries.html Type_4_Function_operators.html File_specification_entries.html Embedded_file_stream_entries.html Embedded_file_parameter_entries.html Operator_categories.html Device_independent_graphics_state.html Device_dependent_graphics_state.html Graphics_state_operators.html Graphics_state_entries.html Path_construction_operators.html Path_painting_operators.html Clipping_path_operators.html Colour_space_families.html CalGray_colour_space_entries.html CalRGB_colour_space_entries.html Lab_colour_space_entries.html ICC_profile_entries.html ICC_profile_versions.html ICC_profile_types.html ICC_profile_ranges.html Rendering_intents.html DeviceN_colour_space_attributes_entries.html DeviceN_process_entries.html DeviceN_mixing_hints_entries.html Colour_operators.html Type_1_Pattern_entries.html Type_2_Pattern_entries.html Shading_operator.html Shading_common_entries.html Type_1_Shading_entries.html Type_2_Shading_entries.html Type_3_Shading_entries.html Type_4_Shading_entries.html Type_5_Shading_entries.html Type_6_Shading_entries.html Data_values_in_a_coons_patch_mesh.html Data_values_in_a_tensor_product_patch_mesh.html XObject_operator.html Postscript_XObject_entries.html Image_entries.html Default_decode_arrays.html Alternate_Image_entries.html Inline_Image_operators.html Inline_Image_entries.html Inline_Image_additional_operators.html Type_1_Form_entries.html Group_Attributes_common_entries.html Reference_entries.html Optional_Content_Group_entries.html Optional_Content_Group_Membership_entries.html Optional_Content_Group_Properties_entries.html Optional_Content_Configuration_entries.html Optional_Content_Group_Usage_entries.html Optional_Content_Group_Application_entries.html Text_state_parameters.html Text_state_operators.html Text_rendering_modes.html Text_object_operators.html Text_position_operators.html Text_showing_operators.html Font_types.html Type_1_Font_entries.html Type_3_Font_entries.html Type_3_Font_operators.html Encoding_entries.html MacOS_encoding_differences.html CIDSystemInfo_entries.html CIDFont_entries.html CJK_CMap_names.html Character_collections_for_CMaps.html CMap_stream_entries.html Type_0_Font_entries.html Font_descriptor_common_entries.html Font_descriptor_flags.html CIDFont_descriptor_additional_entries.html Glyph_classes_in_CJK_fonts.html Embedded_font_organisation.html Embedded_font_stream_additional_entries.html Soft-mask_entries.html Transparency_group_additional_entries.html Viewer_preferences_entries.html Destination_syntax.html Outline_entries.html Outline_item_entries.html \
+tables : White-space_characters.html Delimiter_characters.html String_escape_sequences.html Literal_name_examples.html Stream_common_entries.html Standard_filters.html Typical_LZW_encoding_sequence.html LZW_and_Flate_filter_entries.html PNG_predictor_algorithms.html Predictor_values.html \
+CCITTFax_filter_entries.html JBIG2_filter_entries.html DCT_filter_entries.html Crypt_filter_entries.html File_trailer_entries.html Object_stream_entries.html Cross_reference_stream_entries.html Cross_reference_stream_fields.html Hybrid-reference_entries.html Encryption_common_entries.html Additional_encryption_entries.html User_access_permissions.html Public_key_security_handler_additional_entries.html Public_key_security_user_access_entries.html Crypt_filter_common_entries.html Standard_crypt_filter_names.html Crypt_filter_public-key_additional_entries.html Catalog_entries.html Pages_entries.html Page_entries.html Catalog_Name_tree_entries.html Compatibility_operators.html Resource_entries.html PDF_data_types.html String_object_data_types.html Name_tree_node_entries.html Number_tree_node_entries.html Function_common_entries.html Type_0_Function_entries.html Type_2_Function_entries.html Type_3_Function_entries.html Type_4_Function_operators.html File_specification_examples.html File_specification_entries.html Embedded_file_stream_entries.html Embedded_file_parameter_entries.html MacOS_file_information_entries.html Collection_item_entries.html Collection_subitem_entries.html Developer_extensions_entries.html Operator_categories.html Device_independent_graphics_state.html Device_dependent_graphics_state.html Line_cap_styles.html Line_join_styles.html Line_dash_examples.html Graphics_state_operators.html Graphics_state_entries.html Path_construction_operators.html Path_painting_operators.html Clipping_path_operators.html Colour_space_families.html CalGray_colour_space_entries.html CalRGB_colour_space_entries.html Lab_colour_space_entries.html ICC_profile_entries.html ICC_profile_versions.html ICC_profile_types.html ICC_profile_ranges.html Rendering_intents.html DeviceN_colour_space_attributes_entries.html DeviceN_process_entries.html DeviceN_mixing_hints_entries.html Colour_operators.html Type_1_Pattern_entries.html Type_2_Pattern_entries.html Shading_operator.html Shading_common_entries.html Type_1_Shading_entries.html Type_2_Shading_entries.html Type_3_Shading_entries.html Type_4_Shading_entries.html Type_5_Shading_entries.html Type_6_Shading_entries.html Data_values_in_a_coons_patch_mesh.html Data_values_in_a_tensor_product_patch_mesh.html XObject_operator.html Postscript_XObject_entries.html Image_entries.html Default_decode_arrays.html Alternate_Image_entries.html Inline_Image_operators.html Inline_Image_entries.html Inline_Image_additional_operators.html Type_1_Form_entries.html Group_Attributes_common_entries.html Reference_entries.html Optional_Content_Group_entries.html Optional_Content_Group_Membership_entries.html Optional_Content_Group_Properties_entries.html Optional_Content_Configuration_entries.html Optional_Content_Group_Usage_entries.html Optional_Content_Group_Application_entries.html Text_state_parameters.html Text_state_operators.html Text_rendering_modes.html Text_object_operators.html Text_position_operators.html Text_showing_operators.html Font_types.html Type_1_Font_entries.html Type_3_Font_entries.html Type_3_Font_operators.html Encoding_entries.html MacOS_encoding_differences.html CIDSystemInfo_entries.html CIDFont_entries.html CJK_CMap_names.html Character_collections_for_CMaps.html CMap_stream_entries.html Type_0_Font_entries.html Font_descriptor_common_entries.html Font_descriptor_flags.html CIDFont_descriptor_additional_entries.html Glyph_classes_in_CJK_fonts.html Embedded_font_organisation.html Embedded_font_stream_additional_entries.html \
+Predefined_spot_functions.html Halftone_types.html Type_1_halftone_entries.html Type_6_halftone_entries.html Type_10_halftone_entries.html Type_16_halftone_entries.html Type_5_halftone_entries.html Basic_compositing_variables.html Standard_separable_blend_modes.html Standard_nonseparable_blend_modes.html Source_shape_and_opacity_formula_variables.html Result_shape_and_opacity_formula_variables.html Revised_basic_compositing_formula_variables.html Arguments_and_results_of_group_compositing_function.html Variables_used_in_the_group_compositing_formulas.html Variables_used_in_the_page_group_compositing_formulas.html Soft-mask_entries.html Soft-mask_image_restrictions.html Soft-mask_image_additional_entries.html Transparency_group_additional_entries.html Overprinting_behavior_in_the_opaque_imaging_model.html Overprinting_behavior_in_the_transparent_imaging_model.html Viewer_preferences_entries.html Destination_syntax.html Outline_entries.html Outline_item_entries.html \
 Outline_item_flags.html Collection_entries.html Collection_schema_entries.html Collection_field_entries.html Collection_sort_entries.html Page_label_entries.html Thread_entries.html Bead_entries.html Transition_entries.html Navigation_node_entries.html Annotation_common_entries.html Annotation_flags.html Border_style_entries.html Border_effect_entries.html Appearance_entries.html Annotation_types.html Annotation_markup_additional_entries.html Annotation_states.html Text_annotation_additional_entries.html Link_annotation_additional_entries.html \
 Free_text_annotation_additional_entries.html Line_annotation_additional_entries.html Line_ending_styles.html Square_or_circle_annotation_additional_entries.html Polygon_or_polyline_annotation_additional_entries.html Text_markup_annotation_additional_entries.html Caret_annotation_additional_entries.html Rubber_stamp_annotation_additional_entries.html Ink_annotation_additional_entries.html Popup_annotation_additional_entries.html File_attachment_annotation_additional_entries.html Sound_annotation_additional_entries.html Movie_annotation_additional_entries.html Screen_annotation_additional_entries.html Widget_annotation_additional_entries.html Appearance_characteristics_entries.html Watermark_annotation_additional_entries.html Fixed_print_entries.html Redaction_annotation_additional_entries.html Action_common_entries.html Annotation_additional_actions_entries.html Page_additional_actions_entries.html Form_additional_actions_entries.html Catalog_additional_actions_entries.html Action_types.html \
 Goto_action_additional_entries.html Remote_goto_action_additional_entries.html Embedded_goto_action_additional_entries.html Target_entries.html Launch_action_additional_entries.html Windows_launch_parameters_entries.html Thread_action_additional_entries.html URI_action_additional_entries.html URI_entries.html Sound_action_additional_entries.html Movie_action_additional_entries.html Hide_action_additional_entries.html Named_actions.html Named_action_additional_entries.html Set-OCG-state_action_additional_entries.html Rendition_action_additional_entries.html Transition_action_additional_entries.html Goto_3D_view_action_additional_entries.html JavaScript_action_additional_entries.html Interactive_form_entries.html Signature_flags.html Field_common_entries.html Field_flags.html Variable_text_field_entries.html XHTML_rich_text_string_elements.html Body_element_attributes.html CSS2_style_attributes.html Button_field_flags.html Check_box_and_radio_button_additional_entries.html Text_field_flags.html Text_field_additional_entries.html Choice_field_flags.html Choice_field_additional_entries.html Signature_field_entries.html Signature_field_lock_entries.html Signature_field_seed_value_entries.html Certificate_seed_value_entries.html Submit_form_action_entries.html Submit_form_action_flags.html Reset_form_action_entries.html Reset_form_action_flags.html Import-data_action_additional_entries.html FDF_trailer_entries.html FDF_catalog_entries.html FDF_dictionary_entries.html Embedded_file_stream_entries_FDF_additional.html JavaScript_entries.html FDF_field_entries.html  \
 Icon_fit_entries.html FDF_page_entries.html FDF_template_entries.html FDF_named_page_reference_entries.html FDF_annotation_additional_entries.html Signature_entries.html Signature_reference_entries.html DocMDP_transform_entries.html UR_transform_entries.html FieldMDP_transform_entries.html SubFilter_value_algorithm_support.html Permissions_entries.html Viewport_entries.html Measure_entries.html Rectilinear_measure_additional_entries.html Number_format_entries.html Requirement_common_entries.html Requirement_handler_entries.html Rendition_common_entries.html Rendition_MH-BE_entries.html Rendition_criteria_entries.html Minimum_bit_depth_entries.html Minimum_screen_size_entries.html Media_rendition_entries.html Selector_rendition_entries.html Media_clip_common_entries.html Media_clip_data_entries.html Media_permissions_entries.html Media_clip_data_MH-BE_entries.html Media_clip_section_entries.html Media_clip_section_MH-BE_entries.html Media_play_parameters_entries.html Media_play_parameters_MH-BE-entries.html \
 Media_duration_entries.html Media_screen_parameters_entries.html Media_screen_parameters_MH-BE_entries.html Floating_window_parameter_entries.html Media_offset_common_entries.html Media_offset_time_entries.html Media_offset_frame_entries.html Media_offset_marker_entries.html Timespan_entries.html Media_players_entries.html Media_player_info_entries.html Software_identifier_entries.html Monitor_specifier_values.html Sound_object_entries.html Movie_entries.html Movie_activation_entries.html Slideshow_entries.html Three-D_annotation_entries.html Three-D_activation_entries.html Three-D_stream_entries.html Three-D_animation_style_entries.html Animation_styles.html Three-D_reference_entries.html Three-D_view_entries.html Projection_entries.html Three-D_background_entries.html Render_mode_entries.html Render_modes.html Three-D_lighting_scheme_entries.html Lighting_scheme_styles.html Three-D_cross_section_entries.html \
 Three-D_node_entries.html Three-D_external_data_entries.html Predefined_procedure_set.html Metadata_stream_additional_entries.html Metadata_additional_entries.html Info_entries.html Page-piece_entries.html Data_entries.html Marked_content_operators.html Mark_information_entries.html Structure_tree_root_entries.html Structure_tree_element_entries.html Marked_content_reference_entries.html Object_reference_entries.html Structure_element_access_additional_entries.html Attribute_object_entries.html Attribute_object_for_user_properties_entries.html User_property_entries.html Artifact_entries.html Font_characteristic_derivation.html Font_selector_attributes.html Web_Capture_information_entries.html Characters_with_special_meanings.html Web_Capture_content_sets_entries.html Web_Capture_page_set_additional_entries.html Web_Capture_image_set_entries.html \
-Source_information_entries.html URL_alias_entries.html Web_capture_command_entries.html Web_capture_command_flags.html Web_capture_command_settings_entries.html Box_colour_information_entries.html Printers_mark_annotation_entries.html Printers_mark_form_entries.html Separation_entries.html Output_intent_entries.html Trap_network_annotation_entries.html Trap_network_appearance_stream_entries.html OPI_version_entries.html OPI_version_1_3_entries.html OPI_version_2_0_entries.html \
+Source_information_entries.html URL_alias_entries.html Web_capture_command_entries.html Web_capture_command_flags.html Web_capture_command_settings_entries.html Box_colour_information_entries.html Box_style_entries.html Printers_mark_annotation_entries.html Printers_mark_form_entries.html Separation_entries.html Output_intent_entries.html Trap_network_annotation_entries.html Trap_network_appearance_stream_entries.html OPI_version_entries.html OPI_version_1_3_entries.html OPI_version_2_0_entries.html \
 PDF_content_stream_operators.html Architectural_limits.html Latin-text_encodings.html PDFDocEncoding_Character_Set.html Linearization_parameter_entries.html Standard_hint_tables.html Page_offset_hint_tables-header_section.html Page_offset_hint_tables-per_page_entry.html Shared_object_hint_table-header_section.html Shared_object_hint_table-shared_object_group_entry.html Thumbnail_hint_table-header_section.html Thumbnail_hint_table-per_page_entry.html Generic_hint_table.html Extended_generic_hint_table.html Embedded_file_stream_hint_table-header_section.html Embedded_file_stream_hint_table-per_file_stream.html
 
 # Table 1
@@ -59,7 +60,7 @@ Typical_LZW_encoding_sequence.html :
 	$(call table_to_html,34) > $@
 
 # Table 8
-LZW_and_Flate_filter_params.html :
+LZW_and_Flate_filter_entries.html :
 	$(call table_to_html,35) > $@
 
 # Table 9
@@ -71,8 +72,20 @@ Predictor_values.html :
 	$(call table_to_html,37) > $@
 
 # Table 11
-CCITTFax_filter_params.html :
+CCITTFax_filter_entries.html :
 	$(call table_to_html,38) > $@
+
+# Table 12
+JBIG2_filter_entries.html :
+	$(call table_to_html,40) > $@
+
+# Table 13
+DCT_filter_entries.html :
+	$(call table_to_html,43) > $@
+
+# Table 14
+Crypt_filter_entries.html :
+	$(call table_to_html,46) > $@
 
 # Table 15
 File_trailer_entries.html :
@@ -90,6 +103,10 @@ Cross_reference_stream_entries.html :
 Cross_reference_stream_fields.html :
 	$(call table_to_html,59,--select=1) > $@
 
+# Table 19
+Hybrid-reference_entries.html :
+	$(call table_to_html,59,--select=2) > $@
+
 # Table 20
 Encryption_common_entries.html :
 	$(call table_to_html,64) > $@
@@ -101,6 +118,26 @@ Additional_encryption_entries.html :
 # Table 22
 User_access_permissions.html :
 	$(call table_to_html,69) > $@
+
+# Table 23
+Public_key_security_handler_additional_entries.html :
+	$(call table_to_html,73,--select=1) > $@
+
+# Table 24
+Public_key_security_user_access_entries.html :
+	$(call table_to_html,73,--select=2) > $@
+
+# Table 25
+Crypt_filter_common_entries.html :
+	$(call table_to_html,76) > $@
+
+# Table 26
+Standard_crypt_filter_names.html :
+	$(call table_to_html,77,--select=1) > $@
+
+# Table 27
+Crypt_filter_public-key_additional_entries.html :
+	$(call table_to_html,77,--select=2) > $@
 
 # Table 28
 Catalog_entries.html :
@@ -117,6 +154,10 @@ Page_entries.html :
 # Table 31
 Catalog_Name_tree_entries.html :
 	$(call table_to_html,89) > $@
+
+# Table 32
+Compatibility_operators.html :
+	$(call table_to_html,90) > $@
 
 # Table 33
 Resource_entries.html :
@@ -158,6 +199,10 @@ Type_3_Function_entries.html :
 Type_4_Function_operators.html :
 	$(call table_to_html,106) > $@
 
+# Table 43
+File_specification_examples.html :
+	$(call table_to_html,109) > $@
+
 # Table 44
 File_specification_entries.html :
 	$(call table_to_html,110) > $@
@@ -170,6 +215,22 @@ Embedded_file_stream_entries.html :
 Embedded_file_parameter_entries.html :
 	$(call table_to_html,112,--select=2) > $@
 
+# Table 47
+MacOS_file_information_entries.html :
+	$(call table_to_html,113) > $@
+
+# Table 48
+Collection_item_entries.html :
+	$(call table_to_html,114) > $@
+
+# Table 49
+Collection_subitem_entries.html :
+	$(call table_to_html,115) > $@
+
+# Table 50
+Developer_extensions_entries.html :
+	$(call table_to_html,116) > $@
+
 # Table 51
 Operator_categories.html :
 	$(call table_to_html,120) > $@
@@ -181,6 +242,18 @@ Device_independent_graphics_state.html :
 # Table 53
 Device_dependent_graphics_state.html :
 	$(call table_to_html,131) > $@
+
+# Table 54
+Line_cap_styles.html :
+	$(call table_to_html,133,--select=1) > $@
+
+# Table 55
+Line_join_styles.html :
+	$(call table_to_html,133,--select=2) > $@
+
+# Table 56
+Line_dash_examples.html :
+	$(call table_to_html,135,--select=1) > $@
 
 # Table 57
 Graphics_state_operators.html :
@@ -466,13 +539,94 @@ Embedded_font_organisation.html :
 Embedded_font_stream_additional_entries.html :
 	$(call table_to_html,298) > $@
 
+# Table 128
+Predefined_spot_functions.html :
+	$(call table_to_html,311) > $@
+
+# Table 129
+Halftone_types.html :
+	$(call table_to_html,316) > $@
+
+# Table 130
+Type_1_halftone_entries.html :
+	$(call table_to_html,317) > $@
+
+# Table 131
+Type_6_halftone_entries.html :
+	$(call table_to_html,318) > $@
+
+# Table 132
+Type_10_halftone_entries.html :
+	$(call table_to_html,321) > $@
+
+# Table 133
+Type_16_halftone_entries.html :
+	$(call table_to_html,322) > $@
+
+# Table 134
+Type_5_halftone_entries.html :
+	$(call table_to_html,323) > $@
+
+# Table 135
+Basic_compositing_variables.html :
+	$(call table_to_html,330) > $@
+
+# Table 136
+Standard_separable_blend_modes.html :
+	$(call table_to_html,332) > $@
+
+# Table 137
+Standard_nonseparable_blend_modes.html :
+	$(call table_to_html,335) > $@
+
+# Table 138
+Source_shape_and_opacity_formula_variables.html :
+	$(call table_to_html,338) > $@
+
+# Table 139
+Result_shape_and_opacity_formula_variables.html :
+	$(call table_to_html,339) > $@
+
+# Table 140
+Revised_basic_compositing_formula_variables.html :
+	$(call table_to_html,341) > $@
+
+# Table 141
+Arguments_and_results_of_group_compositing_function.html :
+	$(call table_to_html,343) > $@
+
+# Table 142
+Variables_used_in_the_group_compositing_formulas.html :
+	$(call table_to_html,344) > $@
+
+# Table 143
+Variables_used_in_the_page_group_compositing_formulas.html :
+	$(call table_to_html,348) > $@
+
+
 # Table 144
 Soft-mask_entries.html :
 	$(call table_to_html,355) > $@
 
+# Table 145
+Soft-mask_image_restrictions.html :
+	$(call table_to_html,356) > $@
+
+# Table 146
+Soft-mask_image_additional_entries.html :
+	$(call table_to_html,357) > $@
+
 # Table 147
 Transparency_group_additional_entries.html :
 	$(call table_to_html,358) > $@
+
+# Table 148
+Overprinting_behavior_in_the_opaque_imaging_model.html :
+	$(call table_to_html,366) > $@
+
+# Table 149
+Overprinting_behavior_in_the_transparent_imaging_model.html :
+	$(call table_to_html,367) > $@
 
 # Table 150
 Viewer_preferences_entries.html :
