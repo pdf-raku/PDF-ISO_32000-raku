@@ -11,7 +11,7 @@ The roles are named ISO_32000::Xxxx and contain method stubs and documentation f
 
 ## Tables
 
-Data is available for most of the tables in the PDF-32000 1.7 specification:
+Data is available for all of the tables in the PDF-32000 1.7 specification:
 ```
 use PDF::ISO_32000;
 # Load data about the Document Information dictionary
