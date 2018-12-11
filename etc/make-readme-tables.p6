@@ -11,7 +11,7 @@ sub MAIN(*@sources) {
         s/'#|' .* 'Table'/Table/ with $iso-ref;
         my $role-name = .subst(/'.pm6'$/, '').subst(m{'/'}, '::', :g);
         my $role-name-short = $role-name.split('::')[1];
-        my $link = "/gen/lib/" ~ $_;
+        my $link = "gen/lib/" ~ $_;
         my $role-ref = "[$role-name-short]($link)";
         my @entries = (require ::($role-name)).^methods.map: {'/' ~ .name};
         say "$iso-ref|$role-ref|{@entries.join: ' '}";
