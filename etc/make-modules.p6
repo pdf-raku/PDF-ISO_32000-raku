@@ -34,7 +34,7 @@ sub build(:$caption, :@head, :@rows) {
             say '';
             say '=head1 Methods (Entries)';
 
-            for @pod -> % ( :$entry!, :$type, :$desc ) {
+            for @pod -> % ( :$entry!, :$type, :$desc is copy) {
                 say '';
                 say "=head2 $entry [$type]";
                 with $desc {
