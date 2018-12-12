@@ -3,16 +3,16 @@ use v6;
 
 #| PDF 32000-1:2008 Table 225 – CSS2 style attributes used in rich text strings
 role ISO_32000::CSS2_style {
-    $?ROLE.^add_method("text-align", method {...});
-    $?ROLE.^add_method("vertical-align", method {...});
-    $?ROLE.^add_method("font-size", method {...});
-    $?ROLE.^add_method("font-style", method {...});
-    $?ROLE.^add_method("font-weight", method {...});
-    $?ROLE.^add_method("font-family", method {...});
+    method text-align {...};
+    method vertical-align {...};
+    method font-size {...};
+    method font-style {...};
+    method font-weight {...};
+    method font-family {...};
     method font {...};
     method color {...};
-    $?ROLE.^add_method("text-decoration", method {...});
-    $?ROLE.^add_method("font-stretch", method {...});
+    method text-decoration {...};
+    method font-stretch {...};
 }
 
 =begin pod

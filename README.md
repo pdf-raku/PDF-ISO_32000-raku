@@ -37,7 +37,7 @@ say PDF::ISO_32000.table($stream-ops)<caption>; #  Table A.1 – PDF content str
 
 ## Roles
 
-Roles are available for tables named `*_entries`
+Roles are available for tables named `*_entries`, or `*_attributes`.
 
 ```
 % p6doc ISO_320000:Info
@@ -113,7 +113,7 @@ Table 117 – Entries in a CIDFont dictionary|[CIDFont](gen/lib/ISO_32000/CIDFon
 Table 124 – Additional font descriptor entries for CIDFonts|[CIDFont_descriptor_additional](gen/lib/ISO_32000/CIDFont_descriptor_additional.pm6)|/Style /Lang /FD /CIDSet
 Table 116 – Entries in a CIDSystemInfo dictionary|[CIDSystemInfo](gen/lib/ISO_32000/CIDSystemInfo.pm6)|/Registry /Ordering /Supplement
 Table 120 – Additional entries in a CMap stream dictionary|[CMap_stream](gen/lib/ISO_32000/CMap_stream.pm6)|/Type /CMapName /CIDSystemInfo /WMode /UseCMap
-Table 225 – CSS2 style attributes used in rich text strings|[CSS2_style](gen/lib/ISO_32000/CSS2_style.pm6)|/font /color
+Table 225 – CSS2 style attributes used in rich text strings|[CSS2_style](gen/lib/ISO_32000/CSS2_style.pm6)|/text-align /vertical-align /font-size /font-style /font-weight /font-family /font /color /text-decoration /font-stretch
 Table 63 – Entries in a CalGray Colour Space Dictionary|[CalGray_colour_space](gen/lib/ISO_32000/CalGray_colour_space.pm6)|/WhitePoint /BlackPoint /Gamma
 Table 64 – Entries in a CalRGB Colour Space Dictionary|[CalRGB_colour_space](gen/lib/ISO_32000/CalRGB_colour_space.pm6)|/WhitePoint /BlackPoint /Gamma /Matrix
 Table 180 – Additional entries specific to a caret annotation|[Caret_annotation_additional](gen/lib/ISO_32000/Caret_annotation_additional.pm6)|/Subtype /RD /Sy
@@ -252,7 +252,6 @@ Table 362 – Additional entries specific to a printer’s mark annotation|[Prin
 Table 363 – Additional entries specific to a printer’s mark form dictionary|[Printers_mark_form](gen/lib/ISO_32000/Printers_mark_form.pm6)|/MarkStyle /Colorants
 Table 305 – Entries in a projection dictionary|[Projection](gen/lib/ISO_32000/Projection.pm6)|/Subtype /CS /F /N /FOV /PS /OS /OB
 Table 23 – Additional encryption dictionary entries for public-key security handlers|[Public_key_security_handler_additional](gen/lib/ISO_32000/Public_key_security_handler_additional.pm6)|/Recipients /P
-Table 24 – Public-Key security handler user access permissions|[Public_key_security_user_access](gen/lib/ISO_32000/Public_key_security_user_access.pm6)|
 Table 262 – Additional entries in a rectilinear measure dictionary|[Rectilinear_measure_additional](gen/lib/ISO_32000/Rectilinear_measure_additional.pm6)|/R /X /Y /D /A /T /S /O /CYX
 Table 192 – Additional entries specific to a redaction annotation|[Redaction_annotation_additional](gen/lib/ISO_32000/Redaction_annotation_additional.pm6)|/Subtype /QuadPoints /IC /RO /OverlayText /Repeat /DA /Q
 Table 97 – Entries in a Reference Dictionary|[Reference](gen/lib/ISO_32000/Reference.pm6)|/F /Page /ID
@@ -288,7 +287,6 @@ Table 355 – Entries in a source information dictionary|[Source_information](ge
 Table 177 – Additional entries specific to a square or circle annotation|[Square_or_circle_annotation_additional](gen/lib/ISO_32000/Square_or_circle_annotation_additional.pm6)|/Subtype /BS /IC /BE /RD
 Table 346 – Standard column attributes|[Standard_column](gen/lib/ISO_32000/Standard_column.pm6)|/ColumnCount /ColumnGap /ColumnWidths
 Table 345 – Standard layout attributes specific to inline-level structure elements|[Standard_inline-level_structure_element](gen/lib/ISO_32000/Standard_inline-level_structure_element.pm6)|/BaselineShift /LineHeight /TextDecorationColor /TextDecorationThickness /TextDecorationType /RubyAlign /RubyPosition /GlyphOrientationVertical
-Table 342 – Standard layout attributes|[Standard_layout](gen/lib/ISO_32000/Standard_layout.pm6)|/TH
 Table 344 – Additional standard layout attributes specific to block-level structure elements|[Standard_layout_block-level_structure_element](gen/lib/ISO_32000/Standard_layout_block-level_structure_element.pm6)|/SpaceBefore /SpaceAfter /StartIndent /EndIndent /TextIndent /TextAlign /BBox /Width /Height /BlockAlign /InlineAlign /TBorderStyle /TPadding
 Table 343 – Standard layout attributes common to all standard structure types|[Standard_layout_structure_type](gen/lib/ISO_32000/Standard_layout_structure_type.pm6)|/Placement /WritingMode /BackgroundColor /BorderColor /BorderStyle /BorderThickness /Padding /Color
 Table 347 – Standard list attribute|[Standard_list](gen/lib/ISO_32000/Standard_list.pm6)|/ListNumbering
@@ -913,7 +911,6 @@ Entry|ISO_32000 Roles
 /TB|[Three-D_activation](gen/lib/ISO_32000/Three-D_activation.pm6)
 /TBorderStyle|[Standard_layout_block-level_structure_element](gen/lib/ISO_32000/Standard_layout_block-level_structure_element.pm6)
 /TF|[Media_permissions](gen/lib/ISO_32000/Media_permissions.pm6)
-/TH|[Standard_layout](gen/lib/ISO_32000/Standard_layout.pm6)
 /TI|[Choice_field_additional](gen/lib/ISO_32000/Choice_field_additional.pm6)
 /TID|[Web_Capture_page_set_additional](gen/lib/ISO_32000/Web_Capture_page_set_additional.pm6)
 /TK|[Graphics_state](gen/lib/ISO_32000/Graphics_state.pm6)
@@ -1013,5 +1010,13 @@ Entry|ISO_32000 Roles
 /checked|[PrintField](gen/lib/ISO_32000/PrintField.pm6)
 /color|[CSS2_style](gen/lib/ISO_32000/CSS2_style.pm6)
 /font|[CSS2_style](gen/lib/ISO_32000/CSS2_style.pm6)
+/font-family|[CSS2_style](gen/lib/ISO_32000/CSS2_style.pm6)
+/font-size|[CSS2_style](gen/lib/ISO_32000/CSS2_style.pm6)
+/font-stretch|[CSS2_style](gen/lib/ISO_32000/CSS2_style.pm6)
+/font-style|[CSS2_style](gen/lib/ISO_32000/CSS2_style.pm6)
+/font-weight|[CSS2_style](gen/lib/ISO_32000/CSS2_style.pm6)
 /op|[Graphics_state](gen/lib/ISO_32000/Graphics_state.pm6)
+/text-align|[CSS2_style](gen/lib/ISO_32000/CSS2_style.pm6)
+/text-decoration|[CSS2_style](gen/lib/ISO_32000/CSS2_style.pm6)
+/vertical-align|[CSS2_style](gen/lib/ISO_32000/CSS2_style.pm6)
 /xmlns|[Body_element](gen/lib/ISO_32000/Body_element.pm6)

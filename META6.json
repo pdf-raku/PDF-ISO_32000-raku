@@ -177,7 +177,6 @@
     "ISO_32000::Printers_mark_form": "gen/lib/ISO_32000/Printers_mark_form.pm6",
     "ISO_32000::Projection": "gen/lib/ISO_32000/Projection.pm6",
     "ISO_32000::Public_key_security_handler_additional": "gen/lib/ISO_32000/Public_key_security_handler_additional.pm6",
-    "ISO_32000::Public_key_security_user_access": "gen/lib/ISO_32000/Public_key_security_user_access.pm6",
     "ISO_32000::Rectilinear_measure_additional": "gen/lib/ISO_32000/Rectilinear_measure_additional.pm6",
     "ISO_32000::Redaction_annotation_additional": "gen/lib/ISO_32000/Redaction_annotation_additional.pm6",
     "ISO_32000::Reference": "gen/lib/ISO_32000/Reference.pm6",
@@ -213,7 +212,6 @@
     "ISO_32000::Square_or_circle_annotation_additional": "gen/lib/ISO_32000/Square_or_circle_annotation_additional.pm6",
     "ISO_32000::Standard_column": "gen/lib/ISO_32000/Standard_column.pm6",
     "ISO_32000::Standard_inline-level_structure_element": "gen/lib/ISO_32000/Standard_inline-level_structure_element.pm6",
-    "ISO_32000::Standard_layout": "gen/lib/ISO_32000/Standard_layout.pm6",
     "ISO_32000::Standard_layout_block-level_structure_element": "gen/lib/ISO_32000/Standard_layout_block-level_structure_element.pm6",
     "ISO_32000::Standard_layout_structure_type": "gen/lib/ISO_32000/Standard_layout_structure_type.pm6",
     "ISO_32000::Standard_list": "gen/lib/ISO_32000/Standard_list.pm6",
@@ -519,7 +517,7 @@
     "ISO_32000/Printers_mark_form_entries.json",
     "ISO_32000/Projection_entries.json",
     "ISO_32000/Public_key_security_handler_additional_entries.json",
-    "ISO_32000/Public_key_security_user_access_entries.json",
+    "ISO_32000/Public_key_security_handler_user_access_permissions.json",
     "ISO_32000/Rectilinear_measure_additional_entries.json",
     "ISO_32000/Redaction_annotation_additional_entries.json",
     "ISO_32000/Reference_entries.json",
@@ -570,7 +568,7 @@
     "ISO_32000/Standard_filters.json",
     "ISO_32000/Standard_hint_tables.json",
     "ISO_32000/Standard_inline-level_structure_element_attributes.json",
-    "ISO_32000/Standard_layout_attributes.json",
+    "ISO_32000/Standard_layout_attribute.json",
     "ISO_32000/Standard_layout_block-level_structure_element_attributes.json",
     "ISO_32000/Standard_layout_structure_type_attributes.json",
     "ISO_32000/Standard_list_attributes.json",
@@ -681,5 +679,5 @@
   "test-depends": [
     
   ],
-  "version": "0.0.3"
+  "version": "0.0.2"
 }

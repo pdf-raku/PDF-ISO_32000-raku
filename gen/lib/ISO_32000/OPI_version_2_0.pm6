@@ -13,9 +13,7 @@ role ISO_32000::OPI_version_2_0 {
     method Overprint {...};
     method Inks {...};
     method IncludedImageDimensions {...};
-    $?ROLE.^add_method("", method {...});
     method IncludedImageQuality {...};
-    $?ROLE.^add_method("", method {...});
 }
 
 =begin pod
@@ -52,13 +50,7 @@ role ISO_32000::OPI_version_2_0 {
 =head2 IncludedImageDimensions []
 - 
 
-=head2  [array]
-- %%IncludedImageDimensions
-
 =head2 IncludedImageQuality []
 - 
-
-=head2  [number]
-- %%IncludedImageQuality
 
 =end pod

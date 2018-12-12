@@ -5,7 +5,7 @@ use v6;
 role ISO_32000::Transition {
     method Type {...};
     method S {...};
-    $?ROLE.^add_method("", method {...});
+    method  {...};
     method D {...};
     method Dm {...};
     method M {...};

@@ -37,7 +37,7 @@ say PDF::ISO_32000.table($stream-ops)<caption>; #  Table A.1 – PDF content str
 
 ## Roles
 
-Roles are available for tables named `*_entries`
+Roles are available for tables named `*_entries`, or `*_attributes`.
 
 ```
 % p6doc ISO_320000:Info
