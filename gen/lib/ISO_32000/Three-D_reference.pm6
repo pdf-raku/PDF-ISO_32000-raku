@@ -4,7 +4,9 @@ use v6;
 #| PDF 32000-1:2008 Table 303 – Entries in a 3D reference dictionary
 role ISO_32000::Three-D_reference {
     method Type {...};
-    $?ROLE.^add_method("3DD", method {...});
+    INIT {
+       given $?ROLE.^add_method("3DD", method {...}) { .set_name("3DD") }
+    }
 }
 
 =begin pod

@@ -5,9 +5,11 @@ use v6;
 role ISO_32000::Three-D_external_data {
     method Type {...};
     method Subtype {...};
-    $?ROLE.^add_method("3DA", method {...});
-    $?ROLE.^add_method("3DV", method {...});
     method MD5 {...};
+    INIT {
+       given $?ROLE.^add_method("3DA", method {...}) { .set_name("3DA") }
+       given $?ROLE.^add_method("3DV", method {...}) { .set_name("3DV") }
+    }
 }
 
 =begin pod

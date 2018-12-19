@@ -4,11 +4,13 @@ use v6;
 #| PDF 32000-1:2008 Table 298 – Additional entries specific to a 3D annotation
 role ISO_32000::Three-D_annotation {
     method Subtype {...};
-    $?ROLE.^add_method("3DD", method {...});
-    $?ROLE.^add_method("3DV", method {...});
-    $?ROLE.^add_method("3DA", method {...});
-    $?ROLE.^add_method("3DI", method {...});
-    $?ROLE.^add_method("3DB", method {...});
+    INIT {
+       given $?ROLE.^add_method("3DD", method {...}) { .set_name("3DD") }
+       given $?ROLE.^add_method("3DV", method {...}) { .set_name("3DV") }
+       given $?ROLE.^add_method("3DA", method {...}) { .set_name("3DA") }
+       given $?ROLE.^add_method("3DI", method {...}) { .set_name("3DI") }
+       given $?ROLE.^add_method("3DB", method {...}) { .set_name("3DB") }
+    }
 }
 
 =begin pod

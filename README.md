@@ -103,7 +103,6 @@ Table 330 – Property list entries for artifacts|[Artifact](gen/lib/ISO_32000/A
 Table 327 – Entry common to all attribute object dictionaries|[Attribute_object](gen/lib/ISO_32000/Attribute_object.pm6)|/O
 Table 328 – Additional entries in an attribute object dictionary for user properties|[Attribute_object_for_user_properties](gen/lib/ISO_32000/Attribute_object_for_user_properties.pm6)|/O /P
 Table 161 – Entries in a bead dictionary|[Bead](gen/lib/ISO_32000/Bead.pm6)|/Type /T /N /V /P /R
-Table 224 – Attributes of the <body> element|[Body_element](gen/lib/ISO_32000/Body_element.pm6)|/xmlns
 Table 167 – Entries in a border effect dictionary|[Border_effect](gen/lib/ISO_32000/Border_effect.pm6)|/S /I
 Table 166 – Entries in a border style dictionary|[Border_style](gen/lib/ISO_32000/Border_style.pm6)|/Type /W /S /D
 Table 360 – Entries in a box colour information dictionary|[Box_colour_information](gen/lib/ISO_32000/Box_colour_information.pm6)|/CropBox /BleedBox /TrimBox /ArtBox
@@ -304,13 +303,13 @@ Table 160 – Entries in a thread dictionary|[Thread](gen/lib/ISO_32000/Thread.p
 Table 205 – Additional entries specific to a thread action|[Thread_action_additional](gen/lib/ISO_32000/Thread_action_additional.pm6)|/S /F /D /B
 Table 299 – Entries in a 3D activation dictionary|[Three-D_activation](gen/lib/ISO_32000/Three-D_activation.pm6)|/A /AIS /D /DIS /TB /NP
 Table 301 – Entries in an 3D animation style dictionary|[Three-D_animation_style](gen/lib/ISO_32000/Three-D_animation_style.pm6)|/Type /Subtype /PC /TM
-Table 298 – Additional entries specific to a 3D annotation|[Three-D_annotation](gen/lib/ISO_32000/Three-D_annotation.pm6)|/Subtype
+Table 298 – Additional entries specific to a 3D annotation|[Three-D_annotation](gen/lib/ISO_32000/Three-D_annotation.pm6)|/Subtype /3DD /3DV /3DA /3DI /3DB
 Table 306 – Entries in a 3D background dictionary|[Three-D_background](gen/lib/ISO_32000/Three-D_background.pm6)|/Type /Subtype /CS /C /EA
 Table 311 – Entries in a 3D cross section dictionary|[Three-D_cross_section](gen/lib/ISO_32000/Three-D_cross_section.pm6)|/Type /C /O /PO /PC /IV /IC
-Table 313 – Entries in an external data dictionary used to markup 3D annotations|[Three-D_external_data](gen/lib/ISO_32000/Three-D_external_data.pm6)|/Type /Subtype /MD5
+Table 313 – Entries in an external data dictionary used to markup 3D annotations|[Three-D_external_data](gen/lib/ISO_32000/Three-D_external_data.pm6)|/Type /Subtype /MD5 /3DA /3DV
 Table 309 – Entries in a 3D lighting scheme dictionary|[Three-D_lighting](gen/lib/ISO_32000/Three-D_lighting.pm6)|/Type /Subtype
 Table 312 – Entries in a 3D node dictionary|[Three-D_node](gen/lib/ISO_32000/Three-D_node.pm6)|/Type /N /O /V /M
-Table 303 – Entries in a 3D reference dictionary|[Three-D_reference](gen/lib/ISO_32000/Three-D_reference.pm6)|/Type
+Table 303 – Entries in a 3D reference dictionary|[Three-D_reference](gen/lib/ISO_32000/Three-D_reference.pm6)|/Type /3DD
 Table 300 – Entries in a 3D stream dictionary|[Three-D_stream](gen/lib/ISO_32000/Three-D_stream.pm6)|/Type /Subtype /VA /DV /Resources /OnInstantiate /AN
 Table 304 – Entries in a 3D view dictionary|[Three-D_view](gen/lib/ISO_32000/Three-D_view.pm6)|/Type /XN /IN /MS /C2W /U3DPath /CO /P /O /BG /RM /LS /SA /NA /NR
 Table 289 – Entries in a timespan dictionary|[Timespan](gen/lib/ISO_32000/Timespan.pm6)|/Type /S /V
@@ -361,6 +360,11 @@ Table 204 – Entries in a Windows launch parameter dictionary|[Windows_launch_p
 
 Entry|ISO_32000 Roles
 ----|-----
+/3DA|[Three-D_annotation](gen/lib/ISO_32000/Three-D_annotation.pm6) [Three-D_external_data](gen/lib/ISO_32000/Three-D_external_data.pm6)
+/3DB|[Three-D_annotation](gen/lib/ISO_32000/Three-D_annotation.pm6)
+/3DD|[Three-D_annotation](gen/lib/ISO_32000/Three-D_annotation.pm6) [Three-D_reference](gen/lib/ISO_32000/Three-D_reference.pm6)
+/3DI|[Three-D_annotation](gen/lib/ISO_32000/Three-D_annotation.pm6)
+/3DV|[Three-D_annotation](gen/lib/ISO_32000/Three-D_annotation.pm6) [Three-D_external_data](gen/lib/ISO_32000/Three-D_external_data.pm6)
 /A|[Collection_sort](gen/lib/ISO_32000/Collection_sort.pm6) [FDF_field](gen/lib/ISO_32000/FDF_field.pm6) [Icon_fit](gen/lib/ISO_32000/Icon_fit.pm6) [Link_annotation_additional](gen/lib/ISO_32000/Link_annotation_additional.pm6) [Media_players](gen/lib/ISO_32000/Media_players.pm6) [Movie_annotation_additional](gen/lib/ISO_32000/Movie_annotation_additional.pm6) [Outline_item](gen/lib/ISO_32000/Outline_item.pm6) [Rectilinear_measure_additional](gen/lib/ISO_32000/Rectilinear_measure_additional.pm6) [Rendition_criteria](gen/lib/ISO_32000/Rendition_criteria.pm6) [Screen_annotation_additional](gen/lib/ISO_32000/Screen_annotation_additional.pm6) [Structure_tree_element](gen/lib/ISO_32000/Structure_tree_element.pm6) [Target](gen/lib/ISO_32000/Target.pm6) [Three-D_activation](gen/lib/ISO_32000/Three-D_activation.pm6) [Widget_annotation_additional](gen/lib/ISO_32000/Widget_annotation_additional.pm6)
 /AA|[Catalog](gen/lib/ISO_32000/Catalog.pm6) [FDF_field](gen/lib/ISO_32000/FDF_field.pm6) [Field_common](gen/lib/ISO_32000/Field_common.pm6) [Page](gen/lib/ISO_32000/Page.pm6) [Screen_annotation_additional](gen/lib/ISO_32000/Screen_annotation_additional.pm6) [Widget_annotation_additional](gen/lib/ISO_32000/Widget_annotation_additional.pm6)
 /AC|[Appearance_characteristics](gen/lib/ISO_32000/Appearance_characteristics.pm6) [Render_mode](gen/lib/ISO_32000/Render_mode.pm6)
@@ -1019,4 +1023,3 @@ Entry|ISO_32000 Roles
 /text-align|[CSS2_style](gen/lib/ISO_32000/CSS2_style.pm6)
 /text-decoration|[CSS2_style](gen/lib/ISO_32000/CSS2_style.pm6)
 /vertical-align|[CSS2_style](gen/lib/ISO_32000/CSS2_style.pm6)
-/xmlns|[Body_element](gen/lib/ISO_32000/Body_element.pm6)

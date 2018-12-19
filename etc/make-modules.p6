@@ -10,6 +10,7 @@ sub build(:$caption, :@head, :@rows) {
         say '';
         say "#| PDF 32000-1:2008 " ~ $_ with $caption;
         my @pod;
+        my @non-idents;
         say "role $*role-name \{";
         for @rows {
             my ($entry, $type, $desc) = .list;
@@ -22,8 +23,15 @@ sub build(:$caption, :@head, :@rows) {
                 say "    method $entry \{...\};";
             }
             else {
-                say "    \$?ROLE.^add_method({$entry.perl}, method \{...\});";
+                push @non-idents, $entry;
             }
+        }
+        if @non-idents {
+            say '    INIT {';
+            for @non-idents.map: *.perl {
+                say "       given \$?ROLE.^add_method($_, method \{...\}) \{ .set_name($_) \}";
+            }
+            say '    }';
         }
         say '}';
 
