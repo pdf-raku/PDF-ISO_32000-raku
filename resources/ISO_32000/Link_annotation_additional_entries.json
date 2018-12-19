@@ -35,7 +35,7 @@
       [
         "QuadPoints",
         "array",
-        "(Optional; PDF 1.6) An array of 8 × n numbers specifying the coordinates of n quadrilaterals in default user space that comprise the region in which the link should be activated. The coordinates for each quadrilateral are given in the order\nx 1 y 1 x 2 y 2 x 3 y 3 x 4 y 4\nspecifying the four vertices of the quadrilateral in counterclockwise order. For orientation purposes, such as when applying an underline border style, the bottom of a quadrilateral is the line formed by (x 1 , y 1)and (x 2 , y 2).\nIf this entry is not present or the conforming reader does not recognize it, the region specified by the Rect entry should be used. QuadPointsshall be ignored if any coordinate in the array lies outside the region specified by Rect."
+        "(Optional; PDF 1.6) An array of 8 × n numbers specifying the coordinates of n quadrilaterals in default user space that comprise the region in which the link is activated. The coordinates for each quadrilateral are given in the order\nx 1 y 1 x 2 y 2 x 3 y 3 x 4 y 4\nspecifying the four vertices of the quadrilateral in counterclockwise order. For orientation purposes, such as when applying an underline border style, the bottom of a quadrilateral is the line formed by (x 1 , y 1)and (x 2 , y 2).\nIf this entry is not present or the conforming reader does not recognize it, the region specified by the Rect entry is used. QuadPointsshall be ignored if any coordinate in the array lies outside the region specified by Rect."
       ],
       [
         "BS",

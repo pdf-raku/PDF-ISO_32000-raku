@@ -15,7 +15,7 @@
       [
         "—",
         "s",
-        "Close and stroke the path. This operator shall have the same effect as the sequence h S."
+        "Close and stroke the path. This operator has the same effect as the sequence h S."
       ],
       [
         "—",
@@ -45,12 +45,12 @@
       [
         "—",
         "b",
-        "Close, fill, and then stroke the path, using the nonzero winding number rule to determine the region to fill. This operator shall have the same effect as the sequence h B. See also\n11.7.4.4, \"Special Path-Painting Considerations\"\n."
+        "Close, fill, and then stroke the path, using the nonzero winding number rule to determine the region to fill. This operator has the same effect as the sequence h B. See also\n11.7.4.4, \"Special Path-Painting Considerations\"\n."
       ],
       [
         "—",
         "b*",
-        "Close, fill, and then stroke the path, using the even-odd rule to determine the region to fill. This operator shall have the same effect as the sequence h B*. See also\n11.7.4.4, \"Special Path-Painting Considerations\"\n."
+        "Close, fill, and then stroke the path, using the even-odd rule to determine the region to fill. This operator has the same effect as the sequence h B*. See also\n11.7.4.4, \"Special Path-Painting Considerations\"\n."
       ],
       [
         "—",

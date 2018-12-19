@@ -27,7 +27,7 @@ role ISO_32000::Type_1_Font {
 
 =head2 Name [name]
 - (Required in PDF 1.0; optional otherwise) The name by which this font is referenced in the Font subdictionary of the current resource dictionary.
-This entry is obsolete and should not be used.
+This entry is obsolete and is not used.
 
 =head2 BaseFont [name]
 - (Required) The PostScript name of the font. For Type 1 fonts, this is always the value of the FontName entry in the font program; for more information, see Section 5.2 of the PostScript Language Reference, Third Edition. The PostScript name of the font may be used to find the font program in the conforming reader or its environment. It is also the name that is used when printing to a PostScript output device.

@@ -25,7 +25,7 @@
       [
         "Measure",
         "dictionary",
-        "(Optional) A measure dictionary (see Table 261) that specifies the scale and units that shall apply to measurements taken on the contents within the viewport."
+        "(Optional) A measure dictionary (see Table 261) that specifies the scale and units that applies to measurements taken on the contents within the viewport."
       ]
     ]
   }

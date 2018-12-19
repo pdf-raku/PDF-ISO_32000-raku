@@ -35,7 +35,7 @@
       [
         "NewWindow",
         "boolean",
-        "(Optional; PDF 1.2) A flag specifying whether to open the destination document in a new window. If this flag is false, the destination document replaces the current document in the same window. If this entry is absent, the conforming reader should behave in accordance with its current preference. This entry is ignored if the file designated by the F entry is not a PDF document."
+        "(Optional; PDF 1.2) A flag specifying whether to open the destination document in a new window. If this flag is false, the destination document replaces the current document in the same window. If this entry is absent, the conforming reader behaves in accordance with its current preference. This entry is ignored if the file designated by the F entry is not a PDF document."
       ]
     ]
   }

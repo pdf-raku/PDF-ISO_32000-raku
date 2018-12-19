@@ -27,7 +27,7 @@
         "No"
       ],
       [
-        "a Despite the appearance of sha1 in the name of this SubFilter value, supported encodings shall not be limited to the SHA1 algorithm. The PKCS1 object contains an identifier that indicates which al ­ gorithm is used.\nb Other digest algorithms may be used to digest the signed-data field; however, SHA1 is used to digest the data that is being signed."
+        "a Despite the appearance of sha1 in the name of this SubFilter value, supported encodings is not limited to the SHA1 algorithm. The PKCS1 object contains an identifier that indicates which al ­ gorithm is used.\nb Other digest algorithms may be used to digest the signed-data field; however, SHA1 is used to digest the data that is being signed."
       ]
     ]
   }

@@ -25,7 +25,7 @@
       [
         "LI",
         "boolean",
-        "(Optional) If true, the lower bound of the interval defined by L and H is inclusive; that is, the software version is greater than or equal to L (see Link “Version arrays” in 13.2.7.4, “Software Identifier Dictionary”). If false, it shall not be inclusive. Default value: true."
+        "(Optional) If true, the lower bound of the interval defined by L and H is inclusive; that is, the software version is greater than or equal to L (see Link “Version arrays” in 13.2.7.4, “Software Identifier Dictionary”). If false, it is not inclusive. Default value: true."
       ],
       [
         "H",
@@ -35,7 +35,7 @@
       [
         "HI",
         "boolean",
-        "(Optional) If true, the upper bound of the interval defined by L and H is inclusive; that is, the software version is less than or equal to H (see Link “Version arrays” in 13.2.7.4, “Software Identifier Dictionary”). If false, it shall not be inclusive. Default value: true."
+        "(Optional) If true, the upper bound of the interval defined by L and H is inclusive; that is, the software version is less than or equal to H (see Link “Version arrays” in 13.2.7.4, “Software Identifier Dictionary”). If false, it is not inclusive. Default value: true."
       ],
       [
         "OS",

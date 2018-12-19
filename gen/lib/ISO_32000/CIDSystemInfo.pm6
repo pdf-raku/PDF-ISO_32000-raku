@@ -19,6 +19,6 @@ role ISO_32000::CIDSystemInfo {
 - (Required) A string that uniquely names the character collection within the specified registry.
 
 =head2 Supplement [integer]
-- (Required) The supplement number of the character collection. An original character collection has a supplement number of 0. Whenever additional CIDs are assigned in a character collection, the supplement number is increased. Supplements shall not alter the ordering of existing CIDs in the character collection. This value shall not be used in determining compatibility between character collections.
+- (Required) The supplement number of the character collection. An original character collection has a supplement number of 0. Whenever additional CIDs are assigned in a character collection, the supplement number is increased. Supplements shall not alter the ordering of existing CIDs in the character collection. This value is not used in determining compatibility between character collections.
 
 =end pod

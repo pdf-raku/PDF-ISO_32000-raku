@@ -47,6 +47,6 @@ role ISO_32000::Catalog_Name_tree {
 - (Optional; PDF 1.4) A name tree mapping name strings to alternate presentations (see 13.5, "Alternate Presentations").
 
 =head2 Renditions [name tree]
-- (Optional; PDF 1.5) A name tree mapping name strings (which shall have Unicode encoding) to rendition objects (see 13.2.3, "Renditions").
+- (Optional; PDF 1.5) A name tree mapping name strings (which has Unicode encoding) to rendition objects (see 13.2.3, "Renditions").
 
 =end pod

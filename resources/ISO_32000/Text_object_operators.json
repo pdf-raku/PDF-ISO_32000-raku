@@ -10,7 +10,7 @@
       [
         "—",
         "BT",
-        "Begin a text object, initializing the text matrix, T m , and the text line matrix, T lm , to the identity matrix. Text objects shall not be nested; a second BT shall not appear before an ET."
+        "Begin a text object, initializing the text matrix, T m , and the text line matrix, T lm , to the identity matrix. Text objects is not nested; a second BT shall not appear before an ET."
       ],
       [
         "—",

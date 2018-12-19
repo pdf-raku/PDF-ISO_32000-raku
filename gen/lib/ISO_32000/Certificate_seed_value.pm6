@@ -40,7 +40,7 @@ Each character in a string represents a key-usage type, where the order of the c
 2 non-Repudiation 5 keyAgreement 8 encipherOnly
 3 keyEncipherment 6 keyCertSign 9 decipherOnly
 Any additional characters is ignored. Any missing characters or characters that are not one of the following values, is treated as ‘X’. The following character values is supported:
-0 Corresponding key-usage shall not be set.
+0 Corresponding key-usage is not set.
 1 Corresponding key-usage is set.
 X State of the corresponding key-usage does not matter.
 EXAMPLE 1 The string values ‘1’ and ‘1XXXXXXXX’ represent settings where the key-usage type digitalSignature is set and the state of all other key-usage types do not matter.

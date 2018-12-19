@@ -18,7 +18,7 @@ role ISO_32000::Movie {
 NOTE The format of a self-describing movie file is left unspecified, and there is no guarantee of portability.
 
 =head2 Aspect [array]
-- (Optional) The width and height of the movie’s bounding box, in pixels, and is specified as [ width height ]. This entry should be omitted for a movie consisting entirely of sound with no visible images.
+- (Optional) The width and height of the movie’s bounding box, in pixels, and is specified as [ width height ]. This entry is omitted for a movie consisting entirely of sound with no visible images.
 
 =head2 Rotate [integer]
 - (Optional) The number of degrees by which the movie is rotated clockwise relative to the page. The value is a multiple of 90. Default value: 0.

@@ -16,7 +16,7 @@
       ],
       [
         "Art",
-        "(Article) A relatively self-contained body of text constituting a single narrative or exposition. Articles should be disjoint; that is, they should not contain other articles as constituent elements."
+        "(Article) A relatively self-contained body of text constituting a single narrative or exposition. Articles is disjoint; that is, they should not contain other articles as constituent elements."
       ],
       [
         "Sect",
@@ -48,7 +48,7 @@
       ],
       [
         "NonStruct",
-        "(Nonstructural element) A grouping element having no inherent structural significance; it serves solely for grouping purposes. This type of element differs from a division (structure type Div) in that it shall not be interpreted or exported to other document formats; however, its descendants is processed normally."
+        "(Nonstructural element) A grouping element having no inherent structural significance; it serves solely for grouping purposes. This type of element differs from a division (structure type Div) in that it is not interpreted or exported to other document formats; however, its descendants is processed normally."
       ],
       [
         "Private",

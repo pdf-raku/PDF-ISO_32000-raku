@@ -13,9 +13,9 @@ sub build(:$caption, :@head, :@rows) {
         say "role $*role-name \{";
         for @rows {
             my ($entry, $type, $desc) = .list;
-            next if $entry ~~ /:i'other'|'any'|' '/ | '';
             $entry = $entry.trim;
-            $entry ~~ s:s/ '(' .* ')'//;
+            $entry ~~ s:s/ \s* '(' .* ')'//;
+            next if $entry ~~ /:i'other'|'any'|' '/ | '';
             @pod.push: %( :$entry, :$type, :$desc );
 
             if $entry ~~ /:s^ [<ident> *% '-'] $/ {

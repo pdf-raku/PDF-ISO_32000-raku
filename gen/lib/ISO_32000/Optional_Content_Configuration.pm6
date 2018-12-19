@@ -57,7 +57,7 @@ Arrays of optional content groups which may be displayed by a conforming reader 
 Text labels in nested arrays is used to present collections of related optional content groups, and not to communicate actual nesting of content inside multiple layers of groups (see Link EXAMPLE 1 in 8.11.4.3, "Optional Content Configuration Dictionaries"). To reflect actual nesting of groups in the content, such as for layers with sublayers, nested arrays of groups without a text label is used (see Link EXAMPLE 2 in 8.11.4.3, "Optional Content Configuration Dictionaries").
 An empty array [] explicitly specifies that no groups shall bepresented.
 In the default configuration dictionary, the default value is an empty array; in other configuration dictionaries, the default is the Order value from the default configuration dictionary.
-Any groups not listed in this array shall not be presented in any user interface that uses the configuration.
+Any groups not listed in this array is not presented in any user interface that uses the configuration.
 
 =head2 ListMode [name]
 - (Optional) A name specifying which optional content groups in the Order array is displayed to the user. Valid values is:

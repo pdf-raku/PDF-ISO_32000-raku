@@ -22,7 +22,7 @@ role ISO_32000::Type_0_Font {
 - (Required) The type of font; is Type0 for a Type 0 font.
 
 =head2 BaseFont [name]
-- (Required) The name of the font. If the descendant is a Type 0 CIDFont, this name should be the concatenation of the CIDFont’s BaseFont name, a hyphen, and the CMap name given in the Encoding entry (or the CMapName entry in the CMap). If the descendant is a Type 2 CIDFont, this name should be the same as the CIDFont’s BaseFont name.
+- (Required) The name of the font. If the descendant is a Type 0 CIDFont, this name is the concatenation of the CIDFont’s BaseFont name, a hyphen, and the CMap name given in the Encoding entry (or the CMapName entry in the CMap). If the descendant is a Type 2 CIDFont, this name is the same as the CIDFont’s BaseFont name.
 NOTE In principle, this is an arbitrary name, since there is no font program associated directly with a Type 0 font dictionary. The conventions described here ensure maximum compatibility with existing readers.
 
 =head2 Encoding [name or stream]

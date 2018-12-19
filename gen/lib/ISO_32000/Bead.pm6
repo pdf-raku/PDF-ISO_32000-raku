@@ -24,10 +24,10 @@ role ISO_32000::Bead {
 (PDF 1.2) It is permitted for any bead but required only for the first.
 
 =head2 N [dictionary]
-- (Required; is an indirect reference) The next bead in the thread. In the last bead, this entry shall refer to the first bead.
+- (Required; is an indirect reference) The next bead in the thread. In the last bead, this entry refers to the first bead.
 
 =head2 V [dictionary]
-- (Required; is an indirect reference) The previous bead in the thread. In the first bead, this entry shall refer to the last bead.
+- (Required; is an indirect reference) The previous bead in the thread. In the first bead, this entry refers to the last bead.
 
 =head2 P [dictionary]
 - (Required; is an indirect reference) The page object representing the page on which this bead appears.

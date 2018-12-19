@@ -21,8 +21,8 @@ The four numbers shall correspond to the differences in default user space betwe
 
 =head2 Sy [name]
 - (Optional) A name specifying a symbol that is associated with the caret:
-P A new paragraph symbol (¶) should be associated with the caret.
-None No symbol should be associated with the caret.
+P A new paragraph symbol (¶) is associated with the caret.
+None No symbol is associated with the caret.
 Default value: None.
 
 =end pod

@@ -15,12 +15,12 @@
       [
         "string",
         "'",
-        "Move to the next line and show a text string. This operator shall have the same effect as the code\nT* string Tj"
+        "Move to the next line and show a text string. This operator has the same effect as the code\nT* string Tj"
       ],
       [
         "a w a c string",
         "\"",
-        "Move to the next line and show a text string, using a w as the word spacing and a c as the character spacing (setting the corresponding parameters in the text state). a w and a c is numbers expressed in unscaled text space units. This operator shall have the same effect as this code:\na w Tw a c Tc string '"
+        "Move to the next line and show a text string, using a w as the word spacing and a c as the character spacing (setting the corresponding parameters in the text state). a w and a c is numbers expressed in unscaled text space units. This operator has the same effect as this code:\na w Tw a c Tc string '"
       ],
       [
         "array",

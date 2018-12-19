@@ -12,7 +12,7 @@
       ],
       [
         "Quote",
-        "(Quotation) An inline portion of text attributed to someone other than the author of the surrounding text.\nThe quoted text should be contained inline within a single paragraph. This differs from the block-level element BlockQuote (see 14.8.4.2, “Grouping Elements”), which consists of one or more complete paragraphs (or other elements presented as if they were complete paragraphs)."
+        "(Quotation) An inline portion of text attributed to someone other than the author of the surrounding text.\nThe quoted text is contained inline within a single paragraph. This differs from the block-level element BlockQuote (see 14.8.4.2, “Grouping Elements”), which consists of one or more complete paragraphs (or other elements presented as if they were complete paragraphs)."
       ],
       [
         "Note",
@@ -32,7 +32,7 @@
       ],
       [
         "Link",
-        "(Link) An association between a portion of the ILSE’s content and a corresponding link annotation or annotations (see 12.5.6.5, “Link Annotations”). Its children should be one or more content items or child ILSEs and one or more object references (see 14.7.4.3, “PDF Objects as Content Items”) identifying the associated link annotations. See\nLink “Link Elements”\nin\n14.8.4.3, “Block-Level Structure Elements,”\nfor further discussion."
+        "(Link) An association between a portion of the ILSE’s content and a corresponding link annotation or annotations (see 12.5.6.5, “Link Annotations”). Its children is one or more content items or child ILSEs and one or more object references (see 14.7.4.3, “PDF Objects as Content Items”) identifying the associated link annotations. See\nLink “Link Elements”\nin\n14.8.4.3, “Block-Level Structure Elements,”\nfor further discussion."
       ],
       [
         "Annot",

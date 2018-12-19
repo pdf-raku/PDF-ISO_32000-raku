@@ -55,7 +55,7 @@
       [
         "IF",
         "dictionary",
-        "(Optional; pushbutton fields only) An icon fit dictionary (see Table 247) specifying how the widget annotation’s icon is displayed within its annotation rectangle. If present, the icon fit dictionary shall apply to all of the annotation’s icons (normal, rollover, and alternate)."
+        "(Optional; pushbutton fields only) An icon fit dictionary (see Table 247) specifying how the widget annotation’s icon is displayed within its annotation rectangle. If present, the icon fit dictionary applies to all of the annotation’s icons (normal, rollover, and alternate)."
       ],
       [
         "TP",

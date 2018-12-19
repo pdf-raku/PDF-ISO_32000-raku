@@ -15,7 +15,7 @@
       [
         "Bounds",
         "array",
-        "(Required) An array of k 1 numbers that, in combination with Domain, shall define the intervals to which each function from the Functions array shall apply. Bounds elements is in order of increasing value, and each value is within the domain defined by Domain."
+        "(Required) An array of k 1 numbers that, in combination with Domain, shall define the intervals to which each function from the Functions array applies. Bounds elements is in order of increasing value, and each value is within the domain defined by Domain."
       ],
       [
         "Encode",

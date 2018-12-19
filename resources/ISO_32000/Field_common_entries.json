@@ -20,7 +20,7 @@
       [
         "Kids",
         "array",
-        "(Sometimes required, as described below) An array of indirect references to the immediate children of this field.\nIn a non-terminal field, the Kids array shall refer to field dictionaries that are immediate descendants of this field. In a terminal field, the Kids array ordinarily shall refer to one or more separate widget annotations that are associated with this field. However, if there is only one associated widget annotation, and its contents have been merged into the field dictionary, Kids is omitted."
+        "(Sometimes required, as described below) An array of indirect references to the immediate children of this field.\nIn a non-terminal field, the Kids array refers to field dictionaries that are immediate descendants of this field. In a terminal field, the Kids array ordinarily refers to one or more separate widget annotations that are associated with this field. However, if there is only one associated widget annotation, and its contents have been merged into the field dictionary, Kids is omitted."
       ],
       [
         "T",

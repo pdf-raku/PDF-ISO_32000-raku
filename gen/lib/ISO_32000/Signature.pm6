@@ -43,12 +43,12 @@ may be used by any developer.
 
 =head2 Contents [byte string]
 - (Required) The signature value. When ByteRange is present, the value is a hexadecimal string (see 7.3.4.3, “Hexadecimal Strings”) representing the value of the byte range digest.
-For public-key signatures, Contents should be either a DER-encoded PKCS1 binary data object or a DER-encoded PKCS7 binary data object.
+For public-key signatures, Contents is either a DER-encoded PKCS1 binary data object or a DER-encoded PKCS7 binary data object.
 Space for the Contents value must be allocated before the message digest is computed. (See 7.3.4, “String Objects“)
 
 =head2 Cert [array or byte string]
 - (Required when SubFilter is adbe.x509.rsa_sha1) An array of byte strings that shall represent the X.509 certificate chain used when signing and verifying signatures that use public-key cryptography, or a byte string if the chain has only one entry. The signing certificate shall appear first in the array; it is used to verify the signature value in Contents, and the other certificates is used to verify the authenticity of the signing certificate.
-If SubFilter is adbe.pkcs7.detached or adbe.pkcs7.sha1, this entry shall not be used, and the certificate chain is put in the PKCS7 envelope in Contents.
+If SubFilter is adbe.pkcs7.detached or adbe.pkcs7.sha1, this entry is not used, and the certificate chain is put in the PKCS7 envelope in Contents.
 
 =head2 ByteRange [array]
 - (Required for all signatures that are part of a signature field and usage rights signatures referenced from the UR3 entry in the permissions dictionary) An array of pairs of integers (starting byte offset, length in bytes) that shall describe the exact byte range for the digest calculation. Multiple discontiguous byte ranges is used to describe a digest that does not include the signature value (theContents entry) itself.
@@ -61,12 +61,12 @@ If SubFilter is adbe.pkcs7.detached or adbe.pkcs7.sha1, this entry shall not be 
 The ordering of signatures is determined by the value of ByteRange. Since each signature results in an incremental save, later signatures have a greater length value.
 
 =head2 Name [text string]
-- (Optional) The name of the person or authority signing the document. This value should be used only when it is not possible to extract the name from the signature.
+- (Optional) The name of the person or authority signing the document. This value is used only when it is not possible to extract the name from the signature.
 EXAMPLE 1 From the certificate of the signer.
 
 =head2 M [date]
 - (Optional) The time of signing. Depending on the signature handler, this may be a normal unverified computer time or a time generated in a verifiable way from a secure time server.
-This value should be used only when the time of signing is not available in the signature.
+This value is used only when the time of signing is not available in the signature.
 EXAMPLE 2 A time stamp can be embedded in a PKCS7 binary data object (see 12.8.3.3, “PKCS7 Signatures as used in ISO 32000”).
 
 =head2 Location [text string]
@@ -80,7 +80,7 @@ EXAMPLE 2 A time stamp can be embedded in a PKCS7 binary data object (see 12.8.3
 EXAMPLE 3 A phone number.
 
 =head2 R [integer]
-- (Optional) The version of the signature handler that was used to create the signature. (PDF 1.5) This entry shall not be used, and the information is stored in the Prop_Build dictionary.
+- (Optional) The version of the signature handler that was used to create the signature. (PDF 1.5) This entry is not used, and the information is stored in the Prop_Build dictionary.
 
 =head2 V [integer]
 - (Optional; PDF 1.5) The version of the signature dictionary format. It corresponds to the usage of the signature dictionary in the context of the value of SubFilter. The value is 1 if the Reference dictionary is considered critical to the validation of the signature.
@@ -91,7 +91,7 @@ Default value: 0.
 he PDF Signature Build Dictionary Specification, provides implementation guidelines for the use of this dictionary.
 
 =head2 Prop_AuthTime [integer]
-- (Optional; PDF 1.5) The number of seconds since the signer was last authenticated, used in claims of signature repudiation. It should be omitted if the value is unknown.
+- (Optional; PDF 1.5) The number of seconds since the signer was last authenticated, used in claims of signature repudiation. It is omitted if the value is unknown.
 
 =head2 Prop_AuthType [name]
 - (Optional; PDF 1.5) The method that is used to authenticate the signer, used in claims of signature repudiation. Valid values is PIN, Password, and Fingerprint.

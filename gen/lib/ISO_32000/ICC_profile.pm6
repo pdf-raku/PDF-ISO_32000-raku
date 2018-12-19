@@ -18,7 +18,7 @@ role ISO_32000::ICC_profile {
 
 =head2 Alternate [array or name]
 - (Optional) An alternate colour space that is used in case the one specified in the stream data is not supported. Non-conforming readers may use this colour space. The alternate space may be any valid colour space (except a Pattern colour space) that has the number of components specified by N. If this entry is omitted and the conforming reader does not understand the ICC profile data, the colour space that is used is DeviceGray, DeviceRGB, or DeviceCMYK, depending on whether the value of N is 1, 3, or 4, respectively.
-There shall not be conversion of source colour values, such as a tint transformation, when using the alternate colour space. Colour values within the range of the ICCBased colour space might not be within the range of the alternate colour space. In this case, the nearest values within the range of the alternate space is substituted.
+There is not conversion of source colour values, such as a tint transformation, when using the alternate colour space. Colour values within the range of the ICCBased colour space might not be within the range of the alternate colour space. In this case, the nearest values within the range of the alternate space is substituted.
 
 =head2 Range [array]
 - (Optional) An array of 2 × N numbers [ min 0 max 0 min 1 max 1 … ] that shall specify the minimum and maximum valid values of the corresponding colour components. These values shall match the information in the ICC profile. Default value: [ 0.0 1.0 0.0 1.0 … ].

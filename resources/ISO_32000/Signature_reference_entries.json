@@ -25,12 +25,12 @@
       [
         "Data",
         "(various)",
-        "(Required when TransformMethod is FieldMDP) An indirect reference to the object in the document upon which the object modification analysis should be performed. For transform methods other than FieldMDP, this object is implicitly defined."
+        "(Required when TransformMethod is FieldMDP) An indirect reference to the object in the document upon which the object modification analysis is performed. For transform methods other than FieldMDP, this object is implicitly defined."
       ],
       [
         "DigestMethod",
         "name",
-        "(Optional; PDF 1.5 required) A name identifying the algorithm that is used when computing the digest. Valid values are MD5 and SHA1. Default value: MD5. For security reasons, MD5 should not be used. It is mentioned for backwards compatibility, since it remains the default value."
+        "(Optional; PDF 1.5 required) A name identifying the algorithm that is used when computing the digest. Valid values are MD5 and SHA1. Default value: MD5. For security reasons, MD5 is not used. It is mentioned for backwards compatibility, since it remains the default value."
       ]
     ]
   }

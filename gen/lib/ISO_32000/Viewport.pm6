@@ -25,6 +25,6 @@ The coordinates of this rectangle are independent of the origin of the measuring
 - (Optional) A descriptive text string or title of the viewport, intended for use in a user interface.
 
 =head2 Measure [dictionary]
-- (Optional) A measure dictionary (see Table 261) that specifies the scale and units that shall apply to measurements taken on the contents within the viewport.
+- (Optional) A measure dictionary (see Table 261) that specifies the scale and units that applies to measurements taken on the contents within the viewport.
 
 =end pod

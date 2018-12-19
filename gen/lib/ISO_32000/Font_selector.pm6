@@ -34,6 +34,6 @@ NOTE The values Decorative and Symbol cannot be derived]
 =head2 FontVariant [The small-caps value of the font. It is SmallCaps if the SmallCap flag is set in the Flags field of the font descriptor; otherwise, it is Normal.]
 
 =head2 FontWeight [The weight (thickness) value of the font. Derived from FontWeight in the font descriptor (see Table 122).
-The ForceBold flag and the StemV field should not be used to set this attribute.]
+The ForceBold flag and the StemV field is not used to set this attribute.]
 
 =end pod

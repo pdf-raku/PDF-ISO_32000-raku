@@ -37,10 +37,10 @@ Default value: I.
 - (Optional; PDF 1.3) A URI action (see 12.6.4.7, “URI Actions”) formerly associated with this annotation. When Web Capture (14.10, “ Web Capture”) changes an annotation from a URI to a go-to action (12.6.4.2, “Go-To Actions”), it uses this entry to save the data from the original URI action so that it can be changed back in case the target page for the go-to action is subsequently deleted.
 
 =head2 QuadPoints [array]
-- (Optional; PDF 1.6) An array of 8 × n numbers specifying the coordinates of n quadrilaterals in default user space that comprise the region in which the link should be activated. The coordinates for each quadrilateral are given in the order
+- (Optional; PDF 1.6) An array of 8 × n numbers specifying the coordinates of n quadrilaterals in default user space that comprise the region in which the link is activated. The coordinates for each quadrilateral are given in the order
 x 1 y 1 x 2 y 2 x 3 y 3 x 4 y 4
 specifying the four vertices of the quadrilateral in counterclockwise order. For orientation purposes, such as when applying an underline border style, the bottom of a quadrilateral is the line formed by (x 1 , y 1)and (x 2 , y 2).
-If this entry is not present or the conforming reader does not recognize it, the region specified by the Rect entry should be used. QuadPointsshall be ignored if any coordinate in the array lies outside the region specified by Rect.
+If this entry is not present or the conforming reader does not recognize it, the region specified by the Rect entry is used. QuadPointsshall be ignored if any coordinate in the array lies outside the region specified by Rect.
 
 =head2 BS [dictionary]
 - (Optional; PDF 1.6) A border style dictionary (see Table 166) specifying the line width and dash pattern to be used in drawing the annotation’s border.

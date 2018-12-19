@@ -25,7 +25,7 @@
       [
         "D",
         "array",
-        "(Optional) A dash array defining a pattern of dashes and gaps to be used in drawing dashed guidelines (guideline style D). The dash array is specified in default user space units, in the same format as in the line dash pattern parameter of the graphics state (see 8.4.3.6, “Line Dash Pattern”). The dash phase shall not be specified and is assumed to be 0.\nEXAMPLE A D entry of [ 3 2 ] specifies guidelines drawn with 3-point dashes alternating with 2-point gaps.\nDefault value: [ 3 ]."
+        "(Optional) A dash array defining a pattern of dashes and gaps to be used in drawing dashed guidelines (guideline style D). The dash array is specified in default user space units, in the same format as in the line dash pattern parameter of the graphics state (see 8.4.3.6, “Line Dash Pattern”). The dash phase is not specified and is assumed to be 0.\nEXAMPLE A D entry of [ 3 2 ] specifies guidelines drawn with 3-point dashes alternating with 2-point gaps.\nDefault value: [ 3 ]."
       ]
     ]
   }

@@ -10,7 +10,7 @@
       [
         "1",
         "See\nTable F. 3\n, item 3",
-        "A number that, when added to the least number of objects in a page (Table F. 3 , item 1), shall give the number of objects in the page. The first object of the first page shall have an object number that is the value of the O entry in the linearization parameter dictionary at the beginning of the file. The first object of the second page shall have an object number of 1. Object numbers for subsequent pages is determined by accumulating the number of objects in all previous pages."
+        "A number that, when added to the least number of objects in a page (Table F. 3 , item 1), shall give the number of objects in the page. The first object of the first page has an object number that is the value of the O entry in the linearization parameter dictionary at the beginning of the file. The first object of the second page has an object number of 1. Object numbers for subsequent pages is determined by accumulating the number of objects in all previous pages."
       ],
       [
         "2",
@@ -25,7 +25,7 @@
       [
         "4",
         "See\nTable F. 3\n, item 11",
-        "(One item for each shared object referenced from the page) A shared object identifier—that is, an index into the shared object hint table (described in Link F.4.2, “Shared Object Hint Table ”). A single entry in the shared object hint table may designate a group of shared objects, but only one of which is referenced from outside the group. That is, shared object identifiers shall not be directly related to object numbers.\nThis identifier combines with the numerators provided in item 5 to form a shared object reference."
+        "(One item for each shared object referenced from the page) A shared object identifier—that is, an index into the shared object hint table (described in Link F.4.2, “Shared Object Hint Table ”). A single entry in the shared object hint table may designate a group of shared objects, but only one of which is referenced from outside the group. That is, shared object identifiers is not directly related to object numbers.\nThis identifier combines with the numerators provided in item 5 to form a shared object reference."
       ],
       [
         "5",

@@ -25,7 +25,7 @@
       [
         "NU",
         "array",
-        "(Optional) An array of media player info dictionaries (see Table 291) that shall specify a set of players that shall not be used in playing the associated media object (even if they are also specified in MU)."
+        "(Optional) An array of media player info dictionaries (see Table 291) that shall specify a set of players that is not used in playing the associated media object (even if they are also specified in MU)."
       ]
     ]
   }

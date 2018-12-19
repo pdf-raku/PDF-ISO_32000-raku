@@ -26,7 +26,7 @@ NOTE When comparing this entry to node names for a particular convention (such a
 If this entry is absent, the viewer shall use the opacity specified for the parent node or for the 3D artwork (in ascending order).
 
 =head2 V [boolean]
-- (Optional) A flag indicating the visibility of this node. If true, then the node is visible. If false, then the node shall not be visible.
+- (Optional) A flag indicating the visibility of this node. If true, then the node is visible. If false, then the node is not visible.
 If this entry is absent, the viewer shall use the visibility specified for the parent node or for the 3D artwork (in ascending order).
 
 =head2 M [array]

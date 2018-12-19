@@ -16,7 +16,7 @@ role ISO_32000::File_trailer {
 =head1 Methods (Entries)
 
 =head2 Size [integer]
-- (Required; shall not be an indirect reference) The total number of entries in the file’s cross-reference table, as defined by the combination of the original section and all update sections. Equivalently, this value is 1 greater than the highest object number defined in the file.
+- (Required; is not an indirect reference) The total number of entries in the file’s cross-reference table, as defined by the combination of the original section and all update sections. Equivalently, this value is 1 greater than the highest object number defined in the file.
 Any object in a cross-reference section whose number is greater than this value is ignored and defined to be missing by a conforming reader.
 
 =head2 Prev [integer]

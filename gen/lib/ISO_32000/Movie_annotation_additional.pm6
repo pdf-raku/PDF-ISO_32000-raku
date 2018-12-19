@@ -23,6 +23,6 @@ role ISO_32000::Movie_annotation_additional {
 - (Required) A movie dictionary that shall describe the movie’s static characteristics (see 13.4, “Movies”).
 
 =head2 A [boolean or dictionary]
-- (Optional) A flag or dictionary specifying whether and how to play the movie when the annotation is activated. If this value is a dictionary, it is a movie activation dictionary (see 13.4, “Movies”) specifying how to play the movie. If the value is the boolean true, the movie is played using default activation parameters. If the value is false, the movie shall not be played. Default value: true.
+- (Optional) A flag or dictionary specifying whether and how to play the movie when the annotation is activated. If this value is a dictionary, it is a movie activation dictionary (see 13.4, “Movies”) specifying how to play the movie. If the value is the boolean true, the movie is played using default activation parameters. If the value is false, the movie is not played. Default value: true.
 
 =end pod

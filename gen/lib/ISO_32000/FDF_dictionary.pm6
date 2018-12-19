@@ -33,7 +33,7 @@ role ISO_32000::FDF_dictionary {
 - (Optional) A status string that is displayed indicating the result of an action, typically a submit-form action (see 12.7.5.2, “Submit-Form Action”). The string is encoded with PDFDocEncoding. This entry and the Pages entry shallnot both be present.
 
 =head2 Pages [array]
-- (Optional; PDF 1.3) An array of FDF page dictionaries (see Link FDF Pages in 12.7.7.3, “FDF Catalog”) describing pages that is added to a PDF target document. The Fields and Status entries shall not be present together with this entry.
+- (Optional; PDF 1.3) An array of FDF page dictionaries (see Link FDF Pages in 12.7.7.3, “FDF Catalog”) describing pages that is added to a PDF target document. The Fields and Status entries is not present together with this entry.
 
 =head2 Encoding [name]
 - (Optional; PDF 1.3) The encoding that is used for any FDF field value or option (V or Opt in the field dictionary; see Table 246) or field name that is a string and does not begin with the Unicode prefix U+FEFF.

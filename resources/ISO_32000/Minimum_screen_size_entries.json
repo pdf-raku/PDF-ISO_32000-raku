@@ -20,7 +20,7 @@
       [
         "M",
         "integer",
-        "(Optional) A monitor specifier (see Table 293) that specifies which monitor the value of V should be tested against. If the value is unrecognized, the object is not viable.\nDefault value: 0."
+        "(Optional) A monitor specifier (see Table 293) that specifies which monitor the value of V is tested against. If the value is unrecognized, the object is not viable.\nDefault value: 0."
       ]
     ]
   }

@@ -25,7 +25,7 @@
       [
         "NewWindow",
         "boolean",
-        "(Optional) If true, the destination document should be opened in a new window; if false, the destination document should replace the current document in the same window. If this entry is absent, the conforming reader should act according to its preference."
+        "(Optional) If true, the destination document is opened in a new window; if false, the destination document should replace the current document in the same window. If this entry is absent, the conforming reader should act according to its preference."
       ],
       [
         "T",

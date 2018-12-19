@@ -31,9 +31,9 @@ FieldMDPUsed to detect modifications to a list of form fields specified in Trans
 - (Optional) A dictionary specifying transform parameters (variable data) for the transform method specified by TransformMethod. Each method takes its own set of parameters. See each of the sub-clauses specified previously for details on the individual transform parameter dictionaries
 
 =head2 Data [(various)]
-- (Required when TransformMethod is FieldMDP) An indirect reference to the object in the document upon which the object modification analysis should be performed. For transform methods other than FieldMDP, this object is implicitly defined.
+- (Required when TransformMethod is FieldMDP) An indirect reference to the object in the document upon which the object modification analysis is performed. For transform methods other than FieldMDP, this object is implicitly defined.
 
 =head2 DigestMethod [name]
-- (Optional; PDF 1.5 required) A name identifying the algorithm that is used when computing the digest. Valid values are MD5 and SHA1. Default value: MD5. For security reasons, MD5 should not be used. It is mentioned for backwards compatibility, since it remains the default value.
+- (Optional; PDF 1.5 required) A name identifying the algorithm that is used when computing the digest. Valid values are MD5 and SHA1. Default value: MD5. For security reasons, MD5 is not used. It is mentioned for backwards compatibility, since it remains the default value.
 
 =end pod

@@ -15,12 +15,12 @@
       [
         "2",
         "Required",
-        "If set, the field shall have a value at the time it is exported by a submit-form action (see 12.7.5.2, “Submit-Form Action”)."
+        "If set, the field has a value at the time it is exported by a submit-form action (see 12.7.5.2, “Submit-Form Action”)."
       ],
       [
         "3",
         "NoExport",
-        "If set, the field shall not be exported by a submit-form action (see 12.7.5.2, “Submit-Form Action”)."
+        "If set, the field is not exported by a submit-form action (see 12.7.5.2, “Submit-Form Action”)."
       ]
     ]
   }

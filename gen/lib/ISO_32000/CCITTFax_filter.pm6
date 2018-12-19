@@ -43,6 +43,6 @@ The filter shall distinguish among negative, zero, and positive values of K to d
 - A flag indicating whether 1 bits is interpreted as black pixels and 0 bits as white pixels, the reverse of the normal PDF convention for image data. Default value: false.
 
 =head2 DamagedRowsBeforeError [integer]
-- The number of damaged rows of data that is tolerated before an error occurs. This entry shall apply only if EndOfLine is true and K is non-negative. Tolerating a damaged row shall mean locating its end in the encoded data by searching for an EndOfLine pattern and then substituting decoded data from the previous row if the previous row was not damaged, or a white scan line if the previous row was also damaged. Default value: 0.
+- The number of damaged rows of data that is tolerated before an error occurs. This entry applies only if EndOfLine is true and K is non-negative. Tolerating a damaged row shall mean locating its end in the encoded data by searching for an EndOfLine pattern and then substituting decoded data from the previous row if the previous row was not damaged, or a white scan line if the previous row was also damaged. Default value: 0.
 
 =end pod

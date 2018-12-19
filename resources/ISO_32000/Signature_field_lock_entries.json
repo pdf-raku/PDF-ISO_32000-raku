@@ -15,7 +15,7 @@
       [
         "Action",
         "name",
-        "(Required) A name which, in conjunction with Fields, indicates the set of fields that should be locked. The value is one of the following:\nAll All fields in the document\nInclude All fields specified in Fields\nExclude All fields except those specified in Fields"
+        "(Required) A name which, in conjunction with Fields, indicates the set of fields that is locked. The value is one of the following:\nAll All fields in the document\nInclude All fields specified in Fields\nExclude All fields except those specified in Fields"
       ],
       [
         "Fields",

@@ -54,14 +54,14 @@ NOTE A common practice is to define glyphs in terms of a 1000-unit glyph coordin
 - (Required) The last character code defined in the font’s Widths array.
 
 =head2 Widths [array]
-- (Required; should be an indirect reference) An array of (LastChar − FirstChar + 1) widths, each element being the glyph width for the character code that equals FirstChar plus the array index. For character codes outside the range FirstChar to LastChar, the width is 0. These widths is interpreted in glyph space as specified by FontMatrix (unlike the widths of a Type 1 font, which are in thousandths of a unit of text space).
+- (Required; is an indirect reference) An array of (LastChar − FirstChar + 1) widths, each element being the glyph width for the character code that equals FirstChar plus the array index. For character codes outside the range FirstChar to LastChar, the width is 0. These widths is interpreted in glyph space as specified by FontMatrix (unlike the widths of a Type 1 font, which are in thousandths of a unit of text space).
 If FontMatrix specifies a rotation, only the horizontal component of the transformed width is used. That is, the resulting displacement is horizontal in text space, as is the case for all simple fonts.
 
 =head2 FontDescriptor [dictionary]
 - (Required in Tagged PDF documents; is an indirect reference) A font descriptor describing the font’s default metrics other than its glyph widths (see 9.8, "Font Descriptors").
 
 =head2 Resources [dictionary]
-- (Optional but should be used; PDF 1.2) A list of the named resources, such as fonts and images, required by the glyph descriptions in this font (see 7.8.3, "Resource Dictionaries"). If any glyph descriptions refer to named resources but this dictionary is absent, the names is looked up in the resource dictionary of the page on which the font is used.
+- (Optional but is used; PDF 1.2) A list of the named resources, such as fonts and images, required by the glyph descriptions in this font (see 7.8.3, "Resource Dictionaries"). If any glyph descriptions refer to named resources but this dictionary is absent, the names is looked up in the resource dictionary of the page on which the font is used.
 
 =head2 ToUnicode [stream]
 - (Optional; PDF 1.2) A stream containing a CMap file that maps character codes to Unicode values (see 9.10, "Extraction of Text Content").

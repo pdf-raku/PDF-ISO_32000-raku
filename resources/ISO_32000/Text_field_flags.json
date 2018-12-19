@@ -15,7 +15,7 @@
       [
         "14",
         "Password",
-        "If set, the field is intended for entering a secure password that should not be echoed visibly to the screen. Characters typed from the keyboard shall instead be echoed in some unreadable form, such as asterisks or bullet characters.\nNOTE To protect password confidentiality, readers should never store the value of the text field in the PDF file if this flag is set."
+        "If set, the field is intended for entering a secure password that is not echoed visibly to the screen. Characters typed from the keyboard shall instead be echoed in some unreadable form, such as asterisks or bullet characters.\nNOTE To protect password confidentiality, readers should never store the value of the text field in the PDF file if this flag is set."
       ],
       [
         "21",
@@ -25,7 +25,7 @@
       [
         "23",
         "DoNotSpellCheck",
-        "(PDF 1.4) If set, text entered in the field shall not be spell-checked."
+        "(PDF 1.4) If set, text entered in the field is not spell-checked."
       ],
       [
         "24",

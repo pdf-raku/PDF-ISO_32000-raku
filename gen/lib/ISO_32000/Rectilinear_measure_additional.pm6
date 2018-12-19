@@ -19,9 +19,9 @@ role ISO_32000::Rectilinear_measure_additional {
 =head1 Methods (Entries)
 
 =head2 R [text string]
-- (Required) A text string expressing the scale ratio of the drawing in the region corresponding to this dictionary. Universally recognized unit abbreviations should be used, either matching those of the number format arrays in this dictionary or those of commonly used scale ratios.
+- (Required) A text string expressing the scale ratio of the drawing in the region corresponding to this dictionary. Universally recognized unit abbreviations is used, either matching those of the number format arrays in this dictionary or those of commonly used scale ratios.
 EXAMPLE 1 a common scale in architectural drawings is “1/4 in = 1 ft”, indicating that 1/4 inches in default user space is equivalent to 1 foot in real-world measurements.
-If the scale ratio differs in the x and y directions, both scales should be specified.
+If the scale ratio differs in the x and y directions, both scales is specified.
 EXAMPLE 2 “in X 1 cm = 1 m, in Y 1 cm = 30 m”.
 
 =head2 X [array]

@@ -16,10 +16,10 @@ role ISO_32000::Minimum_bit_depth {
 - (Optional) The type of PDF object that this dictionary describes; if present, is MinBitDepth for a minimum bit depth dictionary.
 
 =head2 V [integer]
-- (Required) A positive integer (0 or greater) specifying the minimum screen depth (in bits) of the monitor for the rendition to be viable. A negative value shall not be allowed.
+- (Required) A positive integer (0 or greater) specifying the minimum screen depth (in bits) of the monitor for the rendition to be viable. A negative value is not allowed.
 
 =head2 M [integer]
-- (Optional) A monitor specifier (see Table 270) that specifies which monitor the value of V should be tested against. If the value is unrecognized, the object shall not be viable.
+- (Optional) A monitor specifier (see Table 270) that specifies which monitor the value of V is tested against. If the value is unrecognized, the object is not viable.
 Default value: 0.
 
 =end pod

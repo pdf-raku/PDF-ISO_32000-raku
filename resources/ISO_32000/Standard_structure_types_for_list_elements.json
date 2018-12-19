@@ -8,7 +8,7 @@
     "rows": [
       [
         "L",
-        "(List) A sequence of items of like meaning and importance. Its immediate children should be an optional caption (structure type Caption; see 14.8.4.2, “Grouping Elements”) followed by one or more list items (structure type LI)."
+        "(List) A sequence of items of like meaning and importance. Its immediate children is an optional caption (structure type Caption; see 14.8.4.2, “Grouping Elements”) followed by one or more list items (structure type LI)."
       ],
       [
         "LI",

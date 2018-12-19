@@ -32,7 +32,7 @@
       ],
       [
         "FontWeight",
-        "The weight (thickness) value of the font. Derived from FontWeight in the font descriptor (see Table 122).\nThe ForceBold flag and the StemV field should not be used to set this attribute."
+        "The weight (thickness) value of the font. Derived from FontWeight in the font descriptor (see Table 122).\nThe ForceBold flag and the StemV field is not used to set this attribute."
       ]
     ]
   }

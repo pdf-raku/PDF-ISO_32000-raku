@@ -36,7 +36,7 @@ Default value: 0.5
 Default value: [/DeviceRGB 1 1 1] representing the colour white.
 
 =head2 IV [boolean]
-- (Optional) A flag indicating the visibility of the intersection of the cutting plane with any 3D geometry. If true, then the intersection is visible. If false, then the intersection shall not be visible.
+- (Optional) A flag indicating the visibility of the intersection of the cutting plane with any 3D geometry. If true, then the intersection is visible. If false, then the intersection is not visible.
 Default value: false
 
 =head2 IC [array]

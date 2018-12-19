@@ -23,6 +23,6 @@ role ISO_32000::Type_5_halftone {
 - (Optional) The name of the halftone dictionary.
 
 =head2 Default [dictionary or stream]
-- (Required) A halftone to be used for any colorant or colour component that does not have an entry of its own. The value shall not be 5. If there are any nonprimary colorants, the default halftone shall have a transfer function.
+- (Required) A halftone to be used for any colorant or colour component that does not have an entry of its own. The value is not 5. If there are any nonprimary colorants, the default halftone has a transfer function.
 
 =end pod

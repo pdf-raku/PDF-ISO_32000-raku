@@ -20,7 +20,7 @@ role ISO_32000::Optional_Content_Group_Usage {
 =head2 CreatorInfo [dictionary]
 - (Optional) A dictionary used by the creating application to store application-specific data associated with this optional content group. It shall contain two required entries:
 Creator A text string specifying the application that created the group.
-Subtype A name defining the type of content controlled by the group. Suggested values include but shall not be limited to Artwork, for graphic-design or publishing applications, and Technical, for technical designs such as building plans or schematics.
+Subtype A name defining the type of content controlled by the group. Suggested values include but is not limited to Artwork, for graphic-design or publishing applications, and Technical, for technical designs such as building plans or schematics.
 Additional entries may be included to present information relevant to the creating application or related applications.
 Groups whose Intent entry contains Design typically include a CreatorInfo entry.
 
@@ -45,10 +45,10 @@ Subtype A name object specifying the kind of content controlled by the group; fo
 PrintState A name that is either ON or OFF, indicating that the group is set to that state when the document is printed from a conforming reader.
 
 =head2 View [dictionary]
-- (Optional) A dictionary that shall have a single entry, ViewState, a name that shall have a value of either ON or OFF, indicating that the group is set to that state when the document is opened in a conforming reader.
+- (Optional) A dictionary that has a single entry, ViewState, a name that has a value of either ON or OFF, indicating that the group is set to that state when the document is opened in a conforming reader.
 
 =head2 User [dictionary]
-- (Optional) A dictionary specifying one or more users for whom this optional content group is primarily intended. Each dictionary shall have two required entries:
+- (Optional) A dictionary specifying one or more users for whom this optional content group is primarily intended. Each dictionary has two required entries:
 Type A name object that is either Ind (individual), Ttl (title), or Org (organization).
 Name A text string or array of text strings representing the name(s) of the individual, position or organization.
 

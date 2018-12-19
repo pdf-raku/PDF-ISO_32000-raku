@@ -34,7 +34,7 @@ b)Uncoloured tiling pattern. The pattern’s content stream shall not specify an
 =head2 TilingType [integer]
 - (Required) A code that controls adjustments to the spacing of tiles relative to the device pixel grid:
 a)Constant spacing. Pattern cells is spaced consistently—that is, by a multiple of a device pixel. To achieve this, the conforming reader may need to distort the pattern cell slightly by making small adjustments to XStep, YStep, and the transformation matrix. The amount of distortion shall not exceed 1 device pixel.
-b)No distortion. The pattern cell shall not be distorted, but the spacing between pattern cells may vary by as much as 1 device pixel, both horizontally and vertically, when the pattern is painted. This achieves the spacing requested by XStep and YStep on average but not necessarily for each individual pattern cell.
+b)No distortion. The pattern cell is not distorted, but the spacing between pattern cells may vary by as much as 1 device pixel, both horizontally and vertically, when the pattern is painted. This achieves the spacing requested by XStep and YStep on average but not necessarily for each individual pattern cell.
 c)Constant spacing and faster tiling. Pattern cells is spaced consistently as in tiling type 1 but with additional distortion permitted to enable a more efficient implementation.
 
 =head2 BBox [rectangle]

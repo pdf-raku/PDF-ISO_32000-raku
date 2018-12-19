@@ -26,7 +26,7 @@ D (Dashed) A dashed rectangle. The dash pattern is specified by the D entry.
 Other guideline styles may be defined in the future. Default value: S.
 
 =head2 D [array]
-- (Optional) A dash array defining a pattern of dashes and gaps to be used in drawing dashed guidelines (guideline style D). The dash array is specified in default user space units, in the same format as in the line dash pattern parameter of the graphics state (see 8.4.3.6, “Line Dash Pattern”). The dash phase shall not be specified and is assumed to be 0.
+- (Optional) A dash array defining a pattern of dashes and gaps to be used in drawing dashed guidelines (guideline style D). The dash array is specified in default user space units, in the same format as in the line dash pattern parameter of the graphics state (see 8.4.3.6, “Line Dash Pattern”). The dash phase is not specified and is assumed to be 0.
 EXAMPLE A D entry of [ 3 2 ] specifies guidelines drawn with 3-point dashes alternating with 2-point gaps.
 Default value: [ 3 ].
 

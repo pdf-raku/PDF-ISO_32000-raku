@@ -32,7 +32,7 @@ Elements with Placement values of Before, Start, or End is removed from the norm
 LrTb Inline progression from left to right; block progression from top to bottom. This is the typical writing mode for Western writing systems.
 RlTb Inline progression from right to left; block progression from top to bottom. This is the typical writing mode for Arabic and Hebrew writing systems.
 TbRl Inline progression from top to bottom; block progression from right to left. This is the typical writing mode for Chinese and Japanese writing systems.
-The specified layout directions shall apply to the given structure element and all of its descendants to any level of nesting. Default value: LrTb.
+The specified layout directions applies to the given structure element and all of its descendants to any level of nesting. Default value: LrTb.
 For elements that produce multiple columns, the writing mode defines the direction of column progression within the reference area: the inline direction determines the stacking direction for columns and the default flow order of text from column to column. For tables, the writing mode controls the layout of rows and columns: table rows (structure type TR) is stacked in the block direction, cells within a row (structure type TD) in the inline direction.
 The inline-progression direction specified by the writing mode is subject to local override within the text being laid out, as described in Unicode Standard Annex 9, The Bidirectional Algorithm, available from the Unicode Consortium (see the Bibliography).
 
@@ -42,13 +42,13 @@ The inline-progression direction specified by the writing mode is subject to loc
 =head2 BorderColor [array]
 - (Optional; inheritable; PDF 1.5) The colour of the border drawn on the edges of a table cell or any element’s content rectangle (possibly adjusted by the Padding attribute). The value of each edge is an array of three numbers in the range 0.0 to 1.0, representing the red, green, and blue values, respectively, of an RGB colour space. There are two forms:
 A single array of three numbers representing the RGB values to apply to all four edges.
-An array of four arrays, each specifying the RGB values for one edge of the border, in the order of the before, after, start, and end edges. A value of null for any of the edges means that it shall not be drawn.
+An array of four arrays, each specifying the RGB values for one edge of the border, in the order of the before, after, start, and end edges. A value of null for any of the edges means that it is not drawn.
 If this attribute is not specified, the border colour for this element is the current text fill colour in effect at the start of its associated content.
 
 =head2 BorderStyle [array or name]
 - (Optional; not inheritable; PDF 1.5) The style of an element’s border. Specifies the stroke pattern of each edge of a table cell or any element’s content rectangle (possibly adjusted by the Paddingattribute). There are two forms:
 • A name from the list below representing the border style to apply to all four edges.
-• An array of four entries, each entry specifying the style for one edge of the border in the order of the before, after, start, and end edges. A value of null for any of the edges means that it shall not be drawn.
+• An array of four entries, each entry specifying the style for one edge of the border in the order of the before, after, start, and end edges. A value of null for any of the edges means that it is not drawn.
 None No border. Forces the computed value of BorderThicknessto be 0.
 Hidden Same as None, except in terms of border conflict resolution for table elements.
 Dotted The border is a series of dots.
@@ -64,9 +64,9 @@ All borders is drawn on top of the box’s background. The colour of borders dra
 NOTE Conforming HTML applications may interpret Dotted, Dashed, Double, Groove, Ridge, Inset, and Outset to be Solid.
 
 =head2 BorderThickness [number or array]
-- (Optional; inheritable; PDF 1.5) The thickness of the border drawn on the edges of a table cell or any element’s content rectangle (possibly adjusted by the Padding attribute). The value of each edge is a positive number in default user space units representing the border’s thickness (a value of 0 indicates that the border shall not be drawn). There are two forms:
+- (Optional; inheritable; PDF 1.5) The thickness of the border drawn on the edges of a table cell or any element’s content rectangle (possibly adjusted by the Padding attribute). The value of each edge is a positive number in default user space units representing the border’s thickness (a value of 0 indicates that the border is not drawn). There are two forms:
 A number representing the border thickness for all four edges.
-An array of four entries, each entry specifying the thickness for one edge of the border, in the order of the before, after, start, and end edges. A value of null for any of the edges means that it shall not be drawn.
+An array of four entries, each entry specifying the thickness for one edge of the border, in the order of the before, after, start, and end edges. A value of null for any of the edges means that it is not drawn.
 
 =head2 Padding [number or array]
 - (Optional; not inheritable; PDF 1.5) Specifies an offset to account for the separation between the element’s content rectangle and the surrounding border (see Link “Content and Allocation Rectangles” in 14.8.5.4, “Layout Attributes”). A positive value enlarges the background area; a negative value trims it, possibly allowing the border to overlap the element’s text or graphic.

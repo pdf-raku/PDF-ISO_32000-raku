@@ -20,32 +20,32 @@
       [
         "F",
         "string",
-        "(Required if the DOS, Mac, and Unix entries are all absent; amended with the UF entry for PDF 1.7) A file specification string of the form described in\n7.11.2, \"File Specification Strings,\"\nor (if the file system is URL) a uniform resource locator, as described in\n7.11.5, \"URL Specifications.\"\nThe UF entry should be used in addition to the F entry. The UF entry provides cross-platform and cross-language compatibility and the F entry provides backwards compatibility."
+        "(Required if the DOS, Mac, and Unix entries are all absent; amended with the UF entry for PDF 1.7) A file specification string of the form described in\n7.11.2, \"File Specification Strings,\"\nor (if the file system is URL) a uniform resource locator, as described in\n7.11.5, \"URL Specifications.\"\nThe UF entry is used in addition to the F entry. The UF entry provides cross-platform and cross-language compatibility and the F entry provides backwards compatibility."
       ],
       [
         "UF",
         "text string",
-        "(Optional, but recommended if the F entry exists in the dictionary; PDF 1.7) A Unicode text string that provides file specification of the form described in\n7.11.2, \"File Specification Strings.\"\nThis is a text string encoded using PDFDocEncoding or UTF-16BE with a leading byte-order marker (as defined in 7.9.2.2, \"Text String Type\"). The F entry should be included along with this entry for backwards compatibility reasons."
+        "(Optional, but recommended if the F entry exists in the dictionary; PDF 1.7) A Unicode text string that provides file specification of the form described in\n7.11.2, \"File Specification Strings.\"\nThis is a text string encoded using PDFDocEncoding or UTF-16BE with a leading byte-order marker (as defined in 7.9.2.2, \"Text String Type\"). The F entry is included along with this entry for backwards compatibility reasons."
       ],
       [
         "DOS",
         "byte string",
-        "(Optional) A file specification string (see 7.11.2, \"File Specification Strings\") representing a DOS file name.\nThis entry is obsolescent and should not be used by conforming writers."
+        "(Optional) A file specification string (see 7.11.2, \"File Specification Strings\") representing a DOS file name.\nThis entry is obsolescent and is not used by conforming writers."
       ],
       [
         "Mac",
         "byte string",
-        "(Optional) A file specification string (see 7.11.2, \"File Specification Strings\") representing a Mac OS file name.\nThis entry is obsolescent and should not be used by conforming writers."
+        "(Optional) A file specification string (see 7.11.2, \"File Specification Strings\") representing a Mac OS file name.\nThis entry is obsolescent and is not used by conforming writers."
       ],
       [
         "Unix",
         "byte string",
-        "(Optional) A file specification string (see 7.11.2, \"File Specification Strings\") representing a UNIX file name.\nThis entry is obsolescent and should not be used by conforming writers."
+        "(Optional) A file specification string (see 7.11.2, \"File Specification Strings\") representing a UNIX file name.\nThis entry is obsolescent and is not used by conforming writers."
       ],
       [
         "ID",
         "array",
-        "(Optional) An array of two byte strings constituting a file identifier (see 14.4, \"File Identifiers\") that should be included in the referenced file.\nNOTE The use of this entry improves an application’s chances of finding the intended file and allows it to warn the user if the file has changed since the link was made."
+        "(Optional) An array of two byte strings constituting a file identifier (see 14.4, \"File Identifiers\") that is included in the referenced file.\nNOTE The use of this entry improves an application’s chances of finding the intended file and allows it to warn the user if the file has changed since the link was made."
       ],
       [
         "V",
@@ -55,7 +55,7 @@
       [
         "EF",
         "dictionary",
-        "(Required if RF is present; PDF 1.3; amended to include the UF key in PDF 1.7) A dictionary containing a subset of the keys F, UF, DOS, Mac, and Unix, corresponding to the entries by those names in the file specification dictionary. The value of each such key is an embedded file stream (see 7.11.4, \"Embedded File Streams\") containing the corresponding file. If this entry is present, the Type entry is required and the file specification dictionary is indirectly referenced.\nThe F and UF entries should be used in place of the DOS, Mac, or Unixentries."
+        "(Required if RF is present; PDF 1.3; amended to include the UF key in PDF 1.7) A dictionary containing a subset of the keys F, UF, DOS, Mac, and Unix, corresponding to the entries by those names in the file specification dictionary. The value of each such key is an embedded file stream (see 7.11.4, \"Embedded File Streams\") containing the corresponding file. If this entry is present, the Type entry is required and the file specification dictionary is indirectly referenced.\nThe F and UF entries is used in place of the DOS, Mac, or Unixentries."
       ],
       [
         "RF",

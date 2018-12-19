@@ -24,7 +24,7 @@ role ISO_32000::Embedded_goto_action_additional {
 - (Required) The destination in the target to jump to (see 12.3.2, “Destinations”).
 
 =head2 NewWindow [boolean]
-- (Optional) If true, the destination document should be opened in a new window; if false, the destination document should replace the current document in the same window. If this entry is absent, the conforming reader should act according to its preference.
+- (Optional) If true, the destination document is opened in a new window; if false, the destination document should replace the current document in the same window. If this entry is absent, the conforming reader should act according to its preference.
 
 =head2 T [dictionary]
 - (Optional if F is present; otherwise required) A target dictionary (see Table 202) specifying path information to the target document. Each target dictionary specifies one element in the full path to the target and may have nested target dictionaries specifying additional elements.

@@ -13,7 +13,7 @@ role ISO_32000::Separation {
 =head1 Methods (Entries)
 
 =head2 Pages [array]
-- (Required) An array of indirect references to page objects representing separations of the same document page. One of the page objects in the array is the one with which this separation dictionary is associated, and all of them shall have separation dictionaries (SeparationInfoentries) containing Pages arrays identical to this one.
+- (Required) An array of indirect references to page objects representing separations of the same document page. One of the page objects in the array is the one with which this separation dictionary is associated, and all of them has separation dictionaries (SeparationInfoentries) containing Pages arrays identical to this one.
 
 =head2 DeviceColorant [name or string]
 - (Required) The name of the device colorant to be used in rendering this separation, such as Cyan or PANTONE 35 CV.

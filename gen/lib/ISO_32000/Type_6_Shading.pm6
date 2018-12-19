@@ -30,6 +30,6 @@ Only one pair of c values is specified if a Function entry is present.
 
 =head2 Function [function]
 - (Optional) A 1-in, n-out function or an array of n 1-in, 1-out functions (where n is the number of colour components in the shading dictionary’s colour space). If this entry is present, the colour data for each vertex is specified by a single parametric variable rather than by n separate colour components. The designated function(s) is called with each interpolated value of the parametric variable to determine the actual colour at each point. Each input value is forced into the range interval specified for the corresponding colour component in the shading dictionary’s Decode array. Each function’s domain is a superset of that interval. If the value returned by the function for a given colour component is out of range, it is adjusted to the nearest valid value.
-This entry shall not be used with an Indexed colour space.
+This entry is not used with an Indexed colour space.
 
 =end pod

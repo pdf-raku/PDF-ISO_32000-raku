@@ -25,17 +25,17 @@
       [
         "RO",
         "stream",
-        "(Optional) A form XObject specifying the overlay appearance for this redaction annotation. After this redaction is applied and the affected content has been removed, the overlay appearance should be drawn such that its origin lines up with the lower-left corner of the annotation rectangle. This form XObject is not necessarily related to other annotation appearances, and may or may not be present in the APdictionary. This entry takes precedence over the IC, OverlayText, DA, and Q entries."
+        "(Optional) A form XObject specifying the overlay appearance for this redaction annotation. After this redaction is applied and the affected content has been removed, the overlay appearance is drawn such that its origin lines up with the lower-left corner of the annotation rectangle. This form XObject is not necessarily related to other annotation appearances, and may or may not be present in the APdictionary. This entry takes precedence over the IC, OverlayText, DA, and Q entries."
       ],
       [
         "OverlayText",
         "text string",
-        "(Optional) A text string specifying the overlay text that should be drawn over the redacted region after the affected content has been removed. This entry is ignored if the RO entry is present."
+        "(Optional) A text string specifying the overlay text that is drawn over the redacted region after the affected content has been removed. This entry is ignored if the RO entry is present."
       ],
       [
         "Repeat",
         "boolean",
-        "(Optional) If true, then the text specified by OverlayText should be repeated to fill the redacted region after the affected content has been removed. This entry is ignored if the RO entry is present. Default value: false."
+        "(Optional) If true, then the text specified by OverlayText is repeated to fill the redacted region after the affected content has been removed. This entry is ignored if the RO entry is present. Default value: false."
       ],
       [
         "DA",

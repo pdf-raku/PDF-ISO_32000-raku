@@ -19,16 +19,16 @@ role ISO_32000::Standard_inline-level_structure_element {
 
 =head2 BaselineShift [number]
 - (Optional; not inheritable) The distance, in default user space units, by which the element’s baseline is shifted relative to that of its parent element. The shift direction is the opposite of the block-progression direction specified by the prevailing WritingMode attribute (see Link “General Layout Attributes” in 14.8.5.4, “Layout Attributes”). Thus, positive values shall shift the baseline toward the before edge and negative values toward the after edge of the reference area (upward and downward, respectively, in Western writing systems). Default value: 0.
-The shifted element may be a superscript, a subscript, or an inline graphic. The shift shall apply to the element, its content, and all of its descendants. Any further baseline shift applied to a child of this element is measured relative to the shifted baseline of this (parent) element.
+The shifted element may be a superscript, a subscript, or an inline graphic. The shift applies to the element, its content, and all of its descendants. Any further baseline shift applied to a child of this element is measured relative to the shifted baseline of this (parent) element.
 
 =head2 LineHeight [number or name]
 - (Optional; inheritable) The element’s preferred height, measured in default user space units in the block-progression direction. The height of a line is determined by the largest LineHeight value for any complete or partial ILSE that it contains.
 The name Normal or Auto in place of a numeric value shall indicate that no specific height constraint is to be imposed. The element’s height is set to a reasonable value based on the content’s font size:
 Normal Adjust the line height to include any nonzero value specified for BaselineShift.
-Auto Adjustment for the value of BaselineShift shall not be made.
+Auto Adjustment for the value of BaselineShift is not made.
 Default value: Normal.
 This attribute applies to all ILSEs (including implicit ones) that are children of this element or of its nested ILSEs, if any. It shall not apply to nested BLSEs.
-When translating to a specific export format, the values Normal and Auto, if specified, is used directly if they are available in the target format. The meaning of the term “reasonable value” is left to the conforming reader to determine. It should be approximately 1.2 times the font size, but this value can vary depending on the export format.
+When translating to a specific export format, the values Normal and Auto, if specified, is used directly if they are available in the target format. The meaning of the term “reasonable value” is left to the conforming reader to determine. It is approximately 1.2 times the font size, but this value can vary depending on the export format.
 NOTE 1 In the absence of a numeric value for LineHeight or an explicit value for the font size, a reasonable method of calculating the line height from the information in a Tagged PDF file is to find the difference between the associated font’s Ascent and Descent values (see 9.8, “Font Descriptors”), map it from glyph space to default user space (see 9.4.4, “Text Space Details”), and use the maximum resulting value for any character in the line.
 
 =head2 TextDecorationColor [array]
@@ -44,7 +44,7 @@ Underline A line below the text
 Overline A line above the text
 LineThrough A line through the middle of the text
 Default value: None.
-This attribute shall apply to all text content items that are children of this element or of its nested ILSEs, if any. The attribute shall not apply to nested BLSEs or to content items other than text.
+This attribute applies to all text content items that are children of this element or of its nested ILSEs, if any. The attribute shall not apply to nested BLSEs or to content items other than text.
 The colour, position, and thickness of the decoration is uniform across all children, regardless of changes in colour, font size, or other variations in the content’s text characteristics.
 
 =head2 RubyAlign [name]

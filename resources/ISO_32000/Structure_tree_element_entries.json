@@ -75,7 +75,7 @@
       [
         "ActualText",
         "text string",
-        "(Optional; PDF 1.4) Text that is an exact replacement for the structure element and its children. This replacement text (which should apply to as small a piece of content as possible) is useful when extracting the document’s contents in support of accessibility to users with disabilities or for other purposes (see 14.9.4, “Replacement Text”)."
+        "(Optional; PDF 1.4) Text that is an exact replacement for the structure element and its children. This replacement text (which applies to as small a piece of content as possible) is useful when extracting the document’s contents in support of accessibility to users with disabilities or for other purposes (see 14.9.4, “Replacement Text”)."
       ]
     ]
   }

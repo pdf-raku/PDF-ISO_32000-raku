@@ -20,7 +20,7 @@
       [
         "Name",
         "name",
-        "(Required in PDF 1.0; optional otherwise) The name by which this font is referenced in the Font subdictionary of the current resource dictionary.\nThis entry is obsolete and should not be used."
+        "(Required in PDF 1.0; optional otherwise) The name by which this font is referenced in the Font subdictionary of the current resource dictionary.\nThis entry is obsolete and is not used."
       ],
       [
         "BaseFont",

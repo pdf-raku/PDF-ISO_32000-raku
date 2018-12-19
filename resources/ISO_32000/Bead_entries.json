@@ -20,12 +20,12 @@
       [
         "N",
         "dictionary",
-        "(Required; is an indirect reference) The next bead in the thread. In the last bead, this entry shall refer to the first bead."
+        "(Required; is an indirect reference) The next bead in the thread. In the last bead, this entry refers to the first bead."
       ],
       [
         "V",
         "dictionary",
-        "(Required; is an indirect reference) The previous bead in the thread. In the first bead, this entry shall refer to the last bead."
+        "(Required; is an indirect reference) The previous bead in the thread. In the first bead, this entry refers to the last bead."
       ],
       [
         "P",

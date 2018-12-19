@@ -16,7 +16,7 @@ role ISO_32000::Signature_field_lock {
 - (Optional) The type of PDF object that this dictionary describes; if present, is SigFieldLock for a signature field lock dictionary.
 
 =head2 Action [name]
-- (Required) A name which, in conjunction with Fields, indicates the set of fields that should be locked. The value is one of the following:
+- (Required) A name which, in conjunction with Fields, indicates the set of fields that is locked. The value is one of the following:
 All All fields in the document
 Include All fields specified in Fields
 Exclude All fields except those specified in Fields

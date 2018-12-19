@@ -34,7 +34,7 @@ This entry may be present in a non-terminal field (one whose descendants are fie
 
 =head2 Kids [array]
 - (Sometimes required, as described below) An array of indirect references to the immediate children of this field.
-In a non-terminal field, the Kids array shall refer to field dictionaries that are immediate descendants of this field. In a terminal field, the Kids array ordinarily shall refer to one or more separate widget annotations that are associated with this field. However, if there is only one associated widget annotation, and its contents have been merged into the field dictionary, Kids is omitted.
+In a non-terminal field, the Kids array refers to field dictionaries that are immediate descendants of this field. In a terminal field, the Kids array ordinarily refers to one or more separate widget annotations that are associated with this field. However, if there is only one associated widget annotation, and its contents have been merged into the field dictionary, Kids is omitted.
 
 =head2 T [text string]
 - (Optional) The partial field name (see 12.7.3.2, “Field Names”).

@@ -52,7 +52,7 @@ Although the values specified by the color property are interpreted as sRGB valu
 =head2 text-decoration [keyword]
 - One of the following keywords:
 underline: The enclosed text is underlined.
-line-through: The enclosed text shall have a line drawn through it.
+line-through: The enclosed text has a line drawn through it.
 
 =head2 font-stretch [keyword]
 - Specifies a normal, condensed or extended face from a font family. Supported values from narrowest to widest are ultra-condensed, extra-condensed, condensed, semi-condensed, normal, semi-expanded, expanded, extra-expanded, and ultra-expanded.

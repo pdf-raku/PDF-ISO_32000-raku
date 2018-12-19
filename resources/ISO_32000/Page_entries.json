@@ -55,7 +55,7 @@
       [
         "BoxColorInfo",
         "dictionary",
-        "(Optional; PDF 1.4) A box colour information dictionary that shall specify the colours and other visual characteristics that should be used in displaying guidelines on the screen for the various page boundaries (see 14.11.2.2, \"Display of Page Boundaries\"). If this entry is absent, the application shall use its own current default settings."
+        "(Optional; PDF 1.4) A box colour information dictionary that shall specify the colours and other visual characteristics that is used in displaying guidelines on the screen for the various page boundaries (see 14.11.2.2, \"Display of Page Boundaries\"). If this entry is absent, the application shall use its own current default settings."
       ],
       [
         "Contents",

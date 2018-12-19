@@ -34,7 +34,11 @@ multi sub grok(TableTag :$name!, :@data!, :attr($)) {
         for .list {
             $_ = (
                 .<TD>.map({tidy($_)})   .join("\n")
-                .subst(/«"shall be"»/, 'is', :g)
+                .subst(/«[shall|should]" be"»/, 'is', :g)
+                .subst(/«[shall|should]" have"»/, 'has', :g)
+                .subst(/«[shall|should]" not be"»/, 'is not', :g)
+                .subst(/«[shall|should]" apply"»/, 'applies', :g)
+                .subst(/«[shall|should]" "(behave|refer|remain)»/, {$0 ~ 's'}, :g)
                 .subst(/T \s* a \s* b \s* l \s* e/, 'Table', :g)
                 .subst(/:s "(" (<-[)]>*?)  ")"/, { '(' ~ tidy($0) ~ ')' }, :g)
                 .subst(/:s Link (Table|Annex|Figure|Bibliography|<[0..9.]>+)/, { $0 }, :g)

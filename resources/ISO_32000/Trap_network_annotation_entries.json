@@ -25,7 +25,7 @@
       [
         "AnnotStates",
         "array",
-        "(Required if Version is present; is absent if LastModified is present) An array of name objects representing the appearance states (value of the AS entry) for annotations associated with the page. The appearance states is listed in the same order as the annotations in the page’s Annots array (see 7.7.3.3, “Page Objects”). For an annotation with no AS entry, the corresponding array element should be null. No appearance state is included for the trap network annotation itself."
+        "(Required if Version is present; is absent if LastModified is present) An array of name objects representing the appearance states (value of the AS entry) for annotations associated with the page. The appearance states is listed in the same order as the annotations in the page’s Annots array (see 7.7.3.3, “Page Objects”). For an annotation with no AS entry, the corresponding array element is null. No appearance state is included for the trap network annotation itself."
       ],
       [
         "FontFauxing",

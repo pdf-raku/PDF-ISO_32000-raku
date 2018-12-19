@@ -53,7 +53,7 @@ Default value: 4.
 Default value: 1
 
 =head2 T [boolean]
-- (Optional) If true, the floating window shall have a title bar. Default value: true.
+- (Optional) If true, the floating window has a title bar. Default value: true.
 
 =head2 UC [boolean]
 - (Optional; meaningful only if T is true) If true, the floating window shall include user interface elements that allow a user to close a floating window.

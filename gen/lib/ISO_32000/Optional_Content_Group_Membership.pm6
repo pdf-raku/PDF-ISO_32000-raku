@@ -18,7 +18,7 @@ role ISO_32000::Optional_Content_Group_Membership {
 
 =head2 OCGs [dictionary or array]
 - (Optional) A dictionary or array of dictionaries specifying the optional content groups whose states shall determine the visibility of content controlled by this membership dictionary.
-Null values or references to deleted objects is ignored. If this entry is not present, is an empty array, or contains references only to null or deleted objects, the membership dictionary shall have no effect on the visibility of any content.
+Null values or references to deleted objects is ignored. If this entry is not present, is an empty array, or contains references only to null or deleted objects, the membership dictionary has no effect on the visibility of any content.
 
 =head2 P [name]
 - (Optional) A name specifying the visibility policy for content belonging to this membership dictionary. Valid values is:

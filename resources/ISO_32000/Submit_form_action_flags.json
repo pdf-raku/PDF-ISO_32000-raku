@@ -15,7 +15,7 @@
       [
         "2",
         "IncludeNoValueFields",
-        "If set, all fields designated by the Fields array and the Include/Exclude flag is submitted, regardless of whether they have a value (V entry in the field dictionary). For fields without a value, only the field name shall betransmitted.\nIf clear, fields without a value shall not be submitted."
+        "If set, all fields designated by the Fields array and the Include/Exclude flag is submitted, regardless of whether they have a value (V entry in the field dictionary). For fields without a value, only the field name shall betransmitted.\nIf clear, fields without a value is not submitted."
       ],
       [
         "3",
@@ -40,12 +40,12 @@
       [
         "7",
         "IncludeAppendSaves",
-        "(PDF 1.4) is used only when the form is being submitted in Forms Data Format (that is, when both the XFDF and ExportFormat flags are clear). If set, the submitted FDF file shall include the contents of all incremental updates to the underlying PDF document, as contained in the Differences entry in the FDF dictionary (see Table 243). If clear, the incremental updates shall not be included."
+        "(PDF 1.4) is used only when the form is being submitted in Forms Data Format (that is, when both the XFDF and ExportFormat flags are clear). If set, the submitted FDF file shall include the contents of all incremental updates to the underlying PDF document, as contained in the Differences entry in the FDF dictionary (see Table 243). If clear, the incremental updates is not included."
       ],
       [
         "8",
         "IncludeAnnotations",
-        "(PDF 1.4) is used only when the form is being submitted in Forms Data Format (that is, when both the XFDF and ExportFormat flags are clear). If set, the submitted FDF file shall include includes all markup annotations in the underlying PDF document (see 12.5.6.2, “Markup Annotations”). If clear, markup annotations shall not be included."
+        "(PDF 1.4) is used only when the form is being submitted in Forms Data Format (that is, when both the XFDF and ExportFormat flags are clear). If set, the submitted FDF file shall include includes all markup annotations in the underlying PDF document (see 12.5.6.2, “Markup Annotations”). If clear, markup annotations is not included."
       ],
       [
         "9",

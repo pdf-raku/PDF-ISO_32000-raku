@@ -29,13 +29,13 @@ for text markup annotations. If present, these quadrilaterals denote the content
 - (Optional) An array of three numbers in the range 0.0 to 1.0 specifying the components, in the DeviceRGB colour space, of the interior colour with which to fill the redacted region after the affected content has been removed. If this entry is absent, the interior of the redaction region is left transparent. This entry is ignored if the ROentry is present.
 
 =head2 RO [stream]
-- (Optional) A form XObject specifying the overlay appearance for this redaction annotation. After this redaction is applied and the affected content has been removed, the overlay appearance should be drawn such that its origin lines up with the lower-left corner of the annotation rectangle. This form XObject is not necessarily related to other annotation appearances, and may or may not be present in the APdictionary. This entry takes precedence over the IC, OverlayText, DA, and Q entries.
+- (Optional) A form XObject specifying the overlay appearance for this redaction annotation. After this redaction is applied and the affected content has been removed, the overlay appearance is drawn such that its origin lines up with the lower-left corner of the annotation rectangle. This form XObject is not necessarily related to other annotation appearances, and may or may not be present in the APdictionary. This entry takes precedence over the IC, OverlayText, DA, and Q entries.
 
 =head2 OverlayText [text string]
-- (Optional) A text string specifying the overlay text that should be drawn over the redacted region after the affected content has been removed. This entry is ignored if the RO entry is present.
+- (Optional) A text string specifying the overlay text that is drawn over the redacted region after the affected content has been removed. This entry is ignored if the RO entry is present.
 
 =head2 Repeat [boolean]
-- (Optional) If true, then the text specified by OverlayText should be repeated to fill the redacted region after the affected content has been removed. This entry is ignored if the RO entry is present. Default value: false.
+- (Optional) If true, then the text specified by OverlayText is repeated to fill the redacted region after the affected content has been removed. This entry is ignored if the RO entry is present. Default value: false.
 
 =head2 DA [byte string]
 - (Required if OverlayText is present, ignored otherwise) The appearance string to be used in formatting the overlay text when it is drawn after the affected content has been removed (see 12.7.3.3, “Variable Text”). This entry is ignored if the RO entry is present.

@@ -26,13 +26,13 @@ role ISO_32000::Software_identifier {
 - (Optional) The lower bound of the range of software versions that this software identifier dictionary specifies (see Link “Version arrays” in 13.2.7.4, “Software Identifier Dictionary”). Default value: the array [0].
 
 =head2 LI [boolean]
-- (Optional) If true, the lower bound of the interval defined by L and H is inclusive; that is, the software version is greater than or equal to L (see Link “Version arrays” in 13.2.7.4, “Software Identifier Dictionary”). If false, it shall not be inclusive. Default value: true.
+- (Optional) If true, the lower bound of the interval defined by L and H is inclusive; that is, the software version is greater than or equal to L (see Link “Version arrays” in 13.2.7.4, “Software Identifier Dictionary”). If false, it is not inclusive. Default value: true.
 
 =head2 H [array]
 - (Optional) The upper bound of the range of software versions that this software identifier dictionary specifies (see Link “Version arrays” in 13.2.7.4, “Software Identifier Dictionary”). Default value: an empty array [].
 
 =head2 HI [boolean]
-- (Optional) If true, the upper bound of the interval defined by L and H is inclusive; that is, the software version is less than or equal to H (see Link “Version arrays” in 13.2.7.4, “Software Identifier Dictionary”). If false, it shall not be inclusive. Default value: true.
+- (Optional) If true, the upper bound of the interval defined by L and H is inclusive; that is, the software version is less than or equal to H (see Link “Version arrays” in 13.2.7.4, “Software Identifier Dictionary”). If false, it is not inclusive. Default value: true.
 
 =head2 OS [array]
 - (Optional) An array of byte strings representing operating system identifiers that shall indicate to which operating systems this object applies. The defined values are the same as those defined for SMIL 2.0’s systemOperatingSystem attribute. There may not be multiple copies of the same identifier in the array. An empty array is considered to represent all operating systems. Default value: an empty array.

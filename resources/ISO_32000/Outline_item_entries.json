@@ -45,12 +45,12 @@
       [
         "Dest",
         "name, byte string, or array",
-        "(Optional; shall not be present if an A entry is present) The destination that is displayed when this item is activated (see 12.3.2, “Destinations”)."
+        "(Optional; is not present if an A entry is present) The destination that is displayed when this item is activated (see 12.3.2, “Destinations”)."
       ],
       [
         "A",
         "dictionary",
-        "(Optional; PDF 1.1; shall not be present if a Dest entry is present) The action that is performed when this item is activated (see 12.6, “Actions”)."
+        "(Optional; PDF 1.1; is not present if a Dest entry is present) The action that is performed when this item is activated (see 12.6, “Actions”)."
       ],
       [
         "SE",

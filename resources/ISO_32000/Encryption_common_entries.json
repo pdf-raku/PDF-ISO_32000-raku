@@ -20,7 +20,7 @@
       [
         "V",
         "number",
-        "(Optional) A code specifying the algorithm to be used in encrypting and decrypting the document:\n0 An algorithm that is undocumented. This value shall not be used.\n1\nLink \"Algorithm 1: Encryption of data using the RC4 or AES algorithms\"\nin\n7.6.2, \"General Encryption Algorithm,\"\nwith an encryption key length of 40 bits; see below.\n2(PDF 1.4)\nLink \"Algorithm 1: Encryption of data using the RC4 or AES algorithms\"\nin\n7.6.2, \"General Encryption Algorithm,\"\nbut permitting encryption key lengths greater than 40 bits.\n3(PDF 1.4) An unpublished algorithm that permits encryption key lengths ranging from 40 to 128 bits. This value shall not appear in a conforming PDF file.\n4(PDF 1.5) The security handler defines the use of encryption and decryption in the document, using the rules specified by the CF, StmF, and StrF entries.\nThe default value if this entry is omitted is 0, but when present should be a value of 1 or greater."
+        "(Optional) A code specifying the algorithm to be used in encrypting and decrypting the document:\n0 An algorithm that is undocumented. This value is not used.\n1\nLink \"Algorithm 1: Encryption of data using the RC4 or AES algorithms\"\nin\n7.6.2, \"General Encryption Algorithm,\"\nwith an encryption key length of 40 bits; see below.\n2(PDF 1.4)\nLink \"Algorithm 1: Encryption of data using the RC4 or AES algorithms\"\nin\n7.6.2, \"General Encryption Algorithm,\"\nbut permitting encryption key lengths greater than 40 bits.\n3(PDF 1.4) An unpublished algorithm that permits encryption key lengths ranging from 40 to 128 bits. This value shall not appear in a conforming PDF file.\n4(PDF 1.5) The security handler defines the use of encryption and decryption in the document, using the rules specified by the CF, StmF, and StrF entries.\nThe default value if this entry is omitted is 0, but when present is a value of 1 or greater."
       ],
       [
         "Length",
@@ -30,7 +30,7 @@
       [
         "CF",
         "dictionary",
-        "(Optional; meaningful only when the value of V is 4; PDF 1.5) A dictionary whose keys is crypt filter names and whose values is the corresponding crypt filter dictionaries (see Table 25). Every crypt filter used in the document shall have an entry in this dictionary, except for the standard crypt filter names (see Table 26).\nThe conforming reader shall ignore entries in CF dictionary with the keys equal to those listed in\nTable 26\nand use properties of the respective standard crypt filters."
+        "(Optional; meaningful only when the value of V is 4; PDF 1.5) A dictionary whose keys is crypt filter names and whose values is the corresponding crypt filter dictionaries (see Table 25). Every crypt filter used in the document has an entry in this dictionary, except for the standard crypt filter names (see Table 26).\nThe conforming reader shall ignore entries in CF dictionary with the keys equal to those listed in\nTable 26\nand use properties of the respective standard crypt filters."
       ],
       [
         "StmF",

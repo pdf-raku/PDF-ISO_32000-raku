@@ -24,6 +24,6 @@ While the value of this entry is any type of PDF object, conforming writers shou
 - (Optional) A formatted representation of the value of V, that is used for special formatting; for example “($123.45)” for the number -123.45. If this entry is absent, conforming readers should use a default format.
 
 =head2 H [boolean]
-- (Optional) If true, the attribute is hidden; that is, it shall not be shown in any user interface element that presents the attributes of an object. Default value: false.
+- (Optional) If true, the attribute is hidden; that is, it is not shown in any user interface element that presents the attributes of an object. Default value: false.
 
 =end pod

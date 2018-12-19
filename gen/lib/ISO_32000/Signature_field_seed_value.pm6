@@ -56,7 +56,7 @@ If this MDP key is not present or the MDP dictionary does not contain a P entry,
 =head2 TimeStamp [dictionary]
 - (Optional; PDF 1.6) A time stamp dictionary containing two entries:
 URL An ASCII string specifying the URL of a time-stamping server, providing a time stamp that is compliant with RFC 3161, Internet X.509 Public Key Infrastructure Time-Stamp Protocol (see the Bibliography).
-Ff An integer whose value is 1 (the signature shall have a time stamp) or 0 (the signature need not have a time stamp). Default value: 0.
+Ff An integer whose value is 1 (the signature has a time stamp) or 0 (the signature need not have a time stamp). Default value: 0.
 NOTE Please see
 12.8.3.3, "PKCS7 Signatures as used in ISO 32000"
 for more details about hashing.

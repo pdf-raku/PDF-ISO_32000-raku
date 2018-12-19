@@ -35,7 +35,7 @@
       [
         "T",
         "boolean",
-        "(Optional) If true, the floating window shall have a title bar. Default value: true."
+        "(Optional) If true, the floating window has a title bar. Default value: true."
       ],
       [
         "UC",

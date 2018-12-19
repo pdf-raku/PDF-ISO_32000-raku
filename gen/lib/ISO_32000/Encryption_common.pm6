@@ -29,7 +29,7 @@ NOTE This entry was introduced in PDF 1.3 to support the use of public-key crypt
 
 =head2 V [number]
 - (Optional) A code specifying the algorithm to be used in encrypting and decrypting the document:
-0 An algorithm that is undocumented. This value shall not be used.
+0 An algorithm that is undocumented. This value is not used.
 1
 Link "Algorithm 1: Encryption of data using the RC4 or AES algorithms"
 in
@@ -42,13 +42,13 @@ in
 but permitting encryption key lengths greater than 40 bits.
 3(PDF 1.4) An unpublished algorithm that permits encryption key lengths ranging from 40 to 128 bits. This value shall not appear in a conforming PDF file.
 4(PDF 1.5) The security handler defines the use of encryption and decryption in the document, using the rules specified by the CF, StmF, and StrF entries.
-The default value if this entry is omitted is 0, but when present should be a value of 1 or greater.
+The default value if this entry is omitted is 0, but when present is a value of 1 or greater.
 
 =head2 Length [integer]
 - (Optional; PDF 1.4; only if V is 2 or 3) The length of the encryption key, in bits. The value is a multiple of 8, in the range 40 to 128. Default value: 40.
 
 =head2 CF [dictionary]
-- (Optional; meaningful only when the value of V is 4; PDF 1.5) A dictionary whose keys is crypt filter names and whose values is the corresponding crypt filter dictionaries (see Table 25). Every crypt filter used in the document shall have an entry in this dictionary, except for the standard crypt filter names (see Table 26).
+- (Optional; meaningful only when the value of V is 4; PDF 1.5) A dictionary whose keys is crypt filter names and whose values is the corresponding crypt filter dictionaries (see Table 25). Every crypt filter used in the document has an entry in this dictionary, except for the standard crypt filter names (see Table 26).
 The conforming reader shall ignore entries in CF dictionary with the keys equal to those listed in
 Table 26
 and use properties of the respective standard crypt filters.

@@ -25,7 +25,7 @@
       [
         "V",
         "boolean",
-        "(Optional) A flag indicating the visibility of this node. If true, then the node is visible. If false, then the node shall not be visible.\nIf this entry is absent, the viewer shall use the visibility specified for the parent node or for the 3D artwork (in ascending order)."
+        "(Optional) A flag indicating the visibility of this node. If true, then the node is visible. If false, then the node is not visible.\nIf this entry is absent, the viewer shall use the visibility specified for the parent node or for the 3D artwork (in ascending order)."
       ],
       [
         "M",

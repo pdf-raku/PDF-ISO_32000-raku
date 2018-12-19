@@ -25,6 +25,6 @@ EXAMPLE If MU specifies versions 1 through 5 of a player and NUspecifies version
 - (Optional) An array of media player info dictionaries (see Table 291) that shall specify a set of players, any of which may be used in playing the associated media object. If MU is also present and non-empty, A is ignored.
 
 =head2 NU [array]
-- (Optional) An array of media player info dictionaries (see Table 291) that shall specify a set of players that shall not be used in playing the associated media object (even if they are also specified in MU).
+- (Optional) An array of media player info dictionaries (see Table 291) that shall specify a set of players that is not used in playing the associated media object (even if they are also specified in MU).
 
 =end pod

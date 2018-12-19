@@ -67,7 +67,7 @@ role ISO_32000::Page {
 - (Optional; PDF 1.3) A rectangle, expressed in default user space units, that shall define the extent of the page’s meaningful content (including potential white space) as intended by the page’s creator (see 14.11.2, "Page Boundaries"). Default value: the value of CropBox.
 
 =head2 BoxColorInfo [dictionary]
-- (Optional; PDF 1.4) A box colour information dictionary that shall specify the colours and other visual characteristics that should be used in displaying guidelines on the screen for the various page boundaries (see 14.11.2.2, "Display of Page Boundaries"). If this entry is absent, the application shall use its own current default settings.
+- (Optional; PDF 1.4) A box colour information dictionary that shall specify the colours and other visual characteristics that is used in displaying guidelines on the screen for the various page boundaries (see 14.11.2.2, "Display of Page Boundaries"). If this entry is absent, the application shall use its own current default settings.
 
 =head2 Contents [stream or array]
 - (Optional) A content stream (see 7.8.2, "Content Streams") that shall describe the contents of this page. If this entry is absent, the page is empty.

@@ -20,7 +20,7 @@
       [
         "Sy",
         "name",
-        "(Optional) A name specifying a symbol that is associated with the caret:\nP A new paragraph symbol (¶) should be associated with the caret.\nNone No symbol should be associated with the caret.\nDefault value: None."
+        "(Optional) A name specifying a symbol that is associated with the caret:\nP A new paragraph symbol (¶) is associated with the caret.\nNone No symbol is associated with the caret.\nDefault value: None."
       ]
     ]
   }

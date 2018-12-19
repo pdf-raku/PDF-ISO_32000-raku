@@ -53,7 +53,7 @@ Unlike the remaining entries listed in this Table, which apply only to widget an
 - (Optional; pushbutton fields only; is an indirect reference) A form XObject defining the widget annotation’s alternate (down) icon, which is displayed when the mouse button is pressed within its active area.
 
 =head2 IF [dictionary]
-- (Optional; pushbutton fields only) An icon fit dictionary (see Table 247) specifying how the widget annotation’s icon is displayed within its annotation rectangle. If present, the icon fit dictionary shall apply to all of the annotation’s icons (normal, rollover, and alternate).
+- (Optional; pushbutton fields only) An icon fit dictionary (see Table 247) specifying how the widget annotation’s icon is displayed within its annotation rectangle. If present, the icon fit dictionary applies to all of the annotation’s icons (normal, rollover, and alternate).
 
 =head2 TP [integer]
 - (Optional; pushbutton fields only) A code indicating where to position the text of the widget annotation’s caption relative to its icon:

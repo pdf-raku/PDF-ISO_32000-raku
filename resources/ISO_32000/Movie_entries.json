@@ -15,7 +15,7 @@
       [
         "Aspect",
         "array",
-        "(Optional) The width and height of the movie’s bounding box, in pixels, and is specified as [ width height ]. This entry should be omitted for a movie consisting entirely of sound with no visible images."
+        "(Optional) The width and height of the movie’s bounding box, in pixels, and is specified as [ width height ]. This entry is omitted for a movie consisting entirely of sound with no visible images."
       ],
       [
         "Rotate",

@@ -19,6 +19,6 @@ role ISO_32000::Media_screen_parameters {
 - (Optional) A dictionary whose entries (see Table 283) is honoured for the media screen parameters to be considered viable.
 
 =head2 BE [dictionary]
-- (Optional) A dictionary whose entries (see Table 283) should be honoured.
+- (Optional) A dictionary whose entries (see Table 283) is honoured.
 
 =end pod

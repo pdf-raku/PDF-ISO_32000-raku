@@ -47,10 +47,10 @@ Step 3. For each of those immediate children whose Count is positive and non-zer
 If the outline item is closed, Count is negative and its absolute value is the number of descendants that would be visible if the outline item were opened.
 
 =head2 Dest [name, byte string, or array]
-- (Optional; shall not be present if an A entry is present) The destination that is displayed when this item is activated (see 12.3.2, “Destinations”).
+- (Optional; is not present if an A entry is present) The destination that is displayed when this item is activated (see 12.3.2, “Destinations”).
 
 =head2 A [dictionary]
-- (Optional; PDF 1.1; shall not be present if a Dest entry is present) The action that is performed when this item is activated (see 12.6, “Actions”).
+- (Optional; PDF 1.1; is not present if a Dest entry is present) The action that is performed when this item is activated (see 12.6, “Actions”).
 
 =head2 SE [dictionary]
 - (Optional; PDF 1.3; is an indirect reference) The structure element to which the item refers (see 14.7.2, “Structure Hierarchy”).

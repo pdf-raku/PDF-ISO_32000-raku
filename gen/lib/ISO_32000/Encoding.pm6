@@ -22,6 +22,6 @@ If this entry is absent, the Differences entry shall describe differences from a
 and further elaborated in the sub-clauses on specific font types. Otherwise, for a nonsymbolic font, it is StandardEncoding, and for a symbolic font, it is the font’s built-in encoding.
 
 =head2 Differences [array]
-- (Optional; should not be used with TrueType fonts) An array describing the differences from the encoding specified by BaseEncoding or, if BaseEncoding is absent, from an implicit base encoding. The Differences array is described in subsequent sub-clauses.
+- (Optional; is not used with TrueType fonts) An array describing the differences from the encoding specified by BaseEncoding or, if BaseEncoding is absent, from an implicit base encoding. The Differences array is described in subsequent sub-clauses.
 
 =end pod

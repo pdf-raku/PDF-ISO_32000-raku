@@ -11,6 +11,6 @@ role ISO_32000::Selector_rendition {
 =head1 Methods (Entries)
 
 =head2 R [array]
-- (Required) An array of rendition objects. The first viable media rendition object found in the array, or nested within a selector rendition in the array, should be used. An empty array is legal.
+- (Required) An array of rendition objects. The first viable media rendition object found in the array, or nested within a selector rendition in the array, is used. An empty array is legal.
 
 =end pod

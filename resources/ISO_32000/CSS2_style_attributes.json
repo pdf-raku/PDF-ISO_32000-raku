@@ -50,7 +50,7 @@
       [
         "text-decoration",
         "keyword",
-        "One of the following keywords:\nunderline: The enclosed text is underlined.\nline-through: The enclosed text shall have a line drawn through it."
+        "One of the following keywords:\nunderline: The enclosed text is underlined.\nline-through: The enclosed text has a line drawn through it."
       ],
       [
         "font-stretch",

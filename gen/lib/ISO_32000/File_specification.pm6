@@ -33,27 +33,27 @@ role ISO_32000::File_specification {
 7.11.2, "File Specification Strings,"
 or (if the file system is URL) a uniform resource locator, as described in
 7.11.5, "URL Specifications."
-The UF entry should be used in addition to the F entry. The UF entry provides cross-platform and cross-language compatibility and the F entry provides backwards compatibility.
+The UF entry is used in addition to the F entry. The UF entry provides cross-platform and cross-language compatibility and the F entry provides backwards compatibility.
 
 =head2 UF [text string]
 - (Optional, but recommended if the F entry exists in the dictionary; PDF 1.7) A Unicode text string that provides file specification of the form described in
 7.11.2, "File Specification Strings."
-This is a text string encoded using PDFDocEncoding or UTF-16BE with a leading byte-order marker (as defined in 7.9.2.2, "Text String Type"). The F entry should be included along with this entry for backwards compatibility reasons.
+This is a text string encoded using PDFDocEncoding or UTF-16BE with a leading byte-order marker (as defined in 7.9.2.2, "Text String Type"). The F entry is included along with this entry for backwards compatibility reasons.
 
 =head2 DOS [byte string]
 - (Optional) A file specification string (see 7.11.2, "File Specification Strings") representing a DOS file name.
-This entry is obsolescent and should not be used by conforming writers.
+This entry is obsolescent and is not used by conforming writers.
 
 =head2 Mac [byte string]
 - (Optional) A file specification string (see 7.11.2, "File Specification Strings") representing a Mac OS file name.
-This entry is obsolescent and should not be used by conforming writers.
+This entry is obsolescent and is not used by conforming writers.
 
 =head2 Unix [byte string]
 - (Optional) A file specification string (see 7.11.2, "File Specification Strings") representing a UNIX file name.
-This entry is obsolescent and should not be used by conforming writers.
+This entry is obsolescent and is not used by conforming writers.
 
 =head2 ID [array]
-- (Optional) An array of two byte strings constituting a file identifier (see 14.4, "File Identifiers") that should be included in the referenced file.
+- (Optional) An array of two byte strings constituting a file identifier (see 14.4, "File Identifiers") that is included in the referenced file.
 NOTE The use of this entry improves an application’s chances of finding the intended file and allows it to warn the user if the file has changed since the link was made.
 
 =head2 V [boolean]
@@ -61,7 +61,7 @@ NOTE The use of this entry improves an application’s chances of finding the in
 
 =head2 EF [dictionary]
 - (Required if RF is present; PDF 1.3; amended to include the UF key in PDF 1.7) A dictionary containing a subset of the keys F, UF, DOS, Mac, and Unix, corresponding to the entries by those names in the file specification dictionary. The value of each such key is an embedded file stream (see 7.11.4, "Embedded File Streams") containing the corresponding file. If this entry is present, the Type entry is required and the file specification dictionary is indirectly referenced.
-The F and UF entries should be used in place of the DOS, Mac, or Unixentries.
+The F and UF entries is used in place of the DOS, Mac, or Unixentries.
 
 =head2 RF [dictionary]
 - (Optional; PDF 1.3) A dictionary with the same structure as the EF dictionary, which is present. Each key in the RF dictionary shall also be present in the EF dictionary. Each value is a related files array (see 7.11.4.2, "Related Files Arrays") identifying files that are related to the corresponding file in the EF dictionary. If this entry is present, the Type entry is required and the file specification dictionary is indirectly referenced.

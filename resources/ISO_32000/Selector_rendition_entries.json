@@ -10,7 +10,7 @@
       [
         "R",
         "array",
-        "(Required) An array of rendition objects. The first viable media rendition object found in the array, or nested within a selector rendition in the array, should be used. An empty array is legal."
+        "(Required) An array of rendition objects. The first viable media rendition object found in the array, or nested within a selector rendition in the array, is used. An empty array is legal."
       ]
     ]
   }

@@ -10,7 +10,7 @@ role ISO_32000::Inline_Image {
     method Filter {...};
     method Height {...};
     method ImageMask {...};
-    method Intent  {...};
+    method Intent {...};
     method Interpolate {...};
     method Width {...};
 }
@@ -33,7 +33,7 @@ role ISO_32000::Inline_Image {
 
 =head2 ImageMask [IM]
 
-=head2 Intent  [No abbreviation]
+=head2 Intent [No abbreviation]
 
 =head2 Interpolate [I (uppercase I)]
 

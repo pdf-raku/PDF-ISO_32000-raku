@@ -8,7 +8,7 @@
     "rows": [
       [
         "H",
-        "(Heading) A label for a subdivision of a document’s content. It should be the first child of the division that it heads."
+        "(Heading) A label for a subdivision of a document’s content. It is the first child of the division that it heads."
       ],
       [
         "H1–H6",
