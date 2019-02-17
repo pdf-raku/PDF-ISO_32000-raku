@@ -6,7 +6,7 @@ The shear number of tables presents difficulties with cross referencing data aga
 
 Visually, there's a table of contents, but that's it. Using the PDF specification directly to analyse real-world PDF files can be a slog.
 
-Fortunately at least the PDF specification file is itself a tagged PDF, so we have some ability to autoamtically extract content, which is exactly what this module does. Extraction has been limited to tables. These are considered the most important and easily extracted from PDF files.
+Fortunately at least the PDF specification file is itself a tagged PDF, so we have some ability to automatically extract content, which is exactly what this module has done. Extraction has been limited to tables. These are considered the most important and easily extracted from PDF files.
 
 This repo contains resources that have been extracted from the specification, along with the scripts and make-files used to drive the extraction.
 
