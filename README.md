@@ -14,7 +14,7 @@ This module contains:
 
 - a copy of the source [PDF-32000 specification](src/PDF32000_2008.pdf)
 - A list of [tables and entries](#tables-and-entries)
-- A reverse list mapping [entries to tables](entry-to-role-mappings)
+- A reverse list mapping [entries to tables](#entry-to-table-mappings)
 - [JSON Tables](resources) extracted from the above
 - [generated Perl 6 interface roles](gen/lib/ISO_32000) for building and validating PDF objects
  XHTML tables that have been mined from the PDF-32000 1.7 specification.
