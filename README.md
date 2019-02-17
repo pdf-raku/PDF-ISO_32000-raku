@@ -4,13 +4,13 @@ The [PDF 32000-1:2008 1.7 Specification](http://www.adobe.com/content/dam/Adobe/
 
 The shear number of tables presents difficulties with cross referencing data against the specification and/or using the specification as a data dictionary for implementing classes and/or reading and validating PDF files.
 
-Visually, there's a table of contents, but that's it. Using the PDF specification directly to analyse real-world PDF files can be a slog.
+Perusing the specification with a standard PDF reader isn't much fun. Visually, there's a table of contents, but that's it. Not even an index. There's a lot to wade through, which can make the analysis real-world PDF files a slog.
 
 Fortunately at least the PDF specification file is itself a tagged PDF, so we have some ability to automatically extract content, which is exactly what this module has done. Extraction has been limited to tables. These are considered the most important and easily extracted from PDF files.
 
 This repo contains resources that have been extracted from the specification, along with the scripts and make-files used to drive the extraction.
 
-This module contains:
+Resources include:
 
 - a copy of the source [PDF-32000 specification](src/PDF32000_2008.pdf)
 - A list of [tables and entries](#tables-and-entries)
@@ -19,7 +19,7 @@ This module contains:
 - [generated Perl 6 interface roles](gen/lib/ISO_32000) for building and validating PDF objects
  XHTML tables that have been mined from the PDF-32000 1.7 specification.
 
-The roles are named ISO_32000::Xxxx and contain method stubs and documentation for each entry in the role
+The Perl 6 roles are named ISO_32000::Xxxx and contain method stubs and documentation for each entry in the role
 
 
 ## Tables
