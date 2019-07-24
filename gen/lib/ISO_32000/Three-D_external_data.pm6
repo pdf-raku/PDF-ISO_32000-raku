@@ -7,8 +7,11 @@ role ISO_32000::Three-D_external_data {
     method Subtype {...};
     method MD5 {...};
     INIT {
-       given $?ROLE.^add_method("3DA", method {...}) { .set_name("3DA") }
-       given $?ROLE.^add_method("3DV", method {...}) { .set_name("3DV") }
+        for "3DA", "3DV" {
+            my &m = method {...};
+            &m.set_name($_);
+            $?ROLE.^add_method($_, &m);
+        }
     }
 }
 

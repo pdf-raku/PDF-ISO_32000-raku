@@ -1,9 +1,8 @@
-unit class PDF::ISO_32000:ver<0.0.5>;
+unit class PDF::ISO_32000:ver<0.0.6>;
 
 use JSON::Fast;
 
 # run-time introspection of PDF specification content
-# stub for now
 
 method resources { %?RESOURCES }
 

@@ -55,5 +55,10 @@ multi sub grok(Str :$name!, :@data, :attr($)) {
 sub MAIN(IO() $html-table) {
     my XML::Parser::Tiny $parser .= new;
     my $ast = $parser.parse($html-table.slurp);
-    say to-json( grok( |$ast<body>)<Html>[0], :sorted-keys );
+    with grok( |$ast<body>)<Html>[0] {
+        say to-json( $_, :sorted-keys );
+    }
+    else {
+        die "no input found";
+    }
 }

@@ -28,9 +28,11 @@ sub build(:$caption, :@head, :@rows) {
         }
         if @non-idents {
             say '    INIT {';
-            for @non-idents.map: *.perl {
-                say "       given \$?ROLE.^add_method($_, method \{...\}) \{ .set_name($_) \}";
-            }
+            say "        for { @non-idents.map(*.perl).join(', ') } \{";
+            say '            my &m = method {...};';
+            say '            &m.set_name($_);';
+            say '            $?ROLE.^add_method($_, &m);';
+            say '        }';
             say '    }';
         }
         say '}';

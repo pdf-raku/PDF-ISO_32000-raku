@@ -2,17 +2,18 @@
 use v6;
 
 use PDF::Class;
+use PDF::Annot;
 use PDF::Catalog;
-use PDF::Content::Graphics;
+use PDF::MCR;
+use PDF::NumberTree :NumberTree;
+use PDF::OBJR;
 use PDF::Page;
 use PDF::StructTreeRoot;
 use PDF::StructElem :StructElemChild;
-use PDF::MCR;
-use PDF::OBJR;
-use PDF::Annot;
-use PDF::NumberTree :NumberTree;
+
 use PDF::Font::Loader;
 use PDF::Content;
+use PDF::Content::Graphics;
 use PDF::IO;
 
 constant StandardTag = PDF::StructTreeRoot::StandardStructureType;
@@ -29,23 +30,23 @@ sub html-escape(Str $_) {
         /\>/ => '&gt;',
 }
 
-sub MAIN(Str $infile,           #= input PDF
-	 Str :$password = '',   #= password for the input PDF, if encrypted
-         Number :$page,         #= page to dump
-         Number :$*max-depth = 10,    #= depth to ascend/descend struct tree
-         Str    :$*search-tag,
-         Number :$*select,
-         UInt   :$obj-num = 0,
-         UInt   :$gen-num = 0,
-         Bool   :$*render = True,
-         Bool   :$*atts = False,
-         Bool   :$*debug,
+sub MAIN(Str $infile,              #= input PDF
+	 Str :$password = '',      #= password for the input PDF, if encrypted
+         Number :$page,            #= page to dump
+         Number :$*max-depth = 16, #= depth to ascend/descend struct tree
+         Str    :$*search-tag,     #= Struct tags to select
+         Number :$*select,         #= Match number to select
+         UInt   :$obj-num,         #= Direct select by object number
+         UInt   :$gen-num = 0,     #= Direct select generation number
+         Bool   :$*render = True,  #= include rendered content
+         Bool   :$*atts = False,   #= include attributes in tags
+         Bool   :$*debug,          #= write extra debugging information
     ) {
 
-    my $input = PDF::IO.coerce(
+    my PDF::IO $input .= coerce(
        $infile eq '-'
-           ?? $*IN.slurp-rest( :bin ) # not random access
-           !! $infile.IO
+           ?? $*IN.slurp-rest( :bin ) # sequential access
+           !! $infile.IO              # random access
     );
 
     my PDF::Class $pdf .= open( $input, :$password );
@@ -191,7 +192,7 @@ class TextDecoder {
 sub graphics-tags($page) {
     return unless $*render;
     %graphics-tags{$page} //= do {
-        warn "Page: {.obj-num} {.gen-num} R" given $page;
+        $*ERR.print: '.';
         my $gfx = TextDecoder.render($page);
         my PDF::Content::Tag % = $gfx.tags(:flat).map({.mcid => $_ }).grep: *.key.defined;
     }
@@ -210,13 +211,13 @@ multi sub dump-struct(PDF::StructElem $node, :$tags is copy = %(), :$depth is co
         my %attributes;
         for $node.attribute-dicts -> $atts {
             %attributes{$_} = $atts{$_}
-            for $atts.keys
+                for $atts.keys
         }
         unless %attributes {
             for $node.class-map-keys {
                 with $*class-map{$_} -> $class {
                     %attributes{$_} = $class{$_}
-                    for $class.keys
+                        for $class.keys
                 }
             }
         }
@@ -276,7 +277,7 @@ multi sub dump-struct(PDF::OBJR $_, :$tags is copy, :$depth!) {
     say pad($depth, "<!-- OBJR {.obj-num} {.gen-num} R -->")
         if $*debug;
     $tags = graphics-tags($_) with .Pg;
-    dump-struct(.Obj, :$tags, :$depth);
+    dump-struct($_, :$tags, :$depth) with .Obj;
 }
 
 my %deref{Any};
@@ -327,7 +328,7 @@ multi sub dump-struct(PDF::Field $_, :$tags is copy, :$depth!) {
 }
 
 multi sub dump-struct(PDF::Annot $_, :$tags is copy, :$depth!) {
-    warn "todo: dump annot obj";
+    warn "todo: dump annot obj: " ~ .perl;
 }
 
 multi sub dump-struct(List $a, :$depth!, |c) {
@@ -357,7 +358,12 @@ sub dump-tag(PDF::Content::Tag $tag, :$depth! is copy) {
 pdf-struct-dump.p6 [options] file.pdf
 
 Options:
-   --password   password for an encrypted PDF
+   --password          password for an encrypted PDF
+   --max-depth=n       maximum tag-depth to descend
+   --page=p            dump page number p  
+   --search-tag=name   tag to select
+   --/render           omit rendered content
+   --atts              include attributes in tags
 
 =head1 DESCRIPTION
 

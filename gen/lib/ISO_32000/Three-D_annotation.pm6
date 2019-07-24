@@ -5,11 +5,11 @@ use v6;
 role ISO_32000::Three-D_annotation {
     method Subtype {...};
     INIT {
-       given $?ROLE.^add_method("3DD", method {...}) { .set_name("3DD") }
-       given $?ROLE.^add_method("3DV", method {...}) { .set_name("3DV") }
-       given $?ROLE.^add_method("3DA", method {...}) { .set_name("3DA") }
-       given $?ROLE.^add_method("3DI", method {...}) { .set_name("3DI") }
-       given $?ROLE.^add_method("3DB", method {...}) { .set_name("3DB") }
+        for "3DD", "3DV", "3DA", "3DI", "3DB" {
+            my &m = method {...};
+            &m.set_name($_);
+            $?ROLE.^add_method($_, &m);
+        }
     }
 }
 

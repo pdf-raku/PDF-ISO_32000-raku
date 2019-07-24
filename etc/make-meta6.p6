@@ -14,7 +14,9 @@ sub MAIN(IO() $meta6-in, *@sources) {
             %provides{$role-name} = ("gen/lib/" ~ $_);
         }
         when /'.json'$/ {
-            with from-json( "../../resources/$_".IO.slurp)<table> -> $table {
+            my $file = "../../resources/$_";
+            CATCH { default { die "error processing $file: $_" } }  
+            with from-json($file.IO.slurp)<table> -> $table {
                 with $table<caption> -> $caption {
                     my $table-name = .subst(/^'ISO_32000/'/,'').subst(/'.json'$/,'');
                     if $caption ~~ /:s Table (\d+)/ {

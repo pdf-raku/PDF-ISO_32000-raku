@@ -5,7 +5,11 @@ use v6;
 role ISO_32000::Three-D_reference {
     method Type {...};
     INIT {
-       given $?ROLE.^add_method("3DD", method {...}) { .set_name("3DD") }
+        for "3DD" {
+            my &m = method {...};
+            &m.set_name($_);
+            $?ROLE.^add_method($_, &m);
+        }
     }
 }
 
