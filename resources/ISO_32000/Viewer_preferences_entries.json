@@ -50,22 +50,22 @@
       [
         "ViewArea",
         "name",
-        "(Optional; PDF 1.4) The name of the page boundary representing the area of a page that is displayed when viewing the document on the screen. The value is the key designating the relevant page boundary in the page object (see 7.7.3, “Page Tree” and 14.11.2, “Page Boundaries”). If the specified page boundary is not defined in the page object, its default value is used, as specified in\nTable 30\n. Default value: CropBox.\nThis entry is intended primarily for use by prepress applications that interpret or manipulate the page boundaries as described in\n14.11.2, “Page Boundaries.”\nNOTE 1 Most conforming readers disregard it."
+        "(Optional; PDF 1.4) The name of the page boundary representing the area of a page that is displayed when viewing the document on the screen. The value is the key designating the relevant page boundary in the page object (see 7.7.3, “Page Tree” and 14.11.2, “Page Boundaries”). If the specified page boundary is not defined in the page object, its default value is used, as specified in Table 30 . Default value: CropBox.\nThis entry is intended primarily for use by prepress applications that interpret or manipulate the page boundaries as described in 14.11.2, “Page Boundaries.”\nNOTE 1 Most conforming readers disregard it."
       ],
       [
         "ViewClip",
         "name",
-        "(Optional; PDF 1.4) The name of the page boundary to which the contents of a page is clipped when viewing the document on the screen. The value is the key designating the relevant page boundary in the page object (see 7.7.3, “Page Tree” and 14.11.2, “Page Boundaries”). If the specified page boundary is not defined in the page object, its default value is used, as specified in\nTable 30\n. Default value: CropBox.\nThis entry is intended primarily for use by prepress applications that interpret or manipulate the page boundaries as described in\n14.11.2, “Page Boundaries.”\nNOTE 2 Most conforming readers disregard it."
+        "(Optional; PDF 1.4) The name of the page boundary to which the contents of a page is clipped when viewing the document on the screen. The value is the key designating the relevant page boundary in the page object (see 7.7.3, “Page Tree” and 14.11.2, “Page Boundaries”). If the specified page boundary is not defined in the page object, its default value is used, as specified in Table 30 . Default value: CropBox.\nThis entry is intended primarily for use by prepress applications that interpret or manipulate the page boundaries as described in 14.11.2, “Page Boundaries.”\nNOTE 2 Most conforming readers disregard it."
       ],
       [
         "PrintArea",
         "name",
-        "(Optional; PDF 1.4) The name of the page boundary representing the area of a page that is rendered when printing the document. The value is the key designating the relevant page boundary in the page object (see 7.7.3, “Page Tree” and 14.11.2, “Page Boundaries”). If the specified page boundary is not defined in the page object, its default value is used, as specified in\nTable 30\n. Default value: CropBox.\nThis entry is intended primarily for use by prepress applications that interpret or manipulate the page boundaries as described in\n14.11.2, “Page Boundaries.”\nNOTE 3 Most conforming readers disregard it."
+        "(Optional; PDF 1.4) The name of the page boundary representing the area of a page that is rendered when printing the document. The value is the key designating the relevant page boundary in the page object (see 7.7.3, “Page Tree” and 14.11.2, “Page Boundaries”). If the specified page boundary is not defined in the page object, its default value is used, as specified in Table 30 . Default value: CropBox.\nThis entry is intended primarily for use by prepress applications that interpret or manipulate the page boundaries as described in 14.11.2, “Page Boundaries.”\nNOTE 3 Most conforming readers disregard it."
       ],
       [
         "PrintClip",
         "name",
-        "(Optional; PDF 1.4) The name of the page boundary to which the contents of a page is clipped when printing the document. The value is the key designating the relevant page boundary in the page object (see 7.7.3, “Page Tree” and 14.11.2, “Page Boundaries”). If the specified page boundary is not defined in the page object, its default value is used, as specified in\nTable 30\n. Default value: CropBox.\nThis entry is intended primarily for use by prepress applications that interpret or manipulate the page boundaries as described in\n14.11.2, “Page Boundaries.”\nNOTE 4 Most conforming readers disregard it."
+        "(Optional; PDF 1.4) The name of the page boundary to which the contents of a page is clipped when printing the document. The value is the key designating the relevant page boundary in the page object (see 7.7.3, “Page Tree” and 14.11.2, “Page Boundaries”). If the specified page boundary is not defined in the page object, its default value is used, as specified in Table 30 . Default value: CropBox.\nThis entry is intended primarily for use by prepress applications that interpret or manipulate the page boundaries as described in 14.11.2, “Page Boundaries.”\nNOTE 4 Most conforming readers disregard it."
       ],
       [
         "PrintScaling",

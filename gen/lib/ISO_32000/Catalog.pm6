@@ -42,14 +42,11 @@ role ISO_32000::Catalog {
 - (Required) The type of PDF object that this dictionary describes; is Catalog for the catalog dictionary.
 
 =head2 Version [name]
-- (Optional; PDF 1.4) The version of the PDF specification to which the document conforms (for example, 1.4) if later than the version specified in the file’s header (see 7.5.2, "File Header"). If the header specifies a later version, or if this entry is absent, the document shall conform to the version specified in the header. This entry enables a conforming writer to update the version using an incremental update; see
-7.5.6, "Incremental Updates."
+- (Optional; PDF 1.4) The version of the PDF specification to which the document conforms (for example, 1.4) if later than the version specified in the file’s header (see 7.5.2, "File Header"). If the header specifies a later version, or if this entry is absent, the document shall conform to the version specified in the header. This entry enables a conforming writer to update the version using an incremental update; see 7.5.6, "Incremental Updates."
 The value of this entry is a name object, not a number, and therefore is preceded by a SOLIDUS (2Fh) character (/) when written in the PDF file (for example, /1.4).
 
 =head2 Extensions [dictionary]
-- (Optional; ISO 32000) An extensions dictionary containing developer prefix identification and version numbers for developer extensions that occur in this document.
-7.12, “Extensions Dictionary”
-, describes this dictionary and how it is used.
+- (Optional; ISO 32000) An extensions dictionary containing developer prefix identification and version numbers for developer extensions that occur in this document. 7.12, “Extensions Dictionary” , describes this dictionary and how it is used.
 
 =head2 Pages [dictionary]
 - (Required; is an indirect reference) The page tree node that is the root of the document’s page tree (see 7.7.3, "Page Tree").
@@ -129,17 +126,13 @@ Default value: UseNone.
 - (Optional; PDF 1.5; required if a document contains optional content) The document’s optional content properties dictionary (see 8.11.4, "Configuring Optional Content").
 
 =head2 Perms [dictionary]
-- (Optional; PDF 1.5) A permissions dictionary that shall specify user access permissions for the document.
-12.8.4, "Permissions"
-, describes this dictionary and how it is used.
+- (Optional; PDF 1.5) A permissions dictionary that shall specify user access permissions for the document. 12.8.4, "Permissions" , describes this dictionary and how it is used.
 
 =head2 Legal [dictionary]
 - (Optional; PDF 1.5) A dictionary that shall contain attestations regarding the content of a PDF document, as it relates to the legality of digital signatures (see 12.8.5, "Legal Content Attestations").
 
 =head2 Requirements [array]
-- (Optional; PDF 1.7) An array of requirement dictionaries that shall represent requirements for the document.
-12.10, "Document Requirements"
-, describes this dictionary and how it is used.
+- (Optional; PDF 1.7) An array of requirement dictionaries that shall represent requirements for the document. 12.10, "Document Requirements" , describes this dictionary and how it is used.
 
 =head2 Collection [dictionary]
 - (Optional; PDF 1.7) A collection dictionary that a conforming reader shall use to enhance the presentation of file attachments stored in the PDF document. (see 12.3.5, "Collections").

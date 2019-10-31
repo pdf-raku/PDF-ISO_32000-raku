@@ -7,27 +7,27 @@
     ],
     "rows": [
       [
-        "fr\n",
+        "fr",
         "Result shape"
       ],
       [
-        "fb\n",
+        "fb",
         "Backdrop shape"
       ],
       [
-        "fs\n",
+        "fs",
         "Source shape"
       ],
       [
-        "qr\n",
+        "qr",
         "Result opacity"
       ],
       [
-        "qb\n",
+        "qb",
         "Backdrop opacity"
       ],
       [
-        "qs\n",
+        "qs",
         "Source opacity"
       ]
     ]

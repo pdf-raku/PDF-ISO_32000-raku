@@ -236,7 +236,7 @@ multi sub dump-struct(PDF::StructElem $node, :$tags is copy = %(), :$depth is co
     $depth++;
 
     if $depth >= $*max-depth {
-        say pad($depth, "<$name$att/> <!-- see {$node.obj-num} {$node.gen-num} R -->");
+        say pad($depth, "<$name$att/> <!-- depth exceeded, see {$node.obj-num} {$node.gen-num} R -->");
     }
     else {
         with $node.ActualText {

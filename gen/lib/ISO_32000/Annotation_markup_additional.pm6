@@ -57,8 +57,6 @@ Free text annotations (Table 174), line annotations (Table 175), polygon annotat
 =head2 ExData [dictionary]
 - (Optional; PDF 1.7) An external data dictionary specifying data that is associated with the annotation. This dictionary contains the following entries:
 Type (optional) If present, is ExData.
-Subtype (required) a name specifying the type of data that the markup annotation is associated with. The only defined value is Markup3D.
-Table 298
-lists the values that correspond to a subtype of Markup3D.
+Subtype (required) a name specifying the type of data that the markup annotation is associated with. The only defined value is Markup3D. Table 298 lists the values that correspond to a subtype of Markup3D.
 
 =end pod

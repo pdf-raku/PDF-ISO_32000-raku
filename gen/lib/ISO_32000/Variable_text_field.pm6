@@ -24,13 +24,9 @@ role ISO_32000::Variable_text_field {
 Default value: 0 (left-justified).
 
 =head2 DS [text string]
-- (Optional; PDF 1.5) A default style string, as described in
-12.7.3.4, “Rich Text Strings.”
-
+- (Optional; PDF 1.5) A default style string, as described in 12.7.3.4, “Rich Text Strings.”
 
 =head2 RV [text string or text stream]
-- (Optional; PDF 1.5) A rich text string, as described in
-12.7.3.4, “Rich Text Strings.”
-
+- (Optional; PDF 1.5) A rich text string, as described in 12.7.3.4, “Rich Text Strings.”
 
 =end pod

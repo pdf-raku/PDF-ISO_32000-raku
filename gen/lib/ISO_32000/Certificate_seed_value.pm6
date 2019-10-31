@@ -43,8 +43,7 @@ Any additional characters is ignored. Any missing characters or characters that 
 0 Corresponding key-usage is not set.
 1 Corresponding key-usage is set.
 X State of the corresponding key-usage does not matter.
-EXAMPLE 1 The string values ‘1’ and ‘1XXXXXXXX’ represent settings where the key-usage type digitalSignature is set and the state of all other key-usage types do not matter.
-The value of the corresponding flag in the Ff entry indicates whether this is a required constraint.
+EXAMPLE 1 The string values ‘1’ and ‘1XXXXXXXX’ represent settings where the key-usage type digitalSignature is set and the state of all other key-usage types do not matter. The value of the corresponding flag in the Ff entry indicates whether this is a required constraint.
 
 =head2 Issuer [array]
 - (Optional) An array of byte strings containing DER-encoded X.509v3 certificates of acceptable issuers. If the signer’s certificate refers to any of the specified issuers (either directly or indirectly), the certificate is considered acceptable for signing. The value of the corresponding flag in the Ff entry indicates whether this is a required constraint.
@@ -52,8 +51,7 @@ This array may contain self-signed certificates.
 
 =head2 OID [array]
 - (Optional) An array of byte strings that contain Object Identifiers (OIDs) of the certificate policies that is present in the signing certificate.
-EXAMPLE 2 An example of such a string is: (2.16.840.1.113733.1.7.1.1).
-This field shall only be used if the value of Issuer is not empty. The certificate policies extension is described in RFC 3280 (see the
+EXAMPLE 2 An example of such a string is: (2.16.840.1.113733.1.7.1.1). This field shall only be used if the value of Issuer is not empty. The certificate policies extension is described in RFC 3280 (see the Bibliography). The value of the corresponding flag in the Ff entry indicates whether this is a required constraint.
 
 =head2 URL [ASCII string]
 - (Optional) A URL, the use for which is defined by the URLTypeentry.
@@ -61,9 +59,7 @@ This field shall only be used if the value of Issuer is not empty. The certifica
 =head2 URLType [Name]
 - (Optional; PDF 1.7) A name indicating the usage of the URL entry. There are standard uses and there can be implementation-specific uses for this URL. The following value specifies a valid standard usage:
 Browser – The URL references content that is displayed in a web browser to allow enrolling for a new credential if a matching credential is not found. The Ff attribute’s URL bit is ignored for this usage.
-Third parties may extend the use of this attribute with their own attribute values, which shall conform to the guidelines described in
-Annex E
-.
+Third parties may extend the use of this attribute with their own attribute values, which shall conform to the guidelines described in Annex E .
 The default value is Browser.
 
 =end pod

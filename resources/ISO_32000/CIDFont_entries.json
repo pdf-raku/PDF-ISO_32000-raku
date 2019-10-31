@@ -20,12 +20,12 @@
       [
         "BaseFont",
         "name",
-        "(Required) The PostScript name of the CIDFont. For Type 0 CIDFonts, this is the value of the CIDFontName entry in the CIDFont program. For Type 2 CIDFonts, it is derived the same way as for a simple TrueType font; see\n9.6.3, \"TrueType Fonts\"\n. In either case, the name may have a subset prefix if appropriate; see\n9.6.4, \"Font Subsets\"\n."
+        "(Required) The PostScript name of the CIDFont. For Type 0 CIDFonts, this is the value of the CIDFontName entry in the CIDFont program. For Type 2 CIDFonts, it is derived the same way as for a simple TrueType font; see 9.6.3, \"TrueType Fonts\" . In either case, the name may have a subset prefix if appropriate; see 9.6.4, \"Font Subsets\" ."
       ],
       [
         "CIDSystemInfo",
         "dictionary",
-        "(Required) A dictionary containing entries that define the character collection of the CIDFont. See\nTable 116\n."
+        "(Required) A dictionary containing entries that define the character collection of the CIDFont. See Table 116 ."
       ],
       [
         "FontDescriptor",
@@ -40,7 +40,7 @@
       [
         "W",
         "array",
-        "(Optional) A description of the widths for the glyphs in the CIDFont.\nNOTE The array’s elements have a variable format that can specify individual widths for consecutive CIDs or one width for a range of CIDs (see 9.7.4.3, \"Glyph Metrics in CIDFonts\").\nDefault value: none (the DW value is used for all glyphs)."
+        "(Optional) A description of the widths for the glyphs in the CIDFont.\nNOTE The array’s elements have a variable format that can specify individual widths for consecutive CIDs or one width for a range of CIDs (see 9.7.4.3, \"Glyph Metrics in CIDFonts\"). Default value: none (the DW value is used for all glyphs)."
       ],
       [
         "DW2",

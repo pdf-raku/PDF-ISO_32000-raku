@@ -20,12 +20,12 @@
       [
         "LE",
         "array",
-        "(Optional; meaningful only for polyline annotations) An array of two names that shall specify the line ending styles. The first and second elements of the array shall specify the line ending styles for the endpoints defined, respectively, by the first and last pairs of coordinates in the Vertices array.\nTable 176\nshows the possible values. Default value: [ / None /None ]."
+        "(Optional; meaningful only for polyline annotations) An array of two names that shall specify the line ending styles. The first and second elements of the array shall specify the line ending styles for the endpoints defined, respectively, by the first and last pairs of coordinates in the Vertices array. Table 176 shows the possible values. Default value: [ / None /None ]."
       ],
       [
         "BS",
         "dictionary",
-        "(Optional) A border style dictionary (see Table 166) specifying the width and dash pattern that is used in drawing the line.\nThe annotation dictionary’s AP entry, if present, shall take precedence over the Vertices and BS entries; see\nTable 168\nand\n12.5.5, “Appearance Streams.”"
+        "(Optional) A border style dictionary (see Table 166) specifying the width and dash pattern that is used in drawing the line.\nThe annotation dictionary’s AP entry, if present, shall take precedence over the Vertices and BS entries; see Table 168 and 12.5.5, “Appearance Streams.”"
       ],
       [
         "IC",

@@ -69,8 +69,7 @@ If a Ref entry (see below) is present, the group attributes shall also apply to 
 At most one of the entries StructParent or StructParents shall bepresent. A form XObject is either a content item in its entirety or a container for marked-content sequences that are content items, but not both.
 
 =head2 OPI [dictionary]
-- (Optional; PDF 1.2) An OPI version dictionary for the form XObject (see 14.11.7, "Open Prepress Interface (OPI)"
-).
+- (Optional; PDF 1.2) An OPI version dictionary for the form XObject (see 14.11.7, "Open Prepress Interface (OPI)" ).
 
 =head2 OC [dictionary]
 - (Optional; PDF 1.5) An optional content group or optional content membership dictionary (see 8.11, "Optional Content") specifying the optional content properties for the form XObject. Before the form is processed, its visibility is determined based on this entry. If it is determined to be invisible, the entire form is skipped, as if there were no Do operator to invoke it.

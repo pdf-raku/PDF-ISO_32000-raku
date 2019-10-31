@@ -17,11 +17,7 @@ role ISO_32000::Three-D_animation_style {
 - (Optional). The type of PDF object that this dictionary describes; if present, is 3DAnimationStyle.
 
 =head2 Subtype [name]
-- (Optional) The animation style described by this dictionary; see
-Table 302
-for valid values. If an animation style is encountered other than those described in
-Table 302
-, an animation style of None is used.
+- (Optional) The animation style described by this dictionary; see Table 302 for valid values. If an animation style is encountered other than those described in Table 302 , an animation style of None is used.
 Default value: None
 
 =head2 PC [integer]
@@ -30,8 +26,6 @@ Default value: 0
 
 =head2 TM [number]
 - (Optional) A positive number specifying the time multiplier to be used when running the animation. A value greater than one shortens the time it takes to play the animation, or effectively speeds up the animation.
-NOTE This allows authors to adjust the desired speed of animations, without having to re-author the 3D artwork.
-This value is ignored for animation styles of type None.
-Default value: 1
+NOTE This allows authors to adjust the desired speed of animations, without having to re-author the 3D artwork. This value is ignored for animation styles of type None. Default value: 1
 
 =end pod

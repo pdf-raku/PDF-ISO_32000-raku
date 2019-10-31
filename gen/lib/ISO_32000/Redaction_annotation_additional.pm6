@@ -21,9 +21,7 @@ role ISO_32000::Redaction_annotation_additional {
 - (Required) The type of annotation that this dictionary describes; shallbe Redact for a redaction annotation.
 
 =head2 QuadPoints [array]
-- (Optional) An array of 8 x n numbers specifying the coordinates of n quadrilaterals in default user space, as described in
-Table 175
-for text markup annotations. If present, these quadrilaterals denote the content region that is intended to be removed. If this entry is not present, the Rect entry denotes the content region that is intended to be removed.
+- (Optional) An array of 8 x n numbers specifying the coordinates of n quadrilaterals in default user space, as described in Table 175 for text markup annotations. If present, these quadrilaterals denote the content region that is intended to be removed. If this entry is not present, the Rect entry denotes the content region that is intended to be removed.
 
 =head2 IC [array]
 - (Optional) An array of three numbers in the range 0.0 to 1.0 specifying the components, in the DeviceRGB colour space, of the interior colour with which to fill the redacted region after the affected content has been removed. If this entry is absent, the interior of the redaction region is left transparent. This entry is ignored if the ROentry is present.

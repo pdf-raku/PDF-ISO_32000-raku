@@ -26,9 +26,7 @@ role ISO_32000::Media_clip_data {
 - (Optional) A media permissions dictionary (see Table 275) containing permissions that control the use of the media data. Default value: a media permissions dictionary containing default values.
 
 =head2 Alt [array]
-- (Optional) An array that provides alternate text descriptions for the media clip data in case it cannot be played; see
-14.9.2.4, “Multi-language Text Arrays.”
-
+- (Optional) An array that provides alternate text descriptions for the media clip data in case it cannot be played; see 14.9.2.4, “Multi-language Text Arrays.”
 
 =head2 PL [dictionary]
 - (Optional) A media players dictionary (see 13.2.7.2, “Media Players Dictionary”) that identifies, among other things, players that are legal and not legal for playing the media.

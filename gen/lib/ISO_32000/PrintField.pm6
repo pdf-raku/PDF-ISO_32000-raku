@@ -19,8 +19,7 @@ cbCheck box
 pbPush button
 tvText-value field
 The tv role is used for interactive fields whose values have been converted to text in the non-interactive document. The text that is the value of the field is the content of the Form element (see Table 340).
-NOTE 1 Examples include text edit fields, numeric fields, password fields, digital signatures, and combo boxes.
-Default value: None specified.
+NOTE 1 Examples include text edit fields, numeric fields, password fields, digital signatures, and combo boxes. Default value: None specified.
 
 =head2 checked [name]
 - (Optional; not inheritable) The state of a radio button or check box field. The value is one of: on, off (default), or neutral.

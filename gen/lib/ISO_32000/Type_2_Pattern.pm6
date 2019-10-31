@@ -21,13 +21,7 @@ role ISO_32000::Type_2_Pattern {
 - (Required) A code identifying the type of pattern that this dictionary describes; is 2 for a shading pattern.
 
 =head2 Shading [dictionary or stream]
-- (Required) A shading object (see below) defining the shading pattern’s gradient fill. The contents of the dictionary shall consist of the entries in
-Table 78
-and those in one of Tables
-79
-to
-84
-.
+- (Required) A shading object (see below) defining the shading pattern’s gradient fill. The contents of the dictionary shall consist of the entries in Table 78 and those in one of Tables 79 to 84 .
 
 =head2 Matrix [array]
 - (Optional) An array of six numbers specifying the pattern matrix (see 8.7.2, "General Properties of Patterns"). Default value: the identity matrix [ 1 0 0 1 0 0 ].

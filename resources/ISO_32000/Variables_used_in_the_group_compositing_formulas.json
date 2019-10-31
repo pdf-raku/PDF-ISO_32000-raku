@@ -7,63 +7,63 @@
     ],
     "rows": [
       [
-        "Ei\n",
+        "Ei",
         "Element i of the group: a compound variable representing the element’s colour, shape, opacity, and blend mode"
       ],
       [
-        "fsi\n",
+        "fsi",
         "Source shape for element E i"
       ],
       [
-        "fji\n",
+        "fji",
         "Object shape for element E i"
       ],
       [
-        "fmi\n",
+        "fmi",
         "Mask shape for element E i"
       ],
       [
-        "fki\n",
+        "fki",
         "Constant shape for element E i"
       ],
       [
-        "fgi\n",
+        "fgi",
         "Group shape: the accumulated source shapes of group elements E 1 to E i , excluding the initial backdrop"
       ],
       [
-        "qmi\n",
+        "qmi",
         "Mask opacity for element E i"
       ],
       [
-        "qki\n",
+        "qki",
         "Constant opacity for element E i"
       ],
       [
-        "si\n",
+        "si",
         "Source alpha for element E i"
       ],
       [
-        "ji\n",
+        "ji",
         "Object alpha for element E i : the product of its object shape and object opacity"
       ],
       [
-        "gi\n",
+        "gi",
         "Group alpha: the accumulated source alphas of group elements E 1 to E i , excluding the initial backdrop"
       ],
       [
-        "i\n",
+        "i",
         "Accumulated alpha after compositing element E i , including the initial backdrop"
       ],
       [
-        "Csi\n",
+        "Csi",
         "Source colour for element E i"
       ],
       [
-        "Ci\n",
+        "Ci",
         "Accumulated colour after compositing element E i , including the initial backdrop"
       ],
       [
-        "BiCi1–Csi()\n",
+        "BiCi1–Csi()",
         "Blend function for element E i"
       ]
     ]

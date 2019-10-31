@@ -25,8 +25,7 @@ role ISO_32000::Trap_network_annotation {
 • All content streams identified in the page object’s Contents entry (see 7.7.3.3, “Page Objects”)
 • All resource objects (other than procedure sets) in the page’s resource dictionary (see 7.8.3, “Resource Dictionaries”)
 • All resource objects (other than procedure sets) in the resource dictionaries of any form XObjects on the page (see 8.10, “Form XObjects”)
-• All OPI dictionaries associated with XObjects on the page (see 14.11.7, “Open Prepress Interface (OPI)”
-)
+• All OPI dictionaries associated with XObjects on the page (see 14.11.7, “Open Prepress Interface (OPI)” )
 
 =head2 AnnotStates [array]
 - (Required if Version is present; is absent if LastModified is present) An array of name objects representing the appearance states (value of the AS entry) for annotations associated with the page. The appearance states is listed in the same order as the annotations in the page’s Annots array (see 7.7.3.3, “Page Objects”). For an annotation with no AS entry, the corresponding array element is null. No appearance state is included for the trap network annotation itself.

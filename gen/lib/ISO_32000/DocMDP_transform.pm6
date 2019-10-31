@@ -24,7 +24,6 @@ Default value: 2.
 
 =head2 V [name]
 - (Optional) The DocMDP transform parameters dictionary version. The only valid value is 1.2.
-NOTE this value is a name object, not a number.
-Default value: 1.2.
+NOTE this value is a name object, not a number. Default value: 1.2.
 
 =end pod

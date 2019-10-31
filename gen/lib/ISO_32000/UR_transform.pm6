@@ -31,8 +31,7 @@ If the P entry in the UR transform parameters dictionary is true (PDF 1.6) and g
 
 =head2 V [name]
 - (Optional) The UR transform parameters dictionary version. The value shall be2.2. If an unknown version is present, no rights is enabled.
-NOTE This value is a name object, not a number.
-Default value: 2.2.
+NOTE This value is a name object, not a number. Default value: 2.2.
 
 =head2 Annots [array]
 - (Optional) An array of names specifying additional annotation-related usage rights for the document. Valid names (PDF 1.5) are Create, Delete, Modify, Copy, Import, and Export, which shall permit the user to perform the named operation on annotations.
@@ -49,9 +48,7 @@ ImportPermits the user to import form data files in FDF, XFDF and text (CSV/TSV)
 ExportPermits the user to export form data files as FDF or XFDF.
 SubmitStandalone Permits the user to submit form data when the document is not open in a Web browser.
 SpawnTemplate Permits new pages to be instantiated from named page templates.
-The following names (PDF 1.6) is permitted only when the signature dictionary is referenced from the UR3 entry of the permissions dictionary; see
-Table 258
-:
+The following names (PDF 1.6) is permitted only when the signature dictionary is referenced from the UR3 entry of the permissions dictionary; see Table 258 :
 BarcodePlaintext Permits (PDF 1.6) text form field data to be encoded as a plaintext two-dimensional barcode.
 OnlinePermits (PDF 1.6) the use of forms-specific online mechanisms such as SOAP or Active Data Object.
 

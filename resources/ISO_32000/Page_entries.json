@@ -135,7 +135,7 @@
       [
         "Tabs",
         "name",
-        "(Optional; PDF 1.5) A name specifying the tab order that is used for annotations on the page. The possible values is R (row order), C (column order), and S (structure order). See\n12.5, \"Annotations\"\nfor details."
+        "(Optional; PDF 1.5) A name specifying the tab order that is used for annotations on the page. The possible values is R (row order), C (column order), and S (structure order). See 12.5, \"Annotations\" for details."
       ],
       [
         "TemplateInstantiated",

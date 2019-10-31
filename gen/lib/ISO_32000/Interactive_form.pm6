@@ -41,8 +41,6 @@ role ISO_32000::Interactive_form {
 =head2 XFA [stream or array]
 - (Optional; PDF 1.5) A stream or array containing an XFA resource, whose format is described by the Data Package (XDP) Specification. (see the Bibliography).
 The value of this entry is either a stream representing the entire contents of the XML Data Package or an array of text string and stream pairs representing the individual packets comprising the XML Data Package.
-See
-12.7.8, “XFA Forms,”
-for more information.
+See 12.7.8, “XFA Forms,” for more information.
 
 =end pod

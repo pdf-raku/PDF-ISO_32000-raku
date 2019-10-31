@@ -15,7 +15,7 @@
       [
         "Subtype",
         "name",
-        "(Optional) The animation style described by this dictionary; see\nTable 302\nfor valid values. If an animation style is encountered other than those described in\nTable 302\n, an animation style of None is used.\nDefault value: None"
+        "(Optional) The animation style described by this dictionary; see Table 302 for valid values. If an animation style is encountered other than those described in Table 302 , an animation style of None is used.\nDefault value: None"
       ],
       [
         "PC",
@@ -25,7 +25,7 @@
       [
         "TM",
         "number",
-        "(Optional) A positive number specifying the time multiplier to be used when running the animation. A value greater than one shortens the time it takes to play the animation, or effectively speeds up the animation.\nNOTE This allows authors to adjust the desired speed of animations, without having to re-author the 3D artwork.\nThis value is ignored for animation styles of type None.\nDefault value: 1"
+        "(Optional) A positive number specifying the time multiplier to be used when running the animation. A value greater than one shortens the time it takes to play the animation, or effectively speeds up the animation.\nNOTE This allows authors to adjust the desired speed of animations, without having to re-author the 3D artwork. This value is ignored for animation styles of type None. Default value: 1"
       ]
     ]
   }

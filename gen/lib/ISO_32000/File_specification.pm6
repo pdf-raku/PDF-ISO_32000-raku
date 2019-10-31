@@ -29,16 +29,11 @@ role ISO_32000::File_specification {
 - (Optional) The name of the file system that is used to interpret this file specification. If this entry is present, all other entries in the dictionary is interpreted by the designated file system. PDF shall define only one standard file system name, URL (see 7.11.5, "URL Specifications"); an application can register other names (see Annex E). This entry is independent of the F, UF, DOS, Mac, and Unix entries.
 
 =head2 F [string]
-- (Required if the DOS, Mac, and Unix entries are all absent; amended with the UF entry for PDF 1.7) A file specification string of the form described in
-7.11.2, "File Specification Strings,"
-or (if the file system is URL) a uniform resource locator, as described in
-7.11.5, "URL Specifications."
+- (Required if the DOS, Mac, and Unix entries are all absent; amended with the UF entry for PDF 1.7) A file specification string of the form described in 7.11.2, "File Specification Strings," or (if the file system is URL) a uniform resource locator, as described in 7.11.5, "URL Specifications."
 The UF entry is used in addition to the F entry. The UF entry provides cross-platform and cross-language compatibility and the F entry provides backwards compatibility.
 
 =head2 UF [text string]
-- (Optional, but recommended if the F entry exists in the dictionary; PDF 1.7) A Unicode text string that provides file specification of the form described in
-7.11.2, "File Specification Strings."
-This is a text string encoded using PDFDocEncoding or UTF-16BE with a leading byte-order marker (as defined in 7.9.2.2, "Text String Type"). The F entry is included along with this entry for backwards compatibility reasons.
+- (Optional, but recommended if the F entry exists in the dictionary; PDF 1.7) A Unicode text string that provides file specification of the form described in 7.11.2, "File Specification Strings." This is a text string encoded using PDFDocEncoding or UTF-16BE with a leading byte-order marker (as defined in 7.9.2.2, "Text String Type"). The F entry is included along with this entry for backwards compatibility reasons.
 
 =head2 DOS [byte string]
 - (Optional) A file specification string (see 7.11.2, "File Specification Strings") representing a DOS file name.

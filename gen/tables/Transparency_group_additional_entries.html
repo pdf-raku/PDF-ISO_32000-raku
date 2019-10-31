@@ -77,28 +77,28 @@
             <P>
               The group colour space shall be any device or CIE-based colour space that treats its components as independent additive or subtractive values in the range 0.0 to 1.0, subject to the restrictions described in 
               <Link>
-                <Span/> <!-- see 31062 0 R -->
-                <Span/> <!-- see 31063 0 R -->
+                11.3.4, 
+                "Blending Colour Space."
               </Link>
                These restrictions exclude Lab and lightness-
               chromaticity ICCBased colour spaces, as well as the special colour spaces Pattern, Indexed, Separation, and DeviceN. Device colour spaces shall be subject to remapping according to the DefaultGray, DefaultRGB, and DefaultCMYK entries in the ColorSpace subdictionary of the current resource dictionary (see 
               <Link>
-                <Span/> <!-- see 31066 0 R -->
+                “Default Colour Spaces”
               </Link>
               ). 
             </P>
             <P>
               Ordinarily, the CS entry may be present only for isolated transparency groups (those for which I is true), and even then it is optional. However, this entry shall be present in the group attributes dictionary for any transparency group XObject that has no parent group or page from which to inherit—in particular, one that is the value of the G entry in a soft-mask dictionary of subtype Luminosity (see 
               <Link>
-                <Span/> <!-- see 31069 0 R -->
+                “Soft-Mask Dictionaries”
               </Link>
               ). 
             </P>
             <P>
               Additionally, the CS entry may be present in the group attributes dictionary associated with a page object, even if I is false or absent. In the normal case in which the page is imposed directly on the output medium, the page group is effectively isolated regardless of the I value, and the specified CS value shall therefore be honoured. But if the page is in turn used as an element of some other page and if the group is non-isolated, CS shall be ignored and the colour space shall be inherited from the actual backdrop with which the page is composited (see 
               <Link>
-                <Span/> <!-- see 31072 0 R -->
-                <Span/> <!-- see 31073 0 R -->
+                “Page 
+                Group”
               </Link>
               ). 
             </P>
@@ -108,7 +108,7 @@
             <P>
               For a transparency group XObject used as an annotation appearance (see 
               <Link>
-                <Span/> <!-- see 31077 0 R -->
+                “Appearance Streams”
               </Link>
               ), the default colour space shall be inherited 
               from the page on which the annotation appears. 

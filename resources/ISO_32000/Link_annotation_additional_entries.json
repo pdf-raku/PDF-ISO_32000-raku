@@ -40,7 +40,7 @@
       [
         "BS",
         "dictionary",
-        "(Optional; PDF 1.6) A border style dictionary (see Table 166) specifying the line width and dash pattern to be used in drawing the annotation’s border.\nThe annotation dictionary’s AP entry, if present, takes precedence over the BS entry; see\nTable 164\nand\n12.5.5, “Appearance Streams”\n."
+        "(Optional; PDF 1.6) A border style dictionary (see Table 166) specifying the line width and dash pattern to be used in drawing the annotation’s border.\nThe annotation dictionary’s AP entry, if present, takes precedence over the BS entry; see Table 164 and 12.5.5, “Appearance Streams” ."
       ]
     ]
   }

@@ -57,9 +57,7 @@ If this MDP key is not present or the MDP dictionary does not contain a P entry,
 - (Optional; PDF 1.6) A time stamp dictionary containing two entries:
 URL An ASCII string specifying the URL of a time-stamping server, providing a time stamp that is compliant with RFC 3161, Internet X.509 Public Key Infrastructure Time-Stamp Protocol (see the Bibliography).
 Ff An integer whose value is 1 (the signature has a time stamp) or 0 (the signature need not have a time stamp). Default value: 0.
-NOTE Please see
-12.8.3.3, "PKCS7 Signatures as used in ISO 32000"
-for more details about hashing.
+NOTE Please see 12.8.3.3, "PKCS7 Signatures as used in ISO 32000" for more details about hashing.
 
 =head2 LegalAttestation [array]
 - (Optional; PDF 1.6) An array of text strings specifying possible legal attestations (see 12.8.5, “Legal Content Attestations”). The value of the corresponding flag in the Ff entry indicates whether this is a required constraint.
@@ -71,9 +69,7 @@ Include the revocation information within the signature value.
 Three SubFilter values have been defined for ISO 32000. For those values the AddRevInfo value is true only if SubFilter is adbe.pkcs7.detached or adbe.pkcs7.sha1. If SubFilter is x509.rsa_sha1, this entry is omitted or set to false. Additional SubFilters may be defined that also use AddRevInfo values.
 If AddRevInfo is true and the Ff entry indicates this is a required constraint, then the preceding tasks is performed. If they cannot be performed, then signing shall fail.
 Default value: false
-NOTE 1 Revocation information is carried in the signature data as specified by PCKS7. See
-12.8.3.3, "PKCS7 Signatures as used in ISO 32000"
-.
+NOTE 1 Revocation information is carried in the signature data as specified by PCKS7. See 12.8.3.3, "PKCS7 Signatures as used in ISO 32000" .
 NOTE 2 The trust anchors used are determined by the signature handlers for both creation and validation.
 
 =end pod

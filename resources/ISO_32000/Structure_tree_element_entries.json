@@ -15,7 +15,7 @@
       [
         "S",
         "name",
-        "(Required) The structure type, a name object identifying the nature of the structure element and its role within the document, such as a chapter, paragraph, or footnote (see 14.7.3, “Structure Types”). Names of structure types shall conform to the guidelines described in\nAnnex E\n."
+        "(Required) The structure type, a name object identifying the nature of the structure element and its role within the document, such as a chapter, paragraph, or footnote (see 14.7.3, “Structure Types”). Names of structure types shall conform to the guidelines described in Annex E ."
       ],
       [
         "P",
@@ -35,7 +35,7 @@
       [
         "K",
         "(various)",
-        "(Optional) The children of this structure element. The value of this entry may be one of the following objects or an array consisting of one or more of the following objects:\n• A structure element dictionary denoting another structure element\n• An integer marked-content identifier denoting a marked-content sequence\n• A marked-content reference dictionary denoting a marked-content sequence\n• An object reference dictionary denoting a PDF object\nEach of these objects other than the first (structure element dictionary) is considered to be a content item; see\nIf the value of K is a dictionary containing no Type entry, it is assumed to be a structure element dictionary."
+        "(Optional) The children of this structure element. The value of this entry may be one of the following objects or an array consisting of one or more of the following objects:\n• A structure element dictionary denoting another structure element\n• An integer marked-content identifier denoting a marked-content sequence\n• A marked-content reference dictionary denoting a marked-content sequence\n• An object reference dictionary denoting a PDF object Each of these objects other than the first (structure element dictionary) is considered to be a content item; see 14.7.4, “Structure Content” for further discussion of each of these forms of representation. If the value of K is a dictionary containing no Type entry, it is assumed to be a structure element dictionary."
       ],
       [
         "A",

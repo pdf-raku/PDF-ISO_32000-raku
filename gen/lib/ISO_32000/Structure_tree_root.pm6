@@ -29,9 +29,7 @@ role ISO_32000::Structure_tree_root {
 - (Required if any structure element contains content items) A number tree (see 7.9.7, “Number Trees”) used in finding the structure elements to which content items belong. Each integer key in the number tree shall correspond to a single page of the document or to an individual object (such as an annotation or an XObject) that is a content item in its own right. The integer key is the value of the StructParent or StructParents entry in that object (see 14.7.4.4, “Finding Structure Elements from Content Items”). The form of the associated value shall depend on the nature of the object:
 For an object that is a content item in its own right, the value is an indirect reference to the object’s parent element (the structure element that contains it as a content item).
 For a page object or content stream containing marked-content sequences that are content items, the value is an array of references to the parent elements of those marked-content sequences.
-See
-14.7.4.4, “Finding Structure Elements from Content Items”
-for further discussion.
+See 14.7.4.4, “Finding Structure Elements from Content Items” for further discussion.
 
 =head2 ParentTreeNextKey [integer]
 - (Optional) An integer greater than any key in the parent tree, is used as a key for the next entry added to the tree.

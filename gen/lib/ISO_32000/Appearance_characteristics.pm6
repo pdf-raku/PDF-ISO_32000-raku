@@ -35,7 +35,7 @@ role ISO_32000::Appearance_characteristics {
 
 =head2 CA [text string]
 - (Optional; button fields only) The widget annotation’s normal caption, which is displayed when it is not interacting with the user.
-Unlike the remaining entries listed in this Table, which apply only to widget annotations associated with pushbutton fields (see Link Pushbuttons in 12.7.4.2, “Button Fields”), the CA entry may be used with any type of button field, including check boxes (see Link Check Boxes in 12.7.4.2, “Button Fields”) and radio buttons (Link Radio Buttons in 12.7.4.2, “Button Fields”).
+Unlike the remaining entries listed in this Table, which apply only to widget annotations associated with pushbutton fields (see Pushbuttons in 12.7.4.2, “Button Fields”), the CA entry may be used with any type of button field, including check boxes (see Check Boxes in 12.7.4.2, “Button Fields”) and radio buttons (Radio Buttons in 12.7.4.2, “Button Fields”).
 
 =head2 RC [text string]
 - (Optional; pushbutton fields only) The widget annotation’s rollover caption, which is displayed when the user rolls the cursor into its active area without pressing the mouse button.

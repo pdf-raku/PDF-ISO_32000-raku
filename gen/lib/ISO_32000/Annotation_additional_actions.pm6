@@ -40,13 +40,11 @@ For backward compatibility, the A entry in an annotation dictionary, if present,
 
 =head2 PO [dictionary]
 - (Optional; PDF 1.5) An action that is performed when the page containing the annotation is opened.
-EXAMPLE 1 When the user navigates to it from the next or previous page or by means of a link annotation or outline item.
-The action is executed after the O action in the page’s additional-actions dictionary (see
+EXAMPLE 1 When the user navigates to it from the next or previous page or by means of a link annotation or outline item. The action is executed after the O action in the page’s additional-actions dictionary (see Table 195) and the OpenAction entry in the document Catalog (see Table 28), if such actions are present.
 
 =head2 PC [dictionary]
 - (Optional; PDF 1.5) An action that is performed when the page containing the annotation is closed.
-EXAMPLE 2 When the user navigates to the next or previous page, or follows a link annotation or outline item.
-The action is executed before the C action in the page’s additional-actions dictionary (see
+EXAMPLE 2 When the user navigates to the next or previous page, or follows a link annotation or outline item. The action is executed before the C action in the page’s additional-actions dictionary (see Table 195), if present.
 
 =head2 PV [dictionary]
 - (Optional; PDF 1.5) An action that is performed when the page containing the annotation becomes visible.

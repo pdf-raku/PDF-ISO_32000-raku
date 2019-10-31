@@ -7,31 +7,31 @@
     ],
     "rows": [
       [
-        "Cb\n",
+        "Cb",
         "Backdrop colour"
       ],
       [
-        "Cs\n",
+        "Cs",
         "Source colour"
       ],
       [
-        "Cr\n",
+        "Cr",
         "Result colour"
       ],
       [
-        "b\n",
+        "b",
         "Backdrop alpha"
       ],
       [
-        "s\n",
+        "s",
         "Source alpha"
       ],
       [
-        "r\n",
+        "r",
         "Result alpha"
       ],
       [
-        "BCbCs()\n",
+        "BCbCs()",
         "Blend function"
       ]
     ]

@@ -65,7 +65,7 @@
       [
         "ExternalOPIdicts",
         "integer",
-        "(Optional) The number of OPI dictionaries found in the document (see 14.11.7, “Open Prepress Interface (OPI)”\n)."
+        "(Optional) The number of OPI dictionaries found in the document (see 14.11.7, “Open Prepress Interface (OPI)” )."
       ],
       [
         "NonEmbeddedFonts",

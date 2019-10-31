@@ -15,7 +15,7 @@
       [
         "DA",
         "string",
-        "(Required) The default appearance string that is used in formatting the text (see 12.7.3.3, “Variable Text”).\nThe annotation dictionary’s AP entry, if present, shall take precedence over the DA entry; see\nTable 168\nand\n12.5.5, “Appearance Streams.”\n"
+        "(Required) The default appearance string that is used in formatting the text (see 12.7.3.3, “Variable Text”).\nThe annotation dictionary’s AP entry, if present, shall take precedence over the DA entry; see Table 168 and 12.5.5, “Appearance Streams.”"
       ],
       [
         "Q",
@@ -30,7 +30,7 @@
       [
         "DS",
         "text string",
-        "(Optional; PDF 1.5) A default style string, as described in\n12.7.3.4, “Rich Text Strings.”\n"
+        "(Optional; PDF 1.5) A default style string, as described in 12.7.3.4, “Rich Text Strings.”"
       ],
       [
         "CL",
@@ -55,12 +55,12 @@
       [
         "BS",
         "dictionary",
-        "(Optional; PDF 1.6) A border style dictionary (see Table 166) specifying the line width and dash pattern that is used in drawing the annotation’s border.\nThe annotation dictionary’s AP entry, if present, takes precedence over the BS entry; see\nTable 164\nand\n12.5.5, “Appearance Streams”\n."
+        "(Optional; PDF 1.6) A border style dictionary (see Table 166) specifying the line width and dash pattern that is used in drawing the annotation’s border.\nThe annotation dictionary’s AP entry, if present, takes precedence over the BS entry; see Table 164 and 12.5.5, “Appearance Streams” ."
       ],
       [
         "LE",
         "name",
-        "(Optional; meaningful only if CL is present; PDF 1.6) A name specifying the line ending style that is used in drawing the callout line specified in CL. The name shall specify the line ending style for the endpoint defined by the pairs of coordinates (x 1 , y 1).\nTable 176\nshows the possible line ending styles.\nDefault value: None."
+        "(Optional; meaningful only if CL is present; PDF 1.6) A name specifying the line ending style that is used in drawing the callout line specified in CL. The name shall specify the line ending style for the endpoint defined by the pairs of coordinates (x 1 , y 1). Table 176 shows the possible line ending styles.\nDefault value: None."
       ]
     ]
   }

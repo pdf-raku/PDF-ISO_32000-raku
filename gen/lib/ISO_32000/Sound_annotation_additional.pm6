@@ -20,9 +20,6 @@ role ISO_32000::Sound_annotation_additional {
 
 =head2 Name [name]
 - (Optional) The name of an icon that is used in displaying the annotation. Conforming readers shall provide predefined icon appearances for at least the standard names Speaker and Mic. Additional names may be supported as well. Default value: Speaker.
-The annotation dictionary’s AP entry, if present, shall take precedence over the Name entry; see
-Table 168
-and
-12.5.5, “Appearance Streams.”
+The annotation dictionary’s AP entry, if present, shall take precedence over the Name entry; see Table 168 and 12.5.5, “Appearance Streams.”
 
 =end pod

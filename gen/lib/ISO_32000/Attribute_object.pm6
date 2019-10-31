@@ -11,8 +11,6 @@ role ISO_32000::Attribute_object {
 =head1 Methods (Entries)
 
 =head2 O [name]
-- (Required) The name of the conforming product owning the attribute data. The name shall conform to the guidelines described in
-Annex E
-.
+- (Required) The name of the conforming product owning the attribute data. The name shall conform to the guidelines described in Annex E .
 
 =end pod

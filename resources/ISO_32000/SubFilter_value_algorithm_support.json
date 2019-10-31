@@ -2,10 +2,12 @@
   "table": {
     "caption": "Table 257 – SubFilter value algorithm support",
     "head": [
-      [
-        
-      ],
-      "SubFilter value"
+      "",
+      "SubFilter value",
+      "",
+      "adbe.pkcs7.detached",
+      "adbe.pkcs7.sha1",
+      "adbe.x509.rsa.sha1 a"
     ],
     "rows": [
       [

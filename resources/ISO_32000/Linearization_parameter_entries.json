@@ -15,7 +15,7 @@
       [
         "L",
         "integer",
-        "(Required) The length of the entire file in bytes. It is exactly equal to the actual length of the PDF file. A mismatch indicates that the file is not linearized and is treated as ordinary PDF, ignoring linearization information. (If the mismatch resulted from appending an update, the linearization information may still be correct but requires validation; see Link G.7, \"Accessing an Updated File\" for details.)"
+        "(Required) The length of the entire file in bytes. It is exactly equal to the actual length of the PDF file. A mismatch indicates that the file is not linearized and is treated as ordinary PDF, ignoring linearization information. (If the mismatch resulted from appending an update, the linearization information may still be correct but requires validation; see G.7, \"Accessing an Updated File\" for details.)"
       ],
       [
         "H",
@@ -30,7 +30,7 @@
       [
         "E",
         "integer",
-        "(Required) The offset of the end of the first page (the end of Link EXAMPLE 6 in Link F.3.1, \"General\"), relative to the beginning of the file."
+        "(Required) The offset of the end of the first page (the end of EXAMPLE 6 in F.3.1, \"General\"), relative to the beginning of the file."
       ],
       [
         "N",
@@ -45,7 +45,7 @@
       [
         "P",
         "integer",
-        "(Optional) The page number of the first page; see\nLink F.3.4, \"First-Page Cross-Reference Table and Trailer (Part 3)\"\n. Default value: 0."
+        "(Optional) The page number of the first page; see F.3.4, \"First-Page Cross-Reference Table and Trailer (Part 3)\" . Default value: 0."
       ]
     ]
   }

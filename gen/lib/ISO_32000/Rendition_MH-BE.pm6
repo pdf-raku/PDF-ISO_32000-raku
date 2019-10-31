@@ -12,8 +12,6 @@ role ISO_32000::Rendition_MH-BE {
 
 =head2 C [dictionary]
 - (Optional) A media criteria dictionary (see Table 268).
-The media criteria dictionary behaves somewhat differently than other MH/BE entries described in
-13.2.2, “Viability.”
-The criteria specified by all of its entries is met regardless of whether it is in an MH or a BE dictionary. The only exception is that if an entry in a BE dictionary is unrecognized by the conforming reader, it shall not affect the viability of the object.
+The media criteria dictionary behaves somewhat differently than other MH/BE entries described in 13.2.2, “Viability.” The criteria specified by all of its entries is met regardless of whether it is in an MH or a BE dictionary. The only exception is that if an entry in a BE dictionary is unrecognized by the conforming reader, it shall not affect the viability of the object.
 
 =end pod

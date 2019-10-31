@@ -19,10 +19,7 @@ role ISO_32000::Square_or_circle_annotation_additional {
 
 =head2 BS [dictionary]
 - (Optional) A border style dictionary (see Table 166) specifying the line width and dash pattern that is used in drawing the rectangle or ellipse.
-The annotation dictionary’s AP entry, if present, shall take precedence over the Rect and BS entries; see
-Table 168
-and
-12.5.5, “Appearance Streams.”
+The annotation dictionary’s AP entry, if present, shall take precedence over the Rect and BS entries; see Table 168 and 12.5.5, “Appearance Streams.”
 
 =head2 IC [array]
 - (Optional; PDF 1.4) An array of numbers that is in the range 0.0 to 1.0 and shall specify the interior color with which to fill the annotation’s rectangle or ellipse. The number of array elements determines the colour space in which the colour is defined:

@@ -29,9 +29,7 @@ role ISO_32000::Type_3_Font {
 - (Required) The type of font; is Type3 for a Type 3 font.
 
 =head2 Name [name]
-- (Required in PDF 1.0; optional otherwise) See
-Table 111
-.
+- (Required in PDF 1.0; optional otherwise) See Table 111 .
 
 =head2 FontBBox [rectangle]
 - (Required) A rectangle (see 7.9.5, "Rectangles") expressed in the glyph coordinate system, specifying the font bounding box. This is the smallest rectangle enclosing the shape that would result if all of the glyphs of the font were placed with their origins coincident and then filled.

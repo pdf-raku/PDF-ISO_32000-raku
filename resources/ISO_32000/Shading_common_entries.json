@@ -15,7 +15,7 @@
       [
         "ColorSpace",
         "name or array",
-        "(Required) The colour space in which colour values shall beexpressed. This may be any device, CIE-based, or special colour space except a Pattern space. See\n8.7.4.4, \"Colour Space: Special Considerations\"\nfor further information."
+        "(Required) The colour space in which colour values shall beexpressed. This may be any device, CIE-based, or special colour space except a Pattern space. See 8.7.4.4, \"Colour Space: Special Considerations\" for further information."
       ],
       [
         "Background",
@@ -30,7 +30,7 @@
       [
         "AntiAlias",
         "boolean",
-        "(Optional) A flag indicating whether to filter the shading function to prevent aliasing artifacts.\nNOTE The shading operators sample shading functions at a rate determined by the resolution of the output device. Aliasing can occur if the function is not smooth—that is, if it has a high spatial frequency relative to the sampling rate. Anti-aliasing can be computationally expensive and is usually unnecessary, since most shading functions are smooth enough or are sampled at a high enough frequency to avoid aliasing effects. Anti-aliasing may not be implemented on some output devices, in which case this flag is ignored.\nDefault value: false."
+        "(Optional) A flag indicating whether to filter the shading function to prevent aliasing artifacts.\nNOTE The shading operators sample shading functions at a rate determined by the resolution of the output device. Aliasing can occur if the function is not smooth—that is, if it has a high spatial frequency relative to the sampling rate. Anti-aliasing can be computationally expensive and is usually unnecessary, since most shading functions are smooth enough or are sampled at a high enough frequency to avoid aliasing effects. Anti-aliasing may not be implemented on some output devices, in which case this flag is ignored. Default value: false."
       ]
     ]
   }

@@ -40,11 +40,7 @@ The name MK for this entry is of historical significance only and has no direct 
 
 =head2 BS [dictionary]
 - (Optional; PDF 1.2) A border style dictionary (see Table 166) specifying the width and dash pattern that is used in drawing the annotation’s border.
-The annotation dictionary’s AP entry, if present, shall take precedence over the L and BS entries; see
-Table 168
-and
-12.5.5, “Appearance Streams.”
-
+The annotation dictionary’s AP entry, if present, shall take precedence over the L and BS entries; see Table 168 and 12.5.5, “Appearance Streams.”
 
 =head2 Parent [dictionary]
 - (Required if this widget annotation is one of multiple children in a field; absent otherwise) An indirect reference to the widget annotation’s parent field. A widget annotation may have at most one parent; that is, it can be included in the Kids array of at most one field

@@ -15,7 +15,7 @@
       [
         "Subtype",
         "name",
-        "(Required) The type of annotation that this dictionary describes; see\nTable 169\nfor specific values."
+        "(Required) The type of annotation that this dictionary describes; see Table 169 for specific values."
       ],
       [
         "Rect",
@@ -25,7 +25,7 @@
       [
         "Contents",
         "text string",
-        "(Optional) Text that is displayed for the annotation or, if this type of annotation does not display text, an alternate description of the annotation’s contents in human-readable form. In either case, this text is useful when extracting the document’s contents in support of accessibility to users with disabilities or for other purposes (see 14.9.3, “Alternate Descriptions”). See\n12.5.6, “Annotation Types”\nfor more details on the meaning of this entry for each annotation type."
+        "(Optional) Text that is displayed for the annotation or, if this type of annotation does not display text, an alternate description of the annotation’s contents in human-readable form. In either case, this text is useful when extracting the document’s contents in support of accessibility to users with disabilities or for other purposes (see 14.9.3, “Alternate Descriptions”). See 12.5.6, “Annotation Types” for more details on the meaning of this entry for each annotation type."
       ],
       [
         "P",
@@ -40,7 +40,7 @@
       [
         "M",
         "date or text string",
-        "(Optional; PDF 1.1) The date and time when the annotation was most recently modified. The format is a date string as described in\n7.9.4, “Dates,”\nbut conforming readers shall accept and display a string in any format."
+        "(Optional; PDF 1.1) The date and time when the annotation was most recently modified. The format is a date string as described in 7.9.4, “Dates,” but conforming readers shall accept and display a string in any format."
       ],
       [
         "F",
@@ -55,12 +55,12 @@
       [
         "AS",
         "name",
-        "(Required if the appearance dictionary AP contains one or more subdictionaries; PDF 1.2) The annotation’s appearance state, which selects the applicable appearance stream from an appearance subdictionary (see Link Section 12.5.5, “Appearance Streams ”)."
+        "(Required if the appearance dictionary AP contains one or more subdictionaries; PDF 1.2) The annotation’s appearance state, which selects the applicable appearance stream from an appearance subdictionary (see Section 12.5.5, “Appearance Streams ”)."
       ],
       [
         "Border",
         "array",
-        "(Optional) An array specifying the characteristics of the annotation’s border, which is drawn as a rounded rectangle.\n(PDF 1.0) The array consists of three numbers defining the horizontal corner radius, vertical corner radius, and border width, all in default user space units. If the corner radii are 0, the border has square (not rounded) corners; if the border width is 0, no border is drawn.\n(PDF 1.1) The array may have a fourth element, an optional dash arraydefining a pattern of dashes and gaps that is used in drawing the border. The dash array is specified in the same format as in the line dash pattern parameter of the graphics state (see 8.4.3.6, “Line Dash Pattern”).\nEXAMPLE A Border value of [ 0 0 1 [ 3 2 ] ] specifies a border 1 unit wide, with square corners, drawn with 3-unit dashes alternating with 2-unit gaps.\nNOTE(PDF 1.2) The dictionaries for some annotation types (such as free text and polygon annotations) can include the BSentry. That entry specifies a border style dictionary that has more settings than the array specified for the Border entry. If an annotation dictionary includes the BS entry, then the Border entry is ignored.\nDefault value: [ 0 0 1 ]."
+        "(Optional) An array specifying the characteristics of the annotation’s border, which is drawn as a rounded rectangle.\n(PDF 1.0) The array consists of three numbers defining the horizontal corner radius, vertical corner radius, and border width, all in default user space units. If the corner radii are 0, the border has square (not rounded) corners; if the border width is 0, no border is drawn.\n(PDF 1.1) The array may have a fourth element, an optional dash arraydefining a pattern of dashes and gaps that is used in drawing the border. The dash array is specified in the same format as in the line dash pattern parameter of the graphics state (see 8.4.3.6, “Line Dash Pattern”).\nEXAMPLE A Border value of [ 0 0 1 [ 3 2 ] ] specifies a border 1 unit wide, with square corners, drawn with 3-unit dashes alternating with 2-unit gaps.\nNOTE(PDF 1.2) The dictionaries for some annotation types (such as free text and polygon annotations) can include the BSentry. That entry specifies a border style dictionary that has more settings than the array specified for the Border entry. If an annotation dictionary includes the BS entry, then the Border entry is ignored. Default value: [ 0 0 1 ]."
       ],
       [
         "C",

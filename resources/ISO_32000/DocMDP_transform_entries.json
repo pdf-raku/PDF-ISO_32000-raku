@@ -20,7 +20,7 @@
       [
         "V",
         "name",
-        "(Optional) The DocMDP transform parameters dictionary version. The only valid value is 1.2.\nNOTE this value is a name object, not a number.\nDefault value: 1.2."
+        "(Optional) The DocMDP transform parameters dictionary version. The only valid value is 1.2.\nNOTE this value is a name object, not a number. Default value: 1.2."
       ]
     ]
   }

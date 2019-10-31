@@ -22,8 +22,7 @@ role ISO_32000::Movie_activation {
 - (Optional) The starting time of the movie segment to be played. Movie time values is expressed in units of time based on a time scale, which defines the number of units per second. The default time scale is defined in the movie data. The starting time is nominally a non-negative 64-bit integer, specified as follows:
 • If it is representable as an integer (subject to the implementation limit for integers, as described in Annex C), it is specified as such.
 • If it is not representable as an integer, it is specified as an 8-byte string representing a 64-bit twos-complement integer, most significant byte first.
-• If it is expressed in a time scale different from that of the movie itself, it is represented as an array of two values: an integer or byte string denoting the starting time, followed by an integer specifying the time scale in units per second.
-If this entry is omitted, the movie is played from the beginning.
+• If it is expressed in a time scale different from that of the movie itself, it is represented as an array of two values: an integer or byte string denoting the starting time, followed by an integer specifying the time scale in units per second. If this entry is omitted, the movie is played from the beginning.
 
 =head2 Duration [(various)]
 - (Optional) The duration of the movie segment to be played, that is specified in the same form as Start. If this entry is omitted, the movie is played to the end.
@@ -58,7 +57,6 @@ where the value of Aspect is taken from the movie dictionary (see Table 295).
 - (Optional) For floating play windows, the relative position of the window on the screen. The value is an array of two numbers
 [ horiz vert ]
 each in the range 0.0 to 1.0, denoting the relative horizontal and vertical position of the movie window with respect to the screen.
-EXAMPLE The value [ 0.5 0.5 ] centers the window on the screen.
-Default value: [ 0.5 0.5 ].
+EXAMPLE The value [ 0.5 0.5 ] centers the window on the screen. Default value: [ 0.5 0.5 ].
 
 =end pod

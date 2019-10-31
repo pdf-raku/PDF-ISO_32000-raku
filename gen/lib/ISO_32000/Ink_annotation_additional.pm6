@@ -20,9 +20,6 @@ role ISO_32000::Ink_annotation_additional {
 
 =head2 BS [dictionary]
 - (Optional) A border style dictionary (see Table 166) specifying the line width and dash pattern that is used in drawing the paths.
-The annotation dictionary’s AP entry, if present, shall take precedence over the InkList and BS entries; see
-Table 168
-and
-12.5.5, “Appearance Streams.”
+The annotation dictionary’s AP entry, if present, shall take precedence over the InkList and BS entries; see Table 168 and 12.5.5, “Appearance Streams.”
 
 =end pod

@@ -25,11 +25,7 @@ role ISO_32000::Free_text_annotation_additional {
 
 =head2 DA [string]
 - (Required) The default appearance string that is used in formatting the text (see 12.7.3.3, “Variable Text”).
-The annotation dictionary’s AP entry, if present, shall take precedence over the DA entry; see
-Table 168
-and
-12.5.5, “Appearance Streams.”
-
+The annotation dictionary’s AP entry, if present, shall take precedence over the DA entry; see Table 168 and 12.5.5, “Appearance Streams.”
 
 =head2 Q [integer]
 - (Optional; PDF 1.4) A code specifying the form of quadding (justification) that is used in displaying the annotation’s text:
@@ -42,9 +38,7 @@ Default value: 0 (left-justified).
 - (Optional; PDF 1.5) A rich text string (see 12.7.3.4, “Rich Text Strings”) that is used to generate the appearance of the annotation.
 
 =head2 DS [text string]
-- (Optional; PDF 1.5) A default style string, as described in
-12.7.3.4, “Rich Text Strings.”
-
+- (Optional; PDF 1.5) A default style string, as described in 12.7.3.4, “Rich Text Strings.”
 
 =head2 CL [array]
 - (Optional; meaningful only if IT is FreeTextCallout; PDF 1.6) An array of four or six numbers specifying a callout line attached to the free text annotation. Six numbers [ x 1 y 1 x 2 y 2 x 3 y 3 ] represent the starting, knee point, and ending coordinates of the line in default user space, as shown in Figure 8.4. Four numbers [ x 1 y 1 x 2 y 2 ] represent the starting and ending coordinates of the line.
@@ -65,16 +59,10 @@ The four numbers correspond to the differences in default user space between the
 
 =head2 BS [dictionary]
 - (Optional; PDF 1.6) A border style dictionary (see Table 166) specifying the line width and dash pattern that is used in drawing the annotation’s border.
-The annotation dictionary’s AP entry, if present, takes precedence over the BS entry; see
-Table 164
-and
-12.5.5, “Appearance Streams”
-.
+The annotation dictionary’s AP entry, if present, takes precedence over the BS entry; see Table 164 and 12.5.5, “Appearance Streams” .
 
 =head2 LE [name]
-- (Optional; meaningful only if CL is present; PDF 1.6) A name specifying the line ending style that is used in drawing the callout line specified in CL. The name shall specify the line ending style for the endpoint defined by the pairs of coordinates (x 1 , y 1).
-Table 176
-shows the possible line ending styles.
+- (Optional; meaningful only if CL is present; PDF 1.6) A name specifying the line ending style that is used in drawing the callout line specified in CL. The name shall specify the line ending style for the endpoint defined by the pairs of coordinates (x 1 , y 1). Table 176 shows the possible line ending styles.
 Default value: None.
 
 =end pod

@@ -63,9 +63,7 @@ If the image stream uses the JPXDecode filter, this entry is optional and is ign
 
 =head2 Decode [array]
 - (Optional) An array of numbers describing how to map image samples into the range of values appropriate for the image’s colour space (see 8.9.5.2, "Decode Arrays"). If ImageMask is true, the array is either [ 0 1 ] or [ 1 0 ]; otherwise, its length shall betwice the number of colour components required by ColorSpace. If the image uses the JPXDecode filter and ImageMask is false, Decode is ignored by a conforming reader.
-Default value: see
-8.9.5.2, "Decode Arrays"
-.
+Default value: see 8.9.5.2, "Decode Arrays" .
 
 =head2 Interpolate [boolean]
 - (Optional) A flag indicating whether image interpolation shall beperformed by a conforming reader (see 8.9.5.3, "Image Interpolation"). Default value: false.
@@ -82,9 +80,7 @@ If present, this entry shall override the current soft mask in the graphics stat
 0 If present, encoded soft-mask image information shall beignored.
 1 The image’s data stream includes encoded soft-mask values. Aconforming reader may create a soft-mask image from the information to be used as a source of mask shape or mask opacity in the transparency imaging model.
 2 The image’s data stream includes colour channels that have been preblended with a background; the image data also includes an opacity channel. A conforming reader may create a soft-mask image with a Matte entry from the opacity channel information to be used as a source of mask shape or mask opacity in the transparency model.
-If this entry has a nonzero value, SMask is not specified. See also
-7.4.9, "JPXDecode Filter"
-.
+If this entry has a nonzero value, SMask is not specified. See also 7.4.9, "JPXDecode Filter" .
 Default value: 0.
 
 =head2 Name [name]
@@ -98,9 +94,7 @@ This entry is obsolescent and shall no longer be used.
 - (Optional; PDF 1.3; indirect reference preferred) The digital identifier of the image’s parent Web Capture content set (see 14.10.6, "Object Attributes Related to Web Capture").
 
 =head2 OPI [dictionary]
-- (Optional; PDF 1.2) An OPI version dictionary for the image; see
-14.11.7, "Open Prepress Interface (OPI)"
-. If ImageMask is true, this entry is ignored.
+- (Optional; PDF 1.2) An OPI version dictionary for the image; see 14.11.7, "Open Prepress Interface (OPI)" . If ImageMask is true, this entry is ignored.
 
 =head2 Metadata [stream]
 - (Optional; PDF 1.4) A metadata stream containing metadata for the image (see 14.3.2, "Metadata Streams").

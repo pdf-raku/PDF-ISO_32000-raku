@@ -8,11 +8,11 @@
     "rows": [
       [
         "<body>",
-        "The element at the root of the XML document.\nTable 224\nlists the required attributes for this element."
+        "The element at the root of the XML document. Table 224 lists the required attributes for this element."
       ],
       [
         "<p>",
-        "Encloses text that is interpreted as a paragraph. It may take the style attributes listed in\nTable 225\n."
+        "Encloses text that is interpreted as a paragraph. It may take the style attributes listed in Table 225 ."
       ],
       [
         "<i>",

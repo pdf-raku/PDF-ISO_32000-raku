@@ -7,35 +7,35 @@
     ],
     "rows": [
       [
-        "fs\n",
+        "fs",
         "Source shape"
       ],
       [
-        "fj\n",
+        "fj",
         "Object shape"
       ],
       [
-        "fm\n",
+        "fm",
         "Mask shape"
       ],
       [
-        "fk\n",
+        "fk",
         "Constant shape"
       ],
       [
-        "qs\n",
+        "qs",
         "Source opacity"
       ],
       [
-        "qj\n",
+        "qj",
         "Object opacity"
       ],
       [
-        "qm\n",
+        "qm",
         "Mask opacity"
       ],
       [
-        "qk\n",
+        "qk",
         "Constant opacity"
       ]
     ]

@@ -16,20 +16,15 @@ role ISO_32000::Additional_encryption {
 
 =head2 R [number]
 - (Required) A number specifying which revision of the standard security handler is used to interpret this dictionary:
-2 if the document is encrypted with a V value less than 2 (see Table 20) and does not have any of the access permissions set to 0 (by means of the P entry, below) that are designated “Security handlers of revision 3 or greater” in
-Table 22
+2 if the document is encrypted with a V value less than 2 (see Table 20) and does not have any of the access permissions set to 0 (by means of the P entry, below) that are designated “Security handlers of revision 3 or greater” in Table 22
 3 if the document is encrypted with a V value of 2 or 3, or has any “Security handlers of revision 3 or greater” access permissions set to 0
 4 if the document is encrypted with a V value of 4
 
 =head2 O [string]
-- (Required) A 32-byte string, based on both the owner and user passwords, that is used in computing the encryption key and in determining whether a valid owner password was entered. For more information, see
-7.6.3.3, "Encryption Key Algorithm,"
-and
-7.6.3.4, "Password Algorithms."
+- (Required) A 32-byte string, based on both the owner and user passwords, that is used in computing the encryption key and in determining whether a valid owner password was entered. For more information, see 7.6.3.3, "Encryption Key Algorithm," and 7.6.3.4, "Password Algorithms."
 
 =head2 U [string]
-- (Required) A 32-byte string, based on the user password, that is used in determining whether to prompt the user for a password and, if so, whether a valid user or owner password was entered. For more information, see
-7.6.3.4, "Password Algorithms."
+- (Required) A 32-byte string, based on the user password, that is used in determining whether to prompt the user for a password and, if so, whether a valid user or owner password was entered. For more information, see 7.6.3.4, "Password Algorithms."
 
 =head2 P [integer]
 - (Required) A set of flags specifying which operations is permitted when the document is opened with user access (see Table 22).

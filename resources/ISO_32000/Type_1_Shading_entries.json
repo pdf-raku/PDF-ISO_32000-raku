@@ -15,7 +15,7 @@
       [
         "Matrix",
         "array",
-        "(Optional) An array of six numbers specifying a transformation matrix mapping the coordinate space specified by the Domain entry into the shading’s target coordinate space.\nNOTE To map the domain rectangle [ 0.0 1.0 0.0 1.0 ] to a 1-inch square with lower-left corner at coordinates (100, 100) in default user space, the Matrix value would be [ 72 0 0 72 100 100 ].\nDefault value: the identity matrix [ 1 0 0 1 0 0 ]."
+        "(Optional) An array of six numbers specifying a transformation matrix mapping the coordinate space specified by the Domain entry into the shading’s target coordinate space.\nNOTE To map the domain rectangle [ 0.0 1.0 0.0 1.0 ] to a 1-inch square with lower-left corner at coordinates (100, 100) in default user space, the Matrix value would be [ 72 0 0 72 100 100 ]. Default value: the identity matrix [ 1 0 0 1 0 0 ]."
       ],
       [
         "Function",

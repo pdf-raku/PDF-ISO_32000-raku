@@ -40,7 +40,7 @@
       ],
       [
         "TOCI",
-        "(Table of contents item) An individual member of a table of contents. This entry’s children may be any of the following structure types:\nLblA label (see Link “List Elements” in 14.8.4.3, “Block-Level Structure Elements”)\nReference A reference to the title and the page number (see Link “Inline-Level Structure Elements” in 14.8.4.4, “Inline-Level Structure Elements”)\nNonStruct Non-structure elements for wrapping a leader artifact (see Link “Grouping Elements” in 14.8.4.2, “Grouping Elements”).\nPDescriptive text (see Link “Paragraphlike Elements” 14.8.4.3, “Block-Level Structure Elements”)\nTOC Table of content elements for hierarchical tables of content, as described for the TOC entry"
+        "(Table of contents item) An individual member of a table of contents. This entry’s children may be any of the following structure types:\nLblA label (see “List Elements” in 14.8.4.3, “Block-Level Structure Elements”)\nReference A reference to the title and the page number (see “Inline-Level Structure Elements” in 14.8.4.4, “Inline-Level Structure Elements”)\nNonStruct Non-structure elements for wrapping a leader artifact (see “Grouping Elements” in 14.8.4.2, “Grouping Elements”).\nPDescriptive text (see “Paragraphlike Elements” 14.8.4.3, “Block-Level Structure Elements”)\nTOC Table of content elements for hierarchical tables of content, as described for the TOC entry"
       ],
       [
         "Index",

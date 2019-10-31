@@ -24,9 +24,7 @@ role ISO_32000::Field_common {
 Btn Button (see 12.7.4.2, “Button Fields”)
 Tx Text (see 12.7.4.3, “Text Fields”)
 Ch Choice (see 12.7.4.4, “Choice Fields”)
-Sig(PDF 1.3)
-Link
-Signature (see 12.7.4.5, “Signature Fields”)
+Sig(PDF 1.3) Signature (see 12.7.4.5, “Signature Fields”)
 This entry may be present in a non-terminal field (one whose descendants are fields) to provide an inheritable FT value. However, a non-terminal field does not logically have a type of its own; it is merely a container for inheritable attributes that are intended for descendant terminal fields of any type.
 
 =head2 Parent [dictionary]

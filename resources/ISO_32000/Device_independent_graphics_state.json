@@ -30,7 +30,7 @@
       [
         "text state",
         "(various)",
-        "A set of nine graphics state parameters that pertain only to the painting of text. These include parameters that select the font, scale the glyphs to an appropriate size, and accomplish other effects. The text state parameters are described in\n9.3, \"Text State Parameters and Operators\"\n."
+        "A set of nine graphics state parameters that pertain only to the painting of text. These include parameters that select the font, scale the glyphs to an appropriate size, and accomplish other effects. The text state parameters are described in 9.3, \"Text State Parameters and Operators\" ."
       ],
       [
         "line width",
@@ -65,7 +65,7 @@
       [
         "stroke adjustment",
         "boolean",
-        "(PDF 1.2) A flag specifying whether to compensate for possible rasterization effects when stroking a path with a line width that is small relative to the pixel resolution of the output device (see 10.6.5, \"Automatic Stroke Adjustment\").\nNOTE This is considered a device-independent parameter, even though the details of its effects are device-dependent.\nInitial value: false."
+        "(PDF 1.2) A flag specifying whether to compensate for possible rasterization effects when stroking a path with a line width that is small relative to the pixel resolution of the output device (see 10.6.5, \"Automatic Stroke Adjustment\").\nNOTE This is considered a device-independent parameter, even though the details of its effects are device-dependent. Initial value: false."
       ],
       [
         "blend mode",

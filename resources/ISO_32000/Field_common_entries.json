@@ -10,7 +10,7 @@
       [
         "FT",
         "name",
-        "(Required for terminal fields; inheritable) The type of field that this dictionary describes:\nBtn Button (see 12.7.4.2, “Button Fields”)\nTx Text (see 12.7.4.3, “Text Fields”)\nCh Choice (see 12.7.4.4, “Choice Fields”)\nSig(PDF 1.3)\nLink\nSignature (see 12.7.4.5, “Signature Fields”)\nThis entry may be present in a non-terminal field (one whose descendants are fields) to provide an inheritable FT value. However, a non-terminal field does not logically have a type of its own; it is merely a container for inheritable attributes that are intended for descendant terminal fields of any type."
+        "(Required for terminal fields; inheritable) The type of field that this dictionary describes:\nBtn Button (see 12.7.4.2, “Button Fields”)\nTx Text (see 12.7.4.3, “Text Fields”)\nCh Choice (see 12.7.4.4, “Choice Fields”)\nSig(PDF 1.3) Signature (see 12.7.4.5, “Signature Fields”)\nThis entry may be present in a non-terminal field (one whose descendants are fields) to provide an inheritable FT value. However, a non-terminal field does not logically have a type of its own; it is merely a container for inheritable attributes that are intended for descendant terminal fields of any type."
       ],
       [
         "Parent",

@@ -67,8 +67,6 @@ Default value: true
 Default value: 0.
 
 =head2 TT [array]
-- (Optional; meaningful only if T is true) An array providing text to display on the floating window’s title bar. See
-14.9.2.4, “Multi-language Text Arrays.”
-If this entry is not present, the conforming reader may provide default text.
+- (Optional; meaningful only if T is true) An array providing text to display on the floating window’s title bar. See 14.9.2.4, “Multi-language Text Arrays.” If this entry is not present, the conforming reader may provide default text.
 
 =end pod

@@ -4,7 +4,10 @@
     "head": [
       "Source colour space",
       "Affected colour component",
-      "Effect on colour component"
+      "Effect on colour component",
+      "OP false",
+      "OP true,OPM 0",
+      "OP true, OPM 1"
     ],
     "rows": [
       [

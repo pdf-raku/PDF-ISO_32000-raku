@@ -18,9 +18,6 @@ role ISO_32000::Rubber_stamp_annotation_additional {
 - (Optional) The name of an icon that is used in displaying the annotation. Conforming readers shall provide predefined icon appearances for at least the following standard names:
 Approved, Experimental, NotApproved, AsIs, Expired , NotForPublicRelease, Confidential, Final, Sold, Departmental, ForComment, TopSecret, Draft, ForPublicRelease
 Additional names may be supported as well. Default value: Draft.
-The annotation dictionary’s AP entry, if present, shall take precedence over the Name entry; see
-Table 168
-and
-12.5.5, “Appearance Streams.”
+The annotation dictionary’s AP entry, if present, shall take precedence over the Name entry; see Table 168 and 12.5.5, “Appearance Streams.”
 
 =end pod

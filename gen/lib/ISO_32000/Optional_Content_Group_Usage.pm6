@@ -27,9 +27,7 @@ Groups whose Intent entry contains Design typically include a CreatorInfo entry.
 =head2 Language [dictionary]
 - (Optional) A dictionary specifying the language of the content controlled by this optional content group. It may contain the following two entries:
 Lang (required) A text string that specifies a language and possibly a locale (see 14.9.2, "Natural Language Specification"). For example, es-MX represents Mexican Spanish.
-Preferred (optional) A name whose values is either ON or OFF. Default value: OFF. it is used by conforming readers when there is a partial match but no exact match between the system language and the language strings in all usage dictionaries. See
-8.11.4.4, "Usage and Usage Application Dictionaries"
-for more information.
+Preferred (optional) A name whose values is either ON or OFF. Default value: OFF. it is used by conforming readers when there is a partial match but no exact match between the system language and the language strings in all usage dictionaries. See 8.11.4.4, "Usage and Usage Application Dictionaries" for more information.
 
 =head2 Export [dictionary]
 - (Optional) A dictionary containing one entry, ExportState, a name whose value is either ON or OFF. This value shall indicate the recommended state for content in this group when the document (or part of it) is saved by a conforming reader to a format that does not support optional content (for example, a raster image format).

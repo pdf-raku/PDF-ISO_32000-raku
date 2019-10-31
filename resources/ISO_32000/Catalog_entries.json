@@ -15,12 +15,12 @@
       [
         "Version",
         "name",
-        "(Optional; PDF 1.4) The version of the PDF specification to which the document conforms (for example, 1.4) if later than the version specified in the file’s header (see 7.5.2, \"File Header\"). If the header specifies a later version, or if this entry is absent, the document shall conform to the version specified in the header. This entry enables a conforming writer to update the version using an incremental update; see\n7.5.6, \"Incremental Updates.\"\nThe value of this entry is a name object, not a number, and therefore is preceded by a SOLIDUS (2Fh) character (/) when written in the PDF file (for example, /1.4)."
+        "(Optional; PDF 1.4) The version of the PDF specification to which the document conforms (for example, 1.4) if later than the version specified in the file’s header (see 7.5.2, \"File Header\"). If the header specifies a later version, or if this entry is absent, the document shall conform to the version specified in the header. This entry enables a conforming writer to update the version using an incremental update; see 7.5.6, \"Incremental Updates.\"\nThe value of this entry is a name object, not a number, and therefore is preceded by a SOLIDUS (2Fh) character (/) when written in the PDF file (for example, /1.4)."
       ],
       [
         "Extensions\n",
         "dictionary",
-        "(Optional; ISO 32000) An extensions dictionary containing developer prefix identification and version numbers for developer extensions that occur in this document.\n7.12, “Extensions Dictionary”\n, describes this dictionary and how it is used."
+        "(Optional; ISO 32000) An extensions dictionary containing developer prefix identification and version numbers for developer extensions that occur in this document. 7.12, “Extensions Dictionary” , describes this dictionary and how it is used."
       ],
       [
         "Pages",
@@ -130,7 +130,7 @@
       [
         "Perms",
         "dictionary",
-        "(Optional; PDF 1.5) A permissions dictionary that shall specify user access permissions for the document.\n12.8.4, \"Permissions\"\n, describes this dictionary and how it is used."
+        "(Optional; PDF 1.5) A permissions dictionary that shall specify user access permissions for the document. 12.8.4, \"Permissions\" , describes this dictionary and how it is used."
       ],
       [
         "Legal",
@@ -140,7 +140,7 @@
       [
         "Requirements",
         "array",
-        "(Optional; PDF 1.7) An array of requirement dictionaries that shall represent requirements for the document.\n12.10, \"Document Requirements\"\n, describes this dictionary and how it is used."
+        "(Optional; PDF 1.7) An array of requirement dictionaries that shall represent requirements for the document. 12.10, \"Document Requirements\" , describes this dictionary and how it is used."
       ],
       [
         "Collection",

@@ -55,7 +55,7 @@
       [
         "Decode",
         "array",
-        "(Optional) An array of numbers describing how to map image samples into the range of values appropriate for the image’s colour space (see 8.9.5.2, \"Decode Arrays\"). If ImageMask is true, the array is either [ 0 1 ] or [ 1 0 ]; otherwise, its length shall betwice the number of colour components required by ColorSpace. If the image uses the JPXDecode filter and ImageMask is false, Decode is ignored by a conforming reader.\nDefault value: see\n8.9.5.2, \"Decode Arrays\"\n."
+        "(Optional) An array of numbers describing how to map image samples into the range of values appropriate for the image’s colour space (see 8.9.5.2, \"Decode Arrays\"). If ImageMask is true, the array is either [ 0 1 ] or [ 1 0 ]; otherwise, its length shall betwice the number of colour components required by ColorSpace. If the image uses the JPXDecode filter and ImageMask is false, Decode is ignored by a conforming reader.\nDefault value: see 8.9.5.2, \"Decode Arrays\" ."
       ],
       [
         "Interpolate",
@@ -75,7 +75,7 @@
       [
         "SMaskInData",
         "integer",
-        "(Optional for images that use the JPXDecode filter, meaningless otherwise; PDF 1.5) A code specifying how soft-mask information (see 11.6.5.3, \"Soft-Mask Images\") encoded with image samples is used:\n0 If present, encoded soft-mask image information shall beignored.\n1 The image’s data stream includes encoded soft-mask values. Aconforming reader may create a soft-mask image from the information to be used as a source of mask shape or mask opacity in the transparency imaging model.\n2 The image’s data stream includes colour channels that have been preblended with a background; the image data also includes an opacity channel. A conforming reader may create a soft-mask image with a Matte entry from the opacity channel information to be used as a source of mask shape or mask opacity in the transparency model.\nIf this entry has a nonzero value, SMask is not specified. See also\n7.4.9, \"JPXDecode Filter\"\n.\nDefault value: 0."
+        "(Optional for images that use the JPXDecode filter, meaningless otherwise; PDF 1.5) A code specifying how soft-mask information (see 11.6.5.3, \"Soft-Mask Images\") encoded with image samples is used:\n0 If present, encoded soft-mask image information shall beignored.\n1 The image’s data stream includes encoded soft-mask values. Aconforming reader may create a soft-mask image from the information to be used as a source of mask shape or mask opacity in the transparency imaging model.\n2 The image’s data stream includes colour channels that have been preblended with a background; the image data also includes an opacity channel. A conforming reader may create a soft-mask image with a Matte entry from the opacity channel information to be used as a source of mask shape or mask opacity in the transparency model.\nIf this entry has a nonzero value, SMask is not specified. See also 7.4.9, \"JPXDecode Filter\" .\nDefault value: 0."
       ],
       [
         "Name",
@@ -95,7 +95,7 @@
       [
         "OPI",
         "dictionary",
-        "(Optional; PDF 1.2) An OPI version dictionary for the image; see\n14.11.7, \"Open Prepress Interface (OPI)\"\n. If ImageMask is true, this entry is ignored."
+        "(Optional; PDF 1.2) An OPI version dictionary for the image; see 14.11.7, \"Open Prepress Interface (OPI)\" . If ImageMask is true, this entry is ignored."
       ],
       [
         "Metadata",

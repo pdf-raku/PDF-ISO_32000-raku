@@ -10,7 +10,7 @@
       [
         "t x t y",
         "Td",
-        "Move to the start of the next line, offset from the start of the current line by (t x , t y). t x and t y shall denote numbers expressed in unscaled text space units. More precisely, this operator shall perform these assignments:\nTmTlm100010txty1Tlm×==\n"
+        "Move to the start of the next line, offset from the start of the current line by (t x , t y). t x and t y shall denote numbers expressed in unscaled text space units. More precisely, this operator shall perform these assignments:\nTmTlm100010txty1Tlm×=="
       ],
       [
         "t x t y",

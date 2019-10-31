@@ -20,7 +20,7 @@
       [
         "Name",
         "name",
-        "(Required in PDF 1.0; optional otherwise) See\nTable 111\n."
+        "(Required in PDF 1.0; optional otherwise) See Table 111 ."
       ],
       [
         "FontBBox",

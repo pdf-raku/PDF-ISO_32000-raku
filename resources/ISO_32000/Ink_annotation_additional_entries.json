@@ -20,7 +20,7 @@
       [
         "BS",
         "dictionary",
-        "(Optional) A border style dictionary (see Table 166) specifying the line width and dash pattern that is used in drawing the paths.\nThe annotation dictionary’s AP entry, if present, shall take precedence over the InkList and BS entries; see\nTable 168\nand\n12.5.5, “Appearance Streams.”"
+        "(Optional) A border style dictionary (see Table 166) specifying the line width and dash pattern that is used in drawing the paths.\nThe annotation dictionary’s AP entry, if present, shall take precedence over the InkList and BS entries; see Table 168 and 12.5.5, “Appearance Streams.”"
       ]
     ]
   }

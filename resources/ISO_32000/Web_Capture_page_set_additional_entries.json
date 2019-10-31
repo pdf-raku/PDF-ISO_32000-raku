@@ -20,7 +20,7 @@
       [
         "TID",
         "byte string",
-        "(Optional) A text identifier generated from the text of the page set, as described in\n14.10.3.3, “Digital Identifiers.”"
+        "(Optional) A text identifier generated from the text of the page set, as described in 14.10.3.3, “Digital Identifiers.”"
       ]
     ]
   }

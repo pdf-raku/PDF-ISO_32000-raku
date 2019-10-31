@@ -33,9 +33,7 @@ Unlike the children of fields in a PDF file, which is specified as indirect obje
 - (Required) The partial field name (see 12.7.3.2, “Field Names”).
 
 =head2 V [(various)]
-- (Optional) The field’s value, whose format varies depending on the field type; see the descriptions of individual field types in
-12.7.4, “Field Types”
-for further information.
+- (Optional) The field’s value, whose format varies depending on the field type; see the descriptions of individual field types in 12.7.4, “Field Types” for further information.
 
 =head2 Ff [integer]
 - (Optional) A set of flags specifying various characteristics of the field (see Table 221 , Table 226 , Table 228 , and Table 230). When imported into an interactive form, the value of this entry shall replace that of the Ff entry in the form’s corresponding field dictionary. If this field is present, the SetFf and ClrFfentries, if any, is ignored.
@@ -56,9 +54,7 @@ for further information.
 - (Optional) A set of flags to be cleared (turned off) in the F entry of the form’s corresponding widget annotation dictionary. Bits equal to 1 in ClrF shall cause the corresponding bits in F to be set to 0. If a SetF entry is also present in the FDF field dictionary, it is applied before this entry. This entry shall beignored if an F entry is present in the FDF field dictionary.
 
 =head2 AP [dictionary]
-- (Optional) An appearance dictionary specifying the appearance of a pushbutton field (see Link Pushbuttons in 12.7.4.2, “Button Fields”). The appearance dictionary’s contents are as shown in
-Table 168
-, except that the values of the N, R, and D entries shall all be streams.
+- (Optional) An appearance dictionary specifying the appearance of a pushbutton field (see Pushbuttons in 12.7.4.2, “Button Fields”). The appearance dictionary’s contents are as shown in Table 168 , except that the values of the N, R, and D entries shall all be streams.
 
 =head2 APRef [dictionary]
 - (Optional; PDF 1.3) A dictionary holding references to external PDF files containing the pages to use for the appearances of a pushbutton field. This dictionary is similar to an appearance dictionary (see Table 168), except that the values of the N, R, and D entries shall all be named page reference dictionaries (Table 250). This entry is ignored if an AP entry is present.
@@ -78,8 +74,6 @@ A two-element array consisting of a text string representing one of the availabl
 - (Optional) An additional-actions dictionary defining the field’s behaviour in response to various trigger events (see 12.6.3, “Trigger Events”).
 
 =head2 RV [text string or text stream]
-- (Optional; PDF 1.5) A rich text string, as described in
-12.7.3.4, “Rich Text Strings.”
-
+- (Optional; PDF 1.5) A rich text string, as described in 12.7.3.4, “Rich Text Strings.”
 
 =end pod

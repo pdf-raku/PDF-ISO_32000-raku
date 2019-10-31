@@ -15,7 +15,7 @@
       [
         "Language",
         "dictionary",
-        "(Optional) A dictionary specifying the language of the content controlled by this optional content group. It may contain the following two entries:\nLang (required) A text string that specifies a language and possibly a locale (see 14.9.2, \"Natural Language Specification\"). For example, es-MX represents Mexican Spanish.\nPreferred (optional) A name whose values is either ON or OFF. Default value: OFF. it is used by conforming readers when there is a partial match but no exact match between the system language and the language strings in all usage dictionaries. See\n8.11.4.4, \"Usage and Usage Application Dictionaries\"\nfor more information."
+        "(Optional) A dictionary specifying the language of the content controlled by this optional content group. It may contain the following two entries:\nLang (required) A text string that specifies a language and possibly a locale (see 14.9.2, \"Natural Language Specification\"). For example, es-MX represents Mexican Spanish.\nPreferred (optional) A name whose values is either ON or OFF. Default value: OFF. it is used by conforming readers when there is a partial match but no exact match between the system language and the language strings in all usage dictionaries. See 8.11.4.4, \"Usage and Usage Application Dictionaries\" for more information."
       ],
       [
         "Export",

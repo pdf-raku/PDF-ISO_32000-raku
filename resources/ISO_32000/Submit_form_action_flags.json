@@ -20,7 +20,7 @@
       [
         "3",
         "ExportFormat",
-        "Meaningful only if the SubmitPDF and XFDF flags are clear. If set, field names and values is submitted in HTML Form format. If clear, they is submitted in Forms Data Format (FDF); see\n12.7.7, “Forms Data Format.”"
+        "Meaningful only if the SubmitPDF and XFDF flags are clear. If set, field names and values is submitted in HTML Form format. If clear, they is submitted in Forms Data Format (FDF); see 12.7.7, “Forms Data Format.”"
       ],
       [
         "4",
@@ -50,12 +50,12 @@
       [
         "9",
         "SubmitPDF",
-        "(PDF 1.4) If set, the document is submitted as PDF, using the MIME content type application / pdf (described in Internet RFC 2045, Multipurpose Internet Mail Extensions (MIME), Part One: Format of Internet Message Bodies; see the\nBibliography\n). If set, all other flags is ignored except GetMethod."
+        "(PDF 1.4) If set, the document is submitted as PDF, using the MIME content type application / pdf (described in Internet RFC 2045, Multipurpose Internet Mail Extensions (MIME), Part One: Format of Internet Message Bodies; see the Bibliography ). If set, all other flags is ignored except GetMethod."
       ],
       [
         "10",
         "CanonicalFormat",
-        "(PDF 1.4) If set, any submitted field values representing dates is converted to the standard format described in\n7.9.4, “Dates.”\nNOTE 1 The interpretation of a form field as a date is not specified explicitly in the field itself but only in the JavaScript code that processes it."
+        "(PDF 1.4) If set, any submitted field values representing dates is converted to the standard format described in 7.9.4, “Dates.”\nNOTE 1 The interpretation of a form field as a date is not specified explicitly in the field itself but only in the JavaScript code that processes it."
       ],
       [
         "11",

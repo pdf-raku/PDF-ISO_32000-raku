@@ -7,31 +7,31 @@
     ],
     "rows": [
       [
-        "P\n",
+        "P",
         "The page group, consisting of all elements E 1 , … , E n in the page’s top-level stack"
       ],
       [
-        "Cg\n",
+        "Cg",
         "Computed colour of the page group"
       ],
       [
-        "fg\n",
+        "fg",
         "Computed shape of the page group"
       ],
       [
-        "g\n",
+        "g",
         "Computed alpha of the page group"
       ],
       [
-        "C\n",
+        "C",
         "Computed colour of the page"
       ],
       [
-        "W\n",
+        "W",
         "Initial colour of the page (nominally white but may vary depending on the properties of the medium or the needs of the application)"
       ],
       [
-        "U\n",
+        "U",
         "An undefined colour (which is not used, since the 0 argument of Composite is 0)"
       ]
     ]

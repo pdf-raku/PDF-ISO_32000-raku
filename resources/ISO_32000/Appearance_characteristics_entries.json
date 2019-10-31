@@ -25,7 +25,7 @@
       [
         "CA",
         "text string",
-        "(Optional; button fields only) The widget annotation’s normal caption, which is displayed when it is not interacting with the user.\nUnlike the remaining entries listed in this Table, which apply only to widget annotations associated with pushbutton fields (see Link Pushbuttons in 12.7.4.2, “Button Fields”), the CA entry may be used with any type of button field, including check boxes (see Link Check Boxes in 12.7.4.2, “Button Fields”) and radio buttons (Link Radio Buttons in 12.7.4.2, “Button Fields”)."
+        "(Optional; button fields only) The widget annotation’s normal caption, which is displayed when it is not interacting with the user.\nUnlike the remaining entries listed in this Table, which apply only to widget annotations associated with pushbutton fields (see Pushbuttons in 12.7.4.2, “Button Fields”), the CA entry may be used with any type of button field, including check boxes (see Check Boxes in 12.7.4.2, “Button Fields”) and radio buttons (Radio Buttons in 12.7.4.2, “Button Fields”)."
       ],
       [
         "RC",

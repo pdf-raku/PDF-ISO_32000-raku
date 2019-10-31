@@ -15,7 +15,7 @@
       [
         "QuadPoints",
         "array",
-        "(Optional) An array of 8 x n numbers specifying the coordinates of n quadrilaterals in default user space, as described in\nTable 175\nfor text markup annotations. If present, these quadrilaterals denote the content region that is intended to be removed. If this entry is not present, the Rect entry denotes the content region that is intended to be removed."
+        "(Optional) An array of 8 x n numbers specifying the coordinates of n quadrilaterals in default user space, as described in Table 175 for text markup annotations. If present, these quadrilaterals denote the content region that is intended to be removed. If this entry is not present, the Rect entry denotes the content region that is intended to be removed."
       ],
       [
         "IC",

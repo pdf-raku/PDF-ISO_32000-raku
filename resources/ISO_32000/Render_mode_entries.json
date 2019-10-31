@@ -15,7 +15,7 @@
       [
         "Subtype",
         "name",
-        "(Required) The type of render mode described by this dictionary; see\nTable 308\nfor specific values. If an unrecognized value is encountered, then this render mode dictionary is ignored."
+        "(Required) The type of render mode described by this dictionary; see Table 308 for specific values. If an unrecognized value is encountered, then this render mode dictionary is ignored."
       ],
       [
         "AC",

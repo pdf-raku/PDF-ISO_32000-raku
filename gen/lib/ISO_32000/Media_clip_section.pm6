@@ -17,9 +17,7 @@ role ISO_32000::Media_clip_section {
 - (Required) The media clip section or media clip data object (the next-level media object) of which this media clip section object defines a continuous section.
 
 =head2 Alt [array]
-- (Optional) An array that provides alternate text descriptions for the media clip section in case it cannot be played; see
-14.9.2.4, “Multi-language Text Arrays.”
-
+- (Optional) An array that provides alternate text descriptions for the media clip section in case it cannot be played; see 14.9.2.4, “Multi-language Text Arrays.”
 
 =head2 MH [dictionary]
 - (Optional) A dictionary whose entries (see Table 278) is honoured for the media clip section to be considered viable.

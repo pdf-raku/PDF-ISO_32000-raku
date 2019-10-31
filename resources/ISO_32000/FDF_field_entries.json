@@ -20,7 +20,7 @@
       [
         "V",
         "(various)",
-        "(Optional) The field’s value, whose format varies depending on the field type; see the descriptions of individual field types in\n12.7.4, “Field Types”\nfor further information."
+        "(Optional) The field’s value, whose format varies depending on the field type; see the descriptions of individual field types in 12.7.4, “Field Types” for further information."
       ],
       [
         "Ff",
@@ -55,7 +55,7 @@
       [
         "AP",
         "dictionary",
-        "(Optional) An appearance dictionary specifying the appearance of a pushbutton field (see Link Pushbuttons in 12.7.4.2, “Button Fields”). The appearance dictionary’s contents are as shown in\nTable 168\n, except that the values of the N, R, and D entries shall all be streams."
+        "(Optional) An appearance dictionary specifying the appearance of a pushbutton field (see Pushbuttons in 12.7.4.2, “Button Fields”). The appearance dictionary’s contents are as shown in Table 168 , except that the values of the N, R, and D entries shall all be streams."
       ],
       [
         "APRef",
@@ -85,7 +85,7 @@
       [
         "RV",
         "text string or text stream",
-        "(Optional; PDF 1.5) A rich text string, as described in\n12.7.3.4, “Rich Text Strings.”\n"
+        "(Optional; PDF 1.5) A rich text string, as described in 12.7.3.4, “Rich Text Strings.”"
       ]
     ]
   }

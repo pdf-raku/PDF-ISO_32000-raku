@@ -45,7 +45,7 @@
       [
         "ItalicAngle",
         "number",
-        "(Required) The angle, expressed in degrees counterclockwise from the vertical, of the dominant vertical strokes of the font.\nEXAMPLE 4 The 9-o’clock position is 90 degrees, and the 3-o’clock position is –90 degrees.\nThe value is negative for fonts that slope to the right, as almost all italic fonts do."
+        "(Required) The angle, expressed in degrees counterclockwise from the vertical, of the dominant vertical strokes of the font.\nEXAMPLE 4 The 9-o’clock position is 90 degrees, and the 3-o’clock position is –90 degrees. The value is negative for fonts that slope to the right, as almost all italic fonts do."
       ],
       [
         "Ascent",

@@ -118,9 +118,7 @@ NOTE The information in this entry can be created or recreated from the informat
 - (Optional; PDF 1.3) A separation dictionary that shall contain information needed to generate colour separations for the page (see 14.11.4, "Separation Dictionaries").
 
 =head2 Tabs [name]
-- (Optional; PDF 1.5) A name specifying the tab order that is used for annotations on the page. The possible values is R (row order), C (column order), and S (structure order). See
-12.5, "Annotations"
-for details.
+- (Optional; PDF 1.5) A name specifying the tab order that is used for annotations on the page. The possible values is R (row order), C (column order), and S (structure order). See 12.5, "Annotations" for details.
 
 =head2 TemplateInstantiated [name]
 - (Required if this page was created from a named page object; PDF 1.5) The name of the originating page object (see 12.7.6, "Named Pages").

@@ -35,8 +35,7 @@ role ISO_32000::Projection {
 =head2 PS [number or name]
 - (Optional; meaningful only if Subtype is P) An object that specifies the scaling used when projecting the 3D artwork onto the annotation’s target coordinate system. It defines the diameter of the circle formed by the intersection of the near plane and the cone specified by FOV. The value may be one of the following:
 • A positive number that explicitly specifies the diameter as a distance in the annotation’s target coordinate system.
-• A name specifying that the diameter is set to the width (W), height (H), minimum of width and height (Min), or maximum of width and height (Max) of the annotation’s 3D view box.
-Default value: W.
+• A name specifying that the diameter is set to the width (W), height (H), minimum of width and height (Min), or maximum of width and height (Max) of the annotation’s 3D view box. Default value: W.
 
 =head2 OS [number]
 - (Optional; meaningful only if Subtype is O) A positive number that specifies the scale factor to be applied to both the x and y coordinates when projecting onto the annotation’s target coordinate system (the z coordinate is discarded). Default value: 1.

@@ -23,14 +23,13 @@ role ISO_32000::Three-D_stream {
 - (Required) A name specifying the format of the 3D data contained in the stream. The only valid value is U3D.
 
 =head2 VA [array]
-- (Optional) An array of 3D view dictionaries, each of which specifies a named preset view of this 3D artwork (see Link Section 13.6.4, “3D Views ”).
+- (Optional) An array of 3D view dictionaries, each of which specifies a named preset view of this 3D artwork (see Section 13.6.4, “3D Views ”).
 
 =head2 DV [(various)]
-- (Optional) An object that specifies the default (initial) view of the 3D artwork. It may be a 3D view dictionary (see Link Section 13.6.4, “3D Views ”) or one of the following types:
+- (Optional) An object that specifies the default (initial) view of the 3D artwork. It may be a 3D view dictionary (see Section 13.6.4, “3D Views ”) or one of the following types:
 • An integer specifying an index into the VA array.
 • A text string matching the IN entry in one of the views in the VAarray.
-• A name that indicates the first (F) or last (L) entries in the VAarray.
-Default value: 0 (the first entry in the VA array) if VA is present; if VA is not present, the default view is specified within the 3D stream itself.
+• A name that indicates the first (F) or last (L) entries in the VAarray. Default value: 0 (the first entry in the VA array) if VA is present; if VA is not present, the default view is specified within the 3D stream itself.
 
 =head2 Resources [name tree]
 - (Optional) A name tree that maps name strings to objects that may be used by applications or scripts to modify the default view of the 3D artwork.

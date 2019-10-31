@@ -19,9 +19,7 @@ role ISO_32000::Render_mode {
 - (Optional) The type of PDF object that this dictionary describes; if present, is 3DRenderMode.
 
 =head2 Subtype [name]
-- (Required) The type of render mode described by this dictionary; see
-Table 308
-for specific values. If an unrecognized value is encountered, then this render mode dictionary is ignored.
+- (Required) The type of render mode described by this dictionary; see Table 308 for specific values. If an unrecognized value is encountered, then this render mode dictionary is ignored.
 
 =head2 AC [array]
 - (Optional) An array that specifies the auxiliary colour that is used when rendering the 3D image. The first entry in the array is a colour space; the subsequent entries is values specifying colour values in that colour space. The interpretation of this entry depends on the render mode specified by the Subtype entry, but it is often used to specify a colour for drawing points or edges.
