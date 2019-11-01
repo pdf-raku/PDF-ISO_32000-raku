@@ -42,7 +42,7 @@ role ISO_32000::Viewer_preferences {
 - (Optional) A flag specifying whether to position the document’s window in the center of the screen. Default value: false.
 
 =head2 DisplayDocTitle [boolean]
-- (Optional; PDF 1.4) A flag specifying whether the window’s title bar should display the document title taken from the Title entry of the document information dictionary (see 14.3.3, “Document Information Dictionary”). If false, the title bar should instead display the name of the PDF file containing the document. Default value: false.
+- (Optional; PDF 1.4) A flag specifying whether the window’s title bar displays the document title taken from the Title entry of the document information dictionary (see 14.3.3, “Document Information Dictionary”). If false, the title bar should instead display the name of the PDF file containing the document. Default value: false.
 
 =head2 NonFullScreenPageMode [name]
 - (Optional) The document’s page mode, specifying how to display the document on exiting full-screen mode:

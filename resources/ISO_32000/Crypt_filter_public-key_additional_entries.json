@@ -15,7 +15,7 @@
       [
         "EncryptMetadata",
         "boolean",
-        "(Optional; used only by crypt filters that are referenced from StmF in an encryption dictionary) Indicates whether the document-level metadata stream (see 14.3.2, \"Metadata Streams\") is encrypted. Conforming readers respects this value when determining whether metadata is encrypted. The value of the EncryptMetadata entry is set by the security handler rather than the conforming reader.\nDefault value: true."
+        "(Optional; used only by crypt filters that are referenced from StmF in an encryption dictionary) Indicates whether the document-level metadata stream (see 14.3.2, \"Metadata Streams\") is encrypted. Conforming readers respect this value when determining whether metadata is encrypted. The value of the EncryptMetadata entry is set by the security handler rather than the conforming reader.\nDefault value: true."
       ]
     ]
   }

@@ -30,7 +30,7 @@ role ISO_32000::Additional_encryption {
 - (Required) A set of flags specifying which operations is permitted when the document is opened with user access (see Table 22).
 
 =head2 EncryptMetadata [boolean]
-- (Optional; meaningful only when the value of V is 4; PDF 1.5) Indicates whether the document-level metadata stream (see 14.3.2, "Metadata Streams") is encrypted. Conforming products should respect this value.
+- (Optional; meaningful only when the value of V is 4; PDF 1.5) Indicates whether the document-level metadata stream (see 14.3.2, "Metadata Streams") is encrypted. Conforming products respect this value.
 Default value: true.
 
 =end pod

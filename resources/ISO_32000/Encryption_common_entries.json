@@ -45,7 +45,7 @@
       [
         "EFF",
         "name",
-        "(Optional; meaningful only when the value of V is 4; PDF 1.6) The name of the crypt filter that is used when encrypting embedded file streams that do not have their own crypt filter specifier; it corresponds to a key in the CFdictionary or a standard crypt filter name specified in Table 26 .\nThis entry is provided by the security handler. Conforming writers respects this value when encrypting embedded files, except for embedded file streams that have their own crypt filter specifier. If this entry is not present, and the embedded file stream does not contain a crypt filter specifier, the stream is encrypted using the default stream crypt filter specified by StmF."
+        "(Optional; meaningful only when the value of V is 4; PDF 1.6) The name of the crypt filter that is used when encrypting embedded file streams that do not have their own crypt filter specifier; it corresponds to a key in the CFdictionary or a standard crypt filter name specified in Table 26 .\nThis entry is provided by the security handler. Conforming writers respect this value when encrypting embedded files, except for embedded file streams that have their own crypt filter specifier. If this entry is not present, and the embedded file stream does not contain a crypt filter specifier, the stream is encrypted using the default stream crypt filter specified by StmF."
       ]
     ]
   }

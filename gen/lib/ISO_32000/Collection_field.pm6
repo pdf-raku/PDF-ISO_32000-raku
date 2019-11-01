@@ -41,6 +41,6 @@ Size The field data is the size of the embedded file, as identified by the Size 
 - (Optional) The initial visibility of the field in the user interface. Default value: true.
 
 =head2 E [boolean]
-- (Optional) A flag indicating whether the conforming reader should provide support for editing the field value. Default value: false.
+- (Optional) A flag indicating whether the conforming reader provides support for editing the field value. Default value: false.
 
 =end pod

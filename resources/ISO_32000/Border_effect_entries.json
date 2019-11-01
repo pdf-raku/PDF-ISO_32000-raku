@@ -10,7 +10,7 @@
       [
         "S",
         "name",
-        "(Optional) A name representing the border effect to apply. Possible values are:\nS No effect: the border is as described by the annotation dictionary’s BS entry.\nC The border should appear “cloudy”. The width and dash array specified by BS is honored.\nDefault value: S."
+        "(Optional) A name representing the border effect to apply. Possible values are:\nS No effect: the border is as described by the annotation dictionary’s BS entry.\nC The border appears “cloudy”. The width and dash array specified by BS is honored.\nDefault value: S."
       ],
       [
         "I",

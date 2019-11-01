@@ -30,7 +30,7 @@
       [
         "EncryptMetadata",
         "boolean",
-        "(Optional; meaningful only when the value of V is 4; PDF 1.5) Indicates whether the document-level metadata stream (see 14.3.2, \"Metadata Streams\") is encrypted. Conforming products should respect this value.\nDefault value: true."
+        "(Optional; meaningful only when the value of V is 4; PDF 1.5) Indicates whether the document-level metadata stream (see 14.3.2, \"Metadata Streams\") is encrypted. Conforming products respect this value.\nDefault value: true."
       ]
     ]
   }

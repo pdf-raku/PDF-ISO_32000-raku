@@ -16,7 +16,7 @@ role ISO_32000::Crypt_filter_public-key_additional {
 If the crypt filter is referenced from a Crypt filter decode parameter dictionary (see Table 14), this entry is a string that is a binary-encoded PKCS7 object contains a list of all recipients who are permitted to access the corresponding encrypted stream. The enveloped data contained in the PKCS7 object is a 20-byte seed value that is used to create the encryption key that is used by the algorithm in "Algorithm 1: Encryption of data using the RC4 or AES algorithms" .
 
 =head2 EncryptMetadata [boolean]
-- (Optional; used only by crypt filters that are referenced from StmF in an encryption dictionary) Indicates whether the document-level metadata stream (see 14.3.2, "Metadata Streams") is encrypted. Conforming readers respects this value when determining whether metadata is encrypted. The value of the EncryptMetadata entry is set by the security handler rather than the conforming reader.
+- (Optional; used only by crypt filters that are referenced from StmF in an encryption dictionary) Indicates whether the document-level metadata stream (see 14.3.2, "Metadata Streams") is encrypted. Conforming readers respect this value when determining whether metadata is encrypted. The value of the EncryptMetadata entry is set by the security handler rather than the conforming reader.
 Default value: true.
 
 =end pod

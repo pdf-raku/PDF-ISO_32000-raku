@@ -15,7 +15,7 @@ role ISO_32000::DeviceN_mixing_hints {
 =head2 Solidities [dictionary]
 - (Optional) A dictionary specifying the solidity of inks that is used in blending calculations when used as an alternative to the tint transformation function. For each entry, the key is a colorantname, and the value is a number between 0.0 and 1.0. This dictionary need not contain entries for all colorants used in this colour space; it may also include additional colorants not used by this colour space.
 A value of 1.0 simulates an ink that completely covers the inks beneath; a value of 0.0 simulates a transparent ink that completely reveals the inks beneath. An entry with a key of Default specifies a value that is used by all components in the associated DeviceN colour space for which a solidity value is not explicitly provided. If Default is not present, the default value for unspecified colorants is 0.0; conforming readers may choose to use other values.
-If this entry is present, PrintingOrder is 0 present.
+If this entry is present, PrintingOrder is also present.
 
 =head2 PrintingOrder [array]
 - (Required if Solidities is present) An array of colorant names, specifying the order in which inks is laid down. Each component in the names array of the DeviceN colour space appears in this array (although the order is unrelated to the order specified in the namesarray). This entry may also list colorants unused by this specific DeviceN instance.

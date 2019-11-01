@@ -45,7 +45,7 @@ role ISO_32000::Image {
 - (Required for images, except those that use the JPXDecode filter; not allowed forbidden for image masks) The colour space in which image samples is specified; it can be any type of colour space except Pattern.
 If the image uses the JPXDecode filter, this entry may be present:
 •If ColorSpace is present, any colour space specifications in the JPEG2000 data is ignored.
-•If ColorSpace is absent, the colour space specifications in the JPEG2000 data is used. The Decode array is 0 ignored unless ImageMask is true.
+•If ColorSpace is absent, the colour space specifications in the JPEG2000 data is used. The Decode array is also ignored unless ImageMask is true.
 
 =head2 BitsPerComponent [integer]
 - (Required except for image masks and images that use the JPXDecode filter) The number of bits used to represent each colour component. Only a single value is specified; the number of bits is the same for all colour components. The value is 1, 2, 4, 8, or (in PDF 1.5) 16. If ImageMask is true, this entry is optional, but if specified, its value is 1.

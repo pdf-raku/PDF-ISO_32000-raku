@@ -14,7 +14,7 @@ role ISO_32000::Border_effect {
 =head2 S [name]
 - (Optional) A name representing the border effect to apply. Possible values are:
 S No effect: the border is as described by the annotation dictionary’s BS entry.
-C The border should appear “cloudy”. The width and dash array specified by BS is honored.
+C The border appears “cloudy”. The width and dash array specified by BS is honored.
 Default value: S.
 
 =head2 I [number]

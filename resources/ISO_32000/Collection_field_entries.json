@@ -35,7 +35,7 @@
       [
         "E",
         "boolean",
-        "(Optional) A flag indicating whether the conforming reader should provide support for editing the field value. Default value: false."
+        "(Optional) A flag indicating whether the conforming reader provides support for editing the field value. Default value: false."
       ]
     ]
   }

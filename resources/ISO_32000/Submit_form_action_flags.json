@@ -25,12 +25,12 @@
       [
         "4",
         "GetMethod",
-        "If set, field names and values is submitted using an HTTP GET request. If clear, they is submitted using a POST request. This flag is meaningful only when the ExportFormat flag is set; if ExportFormat is clear, this flag is 0 clear."
+        "If set, field names and values is submitted using an HTTP GET request. If clear, they is submitted using a POST request. This flag is meaningful only when the ExportFormat flag is set; if ExportFormat is clear, this flag is also clear."
       ],
       [
         "5",
         "SubmitCoordinates",
-        "If set, the coordinates of the mouse click that caused the submit-form action is transmitted as part of the form data. The coordinate values are relative to the upper-left corner of the field’s widget annotation rectangle. They is represented in the data in the format\nname . x = xval & name . y = yval\nwhere name is the field’s mapping name (TM in the field dictionary) if present; otherwise, name is the field name. If the value of the TM entry is a single ASCII SPACE (20h) character, both the name and the ASCII PERIOD (2Eh)following it is suppressed, resulting in the format\nx = xval & y = yval\nThis flag is used only when the ExportFormat flag is set. If ExportFormat is clear, this flag is 0 clear."
+        "If set, the coordinates of the mouse click that caused the submit-form action is transmitted as part of the form data. The coordinate values are relative to the upper-left corner of the field’s widget annotation rectangle. They is represented in the data in the format\nname . x = xval & name . y = yval\nwhere name is the field’s mapping name (TM in the field dictionary) if present; otherwise, name is the field name. If the value of the TM entry is a single ASCII SPACE (20h) character, both the name and the ASCII PERIOD (2Eh)following it is suppressed, resulting in the format\nx = xval & y = yval\nThis flag is used only when the ExportFormat flag is set. If ExportFormat is clear, this flag is also clear."
       ],
       [
         "6",

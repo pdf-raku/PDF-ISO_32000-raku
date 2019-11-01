@@ -46,7 +46,7 @@ W Scale to fit the width of the annotation
 HScale to fit the height of the annotation
 MinScale to fit the lesser of width or height of the annotation
 MaxScale to fit the greater of width or height of the annotation
-Absolute No scaling should occur due to binding.
+Absolute No scaling occurs due to binding.
 Default value: Absolute.
 
 =end pod

@@ -45,7 +45,7 @@
       [
         "OB",
         "name",
-        "(Optional; PDF 1.7; meaningful only if Subtype is O) A name that specifies a strategy for binding (scaling to fit) the near plane’s x and y coordinates onto the annotation’s target coordinate system. The scaling specified in this entry is applied in addition to the scaling factor specified by the OS entry. The value may be one of the following:\nW Scale to fit the width of the annotation\nHScale to fit the height of the annotation\nMinScale to fit the lesser of width or height of the annotation\nMaxScale to fit the greater of width or height of the annotation\nAbsolute No scaling should occur due to binding.\nDefault value: Absolute."
+        "(Optional; PDF 1.7; meaningful only if Subtype is O) A name that specifies a strategy for binding (scaling to fit) the near plane’s x and y coordinates onto the annotation’s target coordinate system. The scaling specified in this entry is applied in addition to the scaling factor specified by the OS entry. The value may be one of the following:\nW Scale to fit the width of the annotation\nHScale to fit the height of the annotation\nMinScale to fit the lesser of width or height of the annotation\nMaxScale to fit the greater of width or height of the annotation\nAbsolute No scaling occurs due to binding.\nDefault value: Absolute."
       ]
     ]
   }

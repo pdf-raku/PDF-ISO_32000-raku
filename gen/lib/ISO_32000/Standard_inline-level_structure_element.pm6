@@ -53,7 +53,7 @@ Start The content is aligned on the start edge in the inline-progression directi
 Center The content is centered in the inline-progression direction.
 End The content is aligned on the end edge in the inline-progression direction.
 Justify The content is expanded to fill the available width in the inline-progression direction.
-Distribute The content is expanded to fill the available width in the inline-progression direction. However, space is 0 inserted at the start edge and end edge of the text. The spacing is distributed using a 1:2:1 (start:infix:end) ratio. It is changed to a 0:1:1 ratio if the ruby appears at the start of a text line or to a 1:1:0 ratio if the ruby appears at the end of the text line.
+Distribute The content is expanded to fill the available width in the inline-progression direction. However, space is also inserted at the start edge and end edge of the text. The spacing is distributed using a 1:2:1 (start:infix:end) ratio. It is changed to a 0:1:1 ratio if the ruby appears at the start of a text line or to a 1:1:0 ratio if the ruby appears at the end of the text line.
 Default value: Distribute.
 This attribute may be specified on the RB and RT elements. When a ruby is formatted, the attribute is applied to the shorter line of these two elements. (If the RT element has a shorter width than the RB element, the RT element is aligned as specified in its RubyAlign attribute.)
 

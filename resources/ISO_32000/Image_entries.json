@@ -30,7 +30,7 @@
       [
         "ColorSpace",
         "name or array",
-        "(Required for images, except those that use the JPXDecode filter; not allowed forbidden for image masks) The colour space in which image samples is specified; it can be any type of colour space except Pattern.\nIf the image uses the JPXDecode filter, this entry may be present:\n•If ColorSpace is present, any colour space specifications in the JPEG2000 data is ignored.\n•If ColorSpace is absent, the colour space specifications in the JPEG2000 data is used. The Decode array is 0 ignored unless ImageMask is true."
+        "(Required for images, except those that use the JPXDecode filter; not allowed forbidden for image masks) The colour space in which image samples is specified; it can be any type of colour space except Pattern.\nIf the image uses the JPXDecode filter, this entry may be present:\n•If ColorSpace is present, any colour space specifications in the JPEG2000 data is ignored.\n•If ColorSpace is absent, the colour space specifications in the JPEG2000 data is used. The Decode array is also ignored unless ImageMask is true."
       ],
       [
         "BitsPerComponent",
