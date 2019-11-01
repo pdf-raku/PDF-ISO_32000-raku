@@ -15,27 +15,27 @@
       [
         "L",
         "array",
-        "(Required) An array of four numbers, [ x 1 y 1 x 2 y 2 ], specifying the starting and ending coordinates of the line in default user space.\nIf the LL entry is present, this value shall represent the endpoints of the leader lines rather than the endpoints of the line itself; see Figure 60 ."
+        "(Required) An array of four numbers, [ x 1 y 1 x 2 y 2 ], specifying the starting and ending coordinates of the line in default user space.\nIf the LL entry is present, this value represents the endpoints of the leader lines rather than the endpoints of the line itself; see Figure 60 ."
       ],
       [
         "BS",
         "dictionary",
-        "(Optional) A border style dictionary (see Table 166) specifying the width and dash pattern that is used in drawing the line.\nThe annotation dictionary’s AP entry, if present, shall take precedence over the L and BS entries; see Table 168 and 12.5.5, “Appearance Streams.”"
+        "(Optional) A border style dictionary (see Table 166) specifying the width and dash pattern that is used in drawing the line.\nThe annotation dictionary’s AP entry, if present, takes precedence over the L and BS entries; see Table 168 and 12.5.5, “Appearance Streams.”"
       ],
       [
         "LE",
         "array",
-        "(Optional; PDF 1.4) An array of two names specifying the line ending styles that is used in drawing the line. The first and second elements of the array shall specify the line ending styles for the endpoints defined, respectively, by the first and second pairs of coordinates, (x 1 , y 1)and (x 2 , y 2), in the L array. Table 176 shows the possible values. Default value: [ /None /None ]."
+        "(Optional; PDF 1.4) An array of two names specifying the line ending styles that is used in drawing the line. The first and second elements of the array specifies the line ending styles for the endpoints defined, respectively, by the first and second pairs of coordinates, (x 1 , y 1)and (x 2 , y 2), in the L array. Table 176 shows the possible values. Default value: [ /None /None ]."
       ],
       [
         "IC",
         "array",
-        "(Optional; PDF 1.4) An array of numbers in the range 0.0 to 1.0 specifying the interior color that is used to fill the annotation’s line endings (see Table 176). The number of array elements shall determine the colour space in which the colour is defined:\n0 No colour; transparent\n1DeviceGray\n3DeviceRGB\n4DeviceCMYK"
+        "(Optional; PDF 1.4) An array of numbers in the range 0.0 to 1.0 specifying the interior color that is used to fill the annotation’s line endings (see Table 176). The number of array elements determines the colour space in which the colour is defined:\n0 No colour; transparent\n1DeviceGray\n3DeviceRGB\n4DeviceCMYK"
       ],
       [
         "LL",
         "number",
-        "(Required if LLE is present, otherwise optional; PDF 1.6) The length of leader lines in default user space that extend from each endpoint of the line perpendicular to the line itself, as shown in Figure 60 . A positive value shall mean that the leader lines appear in the direction that is clockwise when traversing the line from its starting point to its ending point (as specified by L); a negative value shall indicate the opposite direction.\nDefault value: 0 (no leader lines)."
+        "(Required if LLE is present, otherwise optional; PDF 1.6) The length of leader lines in default user space that extend from each endpoint of the line perpendicular to the line itself, as shown in Figure 60 . A positive value means that the leader lines appear in the direction that is clockwise when traversing the line from its starting point to its ending point (as specified by L); a negative value indicates the opposite direction.\nDefault value: 0 (no leader lines)."
       ],
       [
         "LLE",
@@ -55,7 +55,7 @@
       [
         "LLO",
         "number",
-        "(Optional; PDF 1.7) A non-negative number that shall represent the length of the leader line offset, which is the amount of empty space between the endpoints of the annotation and the beginning of the leader lines."
+        "(Optional; PDF 1.7) A non-negative number that represents the length of the leader line offset, which is the amount of empty space between the endpoints of the annotation and the beginning of the leader lines."
       ],
       [
         "CP",
@@ -65,12 +65,12 @@
       [
         "Measure",
         "dictionary",
-        "(Optional; PDF 1.7) A measure dictionary (see Table 261) that shall specify the scale and units that apply to the line annotation."
+        "(Optional; PDF 1.7) A measure dictionary (see Table 261) that specifies the scale and units that apply to the line annotation."
       ],
       [
         "CO",
         "array",
-        "(Optional; meaningful only if Cap is true; PDF 1.7) An array of two numbers that shall specify the offset of the caption text from its normal position. The first value is the horizontal offset along the annotation line from its midpoint, with a positive value indicating offset to the right and a negative value indicating offset to the left. The second value is the vertical offset perpendicular to the annotation line, with a positive value indicating a shift up and a negative value indicating a shift down.\nDefault value: [0, 0] (no offset from normal positioning)"
+        "(Optional; meaningful only if Cap is true; PDF 1.7) An array of two numbers that specifies the offset of the caption text from its normal position. The first value is the horizontal offset along the annotation line from its midpoint, with a positive value indicating offset to the right and a negative value indicating offset to the left. The second value is the vertical offset perpendicular to the annotation line, with a positive value indicating a shift up and a negative value indicating a shift down.\nDefault value: [0, 0] (no offset from normal positioning)"
       ]
     ]
   }

@@ -35,7 +35,7 @@
       [
         "Intent",
         "name or array",
-        "(Optional) A single intent name or an array containing any combination of names. it is used to determine which optional content groups’ states to consider and which to ignore in calculating the visibility of content (see 8.11.2.3, \"Intent\").\nPDF defines two intent names, View and Design. In addition, the name All shall indicate the set of all intents, including those not yet defined. Default value: View. The value is View for the document’s default configuration."
+        "(Optional) A single intent name or an array containing any combination of names. it is used to determine which optional content groups’ states to consider and which to ignore in calculating the visibility of content (see 8.11.2.3, \"Intent\").\nPDF defines two intent names, View and Design. In addition, the name All indicates the set of all intents, including those not yet defined. Default value: View. The value is View for the document’s default configuration."
       ],
       [
         "AS",

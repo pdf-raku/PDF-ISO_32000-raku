@@ -24,7 +24,7 @@ role ISO_32000::Number_format {
 - (Optional) The type of PDF object that this dictionary describes; is NumberFormat for a number format dictionary.
 
 =head2 U [text string]
-- (Required) A text string specifying a label for displaying the units represented by this dictionary in a user interface; the label should use a universally recognized abbreviation.
+- (Required) A text string specifying a label for displaying the units represented by this dictionary in a user interface; the label uses a universally recognized abbreviation.
 
 =head2 C [number]
 - (Required) The conversion factor used to multiply a value in partial units of the previous number format array element to obtain a value in the units of this dictionary. When this entry is in the first number format dictionary in the array, its meaning (that is, what it is multiplied by) depends on which entry in the rectilinear measure dictionary (see Table 262) references the number format array.
@@ -38,7 +38,7 @@ TNo fractional part; truncate to achieve whole units.
 Default value: D.
 
 =head2 D [integer]
-- (Optional; meaningful only for the last dictionary in a number format array) A positive integer that shall specify the precision or denominator of a fractional amount:
+- (Optional; meaningful only for the last dictionary in a number format array) A positive integer that specifies the precision or denominator of a fractional amount:
 When the value of F is D, this entry is the precision of a decimal display; it is a multiple of 10. Low-order zeros may be truncated unless FD is true. Default value: 100 (hundredths, corresponding to two decimal digits).
 When the value of F is F, this entry is the denominator of a fractional display. The fraction may be reduced unless the value of FD is true. Default value: 16.
 

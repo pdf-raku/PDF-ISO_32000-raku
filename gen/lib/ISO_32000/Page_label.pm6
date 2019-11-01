@@ -23,7 +23,7 @@ R Uppercase roman numerals
 r Lowercase roman numerals
 A Uppercase letters (A to Z for the first 26 pages, AA to ZZ for the next 26, and so on)
 a Lowercase letters (a to z for the first 26 pages, aa to zz for the next 26, and so on)
-There is no default numbering style; if no S entry is present, page labels shall consist solely of a label prefix with no numeric portion.
+There is no default numbering style; if no S entry is present, page labels consists solely of a label prefix with no numeric portion.
 NOTE If the P entry (next) specifies the label prefix Contents, each page is simply labeled Contents with no page number. (If the P entry is also missing or empty, the page label is an empty string.)
 
 =head2 P [text string]

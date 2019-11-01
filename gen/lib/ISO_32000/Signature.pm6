@@ -43,17 +43,17 @@ For public-key signatures, Contents is either a DER-encoded PKCS1 binary data ob
 Space for the Contents value must be allocated before the message digest is computed. (See 7.3.4, “String Objects“)
 
 =head2 Cert [array or byte string]
-- (Required when SubFilter is adbe.x509.rsa_sha1) An array of byte strings that shall represent the X.509 certificate chain used when signing and verifying signatures that use public-key cryptography, or a byte string if the chain has only one entry. The signing certificate shall appear first in the array; it is used to verify the signature value in Contents, and the other certificates is used to verify the authenticity of the signing certificate.
+- (Required when SubFilter is adbe.x509.rsa_sha1) An array of byte strings that represents the X.509 certificate chain used when signing and verifying signatures that use public-key cryptography, or a byte string if the chain has only one entry. The signing certificate appears first in the array; it is used to verify the signature value in Contents, and the other certificates is used to verify the authenticity of the signing certificate.
 If SubFilter is adbe.pkcs7.detached or adbe.pkcs7.sha1, this entry is not used, and the certificate chain is put in the PKCS7 envelope in Contents.
 
 =head2 ByteRange [array]
-- (Required for all signatures that are part of a signature field and usage rights signatures referenced from the UR3 entry in the permissions dictionary) An array of pairs of integers (starting byte offset, length in bytes) that shall describe the exact byte range for the digest calculation. Multiple discontiguous byte ranges is used to describe a digest that does not include the signature value (theContents entry) itself.
+- (Required for all signatures that are part of a signature field and usage rights signatures referenced from the UR3 entry in the permissions dictionary) An array of pairs of integers (starting byte offset, length in bytes) that describes the exact byte range for the digest calculation. Multiple discontiguous byte ranges is used to describe a digest that does not include the signature value (theContents entry) itself.
 
 =head2 Reference [array]
 - (Optional; PDF 1.5) An array of signature reference dictionaries (see Table 253).
 
 =head2 Changes [array]
-- (Optional) An array of three integers that shall specify changes to the document that have been made between the previous signature and this signature: in this order, the number of pages altered, the number of fields altered, and the number of fields filled in.
+- (Optional) An array of three integers that specifies changes to the document that have been made between the previous signature and this signature: in this order, the number of pages altered, the number of fields altered, and the number of fields filled in.
 The ordering of signatures is determined by the value of ByteRange. Since each signature results in an incremental save, later signatures have a greater length value.
 
 =head2 Name [text string]

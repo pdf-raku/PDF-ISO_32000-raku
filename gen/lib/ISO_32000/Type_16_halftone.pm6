@@ -33,12 +33,12 @@ role ISO_32000::Type_16_halftone {
 - (Required) The height of the first (or only) rectangle in the threshold array, in device pixels.
 
 =head2 Width2 [integer]
-- (Optional) The width of the optional second rectangle in the threshold array, in device pixels. If this entry is present, the Height2 entry is present as well. If this entry is absent, the Height2 entry shall also be absent, and the threshold array has only one rectangle.
+- (Optional) The width of the optional second rectangle in the threshold array, in device pixels. If this entry is present, the Height2 entry is present as well. If this entry is absent, the Height2 entry is also absent, and the threshold array has only one rectangle.
 
 =head2 Height2 [integer]
 - (Optional) The height of the optional second rectangle in the threshold array, in device pixels.
 
 =head2 TransferFunction [function or name]
-- (Optional) A transfer function, which shall override the current transfer function in the graphics state for the same component. This entry is present if the dictionary is a component of a type 5 halftone (see 10.5.5.6, "Type 5 Halftones") and represents either a nonprimary or nonstandard primary colour component (see 10.4, "Transfer Functions"). The name Identity may be used to specify the identity function.
+- (Optional) A transfer function, which overrides the current transfer function in the graphics state for the same component. This entry is present if the dictionary is a component of a type 5 halftone (see 10.5.5.6, "Type 5 Halftones") and represents either a nonprimary or nonstandard primary colour component (see 10.4, "Transfer Functions"). The name Identity may be used to specify the identity function.
 
 =end pod

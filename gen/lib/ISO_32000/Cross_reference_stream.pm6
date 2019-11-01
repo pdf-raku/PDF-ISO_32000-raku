@@ -30,6 +30,6 @@ Default value: [0 Size].
 
 =head2 W [array]
 - (Required) An array of integers representing the size of the fields in a single cross-reference entry. Table 18 describes the types of entries and their fields. For PDF 1.5, W always contains three integers; the value of each integer is the number of bytes (in the decoded stream) of the corresponding field.
-EXAMPLE [1 2 1] means that the fields are one byte, two bytes, and one byte, respectively. A value of zero for an element in the W array indicates that the corresponding field is not present in the stream, and the default value is used, if there is one. If the first element is zero, the type field is not present, and shall default to type 1. The sum of the items is the total length of each entry; it can be used with the Index array to determine the starting position of each subsection. Different cross-reference streams in a PDF file may use different values for W.
+EXAMPLE [1 2 1] means that the fields are one byte, two bytes, and one byte, respectively. A value of zero for an element in the W array indicates that the corresponding field is not present in the stream, and the default value is used, if there is one. If the first element is zero, the type field is not present, and defaults to type 1. The sum of the items is the total length of each entry; it can be used with the Index array to determine the starting position of each subsection. Different cross-reference streams in a PDF file may use different values for W.
 
 =end pod

@@ -30,7 +30,7 @@
       [
         "DR",
         "dictionary",
-        "(Optional) A resource dictionary (see 7.8.3, “Resource Dictionaries”) containing default resources (such as fonts, patterns, or colour spaces) that is used by form field appearance streams. At a minimum, this dictionary shall contain a Font entry specifying the resource name and font dictionary of the default font for displaying text."
+        "(Optional) A resource dictionary (see 7.8.3, “Resource Dictionaries”) containing default resources (such as fonts, patterns, or colour spaces) that is used by form field appearance streams. At a minimum, this dictionary contains a Font entry specifying the resource name and font dictionary of the default font for displaying text."
       ],
       [
         "DA",

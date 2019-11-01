@@ -24,6 +24,6 @@ If this object is non-viable, the media play parameters dictionary is considered
 - (Optional) A dictionary whose entries (see Table 278) is honoured for the media play parameters to be considered viable.
 
 =head2 BE [dictionary]
-- (Optional) A dictionary whose entries (see Table 278) shall only be honoured in a “best effort” sense.
+- (Optional) A dictionary whose entries (see Table 278) is only be honoured in a “best effort” sense.
 
 =end pod

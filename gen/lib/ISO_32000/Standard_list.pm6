@@ -23,6 +23,6 @@ UpperAlpha Uppercase letters (A, B, C, …)
 LowerAlpha Lowercase letters (a, b, c, …)
 Default value: None.
 The alphabet used for UpperAlpha and LowerAlpha is determined by the prevailing Lang entry (see 14.9.2, “Natural Language Specification”).
-The set of possible values may be expanded as Unicode identifies additional numbering systems. A conforming reader shall ignore any value not listed in this table; it behaves as though the value were None.
+The set of possible values may be expanded as Unicode identifies additional numbering systems. A conforming reader ignores any value not listed in this table; it behaves as though the value were None.
 
 =end pod

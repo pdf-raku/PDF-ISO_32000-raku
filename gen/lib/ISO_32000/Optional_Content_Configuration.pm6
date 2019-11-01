@@ -45,7 +45,7 @@ If the BaseState entry is OFF, this entry is redundant.
 
 =head2 Intent [name or array]
 - (Optional) A single intent name or an array containing any combination of names. it is used to determine which optional content groups’ states to consider and which to ignore in calculating the visibility of content (see 8.11.2.3, "Intent").
-PDF defines two intent names, View and Design. In addition, the name All shall indicate the set of all intents, including those not yet defined. Default value: View. The value is View for the document’s default configuration.
+PDF defines two intent names, View and Design. In addition, the name All indicates the set of all intents, including those not yet defined. Default value: View. The value is View for the document’s default configuration.
 
 =head2 AS [array]
 - (Optional) An array of usage application dictionaries (see Table 103) specifying which usage dictionary categories (see Table 102) is consulted by conforming readers to automatically set the states of optional content groups based on external factors, such as the current system language or viewing magnification, and when they shall beapplied.

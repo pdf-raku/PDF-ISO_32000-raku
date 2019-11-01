@@ -25,7 +25,7 @@
       [
         "BE",
         "dictionary",
-        "(Optional) A dictionary whose entries (see Table 278) shall only be honoured in a “best effort” sense."
+        "(Optional) A dictionary whose entries (see Table 278) is only be honoured in a “best effort” sense."
       ]
     ]
   }

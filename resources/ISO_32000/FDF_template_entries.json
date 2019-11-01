@@ -10,7 +10,7 @@
       [
         "TRef",
         "dictionary",
-        "(Required) A named page reference dictionary (see Table 250) that shall specify the location of the template."
+        "(Required) A named page reference dictionary (see Table 250) that specifies the location of the template."
       ],
       [
         "Fields",
@@ -20,7 +20,7 @@
       [
         "Rename",
         "boolean",
-        "(Optional) A flag that shall specify whether fields imported from the template is renamed in the event of name conflicts with existing fields; see the Note in this sub-clause for further discussion. Default value: true."
+        "(Optional) A flag that specifies whether fields imported from the template is renamed in the event of name conflicts with existing fields; see the Note in this sub-clause for further discussion. Default value: true."
       ]
     ]
   }

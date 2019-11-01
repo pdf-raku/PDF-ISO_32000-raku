@@ -29,6 +29,6 @@ The value of this entry is the same as the value of CIDSystemInfo in the CMap fi
 The value of this entry is the same as the value of WMode in the CMap file.
 
 =head2 UseCMap [name or stream]
-- (Optional) The name of a predefined CMap, or a stream containing a CMap. If this entry is present, the referencing CMap shall specify only the character mappings that differ from the referenced CMap.
+- (Optional) The name of a predefined CMap, or a stream containing a CMap. If this entry is present, the referencing CMap specifies only the character mappings that differ from the referenced CMap.
 
 =end pod

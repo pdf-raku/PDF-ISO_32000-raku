@@ -40,7 +40,7 @@
       [
         "AN",
         "dictionary",
-        "(Optional; PDF 1.7) An animation style dictionary indicating the method that conforming readers should use to drive keyframe animations present in this artwork (see 13.6.3.2, \"3D Animation Style Dictionaries\").\nDefault value: an animation style dictionary whose Subtype entry has a value of None."
+        "(Optional; PDF 1.7) An animation style dictionary indicating the method that conforming readers uses to drive keyframe animations present in this artwork (see 13.6.3.2, \"3D Animation Style Dictionaries\").\nDefault value: an animation style dictionary whose Subtype entry has a value of None."
       ]
     ]
   }

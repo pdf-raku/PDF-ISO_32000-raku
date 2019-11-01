@@ -15,22 +15,22 @@
       [
         "A",
         "boolean",
-        "(Optional) If specified, the value of this entry shall match the user’s preference for whether to hear audio descriptions in order for this object to be viable.\nNOTE 1 Equivalent to SMIL’s systemAudioDesc attribute."
+        "(Optional) If specified, the value of this entry matches the user’s preference for whether to hear audio descriptions in order for this object to be viable.\nNOTE 1 Equivalent to SMIL’s systemAudioDesc attribute."
       ],
       [
         "C",
         "boolean",
-        "(Optional) If specified, the value of this entry shall match the user’s preference for whether to see text captions in order for this object to be viable.\nNOTE 2 Equivalent to SMIL’s systemCaptions attribute."
+        "(Optional) If specified, the value of this entry matches the user’s preference for whether to see text captions in order for this object to be viable.\nNOTE 2 Equivalent to SMIL’s systemCaptions attribute."
       ],
       [
         "O",
         "boolean",
-        "(Optional) If specified, the value of this entry shall match the user’s preference for whether to hear audio overdubs in order for this object to be viable."
+        "(Optional) If specified, the value of this entry matches the user’s preference for whether to hear audio overdubs in order for this object to be viable."
       ],
       [
         "S",
         "boolean",
-        "(Optional) If specified, the value of this entry shall match the user’s preference for whether to see subtitles in order for this object to be viable."
+        "(Optional) If specified, the value of this entry matches the user’s preference for whether to see subtitles in order for this object to be viable."
       ],
       [
         "R",
@@ -60,7 +60,7 @@
       [
         "L",
         "array",
-        "(Optional) An array of language identifiers (see 14.9.2.2, “Language Identifiers”). If this entry is present and non-empty, the language in which the conforming reader is running shall exactly match a language identifier, or consist only of a primary code that matches the primary code of an identifier, in order for this object to be viable.\nNOTE 6 Equivalent to SMIL’s systemLanguage attribute."
+        "(Optional) An array of language identifiers (see 14.9.2.2, “Language Identifiers”). If this entry is present and non-empty, the language in which the conforming reader is running exactly match a language identifier, or consist only of a primary code that matches the primary code of an identifier, in order for this object to be viable.\nNOTE 6 Equivalent to SMIL’s systemLanguage attribute."
       ]
     ]
   }

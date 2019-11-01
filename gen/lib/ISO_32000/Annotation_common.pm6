@@ -43,7 +43,7 @@ This entry is present in screen annotations associated with rendition actions (P
 - (Optional; PDF 1.4) The annotation name, a text string uniquely identifying it among all the annotations on its page.
 
 =head2 M [date or text string]
-- (Optional; PDF 1.1) The date and time when the annotation was most recently modified. The format is a date string as described in 7.9.4, “Dates,” but conforming readers shall accept and display a string in any format.
+- (Optional; PDF 1.1) The date and time when the annotation was most recently modified. The format is a date string as described in 7.9.4, “Dates,” but conforming readers accepts and display a string in any format.
 
 =head2 F [integer]
 - (Optional; PDF 1.1) A set of flags specifying various characteristics of the annotation (see 12.5.3, “Annotation Flags”). Default value: 0.

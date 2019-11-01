@@ -20,7 +20,7 @@
       [
         "Shading",
         "dictionary or stream",
-        "(Required) A shading object (see below) defining the shading pattern’s gradient fill. The contents of the dictionary shall consist of the entries in Table 78 and those in one of Tables 79 to 84 ."
+        "(Required) A shading object (see below) defining the shading pattern’s gradient fill. The contents of the dictionary consists of the entries in Table 78 and those in one of Tables 79 to 84 ."
       ],
       [
         "Matrix",

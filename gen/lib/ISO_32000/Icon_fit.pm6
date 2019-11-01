@@ -28,7 +28,7 @@ P Proportional scaling: Scale the icon to fit the width or height of the annotat
 Default value: P.
 
 =head2 A [array]
-- (Optional) An array of two numbers that is between 0.0 and 1.0 indicating the fraction of leftover space to allocate at the left and bottom of the icon. A value of [ 0.0 0.0 ] shall position the icon at the bottom-left corner of the annotation rectangle. A value of [ 0.5 0.5 ] shall center it within the rectangle. This entry is used only if the icon is scaled proportionally. Default value: [ 0.5 0.5 ].
+- (Optional) An array of two numbers that is between 0.0 and 1.0 indicating the fraction of leftover space to allocate at the left and bottom of the icon. A value of [ 0.0 0.0 ] positions the icon at the bottom-left corner of the annotation rectangle. A value of [ 0.5 0.5 ] centers it within the rectangle. This entry is used only if the icon is scaled proportionally. Default value: [ 0.5 0.5 ].
 
 =head2 FB [boolean]
 - (Optional; PDF 1.5) If true, indicates that the button appearance is scaled to fit fully within the bounds of the annotation without taking into consideration the line width of the border. Default value: false.

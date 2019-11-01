@@ -22,9 +22,9 @@ role ISO_32000::UR_transform {
 - (Optional) The type of PDF object that this dictionary describes; if present, is TransformParams for a transform parameters dictionary.
 
 =head2 Document [array]
-- (Optional) An array of names specifying additional document-wide usage rights for the document. The only defined value is FullSave, which permits a user to save the document along with modified form and/or annotation data. (PDF 1.5) Any usage right that permits the document to be modified implicitly shall enable the FullSave right.
-If the PDF document contains a UR3 dictionary, only rights specified by the Annots entry that permit the document to be modified shall implicitly enable the FullSave right. For all other rights, FullSave is explicitly enabled in order to save the document. (Signature rights shall permit saving as part of the signing process but not otherwise).
-If the P entry in the UR transform parameters dictionary is true (PDF 1.6) and greater conforming readers shall permit only those rights that are enabled by the entries in the dictionary. However, conforming readers shall permit saving the document as long as any rights that permit modifying the document are enabled.
+- (Optional) An array of names specifying additional document-wide usage rights for the document. The only defined value is FullSave, which permits a user to save the document along with modified form and/or annotation data. (PDF 1.5) Any usage right that permits the document to be modified implicitly enables the FullSave right.
+If the PDF document contains a UR3 dictionary, only rights specified by the Annots entry that permit the document to be modified shall implicitly enable the FullSave right. For all other rights, FullSave is explicitly enabled in order to save the document. (Signature rights permits saving as part of the signing process but not otherwise).
+If the P entry in the UR transform parameters dictionary is true (PDF 1.6) and greater conforming readers permits only those rights that are enabled by the entries in the dictionary. However, conforming readers permits saving the document as long as any rights that permit modifying the document are enabled.
 
 =head2 Msg [text string]
 - (Optional) A text string that may be used to specify any arbitrary information, such as the reason for adding usage rights to the document.
@@ -34,7 +34,7 @@ If the P entry in the UR transform parameters dictionary is true (PDF 1.6) and g
 NOTE This value is a name object, not a number. Default value: 2.2.
 
 =head2 Annots [array]
-- (Optional) An array of names specifying additional annotation-related usage rights for the document. Valid names (PDF 1.5) are Create, Delete, Modify, Copy, Import, and Export, which shall permit the user to perform the named operation on annotations.
+- (Optional) An array of names specifying additional annotation-related usage rights for the document. Valid names (PDF 1.5) are Create, Delete, Modify, Copy, Import, and Export, which permits the user to perform the named operation on annotations.
 The following names (PDF 1.6) is permitted only when the signature dictionary is referenced from the UR3 entry of the permissions dictionary (see Table 258):
 OnlinePermits online commenting; that is, the ability to upload or download markup annotations from a server.
 SummaryView Permits a user interface to be shown that summarizes the comments (markup annotations) in a document.
@@ -56,7 +56,7 @@ OnlinePermits (PDF 1.6) the use of forms-specific online mechanisms such as SOAP
 - (Optional) An array of names specifying additional signature-related usage rights for the document. The only defined value is Modify, which permits a user to apply a digital signature to an existing signature form field or clear a signed signature form field.
 
 =head2 EF [array]
-- (Optional; PDF 1.6) An array of names specifying additional usage rights for named embedded files in the document. Valid names is Create, Delete, Modify, and Import, which shall permit the user to perform the named operation on named embedded files.
+- (Optional; PDF 1.6) An array of names specifying additional usage rights for named embedded files in the document. Valid names is Create, Delete, Modify, and Import, which permits the user to perform the named operation on named embedded files.
 
 =head2 P [boolean]
 - (Optional; PDF 1.6) If true, permissions for the document is restricted in all consumer applications to those permissions granted by a conforming reader, while allowing permissions for rights enabled by other entries in this dictionary. Default value: false.

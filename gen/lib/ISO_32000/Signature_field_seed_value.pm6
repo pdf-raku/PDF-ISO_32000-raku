@@ -28,10 +28,10 @@ role ISO_32000::Signature_field_seed_value {
 - (Optional) A set of bit flags specifying the interpretation of specific entries in this dictionary. A value of 1 for the flag indicates that the associated entry is a required constraint. A value of 0 indicates that the associated entry is an optional constraint. Bit positions are 1 (Filter); 2 (SubFilter); 3 (V); 4 (Reasons); 5 (LegalAttestation); 6 (AddRevInfo); and 7 (DigestMethod). Default value: 0.
 
 =head2 Filter [name]
-- (Optional) The signature handler that is used to sign the signature field. Beginning with PDF 1.7, if Filter is specified and the Ff entry indicates this entry is a required constraint, then the signature handler specified by this entry is used when signing; otherwise, signing shall not take place. If Ff indicates that this is an optional constraint, this handler may be used if it is available. If it is not available, a different handler may be used instead.
+- (Optional) The signature handler that is used to sign the signature field. Beginning with PDF 1.7, if Filter is specified and the Ff entry indicates this entry is a required constraint, then the signature handler specified by this entry is used when signing; otherwise, signing does not take place. If Ff indicates that this is an optional constraint, this handler may be used if it is available. If it is not available, a different handler may be used instead.
 
 =head2 SubFilter [array]
-- (Optional) An array of names indicating encodings to use when signing. The first name in the array that matches an encoding supported by the signature handler is the encoding that is actually used for signing. If SubFilter is specified and the Ff entry indicates that this entry is a required constraint, then the first matching encodings is used when signing; otherwise, signing shall not take place. If Ff indicates that this is an optional constraint, then the first matching encoding is used if it is available. If none is available, a different encoding may be used.
+- (Optional) An array of names indicating encodings to use when signing. The first name in the array that matches an encoding supported by the signature handler is the encoding that is actually used for signing. If SubFilter is specified and the Ff entry indicates that this entry is a required constraint, then the first matching encodings is used when signing; otherwise, signing does not take place. If Ff indicates that this is an optional constraint, then the first matching encoding is used if it is available. If none is available, a different encoding may be used.
 
 =head2 DigestMethod [array]
 - (Optional; PDF 1.7) An array of names indicating acceptable digest algorithms to use while signing. The value is one of SHA1, SHA256, SHA384, SHA512 and RIPEMD160. The default value is implementation-specific.
@@ -46,7 +46,7 @@ The Ff entry indicates whether this is treated as a required constraint.
 
 =head2 Reasons [array]
 - (Optional) An array of text strings that specifying possible reasons for signing a document. If specified, the reasons supplied in this entry replace those used by conforming products.
-If the Reasons array is provided and the Ff entry indicates that Reasons is a required constraint, one of the reasons in the array is used for the signature dictionary; otherwise, signing shall not take place. If the Ff entry indicates Reasons is an optional constraint, one of the reasons in the array may be chosen or a custom reason can be provided.
+If the Reasons array is provided and the Ff entry indicates that Reasons is a required constraint, one of the reasons in the array is used for the signature dictionary; otherwise, signing does not take place. If the Ff entry indicates Reasons is an optional constraint, one of the reasons in the array may be chosen or a custom reason can be provided.
 If the Reasons array is omitted or contains a single entry with the value PERIOD (2Eh) and the Ff entry indicates that Reasons is a required constraint, the Reason entry is omitted from the signature dictionary (see Table 252).
 
 =head2 MDP [dictionary]
@@ -63,11 +63,11 @@ NOTE Please see 12.8.3.3, "PKCS7 Signatures as used in ISO 32000" for more detai
 - (Optional; PDF 1.6) An array of text strings specifying possible legal attestations (see 12.8.5, “Legal Content Attestations”). The value of the corresponding flag in the Ff entry indicates whether this is a required constraint.
 
 =head2 AddRevInfo [boolean]
-- (Optional; PDF 1.7) A flag indicating whether revocation checking is carried out. If AddRevInfo is true, the conforming processor shall perform the following additional tasks when signing the signature field:
+- (Optional; PDF 1.7) A flag indicating whether revocation checking is carried out. If AddRevInfo is true, the conforming processor performs the following additional tasks when signing the signature field:
 Perform revocation checking of the certificate (and the corresponding issuing certificates) used to sign.
 Include the revocation information within the signature value.
 Three SubFilter values have been defined for ISO 32000. For those values the AddRevInfo value is true only if SubFilter is adbe.pkcs7.detached or adbe.pkcs7.sha1. If SubFilter is x509.rsa_sha1, this entry is omitted or set to false. Additional SubFilters may be defined that also use AddRevInfo values.
-If AddRevInfo is true and the Ff entry indicates this is a required constraint, then the preceding tasks is performed. If they cannot be performed, then signing shall fail.
+If AddRevInfo is true and the Ff entry indicates this is a required constraint, then the preceding tasks is performed. If they cannot be performed, then signing fails.
 Default value: false
 NOTE 1 Revocation information is carried in the signature data as specified by PCKS7. See 12.8.3.3, "PKCS7 Signatures as used in ISO 32000" .
 NOTE 2 The trust anchors used are determined by the signature handlers for both creation and validation.

@@ -40,7 +40,7 @@
       [
         "M",
         "date or text string",
-        "(Optional; PDF 1.1) The date and time when the annotation was most recently modified. The format is a date string as described in 7.9.4, “Dates,” but conforming readers shall accept and display a string in any format."
+        "(Optional; PDF 1.1) The date and time when the annotation was most recently modified. The format is a date string as described in 7.9.4, “Dates,” but conforming readers accepts and display a string in any format."
       ],
       [
         "F",

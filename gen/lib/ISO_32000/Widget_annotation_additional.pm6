@@ -26,7 +26,7 @@ I (Invert) Invert the contents of the annotation rectangle.
 O (Outline) Invert the annotation’s border.
 P (Push) Display the annotation’s down appearance, if any (see 12.5.5, “Appearance Streams”). If no down appearance is defined, the contents of the annotation rectangle is offset to appear as if it were being pushed below the surface of the page.
 T (Toggle) Same as P (which is preferred).
-A highlighting mode other than P shall override any down appearance defined for the annotation. Default value: I.
+A highlighting mode other than P overrides any down appearance defined for the annotation. Default value: I.
 
 =head2 MK [dictionary]
 - (Optional) An appearance characteristics dictionary (see Table 189) that is used in constructing a dynamic appearance stream specifying the annotation’s visual presentation on the page.
@@ -40,7 +40,7 @@ The name MK for this entry is of historical significance only and has no direct 
 
 =head2 BS [dictionary]
 - (Optional; PDF 1.2) A border style dictionary (see Table 166) specifying the width and dash pattern that is used in drawing the annotation’s border.
-The annotation dictionary’s AP entry, if present, shall take precedence over the L and BS entries; see Table 168 and 12.5.5, “Appearance Streams.”
+The annotation dictionary’s AP entry, if present, takes precedence over the L and BS entries; see Table 168 and 12.5.5, “Appearance Streams.”
 
 =head2 Parent [dictionary]
 - (Required if this widget annotation is one of multiple children in a field; absent otherwise) An indirect reference to the widget annotation’s parent field. A widget annotation may have at most one parent; that is, it can be included in the Kids array of at most one field

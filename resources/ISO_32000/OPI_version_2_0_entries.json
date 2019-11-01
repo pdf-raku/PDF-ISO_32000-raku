@@ -48,7 +48,7 @@
         "CropRect",
         "rectangle",
         "%%ImageCropRect",
-        "(Optional) An array of four numbers of the form\n[ left top right bottom ]\nspecifying the portion of the image to be used.\nThe Size and CropRect entries shall either both be present or both be absent. If present, they shall satisfy the conditions\n0 left right width\nand\n0 top bottom height\nIn this coordinate space, the positive y axis extends vertically downward; hence, the requirement that top bottom."
+        "(Optional) An array of four numbers of the form\n[ left top right bottom ]\nspecifying the portion of the image to be used.\nThe Size and CropRect entries shall either both be present or both be absent. If present, they satisfy the conditions\n0 ≤ left < right ≤ width\nand\n0 ≤ top < bottom ≤ height\nIn this coordinate space, the positive y axis extends vertically downward; hence, the requirement that top < bottom."
       ],
       [
         "Overprint",

@@ -35,8 +35,8 @@ role ISO_32000::Three-D_view {
 
 =head2 MS [name]
 - (Optional) A name specifying how the 3D camera-to-world transformation matrix is determined. The following values are valid:
-M Indicates that the C2W entry shall specify the matrix
-U3D Indicates that the view node selected by the U3DPath entry shall specify the matrix.
+M Indicates that the C2W entry specifies the matrix
+U3D Indicates that the view node selected by the U3DPath entry specifies the matrix.
 If omitted, the view specified in the 3D artwork is used.
 
 =head2 C2W [array]
@@ -44,11 +44,11 @@ If omitted, the view specified in the 3D artwork is used.
 
 =head2 U3DPath [text string or array]
 - (Required if the value of MS is U3D, ignored otherwise) A sequence of one or more text strings used to access a view node within the 3D artwork. The first string in the array is a node ID for the root view node, and each subsequent string is the node ID for a child of the view node specified by the prior string. Each view node specifies a 3D transformation matrix (see 13.6.5, “Coordinate Systems for 3D”); the concatenation of all the matrices forms the camera-to-world matrix.
-Conforming writers should specify only a single text string, not an array, for this entry.
+Conforming writers specifies only a single text string, not an array, for this entry.
 NOTE Do not confuse View Nodes with nodes. A View Node is a parameter in the 3D artwork that specifies a view, while a node is a PDF dictionary that specifies 3D graphic objects or collections thereof.
 
 =head2 CO [number]
-- (Optional; used only if MS is present) A non-negative number indicating a distance in the camera coordinate system along the z axis to the center of orbit for this view; see discussion following this Table. If this entry is not present, the conforming reader shall determine the center of orbit.
+- (Optional; used only if MS is present) A non-negative number indicating a distance in the camera coordinate system along the z axis to the center of orbit for this view; see discussion following this Table. If this entry is not present, the conforming reader determines the center of orbit.
 
 =head2 P [dictionary]
 - (Optional) A projection dictionary (see 13.6.4.2, “Projection Dictionaries”) that defines the projection of coordinates in the 3D artwork (already transformed into camera coordinates) onto the target coordinate system of the annotation.

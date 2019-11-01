@@ -31,6 +31,6 @@ role ISO_32000::Navigation_node {
 - (Optional) The previous navigation node, if any.
 
 =head2 Dur [number]
-- (Optional) The maximum number of seconds before the conforming readershall automatically advance forward to the next navigation node. If this entry is not specified, no automatic advance shall occur.
+- (Optional) The maximum number of seconds before the conforming readershall automatically advance forward to the next navigation node. If this entry is not specified, no automatic advance occurs.
 
 =end pod

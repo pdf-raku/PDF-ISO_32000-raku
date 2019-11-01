@@ -18,10 +18,10 @@ role ISO_32000::User_property {
 
 =head2 V [any]
 - (Required) The value of the user property.
-While the value of this entry is any type of PDF object, conforming writers should use only text string, number, and boolean values. Conforming readers should display text, number and boolean values to users but need not display values of other types; however, they should not treat other values as errors.
+While the value of this entry is any type of PDF object, conforming writers uses only text string, number, and boolean values. Conforming readers should display text, number and boolean values to users but need not display values of other types; however, they does not treat other values as errors.
 
 =head2 F [text string]
-- (Optional) A formatted representation of the value of V, that is used for special formatting; for example “($123.45)” for the number -123.45. If this entry is absent, conforming readers should use a default format.
+- (Optional) A formatted representation of the value of V, that is used for special formatting; for example “($123.45)” for the number -123.45. If this entry is absent, conforming readers uses a default format.
 
 =head2 H [boolean]
 - (Optional) If true, the attribute is hidden; that is, it is not shown in any user interface element that presents the attributes of an object. Default value: false.

@@ -20,7 +20,7 @@
       [
         "BG",
         "array",
-        "(Optional) An array of numbers that is in the range 0.0 to 1.0 specifying the colour of the widget annotation’s background. The number of array elements shall determine the colour space, as described for BC."
+        "(Optional) An array of numbers that is in the range 0.0 to 1.0 specifying the colour of the widget annotation’s background. The number of array elements determines the colour space, as described for BC."
       ],
       [
         "CA",

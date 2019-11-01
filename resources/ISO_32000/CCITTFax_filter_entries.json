@@ -10,22 +10,22 @@
       [
         "K",
         "integer",
-        "A code identifying the encoding scheme used:\n< 0 Pure two-dimensional encoding (Group 4)\n=0Pure one-dimensional encoding (Group 3, 1-D)\n> 0 Mixed one- and two-dimensional encoding (Group 3, 2-D), in which a line encoded one-dimensionally may be followed by at most K − 1 lines encoded two-dimensionally\nThe filter shall distinguish among negative, zero, and positive values of K to determine how to interpret the encoded data; however, it shall not distinguish between different positive Kvalues. Default value: 0."
+        "A code identifying the encoding scheme used:\n< 0 Pure two-dimensional encoding (Group 4)\n=0Pure one-dimensional encoding (Group 3, 1-D)\n> 0 Mixed one- and two-dimensional encoding (Group 3, 2-D), in which a line encoded one-dimensionally may be followed by at most K − 1 lines encoded two-dimensionally\nThe filter distinguish among negative, zero, and positive values of K to determine how to interpret the encoded data; however, it does not distinguish between different positive Kvalues. Default value: 0."
       ],
       [
         "EndOfLine",
         "boolean",
-        "A flag indicating whether end-of-line bit patterns is present in the encoding. The CCITTFaxDecode filter shall always accept end-of-line bit patterns. If EndOfLine is trueend-of-line bit patterns is present.Default value: false."
+        "A flag indicating whether end-of-line bit patterns is present in the encoding. The CCITTFaxDecode filter always accept end-of-line bit patterns. If EndOfLine is trueend-of-line bit patterns is present.Default value: false."
       ],
       [
         "EncodedByteAlign",
         "boolean",
-        "A flag indicating whether the filter shall expect extra 0 bits before each encoded line so that the line begins on a byte boundary. If true, the filter shall skip over encoded bits to begin decoding each line at a byte boundary. If false, the filter shall not expect extra bits in the encoded representation. Default value: false."
+        "A flag indicating whether the filter expects extra 0 bits before each encoded line so that the line begins on a byte boundary. If true, the filter skips over encoded bits to begin decoding each line at a byte boundary. If false, the filter does not expect extra bits in the encoded representation. Default value: false."
       ],
       [
         "Columns",
         "integer",
-        "The width of the image in pixels. If the value is not a multiple of 8, the filter shall adjust the width of the unencoded image to the next multiple of 8 so that each line starts on a byte boundary. Default value: 1728."
+        "The width of the image in pixels. If the value is not a multiple of 8, the filter adjusts the width of the unencoded image to the next multiple of 8 so that each line starts on a byte boundary. Default value: 1728."
       ],
       [
         "Rows",
@@ -35,7 +35,7 @@
       [
         "EndOfBlock",
         "boolean",
-        "A flag indicating whether the filter shall expect the encoded data to be terminated by an end-of-block pattern, overriding the Rows parameter. If false, the filter shall stop when it has decoded the number of lines indicated by Rows or when its data has been exhausted, whichever occurs first. The end-of-block pattern is the CCITT end-of-facsimile-block (EOFB) or return-to-control (RTC) appropriate for the Kparameter. Default value: true."
+        "A flag indicating whether the filter expects the encoded data to be terminated by an end-of-block pattern, overriding the Rows parameter. If false, the filter stops when it has decoded the number of lines indicated by Rows or when its data has been exhausted, whichever occurs first. The end-of-block pattern is the CCITT end-of-facsimile-block (EOFB) or return-to-control (RTC) appropriate for the Kparameter. Default value: true."
       ],
       [
         "BlackIs1",
@@ -45,7 +45,7 @@
       [
         "DamagedRowsBeforeError",
         "integer",
-        "The number of damaged rows of data that is tolerated before an error occurs. This entry applies only if EndOfLine is true and K is non-negative. Tolerating a damaged row shall mean locating its end in the encoded data by searching for an EndOfLine pattern and then substituting decoded data from the previous row if the previous row was not damaged, or a white scan line if the previous row was also damaged. Default value: 0."
+        "The number of damaged rows of data that is tolerated before an error occurs. This entry applies only if EndOfLine is true and K is non-negative. Tolerating a damaged row means locating its end in the encoded data by searching for an EndOfLine pattern and then substituting decoded data from the previous row if the previous row was not damaged, or a white scan line if the previous row was also damaged. Default value: 0."
       ]
     ]
   }

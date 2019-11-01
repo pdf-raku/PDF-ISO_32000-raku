@@ -41,7 +41,7 @@ A negative value for this attribute places the end edge of the BLSE outside that
 If a structure element with an EndIndent attribute is placed adjacent to a floating element with a Placement attribute of End, the actual value used for the element’s ending indent is its own EndIndentattribute or the inline extent of the adjacent floating element, whichever is greater.
 
 =head2 TextIndent [number]
-- (Optional; inheritable; applies only to some BLSEs) The additional distance, measured in default user space units in the inline-progression direction, from the start edge of the BLSE, as specified by StartIndent, to that of the first line of text. A negative value shall indicate a hanging indent. Default value: 0.
+- (Optional; inheritable; applies only to some BLSEs) The additional distance, measured in default user space units in the inline-progression direction, from the start edge of the BLSE, as specified by StartIndent, to that of the first line of text. A negative value indicates a hanging indent. Default value: 0.
 This attribute applies only to paragraphlike BLSEs and those of structure types Lbl (Label), LBody (List body), TH (Table header), and TD (Table data), provided that they contain content other than nested BLSEs.
 
 =head2 TextAlign [name]
@@ -57,11 +57,11 @@ Default value: Start.
 
 =head2 Width [number or name]
 - (Optional; not inheritable; illustrations, tables, table headers, and table cells only; is used for table cells) The width of the element’s content rectangle (see “Content and Allocation Rectangles” in 14.8.5.4, “Layout Attributes”), measured in default user space units in the inline-progression direction. This attribute applies only to elements of structure type Figure, Formula, Form, Table, TH (Table header), or TD (Table data).
-The name Auto in place of a numeric value shall indicate that no specific width constraint is to be imposed; the element’s width is determined by the intrinsic width of its content. Default value: Auto.
+The name Auto in place of a numeric value indicates that no specific width constraint is to be imposed; the element’s width is determined by the intrinsic width of its content. Default value: Auto.
 
 =head2 Height [number or name]
 - (Optional; not inheritable; illustrations, tables, table headers, and table cells only) The height of the element’s content rectangle (see “Content and Allocation Rectangles” in 14.8.5.4, “Layout Attributes”), measured in default user space units in the block-progression direction. This attribute applies only to elements of structure type Figure, Formula, Form, Table, TH (Table header), or TD (Table data).
-The name Auto in place of a numeric value shall indicate that no specific height constraint is to be imposed; the element’s height is determined by the intrinsic height of its content. Default value: Auto.
+The name Auto in place of a numeric value indicates that no specific height constraint is to be imposed; the element’s height is determined by the intrinsic height of its content. Default value: Auto.
 
 =head2 BlockAlign [name]
 - (Optional; inheritable; table cells only) The alignment, in the block-progression direction, of content within the table cell:

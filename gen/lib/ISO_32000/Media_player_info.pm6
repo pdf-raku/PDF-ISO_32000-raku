@@ -17,7 +17,7 @@ role ISO_32000::Media_player_info {
 - (Optional) The type of PDF object that this dictionary describes; if present, is MediaPlayerInfo for a media player info dictionary.
 
 =head2 PID [dictionary]
-- (Required) A software identifier dictionary (see 13.2.7.4, “Software Identifier Dictionary”) that shall specify the player name, versions, and operating systems to which this media player info dictionary applies.
+- (Required) A software identifier dictionary (see 13.2.7.4, “Software Identifier Dictionary”) that specifies the player name, versions, and operating systems to which this media player info dictionary applies.
 
 =head2 MH [dictionary]
 - (Optional) A dictionary containing entries that is honored for this dictionary to be considered viable

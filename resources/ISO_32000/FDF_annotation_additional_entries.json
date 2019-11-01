@@ -10,7 +10,7 @@
       [
         "Page",
         "integer",
-        "(Required for annotations in FDF files) The ordinal page number on which this annotation shall appear, where page 0 is the first page."
+        "(Required for annotations in FDF files) The ordinal page number on which this annotation appears, where page 0 is the first page."
       ]
     ]
   }

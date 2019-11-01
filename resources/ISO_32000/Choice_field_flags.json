@@ -15,12 +15,12 @@
       [
         "19",
         "Edit",
-        "If set, the combo box shall include an editable text box as well as a drop-down list; if clear, it shall include only a drop-down list. This flag is used only if the Combo flag is set."
+        "If set, the combo box includes an editable text box as well as a drop-down list; if clear, it includes only a drop-down list. This flag is used only if the Combo flag is set."
       ],
       [
         "20",
         "Sort",
-        "If set, the field’s option items is sorted alphabetically. This flag is intended for use by writers, not by readers. Conforming readers shall display the options in the order in which they occur in the Opt array (see Table 231)."
+        "If set, the field’s option items is sorted alphabetically. This flag is intended for use by writers, not by readers. Conforming readers displays the options in the order in which they occur in the Opt array (see Table 231)."
       ],
       [
         "22",

@@ -11,6 +11,6 @@ role ISO_32000::FDF_annotation_additional {
 =head1 Methods (Entries)
 
 =head2 Page [integer]
-- (Required for annotations in FDF files) The ordinal page number on which this annotation shall appear, where page 0 is the first page.
+- (Required for annotations in FDF files) The ordinal page number on which this annotation appears, where page 0 is the first page.
 
 =end pod

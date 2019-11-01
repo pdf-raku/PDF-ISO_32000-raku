@@ -14,7 +14,7 @@ role ISO_32000::Windows_launch_parameters {
 =head1 Methods (Entries)
 
 =head2 F [byte string]
-- (Required) The file name of the application that is launched or the document that is opened or printed, in standard Windows pathname format. If the name string includes a backslash character (\), the backslash shall itself be preceded by a backslash.
+- (Required) The file name of the application that is launched or the document that is opened or printed, in standard Windows pathname format. If the name string includes a backslash character (\), the backslash is itself be preceded by a backslash.
 This value is a simple string; it is not a file specification.
 
 =head2 D [byte string]

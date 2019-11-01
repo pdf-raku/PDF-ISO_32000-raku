@@ -19,6 +19,6 @@ role ISO_32000::Developer_extensions {
 - (Required) The name of the PDF version to which this extension applies. The name is consistent with the syntax used for the Version entry of the catalog dictionary (see 7.7.2, “Document Catalog”).
 
 =head2 ExtensionLevel [integer]
-- (Required) An integer defined by the developer to denote the extension being used. If the developer introduces more than one extension to a given BaseVersion the extension level numbers assigned by that developer shall increase over time.
+- (Required) An integer defined by the developer to denote the extension being used. If the developer introduces more than one extension to a given BaseVersion the extension level numbers assigned by that developer increases over time.
 
 =end pod

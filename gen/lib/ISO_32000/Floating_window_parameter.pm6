@@ -22,7 +22,7 @@ role ISO_32000::Floating_window_parameter {
 - (Optional) The type of PDF object that this dictionary describes; if present, is FWParams for a floating window parameters dictionary.
 
 =head2 D [array]
-- (Required) An array containing two non-negative integers that shall represent the floating window’s width and height, in pixels, respectively. These values shall correspond to the dimensions of the rectangle in which the media shall play, not including such items as title bar and resizing handles.
+- (Required) An array containing two non-negative integers that represents the floating window’s width and height, in pixels, respectively. These values corresponds to the dimensions of the rectangle in which the media plays, not including such items as title bar and resizing handles.
 
 =head2 RT [integer]
 - (Optional) The window relative to which the floating window is positioned:
@@ -46,7 +46,7 @@ Default value: 0.
 Default value: 4.
 
 =head2 O [integer]
-- (Optional) Specifies what shall occur if the floating window is positioned totally or partially offscreen (that is, not visible on any physical monitor):
+- (Optional) Specifies what occurs if the floating window is positioned totally or partially offscreen (that is, not visible on any physical monitor):
 0 Take no special action
 1 Move and/or resize the window so that it is on-screen
 2 Consider the object to be non-viable
@@ -56,7 +56,7 @@ Default value: 1
 - (Optional) If true, the floating window has a title bar. Default value: true.
 
 =head2 UC [boolean]
-- (Optional; meaningful only if T is true) If true, the floating window shall include user interface elements that allow a user to close a floating window.
+- (Optional; meaningful only if T is true) If true, the floating window includes user interface elements that allow a user to close a floating window.
 Default value: true
 
 =head2 R [integer]

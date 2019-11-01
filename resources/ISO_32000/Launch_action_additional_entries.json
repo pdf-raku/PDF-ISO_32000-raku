@@ -15,7 +15,7 @@
       [
         "F",
         "file specification",
-        "(Required if none of the entries Win, Mac, or Unix is present) The application that is launched or the document that shall beopened or printed. If this entry is absent and the conforming readerdoes not understand any of the alternative entries, it shall do nothing."
+        "(Required if none of the entries Win, Mac, or Unix is present) The application that is launched or the document that shall beopened or printed. If this entry is absent and the conforming readerdoes not understand any of the alternative entries, it does nothing."
       ],
       [
         "Win",

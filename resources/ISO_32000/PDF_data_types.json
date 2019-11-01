@@ -24,7 +24,7 @@
       ],
       [
         "byte string",
-        "A series of bytes that shall represent characters or other binary data. If such a type represents characters, the encoding is determined by the context.",
+        "A series of bytes that represents characters or other binary data. If such a type represents characters, the encoding is determined by the context.",
         "7.9.2"
       ],
       [

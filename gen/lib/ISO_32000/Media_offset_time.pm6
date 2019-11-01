@@ -11,6 +11,6 @@ role ISO_32000::Media_offset_time {
 =head1 Methods (Entries)
 
 =head2 T [dictionary]
-- (Required) A timespan dictionary (see Table 289) that shall specify a temporal offset into a media object. Negative timespans are not allowed in this context. The media offset time dictionary is non-viable if its timespan dictionary is non-viable.
+- (Required) A timespan dictionary (see Table 289) that specifies a temporal offset into a media object. Negative timespans are not allowed in this context. The media offset time dictionary is non-viable if its timespan dictionary is non-viable.
 
 =end pod

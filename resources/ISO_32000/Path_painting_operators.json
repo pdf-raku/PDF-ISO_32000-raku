@@ -25,7 +25,7 @@
       [
         "—",
         "F",
-        "Equivalent to f; included only for compatibility. Although PDF readerapplications is able to accept this operator, PDF writer applications should use f instead."
+        "Equivalent to f; included only for compatibility. Although PDF readerapplications is able to accept this operator, PDF writer applications uses f instead."
       ],
       [
         "—",

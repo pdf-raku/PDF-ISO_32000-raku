@@ -21,9 +21,9 @@ role ISO_32000::Slideshow {
 
 =head2 Resources [name tree]
 - (Required; PDF 1.4) A name tree that maps name strings to objects referenced by the alternate presentation.
-NOTE Even though PDF treats the strings in the name tree as strings without a specified encoding, the slideshow shall interpret them as UTF-8 encoded Unicode.
+NOTE Even though PDF treats the strings in the name tree as strings without a specified encoding, the slideshow interprets them as UTF-8 encoded Unicode.
 
 =head2 StartResource [byte string]
-- (Required; PDF 1.4) A byte string that shall match one of the strings in the Resources entry. It shall define the root object for the slideshow presentation.
+- (Required; PDF 1.4) A byte string that matches one of the strings in the Resources entry. It defines the root object for the slideshow presentation.
 
 =end pod

@@ -24,18 +24,18 @@ role ISO_32000::Rendition_criteria {
 - (Optional) The type of PDF object that this dictionary describes; if present, is MediaCriteria for a media criteria dictionary.
 
 =head2 A [boolean]
-- (Optional) If specified, the value of this entry shall match the user’s preference for whether to hear audio descriptions in order for this object to be viable.
+- (Optional) If specified, the value of this entry matches the user’s preference for whether to hear audio descriptions in order for this object to be viable.
 NOTE 1 Equivalent to SMIL’s systemAudioDesc attribute.
 
 =head2 C [boolean]
-- (Optional) If specified, the value of this entry shall match the user’s preference for whether to see text captions in order for this object to be viable.
+- (Optional) If specified, the value of this entry matches the user’s preference for whether to see text captions in order for this object to be viable.
 NOTE 2 Equivalent to SMIL’s systemCaptions attribute.
 
 =head2 O [boolean]
-- (Optional) If specified, the value of this entry shall match the user’s preference for whether to hear audio overdubs in order for this object to be viable.
+- (Optional) If specified, the value of this entry matches the user’s preference for whether to hear audio overdubs in order for this object to be viable.
 
 =head2 S [boolean]
-- (Optional) If specified, the value of this entry shall match the user’s preference for whether to see subtitles in order for this object to be viable.
+- (Optional) If specified, the value of this entry matches the user’s preference for whether to see subtitles in order for this object to be viable.
 
 =head2 R [integer]
 - (Optional) If specified, the system’s bandwidth (in bits per second) is greater than or equal to the value of this entry in order for this object to be viable.
@@ -56,7 +56,7 @@ NOTE 5 Equivalent to SMIL’s systemScreenSize attribute.
 - (Optional) An array containing one or two name objects specifying a minimum and optionally a maximum PDF language version, in the same format as the Version entry in the document catalog (see Table 28). If this entry is present and non-empty, the version of multimedia constructs fully supported by the conforming reader is within the specified range in order for this object to be viable.
 
 =head2 L [array]
-- (Optional) An array of language identifiers (see 14.9.2.2, “Language Identifiers”). If this entry is present and non-empty, the language in which the conforming reader is running shall exactly match a language identifier, or consist only of a primary code that matches the primary code of an identifier, in order for this object to be viable.
+- (Optional) An array of language identifiers (see 14.9.2.2, “Language Identifiers”). If this entry is present and non-empty, the language in which the conforming reader is running exactly match a language identifier, or consist only of a primary code that matches the primary code of an identifier, in order for this object to be viable.
 NOTE 6 Equivalent to SMIL’s systemLanguage attribute.
 
 =end pod

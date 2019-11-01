@@ -35,7 +35,7 @@ Fly(PDF 1.5) Changes are flown out or in (as specified by M), in the direction s
 - (Optional) The duration of the transition effect, in seconds. Default value: 1.
 
 =head2 Dm [name]
-- (Optional; Split and Blinds transition styles only) The dimension in which the specified transition effect shall occur:
+- (Optional; Split and Blinds transition styles only) The dimension in which the specified transition effect occurs:
 HHorizontal
 VVertical
 Default value: H.
@@ -58,7 +58,7 @@ If the value is a name, it is None, which is relevant only for the Fly transitio
 Default value: 0.
 
 =head2 SS [number]
-- (Optional; PDF 1.5; Fly transition style only) The starting or ending scale at which the changes is drawn. If M specifies an inward transition, the scale of the changes drawn shall progress from SS to 1.0 over the course of the transition. If M specifies an outward transition, the scale of the changes drawn shall progress from 1.0 to SS over the course of the transition
+- (Optional; PDF 1.5; Fly transition style only) The starting or ending scale at which the changes is drawn. If M specifies an inward transition, the scale of the changes drawn progresses from SS to 1.0 over the course of the transition. If M specifies an outward transition, the scale of the changes drawn progresses from 1.0 to SS over the course of the transition
 Default: 1.0.
 
 =head2 B [boolean]

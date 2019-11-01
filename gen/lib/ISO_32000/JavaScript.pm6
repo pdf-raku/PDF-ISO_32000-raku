@@ -24,7 +24,7 @@ role ISO_32000::JavaScript {
 Verification of usage rights requires the entire file to be present, in which case execution of this script is deferred until that requirement is met.
 
 =head2 Doc [array]
-- (Optional) An array defining additional JavaScript scripts that is added to those defined in the JavaScript entry of the document’s name dictionary (see 7.7.4, “Name Dictionary”). The array shall contain an even number of elements, organized in pairs. The first element of each pair is a name and the second is a text string or text stream defining the script corresponding to that name. Each of the defined scripts is added to those already defined in the name dictionary and shall then be executed before the script defined in the Before entry is executed.
+- (Optional) An array defining additional JavaScript scripts that is added to those defined in the JavaScript entry of the document’s name dictionary (see 7.7.4, “Name Dictionary”). The array contains an even number of elements, organized in pairs. The first element of each pair is a name and the second is a text string or text stream defining the script corresponding to that name. Each of the defined scripts is added to those already defined in the name dictionary and is 0 executed before the script defined in the Before entry is executed.
 NOTE As described in 12.6.4.16, “JavaScript Actions,” these scripts are used to define JavaScript functions for use by other scripts in the document.
 
 =end pod

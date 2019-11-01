@@ -23,6 +23,6 @@ role ISO_32000::Media_clip_section {
 - (Optional) A dictionary whose entries (see Table 278) is honoured for the media clip section to be considered viable.
 
 =head2 BE [dictionary]
-- (Optional) A dictionary whose entries (see Table 278) shall only be honoured in a “best effort” sense.
+- (Optional) A dictionary whose entries (see Table 278) is only be honoured in a “best effort” sense.
 
 =end pod

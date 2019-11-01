@@ -95,7 +95,7 @@ This setting has no effect on operating systems that do not provide the ability 
 Default value: as defined by the conforming reader
 
 =head2 PrintPageRange [array]
-- (Optional; PDF 1.7) The page numbers used to initialize the print dialog box when the file is printed. The array shall contain an even number of integers to be interpreted in pairs, with each pair specifying the first and last pages in a sub-range of pages to be printed.The first page of the PDF file is denoted by 1. Default value: as defined by the conforming reader
+- (Optional; PDF 1.7) The page numbers used to initialize the print dialog box when the file is printed. The array contains an even number of integers to be interpreted in pairs, with each pair specifying the first and last pages in a sub-range of pages to be printed.The first page of the PDF file is denoted by 1. Default value: as defined by the conforming reader
 
 =head2 NumCopies [integer]
 - (Optional; PDF 1.7) The number of copies that is printed when the print dialog is opened for this file. Values outside this range is ignored.

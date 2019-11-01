@@ -25,12 +25,12 @@
       [
         "4",
         "GetMethod",
-        "If set, field names and values is submitted using an HTTP GET request. If clear, they is submitted using a POST request. This flag is meaningful only when the ExportFormat flag is set; if ExportFormat is clear, this flag shall also be clear."
+        "If set, field names and values is submitted using an HTTP GET request. If clear, they is submitted using a POST request. This flag is meaningful only when the ExportFormat flag is set; if ExportFormat is clear, this flag is 0 clear."
       ],
       [
         "5",
         "SubmitCoordinates",
-        "If set, the coordinates of the mouse click that caused the submit-form action is transmitted as part of the form data. The coordinate values are relative to the upper-left corner of the field’s widget annotation rectangle. They is represented in the data in the format\nname . x = xval & name . y = yval\nwhere name is the field’s mapping name (TM in the field dictionary) if present; otherwise, name is the field name. If the value of the TM entry is a single ASCII SPACE (20h) character, both the name and the ASCII PERIOD (2Eh)following it is suppressed, resulting in the format\nx = xval & y = yval\nThis flag is used only when the ExportFormat flag is set. If ExportFormat is clear, this flag shall also be clear."
+        "If set, the coordinates of the mouse click that caused the submit-form action is transmitted as part of the form data. The coordinate values are relative to the upper-left corner of the field’s widget annotation rectangle. They is represented in the data in the format\nname . x = xval & name . y = yval\nwhere name is the field’s mapping name (TM in the field dictionary) if present; otherwise, name is the field name. If the value of the TM entry is a single ASCII SPACE (20h) character, both the name and the ASCII PERIOD (2Eh)following it is suppressed, resulting in the format\nx = xval & y = yval\nThis flag is used only when the ExportFormat flag is set. If ExportFormat is clear, this flag is 0 clear."
       ],
       [
         "6",
@@ -40,12 +40,12 @@
       [
         "7",
         "IncludeAppendSaves",
-        "(PDF 1.4) is used only when the form is being submitted in Forms Data Format (that is, when both the XFDF and ExportFormat flags are clear). If set, the submitted FDF file shall include the contents of all incremental updates to the underlying PDF document, as contained in the Differences entry in the FDF dictionary (see Table 243). If clear, the incremental updates is not included."
+        "(PDF 1.4) is used only when the form is being submitted in Forms Data Format (that is, when both the XFDF and ExportFormat flags are clear). If set, the submitted FDF file includes the contents of all incremental updates to the underlying PDF document, as contained in the Differences entry in the FDF dictionary (see Table 243). If clear, the incremental updates is not included."
       ],
       [
         "8",
         "IncludeAnnotations",
-        "(PDF 1.4) is used only when the form is being submitted in Forms Data Format (that is, when both the XFDF and ExportFormat flags are clear). If set, the submitted FDF file shall include includes all markup annotations in the underlying PDF document (see 12.5.6.2, “Markup Annotations”). If clear, markup annotations is not included."
+        "(PDF 1.4) is used only when the form is being submitted in Forms Data Format (that is, when both the XFDF and ExportFormat flags are clear). If set, the submitted FDF file includes includes all markup annotations in the underlying PDF document (see 12.5.6.2, “Markup Annotations”). If clear, markup annotations is not included."
       ],
       [
         "9",
@@ -60,12 +60,12 @@
       [
         "11",
         "ExclNonUserAnnots",
-        "(PDF 1.4) is used only when the form is being submitted in Forms Data Format (that is, when both the XFDF and ExportFormat flags are clear) and the IncludeAnnotations flag is set. If set, it shall include only those markup annotations whose T entry (see Table 170) matches the name of the current user, as determined by the remote server to which the form is being submitted.\nNOTE 2 The T entry for markup annotations specifies the text label that is displayed in the title bar of the annotation’s pop-up window and is assumed to represent the name of the user authoring the annotation.\nNOTE 3 This allows multiple users to collaborate in annotating a single remote PDF document without affecting one another’s annotations."
+        "(PDF 1.4) is used only when the form is being submitted in Forms Data Format (that is, when both the XFDF and ExportFormat flags are clear) and the IncludeAnnotations flag is set. If set, it includes only those markup annotations whose T entry (see Table 170) matches the name of the current user, as determined by the remote server to which the form is being submitted.\nNOTE 2 The T entry for markup annotations specifies the text label that is displayed in the title bar of the annotation’s pop-up window and is assumed to represent the name of the user authoring the annotation.\nNOTE 3 This allows multiple users to collaborate in annotating a single remote PDF document without affecting one another’s annotations."
       ],
       [
         "12",
         "ExclFKey",
-        "(PDF 1.4) is used only when the form is being submitted in Forms Data Format (that is, when both the XFDF and ExportFormat flags are clear). If set, the submitted FDF shall exclude the F entry."
+        "(PDF 1.4) is used only when the form is being submitted in Forms Data Format (that is, when both the XFDF and ExportFormat flags are clear). If set, the submitted FDF excludes the F entry."
       ],
       [
         "14",

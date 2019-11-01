@@ -20,7 +20,7 @@ role ISO_32000::Media_clip_data {
 - (Required) A full file specification or form XObject that specifies the actual media data.
 
 =head2 CT [ASCII string]
-- (Optional; not allowed for form XObjects) An ASCII string identifying the type of data in D. The string should conform to the content type specification described in Internet RFC 2045, Multipurpose Internet Mail Extensions (MIME) Part One: Format of Internet Message Bodies (see the Bibliography).
+- (Optional; not allowed for form XObjects) An ASCII string identifying the type of data in D. The string conforms to the content type specification described in Internet RFC 2045, Multipurpose Internet Mail Extensions (MIME) Part One: Format of Internet Message Bodies (see the Bibliography).
 
 =head2 P [dictionary]
 - (Optional) A media permissions dictionary (see Table 275) containing permissions that control the use of the media data. Default value: a media permissions dictionary containing default values.

@@ -10,7 +10,7 @@
       [
         "CreatorInfo",
         "dictionary",
-        "(Optional) A dictionary used by the creating application to store application-specific data associated with this optional content group. It shall contain two required entries:\nCreator A text string specifying the application that created the group.\nSubtype A name defining the type of content controlled by the group. Suggested values include but is not limited to Artwork, for graphic-design or publishing applications, and Technical, for technical designs such as building plans or schematics.\nAdditional entries may be included to present information relevant to the creating application or related applications.\nGroups whose Intent entry contains Design typically include a CreatorInfo entry."
+        "(Optional) A dictionary used by the creating application to store application-specific data associated with this optional content group. It contains two required entries:\nCreator A text string specifying the application that created the group.\nSubtype A name defining the type of content controlled by the group. Suggested values include but is not limited to Artwork, for graphic-design or publishing applications, and Technical, for technical designs such as building plans or schematics.\nAdditional entries may be included to present information relevant to the creating application or related applications.\nGroups whose Intent entry contains Design typically include a CreatorInfo entry."
       ],
       [
         "Language",
@@ -20,12 +20,12 @@
       [
         "Export",
         "dictionary",
-        "(Optional) A dictionary containing one entry, ExportState, a name whose value is either ON or OFF. This value shall indicate the recommended state for content in this group when the document (or part of it) is saved by a conforming reader to a format that does not support optional content (for example, a raster image format)."
+        "(Optional) A dictionary containing one entry, ExportState, a name whose value is either ON or OFF. This value indicates the recommended state for content in this group when the document (or part of it) is saved by a conforming reader to a format that does not support optional content (for example, a raster image format)."
       ],
       [
         "Zoom",
         "dictionary",
-        "(Optional) A dictionary specifying a range of magnifications at which the content in this optional content group is best viewed. It shall contain one or both of the following entries:\nmin The minimum recommended magnification factor at which the group is ON. Default value: 0.\nmax The magnification factor below which the group is ON. Default value: infinity."
+        "(Optional) A dictionary specifying a range of magnifications at which the content in this optional content group is best viewed. It contains one or both of the following entries:\nmin The minimum recommended magnification factor at which the group is ON. Default value: 0.\nmax The magnification factor below which the group is ON. Default value: infinity."
       ],
       [
         "Print",
@@ -45,7 +45,7 @@
       [
         "PageElement",
         "dictionary",
-        "(Optional) A dictionary declaring that the group contains a pagination artifact. It shall contain one entry, Subtype, whose value is a name that is either HF (header/footer), FG (foreground image or graphic), BG(background image or graphic), or L (logo)."
+        "(Optional) A dictionary declaring that the group contains a pagination artifact. It contains one entry, Subtype, whose value is a name that is either HF (header/footer), FG (foreground image or graphic), BG(background image or graphic), or L (logo)."
       ]
     ]
   }

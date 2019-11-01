@@ -13,7 +13,7 @@ role ISO_32000::PrintField {
 =head1 Methods (Entries)
 
 =head2 Role [name]
-- (Optional; not inheritable) The type of form field represented by this graphic. The value of Role is one of the following, and a conforming reader shall interpret its meaning as defined herein.
+- (Optional; not inheritable) The type of form field represented by this graphic. The value of Role is one of the following, and a conforming reader interprets its meaning as defined herein.
 rbRadio button
 cbCheck box
 pbPush button

@@ -30,37 +30,37 @@
       [
         "MediaBox",
         "rectangle",
-        "(Required; inheritable) A rectangle (see 7.9.5, \"Rectangles\"), expressed in default user space units, that shall define the boundaries of the physical medium on which the page is displayed or printed (see 14.11.2, \"Page Boundaries\")."
+        "(Required; inheritable) A rectangle (see 7.9.5, \"Rectangles\"), expressed in default user space units, that defines the boundaries of the physical medium on which the page is displayed or printed (see 14.11.2, \"Page Boundaries\")."
       ],
       [
         "CropBox",
         "rectangle",
-        "(Optional; inheritable) A rectangle, expressed in default user space units, that shall define the visible region of default user space. When the page is displayed or printed, its contents is clipped (cropped) to this rectangle and then is imposed on the output medium in some implementation-defined manner (see 14.11.2, \"Page Boundaries\"). Default value: the value of MediaBox."
+        "(Optional; inheritable) A rectangle, expressed in default user space units, that defines the visible region of default user space. When the page is displayed or printed, its contents is clipped (cropped) to this rectangle and then is imposed on the output medium in some implementation-defined manner (see 14.11.2, \"Page Boundaries\"). Default value: the value of MediaBox."
       ],
       [
         "BleedBox",
         "rectangle",
-        "(Optional; PDF 1.3) A rectangle, expressed in default user space units, that shall define the region to which the contents of the page is clipped when output in a production environment (see 14.11.2, \"Page Boundaries\"). Default value: the value of CropBox."
+        "(Optional; PDF 1.3) A rectangle, expressed in default user space units, that defines the region to which the contents of the page is clipped when output in a production environment (see 14.11.2, \"Page Boundaries\"). Default value: the value of CropBox."
       ],
       [
         "TrimBox",
         "rectangle",
-        "(Optional; PDF 1.3) A rectangle, expressed in default user space units, that shall define the intended dimensions of the finished page after trimming (see 14.11.2, \"Page Boundaries\"). Default value: the value of CropBox."
+        "(Optional; PDF 1.3) A rectangle, expressed in default user space units, that defines the intended dimensions of the finished page after trimming (see 14.11.2, \"Page Boundaries\"). Default value: the value of CropBox."
       ],
       [
         "ArtBox",
         "rectangle",
-        "(Optional; PDF 1.3) A rectangle, expressed in default user space units, that shall define the extent of the page’s meaningful content (including potential white space) as intended by the page’s creator (see 14.11.2, \"Page Boundaries\"). Default value: the value of CropBox."
+        "(Optional; PDF 1.3) A rectangle, expressed in default user space units, that defines the extent of the page’s meaningful content (including potential white space) as intended by the page’s creator (see 14.11.2, \"Page Boundaries\"). Default value: the value of CropBox."
       ],
       [
         "BoxColorInfo",
         "dictionary",
-        "(Optional; PDF 1.4) A box colour information dictionary that shall specify the colours and other visual characteristics that is used in displaying guidelines on the screen for the various page boundaries (see 14.11.2.2, \"Display of Page Boundaries\"). If this entry is absent, the application shall use its own current default settings."
+        "(Optional; PDF 1.4) A box colour information dictionary that specifies the colours and other visual characteristics that is used in displaying guidelines on the screen for the various page boundaries (see 14.11.2.2, \"Display of Page Boundaries\"). If this entry is absent, the application uses its own current default settings."
       ],
       [
         "Contents",
         "stream or array",
-        "(Optional) A content stream (see 7.8.2, \"Content Streams\") that shall describe the contents of this page. If this entry is absent, the page is empty.\nThe value is either a single stream or an array of streams. If the value is an array, the effect is as if all of the streams in the array were concatenated, in order, to form a single stream. Conforming writers can create image objects and other resources as they occur, even though they interrupt the content stream. The division between streams may occur only at the boundaries between lexical tokens (see 7.2, \"Lexical Conventions\") but is unrelated to the page’s logical content or organization. Applications that consume or produce PDF files need not preserve the existing structure of the Contents array. Conforming writers shall not create a Contents array containing no elements."
+        "(Optional) A content stream (see 7.8.2, \"Content Streams\") that describes the contents of this page. If this entry is absent, the page is empty.\nThe value is either a single stream or an array of streams. If the value is an array, the effect is as if all of the streams in the array were concatenated, in order, to form a single stream. Conforming writers can create image objects and other resources as they occur, even though they interrupt the content stream. The division between streams may occur only at the boundaries between lexical tokens (see 7.2, \"Lexical Conventions\") but is unrelated to the page’s logical content or organization. Applications that consume or produce PDF files need not preserve the existing structure of the Contents array. Conforming writers does not create a Contents array containing no elements."
       ],
       [
         "Rotate",
@@ -70,22 +70,22 @@
       [
         "Group",
         "dictionary",
-        "(Optional; PDF 1.4) A group attributes dictionary that shall specify the attributes of the page’s page group for use in the transparent imaging model (see 11.4.7, \"Page Group\" and 11.6.6, \"Transparency Group XObjects\")."
+        "(Optional; PDF 1.4) A group attributes dictionary that specifies the attributes of the page’s page group for use in the transparent imaging model (see 11.4.7, \"Page Group\" and 11.6.6, \"Transparency Group XObjects\")."
       ],
       [
         "Thumb",
         "stream",
-        "(Optional) A stream object that shall define the page’s thumbnail image (see 12.3.4, \"Thumbnail Images\")."
+        "(Optional) A stream object that defines the page’s thumbnail image (see 12.3.4, \"Thumbnail Images\")."
       ],
       [
         "B",
         "array",
-        "(Optional; PDF 1.1; recommended if the page contains article beads) An array that shall contain indirect references to all article beads appearing on the page (see 12.4.3, \"Articles\"). The beads is listed in the array in natural reading order.\nNOTE The information in this entry can be created or recreated from the information obtained from the Threads key in the Catalog."
+        "(Optional; PDF 1.1; recommended if the page contains article beads) An array that contains indirect references to all article beads appearing on the page (see 12.4.3, \"Articles\"). The beads is listed in the array in natural reading order.\nNOTE The information in this entry can be created or recreated from the information obtained from the Threads key in the Catalog."
       ],
       [
         "Dur",
         "number",
-        "(Optional; PDF 1.1) The page’s display duration (also called its advance timing): the maximum length of time, in seconds, that the page is displayed during presentations before the viewer application shall automatically advance to the next page (see 12.4.4, \"Presentations\"). By default, the viewer shall not advance automatically."
+        "(Optional; PDF 1.1) The page’s display duration (also called its advance timing): the maximum length of time, in seconds, that the page is displayed during presentations before the viewer application shall automatically advance to the next page (see 12.4.4, \"Presentations\"). By default, the viewer does not advance automatically."
       ],
       [
         "Trans",
@@ -95,17 +95,17 @@
       [
         "Annots",
         "array",
-        "(Optional) An array of annotation dictionaries that shall contain indirect references to all annotations associated with the page (see 12.5, \"Annotations\")."
+        "(Optional) An array of annotation dictionaries that contains indirect references to all annotations associated with the page (see 12.5, \"Annotations\")."
       ],
       [
         "AA",
         "dictionary",
-        "(Optional; PDF 1.2) An additional-actions dictionary that shall define actions to be performed when the page is opened or closed (see 12.6.3, \"Trigger Events\").\n(PDF 1.3) additional-actions dictionaries are not inheritable."
+        "(Optional; PDF 1.2) An additional-actions dictionary that defines actions to be performed when the page is opened or closed (see 12.6.3, \"Trigger Events\").\n(PDF 1.3) additional-actions dictionaries are not inheritable."
       ],
       [
         "Metadata",
         "stream",
-        "(Optional; PDF 1.4) A metadata stream that shall contain metadata for the page (see 14.3.2, \"Metadata Streams\")."
+        "(Optional; PDF 1.4) A metadata stream that contains metadata for the page (see 14.3.2, \"Metadata Streams\")."
       ],
       [
         "PieceInfo",
@@ -130,7 +130,7 @@
       [
         "SeparationInfo",
         "dictionary",
-        "(Optional; PDF 1.3) A separation dictionary that shall contain information needed to generate colour separations for the page (see 14.11.4, \"Separation Dictionaries\")."
+        "(Optional; PDF 1.3) A separation dictionary that contains information needed to generate colour separations for the page (see 14.11.4, \"Separation Dictionaries\")."
       ],
       [
         "Tabs",
@@ -145,7 +145,7 @@
       [
         "PresSteps",
         "dictionary",
-        "(Optional; PDF 1.5) A navigation node dictionary that shall represent the first node on the page (see 12.4.4.2, \"Sub-page Navigation\")."
+        "(Optional; PDF 1.5) A navigation node dictionary that represents the first node on the page (see 12.4.4.2, \"Sub-page Navigation\")."
       ],
       [
         "UserUnit",
@@ -155,7 +155,7 @@
       [
         "VP",
         "dictionary",
-        "(Optional; PDF 1.6) An array of viewport dictionaries (see Table 260) that shall specify rectangular regions of the page."
+        "(Optional; PDF 1.6) An array of viewport dictionaries (see Table 260) that specifies rectangular regions of the page."
       ]
     ]
   }

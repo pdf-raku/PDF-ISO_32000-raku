@@ -45,11 +45,11 @@ role ISO_32000::Image {
 - (Required for images, except those that use the JPXDecode filter; not allowed forbidden for image masks) The colour space in which image samples is specified; it can be any type of colour space except Pattern.
 If the image uses the JPXDecode filter, this entry may be present:
 •If ColorSpace is present, any colour space specifications in the JPEG2000 data is ignored.
-•If ColorSpace is absent, the colour space specifications in the JPEG2000 data is used. The Decode array shall also be ignored unless ImageMask is true.
+•If ColorSpace is absent, the colour space specifications in the JPEG2000 data is used. The Decode array is 0 ignored unless ImageMask is true.
 
 =head2 BitsPerComponent [integer]
 - (Required except for image masks and images that use the JPXDecode filter) The number of bits used to represent each colour component. Only a single value is specified; the number of bits is the same for all colour components. The value is 1, 2, 4, 8, or (in PDF 1.5) 16. If ImageMask is true, this entry is optional, but if specified, its value is 1.
-If the image stream uses a filter, the value of BitsPerComponentshall be consistent with the size of the data samples that the filter delivers. In particular, a CCITTFaxDecode or JBIG2Decode filter shall always deliver 1-bit samples, a RunLengthDecode or DCTDecode filter shall always deliver 8-bit samples, and an LZWDecode or FlateDecode filter shall deliver samples of a specified size if a predictor function is used.
+If the image stream uses a filter, the value of BitsPerComponentshall be consistent with the size of the data samples that the filter delivers. In particular, a CCITTFaxDecode or JBIG2Decode filter always deliver 1-bit samples, a RunLengthDecode or DCTDecode filter always deliver 8-bit samples, and an LZWDecode or FlateDecode filter delivers samples of a specified size if a predictor function is used.
 If the image stream uses the JPXDecode filter, this entry is optional and is ignored if present. The bit depth is determined by the conforming reader in the process of decoding the JPEG2000 image.
 
 =head2 Intent [name]
@@ -69,11 +69,11 @@ Default value: see 8.9.5.2, "Decode Arrays" .
 - (Optional) A flag indicating whether image interpolation shall beperformed by a conforming reader (see 8.9.5.3, "Image Interpolation"). Default value: false.
 
 =head2 Alternates [array]
-- (Optional; PDF 1.3) An array of alternate image dictionaries for this image (see 8.9.5.4, "Alternate Images"). The order of elements within the array has no significance. This entry shall not bepresent in an image XObject that is itself an alternate image.
+- (Optional; PDF 1.3) An array of alternate image dictionaries for this image (see 8.9.5.4, "Alternate Images"). The order of elements within the array has no significance. This entry does not bepresent in an image XObject that is itself an alternate image.
 
 =head2 SMask [stream]
 - (Optional; PDF 1.4) A subsidiary image XObject defining a soft-mask image (see 11.6.5.3, "Soft-Mask Images") that is used as a source of mask shape or mask opacity values in the transparent imaging model. The alpha source parameter in the graphics state determines whether the mask values shall beinterpreted as shape or opacity.
-If present, this entry shall override the current soft mask in the graphics state, as well as the image’s Mask entry, if any. However, the other transparency-related graphics state parameters—blend mode and alpha constant—remains in effect. If SMask is absent, the image has no associated soft mask (although the current soft mask in the graphics state may still apply).
+If present, this entry overrides the current soft mask in the graphics state, as well as the image’s Mask entry, if any. However, the other transparency-related graphics state parameters—blend mode and alpha constant—remains in effect. If SMask is absent, the image has no associated soft mask (although the current soft mask in the graphics state may still apply).
 
 =head2 SMaskInData [integer]
 - (Optional for images that use the JPXDecode filter, meaningless otherwise; PDF 1.5) A code specifying how soft-mask information (see 11.6.5.3, "Soft-Mask Images") encoded with image samples is used:

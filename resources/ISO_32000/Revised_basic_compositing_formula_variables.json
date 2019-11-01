@@ -47,11 +47,11 @@
         "Result opacity after compositing object i"
       ],
       [
-        "si",
+        "αsi",
         "Source alpha for object i"
       ],
       [
-        "i",
+        "αi",
         "Result alpha after compositing object i"
       ],
       [
@@ -63,7 +63,7 @@
         "Result colour after compositing object i"
       ],
       [
-        "BiCi1–Csi()",
+        "BiCi1–Csi,()",
         "Blend function for object i"
       ]
     ]

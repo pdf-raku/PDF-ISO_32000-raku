@@ -39,19 +39,19 @@
         "Constant opacity for element E i"
       ],
       [
-        "si",
+        "αsi",
         "Source alpha for element E i"
       ],
       [
-        "ji",
+        "αji",
         "Object alpha for element E i : the product of its object shape and object opacity"
       ],
       [
-        "gi",
+        "αgi",
         "Group alpha: the accumulated source alphas of group elements E 1 to E i , excluding the initial backdrop"
       ],
       [
-        "i",
+        "αi",
         "Accumulated alpha after compositing element E i , including the initial backdrop"
       ],
       [
@@ -63,7 +63,7 @@
         "Accumulated colour after compositing element E i , including the initial backdrop"
       ],
       [
-        "BiCi1–Csi()",
+        "BiCi1–Csi,()",
         "Blend function for element E i"
       ]
     ]

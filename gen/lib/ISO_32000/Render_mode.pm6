@@ -29,7 +29,7 @@ Default value: [/DeviceRGB 0 0 0] representing the colour black.
 =head2 FC [name or array]
 - (Optional) A name or array that specifies the face color to be used when rendering the 3D image. This entry is relevant only when Subtype has a value of Illustration.
 If the value of FC is an array, the first entry in the array is a colour space and the subsequent entries is values specifying values in that colour space. The only valid colour space is DeviceRGB. Any colour space other than DeviceRGB is ignored and the default value is used.
-If the value of FC is a name, it shall describe a colour. The only valid name value shall BG, specifying the current background colour in use for displaying the artwork. If a name other than BG is encountered, this entry is ignored and the background colour for the host annotation is used (see Table 189).
+If the value of FC is a name, it describes a colour. The only valid name value shall BG, specifying the current background colour in use for displaying the artwork. If a name other than BG is encountered, this entry is ignored and the background colour for the host annotation is used (see Table 189).
 Default value: BG
 
 =head2 O [number]

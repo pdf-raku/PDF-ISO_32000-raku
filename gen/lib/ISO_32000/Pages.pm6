@@ -20,7 +20,7 @@ role ISO_32000::Pages {
 - (Required except in root node; prohibited in the root node; is an indirect reference) The page tree node that is the immediate parent of this one.
 
 =head2 Kids [array]
-- (Required) An array of indirect references to the immediate children of this node. The children shall only be page objects or other page tree nodes.
+- (Required) An array of indirect references to the immediate children of this node. The children is only be page objects or other page tree nodes.
 
 =head2 Count [integer]
 - (Required) The number of leaf nodes (page objects) that are descendants of this node within the page tree.

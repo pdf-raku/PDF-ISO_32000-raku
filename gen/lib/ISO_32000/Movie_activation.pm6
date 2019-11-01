@@ -31,7 +31,7 @@ role ISO_32000::Movie_activation {
 - (Optional) The initial speed at which to play the movie. If the value of this entry is negative, the movie is played backward with respect to Start and Duration. Default value: 1.0.
 
 =head2 Volume [number]
-- (Optional) The initial sound volume at which to play the movie, in the range −1.0 to 1.0. Higher values shall denote greater volume; negative values shall mute the sound. Default value: 1.0.
+- (Optional) The initial sound volume at which to play the movie, in the range −1.0 to 1.0. Higher values denote greater volume; negative values shall mute the sound. Default value: 1.0.
 
 =head2 ShowControls [boolean]
 - (Optional) A flag specifying whether to display a movie controller bar while playing the movie. Default value: false.

@@ -12,7 +12,7 @@ role ISO_32000::FDF_page {
 =head1 Methods (Entries)
 
 =head2 Templates [array]
-- (Required) An array of FDF template dictionaries (see Table 249) that shall describe the named pages that serve as templates on the page.
+- (Required) An array of FDF template dictionaries (see Table 249) that describes the named pages that serve as templates on the page.
 
 =head2 Info [dictionary]
 - (Optional) An FDF page information dictionary that shall containadditional information about the page.

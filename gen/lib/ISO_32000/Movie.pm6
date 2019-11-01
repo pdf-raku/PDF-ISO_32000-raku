@@ -24,6 +24,6 @@ NOTE The format of a self-describing movie file is left unspecified, and there i
 - (Optional) The number of degrees by which the movie is rotated clockwise relative to the page. The value is a multiple of 90. Default value: 0.
 
 =head2 Poster [boolean or stream]
-- (Optional) A flag or stream specifying whether and how a poster imagerepresenting the movie is displayed. If this value is a stream, it shall contain an image XObject (see 8.9, “Images”) to be displayed as the poster. If it is the boolean value true, the poster image is retrieved from the movie file; if it is false, no poster is displayed. Default value: false.
+- (Optional) A flag or stream specifying whether and how a poster imagerepresenting the movie is displayed. If this value is a stream, it contains an image XObject (see 8.9, “Images”) to be displayed as the poster. If it is the boolean value true, the poster image is retrieved from the movie file; if it is false, no poster is displayed. Default value: false.
 
 =end pod

@@ -55,7 +55,7 @@
       [
         "CIDToGIDMap",
         "stream or name",
-        "(Optional; Type 2 CIDFonts only) A specification of the mapping from CIDs to glyph indices. If the value is a stream, the bytes in the stream shall contain the mapping from CIDs to glyph indices: the glyph index for a particular CID value c is a 2-byte value stored in bytes 2 × c and 2 × c + 1, where the first byte is the high-order byte. If the value of CIDToGIDMap is a name, it is Identity, indicating that the mapping between CIDs and glyph indices is the identity mapping. Default value: Identity.\nThis entry may appear only in a Type 2 CIDFont whose associated TrueType font program is embedded in the PDF file."
+        "(Optional; Type 2 CIDFonts only) A specification of the mapping from CIDs to glyph indices. If the value is a stream, the bytes in the stream contains the mapping from CIDs to glyph indices: the glyph index for a particular CID value c is a 2-byte value stored in bytes 2 × c and 2 × c + 1, where the first byte is the high-order byte. If the value of CIDToGIDMap is a name, it is Identity, indicating that the mapping between CIDs and glyph indices is the identity mapping. Default value: Identity.\nThis entry may appear only in a Type 2 CIDFont whose associated TrueType font program is embedded in the PDF file."
       ]
     ]
   }

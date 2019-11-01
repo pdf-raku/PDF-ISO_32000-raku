@@ -12,7 +12,7 @@ role ISO_32000::Public_key_security_handler_additional {
 =head1 Methods (Entries)
 
 =head2 Recipients [array]
-- (Required when SubFilter is adbe.pkcs7.s3 or adbe.pkcs7.s4; PDF 1.3)An array of byte-strings, where each string is a PKCS7 object listing recipients who have been granted equal access rights to the document. The data contained in the PKCS7 object shall include both a cryptographic key that is used to decrypt the encrypted data and the access permissions (see Table 24) that apply to the recipient list. There is only one PKCS7 object per unique set of access permissions; if a recipient appears in more than one list, the permissions used is those in the first matching list.
+- (Required when SubFilter is adbe.pkcs7.s3 or adbe.pkcs7.s4; PDF 1.3)An array of byte-strings, where each string is a PKCS7 object listing recipients who have been granted equal access rights to the document. The data contained in the PKCS7 object includes both a cryptographic key that is used to decrypt the encrypted data and the access permissions (see Table 24) that apply to the recipient list. There is only one PKCS7 object per unique set of access permissions; if a recipient appears in more than one list, the permissions used is those in the first matching list.
 When SubFilter is adbe.pkcs7.s5, recipient lists is specified in the crypt filter dictionary; see Table 27 .
 
 =head2 P [integer]

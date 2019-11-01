@@ -8,7 +8,7 @@
     "rows": [
       [
         "Ruby",
-        "(Ruby) The wrapper around the entire ruby assembly. It shall contain one RB element followed by either an RT element or a three-element group consisting of RP, RT, and RP. Ruby elements and their content elements shall not break across multiple lines."
+        "(Ruby) The wrapper around the entire ruby assembly. It contains one RB element followed by either an RT element or a three-element group consisting of RP, RT, and RP. Ruby elements and their content elements does not break across multiple lines."
       ],
       [
         "RB",

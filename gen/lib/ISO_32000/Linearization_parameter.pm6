@@ -25,8 +25,8 @@ role ISO_32000::Linearization_parameter {
 
 =head2 H [array]
 - (Required) An array of two or four integers, [ offset 1 length 1 ] or [ offset 1 length 1 offset 2 length 2 ]. offset 1 is the offset of the primary hint stream from the beginning of the file. (This is the beginning of the stream object, not the beginning of the stream data.) length 1 is the length of this stream, including stream object overhead.
-If the value of the primary hint stream dictionary’s Length entry is an indirect reference, the object it refers to shall immediately follow the stream object, and length 1 also shall include the length of the indirect length object, including object overhead.
-If there is an overflow hint stream, offset 2 and length 2 shall specify its offset and length.
+If the value of the primary hint stream dictionary’s Length entry is an indirect reference, the object it refers to shall immediately follow the stream object, and length 1 also includes the length of the indirect length object, including object overhead.
+If there is an overflow hint stream, offset 2 and length 2 specifies its offset and length.
 
 =head2 O [integer]
 - (Required) The object number of the first page’s page object.
@@ -38,8 +38,8 @@ If there is an overflow hint stream, offset 2 and length 2 shall specify its off
 - (Required) The number of pages in the document.
 
 =head2 T [integer]
-- (Required) In documents that use standard main cross-reference tables (including hybrid-reference files; see 7.5.8.4, "Compatibility with Applications That Do Not Support Compressed Reference Streams"), this entry shall represent the offset of the white-space character preceding the first entry of the main cross-reference table (the entry for object number 0), relative to the beginning of the file. Note that this differs from the Prev entry in the first-page trailer, which gives the location of the xref line that precedes the table.
-(PDF 1.5) Documents that use cross-reference streams exclusively (see 7.5.8, "Cross-Reference Streams"), this entry shall represent the offset of the main cross-reference stream object.
+- (Required) In documents that use standard main cross-reference tables (including hybrid-reference files; see 7.5.8.4, "Compatibility with Applications That Do Not Support Compressed Reference Streams"), this entry represents the offset of the white-space character preceding the first entry of the main cross-reference table (the entry for object number 0), relative to the beginning of the file. Note that this differs from the Prev entry in the first-page trailer, which gives the location of the xref line that precedes the table.
+(PDF 1.5) Documents that use cross-reference streams exclusively (see 7.5.8, "Cross-Reference Streams"), this entry represents the offset of the main cross-reference stream object.
 
 =head2 P [integer]
 - (Optional) The page number of the first page; see F.3.4, "First-Page Cross-Reference Table and Trailer (Part 3)" . Default value: 0.

@@ -10,7 +10,7 @@
       [
         "T",
         "text string",
-        "(Optional; PDF 1.1) The text label that is displayed in the title bar of the annotation’s pop-up window when open and active. This entry shall identify the user who added the annotation."
+        "(Optional; PDF 1.1) The text label that is displayed in the title bar of the annotation’s pop-up window when open and active. This entry identifies the user who added the annotation."
       ],
       [
         "Popup",
@@ -20,7 +20,7 @@
       [
         "CA",
         "number",
-        "(Optional; PDF 1.4) The constant opacity value that is used in painting the annotation (see Sections 11.2, “Overview of Transparency,” and 11.3.7, “Shape and Opacity Computations”). This value applies to all visible elements of the annotation in its closed state (including its background and border) but not to the pop-up window that appears when the annotation is opened.\nThe specified value shall not used if the annotation has an appearance stream (see 12.5.5, “Appearance Streams”); in that case, the appearance stream shall specify any transparency. (However, if the compliant viewer regenerates the annotation’s appearance stream, it may incorporate the CA value into the stream’s content.)\nThe implicit blend mode (see 11.3.5, “Blend Mode” ”) is Normal. Default value: 1.0.\nIf no explicit appearance stream is defined for the annotation, it may bepainted by implementation-dependent means that do not necessarily conform to the PDF imaging model; in this case, the effect of this entry is implementation-dependent as well."
+        "(Optional; PDF 1.4) The constant opacity value that is used in painting the annotation (see Sections 11.2, “Overview of Transparency,” and 11.3.7, “Shape and Opacity Computations”). This value applies to all visible elements of the annotation in its closed state (including its background and border) but not to the pop-up window that appears when the annotation is opened.\nThe specified value does not used if the annotation has an appearance stream (see 12.5.5, “Appearance Streams”); in that case, the appearance stream specifies any transparency. (However, if the compliant viewer regenerates the annotation’s appearance stream, it may incorporate the CA value into the stream’s content.)\nThe implicit blend mode (see 11.3.5, “Blend Mode” ”) is Normal. Default value: 1.0.\nIf no explicit appearance stream is defined for the annotation, it may bepainted by implementation-dependent means that do not necessarily conform to the PDF imaging model; in this case, the effect of this entry is implementation-dependent as well."
       ],
       [
         "RC",
@@ -45,7 +45,7 @@
       [
         "RT",
         "name",
-        "(Optional; meaningful only if IRT is present; PDF 1.6) A name specifying the relationship (the “reply type”) between this annotation and one specified by IRT. Valid values are:\nRThe annotation is considered a reply to the annotation specified by IRT. Conforming readers shall not display replies to an annotation individually but together in the form of threaded comments.\nGroupThe annotation is grouped with the annotation specified by IRT; see the discussion following this Table.\nDefault value: R."
+        "(Optional; meaningful only if IRT is present; PDF 1.6) A name specifying the relationship (the “reply type”) between this annotation and one specified by IRT. Valid values are:\nRThe annotation is considered a reply to the annotation specified by IRT. Conforming readers does not display replies to an annotation individually but together in the form of threaded comments.\nGroupThe annotation is grouped with the annotation specified by IRT; see the discussion following this Table.\nDefault value: R."
       ],
       [
         "IT",

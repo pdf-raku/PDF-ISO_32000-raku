@@ -55,7 +55,7 @@
       [
         "flatness",
         "i",
-        "Set the flatness tolerance in the graphics state (see 10.6.2, \"Flatness Tolerance\"). flatness is a number in the range 0 to 100; a value of 0 shall specify the output device’s default flatness tolerance."
+        "Set the flatness tolerance in the graphics state (see 10.6.2, \"Flatness Tolerance\"). flatness is a number in the range 0 to 100; a value of 0 specifies the output device’s default flatness tolerance."
       ],
       [
         "dictName",

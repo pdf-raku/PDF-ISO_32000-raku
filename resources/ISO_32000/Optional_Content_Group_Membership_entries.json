@@ -15,7 +15,7 @@
       [
         "OCGs",
         "dictionary or array",
-        "(Optional) A dictionary or array of dictionaries specifying the optional content groups whose states shall determine the visibility of content controlled by this membership dictionary.\nNull values or references to deleted objects is ignored. If this entry is not present, is an empty array, or contains references only to null or deleted objects, the membership dictionary has no effect on the visibility of any content."
+        "(Optional) A dictionary or array of dictionaries specifying the optional content groups whose states determines the visibility of content controlled by this membership dictionary.\nNull values or references to deleted objects is ignored. If this entry is not present, is an empty array, or contains references only to null or deleted objects, the membership dictionary has no effect on the visibility of any content."
       ],
       [
         "P",

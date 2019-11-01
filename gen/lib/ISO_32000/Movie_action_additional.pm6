@@ -21,7 +21,7 @@ role ISO_32000::Movie_action_additional {
 
 =head2 T [text string]
 - (Optional) The title of a movie annotation identifying the movie that shall beplayed.
-The dictionary shall include either an Annotation or a T entry but not both.
+The dictionary includes either an Annotation or a T entry but not both.
 
 =head2 Operation [name]
 - (Optional) The operation that is performed on the movie:

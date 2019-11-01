@@ -31,7 +31,7 @@ role ISO_32000::Appearance_characteristics {
 4DeviceCMYK
 
 =head2 BG [array]
-- (Optional) An array of numbers that is in the range 0.0 to 1.0 specifying the colour of the widget annotation’s background. The number of array elements shall determine the colour space, as described for BC.
+- (Optional) An array of numbers that is in the range 0.0 to 1.0 specifying the colour of the widget annotation’s background. The number of array elements determines the colour space, as described for BC.
 
 =head2 CA [text string]
 - (Optional; button fields only) The widget annotation’s normal caption, which is displayed when it is not interacting with the user.

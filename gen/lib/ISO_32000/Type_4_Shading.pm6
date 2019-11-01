@@ -21,7 +21,7 @@ role ISO_32000::Type_4_Shading {
 - (Required) The number of bits used to represent each colour component. The value is 1, 2, 4, 8, 12, or 16.
 
 =head2 BitsPerFlag [integer]
-- (Required) The number of bits used to represent the edge flag for each vertex (see below). The value of BitsPerFlag is 2, 4, or8, but only the least significant 2 bits in each flag value shall beused. The value for the edge flag is 0, 1, or 2.
+- (Required) The number of bits used to represent the edge flag for each vertex (see below). The value of BitsPerFlag is 2, 4, or 8, but only the least significant 2 bits in each flag value shall beused. The value for the edge flag is 0, 1, or 2.
 
 =head2 Decode [array]
 - (Required) An array of numbers specifying how to map vertex coordinates and colour components into the appropriate ranges of values. The decoding method is similar to that used in image dictionaries (see 8.9.5.2, "Decode Arrays"). The ranges is specified as follows:

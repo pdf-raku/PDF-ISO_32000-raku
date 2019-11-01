@@ -34,7 +34,7 @@ SIS(“Spider image set”) An image set
 - (Required) A source information dictionary (see 14.10.5, “Source Information”) or an array of such dictionaries, describing the sources from which the objects belonging to the content set were created.
 
 =head2 CT [ASCII string]
-- (Optional) The content type, an ASCII string characterizing the source from which the objects belonging to the content set were created. The string shall conform to the content type specification described in Internet RFC 2045, Multipurpose Internet Mail Extensions (MIME) Part One: Format of Internet Message Bodies (see the Bibliography).
+- (Optional) The content type, an ASCII string characterizing the source from which the objects belonging to the content set were created. The string conforms to the content type specification described in Internet RFC 2045, Multipurpose Internet Mail Extensions (MIME) Part One: Format of Internet Message Bodies (see the Bibliography).
 EXAMPLE for a page set consisting of a group of PDF pages created from an HTML file, the content type would be text / html.
 
 =head2 TS [date]

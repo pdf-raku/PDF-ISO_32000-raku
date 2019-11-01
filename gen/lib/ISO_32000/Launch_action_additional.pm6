@@ -19,7 +19,7 @@ role ISO_32000::Launch_action_additional {
 - (Required) The type of action that this dictionary describes; is Launch for a launch action.
 
 =head2 F [file specification]
-- (Required if none of the entries Win, Mac, or Unix is present) The application that is launched or the document that shall beopened or printed. If this entry is absent and the conforming readerdoes not understand any of the alternative entries, it shall do nothing.
+- (Required if none of the entries Win, Mac, or Unix is present) The application that is launched or the document that shall beopened or printed. If this entry is absent and the conforming readerdoes not understand any of the alternative entries, it does nothing.
 
 =head2 Win [dictionary]
 - (Optional) A dictionary containing Windows-specific launch parameters (see Table 204).

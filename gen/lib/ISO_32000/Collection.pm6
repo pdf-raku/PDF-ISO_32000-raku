@@ -27,7 +27,7 @@ role ISO_32000::Collection {
 - (Optional) The initial view. The following values are valid:
 D The collection view is presented in details mode, with all information in the Schema dictionary presented in a multi-column format. This mode provides the most information to the user.
 T The collection view is presented in tile mode, with each file in the collection denoted by a small icon and a subset of information from the Schema dictionary. This mode provides top-level information about the file attachments to the user.
-H The collection view is initially hidden, The conforming reader shall provide means for the user to view the collection by some explicit action.
+H The collection view is initially hidden, The conforming reader provides means for the user to view the collection by some explicit action.
 Default value: D
 
 =head2 Sort [dictionary]

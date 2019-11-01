@@ -15,7 +15,7 @@
       [
         "2",
         "See Table F. 3 , item 5",
-        "A number that, when added to the least page length (Table F. 3 , item 4), shall give the length of the page in bytes. The location of the first object of the first page may be determined from its object number (the O entry in the linearization parameter dictionary) and the cross-reference table entry for that object; see F.3.4, \"First-Page Cross- Reference Table and Trailer (Part 3)\" . The locations of subsequent pages is determined by accumulating the lengths of all previous pages. A conforming product shall skip over the primary hint stream, wherever it is located."
+        "A number that, when added to the least page length (Table F. 3 , item 4), shall give the length of the page in bytes. The location of the first object of the first page may be determined from its object number (the O entry in the linearization parameter dictionary) and the cross-reference table entry for that object; see F.3.4, \"First-Page Cross- Reference Table and Trailer (Part 3)\" . The locations of subsequent pages is determined by accumulating the lengths of all previous pages. A conforming product skips over the primary hint stream, wherever it is located."
       ],
       [
         "3",
@@ -30,7 +30,7 @@
       [
         "5",
         "See Table F. 3 , item 12",
-        "(One item for each shared object referenced from the page) The numerator of the fractional position for each shared object reference, which is in the same order as the preceding item. The fraction shall indicate where in the page’s content stream the shared object is first referenced. This item is interpreted as the numerator of a fraction whose denominator is specified once for the entire document (Table F. 3 , item 13).\nEXAMPLE If the denominator is d, a numerator ranging from 0 to d - 1 indicates the corresponding portion of the page’s content stream. For example, if the denominator is 4, a numerator of 0, 1, 2, or 3 indicates that the first reference lies in the first, second, third, or fourth quarter of the content stream, respectively. There are two (or more) other possible values for the numerator, which shall indicate that the shared object is not referenced from the content stream but instead is needed by annotations or other objects that are drawn after the contents. The value d shall indicate that the shared object is needed before image XObjects and other nonshared objects that are at the end of the page. A value of d 1 or greater shall indicate that the shared object is needed after those objects.\nNOTE This method of dividing the page into fractions is only approximate. Determining the first reference to a shared object entails inspecting the unencoded content stream. The relationship between positions in the unencoded and encoded streams is not necessarily linear."
+        "(One item for each shared object referenced from the page) The numerator of the fractional position for each shared object reference, which is in the same order as the preceding item. The fraction indicates where in the page’s content stream the shared object is first referenced. This item is interpreted as the numerator of a fraction whose denominator is specified once for the entire document (Table F. 3 , item 13).\nEXAMPLE If the denominator is d, a numerator ranging from 0 to d - 1 indicates the corresponding portion of the page’s content stream. For example, if the denominator is 4, a numerator of 0, 1, 2, or 3 indicates that the first reference lies in the first, second, third, or fourth quarter of the content stream, respectively. There are two (or more) other possible values for the numerator, which indicates that the shared object is not referenced from the content stream but instead is needed by annotations or other objects that are drawn after the contents. The value d indicates that the shared object is needed before image XObjects and other nonshared objects that are at the end of the page. A value of d + 1 or greater indicates that the shared object is needed after those objects.\nNOTE This method of dividing the page into fractions is only approximate. Determining the first reference to a shared object entails inspecting the unencoded content stream. The relationship between positions in the unencoded and encoded streams is not necessarily linear."
       ],
       [
         "6",
@@ -40,7 +40,7 @@
       [
         "7",
         "See Table F. 3 , item 9",
-        "A number that, when added to the least content stream length (Table F. 3 , item 8), shall give the length of the page’s content stream in bytes. This length shall include object overhead preceding and following the stream data."
+        "A number that, when added to the least content stream length (Table F. 3 , item 8), shall give the length of the page’s content stream in bytes. This length includes object overhead preceding and following the stream data."
       ]
     ]
   }

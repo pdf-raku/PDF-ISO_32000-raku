@@ -20,6 +20,6 @@ role ISO_32000::Separation {
 
 =head2 ColorSpace [array]
 - (Optional) An array defining a Separation or DeviceN colour space (see 8.6.6.4, “Separation Colour Spaces” and 8.6.6.5, “DeviceN Colour Spaces”). It provides additional information about the colour specified by DeviceColorant—in particular, the alternate colour space and tint transformation function that is used to represent the colorant as a process colour. This information enables a conforming reader to preview the separation in a colour that approximates the device colorant.
-The value of DeviceColorant shall match the space’s colorant name (if it is a Separation space) or be one of the space’s colorant names (if it is a DeviceN space).
+The value of DeviceColorant matches the space’s colorant name (if it is a Separation space) or be one of the space’s colorant names (if it is a DeviceN space).
 
 =end pod

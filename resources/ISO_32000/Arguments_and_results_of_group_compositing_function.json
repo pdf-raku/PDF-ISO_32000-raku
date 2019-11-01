@@ -23,11 +23,11 @@
         "Computed shape of the group, which is used as the object shape when the group is treated as an object"
       ],
       [
-        "0",
+        "α0",
         "Alpha of the group’s backdrop"
       ],
       [
-        "",
+        "α",
         "Computed alpha of the group, which is used as the object alpha when the group is treated as an object"
       ]
     ]

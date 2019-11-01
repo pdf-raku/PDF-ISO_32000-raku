@@ -39,7 +39,7 @@ The names in this name tree is text strings so as to be encoded in a way that wi
 - (Optional) A JavaScript script that is executed when the 3D stream is instantiated.
 
 =head2 AN [dictionary]
-- (Optional; PDF 1.7) An animation style dictionary indicating the method that conforming readers should use to drive keyframe animations present in this artwork (see 13.6.3.2, "3D Animation Style Dictionaries").
+- (Optional; PDF 1.7) An animation style dictionary indicating the method that conforming readers uses to drive keyframe animations present in this artwork (see 13.6.3.2, "3D Animation Style Dictionaries").
 Default value: an animation style dictionary whose Subtype entry has a value of None.
 
 =end pod

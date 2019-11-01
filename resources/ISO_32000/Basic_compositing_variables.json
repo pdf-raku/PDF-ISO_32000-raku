@@ -19,19 +19,19 @@
         "Result colour"
       ],
       [
-        "b",
+        "αb",
         "Backdrop alpha"
       ],
       [
-        "s",
+        "αs",
         "Source alpha"
       ],
       [
-        "r",
+        "αr",
         "Result alpha"
       ],
       [
-        "BCbCs()",
+        "BCbCs,()",
         "Blend function"
       ]
     ]

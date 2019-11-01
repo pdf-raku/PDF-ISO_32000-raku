@@ -58,7 +58,7 @@ role ISO_32000::Graphics_state {
 - (Optional; PDF 1.3) The name of the rendering intent (see 8.6.5.8, "Rendering Intents").
 
 =head2 OP [boolean]
-- (Optional) A flag specifying whether to apply overprint (see 8.6.7, "Overprint Control"). In PDF 1.2 and earlier, there is a single overprint parameter that applies to all painting operations. Beginning with PDF 1.3, there is two separate overprint parameters: one for stroking and one for all other painting operations. Specifying an OP entry shall set both parameters unless there is also an op entry in the same graphics state parameter dictionary, in which case the OP entry shall set only the overprint parameter for stroking.
+- (Optional) A flag specifying whether to apply overprint (see 8.6.7, "Overprint Control"). In PDF 1.2 and earlier, there is a single overprint parameter that applies to all painting operations. Beginning with PDF 1.3, there is two separate overprint parameters: one for stroking and one for all other painting operations. Specifying an OP entry sets both parameters unless there is also an op entry in the same graphics state parameter dictionary, in which case the OP entry sets only the overprint parameter for stroking.
 
 =head2 op [boolean]
 - (Optional; PDF 1.3) A flag specifying whether to apply overprint (see 8.6.7, "Overprint Control") for painting operations other than stroking. If this entry is absent, the OP entry, if any, shall also set this parameter.
@@ -73,7 +73,7 @@ role ISO_32000::Graphics_state {
 - (Optional) The black-generation function, which maps the interval [ 0.0 1.0 ] to the interval [ 0.0 1.0 ] (see 10.3.4, "Conversion from DeviceRGB to DeviceCMYK").
 
 =head2 BG2 [function or name]
-- (Optional; PDF 1.3) Same as BG except that the value may also be the name Default, denoting the black-generation function that was in effect at the start of the page. If both BG and BG2 are present in the same graphics state parameter dictionary, BG2 shall take precedence.
+- (Optional; PDF 1.3) Same as BG except that the value may also be the name Default, denoting the black-generation function that was in effect at the start of the page. If both BG and BG2 are present in the same graphics state parameter dictionary, BG2 takes precedence.
 
 =head2 UCR [function]
 - (Optional) The undercolor-removal function, which maps the interval [ 0.0 1.0 ] to the interval [ −1.0 1.0 ] (see 10.3.4, "Conversion from DeviceRGB to DeviceCMYK").
@@ -85,7 +85,7 @@ role ISO_32000::Graphics_state {
 - (Optional) The transfer function, which maps the interval [ 0.0 1.0 ] to the interval [ 0.0 1.0 ] (see 10.4, "Transfer Functions"). The value is either a single function (which applies to all process colorants) or an array of four functions (which apply to the process colorants individually). The name Identity may be used to represent the identity function.
 
 =head2 TR2 [function, array, or name]
-- (Optional; PDF 1.3) Same as TR except that the value may also be the name Default, denoting the transfer function that was in effect at the start of the page. If both TR and TR2 are present in the same graphics state parameter dictionary, TR2 shall take precedence.
+- (Optional; PDF 1.3) Same as TR except that the value may also be the name Default, denoting the transfer function that was in effect at the start of the page. If both TR and TR2 are present in the same graphics state parameter dictionary, TR2 takes precedence.
 
 =head2 HT [dictionary, stream, or name]
 - (Optional) The halftone dictionary or stream (see 10.5, "Halftones") or the name Default, denoting the halftone that was in effect at the start of the page.
@@ -116,6 +116,6 @@ Although the current soft mask is sometimes referred to as a “soft clip,” al
 - (Optional; PDF 1.4) The alpha source flag (“alpha is shape”), specifying whether the current soft mask and alpha constant shall beinterpreted as shape values (true) or opacity values (false).
 
 =head2 TK [boolean]
-- (Optional; PDF 1.4) The text knockout flag, shall determine the behaviour of overlapping glyphs within a text object in the transparent imaging model (see 9.3.8, "Text Knockout").
+- (Optional; PDF 1.4) The text knockout flag, determines the behaviour of overlapping glyphs within a text object in the transparent imaging model (see 9.3.8, "Text Knockout").
 
 =end pod

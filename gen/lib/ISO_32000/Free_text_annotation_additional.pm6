@@ -25,7 +25,7 @@ role ISO_32000::Free_text_annotation_additional {
 
 =head2 DA [string]
 - (Required) The default appearance string that is used in formatting the text (see 12.7.3.3, “Variable Text”).
-The annotation dictionary’s AP entry, if present, shall take precedence over the DA entry; see Table 168 and 12.5.5, “Appearance Streams.”
+The annotation dictionary’s AP entry, if present, takes precedence over the DA entry; see Table 168 and 12.5.5, “Appearance Streams.”
 
 =head2 Q [integer]
 - (Optional; PDF 1.4) A code specifying the form of quadding (justification) that is used in displaying the annotation’s text:
@@ -62,7 +62,7 @@ The four numbers correspond to the differences in default user space between the
 The annotation dictionary’s AP entry, if present, takes precedence over the BS entry; see Table 164 and 12.5.5, “Appearance Streams” .
 
 =head2 LE [name]
-- (Optional; meaningful only if CL is present; PDF 1.6) A name specifying the line ending style that is used in drawing the callout line specified in CL. The name shall specify the line ending style for the endpoint defined by the pairs of coordinates (x 1 , y 1). Table 176 shows the possible line ending styles.
+- (Optional; meaningful only if CL is present; PDF 1.6) A name specifying the line ending style that is used in drawing the callout line specified in CL. The name specifies the line ending style for the endpoint defined by the pairs of coordinates (x 1 , y 1). Table 176 shows the possible line ending styles.
 Default value: None.
 
 =end pod

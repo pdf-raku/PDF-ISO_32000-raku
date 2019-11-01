@@ -30,7 +30,7 @@
       [
         "Dm",
         "name",
-        "(Optional; Split and Blinds transition styles only) The dimension in which the specified transition effect shall occur:\nHHorizontal\nVVertical\nDefault value: H."
+        "(Optional; Split and Blinds transition styles only) The dimension in which the specified transition effect occurs:\nHHorizontal\nVVertical\nDefault value: H."
       ],
       [
         "M",
@@ -45,7 +45,7 @@
       [
         "SS",
         "number",
-        "(Optional; PDF 1.5; Fly transition style only) The starting or ending scale at which the changes is drawn. If M specifies an inward transition, the scale of the changes drawn shall progress from SS to 1.0 over the course of the transition. If M specifies an outward transition, the scale of the changes drawn shall progress from 1.0 to SS over the course of the transition\nDefault: 1.0."
+        "(Optional; PDF 1.5; Fly transition style only) The starting or ending scale at which the changes is drawn. If M specifies an inward transition, the scale of the changes drawn progresses from SS to 1.0 over the course of the transition. If M specifies an outward transition, the scale of the changes drawn progresses from 1.0 to SS over the course of the transition\nDefault: 1.0."
       ],
       [
         "B",

@@ -15,7 +15,7 @@
       [
         "D",
         "array",
-        "(Required) An array containing two non-negative integers that shall represent the floating window’s width and height, in pixels, respectively. These values shall correspond to the dimensions of the rectangle in which the media shall play, not including such items as title bar and resizing handles."
+        "(Required) An array containing two non-negative integers that represents the floating window’s width and height, in pixels, respectively. These values corresponds to the dimensions of the rectangle in which the media plays, not including such items as title bar and resizing handles."
       ],
       [
         "RT",
@@ -30,7 +30,7 @@
       [
         "O",
         "integer",
-        "(Optional) Specifies what shall occur if the floating window is positioned totally or partially offscreen (that is, not visible on any physical monitor):\n0 Take no special action\n1 Move and/or resize the window so that it is on-screen\n2 Consider the object to be non-viable\nDefault value: 1"
+        "(Optional) Specifies what occurs if the floating window is positioned totally or partially offscreen (that is, not visible on any physical monitor):\n0 Take no special action\n1 Move and/or resize the window so that it is on-screen\n2 Consider the object to be non-viable\nDefault value: 1"
       ],
       [
         "T",
@@ -40,7 +40,7 @@
       [
         "UC",
         "boolean",
-        "(Optional; meaningful only if T is true) If true, the floating window shall include user interface elements that allow a user to close a floating window.\nDefault value: true"
+        "(Optional; meaningful only if T is true) If true, the floating window includes user interface elements that allow a user to close a floating window.\nDefault value: true"
       ],
       [
         "R",

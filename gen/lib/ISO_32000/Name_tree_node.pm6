@@ -21,6 +21,6 @@ role ISO_32000::Name_tree_node {
 where each key i is a string and the corresponding value i is the object associated with that key. The keys is sorted in lexical order, as described below.
 
 =head2 Limits [array]
-- (Intermediate and leaf nodes only; required) Shall be an array of two strings, that shall specify the (lexically) least and greatest keys included in the Names array of a leaf node or in the Names arrays of any leaf nodes that are descendants of an intermediate node.
+- (Intermediate and leaf nodes only; required) Shall be an array of two strings, that specifies the (lexically) least and greatest keys included in the Names array of a leaf node or in the Names arrays of any leaf nodes that are descendants of an intermediate node.
 
 =end pod

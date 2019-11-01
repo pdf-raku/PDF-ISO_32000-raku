@@ -20,7 +20,7 @@
       [
         "3",
         "Symbolic",
-        "Font contains glyphs outside the Adobe standard Latin character set. This flag and the Nonsymbolic flag shall not both be set or both be clear."
+        "Font contains glyphs outside the Adobe standard Latin character set. This flag and the Nonsymbolic flag does not both be set or both be clear."
       ],
       [
         "4",

@@ -15,7 +15,7 @@
       [
         "P",
         "number",
-        "(Optional) The access permissions granted for this document. Valid values is:\n1 No changes to the document is permitted; any change to the document shall invalidate the signature.\n2 Permitted changes is filling in forms, instantiating page templates, and signing; other changes shall invalidate the signature.\n3 Permitted changes is the same as for 2, as well as annotation creation, deletion, and modification; other changes shall invalidate the signature.\nDefault value: 2."
+        "(Optional) The access permissions granted for this document. Valid values is:\n1 No changes to the document is permitted; any change to the document invalidates the signature.\n2 Permitted changes is filling in forms, instantiating page templates, and signing; other changes invalidates the signature.\n3 Permitted changes is the same as for 2, as well as annotation creation, deletion, and modification; other changes invalidates the signature.\nDefault value: 2."
       ],
       [
         "V",

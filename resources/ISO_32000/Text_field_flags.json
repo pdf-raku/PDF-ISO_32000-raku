@@ -15,7 +15,7 @@
       [
         "14",
         "Password",
-        "If set, the field is intended for entering a secure password that is not echoed visibly to the screen. Characters typed from the keyboard shall instead be echoed in some unreadable form, such as asterisks or bullet characters.\nNOTE To protect password confidentiality, readers should never store the value of the text field in the PDF file if this flag is set."
+        "If set, the field is intended for entering a secure password that is not echoed visibly to the screen. Characters typed from the keyboard shall instead be echoed in some unreadable form, such as asterisks or bullet characters.\nNOTE To protect password confidentiality, readers never store the value of the text field in the PDF file if this flag is set."
       ],
       [
         "21",
@@ -30,7 +30,7 @@
       [
         "24",
         "DoNotScroll",
-        "(PDF 1.4) If set, the field shall not scroll (horizontally for single-line fields, vertically for multiple-line fields) to accommodate more text than fits within its annotation rectangle. Once the field is full, no further text is accepted for interactive form filling; for non-interactive form filling, the filler should take care not to add more character than will visibly fit in the defined area."
+        "(PDF 1.4) If set, the field does not scroll (horizontally for single-line fields, vertically for multiple-line fields) to accommodate more text than fits within its annotation rectangle. Once the field is full, no further text is accepted for interactive form filling; for non-interactive form filling, the filler takes care not to add more character than will visibly fit in the defined area."
       ],
       [
         "25",
@@ -40,7 +40,7 @@
       [
         "26",
         "RichText",
-        "(PDF 1.5) If set, the value of this field is a rich text string (see 12.7.3.4, “Rich Text Strings”). If the field has a value, the RV entry of the field dictionary (Table 222) shall specify the rich text string."
+        "(PDF 1.5) If set, the value of this field is a rich text string (see 12.7.3.4, “Rich Text Strings”). If the field has a value, the RV entry of the field dictionary (Table 222) specifies the rich text string."
       ]
     ]
   }

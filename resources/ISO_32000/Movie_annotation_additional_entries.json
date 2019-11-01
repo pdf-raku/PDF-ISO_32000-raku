@@ -20,7 +20,7 @@
       [
         "Movie",
         "dictionary",
-        "(Required) A movie dictionary that shall describe the movie’s static characteristics (see 13.4, “Movies”)."
+        "(Required) A movie dictionary that describes the movie’s static characteristics (see 13.4, “Movies”)."
       ],
       [
         "A",

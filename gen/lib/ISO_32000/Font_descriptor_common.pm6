@@ -47,7 +47,7 @@ The specific interpretation of these values varies from font to font.
 EXAMPLE 2Condensed in one font may appear most similar to Normal in another.
 
 =head2 FontWeight [number]
-- (Optional; PDF 1.5; is used for Type 3 fonts in Tagged PDF documents) The weight (thickness) component of the fully-qualified font name or font specifier. The possible values is 100, 200, 300, 400, 500, 600, 700, 800, or 900, where each number indicates a weight that is at least as dark as its predecessor. A value of 400 shall indicate a normal weight; 700 shall indicate bold.
+- (Optional; PDF 1.5; is used for Type 3 fonts in Tagged PDF documents) The weight (thickness) component of the fully-qualified font name or font specifier. The possible values is 100, 200, 300, 400, 500, 600, 700, 800, or 900, where each number indicates a weight that is at least as dark as its predecessor. A value of 400 indicates a normal weight; 700 indicates bold.
 The specific interpretation of these values varies from font to font.
 EXAMPLE 3 300 in one font may appear most similar to 500 in another.
 
@@ -55,7 +55,7 @@ EXAMPLE 3 300 in one font may appear most similar to 500 in another.
 - (Required) A collection of flags defining various characteristics of the font (see 9.8.2, "Font Descriptor Flags").
 
 =head2 FontBBox [rectangle]
-- (Required, except for Type 3 fonts) A rectangle (see 7.9.5, "Rectangles"), expressed in the glyph coordinate system, that shall specify the font bounding box. This is the smallest rectangle enclosing the shape that would result if all of the glyphs of the font were placed with their origins coincident and then filled.
+- (Required, except for Type 3 fonts) A rectangle (see 7.9.5, "Rectangles"), expressed in the glyph coordinate system, that specifies the font bounding box. This is the smallest rectangle enclosing the shape that would result if all of the glyphs of the font were placed with their origins coincident and then filled.
 
 =head2 ItalicAngle [number]
 - (Required) The angle, expressed in degrees counterclockwise from the vertical, of the dominant vertical strokes of the font.
@@ -102,6 +102,6 @@ EXAMPLE 4 The 9-o’clock position is 90 degrees, and the 3-o’clock position i
 
 
 =head2 CharSet [ASCII string or byte string]
-- (Optional; meaningful only in Type 1 fonts; PDF 1.1) A string listing the character names defined in a font subset. The names in this string is in PDF syntax—that is, each name preceded by a slash (/). The names may appear in any order. The name . notdef is omitted; it shall exist in the font subset. If this entry is absent, the only indication of a font subset is the subset tag in the FontNameentry (see 9.6.4, "Font Subsets").
+- (Optional; meaningful only in Type 1 fonts; PDF 1.1) A string listing the character names defined in a font subset. The names in this string is in PDF syntax—that is, each name preceded by a slash (/). The names may appear in any order. The name . notdef is omitted; it exists in the font subset. If this entry is absent, the only indication of a font subset is the subset tag in the FontNameentry (see 9.6.4, "Font Subsets").
 
 =end pod

@@ -19,7 +19,7 @@
         "Computed shape of the page group"
       ],
       [
-        "g",
+        "αg",
         "Computed alpha of the page group"
       ],
       [
@@ -32,7 +32,7 @@
       ],
       [
         "U",
-        "An undefined colour (which is not used, since the 0 argument of Composite is 0)"
+        "An undefined colour (which is not used, since the α 0 argument of Composite is 0)"
       ]
     ]
   }

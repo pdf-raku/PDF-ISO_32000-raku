@@ -27,6 +27,6 @@ role ISO_32000::Rendition_common {
 - (Optional) A dictionary whose entries (see Table 267) is honoured for the rendition to be considered viable.
 
 =head2 BE [dictionary]
-- (Optional) A dictionary whose entries (see Table 267) shall only be honoured in a “best effort” sense.
+- (Optional) A dictionary whose entries (see Table 267) is only be honoured in a “best effort” sense.
 
 =end pod

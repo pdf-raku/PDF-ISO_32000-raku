@@ -30,7 +30,7 @@ role ISO_32000::Interactive_form {
 - (Required if any fields in the document have additional-actions dictionaries containing a C entry; PDF 1.3) An array of indirect references to field dictionaries with calculation actions, defining the calculation order in which their values will be recalculated when the value of any field changes (see 12.6.3, “Trigger Events”).
 
 =head2 DR [dictionary]
-- (Optional) A resource dictionary (see 7.8.3, “Resource Dictionaries”) containing default resources (such as fonts, patterns, or colour spaces) that is used by form field appearance streams. At a minimum, this dictionary shall contain a Font entry specifying the resource name and font dictionary of the default font for displaying text.
+- (Optional) A resource dictionary (see 7.8.3, “Resource Dictionaries”) containing default resources (such as fonts, patterns, or colour spaces) that is used by form field appearance streams. At a minimum, this dictionary contains a Font entry specifying the resource name and font dictionary of the default font for displaying text.
 
 =head2 DA [string]
 - (Optional) A document-wide default value for the DA attribute of variable text fields (see 12.7.3.3, “Variable Text”).

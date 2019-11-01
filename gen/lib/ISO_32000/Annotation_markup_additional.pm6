@@ -20,14 +20,14 @@ role ISO_32000::Annotation_markup_additional {
 =head1 Methods (Entries)
 
 =head2 T [text string]
-- (Optional; PDF 1.1) The text label that is displayed in the title bar of the annotation’s pop-up window when open and active. This entry shall identify the user who added the annotation.
+- (Optional; PDF 1.1) The text label that is displayed in the title bar of the annotation’s pop-up window when open and active. This entry identifies the user who added the annotation.
 
 =head2 Popup [dictionary]
 - (Optional; PDF 1.3) An indirect reference to a pop-up annotation for entering or editing the text associated with this annotation.
 
 =head2 CA [number]
 - (Optional; PDF 1.4) The constant opacity value that is used in painting the annotation (see Sections 11.2, “Overview of Transparency,” and 11.3.7, “Shape and Opacity Computations”). This value applies to all visible elements of the annotation in its closed state (including its background and border) but not to the pop-up window that appears when the annotation is opened.
-The specified value shall not used if the annotation has an appearance stream (see 12.5.5, “Appearance Streams”); in that case, the appearance stream shall specify any transparency. (However, if the compliant viewer regenerates the annotation’s appearance stream, it may incorporate the CA value into the stream’s content.)
+The specified value does not used if the annotation has an appearance stream (see 12.5.5, “Appearance Streams”); in that case, the appearance stream specifies any transparency. (However, if the compliant viewer regenerates the annotation’s appearance stream, it may incorporate the CA value into the stream’s content.)
 The implicit blend mode (see 11.3.5, “Blend Mode” ”) is Normal. Default value: 1.0.
 If no explicit appearance stream is defined for the annotation, it may bepainted by implementation-dependent means that do not necessarily conform to the PDF imaging model; in this case, the effect of this entry is implementation-dependent as well.
 
@@ -46,7 +46,7 @@ If this entry is present in an FDF file (see 12.7.7, “Forms Data Format”), i
 
 =head2 RT [name]
 - (Optional; meaningful only if IRT is present; PDF 1.6) A name specifying the relationship (the “reply type”) between this annotation and one specified by IRT. Valid values are:
-RThe annotation is considered a reply to the annotation specified by IRT. Conforming readers shall not display replies to an annotation individually but together in the form of threaded comments.
+RThe annotation is considered a reply to the annotation specified by IRT. Conforming readers does not display replies to an annotation individually but together in the form of threaded comments.
 GroupThe annotation is grouped with the annotation specified by IRT; see the discussion following this Table.
 Default value: R.
 
