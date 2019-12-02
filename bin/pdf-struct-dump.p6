@@ -245,7 +245,7 @@ multi sub dump-struct(PDF::StructElem $node, :$tags is copy = %(), :$depth is co
             given trim($_) {
                 if $_ eq '' {
                     say pad($depth, "<$name$att/>")
-                    unless $name eq 'Span';
+                        unless $name eq 'Span';
                 }
                 else {
                     say pad($depth, $name eq 'Span' ?? $_ !! "<$name$att>{html-escape($_) }</$name>")
@@ -261,16 +261,19 @@ multi sub dump-struct(PDF::StructElem $node, :$tags is copy = %(), :$depth is co
                 for 0 ..^ $elems {
                     my StructElemChild $c = $k[$_];
                     dump-struct($c, :$tags, :$depth);
+                    $c.done;
                 }
 
                 say pad($depth, "</$name>")
                     unless $name eq 'Span';
             }
             else {
-                say pad($depth, "<$name$att/>");
+                say pad($depth, "<$name$att/>")
+                    unless $name eq 'Span';
             }
         }
     }
+    $node.done;
 }
 
 multi sub dump-struct(PDF::OBJR $_, :$tags is copy, :$depth!) {
@@ -278,6 +281,7 @@ multi sub dump-struct(PDF::OBJR $_, :$tags is copy, :$depth!) {
         if $*debug;
     $tags = graphics-tags($_) with .Pg;
     dump-struct($_, :$tags, :$depth) with .Obj;
+    .done;
 }
 
 my %deref{Any};
@@ -317,18 +321,22 @@ multi sub dump-struct(PDF::MCR $_, :$tags is copy, :$depth!) {
             warn "unable to resolve marked content $mcid";
         }
     }
+    .done;
 }
 
 multi sub dump-struct(StructNode $_ where !(%deref{$_}:exists), |c) {
     dump-struct( deref($_), |c);
+    .done;
 }
 
 multi sub dump-struct(PDF::Field $_, :$tags is copy, :$depth!) {
     warn "todo: dump field obj";
+    .done;
 }
 
 multi sub dump-struct(PDF::Annot $_, :$tags is copy, :$depth!) {
     warn "todo: dump annot obj: " ~ .perl;
+    .done;
 }
 
 multi sub dump-struct(List $a, :$depth!, |c) {
@@ -338,11 +346,13 @@ multi sub dump-struct(List $a, :$depth!, |c) {
         dump-struct($_, :$depth, |c)
             with $a[$_];
     }
+    $a.done;
 }
 
 multi sub dump-struct($_, :$tags, :$depth) is default {
     die "unknown struct elem of type {.WHAT.^name}";
     say pad($depth, .perl);
+    .done;
 }
 
 sub dump-tag(PDF::Content::Tag $tag, :$depth! is copy) {

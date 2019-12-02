@@ -30,7 +30,7 @@ sub edit($_) {
     .subst(/:s Link (Table|Annex|Figure|Bibliography|<[0..9.]>+)/, { $0 }, :g);
 }
 
-sub dump-table($_) {
+sub dump-table(LibXML::Node $_) {
     my $caption = tidy(.first('Caption'));
     my @head = .<THead/TR/TH>.map({tidy($_)});
     my @rows = .<TBody/TR>.map({
