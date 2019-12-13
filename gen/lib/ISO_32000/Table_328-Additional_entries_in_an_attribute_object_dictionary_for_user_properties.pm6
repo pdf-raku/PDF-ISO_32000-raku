@@ -1,11 +1,14 @@
 use v6;
-#| PDF 32000-1:2008 Table 328 – Additional entries in an attribute object dictionary for user properties
 role ISO_32000::Table_328-Additional_entries_in_an_attribute_object_dictionary_for_user_properties {
     method O {...};
     method P {...};
 }
 
 =begin pod
+
+=head1 Description
+
+Table 328 – Additional entries in an attribute object dictionary for user properties
 
 =head1 Methods (Entries)
 

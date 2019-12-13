@@ -1,5 +1,4 @@
 use v6;
-#| PDF 32000-1:2008 Table 313 – Entries in an external data dictionary used to markup 3D annotations
 role ISO_32000::Table_313-Entries_in_an_external_data_dictionary_used_to_markup_ThreeD_annotations {
     method Type {...};
     method Subtype {...};
@@ -14,6 +13,10 @@ role ISO_32000::Table_313-Entries_in_an_external_data_dictionary_used_to_markup_
 }
 
 =begin pod
+
+=head1 Description
+
+Table 313 – Entries in an external data dictionary used to markup 3D annotations
 
 =head1 Methods (Entries)
 

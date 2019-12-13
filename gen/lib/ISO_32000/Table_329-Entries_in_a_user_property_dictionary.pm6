@@ -1,5 +1,4 @@
 use v6;
-#| PDF 32000-1:2008 Table 329 – Entries in a user property dictionary
 role ISO_32000::Table_329-Entries_in_a_user_property_dictionary {
     method N {...};
     method V {...};
@@ -8,6 +7,10 @@ role ISO_32000::Table_329-Entries_in_a_user_property_dictionary {
 }
 
 =begin pod
+
+=head1 Description
+
+Table 329 – Entries in a user property dictionary
 
 =head1 Methods (Entries)
 

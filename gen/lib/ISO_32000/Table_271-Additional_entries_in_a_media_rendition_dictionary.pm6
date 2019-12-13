@@ -1,5 +1,4 @@
 use v6;
-#| PDF 32000-1:2008 Table 271 – Additional entries in a media rendition dictionary
 role ISO_32000::Table_271-Additional_entries_in_a_media_rendition_dictionary {
     method C {...};
     method P {...};
@@ -7,6 +6,10 @@ role ISO_32000::Table_271-Additional_entries_in_a_media_rendition_dictionary {
 }
 
 =begin pod
+
+=head1 Description
+
+Table 271 – Additional entries in a media rendition dictionary
 
 =head1 Methods (Entries)
 

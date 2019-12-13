@@ -1,5 +1,4 @@
 use v6;
-#| PDF 32000-1:2008 Table 321 – Entries in the mark information dictionary
 role ISO_32000::Table_321-Entries_in_the_mark_information_dictionary {
     method Marked {...};
     method UserProperties {...};
@@ -7,6 +6,10 @@ role ISO_32000::Table_321-Entries_in_the_mark_information_dictionary {
 }
 
 =begin pod
+
+=head1 Description
+
+Table 321 – Entries in the mark information dictionary
 
 =head1 Methods (Entries)
 

@@ -1,5 +1,4 @@
 use v6;
-#| PDF 32000-1:2008 Table 172 – Additional entries specific to a text annotation
 role ISO_32000::Table_172-Additional_entries_specific_to_a_text_annotation {
     method Subtype {...};
     method Open {...};
@@ -9,6 +8,10 @@ role ISO_32000::Table_172-Additional_entries_specific_to_a_text_annotation {
 }
 
 =begin pod
+
+=head1 Description
+
+Table 172 – Additional entries specific to a text annotation
 
 =head1 Methods (Entries)
 

@@ -1,5 +1,4 @@
 use v6;
-#| PDF 32000-1:2008 Table 194 – Entries in an annotation’s additional-actions dictionary
 role ISO_32000::Table_194-Entries_in_an_annotations_additional-actions_dictionary {
     method E {...};
     method X {...};
@@ -14,6 +13,10 @@ role ISO_32000::Table_194-Entries_in_an_annotations_additional-actions_dictionar
 }
 
 =begin pod
+
+=head1 Description
+
+Table 194 – Entries in an annotation’s additional-actions dictionary
 
 =head1 Methods (Entries)
 

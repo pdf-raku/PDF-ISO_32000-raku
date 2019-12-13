@@ -1,5 +1,4 @@
 use v6;
-#| PDF 32000-1:2008 Table 71 – Entries in a DeviceN Colour Space Attributes Dictionary
 role ISO_32000::Table_71-Entries_in_a_DeviceN_Colour_Space_Attributes_Dictionary {
     method Subtype {...};
     method Colorants {...};
@@ -8,6 +7,10 @@ role ISO_32000::Table_71-Entries_in_a_DeviceN_Colour_Space_Attributes_Dictionary
 }
 
 =begin pod
+
+=head1 Description
+
+Table 71 – Entries in a DeviceN Colour Space Attributes Dictionary
 
 =head1 Methods (Entries)
 

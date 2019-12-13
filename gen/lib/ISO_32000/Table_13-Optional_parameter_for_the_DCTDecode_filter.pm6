@@ -1,10 +1,13 @@
 use v6;
-#| PDF 32000-1:2008 Table 13 – Optional parameter for the DCTDecode filter
 role ISO_32000::Table_13-Optional_parameter_for_the_DCTDecode_filter {
     method ColorTransform {...};
 }
 
 =begin pod
+
+=head1 Description
+
+Table 13 – Optional parameter for the DCTDecode filter
 
 =head1 Methods (Entries)
 

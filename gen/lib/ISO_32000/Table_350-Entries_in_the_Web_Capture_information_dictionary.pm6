@@ -1,11 +1,14 @@
 use v6;
-#| PDF 32000-1:2008 Table 350 – Entries in the Web Capture information dictionary
 role ISO_32000::Table_350-Entries_in_the_Web_Capture_information_dictionary {
     method V {...};
     method C {...};
 }
 
 =begin pod
+
+=head1 Description
+
+Table 350 – Entries in the Web Capture information dictionary
 
 =head1 Methods (Entries)
 

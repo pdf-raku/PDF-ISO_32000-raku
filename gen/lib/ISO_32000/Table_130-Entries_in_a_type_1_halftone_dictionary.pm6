@@ -1,5 +1,4 @@
 use v6;
-#| PDF 32000-1:2008 Table 130 – Entries in a type 1 halftone dictionary
 role ISO_32000::Table_130-Entries_in_a_type_1_halftone_dictionary {
     method Type {...};
     method HalftoneType {...};
@@ -12,6 +11,10 @@ role ISO_32000::Table_130-Entries_in_a_type_1_halftone_dictionary {
 }
 
 =begin pod
+
+=head1 Description
+
+Table 130 – Entries in a type 1 halftone dictionary
 
 =head1 Methods (Entries)
 

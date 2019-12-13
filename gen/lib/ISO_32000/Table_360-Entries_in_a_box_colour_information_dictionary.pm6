@@ -1,5 +1,4 @@
 use v6;
-#| PDF 32000-1:2008 Table 360 – Entries in a box colour information dictionary
 role ISO_32000::Table_360-Entries_in_a_box_colour_information_dictionary {
     method CropBox {...};
     method BleedBox {...};
@@ -8,6 +7,10 @@ role ISO_32000::Table_360-Entries_in_a_box_colour_information_dictionary {
 }
 
 =begin pod
+
+=head1 Description
+
+Table 360 – Entries in a box colour information dictionary
 
 =head1 Methods (Entries)
 

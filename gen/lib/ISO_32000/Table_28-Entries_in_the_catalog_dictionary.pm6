@@ -1,5 +1,4 @@
 use v6;
-#| PDF 32000-1:2008 Table 28 – Entries in the catalog dictionary
 role ISO_32000::Table_28-Entries_in_the_catalog_dictionary {
     method Type {...};
     method Version {...};
@@ -33,6 +32,10 @@ role ISO_32000::Table_28-Entries_in_the_catalog_dictionary {
 }
 
 =begin pod
+
+=head1 Description
+
+Table 28 – Entries in the catalog dictionary
 
 =head1 Methods (Entries)
 

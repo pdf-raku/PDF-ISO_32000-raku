@@ -1,5 +1,4 @@
 use v6;
-#| PDF 32000-1:2008 Table 296 – Entries in a movie activation dictionary
 role ISO_32000::Table_296-Entries_in_a_movie_activation_dictionary {
     method Start {...};
     method Duration {...};
@@ -13,6 +12,10 @@ role ISO_32000::Table_296-Entries_in_a_movie_activation_dictionary {
 }
 
 =begin pod
+
+=head1 Description
+
+Table 296 – Entries in a movie activation dictionary
 
 =head1 Methods (Entries)
 

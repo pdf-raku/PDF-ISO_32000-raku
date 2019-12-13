@@ -1,5 +1,4 @@
 use v6;
-#| PDF 32000-1:2008 Table 5 – Entries common to all stream dictionaries
 role ISO_32000::Table_5-Entries_common_to_all_stream_dictionaries {
     method Length {...};
     method Filter {...};
@@ -11,6 +10,10 @@ role ISO_32000::Table_5-Entries_common_to_all_stream_dictionaries {
 }
 
 =begin pod
+
+=head1 Description
+
+Table 5 – Entries common to all stream dictionaries
 
 =head1 Methods (Entries)
 

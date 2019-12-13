@@ -1,5 +1,4 @@
 use v6;
-#| PDF 32000-1:2008 Table 218 – Entries in the interactive form dictionary
 role ISO_32000::Table_218-Entries_in_the_interactive_form_dictionary {
     method Fields {...};
     method NeedAppearances {...};
@@ -12,6 +11,10 @@ role ISO_32000::Table_218-Entries_in_the_interactive_form_dictionary {
 }
 
 =begin pod
+
+=head1 Description
+
+Table 218 – Entries in the interactive form dictionary
 
 =head1 Methods (Entries)
 

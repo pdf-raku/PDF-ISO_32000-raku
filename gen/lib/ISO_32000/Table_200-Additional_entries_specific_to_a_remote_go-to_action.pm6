@@ -1,5 +1,4 @@
 use v6;
-#| PDF 32000-1:2008 Table 200 – Additional entries specific to a remote go-to action
 role ISO_32000::Table_200-Additional_entries_specific_to_a_remote_go-to_action {
     method S {...};
     method F {...};
@@ -8,6 +7,10 @@ role ISO_32000::Table_200-Additional_entries_specific_to_a_remote_go-to_action {
 }
 
 =begin pod
+
+=head1 Description
+
+Table 200 – Additional entries specific to a remote go-to action
 
 =head1 Methods (Entries)
 

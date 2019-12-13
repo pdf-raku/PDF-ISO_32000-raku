@@ -1,5 +1,4 @@
 use v6;
-#| PDF 32000-1:2008 Table 202 – Entries specific to a target dictionary
 role ISO_32000::Table_202-Entries_specific_to_a_target_dictionary {
     method R {...};
     method N {...};
@@ -9,6 +8,10 @@ role ISO_32000::Table_202-Entries_specific_to_a_target_dictionary {
 }
 
 =begin pod
+
+=head1 Description
+
+Table 202 – Entries specific to a target dictionary
 
 =head1 Methods (Entries)
 

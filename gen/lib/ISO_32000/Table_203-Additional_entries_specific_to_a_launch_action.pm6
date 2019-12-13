@@ -1,5 +1,4 @@
 use v6;
-#| PDF 32000-1:2008 Table 203 – Additional entries specific to a launch action
 role ISO_32000::Table_203-Additional_entries_specific_to_a_launch_action {
     method S {...};
     method F {...};
@@ -10,6 +9,10 @@ role ISO_32000::Table_203-Additional_entries_specific_to_a_launch_action {
 }
 
 =begin pod
+
+=head1 Description
+
+Table 203 – Additional entries specific to a launch action
 
 =head1 Methods (Entries)
 

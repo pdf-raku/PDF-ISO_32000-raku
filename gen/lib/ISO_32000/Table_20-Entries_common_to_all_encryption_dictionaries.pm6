@@ -1,5 +1,4 @@
 use v6;
-#| PDF 32000-1:2008 Table 20 – Entries common to all encryption dictionaries
 role ISO_32000::Table_20-Entries_common_to_all_encryption_dictionaries {
     method Filter {...};
     method SubFilter {...};
@@ -12,6 +11,10 @@ role ISO_32000::Table_20-Entries_common_to_all_encryption_dictionaries {
 }
 
 =begin pod
+
+=head1 Description
+
+Table 20 – Entries common to all encryption dictionaries
 
 =head1 Methods (Entries)
 

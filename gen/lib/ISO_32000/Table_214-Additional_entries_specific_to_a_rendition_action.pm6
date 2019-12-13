@@ -1,5 +1,4 @@
 use v6;
-#| PDF 32000-1:2008 Table 214 – Additional entries specific to a rendition action
 role ISO_32000::Table_214-Additional_entries_specific_to_a_rendition_action {
     method S {...};
     method R {...};
@@ -9,6 +8,10 @@ role ISO_32000::Table_214-Additional_entries_specific_to_a_rendition_action {
 }
 
 =begin pod
+
+=head1 Description
+
+Table 214 – Additional entries specific to a rendition action
 
 =head1 Methods (Entries)
 

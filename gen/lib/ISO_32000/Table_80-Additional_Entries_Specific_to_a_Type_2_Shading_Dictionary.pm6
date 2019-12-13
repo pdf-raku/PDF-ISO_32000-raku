@@ -1,5 +1,4 @@
 use v6;
-#| PDF 32000-1:2008 Table 80 – Additional Entries Specific to a Type 2 Shading Dictionary
 role ISO_32000::Table_80-Additional_Entries_Specific_to_a_Type_2_Shading_Dictionary {
     method Coords {...};
     method Domain {...};
@@ -8,6 +7,10 @@ role ISO_32000::Table_80-Additional_Entries_Specific_to_a_Type_2_Shading_Diction
 }
 
 =begin pod
+
+=head1 Description
+
+Table 80 – Additional Entries Specific to a Type 2 Shading Dictionary
 
 =head1 Methods (Entries)
 

@@ -1,10 +1,13 @@
 use v6;
-#| PDF 32000-1:2008 Table 156 – Entries in a collection schema dictionary
 role ISO_32000::Table_156-Entries_in_a_collection_schema_dictionary {
     method Type {...};
 }
 
 =begin pod
+
+=head1 Description
+
+Table 156 – Entries in a collection schema dictionary
 
 =head1 Methods (Entries)
 

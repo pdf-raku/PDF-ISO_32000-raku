@@ -1,11 +1,14 @@
 use v6;
-#| PDF 32000-1:2008 Table 261 – Entries in a measure dictionary
 role ISO_32000::Table_261-Entries_in_a_measure_dictionary {
     method Type {...};
     method Subtype {...};
 }
 
 =begin pod
+
+=head1 Description
+
+Table 261 – Entries in a measure dictionary
 
 =head1 Methods (Entries)
 

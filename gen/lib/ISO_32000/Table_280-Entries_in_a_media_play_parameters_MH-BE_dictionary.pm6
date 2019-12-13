@@ -1,5 +1,4 @@
 use v6;
-#| PDF 32000-1:2008 Table 280 – Entries in a media play parameters MH/BE dictionary
 role ISO_32000::Table_280-Entries_in_a_media_play_parameters_MH-BE_dictionary {
     method V {...};
     method C {...};
@@ -10,6 +9,10 @@ role ISO_32000::Table_280-Entries_in_a_media_play_parameters_MH-BE_dictionary {
 }
 
 =begin pod
+
+=head1 Description
+
+Table 280 – Entries in a media play parameters MH/BE dictionary
 
 =head1 Methods (Entries)
 

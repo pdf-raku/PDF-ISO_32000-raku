@@ -1,5 +1,4 @@
 use v6;
-#| PDF 32000-1:2008 Table 53 – Device-Dependent Graphics State Parameters
 role ISO_32000::Table_53-Device-Dependent_Graphics_State_Parameters {
     method overprint {...};
     method transfer {...};
@@ -9,6 +8,10 @@ role ISO_32000::Table_53-Device-Dependent_Graphics_State_Parameters {
 }
 
 =begin pod
+
+=head1 Description
+
+Table 53 – Device-Dependent Graphics State Parameters
 
 =head1 Methods (Entries)
 

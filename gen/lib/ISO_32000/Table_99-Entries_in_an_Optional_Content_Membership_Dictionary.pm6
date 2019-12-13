@@ -1,5 +1,4 @@
 use v6;
-#| PDF 32000-1:2008 Table 99 – Entries in an Optional Content Membership Dictionary
 role ISO_32000::Table_99-Entries_in_an_Optional_Content_Membership_Dictionary {
     method Type {...};
     method OCGs {...};
@@ -8,6 +7,10 @@ role ISO_32000::Table_99-Entries_in_an_Optional_Content_Membership_Dictionary {
 }
 
 =begin pod
+
+=head1 Description
+
+Table 99 – Entries in an Optional Content Membership Dictionary
 
 =head1 Methods (Entries)
 

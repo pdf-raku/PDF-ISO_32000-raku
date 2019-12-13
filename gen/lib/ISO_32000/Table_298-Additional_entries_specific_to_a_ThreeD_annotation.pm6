@@ -1,5 +1,4 @@
 use v6;
-#| PDF 32000-1:2008 Table 298 – Additional entries specific to a 3D annotation
 role ISO_32000::Table_298-Additional_entries_specific_to_a_ThreeD_annotation {
     method Subtype {...};
     INIT {
@@ -12,6 +11,10 @@ role ISO_32000::Table_298-Additional_entries_specific_to_a_ThreeD_annotation {
 }
 
 =begin pod
+
+=head1 Description
+
+Table 298 – Additional entries specific to a 3D annotation
 
 =head1 Methods (Entries)
 

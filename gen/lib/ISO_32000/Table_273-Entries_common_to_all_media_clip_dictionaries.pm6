@@ -1,5 +1,4 @@
 use v6;
-#| PDF 32000-1:2008 Table 273 – Entries common to all media clip dictionaries
 role ISO_32000::Table_273-Entries_common_to_all_media_clip_dictionaries {
     method Type {...};
     method S {...};
@@ -7,6 +6,10 @@ role ISO_32000::Table_273-Entries_common_to_all_media_clip_dictionaries {
 }
 
 =begin pod
+
+=head1 Description
+
+Table 273 – Entries common to all media clip dictionaries
 
 =head1 Methods (Entries)
 

@@ -1,5 +1,4 @@
 use v6;
-#| PDF 32000-1:2008 Table 279 – Entries in a media play parameters dictionary
 role ISO_32000::Table_279-Entries_in_a_media_play_parameters_dictionary {
     method Type {...};
     method PL {...};
@@ -8,6 +7,10 @@ role ISO_32000::Table_279-Entries_in_a_media_play_parameters_dictionary {
 }
 
 =begin pod
+
+=head1 Description
+
+Table 279 – Entries in a media play parameters dictionary
 
 =head1 Methods (Entries)
 

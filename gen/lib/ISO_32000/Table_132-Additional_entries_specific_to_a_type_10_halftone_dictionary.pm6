@@ -1,5 +1,4 @@
 use v6;
-#| PDF 32000-1:2008 Table 132 – Additional entries specific to a type 10 halftone dictionary
 role ISO_32000::Table_132-Additional_entries_specific_to_a_type_10_halftone_dictionary {
     method Type {...};
     method HalftoneType {...};
@@ -10,6 +9,10 @@ role ISO_32000::Table_132-Additional_entries_specific_to_a_type_10_halftone_dict
 }
 
 =begin pod
+
+=head1 Description
+
+Table 132 – Additional entries specific to a type 10 halftone dictionary
 
 =head1 Methods (Entries)
 

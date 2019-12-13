@@ -1,5 +1,4 @@
 use v6;
-#| PDF 32000-1:2008 Table 189 – Entries in an appearance characteristics dictionary
 role ISO_32000::Table_189-Entries_in_an_appearance_characteristics_dictionary {
     method R {...};
     method BC {...};
@@ -15,6 +14,10 @@ role ISO_32000::Table_189-Entries_in_an_appearance_characteristics_dictionary {
 }
 
 =begin pod
+
+=head1 Description
+
+Table 189 – Entries in an appearance characteristics dictionary
 
 =head1 Methods (Entries)
 

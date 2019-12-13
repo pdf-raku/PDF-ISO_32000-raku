@@ -1,5 +1,4 @@
 use v6;
-#| PDF 32000-1:2008 Table 36 – Entries in a name tree node dictionary
 role ISO_32000::Table_36-Entries_in_a_name_tree_node_dictionary {
     method Kids {...};
     method Names {...};
@@ -7,6 +6,10 @@ role ISO_32000::Table_36-Entries_in_a_name_tree_node_dictionary {
 }
 
 =begin pod
+
+=head1 Description
+
+Table 36 – Entries in a name tree node dictionary
 
 =head1 Methods (Entries)
 

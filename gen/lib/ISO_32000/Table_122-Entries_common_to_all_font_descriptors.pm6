@@ -1,5 +1,4 @@
 use v6;
-#| PDF 32000-1:2008 Table 122 – Entries common to all font descriptors
 role ISO_32000::Table_122-Entries_common_to_all_font_descriptors {
     method Type {...};
     method FontName {...};
@@ -26,6 +25,10 @@ role ISO_32000::Table_122-Entries_common_to_all_font_descriptors {
 }
 
 =begin pod
+
+=head1 Description
+
+Table 122 – Entries common to all font descriptors
 
 =head1 Methods (Entries)
 

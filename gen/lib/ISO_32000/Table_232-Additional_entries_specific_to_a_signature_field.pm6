@@ -1,11 +1,14 @@
 use v6;
-#| PDF 32000-1:2008 Table 232 – Additional entries specific to a signature field
 role ISO_32000::Table_232-Additional_entries_specific_to_a_signature_field {
     method Lock {...};
     method SV {...};
 }
 
 =begin pod
+
+=head1 Description
+
+Table 232 – Additional entries specific to a signature field
 
 =head1 Methods (Entries)
 

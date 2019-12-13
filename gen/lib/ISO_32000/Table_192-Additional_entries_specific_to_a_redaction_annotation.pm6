@@ -1,5 +1,4 @@
 use v6;
-#| PDF 32000-1:2008 Table 192 – Additional entries specific to a redaction annotation
 role ISO_32000::Table_192-Additional_entries_specific_to_a_redaction_annotation {
     method Subtype {...};
     method QuadPoints {...};
@@ -12,6 +11,10 @@ role ISO_32000::Table_192-Additional_entries_specific_to_a_redaction_annotation 
 }
 
 =begin pod
+
+=head1 Description
+
+Table 192 – Additional entries specific to a redaction annotation
 
 =head1 Methods (Entries)
 

@@ -1,5 +1,4 @@
 use v6;
-#| PDF 32000-1:2008 Table 127 – Additional entries in an embedded font stream dictionary
 role ISO_32000::Table_127-Additional_entries_in_an_embedded_font_stream_dictionary {
     method Length1 {...};
     method Length2 {...};
@@ -9,6 +8,10 @@ role ISO_32000::Table_127-Additional_entries_in_an_embedded_font_stream_dictiona
 }
 
 =begin pod
+
+=head1 Description
+
+Table 127 – Additional entries in an embedded font stream dictionary
 
 =head1 Methods (Entries)
 

@@ -1,5 +1,4 @@
 use v6;
-#| PDF 32000-1:2008 Table 175 – Additional entries specific to a line annotation
 role ISO_32000::Table_175-Additional_entries_specific_to_a_line_annotation {
     method Subtype {...};
     method L {...};
@@ -17,6 +16,10 @@ role ISO_32000::Table_175-Additional_entries_specific_to_a_line_annotation {
 }
 
 =begin pod
+
+=head1 Description
+
+Table 175 – Additional entries specific to a line annotation
 
 =head1 Methods (Entries)
 

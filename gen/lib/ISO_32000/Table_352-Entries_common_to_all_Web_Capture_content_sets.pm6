@@ -1,5 +1,4 @@
 use v6;
-#| PDF 32000-1:2008 Table 352 – Entries common to all Web Capture content sets
 role ISO_32000::Table_352-Entries_common_to_all_Web_Capture_content_sets {
     method Type {...};
     method S {...};
@@ -11,6 +10,10 @@ role ISO_32000::Table_352-Entries_common_to_all_Web_Capture_content_sets {
 }
 
 =begin pod
+
+=head1 Description
+
+Table 352 – Entries common to all Web Capture content sets
 
 =head1 Methods (Entries)
 

@@ -1,5 +1,4 @@
 use v6;
-#| PDF 32000-1:2008 Table 153 – Entries in an outline item dictionary
 role ISO_32000::Table_153-Entries_in_an_outline_item_dictionary {
     method Title {...};
     method Parent {...};
@@ -16,6 +15,10 @@ role ISO_32000::Table_153-Entries_in_an_outline_item_dictionary {
 }
 
 =begin pod
+
+=head1 Description
+
+Table 153 – Entries in an outline item dictionary
 
 =head1 Methods (Entries)
 

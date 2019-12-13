@@ -1,10 +1,13 @@
 use v6;
-#| PDF 32000-1:2008 Table 207 – Entry in a URI dictionary
 role ISO_32000::Table_207-Entry_in_a_URI_dictionary {
     method Base {...};
 }
 
 =begin pod
+
+=head1 Description
+
+Table 207 – Entry in a URI dictionary
 
 =head1 Methods (Entries)
 

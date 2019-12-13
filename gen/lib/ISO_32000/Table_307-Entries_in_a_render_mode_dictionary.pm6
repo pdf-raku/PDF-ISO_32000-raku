@@ -1,5 +1,4 @@
 use v6;
-#| PDF 32000-1:2008 Table 307 – Entries in a render mode dictionary
 role ISO_32000::Table_307-Entries_in_a_render_mode_dictionary {
     method Type {...};
     method Subtype {...};
@@ -10,6 +9,10 @@ role ISO_32000::Table_307-Entries_in_a_render_mode_dictionary {
 }
 
 =begin pod
+
+=head1 Description
+
+Table 307 – Entries in a render mode dictionary
 
 =head1 Methods (Entries)
 

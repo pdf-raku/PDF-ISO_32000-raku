@@ -1,5 +1,4 @@
 use v6;
-#| PDF 32000-1:2008 Table 317 – Entries in the document information dictionary
 role ISO_32000::Table_317-Entries_in_the_document_information_dictionary {
     method Title {...};
     method Author {...};
@@ -13,6 +12,10 @@ role ISO_32000::Table_317-Entries_in_the_document_information_dictionary {
 }
 
 =begin pod
+
+=head1 Description
+
+Table 317 – Entries in the document information dictionary
 
 =head1 Methods (Entries)
 

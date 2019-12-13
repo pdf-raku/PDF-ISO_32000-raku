@@ -1,5 +1,4 @@
 use v6;
-#| PDF 32000-1:2008 Table 196 – Entries in a form field’s additional-actions dictionary
 role ISO_32000::Table_196-Entries_in_a_form_fields_additional-actions_dictionary {
     method K {...};
     method F {...};
@@ -8,6 +7,10 @@ role ISO_32000::Table_196-Entries_in_a_form_fields_additional-actions_dictionary
 }
 
 =begin pod
+
+=head1 Description
+
+Table 196 – Entries in a form field’s additional-actions dictionary
 
 =head1 Methods (Entries)
 

@@ -1,5 +1,4 @@
 use v6;
-#| PDF 32000-1:2008 Table 79 – Additional Entries Specific to a Type 1 Shading Dictionary
 role ISO_32000::Table_79-Additional_Entries_Specific_to_a_Type_1_Shading_Dictionary {
     method Domain {...};
     method Matrix {...};
@@ -7,6 +6,10 @@ role ISO_32000::Table_79-Additional_Entries_Specific_to_a_Type_1_Shading_Diction
 }
 
 =begin pod
+
+=head1 Description
+
+Table 79 – Additional Entries Specific to a Type 1 Shading Dictionary
 
 =head1 Methods (Entries)
 

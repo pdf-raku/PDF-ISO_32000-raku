@@ -1,11 +1,14 @@
 use v6;
-#| PDF 32000-1:2008 Table 27 – Additional crypt filter dictionary entries for public-key security handlers
 role ISO_32000::Table_27-Additional_crypt_filter_dictionary_entries_for_public-key_security_handlers {
     method Recipients {...};
     method EncryptMetadata {...};
 }
 
 =begin pod
+
+=head1 Description
+
+Table 27 – Additional crypt filter dictionary entries for public-key security handlers
 
 =head1 Methods (Entries)
 

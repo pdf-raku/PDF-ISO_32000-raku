@@ -1,5 +1,4 @@
 use v6;
-#| PDF 32000-1:2008 Table 21 – Additional encryption dictionary entries for the standard security handler
 role ISO_32000::Table_21-Additional_encryption_dictionary_entries_for_the_standard_security_handler {
     method R {...};
     method O {...};
@@ -9,6 +8,10 @@ role ISO_32000::Table_21-Additional_encryption_dictionary_entries_for_the_standa
 }
 
 =begin pod
+
+=head1 Description
+
+Table 21 – Additional encryption dictionary entries for the standard security handler
 
 =head1 Methods (Entries)
 

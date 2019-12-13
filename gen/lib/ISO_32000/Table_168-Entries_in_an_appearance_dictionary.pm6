@@ -1,5 +1,4 @@
 use v6;
-#| PDF 32000-1:2008 Table 168 – Entries in an appearance dictionary
 role ISO_32000::Table_168-Entries_in_an_appearance_dictionary {
     method N {...};
     method R {...};
@@ -7,6 +6,10 @@ role ISO_32000::Table_168-Entries_in_an_appearance_dictionary {
 }
 
 =begin pod
+
+=head1 Description
+
+Table 168 – Entries in an appearance dictionary
 
 =head1 Methods (Entries)
 

@@ -1,5 +1,4 @@
 use v6;
-#| PDF 32000-1:2008 Table 311 – Entries in a 3D cross section dictionary
 role ISO_32000::Table_311-Entries_in_a_ThreeD_cross_section_dictionary {
     method Type {...};
     method C {...};
@@ -11,6 +10,10 @@ role ISO_32000::Table_311-Entries_in_a_ThreeD_cross_section_dictionary {
 }
 
 =begin pod
+
+=head1 Description
+
+Table 311 – Entries in a 3D cross section dictionary
 
 =head1 Methods (Entries)
 

@@ -1,5 +1,4 @@
 use v6;
-#| PDF 32000-1:2008 Table 150 – Entries in a viewer preferences dictionary
 role ISO_32000::Table_150-Entries_in_a_viewer_preferences_dictionary {
     method HideToolbar {...};
     method HideMenubar {...};
@@ -21,6 +20,10 @@ role ISO_32000::Table_150-Entries_in_a_viewer_preferences_dictionary {
 }
 
 =begin pod
+
+=head1 Description
+
+Table 150 – Entries in a viewer preferences dictionary
 
 =head1 Methods (Entries)
 

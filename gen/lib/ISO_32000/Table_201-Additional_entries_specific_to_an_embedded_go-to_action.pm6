@@ -1,5 +1,4 @@
 use v6;
-#| PDF 32000-1:2008 Table 201 – Additional entries specific to an embedded go-to action
 role ISO_32000::Table_201-Additional_entries_specific_to_an_embedded_go-to_action {
     method S {...};
     method F {...};
@@ -9,6 +8,10 @@ role ISO_32000::Table_201-Additional_entries_specific_to_an_embedded_go-to_actio
 }
 
 =begin pod
+
+=head1 Description
+
+Table 201 – Additional entries specific to an embedded go-to action
 
 =head1 Methods (Entries)
 

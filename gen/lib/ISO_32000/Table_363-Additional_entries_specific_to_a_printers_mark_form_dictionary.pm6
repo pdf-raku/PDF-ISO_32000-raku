@@ -1,11 +1,14 @@
 use v6;
-#| PDF 32000-1:2008 Table 363 – Additional entries specific to a printer’s mark form dictionary
 role ISO_32000::Table_363-Additional_entries_specific_to_a_printers_mark_form_dictionary {
     method MarkStyle {...};
     method Colorants {...};
 }
 
 =begin pod
+
+=head1 Description
+
+Table 363 – Additional entries specific to a printer’s mark form dictionary
 
 =head1 Methods (Entries)
 

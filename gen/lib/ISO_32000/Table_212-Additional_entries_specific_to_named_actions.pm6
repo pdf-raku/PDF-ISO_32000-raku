@@ -1,11 +1,14 @@
 use v6;
-#| PDF 32000-1:2008 Table 212 – Additional entries specific to named actions
 role ISO_32000::Table_212-Additional_entries_specific_to_named_actions {
     method S {...};
     method N {...};
 }
 
 =begin pod
+
+=head1 Description
+
+Table 212 – Additional entries specific to named actions
 
 =head1 Methods (Entries)
 

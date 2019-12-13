@@ -1,5 +1,4 @@
 use v6;
-#| PDF 32000-1:2008 Table 17 – Additional entries specific to a cross-reference stream dictionary
 role ISO_32000::Table_17-Additional_entries_specific_to_a_cross-reference_stream_dictionary {
     method Type {...};
     method Size {...};
@@ -9,6 +8,10 @@ role ISO_32000::Table_17-Additional_entries_specific_to_a_cross-reference_stream
 }
 
 =begin pod
+
+=head1 Description
+
+Table 17 – Additional entries specific to a cross-reference stream dictionary
 
 =head1 Methods (Entries)
 

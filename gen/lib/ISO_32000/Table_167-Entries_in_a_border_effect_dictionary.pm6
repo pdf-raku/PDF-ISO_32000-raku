@@ -1,11 +1,14 @@
 use v6;
-#| PDF 32000-1:2008 Table 167 – Entries in a border effect dictionary
 role ISO_32000::Table_167-Entries_in_a_border_effect_dictionary {
     method S {...};
     method I {...};
 }
 
 =begin pod
+
+=head1 Description
+
+Table 167 – Entries in a border effect dictionary
 
 =head1 Methods (Entries)
 

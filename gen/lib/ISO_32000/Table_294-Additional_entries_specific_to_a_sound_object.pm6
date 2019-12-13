@@ -1,5 +1,4 @@
 use v6;
-#| PDF 32000-1:2008 Table 294 – Additional entries specific to a sound object
 role ISO_32000::Table_294-Additional_entries_specific_to_a_sound_object {
     method Type {...};
     method R {...};
@@ -11,6 +10,10 @@ role ISO_32000::Table_294-Additional_entries_specific_to_a_sound_object {
 }
 
 =begin pod
+
+=head1 Description
+
+Table 294 – Additional entries specific to a sound object
 
 =head1 Methods (Entries)
 

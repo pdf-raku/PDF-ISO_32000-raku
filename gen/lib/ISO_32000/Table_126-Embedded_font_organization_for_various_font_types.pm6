@@ -1,5 +1,4 @@
 use v6;
-#| PDF 32000-1:2008 Table 126 – Embedded font organization for various font types
 role ISO_32000::Table_126-Embedded_font_organization_for_various_font_types {
     method FontFile {...};
     method FontFile2 {...};
@@ -7,6 +6,10 @@ role ISO_32000::Table_126-Embedded_font_organization_for_various_font_types {
 }
 
 =begin pod
+
+=head1 Description
+
+Table 126 – Embedded font organization for various font types
 
 =head1 Methods (Entries)
 

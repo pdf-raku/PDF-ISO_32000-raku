@@ -1,5 +1,4 @@
 use v6;
-#| PDF 32000-1:2008 Table 38 – Entries common to all function dictionaries
 role ISO_32000::Table_38-Entries_common_to_all_function_dictionaries {
     method FunctionType {...};
     method Domain {...};
@@ -7,6 +6,10 @@ role ISO_32000::Table_38-Entries_common_to_all_function_dictionaries {
 }
 
 =begin pod
+
+=head1 Description
+
+Table 38 – Entries common to all function dictionaries
 
 =head1 Methods (Entries)
 

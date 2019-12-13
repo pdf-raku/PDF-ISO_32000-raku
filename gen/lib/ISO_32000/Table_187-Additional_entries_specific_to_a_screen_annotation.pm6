@@ -1,5 +1,4 @@
 use v6;
-#| PDF 32000-1:2008 Table 187 – Additional entries specific to a screen annotation
 role ISO_32000::Table_187-Additional_entries_specific_to_a_screen_annotation {
     method Subtype {...};
     method T {...};
@@ -9,6 +8,10 @@ role ISO_32000::Table_187-Additional_entries_specific_to_a_screen_annotation {
 }
 
 =begin pod
+
+=head1 Description
+
+Table 187 – Additional entries specific to a screen annotation
 
 =head1 Methods (Entries)
 

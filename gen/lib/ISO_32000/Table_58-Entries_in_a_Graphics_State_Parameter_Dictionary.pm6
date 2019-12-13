@@ -1,5 +1,4 @@
 use v6;
-#| PDF 32000-1:2008 Table 58 – Entries in a Graphics State Parameter Dictionary
 role ISO_32000::Table_58-Entries_in_a_Graphics_State_Parameter_Dictionary {
     method Type {...};
     method LW {...};
@@ -31,6 +30,10 @@ role ISO_32000::Table_58-Entries_in_a_Graphics_State_Parameter_Dictionary {
 }
 
 =begin pod
+
+=head1 Description
+
+Table 58 – Entries in a Graphics State Parameter Dictionary
 
 =head1 Methods (Entries)
 

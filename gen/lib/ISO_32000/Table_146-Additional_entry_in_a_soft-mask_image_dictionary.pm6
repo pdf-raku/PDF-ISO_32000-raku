@@ -1,10 +1,13 @@
 use v6;
-#| PDF 32000-1:2008 Table 146 – Additional entry in a soft-mask image dictionary
 role ISO_32000::Table_146-Additional_entry_in_a_soft-mask_image_dictionary {
     method Matte {...};
 }
 
 =begin pod
+
+=head1 Description
+
+Table 146 – Additional entry in a soft-mask image dictionary
 
 =head1 Methods (Entries)
 

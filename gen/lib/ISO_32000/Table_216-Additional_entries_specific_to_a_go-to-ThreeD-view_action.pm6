@@ -1,5 +1,4 @@
 use v6;
-#| PDF 32000-1:2008 Table 216 – Additional entries specific to a go-to-3D-view action
 role ISO_32000::Table_216-Additional_entries_specific_to_a_go-to-ThreeD-view_action {
     method S {...};
     method TA {...};
@@ -7,6 +6,10 @@ role ISO_32000::Table_216-Additional_entries_specific_to_a_go-to-ThreeD-view_act
 }
 
 =begin pod
+
+=head1 Description
+
+Table 216 – Additional entries specific to a go-to-3D-view action
 
 =head1 Methods (Entries)
 

@@ -1,5 +1,4 @@
 use v6;
-#| PDF 32000-1:2008 Table 260 – Entries in a viewport dictionary
 role ISO_32000::Table_260-Entries_in_a_viewport_dictionary {
     method Type {...};
     method BBox {...};
@@ -8,6 +7,10 @@ role ISO_32000::Table_260-Entries_in_a_viewport_dictionary {
 }
 
 =begin pod
+
+=head1 Description
+
+Table 260 – Entries in a viewport dictionary
 
 =head1 Methods (Entries)
 

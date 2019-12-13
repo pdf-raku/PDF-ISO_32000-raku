@@ -1,5 +1,4 @@
 use v6;
-#| PDF 32000-1:2008 Table 253 – Entries in a signature reference dictionary
 role ISO_32000::Table_253-Entries_in_a_signature_reference_dictionary {
     method Type {...};
     method TransformMethod {...};
@@ -9,6 +8,10 @@ role ISO_32000::Table_253-Entries_in_a_signature_reference_dictionary {
 }
 
 =begin pod
+
+=head1 Description
+
+Table 253 – Entries in a signature reference dictionary
 
 =head1 Methods (Entries)
 

@@ -1,5 +1,4 @@
 use v6;
-#| PDF 32000-1:2008 Table 78 – Entries Common to All Shading Dictionaries
 role ISO_32000::Table_78-Entries_Common_to_All_Shading_Dictionaries {
     method ShadingType {...};
     method ColorSpace {...};
@@ -9,6 +8,10 @@ role ISO_32000::Table_78-Entries_Common_to_All_Shading_Dictionaries {
 }
 
 =begin pod
+
+=head1 Description
+
+Table 78 – Entries Common to All Shading Dictionaries
 
 =head1 Methods (Entries)
 

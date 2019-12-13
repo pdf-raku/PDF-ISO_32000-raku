@@ -1,10 +1,13 @@
 use v6;
-#| PDF 32000-1:2008 Table 316 – Additional entry for components having metadata
 role ISO_32000::Table_316-Additional_entry_for_components_having_metadata {
     method Metadata {...};
 }
 
 =begin pod
+
+=head1 Description
+
+Table 316 – Additional entry for components having metadata
 
 =head1 Methods (Entries)
 

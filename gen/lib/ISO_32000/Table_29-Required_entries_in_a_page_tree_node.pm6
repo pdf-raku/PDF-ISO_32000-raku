@@ -1,5 +1,4 @@
 use v6;
-#| PDF 32000-1:2008 Table 29 – Required entries in a page tree node
 role ISO_32000::Table_29-Required_entries_in_a_page_tree_node {
     method Type {...};
     method Parent {...};
@@ -8,6 +7,10 @@ role ISO_32000::Table_29-Required_entries_in_a_page_tree_node {
 }
 
 =begin pod
+
+=head1 Description
+
+Table 29 – Required entries in a page tree node
 
 =head1 Methods (Entries)
 

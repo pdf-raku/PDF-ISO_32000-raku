@@ -1,5 +1,4 @@
 use v6;
-#| PDF 32000-1:2008 Table 330 – Property list entries for artifacts
 role ISO_32000::Table_330-Property_list_entries_for_artifacts {
     method Type {...};
     method BBox {...};
@@ -8,6 +7,10 @@ role ISO_32000::Table_330-Property_list_entries_for_artifacts {
 }
 
 =begin pod
+
+=head1 Description
+
+Table 330 – Property list entries for artifacts
 
 =head1 Methods (Entries)
 

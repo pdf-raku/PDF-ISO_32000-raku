@@ -1,10 +1,13 @@
 use v6;
-#| PDF 32000-1:2008 Table 48 – Entries in a collection item dictionary
 role ISO_32000::Table_48-Entries_in_a_collection_item_dictionary {
     method Type {...};
 }
 
 =begin pod
+
+=head1 Description
+
+Table 48 – Entries in a collection item dictionary
 
 =head1 Methods (Entries)
 

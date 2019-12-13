@@ -1,5 +1,4 @@
 use v6;
-#| PDF 32000-1:2008 Table 210 – Additional entries specific to a hide action
 role ISO_32000::Table_210-Additional_entries_specific_to_a_hide_action {
     method S {...};
     method T {...};
@@ -7,6 +6,10 @@ role ISO_32000::Table_210-Additional_entries_specific_to_a_hide_action {
 }
 
 =begin pod
+
+=head1 Description
+
+Table 210 – Additional entries specific to a hide action
 
 =head1 Methods (Entries)
 

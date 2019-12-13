@@ -9,7 +9,7 @@ sub MAIN(*@sources) {
     for @sources.sort( -> $k {with ($k ~~ /<?after Table_>\d+/) {.Int} else { $k }}) {
         my $iso-ref = .IO.slurp.lines.grep(/'Table'/)[0];
         s/'#|' .* 'Table'/Table/ with $iso-ref;
-        my $role-name = .subst(/'.pm6'$/, '').subst(m{'/'}, '::', :g);
+        my $role-name = .subst(/^'lib/'/,'').subst(/'.pm6'$/, '').subst(m{'/'}, '::', :g);
         my $role-name-short = $role-name.split('::')[1];
         my $link = "gen/lib/" ~ $_;
         my $role-ref = "[$iso-ref]($link)";

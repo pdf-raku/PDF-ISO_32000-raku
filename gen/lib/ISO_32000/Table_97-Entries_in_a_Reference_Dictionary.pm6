@@ -1,5 +1,4 @@
 use v6;
-#| PDF 32000-1:2008 Table 97 – Entries in a Reference Dictionary
 role ISO_32000::Table_97-Entries_in_a_Reference_Dictionary {
     method F {...};
     method Page {...};
@@ -7,6 +6,10 @@ role ISO_32000::Table_97-Entries_in_a_Reference_Dictionary {
 }
 
 =begin pod
+
+=head1 Description
+
+Table 97 – Entries in a Reference Dictionary
 
 =head1 Methods (Entries)
 

@@ -1,5 +1,4 @@
 use v6;
-#| PDF 32000-1:2008 Table 178 – Additional entries specific to a polygon or polyline annotation
 role ISO_32000::Table_178-Additional_entries_specific_to_a_polygon_or_polyline_annotation {
     method Subtype {...};
     method Vertices {...};
@@ -12,6 +11,10 @@ role ISO_32000::Table_178-Additional_entries_specific_to_a_polygon_or_polyline_a
 }
 
 =begin pod
+
+=head1 Description
+
+Table 178 – Additional entries specific to a polygon or polyline annotation
 
 =head1 Methods (Entries)
 

@@ -1,5 +1,4 @@
 use v6;
-#| PDF 32000-1:2008 Table 76 – Entries in a Type 2 Pattern Dictionary
 role ISO_32000::Table_76-Entries_in_a_Type_2_Pattern_Dictionary {
     method Type {...};
     method PatternType {...};
@@ -9,6 +8,10 @@ role ISO_32000::Table_76-Entries_in_a_Type_2_Pattern_Dictionary {
 }
 
 =begin pod
+
+=head1 Description
+
+Table 76 – Entries in a Type 2 Pattern Dictionary
 
 =head1 Methods (Entries)
 

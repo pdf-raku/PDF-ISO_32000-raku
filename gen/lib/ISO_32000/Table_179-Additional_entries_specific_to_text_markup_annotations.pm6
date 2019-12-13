@@ -1,11 +1,14 @@
 use v6;
-#| PDF 32000-1:2008 Table 179 – Additional entries specific to text markup annotations
 role ISO_32000::Table_179-Additional_entries_specific_to_text_markup_annotations {
     method Subtype {...};
     method QuadPoints {...};
 }
 
 =begin pod
+
+=head1 Description
+
+Table 179 – Additional entries specific to text markup annotations
 
 =head1 Methods (Entries)
 

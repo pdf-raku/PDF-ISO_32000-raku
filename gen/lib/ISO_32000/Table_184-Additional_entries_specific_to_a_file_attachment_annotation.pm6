@@ -1,5 +1,4 @@
 use v6;
-#| PDF 32000-1:2008 Table 184 – Additional entries specific to a file attachment annotation
 role ISO_32000::Table_184-Additional_entries_specific_to_a_file_attachment_annotation {
     method Subtype {...};
     method FS {...};
@@ -7,6 +6,10 @@ role ISO_32000::Table_184-Additional_entries_specific_to_a_file_attachment_annot
 }
 
 =begin pod
+
+=head1 Description
+
+Table 184 – Additional entries specific to a file attachment annotation
 
 =head1 Methods (Entries)
 

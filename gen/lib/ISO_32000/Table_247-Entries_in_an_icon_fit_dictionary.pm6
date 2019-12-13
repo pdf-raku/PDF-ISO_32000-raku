@@ -1,5 +1,4 @@
 use v6;
-#| PDF 32000-1:2008 Table 247 – Entries in an icon fit dictionary
 role ISO_32000::Table_247-Entries_in_an_icon_fit_dictionary {
     method SW {...};
     method S {...};
@@ -8,6 +7,10 @@ role ISO_32000::Table_247-Entries_in_an_icon_fit_dictionary {
 }
 
 =begin pod
+
+=head1 Description
+
+Table 247 – Entries in an icon fit dictionary
 
 =head1 Methods (Entries)
 

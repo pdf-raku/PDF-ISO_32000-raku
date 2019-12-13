@@ -1,5 +1,4 @@
 use v6;
-#| PDF 32000-1:2008 Table 63 – Entries in a CalGray Colour Space Dictionary
 role ISO_32000::Table_63-Entries_in_a_CalGray_Colour_Space_Dictionary {
     method WhitePoint {...};
     method BlackPoint {...};
@@ -7,6 +6,10 @@ role ISO_32000::Table_63-Entries_in_a_CalGray_Colour_Space_Dictionary {
 }
 
 =begin pod
+
+=head1 Description
+
+Table 63 – Entries in a CalGray Colour Space Dictionary
 
 =head1 Methods (Entries)
 

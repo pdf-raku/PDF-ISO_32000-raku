@@ -1,5 +1,4 @@
 use v6;
-#| PDF 32000-1:2008 Table 367 – Additional entries specific to a trap network appearance stream
 role ISO_32000::Table_367-Additional_entries_specific_to_a_trap_network_appearance_stream {
     method PCM {...};
     method SeparationColorNames {...};
@@ -8,6 +7,10 @@ role ISO_32000::Table_367-Additional_entries_specific_to_a_trap_network_appearan
 }
 
 =begin pod
+
+=head1 Description
+
+Table 367 – Additional entries specific to a trap network appearance stream
 
 =head1 Methods (Entries)
 

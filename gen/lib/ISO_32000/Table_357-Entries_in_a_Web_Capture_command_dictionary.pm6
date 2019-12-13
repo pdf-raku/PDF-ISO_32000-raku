@@ -1,5 +1,4 @@
 use v6;
-#| PDF 32000-1:2008 Table 357 – Entries in a Web Capture command dictionary
 role ISO_32000::Table_357-Entries_in_a_Web_Capture_command_dictionary {
     method URL {...};
     method L {...};
@@ -11,6 +10,10 @@ role ISO_32000::Table_357-Entries_in_a_Web_Capture_command_dictionary {
 }
 
 =begin pod
+
+=head1 Description
+
+Table 357 – Entries in a Web Capture command dictionary
 
 =head1 Methods (Entries)
 

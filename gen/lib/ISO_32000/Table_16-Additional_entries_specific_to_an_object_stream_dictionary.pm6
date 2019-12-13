@@ -1,5 +1,4 @@
 use v6;
-#| PDF 32000-1:2008 Table 16 – Additional entries specific to an object stream dictionary
 role ISO_32000::Table_16-Additional_entries_specific_to_an_object_stream_dictionary {
     method Type {...};
     method N {...};
@@ -8,6 +7,10 @@ role ISO_32000::Table_16-Additional_entries_specific_to_an_object_stream_diction
 }
 
 =begin pod
+
+=head1 Description
+
+Table 16 – Additional entries specific to an object stream dictionary
 
 =head1 Methods (Entries)
 

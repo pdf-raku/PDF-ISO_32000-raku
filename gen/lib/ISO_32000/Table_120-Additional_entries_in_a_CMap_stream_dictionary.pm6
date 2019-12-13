@@ -1,5 +1,4 @@
 use v6;
-#| PDF 32000-1:2008 Table 120 – Additional entries in a CMap stream dictionary
 role ISO_32000::Table_120-Additional_entries_in_a_CMap_stream_dictionary {
     method Type {...};
     method CMapName {...};
@@ -9,6 +8,10 @@ role ISO_32000::Table_120-Additional_entries_in_a_CMap_stream_dictionary {
 }
 
 =begin pod
+
+=head1 Description
+
+Table 120 – Additional entries in a CMap stream dictionary
 
 =head1 Methods (Entries)
 

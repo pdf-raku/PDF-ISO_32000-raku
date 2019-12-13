@@ -1,5 +1,4 @@
 use v6;
-#| PDF 32000-1:2008 Table 344 – Additional standard layout attributes specific to block-level structure elements
 role ISO_32000::Table_344-Additional_standard_layout_attributes_specific_to_block-level_structure_elements {
     method SpaceBefore {...};
     method SpaceAfter {...};
@@ -17,6 +16,10 @@ role ISO_32000::Table_344-Additional_standard_layout_attributes_specific_to_bloc
 }
 
 =begin pod
+
+=head1 Description
+
+Table 344 – Additional standard layout attributes specific to block-level structure elements
 
 =head1 Methods (Entries)
 

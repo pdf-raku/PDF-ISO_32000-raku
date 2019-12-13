@@ -1,5 +1,4 @@
 use v6;
-#| PDF 32000-1:2008 Table 304 – Entries in a 3D view dictionary
 role ISO_32000::Table_304-Entries_in_a_ThreeD_view_dictionary {
     method Type {...};
     method XN {...};
@@ -19,6 +18,10 @@ role ISO_32000::Table_304-Entries_in_a_ThreeD_view_dictionary {
 }
 
 =begin pod
+
+=head1 Description
+
+Table 304 – Entries in a 3D view dictionary
 
 =head1 Methods (Entries)
 

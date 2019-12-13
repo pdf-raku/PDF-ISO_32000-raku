@@ -1,5 +1,4 @@
 use v6;
-#| PDF 32000-1:2008 Table 213 – Additional entries specific to a set-OCG-state action
 role ISO_32000::Table_213-Additional_entries_specific_to_a_set-OCG-state_action {
     method S {...};
     method State {...};
@@ -7,6 +6,10 @@ role ISO_32000::Table_213-Additional_entries_specific_to_a_set-OCG-state_action 
 }
 
 =begin pod
+
+=head1 Description
+
+Table 213 – Additional entries specific to a set-OCG-state action
 
 =head1 Methods (Entries)
 

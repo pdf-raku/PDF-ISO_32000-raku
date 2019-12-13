@@ -1,5 +1,4 @@
 use v6;
-
 role ISO_32000::Table_102-Entries_in_an_Optional_Content_Usage_Dictionary {
     method CreatorInfo {...};
     method Language {...};
@@ -12,6 +11,10 @@ role ISO_32000::Table_102-Entries_in_an_Optional_Content_Usage_Dictionary {
 }
 
 =begin pod
+
+=head1 Description
+
+Table 102 – Entries in an Optional Content Usage Dictionary
 
 =head1 Methods (Entries)
 

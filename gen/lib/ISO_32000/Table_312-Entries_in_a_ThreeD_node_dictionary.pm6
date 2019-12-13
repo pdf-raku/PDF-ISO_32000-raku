@@ -1,5 +1,4 @@
 use v6;
-#| PDF 32000-1:2008 Table 312 – Entries in a 3D node dictionary
 role ISO_32000::Table_312-Entries_in_a_ThreeD_node_dictionary {
     method Type {...};
     method N {...};
@@ -9,6 +8,10 @@ role ISO_32000::Table_312-Entries_in_a_ThreeD_node_dictionary {
 }
 
 =begin pod
+
+=head1 Description
+
+Table 312 – Entries in a 3D node dictionary
 
 =head1 Methods (Entries)
 

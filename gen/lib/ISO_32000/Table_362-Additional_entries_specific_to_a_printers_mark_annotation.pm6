@@ -1,11 +1,14 @@
 use v6;
-#| PDF 32000-1:2008 Table 362 – Additional entries specific to a printer’s mark annotation
 role ISO_32000::Table_362-Additional_entries_specific_to_a_printers_mark_annotation {
     method Subtype {...};
     method MN {...};
 }
 
 =begin pod
+
+=head1 Description
+
+Table 362 – Additional entries specific to a printer’s mark annotation
 
 =head1 Methods (Entries)
 

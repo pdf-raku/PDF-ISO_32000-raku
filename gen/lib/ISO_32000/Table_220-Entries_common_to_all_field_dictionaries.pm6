@@ -1,5 +1,4 @@
 use v6;
-#| PDF 32000-1:2008 Table 220 – Entries common to all field dictionaries
 role ISO_32000::Table_220-Entries_common_to_all_field_dictionaries {
     method FT {...};
     method Parent {...};
@@ -14,6 +13,10 @@ role ISO_32000::Table_220-Entries_common_to_all_field_dictionaries {
 }
 
 =begin pod
+
+=head1 Description
+
+Table 220 – Entries common to all field dictionaries
 
 =head1 Methods (Entries)
 

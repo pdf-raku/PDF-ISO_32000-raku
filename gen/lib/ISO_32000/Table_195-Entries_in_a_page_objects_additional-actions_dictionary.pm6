@@ -1,11 +1,14 @@
 use v6;
-#| PDF 32000-1:2008 Table 195 – Entries in a page object’s additional-actions dictionary
 role ISO_32000::Table_195-Entries_in_a_page_objects_additional-actions_dictionary {
     method O {...};
     method C {...};
 }
 
 =begin pod
+
+=head1 Description
+
+Table 195 – Entries in a page object’s additional-actions dictionary
 
 =head1 Methods (Entries)
 

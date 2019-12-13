@@ -1,5 +1,4 @@
 use v6;
-#| PDF 32000-1:2008 Table 197 – Entries in the document catalog’s additional-actions dictionary
 role ISO_32000::Table_197-Entries_in_the_document_catalogs_additional-actions_dictionary {
     method WC {...};
     method WS {...};
@@ -9,6 +8,10 @@ role ISO_32000::Table_197-Entries_in_the_document_catalogs_additional-actions_di
 }
 
 =begin pod
+
+=head1 Description
+
+Table 197 – Entries in the document catalog’s additional-actions dictionary
 
 =head1 Methods (Entries)
 

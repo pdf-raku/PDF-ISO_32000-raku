@@ -1,10 +1,13 @@
 use v6;
-#| PDF 32000-1:2008 Table 286 – Additional entries in a media offset time dictionary
 role ISO_32000::Table_286-Additional_entries_in_a_media_offset_time_dictionary {
     method T {...};
 }
 
 =begin pod
+
+=head1 Description
+
+Table 286 – Additional entries in a media offset time dictionary
 
 =head1 Methods (Entries)
 

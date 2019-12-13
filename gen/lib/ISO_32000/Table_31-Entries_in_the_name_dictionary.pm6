@@ -1,5 +1,4 @@
 use v6;
-#| PDF 32000-1:2008 Table 31 – Entries in the name dictionary
 role ISO_32000::Table_31-Entries_in_the_name_dictionary {
     method Dests {...};
     method AP {...};
@@ -14,6 +13,10 @@ role ISO_32000::Table_31-Entries_in_the_name_dictionary {
 }
 
 =begin pod
+
+=head1 Description
+
+Table 31 – Entries in the name dictionary
 
 =head1 Methods (Entries)
 

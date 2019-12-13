@@ -1,5 +1,4 @@
 use v6;
-#| PDF 32000-1:2008 Table 11 – Optional parameters for the CCITTFaxDecode filter
 role ISO_32000::Table_11-Optional_parameters_for_the_CCITTFaxDecode_filter {
     method K {...};
     method EndOfLine {...};
@@ -12,6 +11,10 @@ role ISO_32000::Table_11-Optional_parameters_for_the_CCITTFaxDecode_filter {
 }
 
 =begin pod
+
+=head1 Description
+
+Table 11 – Optional parameters for the CCITTFaxDecode filter
 
 =head1 Methods (Entries)
 

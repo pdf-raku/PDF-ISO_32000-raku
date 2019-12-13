@@ -1,5 +1,4 @@
 use v6;
-#| PDF 32000-1:2008 Table 33 – Entries in a resource dictionary
 role ISO_32000::Table_33-Entries_in_a_resource_dictionary {
     method ExtGState {...};
     method ColorSpace {...};
@@ -12,6 +11,10 @@ role ISO_32000::Table_33-Entries_in_a_resource_dictionary {
 }
 
 =begin pod
+
+=head1 Description
+
+Table 33 – Entries in a resource dictionary
 
 =head1 Methods (Entries)
 

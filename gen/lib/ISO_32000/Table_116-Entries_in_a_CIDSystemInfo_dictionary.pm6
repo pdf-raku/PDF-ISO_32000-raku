@@ -1,5 +1,4 @@
 use v6;
-#| PDF 32000-1:2008 Table 116 – Entries in a CIDSystemInfo dictionary
 role ISO_32000::Table_116-Entries_in_a_CIDSystemInfo_dictionary {
     method Registry {...};
     method Ordering {...};
@@ -7,6 +6,10 @@ role ISO_32000::Table_116-Entries_in_a_CIDSystemInfo_dictionary {
 }
 
 =begin pod
+
+=head1 Description
+
+Table 116 – Entries in a CIDSystemInfo dictionary
 
 =head1 Methods (Entries)
 

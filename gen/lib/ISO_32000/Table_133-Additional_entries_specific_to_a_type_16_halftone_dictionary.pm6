@@ -1,5 +1,4 @@
 use v6;
-#| PDF 32000-1:2008 Table 133 – Additional entries specific to a type 16 halftone dictionary
 role ISO_32000::Table_133-Additional_entries_specific_to_a_type_16_halftone_dictionary {
     method Type {...};
     method HalftoneType {...};
@@ -12,6 +11,10 @@ role ISO_32000::Table_133-Additional_entries_specific_to_a_type_16_halftone_dict
 }
 
 =begin pod
+
+=head1 Description
+
+Table 133 – Additional entries specific to a type 16 halftone dictionary
 
 =head1 Methods (Entries)
 

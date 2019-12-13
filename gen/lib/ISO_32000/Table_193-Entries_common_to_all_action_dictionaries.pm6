@@ -1,5 +1,4 @@
 use v6;
-#| PDF 32000-1:2008 Table 193 – Entries common to all action dictionaries
 role ISO_32000::Table_193-Entries_common_to_all_action_dictionaries {
     method Type {...};
     method S {...};
@@ -7,6 +6,10 @@ role ISO_32000::Table_193-Entries_common_to_all_action_dictionaries {
 }
 
 =begin pod
+
+=head1 Description
+
+Table 193 – Entries common to all action dictionaries
 
 =head1 Methods (Entries)
 

@@ -1,5 +1,4 @@
 use v6;
-#| PDF 32000-1:2008 Table 236 – Additional entries specific to a submit-form action
 role ISO_32000::Table_236-Additional_entries_specific_to_a_submit-form_action {
     method S {...};
     method F {...};
@@ -8,6 +7,10 @@ role ISO_32000::Table_236-Additional_entries_specific_to_a_submit-form_action {
 }
 
 =begin pod
+
+=head1 Description
+
+Table 236 – Additional entries specific to a submit-form action
 
 =head1 Methods (Entries)
 

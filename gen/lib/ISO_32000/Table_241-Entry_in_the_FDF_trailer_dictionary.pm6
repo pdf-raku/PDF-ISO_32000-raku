@@ -1,10 +1,13 @@
 use v6;
-#| PDF 32000-1:2008 Table 241 – Entry in the FDF trailer dictionary
 role ISO_32000::Table_241-Entry_in_the_FDF_trailer_dictionary {
     method Root {...};
 }
 
 =begin pod
+
+=head1 Description
+
+Table 241 – Entry in the FDF trailer dictionary
 
 =head1 Methods (Entries)
 

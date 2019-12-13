@@ -1,11 +1,14 @@
 use v6;
-#| PDF 32000-1:2008 Table 319 – Entries in an data dictionary
 role ISO_32000::Table_319-Entries_in_an_data_dictionary {
     method LastModified {...};
     method Private {...};
 }
 
 =begin pod
+
+=head1 Description
+
+Table 319 – Entries in an data dictionary
 
 =head1 Methods (Entries)
 

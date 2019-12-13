@@ -1,5 +1,4 @@
 use v6;
-#| PDF 32000-1:2008 Table 222 – Additional entries common to all fields containing variable text
 role ISO_32000::Table_222-Additional_entries_common_to_all_fields_containing_variable_text {
     method DA {...};
     method Q {...};
@@ -8,6 +7,10 @@ role ISO_32000::Table_222-Additional_entries_common_to_all_fields_containing_var
 }
 
 =begin pod
+
+=head1 Description
+
+Table 222 – Additional entries common to all fields containing variable text
 
 =head1 Methods (Entries)
 

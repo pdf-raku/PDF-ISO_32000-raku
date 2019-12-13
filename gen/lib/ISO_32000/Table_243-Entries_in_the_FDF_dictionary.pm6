@@ -1,5 +1,4 @@
 use v6;
-#| PDF 32000-1:2008 Table 243 – Entries in the FDF dictionary
 role ISO_32000::Table_243-Entries_in_the_FDF_dictionary {
     method F {...};
     method ID {...};
@@ -15,6 +14,10 @@ role ISO_32000::Table_243-Entries_in_the_FDF_dictionary {
 }
 
 =begin pod
+
+=head1 Description
+
+Table 243 – Entries in the FDF dictionary
 
 =head1 Methods (Entries)
 

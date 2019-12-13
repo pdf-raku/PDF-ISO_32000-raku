@@ -1,11 +1,14 @@
 use v6;
-#| PDF 32000-1:2008 Table 52 – Device-Independent Graphics State Parameters
 role ISO_32000::Table_52-Device-Independent_Graphics_State_Parameters {
     method CTM {...};
     method color {...};
 }
 
 =begin pod
+
+=head1 Description
+
+Table 52 – Device-Independent Graphics State Parameters
 
 =head1 Methods (Entries)
 

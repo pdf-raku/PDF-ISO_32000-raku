@@ -1,5 +1,4 @@
 use v6;
-#| PDF 32000-1:2008 Table 355 – Entries in a source information dictionary
 role ISO_32000::Table_355-Entries_in_a_source_information_dictionary {
     method AU {...};
     method TS {...};
@@ -9,6 +8,10 @@ role ISO_32000::Table_355-Entries_in_a_source_information_dictionary {
 }
 
 =begin pod
+
+=head1 Description
+
+Table 355 – Entries in a source information dictionary
 
 =head1 Methods (Entries)
 

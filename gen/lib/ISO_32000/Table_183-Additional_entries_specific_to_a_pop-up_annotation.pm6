@@ -1,5 +1,4 @@
 use v6;
-#| PDF 32000-1:2008 Table 183 – Additional entries specific to a pop-up annotation
 role ISO_32000::Table_183-Additional_entries_specific_to_a_pop-up_annotation {
     method Subtype {...};
     method Parent {...};
@@ -7,6 +6,10 @@ role ISO_32000::Table_183-Additional_entries_specific_to_a_pop-up_annotation {
 }
 
 =begin pod
+
+=head1 Description
+
+Table 183 – Additional entries specific to a pop-up annotation
 
 =head1 Methods (Entries)
 

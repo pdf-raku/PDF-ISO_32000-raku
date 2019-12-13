@@ -1,5 +1,4 @@
 use v6;
-#| PDF 32000-1:2008 Table 101 – Entries in an Optional Content Configuration Dictionary
 role ISO_32000::Table_101-Entries_in_an_Optional_Content_Configuration_Dictionary {
     method Name {...};
     method Creator {...};
@@ -15,6 +14,10 @@ role ISO_32000::Table_101-Entries_in_an_Optional_Content_Configuration_Dictionar
 }
 
 =begin pod
+
+=head1 Description
+
+Table 101 – Entries in an Optional Content Configuration Dictionary
 
 =head1 Methods (Entries)
 

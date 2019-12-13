@@ -1,5 +1,4 @@
 use v6;
-#| PDF 32000-1:2008 Table 246 – Entries in an FDF field dictionary
 role ISO_32000::Table_246-Entries_in_an_FDF_field_dictionary {
     method Kids {...};
     method T {...};
@@ -20,6 +19,10 @@ role ISO_32000::Table_246-Entries_in_an_FDF_field_dictionary {
 }
 
 =begin pod
+
+=head1 Description
+
+Table 246 – Entries in an FDF field dictionary
 
 =head1 Methods (Entries)
 

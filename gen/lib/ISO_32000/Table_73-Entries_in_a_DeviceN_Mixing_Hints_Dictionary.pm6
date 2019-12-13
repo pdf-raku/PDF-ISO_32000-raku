@@ -1,5 +1,4 @@
 use v6;
-#| PDF 32000-1:2008 Table 73 – Entries in a DeviceN Mixing Hints Dictionary
 role ISO_32000::Table_73-Entries_in_a_DeviceN_Mixing_Hints_Dictionary {
     method Solidities {...};
     method PrintingOrder {...};
@@ -7,6 +6,10 @@ role ISO_32000::Table_73-Entries_in_a_DeviceN_Mixing_Hints_Dictionary {
 }
 
 =begin pod
+
+=head1 Description
+
+Table 73 – Entries in a DeviceN Mixing Hints Dictionary
 
 =head1 Methods (Entries)
 

@@ -1,5 +1,4 @@
 use v6;
-#| PDF 32000-1:2008 Table 322 – Entries in the structure tree root
 role ISO_32000::Table_322-Entries_in_the_structure_tree_root {
     method Type {...};
     method K {...};
@@ -11,6 +10,10 @@ role ISO_32000::Table_322-Entries_in_the_structure_tree_root {
 }
 
 =begin pod
+
+=head1 Description
+
+Table 322 – Entries in the structure tree root
 
 =head1 Methods (Entries)
 

@@ -1,11 +1,14 @@
 use v6;
-#| PDF 32000-1:2008 Table 248 – Entries in an FDF page dictionary
 role ISO_32000::Table_248-Entries_in_an_FDF_page_dictionary {
     method Templates {...};
     method Info {...};
 }
 
 =begin pod
+
+=head1 Description
+
+Table 248 – Entries in an FDF page dictionary
 
 =head1 Methods (Entries)
 

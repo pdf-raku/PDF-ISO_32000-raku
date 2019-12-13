@@ -1,11 +1,14 @@
 use v6;
-#| PDF 32000-1:2008 Table 242 – Entries in the FDF catalog dictionary
 role ISO_32000::Table_242-Entries_in_the_FDF_catalog_dictionary {
     method Version {...};
     method FDF {...};
 }
 
 =begin pod
+
+=head1 Description
+
+Table 242 – Entries in the FDF catalog dictionary
 
 =head1 Methods (Entries)
 

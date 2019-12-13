@@ -1,5 +1,4 @@
 use v6;
-#| PDF 32000-1:2008 Table 15 – Entries in the file trailer dictionary
 role ISO_32000::Table_15-Entries_in_the_file_trailer_dictionary {
     method Size {...};
     method Prev {...};
@@ -10,6 +9,10 @@ role ISO_32000::Table_15-Entries_in_the_file_trailer_dictionary {
 }
 
 =begin pod
+
+=head1 Description
+
+Table 15 – Entries in the file trailer dictionary
 
 =head1 Methods (Entries)
 

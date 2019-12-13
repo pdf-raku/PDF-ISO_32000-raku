@@ -1,5 +1,4 @@
 use v6;
-#| PDF 32000-1:2008 Table 295 – Entries in a movie dictionary
 role ISO_32000::Table_295-Entries_in_a_movie_dictionary {
     method F {...};
     method Aspect {...};
@@ -8,6 +7,10 @@ role ISO_32000::Table_295-Entries_in_a_movie_dictionary {
 }
 
 =begin pod
+
+=head1 Description
+
+Table 295 – Entries in a movie dictionary
 
 =head1 Methods (Entries)
 

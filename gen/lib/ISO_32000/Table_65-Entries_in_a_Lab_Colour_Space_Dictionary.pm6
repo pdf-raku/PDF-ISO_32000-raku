@@ -1,5 +1,4 @@
 use v6;
-#| PDF 32000-1:2008 Table 65 – Entries in a Lab Colour Space Dictionary
 role ISO_32000::Table_65-Entries_in_a_Lab_Colour_Space_Dictionary {
     method WhitePoint {...};
     method BlackPoint {...};
@@ -7,6 +6,10 @@ role ISO_32000::Table_65-Entries_in_a_Lab_Colour_Space_Dictionary {
 }
 
 =begin pod
+
+=head1 Description
+
+Table 65 – Entries in a Lab Colour Space Dictionary
 
 =head1 Methods (Entries)
 

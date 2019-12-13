@@ -1,5 +1,4 @@
 use v6;
-#| PDF 32000-1:2008 Table 30 – Entries in a page object
 role ISO_32000::Table_30-Entries_in_a_page_object {
     method Type {...};
     method Parent {...};
@@ -34,6 +33,10 @@ role ISO_32000::Table_30-Entries_in_a_page_object {
 }
 
 =begin pod
+
+=head1 Description
+
+Table 30 – Entries in a page object
 
 =head1 Methods (Entries)
 

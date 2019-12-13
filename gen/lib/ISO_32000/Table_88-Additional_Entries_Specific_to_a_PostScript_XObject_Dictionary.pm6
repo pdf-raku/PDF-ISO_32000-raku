@@ -1,5 +1,4 @@
 use v6;
-#| PDF 32000-1:2008 Table 88 – Additional Entries Specific to a PostScript XObject Dictionary
 role ISO_32000::Table_88-Additional_Entries_Specific_to_a_PostScript_XObject_Dictionary {
     method Type {...};
     method Subtype {...};
@@ -7,6 +6,10 @@ role ISO_32000::Table_88-Additional_Entries_Specific_to_a_PostScript_XObject_Dic
 }
 
 =begin pod
+
+=head1 Description
+
+Table 88 – Additional Entries Specific to a PostScript XObject Dictionary
 
 =head1 Methods (Entries)
 

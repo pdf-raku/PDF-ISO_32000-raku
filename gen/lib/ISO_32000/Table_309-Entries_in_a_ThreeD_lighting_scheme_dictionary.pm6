@@ -1,11 +1,14 @@
 use v6;
-#| PDF 32000-1:2008 Table 309 – Entries in a 3D lighting scheme dictionary
 role ISO_32000::Table_309-Entries_in_a_ThreeD_lighting_scheme_dictionary {
     method Type {...};
     method Subtype {...};
 }
 
 =begin pod
+
+=head1 Description
+
+Table 309 – Entries in a 3D lighting scheme dictionary
 
 =head1 Methods (Entries)
 

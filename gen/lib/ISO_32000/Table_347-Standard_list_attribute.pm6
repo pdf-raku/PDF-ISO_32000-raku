@@ -1,10 +1,13 @@
 use v6;
-#| PDF 32000-1:2008 Table 347 – Standard list attribute
 role ISO_32000::Table_347-Standard_list_attribute {
     method ListNumbering {...};
 }
 
 =begin pod
+
+=head1 Description
+
+Table 347 – Standard list attribute
 
 =head1 Methods (Entries)
 

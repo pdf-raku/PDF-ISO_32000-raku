@@ -1,5 +1,4 @@
 use v6;
-#| PDF 32000-1:2008 Table 185 – Additional entries specific to a sound annotation
 role ISO_32000::Table_185-Additional_entries_specific_to_a_sound_annotation {
     method Subtype {...};
     method Sound {...};
@@ -7,6 +6,10 @@ role ISO_32000::Table_185-Additional_entries_specific_to_a_sound_annotation {
 }
 
 =begin pod
+
+=head1 Description
+
+Table 185 – Additional entries specific to a sound annotation
 
 =head1 Methods (Entries)
 

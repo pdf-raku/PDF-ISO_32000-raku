@@ -1,11 +1,14 @@
 use v6;
-#| PDF 32000-1:2008 Table 326 – Additional dictionary entries for structure element access
 role ISO_32000::Table_326-Additional_dictionary_entries_for_structure_element_access {
     method StructParent {...};
     method StructParents {...};
 }
 
 =begin pod
+
+=head1 Description
+
+Table 326 – Additional dictionary entries for structure element access
 
 =head1 Methods (Entries)
 

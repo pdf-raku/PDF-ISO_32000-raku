@@ -1,11 +1,14 @@
 use v6;
-#| PDF 32000-1:2008 Table 359 – Entries in a Web Capture command settings dictionary
 role ISO_32000::Table_359-Entries_in_a_Web_Capture_command_settings_dictionary {
     method G {...};
     method C {...};
 }
 
 =begin pod
+
+=head1 Description
+
+Table 359 – Entries in a Web Capture command settings dictionary
 
 =head1 Methods (Entries)
 

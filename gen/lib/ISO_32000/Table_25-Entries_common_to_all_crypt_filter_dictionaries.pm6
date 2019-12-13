@@ -1,5 +1,4 @@
 use v6;
-#| PDF 32000-1:2008 Table 25 – Entries common to all crypt filter dictionaries
 role ISO_32000::Table_25-Entries_common_to_all_crypt_filter_dictionaries {
     method Type {...};
     method CFM {...};
@@ -8,6 +7,10 @@ role ISO_32000::Table_25-Entries_common_to_all_crypt_filter_dictionaries {
 }
 
 =begin pod
+
+=head1 Description
+
+Table 25 – Entries common to all crypt filter dictionaries
 
 =head1 Methods (Entries)
 

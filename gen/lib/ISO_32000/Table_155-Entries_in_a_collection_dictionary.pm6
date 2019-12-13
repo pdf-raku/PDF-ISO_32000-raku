@@ -1,5 +1,4 @@
 use v6;
-#| PDF 32000-1:2008 Table 155 – Entries in a collection dictionary
 role ISO_32000::Table_155-Entries_in_a_collection_dictionary {
     method Type {...};
     method Schema {...};
@@ -9,6 +8,10 @@ role ISO_32000::Table_155-Entries_in_a_collection_dictionary {
 }
 
 =begin pod
+
+=head1 Description
+
+Table 155 – Entries in a collection dictionary
 
 =head1 Methods (Entries)
 

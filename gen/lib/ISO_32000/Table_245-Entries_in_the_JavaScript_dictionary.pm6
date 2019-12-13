@@ -1,5 +1,4 @@
 use v6;
-#| PDF 32000-1:2008 Table 245 – Entries in the JavaScript dictionary
 role ISO_32000::Table_245-Entries_in_the_JavaScript_dictionary {
     method Before {...};
     method After {...};
@@ -8,6 +7,10 @@ role ISO_32000::Table_245-Entries_in_the_JavaScript_dictionary {
 }
 
 =begin pod
+
+=head1 Description
+
+Table 245 – Entries in the JavaScript dictionary
 
 =head1 Methods (Entries)
 

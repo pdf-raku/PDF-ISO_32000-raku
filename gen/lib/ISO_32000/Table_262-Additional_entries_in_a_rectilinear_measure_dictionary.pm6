@@ -1,5 +1,4 @@
 use v6;
-#| PDF 32000-1:2008 Table 262 – Additional entries in a rectilinear measure dictionary
 role ISO_32000::Table_262-Additional_entries_in_a_rectilinear_measure_dictionary {
     method R {...};
     method X {...};
@@ -13,6 +12,10 @@ role ISO_32000::Table_262-Additional_entries_in_a_rectilinear_measure_dictionary
 }
 
 =begin pod
+
+=head1 Description
+
+Table 262 – Additional entries in a rectilinear measure dictionary
 
 =head1 Methods (Entries)
 

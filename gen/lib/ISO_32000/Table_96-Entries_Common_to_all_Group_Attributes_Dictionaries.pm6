@@ -1,11 +1,14 @@
 use v6;
-#| PDF 32000-1:2008 Table 96 – Entries Common to all Group Attributes Dictionaries
 role ISO_32000::Table_96-Entries_Common_to_all_Group_Attributes_Dictionaries {
     method Type {...};
     method S {...};
 }
 
 =begin pod
+
+=head1 Description
+
+Table 96 – Entries Common to all Group Attributes Dictionaries
 
 =head1 Methods (Entries)
 

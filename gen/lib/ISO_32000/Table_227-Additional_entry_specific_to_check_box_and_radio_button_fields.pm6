@@ -1,10 +1,13 @@
 use v6;
-#| PDF 32000-1:2008 Table 227 – Additional entry specific to check box and radio button fields
 role ISO_32000::Table_227-Additional_entry_specific_to_check_box_and_radio_button_fields {
     method Opt {...};
 }
 
 =begin pod
+
+=head1 Description
+
+Table 227 – Additional entry specific to check box and radio button fields
 
 =head1 Methods (Entries)
 

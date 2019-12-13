@@ -1,5 +1,4 @@
 use v6;
-#| PDF 32000-1:2008 Table 91 – Entries in an Alternate Image Dictionary
 role ISO_32000::Table_91-Entries_in_an_Alternate_Image_Dictionary {
     method Image {...};
     method DefaultForPrinting {...};
@@ -7,6 +6,10 @@ role ISO_32000::Table_91-Entries_in_an_Alternate_Image_Dictionary {
 }
 
 =begin pod
+
+=head1 Description
+
+Table 91 – Entries in an Alternate Image Dictionary
 
 =head1 Methods (Entries)
 

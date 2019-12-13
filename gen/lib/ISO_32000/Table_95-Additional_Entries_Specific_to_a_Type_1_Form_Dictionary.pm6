@@ -1,5 +1,4 @@
 use v6;
-#| PDF 32000-1:2008 Table 95 – Additional Entries Specific to a Type 1 Form Dictionary
 role ISO_32000::Table_95-Additional_Entries_Specific_to_a_Type_1_Form_Dictionary {
     method Type {...};
     method Subtype {...};
@@ -20,6 +19,10 @@ role ISO_32000::Table_95-Additional_Entries_Specific_to_a_Type_1_Form_Dictionary
 }
 
 =begin pod
+
+=head1 Description
+
+Table 95 – Additional Entries Specific to a Type 1 Form Dictionary
 
 =head1 Methods (Entries)
 

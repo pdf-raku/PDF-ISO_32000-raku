@@ -1,11 +1,14 @@
 use v6;
-#| PDF 32000-1:2008 Table 181 – Additional entries specific to a rubber stamp annotation
 role ISO_32000::Table_181-Additional_entries_specific_to_a_rubber_stamp_annotation {
     method Subtype {...};
     method Name {...};
 }
 
 =begin pod
+
+=head1 Description
+
+Table 181 – Additional entries specific to a rubber stamp annotation
 
 =head1 Methods (Entries)
 

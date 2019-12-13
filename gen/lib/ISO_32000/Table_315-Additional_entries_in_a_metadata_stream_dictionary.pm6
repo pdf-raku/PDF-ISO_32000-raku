@@ -1,11 +1,14 @@
 use v6;
-#| PDF 32000-1:2008 Table 315 – Additional entries in a metadata stream dictionary
 role ISO_32000::Table_315-Additional_entries_in_a_metadata_stream_dictionary {
     method Type {...};
     method Subtype {...};
 }
 
 =begin pod
+
+=head1 Description
+
+Table 315 – Additional entries in a metadata stream dictionary
 
 =head1 Methods (Entries)
 

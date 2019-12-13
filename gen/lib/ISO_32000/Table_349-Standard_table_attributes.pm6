@@ -1,5 +1,4 @@
 use v6;
-#| PDF 32000-1:2008 Table 349 – Standard table attributes
 role ISO_32000::Table_349-Standard_table_attributes {
     method RowSpan {...};
     method ColSpan {...};
@@ -9,6 +8,10 @@ role ISO_32000::Table_349-Standard_table_attributes {
 }
 
 =begin pod
+
+=head1 Description
+
+Table 349 – Standard table attributes
 
 =head1 Methods (Entries)
 

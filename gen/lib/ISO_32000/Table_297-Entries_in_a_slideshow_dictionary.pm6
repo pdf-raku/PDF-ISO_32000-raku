@@ -1,5 +1,4 @@
 use v6;
-#| PDF 32000-1:2008 Table 297 – Entries in a slideshow dictionary
 role ISO_32000::Table_297-Entries_in_a_slideshow_dictionary {
     method Type {...};
     method Subtype {...};
@@ -8,6 +7,10 @@ role ISO_32000::Table_297-Entries_in_a_slideshow_dictionary {
 }
 
 =begin pod
+
+=head1 Description
+
+Table 297 – Entries in a slideshow dictionary
 
 =head1 Methods (Entries)
 

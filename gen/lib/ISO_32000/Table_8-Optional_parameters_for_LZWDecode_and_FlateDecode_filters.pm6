@@ -1,5 +1,4 @@
 use v6;
-#| PDF 32000-1:2008 Table 8 – Optional parameters for LZWDecode and FlateDecode filters
 role ISO_32000::Table_8-Optional_parameters_for_LZWDecode_and_FlateDecode_filters {
     method Predictor {...};
     method Colors {...};
@@ -9,6 +8,10 @@ role ISO_32000::Table_8-Optional_parameters_for_LZWDecode_and_FlateDecode_filter
 }
 
 =begin pod
+
+=head1 Description
+
+Table 8 – Optional parameters for LZWDecode and FlateDecode filters
 
 =head1 Methods (Entries)
 

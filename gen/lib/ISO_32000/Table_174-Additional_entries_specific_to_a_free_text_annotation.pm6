@@ -1,5 +1,4 @@
 use v6;
-#| PDF 32000-1:2008 Table 174 – Additional entries specific to a free text annotation
 role ISO_32000::Table_174-Additional_entries_specific_to_a_free_text_annotation {
     method Subtype {...};
     method DA {...};
@@ -15,6 +14,10 @@ role ISO_32000::Table_174-Additional_entries_specific_to_a_free_text_annotation 
 }
 
 =begin pod
+
+=head1 Description
+
+Table 174 – Additional entries specific to a free text annotation
 
 =head1 Methods (Entries)
 

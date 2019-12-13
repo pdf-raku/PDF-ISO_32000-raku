@@ -1,5 +1,4 @@
 use v6;
-#| PDF 32000-1:2008 Table 205 – Additional entries specific to a thread action
 role ISO_32000::Table_205-Additional_entries_specific_to_a_thread_action {
     method S {...};
     method F {...};
@@ -8,6 +7,10 @@ role ISO_32000::Table_205-Additional_entries_specific_to_a_thread_action {
 }
 
 =begin pod
+
+=head1 Description
+
+Table 205 – Additional entries specific to a thread action
 
 =head1 Methods (Entries)
 

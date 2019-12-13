@@ -1,5 +1,4 @@
 use v6;
-#| PDF 32000-1:2008 Table 170 – Additional entries specific to markup annotations
 role ISO_32000::Table_170-Additional_entries_specific_to_markup_annotations {
     method T {...};
     method Popup {...};
@@ -14,6 +13,10 @@ role ISO_32000::Table_170-Additional_entries_specific_to_markup_annotations {
 }
 
 =begin pod
+
+=head1 Description
+
+Table 170 – Additional entries specific to markup annotations
 
 =head1 Methods (Entries)
 

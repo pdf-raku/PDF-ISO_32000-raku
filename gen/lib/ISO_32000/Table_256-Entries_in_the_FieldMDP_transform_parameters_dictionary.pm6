@@ -1,5 +1,4 @@
 use v6;
-#| PDF 32000-1:2008 Table 256 – Entries in the FieldMDP transform parameters dictionary
 role ISO_32000::Table_256-Entries_in_the_FieldMDP_transform_parameters_dictionary {
     method Type {...};
     method Action {...};
@@ -8,6 +7,10 @@ role ISO_32000::Table_256-Entries_in_the_FieldMDP_transform_parameters_dictionar
 }
 
 =begin pod
+
+=head1 Description
+
+Table 256 – Entries in the FieldMDP transform parameters dictionary
 
 =head1 Methods (Entries)
 

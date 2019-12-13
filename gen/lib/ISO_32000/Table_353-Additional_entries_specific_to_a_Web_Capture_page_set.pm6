@@ -1,5 +1,4 @@
 use v6;
-#| PDF 32000-1:2008 Table 353 – Additional entries specific to a Web Capture page set
 role ISO_32000::Table_353-Additional_entries_specific_to_a_Web_Capture_page_set {
     method S {...};
     method T {...};
@@ -7,6 +6,10 @@ role ISO_32000::Table_353-Additional_entries_specific_to_a_Web_Capture_page_set 
 }
 
 =begin pod
+
+=head1 Description
+
+Table 353 – Additional entries specific to a Web Capture page set
 
 =head1 Methods (Entries)
 

@@ -1,5 +1,4 @@
 use v6;
-#| PDF 32000-1:2008 Table 89 – Additional Entries Specific to an Image Dictionary
 role ISO_32000::Table_89-Additional_Entries_Specific_to_an_Image_Dictionary {
     method Type {...};
     method Subtype {...};
@@ -24,6 +23,10 @@ role ISO_32000::Table_89-Additional_Entries_Specific_to_an_Image_Dictionary {
 }
 
 =begin pod
+
+=head1 Description
+
+Table 89 – Additional Entries Specific to an Image Dictionary
 
 =head1 Methods (Entries)
 

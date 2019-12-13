@@ -1,5 +1,4 @@
 use v6;
-#| PDF 32000-1:2008 Table 37 – Entries in a number tree node dictionary
 role ISO_32000::Table_37-Entries_in_a_number_tree_node_dictionary {
     method Kids {...};
     method Nums {...};
@@ -7,6 +6,10 @@ role ISO_32000::Table_37-Entries_in_a_number_tree_node_dictionary {
 }
 
 =begin pod
+
+=head1 Description
+
+Table 37 – Entries in a number tree node dictionary
 
 =head1 Methods (Entries)
 

@@ -1,5 +1,4 @@
 use v6;
-#| PDF 32000-1:2008 Table 282 – Entries in a media screen parameters dictionary
 role ISO_32000::Table_282-Entries_in_a_media_screen_parameters_dictionary {
     method Type {...};
     method MH {...};
@@ -7,6 +6,10 @@ role ISO_32000::Table_282-Entries_in_a_media_screen_parameters_dictionary {
 }
 
 =begin pod
+
+=head1 Description
+
+Table 282 – Entries in a media screen parameters dictionary
 
 =head1 Methods (Entries)
 

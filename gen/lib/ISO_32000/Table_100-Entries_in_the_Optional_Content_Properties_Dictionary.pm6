@@ -1,5 +1,4 @@
 use v6;
-#| PDF 32000-1:2008 Table 100 – Entries in the Optional Content Properties Dictionary
 role ISO_32000::Table_100-Entries_in_the_Optional_Content_Properties_Dictionary {
     method OCGs {...};
     method D {...};
@@ -7,6 +6,10 @@ role ISO_32000::Table_100-Entries_in_the_Optional_Content_Properties_Dictionary 
 }
 
 =begin pod
+
+=head1 Description
+
+Table 100 – Entries in the Optional Content Properties Dictionary
 
 =head1 Methods (Entries)
 

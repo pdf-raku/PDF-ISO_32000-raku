@@ -1,5 +1,4 @@
 use v6;
-
 role ISO_32000::Table_98-Entries_in_an_Optional_Content_Group_Dictionary {
     method Type {...};
     method Name {...};
@@ -8,6 +7,10 @@ role ISO_32000::Table_98-Entries_in_an_Optional_Content_Group_Dictionary {
 }
 
 =begin pod
+
+=head1 Description
+
+Table 98 – Entries in an Optional Content Group Dictionary
 
 =head1 Methods (Entries)
 

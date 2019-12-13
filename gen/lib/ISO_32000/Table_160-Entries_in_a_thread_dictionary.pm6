@@ -1,5 +1,4 @@
 use v6;
-#| PDF 32000-1:2008 Table 160 – Entries in a thread dictionary
 role ISO_32000::Table_160-Entries_in_a_thread_dictionary {
     method Type {...};
     method F {...};
@@ -7,6 +6,10 @@ role ISO_32000::Table_160-Entries_in_a_thread_dictionary {
 }
 
 =begin pod
+
+=head1 Description
+
+Table 160 – Entries in a thread dictionary
 
 =head1 Methods (Entries)
 

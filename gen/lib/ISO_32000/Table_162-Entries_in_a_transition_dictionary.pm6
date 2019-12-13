@@ -1,5 +1,4 @@
 use v6;
-#| PDF 32000-1:2008 Table 162 – Entries in a transition dictionary
 role ISO_32000::Table_162-Entries_in_a_transition_dictionary {
     method Type {...};
     method S {...};
@@ -12,6 +11,10 @@ role ISO_32000::Table_162-Entries_in_a_transition_dictionary {
 }
 
 =begin pod
+
+=head1 Description
+
+Table 162 – Entries in a transition dictionary
 
 =head1 Methods (Entries)
 

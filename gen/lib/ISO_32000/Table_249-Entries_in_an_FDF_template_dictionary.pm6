@@ -1,5 +1,4 @@
 use v6;
-#| PDF 32000-1:2008 Table 249 – Entries in an FDF template dictionary
 role ISO_32000::Table_249-Entries_in_an_FDF_template_dictionary {
     method TRef {...};
     method Fields {...};
@@ -7,6 +6,10 @@ role ISO_32000::Table_249-Entries_in_an_FDF_template_dictionary {
 }
 
 =begin pod
+
+=head1 Description
+
+Table 249 – Entries in an FDF template dictionary
 
 =head1 Methods (Entries)
 

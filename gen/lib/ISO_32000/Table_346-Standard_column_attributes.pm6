@@ -1,5 +1,4 @@
 use v6;
-#| PDF 32000-1:2008 Table 346 – Standard column attributes
 role ISO_32000::Table_346-Standard_column_attributes {
     method ColumnCount {...};
     method ColumnGap {...};
@@ -7,6 +6,10 @@ role ISO_32000::Table_346-Standard_column_attributes {
 }
 
 =begin pod
+
+=head1 Description
+
+Table 346 – Standard column attributes
 
 =head1 Methods (Entries)
 

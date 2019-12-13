@@ -1,11 +1,14 @@
 use v6;
-#| PDF 32000-1:2008 Table 14 – Optional parameters for Crypt filters
 role ISO_32000::Table_14-Optional_parameters_for_Crypt_filters {
     method Type {...};
     method Name {...};
 }
 
 =begin pod
+
+=head1 Description
+
+Table 14 – Optional parameters for Crypt filters
 
 =head1 Methods (Entries)
 

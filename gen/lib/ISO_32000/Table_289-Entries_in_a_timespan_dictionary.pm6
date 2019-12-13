@@ -1,5 +1,4 @@
 use v6;
-#| PDF 32000-1:2008 Table 289 – Entries in a timespan dictionary
 role ISO_32000::Table_289-Entries_in_a_timespan_dictionary {
     method Type {...};
     method S {...};
@@ -7,6 +6,10 @@ role ISO_32000::Table_289-Entries_in_a_timespan_dictionary {
 }
 
 =begin pod
+
+=head1 Description
+
+Table 289 – Entries in a timespan dictionary
 
 =head1 Methods (Entries)
 

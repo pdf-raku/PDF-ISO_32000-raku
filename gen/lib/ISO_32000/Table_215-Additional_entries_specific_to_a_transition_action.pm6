@@ -1,11 +1,14 @@
 use v6;
-#| PDF 32000-1:2008 Table 215 – Additional entries specific to a transition action
 role ISO_32000::Table_215-Additional_entries_specific_to_a_transition_action {
     method S {...};
     method Trans {...};
 }
 
 =begin pod
+
+=head1 Description
+
+Table 215 – Additional entries specific to a transition action
 
 =head1 Methods (Entries)
 

@@ -1,5 +1,4 @@
 use v6;
-#| PDF 32000-1:2008 Table 290 – Entries in a media players dictionary
 role ISO_32000::Table_290-Entries_in_a_media_players_dictionary {
     method Type {...};
     method MU {...};
@@ -8,6 +7,10 @@ role ISO_32000::Table_290-Entries_in_a_media_players_dictionary {
 }
 
 =begin pod
+
+=head1 Description
+
+Table 290 – Entries in a media players dictionary
 
 =head1 Methods (Entries)
 

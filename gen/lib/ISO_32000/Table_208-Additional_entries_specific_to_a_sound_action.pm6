@@ -1,5 +1,4 @@
 use v6;
-#| PDF 32000-1:2008 Table 208 – Additional entries specific to a sound action
 role ISO_32000::Table_208-Additional_entries_specific_to_a_sound_action {
     method S {...};
     method Sound {...};
@@ -10,6 +9,10 @@ role ISO_32000::Table_208-Additional_entries_specific_to_a_sound_action {
 }
 
 =begin pod
+
+=head1 Description
+
+Table 208 – Additional entries specific to a sound action
 
 =head1 Methods (Entries)
 

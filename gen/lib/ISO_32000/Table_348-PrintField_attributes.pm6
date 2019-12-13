@@ -1,5 +1,4 @@
 use v6;
-#| PDF 32000-1:2008 Table 348 – PrintField attributes
 role ISO_32000::Table_348-PrintField_attributes {
     method Role {...};
     method checked {...};
@@ -7,6 +6,10 @@ role ISO_32000::Table_348-PrintField_attributes {
 }
 
 =begin pod
+
+=head1 Description
+
+Table 348 – PrintField attributes
 
 =head1 Methods (Entries)
 

@@ -1,5 +1,4 @@
 use v6;
-#| PDF 32000-1:2008 Table 46 – Entries in an embedded file parameter dictionary
 role ISO_32000::Table_46-Entries_in_an_embedded_file_parameter_dictionary {
     method Size {...};
     method CreationDate {...};
@@ -9,6 +8,10 @@ role ISO_32000::Table_46-Entries_in_an_embedded_file_parameter_dictionary {
 }
 
 =begin pod
+
+=head1 Description
+
+Table 46 – Entries in an embedded file parameter dictionary
 
 =head1 Methods (Entries)
 

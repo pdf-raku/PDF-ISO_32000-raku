@@ -1,5 +1,4 @@
 use v6;
-#| PDF 32000-1:2008 Table 39 – Additional entries specific to a type 0 function dictionary
 role ISO_32000::Table_39-Additional_entries_specific_to_a_type_0_function_dictionary {
     method Size {...};
     method BitsPerSample {...};
@@ -9,6 +8,10 @@ role ISO_32000::Table_39-Additional_entries_specific_to_a_type_0_function_dictio
 }
 
 =begin pod
+
+=head1 Description
+
+Table 39 – Additional entries specific to a type 0 function dictionary
 
 =head1 Methods (Entries)
 

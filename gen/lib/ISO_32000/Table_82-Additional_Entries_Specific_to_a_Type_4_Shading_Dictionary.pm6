@@ -1,5 +1,4 @@
 use v6;
-#| PDF 32000-1:2008 Table 82 – Additional Entries Specific to a Type 4 Shading Dictionary
 role ISO_32000::Table_82-Additional_Entries_Specific_to_a_Type_4_Shading_Dictionary {
     method BitsPerCoordinate {...};
     method BitsPerComponent {...};
@@ -9,6 +8,10 @@ role ISO_32000::Table_82-Additional_Entries_Specific_to_a_Type_4_Shading_Diction
 }
 
 =begin pod
+
+=head1 Description
+
+Table 82 – Additional Entries Specific to a Type 4 Shading Dictionary
 
 =head1 Methods (Entries)
 

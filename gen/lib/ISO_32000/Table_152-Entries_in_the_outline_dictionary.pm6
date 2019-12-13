@@ -1,5 +1,4 @@
 use v6;
-#| PDF 32000-1:2008 Table 152 – Entries in the outline dictionary
 role ISO_32000::Table_152-Entries_in_the_outline_dictionary {
     method Type {...};
     method First {...};
@@ -8,6 +7,10 @@ role ISO_32000::Table_152-Entries_in_the_outline_dictionary {
 }
 
 =begin pod
+
+=head1 Description
+
+Table 152 – Entries in the outline dictionary
 
 =head1 Methods (Entries)
 

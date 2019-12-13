@@ -1,11 +1,14 @@
 use v6;
-#| PDF 32000-1:2008 Table 258 – Entries in a permissions dictionary
 role ISO_32000::Table_258-Entries_in_a_permissions_dictionary {
     method DocMDP {...};
     method UR3 {...};
 }
 
 =begin pod
+
+=head1 Description
+
+Table 258 – Entries in a permissions dictionary
 
 =head1 Methods (Entries)
 

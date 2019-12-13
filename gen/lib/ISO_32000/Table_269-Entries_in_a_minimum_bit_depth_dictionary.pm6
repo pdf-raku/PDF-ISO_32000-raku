@@ -1,5 +1,4 @@
 use v6;
-#| PDF 32000-1:2008 Table 269 – Entries in a minimum bit depth dictionary
 role ISO_32000::Table_269-Entries_in_a_minimum_bit_depth_dictionary {
     method Type {...};
     method V {...};
@@ -7,6 +6,10 @@ role ISO_32000::Table_269-Entries_in_a_minimum_bit_depth_dictionary {
 }
 
 =begin pod
+
+=head1 Description
+
+Table 269 – Entries in a minimum bit depth dictionary
 
 =head1 Methods (Entries)
 

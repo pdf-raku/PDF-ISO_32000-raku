@@ -1,5 +1,4 @@
 use v6;
-#| PDF 32000-1:2008 Table 233 – Entries in a signature field lock dictionary
 role ISO_32000::Table_233-Entries_in_a_signature_field_lock_dictionary {
     method Type {...};
     method Action {...};
@@ -7,6 +6,10 @@ role ISO_32000::Table_233-Entries_in_a_signature_field_lock_dictionary {
 }
 
 =begin pod
+
+=head1 Description
+
+Table 233 – Entries in a signature field lock dictionary
 
 =head1 Methods (Entries)
 

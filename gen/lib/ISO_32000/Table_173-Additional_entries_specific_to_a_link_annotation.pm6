@@ -1,5 +1,4 @@
 use v6;
-#| PDF 32000-1:2008 Table 173 – Additional entries specific to a link annotation
 role ISO_32000::Table_173-Additional_entries_specific_to_a_link_annotation {
     method Subtype {...};
     method A {...};
@@ -11,6 +10,10 @@ role ISO_32000::Table_173-Additional_entries_specific_to_a_link_annotation {
 }
 
 =begin pod
+
+=head1 Description
+
+Table 173 – Additional entries specific to a link annotation
 
 =head1 Methods (Entries)
 

@@ -1,5 +1,4 @@
 use v6;
-#| PDF 32000-1:2008 Table 157 – Entries in a collection field dictionary
 role ISO_32000::Table_157-Entries_in_a_collection_field_dictionary {
     method Type {...};
     method Subtype {...};
@@ -10,6 +9,10 @@ role ISO_32000::Table_157-Entries_in_a_collection_field_dictionary {
 }
 
 =begin pod
+
+=head1 Description
+
+Table 157 – Entries in a collection field dictionary
 
 =head1 Methods (Entries)
 

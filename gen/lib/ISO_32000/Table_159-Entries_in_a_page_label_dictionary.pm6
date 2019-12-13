@@ -1,5 +1,4 @@
 use v6;
-#| PDF 32000-1:2008 Table 159 – Entries in a page label dictionary
 role ISO_32000::Table_159-Entries_in_a_page_label_dictionary {
     method Type {...};
     method S {...};
@@ -8,6 +7,10 @@ role ISO_32000::Table_159-Entries_in_a_page_label_dictionary {
 }
 
 =begin pod
+
+=head1 Description
+
+Table 159 – Entries in a page label dictionary
 
 =head1 Methods (Entries)
 

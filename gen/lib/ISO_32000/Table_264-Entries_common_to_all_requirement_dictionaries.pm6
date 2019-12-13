@@ -1,5 +1,4 @@
 use v6;
-#| PDF 32000-1:2008 Table 264 – Entries common to all requirement dictionaries
 role ISO_32000::Table_264-Entries_common_to_all_requirement_dictionaries {
     method Type {...};
     method S {...};
@@ -7,6 +6,10 @@ role ISO_32000::Table_264-Entries_common_to_all_requirement_dictionaries {
 }
 
 =begin pod
+
+=head1 Description
+
+Table 264 – Entries common to all requirement dictionaries
 
 =head1 Methods (Entries)
 

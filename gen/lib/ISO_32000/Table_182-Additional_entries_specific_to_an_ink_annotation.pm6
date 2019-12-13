@@ -1,5 +1,4 @@
 use v6;
-#| PDF 32000-1:2008 Table 182 – Additional entries specific to an ink annotation
 role ISO_32000::Table_182-Additional_entries_specific_to_an_ink_annotation {
     method Subtype {...};
     method InkList {...};
@@ -7,6 +6,10 @@ role ISO_32000::Table_182-Additional_entries_specific_to_an_ink_annotation {
 }
 
 =begin pod
+
+=head1 Description
+
+Table 182 – Additional entries specific to an ink annotation
 
 =head1 Methods (Entries)
 

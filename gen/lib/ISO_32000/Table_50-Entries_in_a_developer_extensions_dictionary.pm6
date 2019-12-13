@@ -1,5 +1,4 @@
 use v6;
-#| PDF 32000-1:2008 Table 50 – Entries in a developer extensions dictionary
 role ISO_32000::Table_50-Entries_in_a_developer_extensions_dictionary {
     method Type {...};
     method BaseVersion {...};
@@ -7,6 +6,10 @@ role ISO_32000::Table_50-Entries_in_a_developer_extensions_dictionary {
 }
 
 =begin pod
+
+=head1 Description
+
+Table 50 – Entries in a developer extensions dictionary
 
 =head1 Methods (Entries)
 

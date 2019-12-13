@@ -1,11 +1,14 @@
 use v6;
-#| PDF 32000-1:2008 Table 72 – Entries in a DeviceN Process Dictionary
 role ISO_32000::Table_72-Entries_in_a_DeviceN_Process_Dictionary {
     method ColorSpace {...};
     method Components {...};
 }
 
 =begin pod
+
+=head1 Description
+
+Table 72 – Entries in a DeviceN Process Dictionary
 
 =head1 Methods (Entries)
 

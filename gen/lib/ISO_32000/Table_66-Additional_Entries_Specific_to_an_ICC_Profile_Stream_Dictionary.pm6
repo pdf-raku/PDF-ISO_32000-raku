@@ -1,5 +1,4 @@
 use v6;
-#| PDF 32000-1:2008 Table 66 – Additional Entries Specific to an ICC Profile Stream Dictionary
 role ISO_32000::Table_66-Additional_Entries_Specific_to_an_ICC_Profile_Stream_Dictionary {
     method N {...};
     method Alternate {...};
@@ -8,6 +7,10 @@ role ISO_32000::Table_66-Additional_Entries_Specific_to_an_ICC_Profile_Stream_Di
 }
 
 =begin pod
+
+=head1 Description
+
+Table 66 – Additional Entries Specific to an ICC Profile Stream Dictionary
 
 =head1 Methods (Entries)
 

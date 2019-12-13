@@ -1,5 +1,4 @@
 use v6;
-#| PDF 32000-1:2008 Table 83 – Additional Entries Specific to a Type 5 Shading Dictionary
 role ISO_32000::Table_83-Additional_Entries_Specific_to_a_Type_5_Shading_Dictionary {
     method BitsPerCoordinate {...};
     method BitsPerComponent {...};
@@ -9,6 +8,10 @@ role ISO_32000::Table_83-Additional_Entries_Specific_to_a_Type_5_Shading_Diction
 }
 
 =begin pod
+
+=head1 Description
+
+Table 83 – Additional Entries Specific to a Type 5 Shading Dictionary
 
 =head1 Methods (Entries)
 

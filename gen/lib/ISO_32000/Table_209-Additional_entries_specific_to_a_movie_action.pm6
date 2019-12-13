@@ -1,5 +1,4 @@
 use v6;
-#| PDF 32000-1:2008 Table 209 – Additional entries specific to a movie action
 role ISO_32000::Table_209-Additional_entries_specific_to_a_movie_action {
     method S {...};
     method Annotation {...};
@@ -8,6 +7,10 @@ role ISO_32000::Table_209-Additional_entries_specific_to_a_movie_action {
 }
 
 =begin pod
+
+=head1 Description
+
+Table 209 – Additional entries specific to a movie action
 
 =head1 Methods (Entries)
 

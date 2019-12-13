@@ -1,11 +1,14 @@
 use v6;
-#| PDF 32000-1:2008 Table 285 – Entries common to all media offset dictionaries
 role ISO_32000::Table_285-Entries_common_to_all_media_offset_dictionaries {
     method Type {...};
     method S {...};
 }
 
 =begin pod
+
+=head1 Description
+
+Table 285 – Entries common to all media offset dictionaries
 
 =head1 Methods (Entries)
 

@@ -1,5 +1,4 @@
 use v6;
-#| PDF 32000-1:2008 Table 270 – Entries in a minimum screen size dictionary
 role ISO_32000::Table_270-Entries_in_a_minimum_screen_size_dictionary {
     method Type {...};
     method V {...};
@@ -7,6 +6,10 @@ role ISO_32000::Table_270-Entries_in_a_minimum_screen_size_dictionary {
 }
 
 =begin pod
+
+=head1 Description
+
+Table 270 – Entries in a minimum screen size dictionary
 
 =head1 Methods (Entries)
 

@@ -1,5 +1,4 @@
 use v6;
-#| PDF 32000-1:2008 Table 147 – Additional entries specific to a transparency group attributes dictionary
 role ISO_32000::Table_147-Additional_entries_specific_to_a_transparency_group_attributes_dictionary {
     method S {...};
     method CS {...};
@@ -8,6 +7,10 @@ role ISO_32000::Table_147-Additional_entries_specific_to_a_transparency_group_at
 }
 
 =begin pod
+
+=head1 Description
+
+Table 147 – Additional entries specific to a transparency group attributes dictionary
 
 =head1 Methods (Entries)
 

@@ -1,5 +1,4 @@
 use v6;
-#| PDF 32000-1:2008 Table 343 – Standard layout attributes common to all standard structure types
 role ISO_32000::Table_343-Standard_layout_attributes_common_to_all_standard_structure_types {
     method Placement {...};
     method WritingMode {...};
@@ -12,6 +11,10 @@ role ISO_32000::Table_343-Standard_layout_attributes_common_to_all_standard_stru
 }
 
 =begin pod
+
+=head1 Description
+
+Table 343 – Standard layout attributes common to all standard structure types
 
 =head1 Methods (Entries)
 

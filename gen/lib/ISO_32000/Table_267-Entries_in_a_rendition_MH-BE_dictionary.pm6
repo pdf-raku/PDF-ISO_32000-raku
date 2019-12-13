@@ -1,10 +1,13 @@
 use v6;
-#| PDF 32000-1:2008 Table 267 – Entries in a rendition MH/BE dictionary
 role ISO_32000::Table_267-Entries_in_a_rendition_MH-BE_dictionary {
     method C {...};
 }
 
 =begin pod
+
+=head1 Description
+
+Table 267 – Entries in a rendition MH/BE dictionary
 
 =head1 Methods (Entries)
 

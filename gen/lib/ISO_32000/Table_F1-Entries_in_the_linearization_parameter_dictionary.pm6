@@ -1,5 +1,4 @@
 use v6;
-#| PDF 32000-1:2008 Table F. 1 – Entries in the linearization parameter dictionary
 role ISO_32000::Table_F1-Entries_in_the_linearization_parameter_dictionary {
     method Linearized {...};
     method L {...};
@@ -12,6 +11,10 @@ role ISO_32000::Table_F1-Entries_in_the_linearization_parameter_dictionary {
 }
 
 =begin pod
+
+=head1 Description
+
+Table F. 1 – Entries in the linearization parameter dictionary
 
 =head1 Methods (Entries)
 

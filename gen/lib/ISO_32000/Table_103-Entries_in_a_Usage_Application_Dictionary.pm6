@@ -1,5 +1,4 @@
 use v6;
-#| PDF 32000-1:2008 Table 103 – Entries in a Usage Application Dictionary
 role ISO_32000::Table_103-Entries_in_a_Usage_Application_Dictionary {
     method Event {...};
     method OCGs {...};
@@ -7,6 +6,10 @@ role ISO_32000::Table_103-Entries_in_a_Usage_Application_Dictionary {
 }
 
 =begin pod
+
+=head1 Description
+
+Table 103 – Entries in a Usage Application Dictionary
 
 =head1 Methods (Entries)
 

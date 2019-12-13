@@ -1,11 +1,14 @@
 use v6;
-#| PDF 32000-1:2008 Table 354 – Additional entries specific to a Web Capture image set
 role ISO_32000::Table_354-Additional_entries_specific_to_a_Web_Capture_image_set {
     method S {...};
     method R {...};
 }
 
 =begin pod
+
+=head1 Description
+
+Table 354 – Additional entries specific to a Web Capture image set
 
 =head1 Methods (Entries)
 

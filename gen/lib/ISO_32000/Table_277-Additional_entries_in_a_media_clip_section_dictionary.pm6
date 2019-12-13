@@ -1,5 +1,4 @@
 use v6;
-#| PDF 32000-1:2008 Table 277 – Additional entries in a media clip section dictionary
 role ISO_32000::Table_277-Additional_entries_in_a_media_clip_section_dictionary {
     method D {...};
     method Alt {...};
@@ -8,6 +7,10 @@ role ISO_32000::Table_277-Additional_entries_in_a_media_clip_section_dictionary 
 }
 
 =begin pod
+
+=head1 Description
+
+Table 277 – Additional entries in a media clip section dictionary
 
 =head1 Methods (Entries)
 

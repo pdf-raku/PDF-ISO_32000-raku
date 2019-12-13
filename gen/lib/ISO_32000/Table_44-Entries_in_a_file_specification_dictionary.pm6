@@ -1,5 +1,4 @@
 use v6;
-#| PDF 32000-1:2008 Table 44 – Entries in a file specification dictionary
 role ISO_32000::Table_44-Entries_in_a_file_specification_dictionary {
     method Type {...};
     method FS {...};
@@ -17,6 +16,10 @@ role ISO_32000::Table_44-Entries_in_a_file_specification_dictionary {
 }
 
 =begin pod
+
+=head1 Description
+
+Table 44 – Entries in a file specification dictionary
 
 =head1 Methods (Entries)
 

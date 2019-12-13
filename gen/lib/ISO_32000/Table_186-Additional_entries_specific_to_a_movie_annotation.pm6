@@ -1,5 +1,4 @@
 use v6;
-#| PDF 32000-1:2008 Table 186 – Additional entries specific to a movie annotation
 role ISO_32000::Table_186-Additional_entries_specific_to_a_movie_annotation {
     method Subtype {...};
     method T {...};
@@ -8,6 +7,10 @@ role ISO_32000::Table_186-Additional_entries_specific_to_a_movie_annotation {
 }
 
 =begin pod
+
+=head1 Description
+
+Table 186 – Additional entries specific to a movie annotation
 
 =head1 Methods (Entries)
 

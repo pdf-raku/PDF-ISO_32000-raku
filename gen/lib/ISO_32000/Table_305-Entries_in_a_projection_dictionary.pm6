@@ -1,5 +1,4 @@
 use v6;
-#| PDF 32000-1:2008 Table 305 – Entries in a projection dictionary
 role ISO_32000::Table_305-Entries_in_a_projection_dictionary {
     method Subtype {...};
     method CS {...};
@@ -12,6 +11,10 @@ role ISO_32000::Table_305-Entries_in_a_projection_dictionary {
 }
 
 =begin pod
+
+=head1 Description
+
+Table 305 – Entries in a projection dictionary
 
 =head1 Methods (Entries)
 

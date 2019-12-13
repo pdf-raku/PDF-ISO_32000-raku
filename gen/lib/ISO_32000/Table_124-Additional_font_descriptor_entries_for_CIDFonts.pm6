@@ -1,5 +1,4 @@
 use v6;
-#| PDF 32000-1:2008 Table 124 – Additional font descriptor entries for CIDFonts
 role ISO_32000::Table_124-Additional_font_descriptor_entries_for_CIDFonts {
     method Style {...};
     method Lang {...};
@@ -8,6 +7,10 @@ role ISO_32000::Table_124-Additional_font_descriptor_entries_for_CIDFonts {
 }
 
 =begin pod
+
+=head1 Description
+
+Table 124 – Additional font descriptor entries for CIDFonts
 
 =head1 Methods (Entries)
 
