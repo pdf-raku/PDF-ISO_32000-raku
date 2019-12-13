@@ -1,0 +1,23 @@
+{
+  "table": {
+    "caption": "Table H.5 – Object usage after deleting two text annotations",
+    "head": [
+      "Object identifier",
+      "Object type"
+    ],
+    "rows": [
+      [
+        "7 0",
+        "Annotation array"
+      ],
+      [
+        "8 0",
+        "Free"
+      ],
+      [
+        "9 0",
+        "Free"
+      ]
+    ]
+  }
+}

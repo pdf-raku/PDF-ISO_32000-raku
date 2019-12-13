@@ -1,0 +1,35 @@
+{
+  "table": {
+    "caption": "Table H.3 – Objects in simple graphics example",
+    "head": [
+      "Object number",
+      "Object type"
+    ],
+    "rows": [
+      [
+        "1",
+        "Catalog (document catalog)"
+      ],
+      [
+        "2",
+        "Outlines (outline dictionary)"
+      ],
+      [
+        "3",
+        "Pages (page tree node)"
+      ],
+      [
+        "4",
+        "Page (page object)"
+      ],
+      [
+        "5",
+        "Content stream"
+      ],
+      [
+        "6",
+        "Procedure set array"
+      ]
+    ]
+  }
+}

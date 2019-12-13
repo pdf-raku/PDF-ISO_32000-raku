@@ -1,0 +1,35 @@
+{
+  "table": {
+    "caption": "Table H.4 – Object usage after adding four text annotations",
+    "head": [
+      "Object identifier",
+      "Object type"
+    ],
+    "rows": [
+      [
+        "4 0",
+        "Page (page object)"
+      ],
+      [
+        "7 0",
+        "Annotation array"
+      ],
+      [
+        "8 0",
+        "Annot (annotation dictionary)"
+      ],
+      [
+        "9 0",
+        "Annot (annotation dictionary)"
+      ],
+      [
+        "10 0",
+        "Annot (annotation dictionary)"
+      ],
+      [
+        "11 0",
+        "Annot (annotation dictionary)"
+      ]
+    ]
+  }
+}

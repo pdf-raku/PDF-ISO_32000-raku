@@ -1,0 +1,39 @@
+{
+  "table": {
+    "caption": "Table 143 – Variables used in the page group compositing formulas",
+    "head": [
+      "Variable",
+      "Meaning"
+    ],
+    "rows": [
+      [
+        "P",
+        "The page group, consisting of all elements E 1 , … , E n in the page’s top-level stack"
+      ],
+      [
+        "Cg",
+        "Computed colour of the page group"
+      ],
+      [
+        "fg",
+        "Computed shape of the page group"
+      ],
+      [
+        "αg",
+        "Computed alpha of the page group"
+      ],
+      [
+        "C",
+        "Computed colour of the page"
+      ],
+      [
+        "W",
+        "Initial colour of the page (nominally white but may vary depending on the properties of the medium or the needs of the application)"
+      ],
+      [
+        "U",
+        "An undefined colour (which is not used, since the α 0 argument of Composite is 0)"
+      ]
+    ]
+  }
+}

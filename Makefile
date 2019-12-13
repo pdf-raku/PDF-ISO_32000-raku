@@ -1,6 +1,5 @@
 all :
-	(cd gen/tables && make all) \
-	&& (cd resources && make all) \
+	(cd gen && make all) \
 	&& (cd gen/lib && make all)
 
 test : all

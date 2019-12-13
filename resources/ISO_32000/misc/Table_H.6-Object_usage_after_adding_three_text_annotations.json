@@ -1,0 +1,27 @@
+{
+  "table": {
+    "caption": "Table H.6 – Object usage after adding three text annotations",
+    "head": [
+      "Object identifier",
+      "Object type"
+    ],
+    "rows": [
+      [
+        "7 0",
+        "Annotation array"
+      ],
+      [
+        "8 1",
+        "Annot (annotation dictionary)"
+      ],
+      [
+        "9 1",
+        "Annot (annotation dictionary)"
+      ],
+      [
+        "12 0",
+        "Annot (annotation dictionary)"
+      ]
+    ]
+  }
+}
