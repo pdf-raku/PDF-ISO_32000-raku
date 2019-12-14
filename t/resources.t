@@ -13,5 +13,5 @@ my @index = PDF::ISO_32000.table-index;
 is @index[317], 'Table_317-Entries_in_the_document_information_dictionary', '.table-index()';
 
 my $stream-ops = PDF::ISO_32000.appendix<A.1>;
-is $stream-ops, 'misc/Table_A.1-PDF_content_stream_operators', "Appendix lookup";
+is $stream-ops, 'misc/Table_A1-PDF_content_stream_operators', "Appendix lookup";
 is PDF::ISO_32000.table($stream-ops)<caption>, "Table A.1 – PDF content stream operators", "Appendix load";

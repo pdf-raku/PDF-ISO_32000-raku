@@ -49,7 +49,8 @@ sub MAIN(IO() $pdf-extract = '../gen/PDF-ISO_32000.xml', :$out-dir= '../resource
     for $doc.find('//Table') -> $table {
         with $table.first('Caption') {
             my $name = tidy($_)
-            .subst(/['. '|'<'|'>'|'’']/, '', :g)
+            .subst(/'F.'[(<[0..9]>)|\s]+/, {"F."~@0.join}) # Table F. 1 0 -> F.10
+            .subst(/['. '||'.'|'<'|'>'|'’']/, '', :g)
             .subst(/','.*$/, '')
             .subst(/'3D'/, 'ThreeD')
             .subst(/\s*['–'|'/']\s*/, '-', :g)
@@ -62,10 +63,10 @@ sub MAIN(IO() $pdf-extract = '../gen/PDF-ISO_32000.xml', :$out-dir= '../resource
             $filename ~= 'misc/'
                 unless +@cols == 3 && @cols[0] ~~ /:i['Key'|'Parameter']/ && @cols[1] ~~ /:i'Type'/;
             $filename ~= $name ~ '.json';
-            my $file-io = $filename.IO;
-            next if $make && $file-io.e && $file-io.modified >= $src-modified;
+            my $dest-io = $filename.IO;
+            next if $make && $dest-io.e && $dest-io.modified >= $src-modified;
             warn "writing: $filename";
-            $filename.IO.spurt: to-json( dump-table($table), :sorted-keys );
+            $dest-io.IO.spurt: to-json( dump-table($table), :sorted-keys );
         }
     }
 }

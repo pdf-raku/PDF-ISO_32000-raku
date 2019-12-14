@@ -14,7 +14,7 @@ This library contains:
 - JSON data for the tables
 - Perl 6 Roles for tables that represent PDF objects:
 
-The roles are named ISO_32000::Xxxx and contain method stubs and documentation for each entry in the role
+The roles are named ISO_32000::Table_NNN-Xxxx and contain method stubs and documentation for each entry in the role
 
 
 ## Tables
@@ -23,7 +23,7 @@ Data is available for all of the tables in the PDF-32000 1.7 specification:
 ```
 use PDF::ISO_32000;
 # Load data about the Document Information dictionary
-my %info = PDF::ISO_32000.table: "Info_entries";
+my %info = PDF::ISO_32000.table: "Table_317-Entries_in_the_document_information_dictionary";
 say %info<caption>;             # Table 317 – Entries in the document information dictionary
 say %info<head>.join(" | ");    # Key | Type | Value
 say %info<rows>[0].join(" | "); # Title | text string | (Optional; PDF 1.1) The document’s title.
@@ -32,7 +32,7 @@ say %info<rows>[0].join(" | "); # Title | text string | (Optional; PDF 1.1) The 
 The `table-index` method returns a list that maps table numbers to table names:
 
 ```
-say PDF::ISO_32000.table-index[317] # Info_entries
+say PDF::ISO_32000.table-index[317] # Table 317 - Info_entries
 ```
 
 The `appendix` method returns a hash index into the Appendix:

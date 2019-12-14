@@ -10,11 +10,11 @@ sub MAIN(IO() $meta6-in, *@sources) {
     my @resource-index = [%appendices, ];
     for @sources.sort( -> $k {with ($k ~~ /<?after Table_>\d+/) {.Int} else { $k }}) {
         when /'.pm6'$/ {
-            my $role-name = .subst(/'.pm6'$/, '').subst(m{'/'}, '::', :g);
-            %provides{$role-name} = ("gen/lib/" ~ $_);
+            my $role-name = .subst(/^'lib/'/,'').subst(/'.pm6'$/, '').subst(m{'/'}, '::', :g);
+            %provides{$role-name} = ("gen/" ~ $_);
         }
         when /'.json'$/ {
-            my $file = "../../resources/$_";
+            my $file = "../resources/$_";
             CATCH { default { die "error processing $file: $_" } }  
             with from-json($file.IO.slurp)<table> -> $table {
                 with $table<caption> -> $caption {
@@ -22,8 +22,8 @@ sub MAIN(IO() $meta6-in, *@sources) {
                     if $caption ~~ /:s Table (\d+)/ {
                         @resource-index[$0.Int] = $table-name;
                     }
-                    elsif $caption ~~ /:s Table (<[A..Z]>[\d|'.']+)/ {
-                        %appendices{$0.Str} = $table-name;
+                    elsif $caption ~~ /:s Table (<[A..Z]>[\d|'.'|\s]+)/ {
+                        %appendices{$0.split(/\s/).join} = $table-name;
                     }
                     else {
                         warn "ignoring: $_";
@@ -34,7 +34,7 @@ sub MAIN(IO() $meta6-in, *@sources) {
         }
     }
     given "ISO_32000-index.json" {
-        "../../resources/$_".IO.spurt: to-json(@resource-index);
+        "../resources/$_".IO.spurt: to-json(@resource-index, :sorted-keys);
         @resources.unshift: $_;
     }
     %provides<PDF::ISO_32000> = 'lib/PDF/ISO_32000.pm6';

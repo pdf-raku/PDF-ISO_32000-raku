@@ -1,4 +1,4 @@
-unit class PDF::ISO_32000:ver<0.0.7>;
+unit class PDF::ISO_32000:ver<0.0.8>;
 
 use JSON::Fast;
 

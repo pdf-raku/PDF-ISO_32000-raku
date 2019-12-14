@@ -1,16 +1,27 @@
 [
   {
-    "D.1": "misc/Table_D.1-Latin-text_encodings",
-    "H.5": "misc/Table_H.5-Object_usage_after_deleting_two_text_annotations",
-    "H.2": "misc/Table_H.2-Objects_in_simple_text_string_example",
-    "F.": "misc/Table_F9-Generic_hint_table",
-    "A.1": "misc/Table_A.1-PDF_content_stream_operators",
-    "H.6": "misc/Table_H.6-Object_usage_after_adding_three_text_annotations",
-    "D.2": "misc/Table_D.2-PDFDocEncoding_Character_Set",
-    "H.4": "misc/Table_H.4-Object_usage_after_adding_four_text_annotations",
-    "H.3": "misc/Table_H.3-Objects_in_simple_graphics_example",
-    "H.1": "misc/Table_H.1-Objects_in_minimal_example",
-    "C.1": "misc/Table_C.1-Architectural_limits"
+    "A.1": "misc/Table_A1-PDF_content_stream_operators",
+    "C.1": "misc/Table_C1-Architectural_limits",
+    "D.1": "misc/Table_D1-Latin-text_encodings",
+    "D.2": "misc/Table_D2-PDFDocEncoding_Character_Set",
+    "F.1": "Table_F1-Entries_in_the_linearization_parameter_dictionary",
+    "F.10": "misc/Table_F10-Extended_generic_hint_table",
+    "F.11": "misc/Table_F11-Embedded_file_stream_hint_table",
+    "F.12": "misc/Table_F12-Embedded_file_stream_hint_table",
+    "F.2": "misc/Table_F2-Standard_hint_tables",
+    "F.3": "misc/Table_F3-Page_offset_hint_table",
+    "F.4": "misc/Table_F4-Page_offset_hint_table",
+    "F.5": "misc/Table_F5-Shared_object_hint_table",
+    "F.6": "misc/Table_F6-Shared_object_hint_table",
+    "F.7": "misc/Table_F7-Thumbnail_hint_table",
+    "F.8": "misc/Table_F8-Thumbnail_hint_table",
+    "F.9": "misc/Table_F9-Generic_hint_table",
+    "H.1": "misc/Table_H1-Objects_in_minimal_example",
+    "H.2": "misc/Table_H2-Objects_in_simple_text_string_example",
+    "H.3": "misc/Table_H3-Objects_in_simple_graphics_example",
+    "H.4": "misc/Table_H4-Object_usage_after_adding_four_text_annotations",
+    "H.5": "misc/Table_H5-Object_usage_after_deleting_two_text_annotations",
+    "H.6": "misc/Table_H6-Object_usage_after_adding_three_text_annotations"
   },
   "misc/Table_1-White-space_characters",
   "misc/Table_2-Delimiter_characters",
@@ -380,6 +391,6 @@
   "Table_366-Additional_entries_specific_to_a_trap_network_annotation",
   "Table_367-Additional_entries_specific_to_a_trap_network_appearance_stream",
   "Table_368-Entry_in_an_OPI_version_dictionary",
-  "misc/Table_369-Entries_in_a_version_1.3_OPI_dictionary",
-  "misc/Table_370-Entries_in_a_version_2.0_OPI_dictionary"
+  "misc/Table_369-Entries_in_a_version_13_OPI_dictionary",
+  "misc/Table_370-Entries_in_a_version_20_OPI_dictionary"
 ]
