@@ -12,11 +12,10 @@ sub MAIN(*@sources) {
         next unless .defined;
         my $io = .IO;
         die "no such file: '$_'" unless $io.e;
-        my $iso-ref = $io.slurp.lines.grep(/'Table'/)[0];
+        my $iso-ref = $io.slurp.lines.grep(/^'Table '/)[0];
         s/'#|' .* 'Table'/Table/ with $iso-ref;
         my $role-name = .subst(/^'lib/'/,'').subst(/'.pm6'$/, '').subst(m{'/'}, '::', :g);
-        my $role-name-short = $role-name.split('::')[1];
-        my $link = "gen/lib/" ~ $_;
+        my $link = "gen/" ~ $_;
         my $role-ref = "[$iso-ref]($link)";
         my $role = try (require ::($role-name));
         die "failed to compile ::($role-name): $_" with $!;
