@@ -48,21 +48,20 @@ say PDF::ISO_32000.table($stream-ops)<caption>; #  Table A.1 – PDF content str
 Roles are available for tables named `*_entries`, or `*_attributes`.
 
 ```
-% p6doc ISO_320000:Info
-% p6doc ISO_320000:Catalog
+% p6doc ISO_320000:Table_317-Entries_in_the_document_information_dictionary
+% p6doc ISO_320000:Table_28-Entries_in_the_catalog_dictionary
 ```
 
 The roles also contain [method stubs](https://docs.perl6.org/language/objects#Stubs) for the entries that need to be implemented for the role. For example:
 
 ```
 % cat << EOF > lib/Catalog.pm6
-use ISO_32000::Catalog;
-class Catalog does ISO_32000::Catalog {
-}
+use ISO_32000::Table_28-Entries_in_the_catalog_dictionary;
+unit class Catalog does ISO_32000::Table_28-Entries_in_the_catalog_dictionary;
 EOF
 % perl6 -I lib -M Catalog
 ===SORRY!=== Error while compiling /tmp/lib/Catalog.pm6 (Catalog)
-Method 'SpiderInfo' must be implemented by Catalog because it is required by roles: ISO_32000::Catalog.
+Method 'SpiderInfo' must be implemented by Catalog because it is required by roles: ISO_32000::Table_28-Entries_in_the_catalog_dictionary.
 at lib/Catalog.pm6 (Catalog):1
 ```
 This module contains:
