@@ -37,6 +37,6 @@ If the media players dictionary is non-viable, the media clip data is non-viable
 - (Optional) A dictionary whose entries (see Table 276) is honoured for the media clip data to be considered viable.
 
 =head2 BE [dictionary]
-- (Optional) A dictionary whose entries (see Table 276) is only be honoured in a “best effort” sense.
+- (Optional) A dictionary whose entries (see Ta ble 276) is only be honoured in a “best effort” sense.
 
 =end pod

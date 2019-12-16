@@ -75,10 +75,10 @@ Table 259 – Entries in a legal attestation dictionary
 - (Optional) The number of references to the graphics state parameter OP found in the document (see Table 58).
 
 =head2 DevDepGS_HT [integer]
-- (Optional) The number of references to the graphics state parameter HT found in the document (see Table 58).
+- (Optional) The number of references to the graphics state parameter HT found in the document (see Ta ble 58).
 
 =head2 DevDepGS_TR [integer]
-- (Optional) The number of references to the graphics state parameter TR found in the document (see Table 58).
+- (Optional) The number of references to the graphics state parameter TR found in the document (see Ta ble 58).
 
 =head2 DevDepGS_UCR [integer]
 - (Optional) The number of references to the graphics state parameter UCR found in the document (see Table 58).

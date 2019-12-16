@@ -17,7 +17,7 @@ Table 21 – Additional encryption dictionary entries for the standard security 
 
 =head2 R [number]
 - (Required) A number specifying which revision of the standard security handler is used to interpret this dictionary:
-2 if the document is encrypted with a V value less than 2 (see Table 20) and does not have any of the access permissions set to 0 (by means of the P entry, below) that are designated “Security handlers of revision 3 or greater” in Table 22
+2 if the document is encrypted with a V value less than 2 (see Table 20) and does not have any of the access permissions set to 0 (by means of the P entry, below) that are designated “Security handlers of revision 3 or greater” in Ta ble 22
 3 if the document is encrypted with a V value of 2 or 3, or has any “Security handlers of revision 3 or greater” access permissions set to 0
 4 if the document is encrypted with a V value of 4
 

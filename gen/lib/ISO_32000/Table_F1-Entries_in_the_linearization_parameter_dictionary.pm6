@@ -14,7 +14,7 @@ role ISO_32000::Table_F1-Entries_in_the_linearization_parameter_dictionary {
 
 =head1 Description
 
-Table F. 1 – Entries in the linearization parameter dictionary
+Table F.1 – Entries in the linearization parameter dictionary
 
 =head1 Methods (Entries)
 

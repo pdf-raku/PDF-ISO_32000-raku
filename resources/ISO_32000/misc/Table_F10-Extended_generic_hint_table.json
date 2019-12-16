@@ -1,6 +1,6 @@
 {
   "table": {
-    "caption": "Table F. 1 0 – Extended generic hint table",
+    "caption": "Table F.10 – Extended generic hint table",
     "head": [
       "Item",
       "Size (bits)",
@@ -39,7 +39,7 @@
       ],
       [
         "7 …",
-        "See Table F. 3 , item 11",
+        "See Table F.3 , item 11",
         "Starting with item 7, each of the remaining items in this table is a shared object identifier—that is, an index into the shared object hint table (described in F.4.2, “Shared Object Hint Table ”)."
       ]
     ]

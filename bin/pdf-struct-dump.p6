@@ -12,6 +12,7 @@ use PDF::StructTreeRoot;
 use PDF::StructElem :StructElemChild;
 
 use PDF::Font::Loader;
+use PDF::Font::Loader::Dict;
 use PDF::Content;
 use PDF::Content::Graphics;
 use PDF::IO;
@@ -39,7 +40,7 @@ sub MAIN(Str $infile,              #= input PDF
          UInt   :$obj-num,         #= Direct select by object number
          UInt   :$gen-num = 0,     #= Direct select generation number
          Bool   :$*render = True,  #= include rendered content
-         Bool   :$*atts = False,   #= include attributes in tags
+         Bool   :$*atts = True,    #= include attributes in tags
          Bool   :$*debug,          #= write extra debugging information
     ) {
 
@@ -127,14 +128,20 @@ multi sub dump-struct(PDF::StructTreeRoot $root, :$depth = 0) {
 constant Tags = Hash[PDF::Content::Tag];
 my Tags %graphics-tags{PDF::Content::Graphics};
 
+my class Cache {
+    has %.font;
+}
+my Cache $cache .= new;
+
+sub load-font(Hash $dict) {
+    my %opts = PDF::Font::Loader::Dict.load-font-opts: :$dict;
+    $cache.font{$dict.obj-num} //= PDF::Font::Loader.load-font: |%opts;
+}
+
 class TextDecoder {
     use PDF::Content::Ops :OpCode;
     has Hash @!save;
     has $.current-font;
-    my class Cache {
-        has %.font;
-    }
-    has Cache $.cache .= new;
     method current-font { $!current-font[0] }
     method callback{
         sub ($op, *@args) {
@@ -160,7 +167,7 @@ class TextDecoder {
     }
     method SetFont(Str $font-key, Numeric $font-size) {
         with $*gfx.resource-entry('Font', $font-key) -> $dict {
-            $!current-font = $!cache.font{$dict.obj-num} //= PDF::Font::Loader.load-font: :$dict;
+            $!current-font = load-font($dict);
         }
         else {
             warn "unable to locate Font in resource dictionary: $font-key";
@@ -178,7 +185,7 @@ class TextDecoder {
                 when Str {
                     $last := $!current-font.decode($_, :str);
                 }
-                when $_ <= -100 && !($last ~~ /\s$/) {
+                when $_ <= -120 && !($last ~~ /\s$/) {
                     # assume implicit space
                     ' '
                 }

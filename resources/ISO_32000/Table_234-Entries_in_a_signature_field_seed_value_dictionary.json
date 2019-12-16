@@ -45,12 +45,12 @@
       [
         "Reasons",
         "array",
-        "(Optional) An array of text strings that specifying possible reasons for signing a document. If specified, the reasons supplied in this entry replace those used by conforming products.\nIf the Reasons array is provided and the Ff entry indicates that Reasons is a required constraint, one of the reasons in the array is used for the signature dictionary; otherwise, signing does not take place. If the Ff entry indicates Reasons is an optional constraint, one of the reasons in the array may be chosen or a custom reason can be provided.\nIf the Reasons array is omitted or contains a single entry with the value PERIOD (2Eh) and the Ff entry indicates that Reasons is a required constraint, the Reason entry is omitted from the signature dictionary (see Table 252)."
+        "(Optional) An array of text strings that specifying possible reasons for signing a document. If specified, the reasons supplied in this entry replace those used by conforming products.\nIf the Reasons array is provided and the Ff entry indicates that Reasons is a required constraint, one of the reasons in the array is used for the signature dictionary; otherwise, signing does not take place. If the Ff entry indicates Reasons is an optional constraint, one of the reasons in the array may be chosen or a custom reason can be provided.\nIf the Reasons array is omitted or contains a single entry with the value PERIOD (2Eh) and the Ff entry indicates that Reasons is a required constraint, the Reason entry is omitted from the signature dictionary (see Ta ble 252)."
       ],
       [
         "MDP",
         "dictionary",
-        "(Optional; PDF 1.6) A dictionary containing a single entry whose key is P and whose value is an integer between 0 and 3. A value of 0 defines the signature as an author signature (see 12.8, “Digital Signatures”). The values 1 through 3 is used for certification signatures and correspond to the value of P in a DocMDP transform parameters dictionary (see Table 254).\nIf this MDP key is not present or the MDP dictionary does not contain a P entry, no rules is defined regarding the type of signature or its permissions."
+        "(Optional; PDF 1.6) A dictionary containing a single entry whose key is P and whose value is an integer between 0 and 3. A value of 0 defines the signature as an author signature (see 12.8, “Digital Signatures”). The values 1 through 3 is used for certification signatures and correspond to the value of P in a DocMDP transform parameters dictionary (see Ta ble 254).\nIf this MDP key is not present or the MDP dictionary does not contain a P entry, no rules is defined regarding the type of signature or its permissions."
       ],
       [
         "TimeStamp",

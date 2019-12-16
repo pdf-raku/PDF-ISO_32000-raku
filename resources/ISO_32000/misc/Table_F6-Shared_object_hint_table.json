@@ -1,6 +1,6 @@
 {
   "table": {
-    "caption": "Table F. 6 – Shared object hint table, shared object group entry",
+    "caption": "Table F.6 – Shared object hint table, shared object group entry",
     "head": [
       "Item",
       "Size (bits)",
@@ -10,7 +10,7 @@
       [
         "1",
         "See Table F. 5 , item 7",
-        "A number that, when added to the least shared object group length (Table F. 5 , item 6), gives the length of the object group in bytes. The location of the first object of the first page is given in the page offset hint table, header section (Table F. 3 , item 4). The locations of subsequent object groups can be determined by accumulating the lengths of all previous object groups until all shared objects in the first page have been enumerated. Following that, the location of the first object in the shared objects section can be obtained from the header section of the shared object hint table (Table F. 5 , item 2)."
+        "A number that, when added to the least shared object group length (Table F.5 , item 6), gives the length of the object group in bytes. The location of the first object of the first page is given in the page offset hint table, header section (Table F.3 , item 4). The locations of subsequent object groups can be determined by accumulating the lengths of all previous object groups until all shared objects in the first page have been enumerated. Following that, the location of the first object in the shared objects section can be obtained from the header section of the shared object hint table (Table F.5 , item 2)."
       ],
       [
         "2",
@@ -24,8 +24,8 @@
       ],
       [
         "4",
-        "See Table F. 5 , item 5",
-        "A number equal to 1 less than the number of objects in the group. The first object of the first page is the one whose object number is given by the O entry in the linearization parameter dictionary at the beginning of the file. Object numbers for subsequent entries can be determined by accumulating the number of objects in all previous entries until all shared objects in the first page have been enumerated. Following that, the first object in the shared objects section has a number that can be obtained from the header section of the shared object hint table (Table F. 5 , item 1)."
+        "See Table F.5 , item 5",
+        "A number equal to 1 less than the number of objects in the group. The first object of the first page is the one whose object number is given by the O entry in the linearization parameter dictionary at the beginning of the file. Object numbers for subsequent entries can be determined by accumulating the number of objects in all previous entries until all shared objects in the first page have been enumerated. Following that, the first object in the shared objects section has a number that can be obtained from the header section of the shared object hint table (Table F.5 , item 1)."
       ]
     ]
   }

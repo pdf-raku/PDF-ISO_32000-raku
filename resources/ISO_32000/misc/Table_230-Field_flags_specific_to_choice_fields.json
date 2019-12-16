@@ -20,7 +20,7 @@
       [
         "20",
         "Sort",
-        "If set, the field’s option items is sorted alphabetically. This flag is intended for use by writers, not by readers. Conforming readers displays the options in the order in which they occur in the Opt array (see Table 231)."
+        "If set, the field’s option items is sorted alphabetically. This flag is intended for use by writers, not by readers. Conforming readers displays the options in the order in which they occur in the Opt array (see Ta ble 231)."
       ],
       [
         "22",

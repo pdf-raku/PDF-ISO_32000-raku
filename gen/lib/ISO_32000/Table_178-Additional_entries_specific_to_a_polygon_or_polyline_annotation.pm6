@@ -32,7 +32,7 @@ Table 178 – Additional entries specific to a polygon or polyline annotation
 The annotation dictionary’s AP entry, if present, takes precedence over the Vertices and BS entries; see Table 168 and 12.5.5, “Appearance Streams.”
 
 =head2 IC [array]
-- (Optional; PDF 1.4) An array of numbers that is in the range 0.0 to 1.0 and specifies the interior color with which to fill the annotation’s line endings (see Table 176). The number of array elements determines the colour space in which the colour is defined:
+- (Optional; PDF 1.4) An array of numbers that is in the range 0.0 to 1.0 and specifies the interior color with which to fill the annotation’s line endings (see Ta ble 176). The number of array elements determines the colour space in which the colour is defined:
 0 No colour; transparent
 1DeviceGray
 3DeviceRGB
