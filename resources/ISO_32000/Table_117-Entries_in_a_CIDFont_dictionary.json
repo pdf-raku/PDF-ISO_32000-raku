@@ -25,7 +25,7 @@
       [
         "CIDSystemInfo",
         "dictionary",
-        "(Required) A dictionary containing entries that define the character collection of the CIDFont. See Ta ble 116 ."
+        "(Required) A dictionary containing entries that define the character collection of the CIDFont. See Table 116 ."
       ],
       [
         "FontDescriptor",

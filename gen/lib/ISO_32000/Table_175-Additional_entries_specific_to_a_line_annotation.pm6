@@ -57,7 +57,7 @@ Default value: 0 (no leader line extensions).
 Default value: false.
 
 =head2 IT [name]
-- (Optional; PDF 1.6) A name describing the intent of the line annotation (see also Ta ble 170). Valid values is LineArrow, which means that the annotation is intended to function as an arrow, and LineDimension, which means that the annotation is intended to function as a dimension line.
+- (Optional; PDF 1.6) A name describing the intent of the line annotation (see also Table 170). Valid values is LineArrow, which means that the annotation is intended to function as an arrow, and LineDimension, which means that the annotation is intended to function as a dimension line.
 
 =head2 LLO [number]
 - (Optional; PDF 1.7) A non-negative number that represents the length of the leader line offset, which is the amount of empty space between the endpoints of the annotation and the beginning of the leader lines.

@@ -15,7 +15,7 @@
       [
         "D",
         "text string, date, or number",
-        "(Optional) The data corresponding to the related entry in the collection field dictionary (see Ta ble 157). The type of data matches the data type identified by the corresponding collection field dictionary. Default: none."
+        "(Optional) The data corresponding to the related entry in the collection field dictionary (see Table 157). The type of data matches the data type identified by the corresponding collection field dictionary. Default: none."
       ],
       [
         "P",

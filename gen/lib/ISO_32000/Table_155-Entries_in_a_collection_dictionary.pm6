@@ -19,7 +19,7 @@ Table 155 – Entries in a collection dictionary
 - (Optional) The type of PDF object that this dictionary describes; if present, is Collection for a collection dictionary.
 
 =head2 Schema [dictionary]
-- (Optional) A collection schema dictionary (see Ta ble 156). If absent, the conforming reader may choose useful defaults that are known to exist in a file specification dictionary, such as the file name, file size, and modified date.
+- (Optional) A collection schema dictionary (see Table 156). If absent, the conforming reader may choose useful defaults that are known to exist in a file specification dictionary, such as the file name, file size, and modified date.
 
 =head2 D [byte string]
 - (Optional) A string that identifies an entry in the EmbeddedFiles name tree, determining the document that is initially presented in the user interface. If the D entry is missing or in error, the initial document is the one that contains the collection dictionary.

@@ -80,12 +80,12 @@
       [
         "DevDepGS_HT",
         "integer",
-        "(Optional) The number of references to the graphics state parameter HT found in the document (see Ta ble 58)."
+        "(Optional) The number of references to the graphics state parameter HT found in the document (see Table 58)."
       ],
       [
         "DevDepGS_TR",
         "integer",
-        "(Optional) The number of references to the graphics state parameter TR found in the document (see Ta ble 58)."
+        "(Optional) The number of references to the graphics state parameter TR found in the document (see Table 58)."
       ],
       [
         "DevDepGS_UCR",

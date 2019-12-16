@@ -20,7 +20,7 @@
       [
         "Flags",
         "integer",
-        "(Optional; inheritable) A set of flags specifying various characteristics of the action (see Ta ble 239). Default value: 0."
+        "(Optional; inheritable) A set of flags specifying various characteristics of the action (see Table 239). Default value: 0."
       ]
     ]
   }

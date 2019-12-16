@@ -33,7 +33,7 @@ $(XML) : $(PDF)
 	USE_PDF_NATIVE=1 perl6 ../bin/pdf-struct-dump.p6 --atts --max-depth=18 $(PDF) > $(XML);
 
 xml-to-json : pdf-to-xml
-	perl6 ../etc/tables2json.p6 --make --out-dir=$(RESOURCE_DIR) $(XML)
+	perl6 ../etc/make-json.p6 --make --out-dir=$(RESOURCE_DIR) $(XML)
 
 json-to-raku : $(MODULES)
 

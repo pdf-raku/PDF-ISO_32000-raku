@@ -15,7 +15,7 @@
       [
         "Parent",
         "dictionary",
-        "(Optional; is an indirect reference) The parent annotation with which this pop-up annotation is associated.\nIf this entry is present, the parent annotation’s Contents, M, C, and Tentries (see Ta ble 168) overrides those of the pop-up annotation itself."
+        "(Optional; is an indirect reference) The parent annotation with which this pop-up annotation is associated.\nIf this entry is present, the parent annotation’s Contents, M, C, and Tentries (see Table 168) overrides those of the pop-up annotation itself."
       ],
       [
         "Open",

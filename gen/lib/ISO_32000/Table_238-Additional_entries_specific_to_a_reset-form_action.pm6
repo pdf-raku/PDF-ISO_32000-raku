@@ -21,6 +21,6 @@ Table 238 – Additional entries specific to a reset-form action
 If this entry is omitted, the Include/Exclude flag is ignored; all fields in the document’s interactive form are reset.
 
 =head2 Flags [integer]
-- (Optional; inheritable) A set of flags specifying various characteristics of the action (see Ta ble 239). Default value: 0.
+- (Optional; inheritable) A set of flags specifying various characteristics of the action (see Table 239). Default value: 0.
 
 =end pod

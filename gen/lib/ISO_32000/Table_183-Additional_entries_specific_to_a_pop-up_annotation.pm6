@@ -18,7 +18,7 @@ Table 183 – Additional entries specific to a pop-up annotation
 
 =head2 Parent [dictionary]
 - (Optional; is an indirect reference) The parent annotation with which this pop-up annotation is associated.
-If this entry is present, the parent annotation’s Contents, M, C, and Tentries (see Ta ble 168) overrides those of the pop-up annotation itself.
+If this entry is present, the parent annotation’s Contents, M, C, and Tentries (see Table 168) overrides those of the pop-up annotation itself.
 
 =head2 Open [boolean]
 - (Optional) A flag specifying whether the pop-up annotation shallinitially be displayed open. Default value: false (closed).

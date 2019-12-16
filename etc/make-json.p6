@@ -25,6 +25,7 @@ sub edit($_) {
     .subst(/«[shall|should]" "(appl|specif|identif|satisf|occup)y»/, {$0 ~ 'ies'}, :g)
     .subst(/«[shall|should]" "(match|progress|do)»/, {$0 ~ 'es'}, :g)
     .subst(/«[shall|should]" "(accept|adjust|appear|assume|behave|cause|center|conform|consist|contain|continue|correspond|default|define|deliver|depend|describe|determine|disable|display|enable|exclude|exist|expect|fail|ignore|include|increase|indicate|initialize|interpret|invalidate|lie|list|make|map|mean|occur|oscillate|override|perform|permit|play|position|provide|refer|remain|replace|report|represent|set|show|skip|sort|stop|take|tolerate|translate|use)»/, {$0 ~ 's'}, :g)
+    .subst(/T \s* a \s* b \s* l \s* e/, 'Table', :g)
     .subst(/:s "(" (<-[)]>*?)  ")"/, { '(' ~ tidy($0) ~ ')' }, :g)
     .subst(/:s Link (Table|Annex|Figure|Bibliography|<[0..9.]>+)/, { $0 }, :g);
 }
@@ -41,12 +42,30 @@ sub dump-table(LibXML::Node $_) {
     %( :table{ :$caption, :@head, :@rows } );
 }
 
-sub MAIN(IO() $html-table) {
-    my LibXML::Document $doc .= parse($html-table.slurp);
-    with $doc.first('//Table') {
-        say to-json( dump-table($_), :sorted-keys );
-    }
-    else {
-        die "no 'Table' found";
+sub MAIN(IO() $pdf-extract = '../gen/PDF-ISO_32000.xml', :$out-dir= '../resources/ISO_32000/', Bool :$make) {
+    my $src-modified = $pdf-extract.IO.modified
+        // die "problem stat-ing source file: $pdf-extract";
+    my LibXML::Document $doc .= parse(:file($pdf-extract));
+    for $doc.find('//Table') -> $table {
+        with $table.first('Caption') {
+            my $name = tidy($_)
+            .subst(/['. '||'.'|'<'|'>'|'’']/, '', :g)
+            .subst(/','.*$/, '')
+            .subst(/'3D'/, 'ThreeD')
+            .subst(/\s*['–'|'/']\s*/, '-', :g)
+            .subst(/\s+/, '_', :g)
+            .subst(/_?'(' .*? ')'/, '');
+
+            my $filename = $out-dir;
+            $filename ~= '/' unless $filename.ends-with('/');
+            my @cols = $table.find('THead/TR/TH/P');
+            $filename ~= 'misc/'
+                unless +@cols == 3 && @cols[0] ~~ /:i['Key'|'Parameter']/ && @cols[1] ~~ /:i'Type'/;
+            $filename ~= $name ~ '.json';
+            my $dest-io = $filename.IO;
+            next if $make && $dest-io.e && $dest-io.modified >= $src-modified;
+            note "writing: $filename";
+            $dest-io.IO.spurt: to-json( dump-table($table), :sorted-keys );
+        }
     }
 }
