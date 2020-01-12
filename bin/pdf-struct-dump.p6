@@ -129,13 +129,15 @@ constant Tags = Hash[PDF::Content::Tag];
 my Tags %graphics-tags{PDF::Content::Graphics};
 
 my class Cache {
-    has %.font;
+    has %.font{Any};
 }
 my Cache $cache .= new;
 
 sub load-font(Hash $dict) {
-    my %opts = PDF::Font::Loader::Dict.load-font-opts: :$dict;
-    $cache.font{$dict.obj-num} //= PDF::Font::Loader.load-font: |%opts;
+    $cache.font{$dict} //= do {
+        my %opts = PDF::Font::Loader::Dict.load-font-opts: :$dict;
+        PDF::Font::Loader.load-font: |%opts;
+    }
 }
 
 class TextDecoder {
@@ -147,13 +149,14 @@ class TextDecoder {
         sub ($op, *@args) {
             my $method = OpCode($op).key;
             self."$method"(|@args)
-                if $method ~~ 'Save'|'Restore'|'SetFont'|'ShowText'|'ShowSpaceText';
+                if $method ~~ 'Save'|'Restore'|'SetFont'|'ShowText'|'ShowSpaceText'|'Do';
         }
     }
-    method render($content) {
-        my $obj = self.new();
-        my &callback = $obj.callback;
-        $content.render(:!tidy, :!strict, :&callback);
+    method render($obj) {
+        my $decoder = self;
+        $_ .= new without $decoder;
+        my &callback = $decoder.callback;
+        $obj.render(:!tidy, :!strict, :&callback);
     }
     method Save()      {
         @!save.push: %( :$!current-font );
@@ -191,22 +194,25 @@ class TextDecoder {
                 }
                 default { '' }
             }
-            $tag.children.push: @chunks.join('');
+            $tag.children.push: @chunks.join;
         }
+    }
+    method Do($key) {
+        warn "todo Do $key";;
     }
 }
 
-sub graphics-tags($page) {
+sub graphics-tags($obj) {
     return unless $*render;
-    %graphics-tags{$page} //= do {
+    %graphics-tags{$obj} //= do {
         $*ERR.print: '.';
-        my $gfx = TextDecoder.render($page);
-        my PDF::Content::Tag % = $gfx.tags(:flat).map({.mcid => $_ }).grep: *.key.defined;
+        my $gfx = TextDecoder.render($obj);
+        my PDF::Content::Tag % = $gfx.tags.grep(*.mcid.defined).map({.mcid => $_ });
     }
 }
 
 sub atts-str(%atts) {
-    %atts.pairs.sort.map({ " {.key}=\"{.value}\"" }).join: '';
+    %atts.pairs.sort.map({ " {.key}=\"{.value}\"" }).join;
 }
 
 multi sub dump-struct(PDF::StructElem $node, :$tags is copy = %(), :$depth is copy = 0) {
@@ -353,10 +359,23 @@ multi sub dump-struct($_, :$tags, :$depth) is default {
     say pad($depth, .perl);
 }
 
-sub dump-tag(PDF::Content::Tag $tag, :$depth! is copy) {
+sub tag-text(PDF::Content::Tag $tag, :$depth!) is default {
     # join text strings. discard this, and child marked content tags for now
-    my $text = html-escape($tag.children.grep(Str).join: '');
-    say pad($depth, $text);
+    my @text = $tag.children.map: {
+        when PDF::Content::Tag {
+            my $text = trim(tag-text($_, :$depth));
+            .name eq 'Document'
+            ?? $text
+            !! ($text ?? "<{.name}>" ~ $text ~ "</{.name}>" !! "</{.name}>");
+        }
+        when Str { html-escape($_) }
+        default { '???' }
+    }
+    @text.join;
+}
+
+sub dump-tag(PDF::Content::Tag $tag, :$depth!) is default {
+    say pad($depth, tag-text($tag, :$depth));
 }
 
 =begin pod
