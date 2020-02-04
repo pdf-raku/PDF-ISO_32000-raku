@@ -55,14 +55,14 @@ Roles are available for tables named `*_entries`, or `*_attributes`.
 The roles also contain [method stubs](https://docs.perl6.org/language/objects#Stubs) for the entries that need to be implemented for the role. For example:
 
 ```
-% cat << EOF > lib/Catalog.pm6
+% cat << EOF > lib/Catalog.rakumod
 use ISO_32000::Table_28-Entries_in_the_catalog_dictionary;
 unit class Catalog does ISO_32000::Table_28-Entries_in_the_catalog_dictionary;
 EOF
 % perl6 -I lib -M Catalog
-===SORRY!=== Error while compiling /tmp/lib/Catalog.pm6 (Catalog)
+===SORRY!=== Error while compiling /tmp/lib/Catalog.rakumod (Catalog)
 Method 'SpiderInfo' must be implemented by Catalog because it is required by roles: ISO_32000::Table_28-Entries_in_the_catalog_dictionary.
-at lib/Catalog.pm6 (Catalog):1
+at lib/Catalog.rakumod (Catalog):1
 ```
 This module contains:
 

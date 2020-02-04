@@ -1,6 +1,5 @@
 use v6;
 
-# Build.pm can also be run standalone 
 sub MAIN(*@sources) {
     say '';
     say "ISO_32000 Reference|Entries";
@@ -14,7 +13,7 @@ sub MAIN(*@sources) {
         die "no such file: '$_'" unless $io.e;
         my $iso-ref = $io.slurp.lines.grep(/^'Table '/)[0];
         s/'#|' .* 'Table'/Table/ with $iso-ref;
-        my $role-name = .subst(/^'lib/'/,'').subst(/'.pm6'$/, '').subst(m{'/'}, '::', :g);
+        my $role-name = .subst(/^'lib/'/,'').subst(/'.rakumod'$/, '').subst(m{'/'}, '::', :g);
         my $link = "gen/" ~ $_;
         my $role-ref = "[$iso-ref]($link)";
         my $role = try (require ::($role-name));

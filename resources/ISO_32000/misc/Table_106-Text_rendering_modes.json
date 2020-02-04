@@ -9,7 +9,7 @@
     "rows": [
       [
         "0",
-        "",
+        "R",
         "Fill text."
       ],
       [
@@ -19,7 +19,7 @@
       ],
       [
         "2",
-        "",
+        "R",
         "Fill, then stroke text."
       ],
       [
@@ -29,7 +29,7 @@
       ],
       [
         "4",
-        "",
+        "R",
         "Fill text and add to path for clipping (see 9.3.6, \"Text Rendering Mode,\")."
       ],
       [
@@ -39,7 +39,7 @@
       ],
       [
         "6",
-        "",
+        "R",
         "Fill, then stroke text and add to path for clipping."
       ],
       [
