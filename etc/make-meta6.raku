@@ -9,8 +9,8 @@ sub MAIN(IO() $meta6-in, *@sources) {
     my %appendices;
     my @resource-index = [%appendices, ];
     for @sources.sort( -> $k {with ($k ~~ /<?after Table_>\d+/) {.Int} else { $k }}) {
-        when /'.pm6'$/ {
-            my $role-name = .subst(/^'lib/'/,'').subst(/'.pm6'$/, '').subst(m{'/'}, '::', :g);
+        when /'.rakumod'$/ {
+            my $role-name = .subst(/^'lib/'/,'').subst(/'.rakumod'$/, '').subst(m{'/'}, '::', :g);
             %provides{$role-name} = ("gen/" ~ $_);
         }
         when /'.json'$/ {
@@ -37,7 +37,7 @@ sub MAIN(IO() $meta6-in, *@sources) {
         "../resources/$_".IO.spurt: to-json(@resource-index, :sorted-keys);
         @resources.unshift: $_;
     }
-    %provides<PDF::ISO_32000> = 'lib/PDF/ISO_32000.pm6';
+    %provides<PDF::ISO_32000> = 'lib/PDF/ISO_32000.rakumod';
     $meta6<provides> = %provides;
     $meta6<resources> = @resources;
     say to-json($meta6, :sorted-keys);
