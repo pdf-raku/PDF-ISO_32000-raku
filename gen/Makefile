@@ -16,7 +16,8 @@ RESOURCE_NAMES = $(subst $(RESOURCE_DIR),ISO_32000,$(RESOURCES))
 # -- Stage III --
 MODULES = $(subst $(RESOURCE_DIR),$(MODULE_DIR),$(patsubst %.json,%.rakumod,$(SOURCES)))
 
-# this makefile needs be be run 3x after a 'make clean' to progressively rebuild targets
+# recommend doing a 'make clean' after updating PDF-ISO_32000.xml
+# this makefile then needs be be run 3x to progressively rebuild targets
 all :
 	@echo "*** Stage-I: Extracting tagged content from ISO-32000 (PDF Specification) ***"
 	@$(MAKE) pdf-to-xml
@@ -30,7 +31,7 @@ all :
 pdf-to-xml : $(XML)
 
 $(XML) : $(PDF)
-	USE_PDF_NATIVE=1 perl6 ../bin/pdf-dom-dump --skip --atts --max-depth=18 $(PDF) > $(XML);
+	USE_PDF_NATIVE=1 pdf-tag-dump.raku --omit=Span --atts --max-depth=18 $(PDF) > $(XML);
 
 xml-to-json : pdf-to-xml
 	perl6 ../etc/make-json.raku --make --out-dir=$(RESOURCE_DIR) $(XML)
