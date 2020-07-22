@@ -15,7 +15,7 @@ This library contains:
 
 - XHTML tables that have been mined from the PDF-32000 1.7 specification.
 - JSON data for the tables
-- Perl 6 Roles for tables that represent PDF objects:
+- Raku Roles for tables that represent PDF objects:
 
 The roles are named ISO_32000::Table_NNN-Xxxx and contain method stubs and documentation for each entry in the role
 
@@ -27,6 +27,8 @@ Data is available for all of the tables in the PDF-32000 1.7 specification:
 use PDF::ISO_32000;
 # Load data about the Document Information dictionary
 my %info = PDF::ISO_32000.table: "Table_317-Entries_in_the_document_information_dictionary";
+# -OR- by table number
+%info = PDF::ISO_32000.[317];
 say %info<caption>;             # Table 317 – Entries in the document information dictionary
 say %info<head>.join(" | ");    # Key | Type | Value
 say %info<rows>[0].join(" | "); # Title | text string | (Optional; PDF 1.1) The document’s title.
@@ -55,38 +57,24 @@ Roles are available for tables named `*_entries`, or `*_attributes`.
 % p6doc ISO_320000:Table_28-Entries_in_the_catalog_dictionary
 ```
 
-The roles also contain [method stubs](https://docs.perl6.org/language/objects#Stubs) for the entries that need to be implemented for the role. For example:
+The roles also contain [method stubs](https://docs.raku.org/language/objects#Stubs) for the entries that need to be implemented for the role. For example:
 
 ```
 % cat << EOF > lib/Catalog.rakumod
 use ISO_32000::Table_28-Entries_in_the_catalog_dictionary;
 unit class Catalog does ISO_32000::Table_28-Entries_in_the_catalog_dictionary;
 EOF
-% perl6 -I lib -M Catalog
+% raku -I . -M Catalog
 ===SORRY!=== Error while compiling lib/Catalog.rakumod (Catalog)
 Method 'SpiderInfo' must be implemented by Catalog because it is required by roles: ISO_32000::Table_28-Entries_in_the_catalog_dictionary.
 at lib/Catalog.rakumod (Catalog):1
 ```
 This module contains:
 
-- a copy of the [PDF-32000 specification](src/PDF32000_2008.pdf)
-- [JSON Table](resources) extracted from the above
-- [generated interface roles](gen/lib/ISO_32000) for building and validating PDF objects
+- a copy of the [PDF-32000 specification](https://github.com/pdf-raku/PDF-ISO_32000-raku/blob/master/src/PDF32000_2008.pdf)
+- [JSON tables](https://github.com/pdf-raku/PDF-ISO_32000-raku/blob/master/resources/) extracted from the above
+- [generated interface roles](https://github.com/pdf-raku/PDF-ISO_32000-raku/blob/master/gen/lib/ISO_32000) for building and validating PDF objects
 - scripts and Makefiles for regenerating the XML tables and roles
-
-todo: run-time introspection of resources and generated artefacts, e.g.:
-
-```
-use PDF::ISO_32000;
-PDF::ISO_32000.table[28].xhtml;          # ?? access extracted xhtml by table number ??
-PDF::ISO_32000.table[28].json;           # ?? access converted json by table number ??
-PDF::ISO_32000.table<Catalog>.interface; # ?? access generated role by table name ??
-```
-
-Dumps tagged PDF content as XML.
-
-At the moment just does enough to semi-reliably extract content from the PDF ISO-32000 specification documents. Could evolve into a general purpose tool for mining elements from tagged PDF's. 
-
 
 ## ISO 3200 Roles
 

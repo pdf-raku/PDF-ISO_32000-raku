@@ -4,7 +4,7 @@
   "authors" : [
     "David Warring"
   ],
-  "build-depends" : [ "JSON::Fast", "LibXML", "PDF::Font::Loader", "PDF::Tags" ],
+  "build-depends" : [ "JSON::Fast", "LibXML", "Method::Also", "PDF::Font::Loader", "PDF::Tags" ],
   "depends" : [ ],
   "description" : "Tables and roles, mined from the PDF ISO-32000 specification",
   "license" : "Artistic-2.0",

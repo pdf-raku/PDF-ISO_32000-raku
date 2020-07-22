@@ -1,5 +1,5 @@
 use Test;
-plan 8;
+plan 10;
 use PDF::ISO_32000;
 
 my %table = PDF::ISO_32000.table: "Table_317-Entries_in_the_document_information_dictionary";
@@ -15,3 +15,9 @@ is @index[317], 'Table_317-Entries_in_the_document_information_dictionary', '.ta
 my $stream-ops = PDF::ISO_32000.appendix<A.1>;
 is $stream-ops, 'misc/Table_A1-PDF_content_stream_operators', "Appendix lookup";
 is PDF::ISO_32000.table($stream-ops)<caption>, "Table A.1 – PDF content stream operators", "Appendix load";
+
+%table = PDF::ISO_32000.[28];
+is %table<caption>, "Table 28 – Entries in the catalog dictionary", "table -AT-POS lookup";
+
+%table = PDF::ISO_32000<Table_28-Entries_in_the_catalog_dictionary>;
+is %table<caption>, "Table 28 – Entries in the catalog dictionary", "table -AT-POS lookup";
