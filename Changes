@@ -1,1 +1,2 @@
-0.0.1 - Initial release
+0.0.9 - Factored out data mining logic to new PDF::Tags module. Replaced
+        script pdf-dom-dump.raku with pdf-tag-dump.raku
