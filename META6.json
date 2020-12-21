@@ -1,6 +1,6 @@
 {
   "api": "PDF-1.7",
-  "auth": "github:p6-pdf",
+  "auth": "github:pdf-raku",
   "authors": [
     "David Warring"
   ],
@@ -679,7 +679,7 @@
     "ISO_32000/misc/Table_H5-Object_usage_after_deleting_two_text_annotations.json",
     "ISO_32000/misc/Table_H6-Object_usage_after_adding_three_text_annotations.json"
   ],
-  "source-url": "git://github.com/p6-pdf/PDF-ISO_32000-p6.git",
+  "source-url": "git://github.com/pdf-raku/PDF-ISO_32000-raku.git",
   "tags": [
     "pdf"
   ],

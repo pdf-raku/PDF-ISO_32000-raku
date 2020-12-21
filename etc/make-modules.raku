@@ -2,6 +2,8 @@ use v6;
 
 use JSON::Fast;
 
+sub camel($w) { $w.subst(/(.)/, {$0.uc}) }
+
 sub build(:$caption, :@head, :@rows) {
     note "Building $*role-name";
     {
@@ -14,6 +16,7 @@ sub build(:$caption, :@head, :@rows) {
             my ($entry, $type, $desc) = .list;
             $entry = $entry.trim;
             $entry ~~ s:s/ \s* '(' .* ')'//;
+            $entry ~~ s:g/' '(\w+)/{camel($0)}/;
             next if $entry ~~ /:i'other'|'any'|' '/ | '';
             @pod.push: %( :$entry, :$type, :$desc );
 

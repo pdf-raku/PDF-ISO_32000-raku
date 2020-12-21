@@ -118,8 +118,8 @@ ISO_32000 Reference|Entries
 [Table 48 – Entries in a collection item dictionary](gen/lib/ISO_32000/Table_48-Entries_in_a_collection_item_dictionary.rakumod)|/Type
 [Table 49 – Entries in a collection subitem dictionary](gen/lib/ISO_32000/Table_49-Entries_in_a_collection_subitem_dictionary.rakumod)|/Type /D /P
 [Table 50 – Entries in a developer extensions dictionary](gen/lib/ISO_32000/Table_50-Entries_in_a_developer_extensions_dictionary.rakumod)|/Type /BaseVersion /ExtensionLevel
-[Table 52 – Device-Independent Graphics State Parameters](gen/lib/ISO_32000/Table_52-Device-Independent_Graphics_State_Parameters.rakumod)|/CTM /color
-[Table 53 – Device-Dependent Graphics State Parameters](gen/lib/ISO_32000/Table_53-Device-Dependent_Graphics_State_Parameters.rakumod)|/overprint /transfer /halftone /flatness /smoothness
+[Table 52 – Device-Independent Graphics State Parameters](gen/lib/ISO_32000/Table_52-Device-Independent_Graphics_State_Parameters.rakumod)|/CTM /clippingPath /colorSpace /color /textState /lineWidth /lineCap /lineJoin /miterLimit /dashPattern /renderingIntent /strokeAdjustment /blendMode /softMask /alphaConstant /alphaSource
+[Table 53 – Device-Dependent Graphics State Parameters](gen/lib/ISO_32000/Table_53-Device-Dependent_Graphics_State_Parameters.rakumod)|/overprint /overprintMode /blackGeneration /undercolorRemoval /transfer /halftone /flatness /smoothness
 [Table 58 – Entries in a Graphics State Parameter Dictionary](gen/lib/ISO_32000/Table_58-Entries_in_a_Graphics_State_Parameter_Dictionary.rakumod)|/Type /LW /LC /LJ /ML /D /RI /OP /op /OPM /Font /BG /BG2 /UCR /UCR2 /TR /TR2 /HT /FL /SM /SA /BM /SMask /CA /ca /AIS /TK
 [Table 63 – Entries in a CalGray Colour Space Dictionary](gen/lib/ISO_32000/Table_63-Entries_in_a_CalGray_Colour_Space_Dictionary.rakumod)|/WhitePoint /BlackPoint /Gamma
 [Table 64 – Entries in a CalRGB Colour Space Dictionary](gen/lib/ISO_32000/Table_64-Entries_in_a_CalRGB_Colour_Space_Dictionary.rakumod)|/WhitePoint /BlackPoint /Gamma /Matrix
@@ -347,7 +347,7 @@ ISO_32000 Reference|Entries
 [Table 365 – Entries in an output intent dictionary](gen/lib/ISO_32000/Table_365-Entries_in_an_output_intent_dictionary.rakumod)|/Type /S /OutputCondition /OutputConditionIdentifier /RegistryName /Info /DestOutputProfile
 [Table 366 – Additional entries specific to a trap network annotation](gen/lib/ISO_32000/Table_366-Additional_entries_specific_to_a_trap_network_annotation.rakumod)|/Subtype /LastModified /Version /AnnotStates /FontFauxing
 [Table 367 – Additional entries specific to a trap network appearance stream](gen/lib/ISO_32000/Table_367-Additional_entries_specific_to_a_trap_network_appearance_stream.rakumod)|/PCM /SeparationColorNames /TrapRegions /TrapStyles
-[Table 368 – Entry in an OPI version dictionary](gen/lib/ISO_32000/Table_368-Entry_in_an_OPI_version_dictionary.rakumod)|
+[Table 368 – Entry in an OPI version dictionary](gen/lib/ISO_32000/Table_368-Entry_in_an_OPI_version_dictionary.rakumod)|/versionNumber
 [Table F.1 – Entries in the linearization parameter dictionary](gen/lib/ISO_32000/Table_F1-Entries_in_the_linearization_parameter_dictionary.rakumod)|/Linearized /L /H /O /E /N /T /P
 
 ## Entry to role mappings
@@ -986,12 +986,30 @@ Entry|ISO_32000 Roles
 /Ysquare|[Table 132 – Additional entries specific to a type 10 halftone dictionary](gen/lib/ISO_32000/Table_132-Additional_entries_specific_to_a_type_10_halftone_dictionary.rakumod)
 /Z|[Table 268 – Entries in a media criteria dictionary](gen/lib/ISO_32000/Table_268-Entries_in_a_media_criteria_dictionary.rakumod)
 /Zoom|[Table 102 – Entries in an Optional Content Usage Dictionary](gen/lib/ISO_32000/Table_102-Entries_in_an_Optional_Content_Usage_Dictionary.rakumod)
+/alphaConstant|[Table 52 – Device-Independent Graphics State Parameters](gen/lib/ISO_32000/Table_52-Device-Independent_Graphics_State_Parameters.rakumod)
+/alphaSource|[Table 52 – Device-Independent Graphics State Parameters](gen/lib/ISO_32000/Table_52-Device-Independent_Graphics_State_Parameters.rakumod)
+/blackGeneration|[Table 53 – Device-Dependent Graphics State Parameters](gen/lib/ISO_32000/Table_53-Device-Dependent_Graphics_State_Parameters.rakumod)
+/blendMode|[Table 52 – Device-Independent Graphics State Parameters](gen/lib/ISO_32000/Table_52-Device-Independent_Graphics_State_Parameters.rakumod)
 /ca|[Table 58 – Entries in a Graphics State Parameter Dictionary](gen/lib/ISO_32000/Table_58-Entries_in_a_Graphics_State_Parameter_Dictionary.rakumod)
 /checked|[Table 348 – PrintField attributes](gen/lib/ISO_32000/Table_348-PrintField_attributes.rakumod)
+/clippingPath|[Table 52 – Device-Independent Graphics State Parameters](gen/lib/ISO_32000/Table_52-Device-Independent_Graphics_State_Parameters.rakumod)
 /color|[Table 52 – Device-Independent Graphics State Parameters](gen/lib/ISO_32000/Table_52-Device-Independent_Graphics_State_Parameters.rakumod)
+/colorSpace|[Table 52 – Device-Independent Graphics State Parameters](gen/lib/ISO_32000/Table_52-Device-Independent_Graphics_State_Parameters.rakumod)
+/dashPattern|[Table 52 – Device-Independent Graphics State Parameters](gen/lib/ISO_32000/Table_52-Device-Independent_Graphics_State_Parameters.rakumod)
 /flatness|[Table 53 – Device-Dependent Graphics State Parameters](gen/lib/ISO_32000/Table_53-Device-Dependent_Graphics_State_Parameters.rakumod)
 /halftone|[Table 53 – Device-Dependent Graphics State Parameters](gen/lib/ISO_32000/Table_53-Device-Dependent_Graphics_State_Parameters.rakumod)
+/lineCap|[Table 52 – Device-Independent Graphics State Parameters](gen/lib/ISO_32000/Table_52-Device-Independent_Graphics_State_Parameters.rakumod)
+/lineJoin|[Table 52 – Device-Independent Graphics State Parameters](gen/lib/ISO_32000/Table_52-Device-Independent_Graphics_State_Parameters.rakumod)
+/lineWidth|[Table 52 – Device-Independent Graphics State Parameters](gen/lib/ISO_32000/Table_52-Device-Independent_Graphics_State_Parameters.rakumod)
+/miterLimit|[Table 52 – Device-Independent Graphics State Parameters](gen/lib/ISO_32000/Table_52-Device-Independent_Graphics_State_Parameters.rakumod)
 /op|[Table 58 – Entries in a Graphics State Parameter Dictionary](gen/lib/ISO_32000/Table_58-Entries_in_a_Graphics_State_Parameter_Dictionary.rakumod)
 /overprint|[Table 53 – Device-Dependent Graphics State Parameters](gen/lib/ISO_32000/Table_53-Device-Dependent_Graphics_State_Parameters.rakumod)
+/overprintMode|[Table 53 – Device-Dependent Graphics State Parameters](gen/lib/ISO_32000/Table_53-Device-Dependent_Graphics_State_Parameters.rakumod)
+/renderingIntent|[Table 52 – Device-Independent Graphics State Parameters](gen/lib/ISO_32000/Table_52-Device-Independent_Graphics_State_Parameters.rakumod)
 /smoothness|[Table 53 – Device-Dependent Graphics State Parameters](gen/lib/ISO_32000/Table_53-Device-Dependent_Graphics_State_Parameters.rakumod)
+/softMask|[Table 52 – Device-Independent Graphics State Parameters](gen/lib/ISO_32000/Table_52-Device-Independent_Graphics_State_Parameters.rakumod)
+/strokeAdjustment|[Table 52 – Device-Independent Graphics State Parameters](gen/lib/ISO_32000/Table_52-Device-Independent_Graphics_State_Parameters.rakumod)
+/textState|[Table 52 – Device-Independent Graphics State Parameters](gen/lib/ISO_32000/Table_52-Device-Independent_Graphics_State_Parameters.rakumod)
 /transfer|[Table 53 – Device-Dependent Graphics State Parameters](gen/lib/ISO_32000/Table_53-Device-Dependent_Graphics_State_Parameters.rakumod)
+/undercolorRemoval|[Table 53 – Device-Dependent Graphics State Parameters](gen/lib/ISO_32000/Table_53-Device-Dependent_Graphics_State_Parameters.rakumod)
+/versionNumber|[Table 368 – Entry in an OPI version dictionary](gen/lib/ISO_32000/Table_368-Entry_in_an_OPI_version_dictionary.rakumod)
