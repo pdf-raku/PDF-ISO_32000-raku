@@ -4,11 +4,11 @@ os:
   - linux
 perl6:
   - latest
-  - '2019.03'
+  - '2020.01'
 install:
   - rakudobrew build zef
   - zef --depsonly install .
 script:
-  - prove -ve "perl6 -I."
+  - prove -ve "raku -I."
   - zef install .
 
