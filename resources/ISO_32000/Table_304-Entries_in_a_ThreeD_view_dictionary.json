@@ -20,7 +20,7 @@
       [
         "IN",
         "text string",
-        "(Optional) The internal name of the view, used to refer to the view from other objects, such as the go-to-3D-view action (see 12.6.4.15, “Go-To- 3D-View Actions”)."
+        "(Optional) The internal name of the view, used to refer to the view from other objects, such as the go-to-3D-view action (see 12.6.4.15, “Go-To-3D-View Actions”)."
       ],
       [
         "MS",

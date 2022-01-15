@@ -39,8 +39,8 @@
       ],
       [
         "7 …",
-        "See Table F.3 , item 11",
-        "Starting with item 7, each of the remaining items in this table is a shared object identifier—that is, an index into the shared object hint table (described in F.4.2, “Shared Object Hint Table ”)."
+        "See Table F.3, item 11",
+        "Starting with item 7, each of the remaining items in this table is a shared object identifier—that is, an index into the shared object hint table (described in F.4.2, “Shared Object Hint Table”)."
       ]
     ]
   }

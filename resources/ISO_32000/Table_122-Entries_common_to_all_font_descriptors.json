@@ -65,7 +65,7 @@
       [
         "CapHeight",
         "number",
-        "(Required for fonts that have Latin characters, except for Type 3 fonts)The vertical coordinate of the top of flat capital letters, measured from the baseline."
+        "(Required for fonts that have Latin characters, except for Type 3 fonts) The vertical coordinate of the top of flat capital letters, measured from the baseline."
       ],
       [
         "XHeight",

@@ -24,7 +24,7 @@
       ],
       [
         "Warichu",
-        "(Warichu) The wrapper around the entire warichu assembly. It may contain a three-element group consisting of WP, WT, and WP. Warichu elements (and their content elements) may wrap across multiple lines, according to the warichu breaking rules described in the Japanese Industrial Standard (JIS) X 4051-1995."
+        "(Warichu) The wrapper around the entire warichu assembly. It may contain a three- element group consisting of WP, WT, and WP. Warichu elements (and their content elements) may wrap across multiple lines, according to the warichu breaking rules described in the Japanese Industrial Standard (JIS) X 4051-1995."
       ],
       [
         "WT",

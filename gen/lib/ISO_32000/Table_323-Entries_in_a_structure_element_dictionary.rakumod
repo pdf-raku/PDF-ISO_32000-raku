@@ -28,7 +28,7 @@ Table 323 – Entries in a structure element dictionary
 - (Optional) The type of PDF object that this dictionary describes; if present, is StructElem for a structure element.
 
 =head2 S [name]
-- (Required) The structure type, a name object identifying the nature of the structure element and its role within the document, such as a chapter, paragraph, or footnote (see 14.7.3, “Structure Types”). Names of structure types conforms to the guidelines described in Annex E .
+- (Required) The structure type, a name object identifying the nature of the structure element and its role within the document, such as a chapter, paragraph, or footnote (see 14.7.3, “Structure Types”). Names of structure types conforms to the guidelines described in Annex E.
 
 =head2 P [dictionary]
 - (Required; is an indirect reference) The structure element that is the immediate parent of this one in the structure hierarchy.
@@ -44,7 +44,7 @@ Table 323 – Entries in a structure element dictionary
 • A structure element dictionary denoting another structure element
 • An integer marked-content identifier denoting a marked-content sequence
 • A marked-content reference dictionary denoting a marked-content sequence
-• An object reference dictionary denoting a PDF object Each of these objects other than the first (structure element dictionary) is considered to be a content item; see 14.7.4, “Structure Content” for further discussion of each of these forms of representation. If the value of K is a dictionary containing no Type entry, it is assumed to be a structure element dictionary.
+•An object reference dictionary denoting a PDF object Each of these objects other than the first (structure element dictionary) is considered to be a content item; see 14.7.4, “Structure Content” for further discussion of each of these forms of representation. If the value of K is a dictionary containing no Type entry, it is assumed to be a structure element dictionary.
 
 =head2 A [(various)]
 - (Optional) A single attribute object or array of attribute objects associated with this structure element. Each attribute object is either a dictionary or a stream. If the value of this entry is an array, each attribute object in the array may be followed by an integer representing its revision number (see 14.7.5, “Structure Attributes,” and 14.7.5.3, “Attribute Revision Numbers”).

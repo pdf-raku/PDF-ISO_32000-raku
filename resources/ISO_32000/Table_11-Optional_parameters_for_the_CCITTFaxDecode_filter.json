@@ -35,7 +35,7 @@
       [
         "EndOfBlock",
         "boolean",
-        "A flag indicating whether the filter expects the encoded data to be terminated by an end-of-block pattern, overriding the Rows parameter. If false, the filter stops when it has decoded the number of lines indicated by Rows or when its data has been exhausted, whichever occurs first. The end-of-block pattern is the CCITT end-of-facsimile-block (EOFB) or return-to-control (RTC) appropriate for the Kparameter. Default value: true."
+        "A flag indicating whether the filter expects the encoded data to be terminated by an end-of-block pattern, overriding the Rows parameter. If false, the filter stops when it has decoded the number of lines indicated by Rows or when its data has been exhausted, whichever occurs first. The end-of- block pattern is the CCITT end-of-facsimile-block (EOFB) or return-to-control (RTC) appropriate for the Kparameter. Default value: true."
       ],
       [
         "BlackIs1",

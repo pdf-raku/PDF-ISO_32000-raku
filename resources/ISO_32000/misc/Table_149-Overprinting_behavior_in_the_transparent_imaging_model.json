@@ -4,7 +4,7 @@
     "head": [
       "Source color space",
       "Affected colour component of group colour space",
-      "Value of blend function B (c b , c s ) expressed as tint",
+      "Value of blend function B (cb , cs ) expressed as tint",
       "OP false",
       "OP true, OPM 0",
       "OP true, OPM 1"
@@ -13,60 +13,60 @@
       [
         "DeviceCMYK, specified directly, not in a sampled image",
         "C, M, Y, or K",
-        "c s",
-        "c s",
-        "c s if c s ≠ 0.0c b if c s = 0.0"
+        "cs",
+        "cs",
+        "cs if cs ≠ 0.0cb if cs = 0.0"
       ],
       [
         "Process colour component other than CMYK",
-        "c s",
-        "c s",
-        "c s"
+        "cs",
+        "cs",
+        "cs"
       ],
       [
         "Spot colorant",
-        "c s (= 0.0)",
-        "c b",
-        "c b"
+        "cs (= 0.0)",
+        "cb",
+        "cb"
       ],
       [
         "Any process colour space (including other cases of DeviceCMYK)",
         "Process colour component",
-        "c s",
-        "c s",
-        "c s"
+        "cs",
+        "cs",
+        "cs"
       ],
       [
         "Spot colorant",
-        "c s (= 0.0)",
-        "c b",
-        "c b"
+        "cs (= 0.0)",
+        "cb",
+        "cb"
       ],
       [
         "Separation or DeviceN",
         "Process colour component",
-        "c s (= 0.0)",
-        "c b",
-        "c b"
+        "cs (= 0.0)",
+        "cb",
+        "cb"
       ],
       [
         "Spot colorant named in source space",
-        "c s",
-        "c s",
-        "c s"
+        "cs",
+        "cs",
+        "cs"
       ],
       [
         "Spot colorant not named in source space",
-        "c s (= 0.0)",
-        "c b",
-        "c b"
+        "cs (= 0.0)",
+        "cb",
+        "cb"
       ],
       [
         "A group (not an elementary object)",
         "All colour components",
-        "c s",
-        "c s",
-        "c s"
+        "cs",
+        "cs",
+        "cs"
       ]
     ]
   }

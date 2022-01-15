@@ -27,7 +27,7 @@ Table 365 – Entries in an output intent dictionary
 - (Optional) A text string concisely identifying the intended output device or production condition in human-readable form. This is the preferred method of defining such a string for presentation to the user.
 
 =head2 OutputConditionIdentifier [text string]
-- (Required) A text string identifying the intended output device or production condition in human- or machine-readable form. If human-readable, this string may be used in lieu of an OutputCondition string for presentation to the user.
+- (Required) A text string identifying the intended output device or production condition in human- or machine- readable form. If human-readable, this string may be used in lieu of an OutputCondition string for presentation to the user.
 A typical value for this entry may be the name of a production condition maintained in an industry-standard registry such as the ICC Characterization Data Registry (see the Bibliography). If the designated condition matches that in effect at production time, the production software is responsible for providing the corresponding ICC profile as defined in the registry.
 If the intended production condition is not a recognized standard, the value of this entry may be Custom or an application-specific, machine-readable name. The DestOutputProfile entry defines the ICC profile, and the Info entry is used for further human-readable identification.
 

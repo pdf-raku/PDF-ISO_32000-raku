@@ -114,7 +114,7 @@ Although the current soft mask is sometimes referred to as a “soft clip,” al
 - (Optional; PDF 1.4) Same as CA, but for nonstroking operations.
 
 =head2 AIS [boolean]
-- (Optional; PDF 1.4) The alpha source flag (“alpha is shape”), specifying whether the current soft mask and alpha constant shall beinterpreted as shape values (true) or opacity values (false).
+- (Optional; PDF 1.4) The alpha source flag (“alpha is shape”), specifying whether the current soft mask and alpha constant is interpreted as shape values (true) or opacity values (false).
 
 =head2 TK [boolean]
 - (Optional; PDF 1.4) The text knockout flag, determines the behaviour of overlapping glyphs within a text object in the transparent imaging model (see 9.3.8, "Text Knockout").

@@ -30,7 +30,7 @@ Table 112 – Entries in a Type 3 font dictionary
 - (Required) The type of font; is Type3 for a Type 3 font.
 
 =head2 Name [name]
-- (Required in PDF 1.0; optional otherwise) See Table 111 .
+- (Required in PDF 1.0; optional otherwise) See Table 111.
 
 =head2 FontBBox [rectangle]
 - (Required) A rectangle (see 7.9.5, "Rectangles") expressed in the glyph coordinate system, specifying the font bounding box. This is the smallest rectangle enclosing the shape that would result if all of the glyphs of the font were placed with their origins coincident and then filled.
@@ -41,7 +41,7 @@ If all four elements of the rectangle are zero, a conforming reader makes no ass
 NOTE A common practice is to define glyphs in terms of a 1000-unit glyph coordinate system, in which case the font matrix is [ 0.001 0 0 0.001 0 0 ].
 
 =head2 CharProcs [dictionary]
-- (Required) A dictionary in which each key is a glyph name and the value associated with that key is a content stream that constructs and paints the glyph for that character. The stream includes as its first operator either d0 or d1, followed by operators describing one or more graphics objects, which may include path, text, or image objects. See below for more details about Type 3 glyph descriptions.
+- (Required) A dictionary in which each key is a glyph name and the value associated with that key is a content stream that constructs and paints the glyph for that character. The stream shallinclude as its first operator either d0 or d1, followed by operators describing one or more graphics objects, which may include path, text, or image objects. See below for more details about Type 3 glyph descriptions.
 
 =head2 Encoding [name or dictionary]
 - (Required) An encoding dictionary whose Differences array specifies the complete character encoding for this font (see 9.6.6, "Character Encoding").

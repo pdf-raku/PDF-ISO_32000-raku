@@ -14,7 +14,7 @@ Table 79 – Additional Entries Specific to a Type 1 Shading Dictionary
 =head1 Methods (Entries)
 
 =head2 Domain [array]
-- (Optional) An array of four numbers [ x min x max y min y max ] specifying the rectangular domain of coordinates over which the colour function(s) are defined. Default value: [ 0.0 1.0 0.0 1.0 ].
+- (Optional) An array of four numbers [ xmin xmax ymin ymax ] specifying the rectangular domain of coordinates over which the colour function(s) are defined. Default value: [ 0.0 1.0 0.0 1.0 ].
 
 =head2 Matrix [array]
 - (Optional) An array of six numbers specifying a transformation matrix mapping the coordinate space specified by the Domain entry into the shading’s target coordinate space.

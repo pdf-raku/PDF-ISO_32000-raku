@@ -12,7 +12,7 @@
       ],
       [
         "5",
-        "Defines an arbitrary number of halftone screens, one for each colorantor colour component (including both primary and spot colorants). The keys in this dictionary are names of colorants; the values are halftone dictionaries of other types, each defining the halftone screen for a single colorant."
+        "Defines an arbitrary number of halftone screens, one for each colorant or colour component (including both primary and spot colorants). The keys in this dictionary are names of colorants; the values are halftone dictionaries of other types, each defining the halftone screen for a single colorant."
       ],
       [
         "6",

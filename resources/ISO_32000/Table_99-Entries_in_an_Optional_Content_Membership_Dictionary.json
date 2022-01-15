@@ -20,7 +20,7 @@
       [
         "P",
         "name",
-        "(Optional) A name specifying the visibility policy for content belonging to this membership dictionary. Valid values is:\nAllOn visible only if all of the entries in OCGs are ON\nAnyOn visible if any of the entries in OCGs are ON\nAnyOff visible if any of the entries in OCGs are OFF\nAllOff visible only if all of the entries in OCGs are OFF\nDefault value: AnyOn"
+        "(Optional) A name specifying the visibility policy for content belonging to this membership dictionary. Valid values is:\nAllOnvisible only if all of the entries in OCGs are ON\nAnyOnvisible if any of the entries in OCGs are ON\nAnyOffvisible if any of the entries in OCGs are OFF\nAllOffvisible only if all of the entries in OCGs are OFF\nDefault value: AnyOn"
       ],
       [
         "VE",

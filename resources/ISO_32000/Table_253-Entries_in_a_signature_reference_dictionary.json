@@ -15,7 +15,7 @@
       [
         "TransformMethod",
         "name",
-        "(Required) The name of the transform method (see Section 12.8.2, “Transform Methods ”) that shall guide the modification analysis that takes place when the signature is validated. Valid values is:\nDocMDP Used to detect modifications to a document relative to a signature field that is signed by the originator of a document; see 12.8.2.2, “DocMDP.”\nUR Used to detect modifications to a document that would invalidate a signature in a rights-enabled document; see 12.8.2.3, “UR.”\nFieldMDPUsed to detect modifications to a list of form fields specified in TransformParams; see 12.8.2.4, “FieldMDP.”"
+        "(Required) The name of the transform method (see Section 12.8.2, “Transform Methods”) that shall guide the modification analysis that takes place when the signature is validated. Valid values is:\nDocMDP Used to detect modifications to a document relative to a signature field that is signed by the originator of a document; see 12.8.2.2, “DocMDP.”\nUR Used to detect modifications to a document that would invalidate a signature in a rights- enabled document; see 12.8.2.3, “UR.”\nFieldMDPUsed to detect modifications to a list of form fields specified in TransformParams; see 12.8.2.4, “FieldMDP.”"
       ],
       [
         "TransformParams",

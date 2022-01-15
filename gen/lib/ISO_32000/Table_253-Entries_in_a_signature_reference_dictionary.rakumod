@@ -19,9 +19,9 @@ Table 253 – Entries in a signature reference dictionary
 - (Optional) The type of PDF object that this dictionary describes; if present, is SigRef for a signature reference dictionary.
 
 =head2 TransformMethod [name]
-- (Required) The name of the transform method (see Section 12.8.2, “Transform Methods ”) that shall guide the modification analysis that takes place when the signature is validated. Valid values is:
+- (Required) The name of the transform method (see Section 12.8.2, “Transform Methods”) that shall guide the modification analysis that takes place when the signature is validated. Valid values is:
 DocMDP Used to detect modifications to a document relative to a signature field that is signed by the originator of a document; see 12.8.2.2, “DocMDP.”
-UR Used to detect modifications to a document that would invalidate a signature in a rights-enabled document; see 12.8.2.3, “UR.”
+UR Used to detect modifications to a document that would invalidate a signature in a rights- enabled document; see 12.8.2.3, “UR.”
 FieldMDPUsed to detect modifications to a list of form fields specified in TransformParams; see 12.8.2.4, “FieldMDP.”
 
 =head2 TransformParams [dictionary]

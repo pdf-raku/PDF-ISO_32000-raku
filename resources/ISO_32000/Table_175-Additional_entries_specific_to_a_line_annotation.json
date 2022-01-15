@@ -15,7 +15,7 @@
       [
         "L",
         "array",
-        "(Required) An array of four numbers, [ x 1 y 1 x 2 y 2 ], specifying the starting and ending coordinates of the line in default user space.\nIf the LL entry is present, this value represents the endpoints of the leader lines rather than the endpoints of the line itself; see Figure 60 ."
+        "(Required) An array of four numbers, [ x1 y1 x2 y2 ], specifying the starting and ending coordinates of the line in default user space.\nIf the LL entry is present, this value represents the endpoints of the leader lines rather than the endpoints of the line itself; see Figure 60."
       ],
       [
         "BS",
@@ -25,27 +25,27 @@
       [
         "LE",
         "array",
-        "(Optional; PDF 1.4) An array of two names specifying the line ending styles that is used in drawing the line. The first and second elements of the array specifies the line ending styles for the endpoints defined, respectively, by the first and second pairs of coordinates, (x 1 , y 1)and (x 2 , y 2), in the L array. Table 176 shows the possible values. Default value: [ /None /None ]."
+        "(Optional; PDF 1.4) An array of two names specifying the line ending styles that is used in drawing the line. The first and second elements of the array specifies the line ending styles for the endpoints defined, respectively, by the first and second pairs of coordinates, (x1 , y1)and (x2 , y2), in the L array. Table 176 shows the possible values. Default value: [ /None /None ]."
       ],
       [
         "IC",
         "array",
-        "(Optional; PDF 1.4) An array of numbers in the range 0.0 to 1.0 specifying the interior color that is used to fill the annotation’s line endings (see Table 176). The number of array elements determines the colour space in which the colour is defined:\n0 No colour; transparent\n1DeviceGray\n3DeviceRGB\n4DeviceCMYK"
+        "(Optional; PDF 1.4) An array of numbers in the range 0.0 to 1.0 specifying the interior color that is used to fill the annotation’s line endings (see Table 176). The number of array elements determines the colour space in which the colour is defined:\n0No colour; transparent\n1DeviceGray\n3DeviceRGB\n4DeviceCMYK"
       ],
       [
         "LL",
         "number",
-        "(Required if LLE is present, otherwise optional; PDF 1.6) The length of leader lines in default user space that extend from each endpoint of the line perpendicular to the line itself, as shown in Figure 60 . A positive value means that the leader lines appear in the direction that is clockwise when traversing the line from its starting point to its ending point (as specified by L); a negative value indicates the opposite direction.\nDefault value: 0 (no leader lines)."
+        "(Required if LLE is present, otherwise optional; PDF 1.6) The length of leader lines in default user space that extend from each endpoint of the line perpendicular to the line itself, as shown in Figure 60. A positive value means that the leader lines appear in the direction that is clockwise when traversing the line from its starting point to its ending point (as specified by L); a negative value indicates the opposite direction.\nDefault value: 0 (no leader lines)."
       ],
       [
         "LLE",
         "number",
-        "(Optional; PDF 1.6) A non-negative number that shall represents the length of leader line extensions that extend from the line proper 180 degrees from the leader lines, as shown in Figure 60 .\nDefault value: 0 (no leader line extensions)."
+        "(Optional; PDF 1.6) A non-negative number that shall represents the length of leader line extensions that extend from the line proper 180 degrees from the leader lines, as shown in Figure 60.\nDefault value: 0 (no leader line extensions)."
       ],
       [
         "Cap",
         "boolean",
-        "(Optional; PDF 1.6) If true, the text specified by the Contents or RCentries is replicated as a caption in the appearance of the line, as shown in Figure 61 and Figure 62 . The text is rendered in a manner appropriate to the content, taking into account factors such as writing direction.\nDefault value: false."
+        "(Optional; PDF 1.6) If true, the text specified by the Contents or RCentries is replicated as a caption in the appearance of the line, as shown in Figure 61 and Figure 62. The text is rendered in a manner appropriate to the content, taking into account factors such as writing direction.\nDefault value: false."
       ],
       [
         "IT",

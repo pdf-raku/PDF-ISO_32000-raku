@@ -8,19 +8,19 @@
     "rows": [
       [
         "f = 0",
-        "x 00 y 00 x 01 y 01 x 02 y 02 x 03 y 03 x 13 y 13 x 23 y 23 x 33 y 33 x 32 y 32 x 31 y 31 x 30 y 30 x 20 y 20 x 10 y 10 x 11 y 11 x 12 y 12 x 22 y 22 x 21 y 21 c 00 c 03 c 33 c 30\nNew patch; no implicit values"
+        "x00 y00 x01 y01 x02 y02 x03 y03 x13 y13 x23 y23 x33 y33 x32 y32x31 y31 x30 y30 x20 y20 x10 y10 x11 y11 x12 y12 x22 y22 x21 y21 c00 c03 c33 c30\nNew patch; no implicit values"
       ],
       [
         "f = 1",
-        "x 13 y 13 x 23 y 23 x 33 y 33 x 32 y 32 x 31 y 31 x 30 y 30 x 20 y 20 x 10 y 10 x 11 y 11 x 12 y 12 x 22 y 22 x 21 y 21 c 33 c 30\nImplicit values:\n(x 00 , y 00) = (x 03 , y 03) previousc 00 = c 03 previous (x 01 , y 01) = (x 13 , y 13) previousc 03 = c 33 previous (x 02 , y 02) = (x 23 , y 23) previous (x 03 , y 03) = (x 33 , y 33) previous"
+        "x13 y13 x23 y23 x33 y33 x32 y32 x31 y31 x30 y30 x20 y20 x10 y10 x11 y11 x12 y12 x22 y22 x21 y21 c33 c30\nImplicit values:\n(x00 , y00) = (x03 , y03) previousc00 = c03 previous (x01 , y01) = (x13 , y13) previousc03 = c33 previous (x02 , y02) = (x23 , y23) previous (x03 , y03) = (x33 , y33) previous"
       ],
       [
         "f = 2",
-        "x 13 y 13 x 23 y 23 x 33 y 33 x 32 y 32 x 31 y 31 x 30 y 30 x 20 y 20 x 10 y 10 x 11 y 11 x 12 y 12 x 22 y 22 x 21 y 21 c 33 c 30\nImplicit values:\n(x 00 , y 00) = (x 33 , y 33) previousc 00 = c 33 previous (x 01 , y 01) = (x 32 , y 32) previousc 03 = c 30 previous (x 02 , y 02) = (x 31 , y 31) previous (x 03 , y 03) = (x 30 , y 30) previous"
+        "x13 y13 x23 y23 x33 y33 x32 y32 x31 y31 x30 y30 x20 y20 x10 y10 x11 y11 x12 y12 x22 y22 x21 y21 c33 c30\nImplicit values:\n(x00 , y00) = (x33 , y33) previousc00 = c33 previous (x01 , y01) = (x32 , y32) previousc03 = c30 previous (x02 , y02) = (x31 , y31) previous (x03 , y03) = (x30 , y30) previous"
       ],
       [
         "f = 3",
-        "x 13 y 13 x 23 y 23 x 33 y 33 x 32 y 32 x 31 y 31 x 30 y 30 x 20 y 20 x 10 y 10 x 11 y 11 x 12 y 12 x 22 y 22 x 21 y 21 c 33 c 30\nImplicit values:\n(x 00 , y 00) = (x 30 , y 30) previousc 00 = c 30 previous (x 01 , y 01) = (x 20 , y 20) previousc 03 = c 00 previous (x 02 , y 02) = (x 10 , y 10) previous (x 03 , y 03) = (x 00 , y 00) previous"
+        "x13 y13 x23 y23 x33 y33 x32 y32 x31 y31 x30 y30 x20 y20 x10 y10 x11 y11 x12 y12 x22 y22 x21 y21 c33 c30\nImplicit values:\n(x00 , y00) = (x30 , y30) previousc00 = c30 previous (x01 , y01) = (x20 , y20) previousc03 = c00 previous (x02 , y02) = (x10 , y10) previous (x03 , y03) = (x00 , y00) previous"
       ]
     ]
   }

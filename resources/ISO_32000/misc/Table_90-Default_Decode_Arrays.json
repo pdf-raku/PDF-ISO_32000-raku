@@ -28,7 +28,7 @@
       ],
       [
         "Lab",
-        "[ 0 100 a min a max b min b max ] where a min , a max , b min , and b max correspond to the values in the Range array of the image’s colour space"
+        "[ 0 100 amin amax bmin bmax ] where amin , amax , bmin , and bmax correspond to the values in the Range array of the image’s colour space"
       ],
       [
         "ICCBased",
@@ -36,7 +36,7 @@
       ],
       [
         "Indexed",
-        "[ 0 N ], where N = 2 n − 1"
+        "[ 0 N ], where N = 2n − 1"
       ],
       [
         "Pattern",

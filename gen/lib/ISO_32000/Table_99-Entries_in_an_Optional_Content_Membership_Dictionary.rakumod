@@ -23,10 +23,10 @@ Null values or references to deleted objects is ignored. If this entry is not pr
 
 =head2 P [name]
 - (Optional) A name specifying the visibility policy for content belonging to this membership dictionary. Valid values is:
-AllOn visible only if all of the entries in OCGs are ON
-AnyOn visible if any of the entries in OCGs are ON
-AnyOff visible if any of the entries in OCGs are OFF
-AllOff visible only if all of the entries in OCGs are OFF
+AllOnvisible only if all of the entries in OCGs are ON
+AnyOnvisible if any of the entries in OCGs are ON
+AnyOffvisible if any of the entries in OCGs are OFF
+AllOffvisible only if all of the entries in OCGs are OFF
 Default value: AnyOn
 
 =head2 VE [array]

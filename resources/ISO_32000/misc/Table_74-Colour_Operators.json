@@ -18,22 +18,22 @@
         "(PDF 1.1) Same as CS but used for nonstroking operations."
       ],
       [
-        "c 1 … c n",
+        "c1… cn",
         "SC",
         "(PDF 1.1) Set the colour to use for stroking operations in a device, CIE-based (other than ICCBased), or Indexed colour space. The number of operands required and their interpretation depends on the current stroking colour space:\nFor DeviceGray, CalGray, and Indexed colour spaces, one operand is required (n = 1).\nFor DeviceRGB, CalRGB, and Lab colour spaces, three operands is required (n = 3).\nFor DeviceCMYK, four operands is required (n = 4)."
       ],
       [
-        "c 1 … c n c 1 … c n name",
+        "c1… cnc1… cn name",
         "SCN SCN",
-        "(PDF 1.2) Same as SC but also supports Pattern, Separation, DeviceN and ICCBased colour spaces.\nIf the current stroking colour space is a Separation, DeviceN, or ICCBased colour space, the operands c 1 … c n is numbers. The number of operands and their interpretation depends on the colour space.\nIf the current stroking colour space is a Pattern colour space, name is the name of an entry in the Pattern subdictionary of the current resource dictionary (see 7.8.3, \"Resource Dictionaries\"). For an uncoloured tiling pattern (PatternType = 1 and PaintType = 2), c 1 … c n is component values specifying a colour in the pattern’s underlying colour space. For other types of patterns, these operands is not specified."
+        "(PDF 1.2) Same as SC but also supports Pattern, Separation, DeviceN and ICCBased colour spaces.\nIf the current stroking colour space is a Separation, DeviceN, or ICCBased colour space, the operands c1… cn is numbers. The number of operands and their interpretation depends on the colour space.\nIf the current stroking colour space is a Pattern colour space, name is the name of an entry in the Pattern subdictionary of the current resource dictionary (see 7.8.3, \"Resource Dictionaries\"). For an uncoloured tiling pattern (PatternType = 1 and PaintType = 2), c1… cnshall be component values specifying a colour in the pattern’s underlying colour space. For other types of patterns, these operands is not specified."
       ],
       [
-        "c 1 … c n",
+        "c1… cn",
         "sc",
         "(PDF 1.1) Same as SC but used for nonstroking operations."
       ],
       [
-        "c 1 … c n c 1 … c n name",
+        "c1… cn c1… cn name",
         "scn scn",
         "(PDF 1.2) Same as SCN but used for nonstroking operations."
       ],

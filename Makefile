@@ -5,4 +5,4 @@ clean :
 	(cd gen && make clean)
 
 test : all
-	prove -e'perl6 -I .' -v t
+	prove -e'raku -I .' -v t

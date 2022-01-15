@@ -32,6 +32,6 @@ Table 131 – Additional entries specific to a type 6 halftone dictionary
 - (Required) The height of the threshold array, in device pixels.
 
 =head2 TransferFunction [function or name]
-- (Optional) A transfer function, which overrides the current transfer function in the graphics state for the same component. This entry is present if the dictionary is a component of a type 5 halftone (see “Type 5 Halftones” in 10.5.5.6) and represents either a nonprimary or nonstandard primary colour component (see 10.4, "Transfer Functions"). The name Identity may be used to specify the identity function.
+- (Optional) A transfer function, which overrides the current transfer function in the graphics state for the same component. This entry is present if the dictionary is a component of a type 5 halftone (see “Type 5 Halftones” in 10.5.5.6) and represents either a nonprimary or nonstandard primary colour component (see 10.4, "Transfer Functions"). The name Identitymay be used to specify the identity function.
 
 =end pod

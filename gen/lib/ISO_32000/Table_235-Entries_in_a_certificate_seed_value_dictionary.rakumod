@@ -35,7 +35,7 @@ Certificate attribute names are used as key names in the dictionaries in this ar
 The value of the corresponding flag in the Ff entry indicates whether this entry is a required constraint.
 
 =head2 KeyUsage [array of ASCII strings]
-- (Optional; PDF 1.7) An array of ASCII strings, where each string specifies an acceptable key-usage extension that is present in the signing certificate. Multiple strings specify a range of acceptable key-usage extensions. The key-usage extension is described in RFC 3280.
+- (Optional; PDF 1.7) An array of ASCII strings, where each string specifies an acceptable key-usage extension that is present in the signing certificate. Multiple strings specify a range of acceptable key- usage extensions. The key-usage extension is described in RFC 3280.
 Each character in a string represents a key-usage type, where the order of the characters indicates the key-usage extension it represents. The first through ninth characters in the string, from left to right, represent the required value for the following key-usage extensions:
 1 digitalSignature 4 dataEncipherment 7 cRLSign
 2 non-Repudiation 5 keyAgreement 8 encipherOnly
@@ -60,7 +60,7 @@ EXAMPLE 2 An example of such a string is: (2.16.840.1.113733.1.7.1.1). This fiel
 =head2 URLType [Name]
 - (Optional; PDF 1.7) A name indicating the usage of the URL entry. There are standard uses and there can be implementation-specific uses for this URL. The following value specifies a valid standard usage:
 Browser – The URL references content that is displayed in a web browser to allow enrolling for a new credential if a matching credential is not found. The Ff attribute’s URL bit is ignored for this usage.
-Third parties may extend the use of this attribute with their own attribute values, which conforms to the guidelines described in Annex E .
+Third parties may extend the use of this attribute with their own attribute values, which conforms to the guidelines described in Annex E.
 The default value is Browser.
 
 =end pod

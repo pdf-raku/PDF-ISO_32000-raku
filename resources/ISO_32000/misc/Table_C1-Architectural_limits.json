@@ -10,21 +10,21 @@
       [
         "integer",
         "2,147,483,647",
-        "Largest integer value; equal to 2 31 − 1."
+        "Largest integer value; equal to 231 − 1."
       ],
       [
         "",
         "-2,147,483,648",
-        "Smallest integer value; equal to −2 31 ."
+        "Smallest integer value; equal to −231."
       ],
       [
         "real",
-        "± 3.403 × 10 38",
+        "± 3.403 × 1038",
         "Largest and smallest real values (approximate)."
       ],
       [
         "",
-        "± 1.175 × 10 -38",
+        "± 1.175 × 10-38",
         "Nonzero real values closest to 0 (approximate). Values closer than these are automatically converted to 0."
       ],
       [

@@ -72,7 +72,7 @@ EXAMPLE 4 The 9-o’clock position is 90 degrees, and the 3-o’clock position i
 - (Optional) The spacing between baselines of consecutive lines of text. Default value: 0.
 
 =head2 CapHeight [number]
-- (Required for fonts that have Latin characters, except for Type 3 fonts)The vertical coordinate of the top of flat capital letters, measured from the baseline.
+- (Required for fonts that have Latin characters, except for Type 3 fonts) The vertical coordinate of the top of flat capital letters, measured from the baseline.
 
 =head2 XHeight [number]
 - (Optional) The font’s x height: the vertical coordinate of the top of flat nonascending lowercase letters (like the letter x), measured from the baseline, in fonts that have Latin characters. Default value: 0.

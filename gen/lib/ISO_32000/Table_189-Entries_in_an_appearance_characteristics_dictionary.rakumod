@@ -25,7 +25,7 @@ Table 189 – Entries in an appearance characteristics dictionary
 - (Optional) The number of degrees by which the widget annotation is rotated counterclockwise relative to the page. The value is a multiple of 90. Default value: 0.
 
 =head2 BC [array]
-- (Optional) An array of numbers that is in the range 0.0 to 1.0 specifying the colour of the widget annotation’s border. The number of array elements determines the colour space in which the colour shall bedefined:
+- (Optional) An array of numbers that is in the range 0.0 to 1.0 specifying the colour of the widget annotation’s border. The number of array elements determines the colour space in which the colour is defined:
 0 No colour; transparent
 1DeviceGray
 3DeviceRGB

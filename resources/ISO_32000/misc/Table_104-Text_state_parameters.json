@@ -7,39 +7,39 @@
     ],
     "rows": [
       [
-        "T c",
+        "Tc",
         "Character spacing"
       ],
       [
-        "T w",
+        "Tw",
         "Word spacing"
       ],
       [
-        "T h",
+        "Th",
         "Horizontal scaling"
       ],
       [
-        "T l",
+        "Tl",
         "Leading"
       ],
       [
-        "T f",
+        "Tf",
         "Text font"
       ],
       [
-        "T fs",
+        "Tfs",
         "Text font size"
       ],
       [
-        "T mode",
+        "Tmode",
         "Text rendering mode"
       ],
       [
-        "T rise",
+        "Trise",
         "Text rise"
       ],
       [
-        "T k",
+        "Tk",
         "Text knockout"
       ]
     ]

@@ -17,7 +17,7 @@ Table 265 – Entries in a requirement handler dictionary
 - (Optional) The type of PDF object that this dictionary describes. If present, is ReqHandler for a requirement handler dictionary.
 
 =head2 S [name]
-- (Required) The type of requirement handler that this dictionary describes. Valid requirement handler types shall beJS (for a JavaScript requirement handlers) and NoOp.
+- (Required) The type of requirement handler that this dictionary describes. Valid requirement handler types is JS (for a JavaScript requirement handlers) and NoOp.
 A value of NoOp allows older conforming readers to ignore unrecognized requirements. This value does not add any specific entry to the requirement handler dictionary.
 
 =head2 Script [text string]

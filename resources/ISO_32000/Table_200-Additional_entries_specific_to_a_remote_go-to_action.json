@@ -20,7 +20,7 @@
       [
         "D",
         "name, byte string, or array",
-        "(Required) The destination to jump to (see 12.3.2, “Destinations”). If the value is an array defining an explicit destination (as described under 12.3.2.2, “Explicit Destinations”), its first element is a page number within the remote document rather than an indirect reference to a page object in the current document. The first page shall benumbered 0."
+        "(Required) The destination to jump to (see 12.3.2, “Destinations”). If the value is an array defining an explicit destination (as described under 12.3.2.2, “Explicit Destinations”), its first element is a page number within the remote document rather than an indirect reference to a page object in the current document. The first page is numbered 0."
       ],
       [
         "NewWindow",

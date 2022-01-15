@@ -18,14 +18,14 @@
         "Move to the next line and show a text string. This operator has the same effect as the code\nT* string Tj"
       ],
       [
-        "a w a c string",
+        "aw ac string",
         "\"",
-        "Move to the next line and show a text string, using a w as the word spacing and a c as the character spacing (setting the corresponding parameters in the text state). a w and a c is numbers expressed in unscaled text space units. This operator has the same effect as this code:\na w Tw a c Tc string '"
+        "Move to the next line and show a text string, using aw as the word spacing and ac as the character spacing (setting the corresponding parameters in the text state). aw and ac is numbers expressed in unscaled text space units. This operator has the same effect as this code:\naw Tw ac Tc string '"
       ],
       [
         "array",
         "TJ",
-        "Show one or more text strings, allowing individual glyph positioning. Each element of array is either a string or a number. If the element is a string, this operator shows the string. If it is a number, the operator adjusts the text position by that amount; that is, it translates the text matrix, T m . The number is expressed in thousandths of a unit of text space (see 9.4.4, \"Text Space Details\"). This amount is subtracted from the current horizontal or vertical coordinate, depending on the writing mode. In the default coordinate system, a positive adjustment has the effect of moving the next glyph painted either to the left or down by the given amount. Figure 46 shows an example of the effect of passing offsets to TJ."
+        "Show one or more text strings, allowing individual glyph positioning. Each element of array is either a string or a number. If the element is a string, this operator shows the string. If it is a number, the operator adjusts the text position by that amount; that is, it translates the text matrix, Tm . The number is expressed in thousandths of a unit of text space (see 9.4.4, \"Text Space Details\"). This amount is subtracted from the current horizontal or vertical coordinate, depending on the writing mode. In the default coordinate system, a positive adjustment has the effect of moving the next glyph painted either to the left or down by the given amount. Figure 46 shows an example of the effect of passing offsets to TJ."
       ]
     ]
   }

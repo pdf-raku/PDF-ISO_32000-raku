@@ -55,7 +55,7 @@
       [
         "Decode",
         "array",
-        "(Optional) An array of numbers describing how to map image samples into the range of values appropriate for the image’s colour space (see 8.9.5.2, \"Decode Arrays\"). If ImageMask is true, the array is either [ 0 1 ] or [ 1 0 ]; otherwise, its length shall betwice the number of colour components required by ColorSpace. If the image uses the JPXDecode filter and ImageMask is false, Decode is ignored by a conforming reader.\nDefault value: see 8.9.5.2, \"Decode Arrays\" ."
+        "(Optional) An array of numbers describing how to map image samples into the range of values appropriate for the image’s colour space (see 8.9.5.2, \"Decode Arrays\"). If ImageMask is true, the array is either [ 0 1 ] or [ 1 0 ]; otherwise, its length shall betwice the number of colour components required by ColorSpace. If the image uses the JPXDecode filter and ImageMask is false, Decode is ignored by a conforming reader.\nDefault value: see 8.9.5.2, \"Decode Arrays\"."
       ],
       [
         "Interpolate",
@@ -70,12 +70,12 @@
       [
         "SMask",
         "stream",
-        "(Optional; PDF 1.4) A subsidiary image XObject defining a soft-mask image (see 11.6.5.3, \"Soft-Mask Images\") that is used as a source of mask shape or mask opacity values in the transparent imaging model. The alpha source parameter in the graphics state determines whether the mask values shall beinterpreted as shape or opacity.\nIf present, this entry overrides the current soft mask in the graphics state, as well as the image’s Mask entry, if any. However, the other transparency-related graphics state parameters—blend mode and alpha constant—remains in effect. If SMask is absent, the image has no associated soft mask (although the current soft mask in the graphics state may still apply)."
+        "(Optional; PDF 1.4) A subsidiary image XObject defining a soft-mask image (see 11.6.5.3, \"Soft-Mask Images\") that is used as a source of mask shape or mask opacity values in the transparent imaging model. The alpha source parameter in the graphics state determines whether the mask values is interpreted as shape or opacity.\nIf present, this entry overrides the current soft mask in the graphics state, as well as the image’s Mask entry, if any. However, the other transparency-related graphics state parameters—blend mode and alpha constant—remains in effect. If SMask is absent, the image has no associated soft mask (although the current soft mask in the graphics state may still apply)."
       ],
       [
         "SMaskInData",
         "integer",
-        "(Optional for images that use the JPXDecode filter, meaningless otherwise; PDF 1.5) A code specifying how soft-mask information (see 11.6.5.3, \"Soft-Mask Images\") encoded with image samples is used:\n0 If present, encoded soft-mask image information shall beignored.\n1 The image’s data stream includes encoded soft-mask values. Aconforming reader may create a soft-mask image from the information to be used as a source of mask shape or mask opacity in the transparency imaging model.\n2 The image’s data stream includes colour channels that have been preblended with a background; the image data also includes an opacity channel. A conforming reader may create a soft-mask image with a Matte entry from the opacity channel information to be used as a source of mask shape or mask opacity in the transparency model.\nIf this entry has a nonzero value, SMask is not specified. See also 7.4.9, \"JPXDecode Filter\" .\nDefault value: 0."
+        "(Optional for images that use the JPXDecode filter, meaningless otherwise; PDF 1.5) A code specifying how soft-mask information (see 11.6.5.3, \"Soft-Mask Images\") encoded with image samples is used:\n0 If present, encoded soft-mask image information shall beignored.\n1 The image’s data stream includes encoded soft-mask values. Aconforming reader may create a soft-mask image from the information to be used as a source of mask shape or mask opacity in the transparency imaging model.\n2 The image’s data stream includes colour channels that have been preblended with a background; the image data also includes an opacity channel. A conforming reader may create a soft-mask image with a Matte entry from the opacity channel information to be used as a source of mask shape or mask opacity in the transparency model.\nIf this entry has a nonzero value, SMask is not specified. See also 7.4.9, \"JPXDecode Filter\".\nDefault value: 0."
       ],
       [
         "Name",
@@ -95,7 +95,7 @@
       [
         "OPI",
         "dictionary",
-        "(Optional; PDF 1.2) An OPI version dictionary for the image; see 14.11.7, \"Open Prepress Interface (OPI)\" . If ImageMask is true, this entry is ignored."
+        "(Optional; PDF 1.2) An OPI version dictionary for the image; see 14.11.7, \"Open Prepress Interface (OPI)\". If ImageMask is true, this entry is ignored."
       ],
       [
         "Metadata",
@@ -105,7 +105,7 @@
       [
         "OC",
         "dictionary",
-        "(Optional; PDF 1.5) An optional content group or optional content membership dictionary (see 8.11, \"Optional Content\"), specifying the optional content properties for this image XObject. Before the image is processed by a conforming reader, its visibility shall bedetermined based on this entry. If it is determined to be invisible, the entire image is skipped, as if there were no Do operator to invoke it."
+        "(Optional; PDF 1.5) An optional content group or optional content membership dictionary (see 8.11, \"Optional Content\"), specifying the optional content properties for this image XObject. Before the image is processed by a conforming reader, its visibility is determined based on this entry. If it is determined to be invisible, the entire image is skipped, as if there were no Do operator to invoke it."
       ]
     ]
   }

@@ -15,7 +15,7 @@
       [
         "BC",
         "array",
-        "(Optional) An array of numbers that is in the range 0.0 to 1.0 specifying the colour of the widget annotation’s border. The number of array elements determines the colour space in which the colour shall bedefined:\n0 No colour; transparent\n1DeviceGray\n3DeviceRGB\n4DeviceCMYK"
+        "(Optional) An array of numbers that is in the range 0.0 to 1.0 specifying the colour of the widget annotation’s border. The number of array elements determines the colour space in which the colour is defined:\n0 No colour; transparent\n1DeviceGray\n3DeviceRGB\n4DeviceCMYK"
       ],
       [
         "BG",

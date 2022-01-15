@@ -36,7 +36,7 @@ Table 234 – Entries in a signature field seed value dictionary
 
 =head2 DigestMethod [array]
 - (Optional; PDF 1.7) An array of names indicating acceptable digest algorithms to use while signing. The value is one of SHA1, SHA256, SHA384, SHA512 and RIPEMD160. The default value is implementation-specific.
-This property is only applicable if the digital credential signing contains RSA public/private keys. If it contains DSA public/ private keys, thedigest algorithm is always SHA1 and this attribute is ignored.
+This property is only applicable if the digital credential signing contains RSA public/private keys. If it contains DSA public/ private keys, the digest algorithm is always SHA1 and this attribute is ignored.
 
 =head2 V [real]
 - (Optional) The minimum required capability of the signature field seed value dictionary parser. A value of 1 specifies that the parser is able to recognize all seed value dictionary entries in a PDF 1.5 file. A value of 2 specifies that it is able to recognize all seed value dictionary entries specified.
@@ -70,7 +70,7 @@ Include the revocation information within the signature value.
 Three SubFilter values have been defined for ISO 32000. For those values the AddRevInfo value is true only if SubFilter is adbe.pkcs7.detached or adbe.pkcs7.sha1. If SubFilter is x509.rsa_sha1, this entry is omitted or set to false. Additional SubFilters may be defined that also use AddRevInfo values.
 If AddRevInfo is true and the Ff entry indicates this is a required constraint, then the preceding tasks is performed. If they cannot be performed, then signing fails.
 Default value: false
-NOTE 1 Revocation information is carried in the signature data as specified by PCKS7. See 12.8.3.3, "PKCS7 Signatures as used in ISO 32000" .
+NOTE 1 Revocation information is carried in the signature data as specified by PCKS7. See 12.8.3.3, "PKCS7 Signatures as used in ISO 32000".
 NOTE 2 The trust anchors used are determined by the signature handlers for both creation and validation.
 
 =end pod

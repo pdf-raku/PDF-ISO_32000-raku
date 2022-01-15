@@ -15,7 +15,7 @@
       [
         "Names",
         "array",
-        "(Root and leaf nodes only; required in leaf nodes; present in the root node if and only if Kids is not present) Shall be an array of the form\n[ key 1 value 1 key 2 value 2 … key n value n ]\nwhere each key i is a string and the corresponding value i is the object associated with that key. The keys is sorted in lexical order, as described below."
+        "(Root and leaf nodes only; required in leaf nodes; present in the root node if and only if Kids is not present) Shall be an array of the form\n[ key1 value1 key2 value2 … keyn valuen]\nwhere each keyi is a string and the corresponding valuei is the object associated with that key. The keys is sorted in lexical order, as described below."
       ],
       [
         "Limits",

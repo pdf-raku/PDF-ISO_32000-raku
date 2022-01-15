@@ -20,7 +20,7 @@
       [
         "SigFlags",
         "integer",
-        "(Optional; PDF 1.3) A set of flags specifying various document-level characteristics related to signature fields (see Table 219 , and 12.7.4.5, “Signature Fields”). Default value: 0."
+        "(Optional; PDF 1.3) A set of flags specifying various document-level characteristics related to signature fields (see Table 219, and 12.7.4.5, “Signature Fields”). Default value: 0."
       ],
       [
         "CO",

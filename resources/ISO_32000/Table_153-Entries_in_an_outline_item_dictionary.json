@@ -40,7 +40,7 @@
       [
         "Count",
         "integer",
-        "(Required if the item has any descendants) If the outline item is open, Count is the sum of the number of visible descendent outline items at all levels. The number of visible descendent outline items shall bedetermined by the following recursive process:\nStep 1. Initialize Count to zero.\nStep 2. Add to Count the number of immediate children. During repetitions of this step, update only the Count of the original outline item.\nStep 3. For each of those immediate children whose Count is positive and non-zero, repeat steps 2 and 3.\nIf the outline item is closed, Count is negative and its absolute value is the number of descendants that would be visible if the outline item were opened."
+        "(Required if the item has any descendants) If the outline item is open, Count is the sum of the number of visible descendent outline items at all levels. The number of visible descendent outline items is determined by the following recursive process:\nStep 1. Initialize Count to zero.\nStep 2. Add to Count the number of immediate children. During repetitions of this step, update only the Count of the original outline item.\nStep 3. For each of those immediate children whose Count is positive and non-zero, repeat steps 2 and 3.\nIf the outline item is closed, Count is negative and its absolute value is the number of descendants that would be visible if the outline item were opened."
       ],
       [
         "Dest",

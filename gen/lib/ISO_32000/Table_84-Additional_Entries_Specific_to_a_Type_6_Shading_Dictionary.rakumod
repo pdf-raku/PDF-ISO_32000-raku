@@ -26,7 +26,7 @@ Table 84 – Additional Entries Specific to a Type 6 Shading Dictionary
 
 =head2 Decode [array]
 - (Required) An array of numbers specifying how to map coordinates and colour components into the appropriate ranges of values. The decoding method is similar to that used in image dictionaries (see 8.9.5.2, "Decode Arrays"). The ranges is specified as follows:
-[ x min x max y min y max c 1,min c 1,max … c n,min c n,max ]
+[ xmin xmax ymin ymax c1,min c1,max … cn,min cn,max ]
 Only one pair of c values is specified if a Function entry is present.
 
 =head2 Function [function]

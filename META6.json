@@ -8,7 +8,7 @@
     "LibXML",
     "Method::Also",
     "PDF::Font::Loader",
-      "PDF::Tags",
+    "PDF::Tags",
     "PDF::Tags::Reader"
   ],
   "depends": [
@@ -685,5 +685,5 @@
   ],
   "test-depends": [
   ],
-  "version": "0.0.9"
+  "version": "0.0.10"
 }

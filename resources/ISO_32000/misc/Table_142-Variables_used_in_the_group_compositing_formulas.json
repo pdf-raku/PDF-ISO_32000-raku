@@ -12,59 +12,59 @@
       ],
       [
         "fsi",
-        "Source shape for element E i"
+        "Source shape for element Ei"
       ],
       [
         "fji",
-        "Object shape for element E i"
+        "Object shape for element Ei"
       ],
       [
         "fmi",
-        "Mask shape for element E i"
+        "Mask shape for element Ei"
       ],
       [
         "fki",
-        "Constant shape for element E i"
+        "Constant shape for element Ei"
       ],
       [
         "fgi",
-        "Group shape: the accumulated source shapes of group elements E 1 to E i , excluding the initial backdrop"
+        "Group shape: the accumulated source shapes of group elements E1 to Ei , excluding the initial backdrop"
       ],
       [
         "qmi",
-        "Mask opacity for element E i"
+        "Mask opacity for element Ei"
       ],
       [
         "qki",
-        "Constant opacity for element E i"
+        "Constant opacity for element Ei"
       ],
       [
         "αsi",
-        "Source alpha for element E i"
+        "Source alpha for element Ei"
       ],
       [
         "αji",
-        "Object alpha for element E i : the product of its object shape and object opacity"
+        "Object alpha for element Ei : the product of its object shape and object opacity"
       ],
       [
         "αgi",
-        "Group alpha: the accumulated source alphas of group elements E 1 to E i , excluding the initial backdrop"
+        "Group alpha: the accumulated source alphas of group elements E1 to Ei, excluding the initial backdrop"
       ],
       [
         "αi",
-        "Accumulated alpha after compositing element E i , including the initial backdrop"
+        "Accumulated alpha after compositing element Ei , including the initial backdrop"
       ],
       [
         "Csi",
-        "Source colour for element E i"
+        "Source colour for element Ei"
       ],
       [
         "Ci",
-        "Accumulated colour after compositing element E i , including the initial backdrop"
+        "Accumulated colour after compositing element Ei , including the initial backdrop"
       ],
       [
         "BiCi1–Csi,()",
-        "Blend function for element E i"
+        "Blend function for element Ei"
       ]
     ]
   }

@@ -18,19 +18,19 @@
         "Append a straight line segment from the current point to the point (x, y). The new current point is (x, y)."
       ],
       [
-        "x 1 y 1 x 2 y 2 x 3 y 3",
+        "x1 y1 x2 y2 x3 y3",
         "c",
-        "Append a cubic Bézier curve to the current path. The curve shall extend from the current point to the point (x 3 , y 3), using (x 1 , y 1) and (x 2 , y 2) as the Bézier control points (see 8.5.2.2, \"Cubic Bézier Curves\"). The new current point is (x 3 , y 3)."
+        "Append a cubic Bézier curve to the current path. The curve shall extend from the current point to the point (x3 , y3), using (x1 , y1) and (x2 , y2) as the Bézier control points (see 8.5.2.2, \"Cubic Bézier Curves\"). The new current point is (x3 , y3)."
       ],
       [
-        "x 2 y 2 x 3 y 3",
+        "x2 y2 x3 y3",
         "v",
-        "Append a cubic Bézier curve to the current path. The curve shall extend from the current point to the point (x 3 , y 3), using the current point and (x 2 , y 2) as the Bézier control points (see 8.5.2.2, \"Cubic Bézier Curves\"). The new current point is (x 3 , y 3)."
+        "Append a cubic Bézier curve to the current path. The curve shall extend from the current point to the point (x3 , y3), using the current point and (x2 , y2) as the Bézier control points (see 8.5.2.2, \"Cubic Bézier Curves\"). The new current point is (x3 , y3)."
       ],
       [
-        "x 1 y 1 x 3 y 3",
+        "x1 y1 x3 y3",
         "y",
-        "Append a cubic Bézier curve to the current path. The curve shall extend from the current point to the point (x 3 , y 3), using (x 1 , y 1) and (x 3 , y 3) as the Bézier control points (see 8.5.2.2, \"Cubic Bézier Curves\"). The new current point is (x 3 , y 3)."
+        "Append a cubic Bézier curve to the current path. The curve shall extend from the current point to the point (x3 , y3), using (x1 , y1) and (x3 , y3) as the Bézier control points (see 8.5.2.2, \"Cubic Bézier Curves\"). The new current point is (x3 , y3)."
       ],
       [
         "—",

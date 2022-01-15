@@ -19,7 +19,7 @@ Table 53 – Device-Dependent Graphics State Parameters
 =head1 Methods (Entries)
 
 =head2 overprint [boolean]
-- (PDF 1.2) A flag specifying (on output devices that support the overprint control feature) whether painting in one set of colorants causes the corresponding areas of other colorants to be erased (false) or left unchanged (true); see 8.6.7, "Overprint Control" . In PDF 1.3, there are two separate overprint parameters: one for stroking and one for all other painting operations. Initial value: false.
+- (PDF 1.2) A flag specifying (on output devices that support the overprint control feature) whether painting in one set of colorants causes the corresponding areas of other colorants to be erased (false) or left unchanged (true); see 8.6.7, "Overprint Control". In PDF 1.3, there are two separate overprint parameters: one for stroking and one for all other painting operations. Initial value: false.
 
 =head2 overprintMode [number]
 - (PDF 1.3) A code specifying whether a colour component value of 0 in a DeviceCMYK colour space should erase that component (0) or leave it unchanged (1) when overprinting (see 8.6.7, "Overprint Control"). Initial value: 0.

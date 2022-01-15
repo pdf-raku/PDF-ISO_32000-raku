@@ -32,7 +32,7 @@ Table 304 – Entries in a 3D view dictionary
 - (Required) The external name of the view, suitable for presentation in a user interface.
 
 =head2 IN [text string]
-- (Optional) The internal name of the view, used to refer to the view from other objects, such as the go-to-3D-view action (see 12.6.4.15, “Go-To- 3D-View Actions”).
+- (Optional) The internal name of the view, used to refer to the view from other objects, such as the go-to-3D-view action (see 12.6.4.15, “Go-To-3D-View Actions”).
 
 =head2 MS [name]
 - (Optional) A name specifying how the 3D camera-to-world transformation matrix is determined. The following values are valid:

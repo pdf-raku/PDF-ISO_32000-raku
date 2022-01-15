@@ -25,6 +25,6 @@ Table 330 – Property list entries for artifacts
 Use of this entry for background artifacts is limited to full-page artifacts. Background artifacts that are not full-page take their dimensions from their parent structural element.
 
 =head2 Subtype [name]
-- (Optional; PDF 1.7) The subtype of the artifact. This entry appears only when the Type entry has a value of Pagination. Standard values are Header, Footer, and Watermark. Additional values may be specified for this entry, provided they comply with the naming conventions described in Annex E .
+- (Optional; PDF 1.7) The subtype of the artifact. This entry appears only when the Type entry has a value of Pagination. Standard values are Header, Footer, and Watermark. Additional values may be specified for this entry, provided they comply with the naming conventions described in Annex E.
 
 =end pod

@@ -40,7 +40,7 @@
       ],
       [
         "12",
-        "Print the document to a representation from which a faithful digital copy of the PDF content could be generated. When this bit is clear (and bit 3 is set), printing is limited to a low-level representation of the appearance, possibly of degraded quality."
+        "Print the document to a representation from which a faithful digital copy of the PDF content could be generated. When this bit is clear (and bit 3 is set), printing is limited to a low- level representation of the appearance, possibly of degraded quality."
       ]
     ]
   }

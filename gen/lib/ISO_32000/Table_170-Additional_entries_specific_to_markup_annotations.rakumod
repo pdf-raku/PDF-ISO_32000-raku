@@ -27,9 +27,9 @@ Table 170 – Additional entries specific to markup annotations
 - (Optional; PDF 1.3) An indirect reference to a pop-up annotation for entering or editing the text associated with this annotation.
 
 =head2 CA [number]
-- (Optional; PDF 1.4) The constant opacity value that is used in painting the annotation (see Sections 11.2, “Overview of Transparency,” and 11.3.7, “Shape and Opacity Computations”). This value applies to all visible elements of the annotation in its closed state (including its background and border) but not to the pop-up window that appears when the annotation is opened.
+- (Optional; PDF 1.4) The constant opacity value that is used in painting the annotation (see Sections 11.2, “Overview of Transparency,”and 11.3.7, “Shape and Opacity Computations”). This value applies to all visible elements of the annotation in its closed state (including its background and border) but not to the pop-up window that appears when the annotation is opened.
 The specified value does not used if the annotation has an appearance stream (see 12.5.5, “Appearance Streams”); in that case, the appearance stream specifies any transparency. (However, if the compliant viewer regenerates the annotation’s appearance stream, it may incorporate the CA value into the stream’s content.)
-The implicit blend mode (see 11.3.5, “Blend Mode” ”) is Normal. Default value: 1.0.
+The implicit blend mode (see 11.3.5, “Blend Mode””) is Normal. Default value: 1.0.
 If no explicit appearance stream is defined for the annotation, it may bepainted by implementation-dependent means that do not necessarily conform to the PDF imaging model; in this case, the effect of this entry is implementation-dependent as well.
 
 =head2 RC [text string or text stream]

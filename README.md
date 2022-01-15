@@ -127,7 +127,7 @@ ISO_32000 Reference|Entries
 [Table 66 – Additional Entries Specific to an ICC Profile Stream Dictionary](gen/lib/ISO_32000/Table_66-Additional_Entries_Specific_to_an_ICC_Profile_Stream_Dictionary.rakumod)|/N /Alternate /Range /Metadata
 [Table 71 – Entries in a DeviceN Colour Space Attributes Dictionary](gen/lib/ISO_32000/Table_71-Entries_in_a_DeviceN_Colour_Space_Attributes_Dictionary.rakumod)|/Subtype /Colorants /Process /MixingHints
 [Table 72 – Entries in a DeviceN Process Dictionary](gen/lib/ISO_32000/Table_72-Entries_in_a_DeviceN_Process_Dictionary.rakumod)|/ColorSpace /Components
-[Table 73 – Entries in a DeviceN Mixing Hints Dictionary](gen/lib/ISO_32000/Table_73-Entries_in_a_DeviceN_Mixing_Hints_Dictionary.rakumod)|/Solidities /PrintingOrder /DotGain
+[Table 73 – Entries in a DeviceN Mixing Hints Dictionary](gen/lib/ISO_32000/Table_73-Entries_in_a_DeviceN_Mixing_Hints_Dictionary.rakumod)|/Solidities /PrintingOrdEr /DotGain
 [Table 75 – Additional Entries Specific to a Type 1 Pattern Dictionary](gen/lib/ISO_32000/Table_75-Additional_Entries_Specific_to_a_Type_1_Pattern_Dictionary.rakumod)|/Type /PatternType /PaintType /TilingType /BBox /XStep /YStep /Resources /Matrix
 [Table 76 – Entries in a Type 2 Pattern Dictionary](gen/lib/ISO_32000/Table_76-Entries_in_a_Type_2_Pattern_Dictionary.rakumod)|/Type /PatternType /Shading /Matrix /ExtGState
 [Table 78 – Entries Common to All Shading Dictionaries](gen/lib/ISO_32000/Table_78-Entries_Common_to_All_Shading_Dictionaries.rakumod)|/ShadingType /ColorSpace /Background /BBox /AntiAlias
@@ -784,7 +784,7 @@ Entry|ISO_32000 Roles
 /PrintClip|[Table 150 – Entries in a viewer preferences dictionary](gen/lib/ISO_32000/Table_150-Entries_in_a_viewer_preferences_dictionary.rakumod)
 /PrintPageRange|[Table 150 – Entries in a viewer preferences dictionary](gen/lib/ISO_32000/Table_150-Entries_in_a_viewer_preferences_dictionary.rakumod)
 /PrintScaling|[Table 150 – Entries in a viewer preferences dictionary](gen/lib/ISO_32000/Table_150-Entries_in_a_viewer_preferences_dictionary.rakumod)
-/PrintingOrder|[Table 73 – Entries in a DeviceN Mixing Hints Dictionary](gen/lib/ISO_32000/Table_73-Entries_in_a_DeviceN_Mixing_Hints_Dictionary.rakumod)
+/PrintingOrdEr|[Table 73 – Entries in a DeviceN Mixing Hints Dictionary](gen/lib/ISO_32000/Table_73-Entries_in_a_DeviceN_Mixing_Hints_Dictionary.rakumod)
 /Private|[Table 319 – Entries in an data dictionary](gen/lib/ISO_32000/Table_319-Entries_in_an_data_dictionary.rakumod)
 /ProcSet|[Table 33 – Entries in a resource dictionary](gen/lib/ISO_32000/Table_33-Entries_in_a_resource_dictionary.rakumod)
 /Process|[Table 71 – Entries in a DeviceN Colour Space Attributes Dictionary](gen/lib/ISO_32000/Table_71-Entries_in_a_DeviceN_Colour_Space_Attributes_Dictionary.rakumod)

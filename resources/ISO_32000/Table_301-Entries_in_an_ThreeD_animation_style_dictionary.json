@@ -15,7 +15,7 @@
       [
         "Subtype",
         "name",
-        "(Optional) The animation style described by this dictionary; see Table 302 for valid values. If an animation style is encountered other than those described in Table 302 , an animation style of None is used.\nDefault value: None"
+        "(Optional) The animation style described by this dictionary; see Table 302for valid values. If an animation style is encountered other than those described in Table 302, an animation style of None is used.\nDefault value: None"
       ],
       [
         "PC",

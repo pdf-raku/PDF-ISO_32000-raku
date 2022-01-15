@@ -20,7 +20,7 @@
       [
         "Version",
         "array",
-        "(Required if AnnotStates is present; is absent if LastModifiedis present) An unordered array of all objects present in the page description at the time the trap networks were generated and that, if changed, could affect the appearance of the page. If present, the array includes the following objects:\n• All content streams identified in the page object’s Contents entry (see 7.7.3.3, “Page Objects”)\n• All resource objects (other than procedure sets) in the page’s resource dictionary (see 7.8.3, “Resource Dictionaries”)\n• All resource objects (other than procedure sets) in the resource dictionaries of any form XObjects on the page (see 8.10, “Form XObjects”)\n• All OPI dictionaries associated with XObjects on the page (see 14.11.7, “Open Prepress Interface (OPI)” )"
+        "(Required if AnnotStates is present; is absent if LastModifiedis present) An unordered array of all objects present in the page description at the time the trap networks were generated and that, if changed, could affect the appearance of the page. If present, the array includes the following objects:\n• All content streams identified in the page object’s Contents entry (see 7.7.3.3, “Page Objects”)\n• All resource objects (other than procedure sets) in the page’s resource dictionary (see 7.8.3, “Resource Dictionaries”)\n• All resource objects (other than procedure sets) in the resource dictionaries of any form XObjects on the page (see 8.10, “Form XObjects”)\n• All OPI dictionaries associated with XObjects on the page (see 14.11.7, “Open Prepress Interface (OPI)”)"
       ],
       [
         "AnnotStates",

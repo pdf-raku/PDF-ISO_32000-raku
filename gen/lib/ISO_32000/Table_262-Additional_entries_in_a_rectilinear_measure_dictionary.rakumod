@@ -26,7 +26,7 @@ EXAMPLE 2 “in X 1 cm = 1 m, in Y 1 cm = 30 m”.
 
 =head2 X [array]
 - (Required) A number format array for measurement of change along the xaxis and, if Y is not present, along the y axis as well. The first element in the array contains the scale factor for converting from default user space units to the largest units in the measuring coordinate system along that axis.
-The directions of the x and y axes are in the measuring coordinate system and are independent of the page rotation. These directions shall bedetermined by the BBox entry of the containing viewport (see Table 260).
+The directions of the x and y axes are in the measuring coordinate system and are independent of the page rotation. These directions is determined by the BBox entry of the containing viewport (see Table 260).
 
 =head2 Y [array]
 - (Required when the x and y scales have different units or conversion factors) A number format array for measurement of change along the y axis. The first element in the array contains the scale factor for converting from default user space units to the largest units in the measuring coordinate system along the y axis.
@@ -44,7 +44,7 @@ The directions of the x and y axes are in the measuring coordinate system and ar
 - (Optional) A number format array for measurement of the slope of a line. The first element in the array specifies the conversion to the largest slope unit from units represented by the first element in Y divided by the first element in X. The scale factors from X, Y (if present) and CYX (if Y is present) shall beused to convert from default user space to the appropriate units before applying the slope function.
 
 =head2 O [array]
-- (Optional) An array of two numbers that specifies the origin of the measurement coordinate system in default user space coordinates. The directions by which x and y increase in value from this origin shall bedetermined by the viewport’s BBox entry (see Table 260).
+- (Optional) An array of two numbers that specifies the origin of the measurement coordinate system in default user space coordinates. The directions by which x and y increase in value from this origin is determined by the viewport’s BBox entry (see Table 260).
 Default value: the first coordinate pair (lower-left corner) of the rectangle specified by the viewport’s BBox entry.
 
 =head2 CYX [number]

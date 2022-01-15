@@ -30,7 +30,7 @@
       [
         "text state",
         "(various)",
-        "A set of nine graphics state parameters that pertain only to the painting of text. These include parameters that select the font, scale the glyphs to an appropriate size, and accomplish other effects. The text state parameters are described in 9.3, \"Text State Parameters and Operators\" ."
+        "A set of nine graphics state parameters that pertain only to the painting of text. These include parameters that select the font, scale the glyphs to an appropriate size, and accomplish other effects. The text state parameters are described in 9.3, \"Text State Parameters and Operators\"."
       ],
       [
         "line width",

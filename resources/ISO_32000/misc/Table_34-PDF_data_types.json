@@ -99,7 +99,7 @@
       ],
       [
         "text string",
-        "Bytes that represent characters that is encoded using either PDFDocEncoding or UTF-16BE with a leading byte-order marker (as defined in “Text String Type” on page 86 .)",
+        "Bytes that represent characters that is encoded using either PDFDocEncoding or UTF-16BE with a leading byte-order marker (as defined in “Text String Type” on page 86.)",
         "7.9.2.2 7.9.2"
       ],
       [

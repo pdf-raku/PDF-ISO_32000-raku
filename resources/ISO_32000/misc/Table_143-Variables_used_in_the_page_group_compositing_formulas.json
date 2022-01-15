@@ -8,7 +8,7 @@
     "rows": [
       [
         "P",
-        "The page group, consisting of all elements E 1 , … , E n in the page’s top-level stack"
+        "The page group, consisting of all elements E1, … , En in the page’s top-level stack"
       ],
       [
         "Cg",
@@ -32,7 +32,7 @@
       ],
       [
         "U",
-        "An undefined colour (which is not used, since the α 0 argument of Composite is 0)"
+        "An undefined colour (which is not used, since the α0argument of Composite is 0)"
       ]
     ]
   }

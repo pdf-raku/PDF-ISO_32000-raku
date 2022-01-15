@@ -10,7 +10,7 @@
       [
         "Length",
         "integer",
-        "(Required) The number of bytes from the beginning of the line following the keyword stream to the last byte just before the keyword endstream. (There may be an additional EOL marker, preceding endstream, that is not included in the count and is not logically part of the stream data.) See 7.3.8.2, \"Stream Extent\" , for further discussion."
+        "(Required) The number of bytes from the beginning of the line following the keyword stream to the last byte just before the keyword endstream. (There may be an additional EOL marker, preceding endstream, that is not included in the count and is not logically part of the stream data.) See 7.3.8.2, \"Stream Extent\", for further discussion."
       ],
       [
         "Filter",

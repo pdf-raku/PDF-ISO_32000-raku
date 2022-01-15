@@ -41,7 +41,7 @@ Table 153 – Entries in an outline item dictionary
 - (Required if the item has any descendants; is an indirect reference) The last of this item’s immediate children in the outline hierarchy.
 
 =head2 Count [integer]
-- (Required if the item has any descendants) If the outline item is open, Count is the sum of the number of visible descendent outline items at all levels. The number of visible descendent outline items shall bedetermined by the following recursive process:
+- (Required if the item has any descendants) If the outline item is open, Count is the sum of the number of visible descendent outline items at all levels. The number of visible descendent outline items is determined by the following recursive process:
 Step 1. Initialize Count to zero.
 Step 2. Add to Count the number of immediate children. During repetitions of this step, update only the Count of the original outline item.
 Step 3. For each of those immediate children whose Count is positive and non-zero, repeat steps 2 and 3.

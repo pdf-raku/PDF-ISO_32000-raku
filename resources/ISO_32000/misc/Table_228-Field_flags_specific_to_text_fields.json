@@ -30,7 +30,7 @@
       [
         "24",
         "DoNotScroll",
-        "(PDF 1.4) If set, the field does not scroll (horizontally for single-line fields, vertically for multiple-line fields) to accommodate more text than fits within its annotation rectangle. Once the field is full, no further text is accepted for interactive form filling; for non-interactive form filling, the filler takes care not to add more character than will visibly fit in the defined area."
+        "(PDF 1.4) If set, the field does not scroll (horizontally for single-line fields, vertically for multiple-line fields) to accommodate more text than fits within its annotation rectangle. Once the field is full, no further text is accepted for interactive form filling; for non- interactive form filling, the filler takes care not to add more character than will visibly fit in the defined area."
       ],
       [
         "25",

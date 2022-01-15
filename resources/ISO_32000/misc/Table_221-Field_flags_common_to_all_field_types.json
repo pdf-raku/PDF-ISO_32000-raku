@@ -15,7 +15,7 @@
       [
         "2",
         "Required",
-        "If set, the field has a value at the time it is exported by a submit-form action (see 12.7.5.2, “Submit-Form Action”)."
+        "If set, the field has a value at the time it is exported by a submit- form action (see 12.7.5.2, “Submit-Form Action”)."
       ],
       [
         "3",

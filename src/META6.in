@@ -1,10 +1,9 @@
 {
-  "api" : "PDF-1.7",
-  "auth" : "github:pdf-raku",
+  "auth" : "cpan:WARRINGD",
   "authors" : [
     "David Warring"
   ],
-  "build-depends" : [ "JSON::Fast", "LibXML", "Method::Also", "PDF::Font::Loader", "PDF::Tags" ],
+  "build-depends" : [ "JSON::Fast", "LibXML", "Method::Also", "PDF::Font::Loader", "PDF::Tags", "PDF::Tags::Reader" ],
   "depends" : [ ],
   "description" : "Tables and roles, mined from the PDF ISO-32000 specification",
   "license" : "Artistic-2.0",
@@ -16,5 +15,5 @@
   "source-url" : "git://github.com/pdf-raku/PDF-ISO_32000-raku.git",
   "tags" : [ "pdf" ],
   "test-depends" : [ ],
-  "version" : "0.0.9"
+  "version" : "0.0.10"
 }

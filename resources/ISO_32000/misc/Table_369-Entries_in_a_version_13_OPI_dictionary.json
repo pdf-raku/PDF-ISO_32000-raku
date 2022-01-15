@@ -60,7 +60,7 @@
         "Position",
         "array",
         "%ALDImagePosition",
-        "(Required) An array of eight numbers of the form\n[ ll x ll y ul x ul y ur x ur y lr x lr y ]\nspecifying the location on the page of the cropped image, where (ll x , ll y) are the user space coordinates of the lower-left corner, (ul x , ul y) are those of the upper-left corner, (ur x , ur y) are those of the upper-right corner, and (lr x , lr y) are those of the lower-right corner. The specified coordinates defines a parallelogram; that is, they satisfy the conditions\nul x − ll x = ur x − lr x\nand\nul y − ll y = ur y − lr y\nThe combination of Position and CropRectdetermines the image’s scaling, rotation, reflection, and skew."
+        "(Required) An array of eight numbers of the form\n[ llx lly ulx uly urx ury lrx lry ]\nspecifying the location on the page of the cropped image, where (llx , lly) are the user space coordinates of the lower-left corner, (ulx , uly) are those of the upper-left corner, (urx , ury) are those of the upper-right corner, and (lrx , lry) are those of the lower-right corner. The specified coordinates defines a parallelogram; that is, they satisfy the conditions\nulx − llx = urx − lrx\nand\nuly − lly = ury − lry\nThe combination of Position and CropRectdetermines the image’s scaling, rotation, reflection, and skew."
       ],
       [
         "Resolution",

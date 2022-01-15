@@ -20,6 +20,6 @@ Table 40 – Additional entries specific to a type 2 function dictionary
 - (Optional) An array of n numbers that defines the function result when x = 1.0. Default value: [ 1.0 ].
 
 =head2 N [number]
-- (Required) The interpolation exponent. Each input value x shall return n values, given by y j = C0 j + x N × (C1 j − C0 j), for 0 ≤ j < n.
+- (Required) The interpolation exponent. Each input value x shall return n values, given by yj = C0j + xN × (C1j − C0j), for 0 ≤ j < n.
 
 =end pod

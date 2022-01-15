@@ -25,7 +25,7 @@
       [
         "InvertedDoubleDot",
         "",
-        "360x×()sin2------------------------------360y×()sin2------------------------------+⎝⎛–⎠⎞\n{ 360 mul sin 2 div exch 360 mul sin 2 div add neg }"
+        "360x×()sin2------------------------------360y×()sin2------------------------------+⎝ ⎛–⎠ ⎞\n{ 360 mul sin 2 div exch 360 mul sin 2 div add neg }"
       ],
       [
         "CosineDot",
@@ -35,12 +35,12 @@
       [
         "Double",
         "",
-        "360x2---×⎝⎠⎛⎞sin2-------------------------------360y×()sin2------------------------------+\n{ 360 mul sin 2 div exch 2 div 360 mul sin 2 div add }"
+        "360x2 ---×⎝⎠ ⎛⎞sin2-------------------------------360y×()sin2------------------------------+\n{ 360 mul sin 2 div exch 2 div 360 mul sin 2 div add }"
       ],
       [
         "InvertedDouble",
         "",
-        "360x2---×⎝⎠⎛⎞sin2-------------------------------360y×()sin2------------------------------+⎠⎟⎟⎟⎞⎝⎜⎜⎜⎛–\n{ 360 mul sin 2 div exch 2 div 360 mul sin 2 div add neg }"
+        "360x2 ---×⎝⎠ ⎛⎞sin2-------------------------------360y×()sin2------------------------------+⎠ ⎟ ⎟ ⎟ ⎞⎝ ⎜ ⎜ ⎜ ⎛–\n{ 360 mul sin 2 div exch 2 div 360 mul sin 2 div add neg }"
       ],
       [
         "Line",
@@ -65,7 +65,7 @@
       [
         "Ellipse",
         "",
-        "let w = (3 × | x |) + (4 × | y |) − 3\nif w < 0 then 1x2y0.75----------⎝⎠⎛⎞2+4------------------------------–\nelse if w > 1 then 1x–()21y–0.75---------------⎝⎠⎛⎞2+4------------------------------------------------------1– else 0.5 − w\n{ abs exch abs 2 copy 3 mul exch 4 mul add 3 sub dup 0 lt\n{ pop dup mul exch 0.75 div dup mul add 4 div 1 exch sub } { dup 1 gt\n{ pop 1 exch sub dup mul exch 1 exch sub 0.75 div dup mul add 4 div 1 sub } { 0.5 exch sub exch pop exch pop }\nifelse }\nifelse }"
+        "let w = (3 × | x |) + (4 × | y |) − 3\nif w < 0 then 1x2y0.75 ----------⎝⎠ ⎛⎞2+4------------------------------–\nelse if w > 1 then 1x–()21y–0.75---------------⎝⎠ ⎛⎞2+4------------------------------------------------------1– else 0.5 − w\n{ abs exch abs 2 copy 3 mul exch 4 mul add 3 sub dup 0 lt\n{ pop dup mul exch 0.75 div dup mul add 4 div 1 exch sub } { dup 1 gt\n{ pop 1 exch sub dup mul exch 1 exch sub 0.75 div dup mul add 4 div 1 sub } { 0.5 exch sub exch pop exch pop }\nifelse }\nifelse }"
       ],
       [
         "EllipseA",
@@ -80,12 +80,12 @@
       [
         "EllipseB",
         "",
-        "1x258---y2×+–\n{ dup 5 mul 8 div mul exch dup mul exch add sqrt 1 exch sub }"
+        "1x25 8 ---y2×+–\n{ dup 5 mul 8 div mul exch dup mul exch add sqrt 1 exch sub }"
       ],
       [
         "EllipseC",
         "",
-        "1 − (0.9 × x 2 + y 2)\n{ dup mul exch dup mul 0.9 mul add 1 exch sub }"
+        "1 − (0.9 × x2 + y2)\n{ dup mul exch dup mul 0.9 mul add 1 exch sub }"
       ],
       [
         "InvertedEllipseC",

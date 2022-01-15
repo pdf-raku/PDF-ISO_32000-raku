@@ -66,10 +66,10 @@ Table 259 – Entries in a legal attestation dictionary
 - (Optional) The number of reference XObjects found in the document (see 8.10.4, “Reference XObjects”).
 
 =head2 ExternalOPIdicts [integer]
-- (Optional) The number of OPI dictionaries found in the document (see 14.11.7, “Open Prepress Interface (OPI)” ).
+- (Optional) The number of OPI dictionaries found in the document (see 14.11.7, “Open Prepress Interface (OPI)”).
 
 =head2 NonEmbeddedFonts [integer]
-- (Optional) The number of non-embedded fonts found in the document (see 9.9, “Embedded Font Programs” ”)
+- (Optional) The number of non-embedded fonts found in the document (see 9.9, “Embedded Font Programs””)
 
 =head2 DevDepGS_OP [integer]
 - (Optional) The number of references to the graphics state parameter OP found in the document (see Table 58).

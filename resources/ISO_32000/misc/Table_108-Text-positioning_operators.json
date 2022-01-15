@@ -8,24 +8,24 @@
     ],
     "rows": [
       [
-        "t x t y",
+        "tx ty",
         "Td",
-        "Move to the start of the next line, offset from the start of the current line by (t x , t y). t x and t y denote numbers expressed in unscaled text space units. More precisely, this operator performs these assignments:\nTmTlm100010txty1Tlm×=="
+        "Move to the start of the next line, offset from the start of the current line by (tx , ty). tx and ty denote numbers expressed in unscaled text space units. More precisely, this operator performs these assignments:\nTmTlm100 010txty1Tlm×=="
       ],
       [
-        "t x t y",
+        "tx ty",
         "TD",
-        "Move to the start of the next line, offset from the start of the current line by (t x , t y). As a side effect, this operator sets the leading parameter in the text state. This operator has the same effect as this code:\n−t y TL t x t y Td"
+        "Move to the start of the next line, offset from the start of the current line by (tx , ty). As a side effect, this operator sets the leading parameter in the text state. This operator has the same effect as this code:\n−ty TL tx ty Td"
       ],
       [
         "a b c d e f",
         "Tm",
-        "Set the text matrix, T m , and the text line matrix, T lm :\nTmTlmab0cd0ef1==\nThe operands are numbers, and the initial value for T m and T lm is the identity matrix, [ 1 0 0 1 0 0 ]. Although the operands specify a matrix, they is passed to Tm as six separate numbers, not as an array.\nThe matrix specified by the operands is not concatenated onto the current text matrix, but replaces it."
+        "Set the text matrix, Tm , and the text line matrix, Tlm :\nTmTlmab0 cd0 ef1==\nThe operands are numbers, and the initial value for Tm and Tlmshall be the identity matrix, [ 1 0 0 1 0 0 ]. Although the operands specify a matrix, they is passed to Tm as six separate numbers, not as an array.\nThe matrix specified by the operands is not concatenated onto the current text matrix, but replaces it."
       ],
       [
         "—",
         "T*",
-        "Move to the start of the next line. This operator has the same effect as the code\n0 -T l Td\nwhere T l denotes the current leading parameter in the text state. The negative of T l is used here because T l is the text leading expressed as a positive number. Going to the next line entails decreasing the y coordinate.\n"
+        "Move to the start of the next line. This operator has the same effect as the code\n0 -Tl Td\nwhere Tl denotes the current leading parameter in the text state. The negative of Tl is used here because Tl is the text leading expressed as a positive number. Going to the next line entails decreasing the y coordinate.\n"
       ]
     ]
   }

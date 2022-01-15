@@ -42,7 +42,7 @@ Default value: 0 (left-justified).
 - (Optional; PDF 1.5) A default style string, as described in 12.7.3.4, “Rich Text Strings.”
 
 =head2 CL [array]
-- (Optional; meaningful only if IT is FreeTextCallout; PDF 1.6) An array of four or six numbers specifying a callout line attached to the free text annotation. Six numbers [ x 1 y 1 x 2 y 2 x 3 y 3 ] represent the starting, knee point, and ending coordinates of the line in default user space, as shown in Figure 8.4. Four numbers [ x 1 y 1 x 2 y 2 ] represent the starting and ending coordinates of the line.
+- (Optional; meaningful only if IT is FreeTextCallout; PDF 1.6) An array of four or six numbers specifying a callout line attached to the free text annotation. Six numbers [ x1 y1 x2 y2 x3 y3 ] represent the starting, knee point, and ending coordinates of the line in default user space, as shown in Figure 8.4. Four numbers [ x1 y1 x2 y2 ] represent the starting and ending coordinates of the line.
 
 =head2 IT [name]
 - (Optional; PDF 1.6) A name describing the intent of the free text annotation (see also the IT entry in Table 170). The following values is valid:
@@ -60,10 +60,10 @@ The four numbers correspond to the differences in default user space between the
 
 =head2 BS [dictionary]
 - (Optional; PDF 1.6) A border style dictionary (see Table 166) specifying the line width and dash pattern that is used in drawing the annotation’s border.
-The annotation dictionary’s AP entry, if present, takes precedence over the BS entry; see Table 164 and 12.5.5, “Appearance Streams” .
+The annotation dictionary’s AP entry, if present, takes precedence over the BS entry; see Table 164 and 12.5.5, “Appearance Streams”.
 
 =head2 LE [name]
-- (Optional; meaningful only if CL is present; PDF 1.6) A name specifying the line ending style that is used in drawing the callout line specified in CL. The name specifies the line ending style for the endpoint defined by the pairs of coordinates (x 1 , y 1). Table 176 shows the possible line ending styles.
+- (Optional; meaningful only if CL is present; PDF 1.6) A name specifying the line ending style that is used in drawing the callout line specified in CL. The name specifies the line ending style for the endpoint defined by the pairs of coordinates (x1, y1). Table 176 shows the possible line ending styles.
 Default value: None.
 
 =end pod

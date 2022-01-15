@@ -60,12 +60,12 @@
       [
         "11",
         "16",
-        "The number of bits needed to represent the numerically greatest shared object identifier used by the pages (discussed further in Table F.4 , item 4)."
+        "The number of bits needed to represent the numerically greatest shared object identifier used by the pages (discussed further in Table F.4, item 4)."
       ],
       [
         "12",
         "16",
-        "The number of bits needed to represent the numerator of the fractional position for each shared object reference. For each shared object referenced from a page, there is an indication of where in the page’s content stream the object is first referenced. That position is given as the numerator of a fraction, whose denominator is specified once for the entire document (in the next item in this table). The fraction is explained in more detail in Table F.4 , item 5."
+        "The number of bits needed to represent the numerator of the fractional position for each shared object reference. For each shared object referenced from a page, there is an indication of where in the page’s content stream the object is first referenced. That position is given as the numerator of a fraction, whose denominator is specified once for the entire document (in the next item in this table). The fraction is explained in more detail in Table F.4, item 5."
       ],
       [
         "13",

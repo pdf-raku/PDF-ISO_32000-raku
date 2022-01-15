@@ -10,11 +10,11 @@
       ],
       [
         "Linear",
-        "Keyframe animations is driven linearly from beginning to end. This animation style results in a repetitive playthrough of the animation, such as in a walking motion.\n\nt = (m(t a - t 0) + r 0 ) % (r 1 - r 0)\np = (r 1 - r 0) / m\nThe “%” symbol indicates the modulus operator."
+        "Keyframe animations is driven linearly from beginning to end. This animation style results in a repetitive playthrough of the animation, such as in a walking motion.\n\nt = (m(ta - t0) + r0) % (r1 - r0)\np = (r1 - r0) / m\nThe “%” symbol indicates the modulus operator."
       ],
       [
         "Oscillating",
-        "Keyframe animations oscillates along their time range. This animation style results in a back-and-forth playing of the animation, such as exploding or collapsing parts.\n\nt = (0.5)(r 1 - r 0)(1 - cos(m(t a - t 0))) + r 0\np = 2 * pi / m"
+        "Keyframe animations oscillates along their time range. This animation style results in a back-and-forth playing of the animation, such as exploding or collapsing parts.\n\nt = (0.5)(r1 - r0)(1 - cos(m(ta - t0))) + r0\np = 2 * pi / m"
       ]
     ]
   }

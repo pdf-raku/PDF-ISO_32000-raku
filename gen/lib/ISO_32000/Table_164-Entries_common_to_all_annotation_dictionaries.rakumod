@@ -53,7 +53,7 @@ This entry is present in screen annotations associated with rendition actions (P
 - (Optional; PDF 1.2) An appearance dictionary specifying how the annotation is presented visually on the page (see 12.5.5, “Appearance Streams”). Individual annotation handlers may ignore this entry and provide their own appearances.
 
 =head2 AS [name]
-- (Required if the appearance dictionary AP contains one or more subdictionaries; PDF 1.2) The annotation’s appearance state, which selects the applicable appearance stream from an appearance subdictionary (see Section 12.5.5, “Appearance Streams ”).
+- (Required if the appearance dictionary AP contains one or more subdictionaries; PDF 1.2) The annotation’s appearance state, which selects the applicable appearance stream from an appearance subdictionary (see Section 12.5.5, “Appearance Streams”).
 
 =head2 Border [array]
 - (Optional) An array specifying the characteristics of the annotation’s border, which is drawn as a rounded rectangle.

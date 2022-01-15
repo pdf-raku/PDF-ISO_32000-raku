@@ -35,27 +35,27 @@
       [
         "—",
         "B",
-        "Fill and then stroke the path, using the nonzero winding number rule to determine the region to fill. This operator shall produce the same result as constructing two identical path objects, painting the first with f and the second with S.\nNOTE The filling and stroking portions of the operation consult different values of several graphics state parameters, such as the current colour. See also 11.7.4.4, \"Special Path-Painting Considerations\" ."
+        "Fill and then stroke the path, using the nonzero winding number rule to determine the region to fill. This operator shall produce the same result as constructing two identical path objects, painting the first with f and the second with S.\nNOTE The filling and stroking portions of the operation consult different values of several graphics state parameters, such as the current colour. See also 11.7.4.4, \"Special Path-Painting Considerations\"."
       ],
       [
         "—",
         "B*",
-        "Fill and then stroke the path, using the even-odd rule to determine the region to fill. This operator shall produce the same result as B, except that the path is filled as if with f* instead of f. See also 11.7.4.4, \"Special Path-Painting Considerations\" ."
+        "Fill and then stroke the path, using the even-odd rule to determine the region to fill. This operator shall produce the same result as B, except that the path is filled as if with f* instead of f. See also 11.7.4.4, \"Special Path-Painting Considerations\"."
       ],
       [
         "—",
         "b",
-        "Close, fill, and then stroke the path, using the nonzero winding number rule to determine the region to fill. This operator has the same effect as the sequence h B. See also 11.7.4.4, \"Special Path-Painting Considerations\" ."
+        "Close, fill, and then stroke the path, using the nonzero winding number rule to determine the region to fill. This operator has the same effect as the sequence h B. See also 11.7.4.4, \"Special Path-Painting Considerations\"."
       ],
       [
         "—",
         "b*",
-        "Close, fill, and then stroke the path, using the even-odd rule to determine the region to fill. This operator has the same effect as the sequence h B*. See also 11.7.4.4, \"Special Path-Painting Considerations\" ."
+        "Close, fill, and then stroke the path, using the even-odd rule to determine the region to fill. This operator has the same effect as the sequence h B*. See also 11.7.4.4, \"Special Path-Painting Considerations\"."
       ],
       [
         "—",
         "n",
-        "End the path object without filling or stroking it. This operator is a path-painting no-op, used primarily for the side effect of changing the current clipping path (see 8.5.4, \"Clipping Path Operators\")."
+        "End the path object without filling or stroking it. This operator is a path- painting no-op, used primarily for the side effect of changing the current clipping path (see 8.5.4, \"Clipping Path Operators\")."
       ]
     ]
   }

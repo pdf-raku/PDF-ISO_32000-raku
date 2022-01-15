@@ -20,8 +20,8 @@ Table 25 – Entries common to all crypt filter dictionaries
 =head2 CFM [name]
 - (Optional) The method used, if any, by the conforming reader to decrypt data. The following values is supported:
 NoneThe application does not decrypt data but shall direct the input stream to the security handler for decryption.
-V2The application shall ask the security handler for the encryption key and shall implicitly decrypt data with "Algorithm 1: Encryption of data using the RC4 or AES algorithms" , using the RC4 algorithm.
-AESV2(PDF 1.6) The application shall ask the security handler for the encryption key and shall implicitly decrypt data with "Algorithm 1: Encryption of data using the RC4 or AES algorithms" , using the AES algorithm in Cipher Block Chaining (CBC) mode with a 16-byte block size and an initialization vector that is randomly generated and placed as the first 16 bytes in the stream or string.
+V2The application shall ask the security handler for the encryption key and shall implicitly decrypt data with "Algorithm 1: Encryption of data using the RC4 or AES algorithms", using the RC4 algorithm.
+AESV2(PDF 1.6) The application shall ask the security handler for the encryption key and shall implicitly decrypt data with "Algorithm 1: Encryption of data using the RC4 or AES algorithms", using the AES algorithm in Cipher Block Chaining (CBC) mode with a 16-byte block size and an initialization vector that is randomly generated and placed as the first 16 bytes in the stream or string.
 When the value is V2 or AESV2, the application may ask once for this encryption key and cache the key for subsequent use for streams that use the same crypt filter. Therefore, there is a one-to-one relationship between a crypt filter name and the corresponding encryption key.
 Only the values listed here is supported. Applications that encounter other values reports that the file is encrypted with an unsupported algorithm.
 Default value: None.

@@ -135,7 +135,7 @@
       [
         "AIS",
         "boolean",
-        "(Optional; PDF 1.4) The alpha source flag (“alpha is shape”), specifying whether the current soft mask and alpha constant shall beinterpreted as shape values (true) or opacity values (false)."
+        "(Optional; PDF 1.4) The alpha source flag (“alpha is shape”), specifying whether the current soft mask and alpha constant is interpreted as shape values (true) or opacity values (false)."
       ],
       [
         "TK",

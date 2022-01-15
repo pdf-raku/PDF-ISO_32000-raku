@@ -38,7 +38,7 @@ The filter distinguish among negative, zero, and positive values of K to determi
 - The height of the image in scan lines. If the value is 0 or absent, the image’s height is not predetermined, and the encoded data is terminated by an end-of-block bit pattern or by the end of the filter’s data. Default value: 0.
 
 =head2 EndOfBlock [boolean]
-- A flag indicating whether the filter expects the encoded data to be terminated by an end-of-block pattern, overriding the Rows parameter. If false, the filter stops when it has decoded the number of lines indicated by Rows or when its data has been exhausted, whichever occurs first. The end-of-block pattern is the CCITT end-of-facsimile-block (EOFB) or return-to-control (RTC) appropriate for the Kparameter. Default value: true.
+- A flag indicating whether the filter expects the encoded data to be terminated by an end-of-block pattern, overriding the Rows parameter. If false, the filter stops when it has decoded the number of lines indicated by Rows or when its data has been exhausted, whichever occurs first. The end-of- block pattern is the CCITT end-of-facsimile-block (EOFB) or return-to-control (RTC) appropriate for the Kparameter. Default value: true.
 
 =head2 BlackIs1 [boolean]
 - A flag indicating whether 1 bits is interpreted as black pixels and 0 bits as white pixels, the reverse of the normal PDF convention for image data. Default value: false.

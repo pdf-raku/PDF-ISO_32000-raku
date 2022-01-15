@@ -28,7 +28,7 @@ Table 243 – Entries in the FDF dictionary
 - (Optional) An array of two byte strings constituting a file identifier (see 14.4, “File Identifiers”) for the source or target file designated by F, taken from the ID entry in the file’s trailer dictionary (see 7.5.5, “File Trailer”).
 
 =head2 Fields [array]
-- (Optional) An array of FDF field dictionaries (see FDF Fields in 12.7.7.3, “FDF Catalog”) describing the root fields (those with no ancestors in the field hierarchy) that is exported or imported. This entry and the Pages entry does not both be present.
+- (Optional) An array of FDF field dictionaries (see FDF Fieldsin 12.7.7.3, “FDF Catalog”) describing the root fields (those with no ancestors in the field hierarchy) that is exported or imported. This entry and the Pages entry does not both be present.
 
 =head2 Status [PDFDocEncoded string]
 - (Optional) A status string that is displayed indicating the result of an action, typically a submit-form action (see 12.7.5.2, “Submit-Form Action”). The string is encoded with PDFDocEncoding. This entry and the Pages entry shallnot both be present.

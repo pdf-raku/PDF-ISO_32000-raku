@@ -15,7 +15,7 @@
       [
         "S",
         "name",
-        "(Required) The type of requirement handler that this dictionary describes. Valid requirement handler types shall beJS (for a JavaScript requirement handlers) and NoOp.\nA value of NoOp allows older conforming readers to ignore unrecognized requirements. This value does not add any specific entry to the requirement handler dictionary."
+        "(Required) The type of requirement handler that this dictionary describes. Valid requirement handler types is JS (for a JavaScript requirement handlers) and NoOp.\nA value of NoOp allows older conforming readers to ignore unrecognized requirements. This value does not add any specific entry to the requirement handler dictionary."
       ],
       [
         "Script",

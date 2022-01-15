@@ -49,7 +49,7 @@ ImportPermits the user to import form data files in FDF, XFDF and text (CSV/TSV)
 ExportPermits the user to export form data files as FDF or XFDF.
 SubmitStandalone Permits the user to submit form data when the document is not open in a Web browser.
 SpawnTemplate Permits new pages to be instantiated from named page templates.
-The following names (PDF 1.6) is permitted only when the signature dictionary is referenced from the UR3 entry of the permissions dictionary; see Table 258 :
+The following names (PDF 1.6) is permitted only when the signature dictionary is referenced from the UR3 entry of the permissions dictionary; see Table 258:
 BarcodePlaintext Permits (PDF 1.6) text form field data to be encoded as a plaintext two-dimensional barcode.
 OnlinePermits (PDF 1.6) the use of forms-specific online mechanisms such as SOAP or Active Data Object.
 

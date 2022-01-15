@@ -27,10 +27,10 @@ Table 117 – Entries in a CIDFont dictionary
 - (Required) The type of CIDFont is CIDFontType0 or CIDFontType2.
 
 =head2 BaseFont [name]
-- (Required) The PostScript name of the CIDFont. For Type 0 CIDFonts, this is the value of the CIDFontName entry in the CIDFont program. For Type 2 CIDFonts, it is derived the same way as for a simple TrueType font; see 9.6.3, "TrueType Fonts" . In either case, the name may have a subset prefix if appropriate; see 9.6.4, "Font Subsets" .
+- (Required) The PostScript name of the CIDFont. For Type 0 CIDFonts, this is the value of the CIDFontName entry in the CIDFont program. For Type 2 CIDFonts, it is derived the same way as for a simple TrueType font; see 9.6.3, "TrueType Fonts". In either case, the name may have a subset prefix if appropriate; see 9.6.4, "Font Subsets".
 
 =head2 CIDSystemInfo [dictionary]
-- (Required) A dictionary containing entries that define the character collection of the CIDFont. See Table 116 .
+- (Required) A dictionary containing entries that define the character collection of the CIDFont. See Table 116.
 
 =head2 FontDescriptor [dictionary]
 - (Required; is an indirect reference) A font descriptor describing the CIDFont’s default metrics other than its glyph widths (see 9.8, "Font Descriptors").

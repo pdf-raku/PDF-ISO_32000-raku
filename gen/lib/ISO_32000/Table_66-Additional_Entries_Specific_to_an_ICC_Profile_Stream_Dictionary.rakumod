@@ -22,7 +22,7 @@ Table 66 – Additional Entries Specific to an ICC Profile Stream Dictionary
 There is not conversion of source colour values, such as a tint transformation, when using the alternate colour space. Colour values within the range of the ICCBased colour space might not be within the range of the alternate colour space. In this case, the nearest values within the range of the alternate space is substituted.
 
 =head2 Range [array]
-- (Optional) An array of 2 × N numbers [ min 0 max 0 min 1 max 1 … ] that specifies the minimum and maximum valid values of the corresponding colour components. These values matches the information in the ICC profile. Default value: [ 0.0 1.0 0.0 1.0 … ].
+- (Optional) An array of 2 × N numbers [ min0 max0 min1 max1 … ] that specifies the minimum and maximum valid values of the corresponding colour components. These values matches the information in the ICC profile. Default value: [ 0.0 1.0 0.0 1.0 … ].
 
 =head2 Metadata [stream]
 - (Optional; PDF 1.4) A metadata stream that contains metadata for the colour space (see 14.3.2, "Metadata Streams").

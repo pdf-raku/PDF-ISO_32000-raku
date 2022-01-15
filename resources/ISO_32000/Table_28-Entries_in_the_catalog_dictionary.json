@@ -20,7 +20,7 @@
       [
         "Extensions\n",
         "dictionary",
-        "(Optional; ISO 32000) An extensions dictionary containing developer prefix identification and version numbers for developer extensions that occur in this document. 7.12, “Extensions Dictionary” , describes this dictionary and how it is used."
+        "(Optional; ISO 32000) An extensions dictionary containing developer prefix identification and version numbers for developer extensions that occur in this document. 7.12, “Extensions Dictionary”, describes this dictionary and how it is used."
       ],
       [
         "Pages",
@@ -130,7 +130,7 @@
       [
         "Perms",
         "dictionary",
-        "(Optional; PDF 1.5) A permissions dictionary that specifies user access permissions for the document. 12.8.4, \"Permissions\" , describes this dictionary and how it is used."
+        "(Optional; PDF 1.5) A permissions dictionary that specifies user access permissions for the document. 12.8.4, \"Permissions\", describes this dictionary and how it is used."
       ],
       [
         "Legal",
@@ -140,7 +140,7 @@
       [
         "Requirements",
         "array",
-        "(Optional; PDF 1.7) An array of requirement dictionaries that represents requirements for the document. 12.10, \"Document Requirements\" , describes this dictionary and how it is used."
+        "(Optional; PDF 1.7) An array of requirement dictionaries that represents requirements for the document. 12.10, \"Document Requirements\", describes this dictionary and how it is used."
       ],
       [
         "Collection",

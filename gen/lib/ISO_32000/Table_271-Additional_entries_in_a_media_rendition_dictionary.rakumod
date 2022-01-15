@@ -17,7 +17,7 @@ Table 271 – Additional entries in a media rendition dictionary
 - (Optional) A media clip dictionary (see 13.2.4, “Media Clip Objects”) that specifies what is played when the media rendition object is played.
 
 =head2 P [dictionary]
-- (Required if C is not present, otherwise optional) A media play parametersdictionary (see 13.2.5, “Media Play Parameters” ”) that specifies how the media rendition object is played.
+- (Required if C is not present, otherwise optional) A media play parametersdictionary (see 13.2.5, “Media Play Parameters””) that specifies how the media rendition object is played.
 Default value: a media play parameters dictionary whose entries (see Table 279) all contain their default values.
 
 =head2 SP [dictionary]
