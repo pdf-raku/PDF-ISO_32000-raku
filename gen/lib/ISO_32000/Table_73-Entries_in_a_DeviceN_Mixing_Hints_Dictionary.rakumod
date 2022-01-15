@@ -1,7 +1,7 @@
 use v6;
 role ISO_32000::Table_73-Entries_in_a_DeviceN_Mixing_Hints_Dictionary {
     method Solidities {...};
-    method PrintingOrdEr {...};
+    method PrintingOrder {...};
     method DotGain {...};
 }
 
@@ -18,7 +18,7 @@ Table 73 – Entries in a DeviceN Mixing Hints Dictionary
 A value of 1.0 simulates an ink that completely covers the inks beneath; a value of 0.0 simulates a transparent ink that completely reveals the inks beneath. An entry with a key of Default specifies a value that is used by all components in the associated DeviceN colour space for which a solidity value is not explicitly provided. If Default is not present, the default value for unspecified colorants is 0.0; conforming readers may choose to use other values.
 If this entry is present, PrintingOrder is also present.
 
-=head2 PrintingOrdEr [array]
+=head2 PrintingOrder [array]
 - (Required if Solidities is present) An array of colorant names, specifying the order in which inks is laid down. Each component in the names array of the DeviceN colour space appears in this array (although the order is unrelated to the order specified in the namesarray). This entry may also list colorants unused by this specific DeviceN instance.
 
 =head2 DotGain [dictionary]
