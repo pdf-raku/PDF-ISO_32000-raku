@@ -1,6 +1,5 @@
 {
-  "api": "PDF-1.7",
-  "auth": "github:pdf-raku",
+  "auth": "cpan:WARRINGD",
   "authors": [
     "David Warring"
   ],
@@ -9,7 +8,8 @@
     "LibXML",
     "Method::Also",
     "PDF::Font::Loader",
-    "PDF::Tags"
+      "PDF::Tags",
+    "PDF::Tags::Reader"
   ],
   "depends": [
   ],

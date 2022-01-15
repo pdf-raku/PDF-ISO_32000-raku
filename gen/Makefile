@@ -34,22 +34,22 @@ $(XML) : $(PDF)
 	USE_PDF_NATIVE=1 pdf-tag-dump.raku --omit=Span --atts --max-depth=18 $(PDF) > $(XML);
 
 xml-to-json : pdf-to-xml
-	perl6 ../etc/make-json.raku --make --out-dir=$(RESOURCE_DIR) $(XML)
+	raku ../etc/make-json.raku --make --out-dir=$(RESOURCE_DIR) $(XML)
 
 json-to-raku : $(MODULES)
 
 $(MODULES): $(MODULE_DIR)/%.rakumod: $(RESOURCE_DIR)/%.json
-	perl6 ../etc/make-modules.raku --role-name="$(ROLE_BASE)::$(basename $(notdir $@))" $< > $@ 
+	raku ../etc/make-modules.raku --role-name="$(ROLE_BASE)::$(basename $(notdir $@))" $< > $@ 
 
 readme : ../README.md
 
 ../README.md : ../src/README.in $(MODULES)
-	(cat $< ; perl6 -I lib ../etc/make-readme-tables.raku $(MODULES)) > $@
+	(cat $< ; raku -I lib ../etc/make-readme-tables.raku $(MODULES)) > $@
 
 meta6 :../resources/ISO_32000-index.json ../META6.json
 
 ../resources/ISO_32000-index.json ../META6.json : ../src/META6.in $(MODULES) $(RESOURCES)
-	perl6 ../etc/make-meta6.raku $< $(MODULES) $(RESOURCE_NAMES) > ../META6.json
+	raku ../etc/make-meta6.raku $< $(MODULES) $(RESOURCE_NAMES) > ../META6.json
 
 clean : 
 	rm -vf ../META6.json ../README.md ../resources/ISO_32000-index.json $(RESOURCE_DIR)/*.json $(RESOURCE_DIR)/misc/*.json $(MODULE_DIR)/*.rakumod
