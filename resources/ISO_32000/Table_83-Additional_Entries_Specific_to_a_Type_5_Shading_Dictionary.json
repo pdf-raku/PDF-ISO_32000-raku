@@ -25,7 +25,7 @@
       [
         "Decode",
         "array",
-        "(Required) An array of numbers specifying how to map vertex coordinates and colour components into the appropriate ranges of values. The decoding method is similar to that used in image dictionaries (see 8.9.5.2, \"Decode Arrays\"). The ranges shall bespecified as follows:\n[ xmin xmax ymin ymax c1,min c1,max … cn,min cn,max ]\nOnly one pair of c values is specified if a Function entry is present."
+        "(Required) An array of numbers specifying how to map vertex coordinates and colour components into the appropriate ranges of values. The decoding method is similar to that used in image dictionaries (see 8.9.5.2, \"Decode Arrays\"). The ranges is specified as follows:\n[ xmin xmax ymin ymax c1,min c1,max … cn,min cn,max ]\nOnly one pair of c values is specified if a Function entry is present."
       ],
       [
         "Function",

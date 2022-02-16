@@ -14,13 +14,13 @@ Table 183 – Additional entries specific to a pop-up annotation
 =head1 Methods (Entries)
 
 =head2 Subtype [name]
-- (Required) The type of annotation that this dictionary describes; shallbe Popup for a pop-up annotation.
+- (Required) The type of annotation that this dictionary describes; is Popup for a pop-up annotation.
 
 =head2 Parent [dictionary]
 - (Optional; is an indirect reference) The parent annotation with which this pop-up annotation is associated.
-If this entry is present, the parent annotation’s Contents, M, C, and Tentries (see Table 168) overrides those of the pop-up annotation itself.
+If this entry is present, the parent annotation’s Contents, M, C, and T entries (see Table 168) overrides those of the pop-up annotation itself.
 
 =head2 Open [boolean]
-- (Optional) A flag specifying whether the pop-up annotation shallinitially be displayed open. Default value: false (closed).
+- (Optional) A flag specifying whether the pop-up annotation shall initially be displayed open. Default value: false (closed).
 
 =end pod

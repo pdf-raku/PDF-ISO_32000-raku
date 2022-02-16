@@ -17,7 +17,7 @@ Table 126 – Embedded font organization for various font types
 - Type 1 font program, in the original (noncompact) format described in Adobe Type 1 Font Format. This entry may appear in the font descriptor for a Type1 or MMType1 font dictionary.
 
 =head2 FontFile2 [—]
-- (PDF 1.1) TrueType font program, as described in the TrueType Reference Manual. This entry may appear in the font descriptor for a TrueType font dictionary or (PDF 1.3) for a CIDFontType2CIDFont dictionary.
+- (PDF 1.1) TrueType font program, as described in the TrueType Reference Manual. This entry may appear in the font descriptor for a TrueType font dictionary or (PDF 1.3) for a CIDFontType2 CIDFont dictionary.
 
 =head2 FontFile3 [Type1C
 ]

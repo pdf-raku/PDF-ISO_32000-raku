@@ -50,7 +50,7 @@
       [
         "PageLayout",
         "name",
-        "(Optional) A name object specifying the page layout is used when the document is opened:\nSinglePageDisplay one page at a time\nOneColumnDisplay the pages in one column\nTwoColumnLeftDisplay the pages in two columns, with odd-numbered pages on the left\nTwoColumnRightDisplay the pages in two columns, with odd-numbered pages on the right\nTwoPageLeft(PDF 1.5) Display the pages two at a time, with odd-numbered pages on the left\nTwoPageRight(PDF 1.5) Display the pages two at a time, with odd-numbered pages on the right\nDefault value: SinglePage."
+        "(Optional) A name object specifying the page layout is used when the document is opened:\nSinglePageDisplay one page at a time\nOneColumnDisplay the pages in one column\nTwoColumnLeftDisplay the pages in two columns, with odd- numbered pages on the left\nTwoColumnRightDisplay the pages in two columns, with odd- numbered pages on the right\nTwoPageLeft(PDF 1.5) Display the pages two at a time, with odd-numbered pages on the left\nTwoPageRight(PDF 1.5) Display the pages two at a time, with odd-numbered pages on the right\nDefault value: SinglePage."
       ],
       [
         "PageMode",
@@ -75,7 +75,7 @@
       [
         "AA",
         "dictionary",
-        "(Optional; PDF 1.4) An additional-actions dictionary defining the actions that is taken in response to various trigger eventsaffecting the document as a whole (see 12.6.3, \"Trigger Events\")."
+        "(Optional; PDF 1.4) An additional-actions dictionary defining the actions that is taken in response to various trigger events affecting the document as a whole (see 12.6.3, \"Trigger Events\")."
       ],
       [
         "URI",
@@ -150,7 +150,7 @@
       [
         "NeedsRendering",
         "boolean",
-        "(Optional; PDF 1.7) A flag used to expedite the display of PDF documents containing XFA forms. It specifies whether the document is regenerated when the document is first opened.\nSee the XML Forms Architecture (XFA) Specification(Bibliography).\nDefault value: false."
+        "(Optional; PDF 1.7) A flag used to expedite the display of PDF documents containing XFA forms. It specifies whether the document is regenerated when the document is first opened.\nSee the XML Forms Architecture (XFA) Specification (Bibliography).\nDefault value: false."
       ]
     ]
   }

@@ -14,7 +14,7 @@ Table 184 – Additional entries specific to a file attachment annotation
 =head1 Methods (Entries)
 
 =head2 Subtype [name]
-- (Required) The type of annotation that this dictionary describes; shallbe FileAttachment for a file attachment annotation.
+- (Required) The type of annotation that this dictionary describes; is FileAttachment for a file attachment annotation.
 
 =head2 FS [file specification]
 - (Required) The file associated with this annotation.

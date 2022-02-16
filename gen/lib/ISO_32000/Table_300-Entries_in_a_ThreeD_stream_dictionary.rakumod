@@ -29,8 +29,8 @@ Table 300 – Entries in a 3D stream dictionary
 =head2 DV [(various)]
 - (Optional) An object that specifies the default (initial) view of the 3D artwork. It may be a 3D view dictionary (see Section 13.6.4, “3D Views”) or one of the following types:
 • An integer specifying an index into the VA array.
-• A text string matching the IN entry in one of the views in the VAarray.
-• A name that indicates the first (F) or last (L) entries in the VAarray. Default value: 0 (the first entry in the VA array) if VA is present; if VA is not present, the default view is specified within the 3D stream itself.
+• A text string matching the IN entry in one of the views in the VA array.
+• A name that indicates the first (F) or last (L) entries in the VA array. Default value: 0 (the first entry in the VA array) if VA is present; if VA is not present, the default view is specified within the 3D stream itself.
 
 =head2 Resources [name tree]
 - (Optional) A name tree that maps name strings to objects that may be used by applications or scripts to modify the default view of the 3D artwork.

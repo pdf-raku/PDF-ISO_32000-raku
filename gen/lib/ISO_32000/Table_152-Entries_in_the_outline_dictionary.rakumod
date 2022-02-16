@@ -18,10 +18,10 @@ Table 152 – Entries in the outline dictionary
 - (Optional) The type of PDF object that this dictionary describes; if present, is Outlines for an outline dictionary.
 
 =head2 First [dictionary]
-- (Required if there are any open or closed outline entries; is an indirect reference) An outline item dictionary representing the first top-level item in the outline.
+- (Required if there are any open or closed outline entries; is an indirect reference) An outline item dictionary representing the first top- level item in the outline.
 
 =head2 Last [dictionary]
-- (Required if there are any open or closed outline entries; is an indirect reference) An outline item dictionary representing the last top-level item in the outline.
+- (Required if there are any open or closed outline entries; is an indirect reference) An outline item dictionary representing the last top- level item in the outline.
 
 =head2 Count [integer]
 - (Required if the document has any open outline entries) Total number of visible outline items at all levels of the outline. The value cannot be negative.

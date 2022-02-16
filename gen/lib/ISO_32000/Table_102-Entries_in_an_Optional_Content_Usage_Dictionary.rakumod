@@ -52,6 +52,6 @@ Type A name object that is either Ind (individual), Ttl (title), or Org (organiz
 Name A text string or array of text strings representing the name(s) of the individual, position or organization.
 
 =head2 PageElement [dictionary]
-- (Optional) A dictionary declaring that the group contains a pagination artifact. It contains one entry, Subtype, whose value is a name that is either HF (header/footer), FG (foreground image or graphic), BG(background image or graphic), or L (logo).
+- (Optional) A dictionary declaring that the group contains a pagination artifact. It contains one entry, Subtype, whose value is a name that is either HF (header/footer), FG (foreground image or graphic), BG (background image or graphic), or L (logo).
 
 =end pod

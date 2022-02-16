@@ -25,6 +25,7 @@ sub edit($_) {
     .subst(/«[shall|should]" "(appl|specif|identif|satisf|occup)y»/, {$0 ~ 'ies'}, :g)
     .subst(/«[shall|should]" "(match|progress|do)»/, {$0 ~ 'es'}, :g)
     .subst(/«[shall|should]" "(accept|adjust|appear|assume|behave|cause|center|conform|consist|contain|continue|correspond|default|define|deliver|depend|describe|determine|disable|display|enable|exclude|exist|expect|fail|ignore|include|increase|indicate|initialize|interpret|invalidate|lie|list|make|map|mean|occur|oscillate|override|perform|permit|play|position|provide|refer|remain|replace|report|represent|set|show|skip|sort|stop|take|tolerate|translate|use)»/, {$0 ~ 's'}, :g)
+    .subst('PrintingOrd er', 'PrintingOrder')
     .subst(/T \s* a \s* b \s* l \s* e/, 'Table', :g)
     .subst(/:s "(" (<-[)]>*?)  ")"/, { '(' ~ tidy($0) ~ ')' }, :g)
     .subst(/:s Link (Table|Annex|Figure|Bibliography|<[0..9.]>+)/, { $0 }, :g);

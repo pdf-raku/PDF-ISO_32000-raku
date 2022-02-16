@@ -24,7 +24,7 @@ Table 205 – Additional entries specific to a thread action
 - (Required) The destination thread, specified in one of the following forms:
 An indirect reference to a thread dictionary (see 12.4.3, “Articles”). In this case, the thread is in the current file.
 The index of the thread within the Threads array of its document’s Catalog (see 7.7.2, “Document Catalog”). The first thread in the array has index 0.
-The title of the thread as specified in its thread information dictionary (see Table 160). If two or more threads have the same title, the one appearing first in the document Catalog’s Threads array shall beused.
+The title of the thread as specified in its thread information dictionary (see Table 160). If two or more threads have the same title, the one appearing first in the document Catalog’s Threads array is used.
 
 =head2 B [dictionary or integer]
 - (Optional) The bead in the destination thread, specified in one of the following forms:

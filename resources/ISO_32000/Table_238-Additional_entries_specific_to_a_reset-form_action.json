@@ -10,7 +10,7 @@
       [
         "S",
         "name",
-        "(Required) The type of action that this dictionary describes; shallbe ResetForm for a reset-form action."
+        "(Required) The type of action that this dictionary describes; is ResetForm for a reset-form action."
       ],
       [
         "Fields",

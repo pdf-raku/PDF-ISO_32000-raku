@@ -15,7 +15,7 @@
         "C, M, Y, or K",
         "cs",
         "cs",
-        "cs if cs ≠ 0.0cb if cs = 0.0"
+        "cs if cs ≠ 0.0 cb if cs = 0.0"
       ],
       [
         "Process colour component other than CMYK",

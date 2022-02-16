@@ -32,16 +32,16 @@ Table 101 – Entries in an Optional Content Configuration Dictionary
 ON The states of all groups is turned ON.
 OFF The states of all groups is turned OFF.
 Unchanged The states of all groups is left unchanged.
-After this initialization, the contents of the ON and OFF arrays shall beprocessed, overriding the state of the groups included in the arrays.
+After this initialization, the contents of the ON and OFF arrays is processed, overriding the state of the groups included in the arrays.
 Default value: ON.
 If BaseState is present in the document’s default configuration dictionary, its value is ON.
 
 =head2 ON [array]
-- (Optional) An array of optional content groups whose state shall beset to ON when this configuration is applied.
+- (Optional) An array of optional content groups whose state is set to ON when this configuration is applied.
 If the BaseState entry is ON, this entry is redundant.
 
 =head2 OFF [array]
-- (Optional) An array of optional content groups whose state shall beset to OFF when this configuration is applied.
+- (Optional) An array of optional content groups whose state is set to OFF when this configuration is applied.
 If the BaseState entry is OFF, this entry is redundant.
 
 =head2 Intent [name or array]
@@ -49,11 +49,11 @@ If the BaseState entry is OFF, this entry is redundant.
 PDF defines two intent names, View and Design. In addition, the name All indicates the set of all intents, including those not yet defined. Default value: View. The value is View for the document’s default configuration.
 
 =head2 AS [array]
-- (Optional) An array of usage application dictionaries (see Table 103) specifying which usage dictionary categories (see Table 102) shall beconsulted by conforming readers to automatically set the states of optional content groups based on external factors, such as the current system language or viewing magnification, and when they is applied.
+- (Optional) An array of usage application dictionaries (see Table 103) specifying which usage dictionary categories (see Table 102) is consulted by conforming readers to automatically set the states of optional content groups based on external factors, such as the current system language or viewing magnification, and when they is applied.
 
 =head2 Order [array]
 - (Optional) An array specifying the order for presentation of optional content groups in a conforming reader’s user interface. The array elements may include the following objects:
-Optional content group dictionaries, whose Name entry shall bedisplayed in the user interface by the conforming reader.
+Optional content group dictionaries, whose Name entry is displayed in the user interface by the conforming reader.
 Arrays of optional content groups which may be displayed by a conforming reader in a tree or outline structure. Each nested array may optionally have as its first element a text string to be used as a non-selectable label in a conforming reader’s user interface.
 Text labels in nested arrays is used to present collections of related optional content groups, and not to communicate actual nesting of content inside multiple layers of groups (see EXAMPLE 1 in 8.11.4.3, "Optional Content Configuration Dictionaries"). To reflect actual nesting of groups in the content, such as for layers with sublayers, nested arrays of groups without a text label is used (see EXAMPLE 2 in 8.11.4.3, "Optional Content Configuration Dictionaries").
 An empty array [] explicitly specifies that no groups is presented.
@@ -72,7 +72,7 @@ An empty array [] explicitly indicates that no such collections exist.
 In the default configuration dictionary, the default value is an empty array; in other configuration dictionaries, the default is the RBGroups value from the default configuration dictionary.
 
 =head2 Locked [array]
-- (Optional; PDF 1.6) An array of optional content groups that shall belocked when this configuration is applied. The state of a locked group cannot be changed through the user interface of a conforming reader. Conforming writers can use this entry to prevent the visibility of content that depends on these groups from being changed by users.
+- (Optional; PDF 1.6) An array of optional content groups that is locked when this configuration is applied. The state of a locked group cannot be changed through the user interface of a conforming reader. Conforming writers can use this entry to prevent the visibility of content that depends on these groups from being changed by users.
 Default value: an empty array.
 A conforming reader may allow the states of optional content groups from being changed by means other than the user interface, such as JavaScript or items in the AS entry of a configuration dictionary.
 

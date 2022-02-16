@@ -27,7 +27,7 @@ Table 75 – Additional Entries Specific to a Type 1 Pattern Dictionary
 
 =head2 PaintType [integer]
 - (Required) A code that determines how the colour of the pattern cell is specified:
-a)Coloured tiling pattern. The pattern’s content stream shall specifythe colours used to paint the pattern cell. When the content stream begins execution, the current colour is the one that was initially in effect in the pattern’s parent content stream. This is similar to the definition of the pattern matrix; see 8.7.2, "General Properties of Patterns". b)Uncoloured tiling pattern. The pattern’s content stream does not specify any colour information. Instead, the entire pattern cell is painted with a separately specified colour each time the pattern is used. Essentially, the content stream describes a stencil through which the current colour is poured. The content stream does not invoke operators that specify colours or other colour-related parameters in the graphics state; otherwise, an error occurs (see 8.6.8, "Colour Operators"). The content stream may paint an image mask, however, since it does not specify any colour information (see 8.9.6.2, "Stencil Masking").
+a)Coloured tiling pattern. The pattern’s content stream specifies the colours used to paint the pattern cell. When the content stream begins execution, the current colour is the one that was initially in effect in the pattern’s parent content stream. This is similar to the definition of the pattern matrix; see 8.7.2, "General Properties of Patterns". b)Uncoloured tiling pattern. The pattern’s content stream does not specify any colour information. Instead, the entire pattern cell is painted with a separately specified colour each time the pattern is used. Essentially, the content stream describes a stencil through which the current colour is poured. The content stream does not invoke operators that specify colours or other colour- related parameters in the graphics state; otherwise, an error occurs (see 8.6.8, "Colour Operators"). The content stream may paint an image mask, however, since it does not specify any colour information (see 8.9.6.2, "Stencil Masking").
 
 =head2 TilingType [integer]
 - (Required) A code that controls adjustments to the spacing of tiles relative to the device pixel grid:
@@ -41,7 +41,7 @@ a)Constant spacing. Pattern cells is spaced consistently—that is, by a multipl
 
 =head2 YStep [number]
 - (Required) The desired vertical spacing between pattern cells, measured in the pattern coordinate system.
-NOTEXStep and YStep may differ from the dimensions of the pattern cell implied by the BBox entry. This allows tiling with irregularly shaped figures. XStep and YStep may be either positive or negative but does not bezero.
+NOTEXStep and YStep may differ from the dimensions of the pattern cell implied by the BBox entry. This allows tiling with irregularly shaped figures. XStep and YStep may be either positive or negative but is not zero.
 
 =head2 Resources [dictionary]
 - (Required) A resource dictionary that contains all of the named resources required by the pattern’s content stream (see 7.8.3, "Resource Dictionaries").

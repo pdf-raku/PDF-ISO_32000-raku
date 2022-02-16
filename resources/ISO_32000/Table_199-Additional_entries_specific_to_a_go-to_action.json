@@ -10,7 +10,7 @@
       [
         "S",
         "name",
-        "(Required) The type of action that this dictionary describes; is GoTofor a go-to action."
+        "(Required) The type of action that this dictionary describes; is GoTo for a go-to action."
       ],
       [
         "D",

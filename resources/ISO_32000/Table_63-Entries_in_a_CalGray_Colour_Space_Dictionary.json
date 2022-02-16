@@ -20,7 +20,7 @@
       [
         "Gamma",
         "number",
-        "(Optional) A number G defining the gamma for the gray (A)component. G is positive and is generally greater than or equal to 1. Default value: 1."
+        "(Optional) A number G defining the gamma for the gray (A) component. G is positive and is generally greater than or equal to 1. Default value: 1."
       ]
     ]
   }

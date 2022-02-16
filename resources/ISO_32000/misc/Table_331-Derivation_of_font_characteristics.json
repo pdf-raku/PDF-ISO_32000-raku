@@ -15,7 +15,7 @@
       [
         "Proportional",
         "boolean",
-        "The complement of the FixedPitch flag in the font descriptor’s Flagsentry"
+        "The complement of the FixedPitch flag in the font descriptor’s Flags entry"
       ],
       [
         "Italic",

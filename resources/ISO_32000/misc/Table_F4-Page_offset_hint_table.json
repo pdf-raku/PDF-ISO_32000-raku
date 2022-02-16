@@ -15,7 +15,7 @@
       [
         "2",
         "See Table F.3, item 5",
-        "A number that, when added to the least page length (Table F.3, item 4), shall give the length of the page in bytes. The location of the first object of the first page may be determined from its object number (the O entry in the linearization parameter dictionary) and the cross-reference table entry for that object; see F.3.4, \"First-Page Cross-Reference Table and Trailer (Part 3)\". The locations of subsequent pages is determined by accumulating the lengths of all previous pages. A conforming product skips over the primary hint stream, wherever it is located."
+        "A number that, when added to the least page length (Table F.3, item 4), shall give the length of the page in bytes. The location of the first object of the first page may be determined from its object number (the O entry in the linearization parameter dictionary) and the cross- reference table entry for that object; see F.3.4, \"First-Page Cross- Reference Table and Trailer (Part 3)\". The locations of subsequent pages is determined by accumulating the lengths of all previous pages. A conforming product skips over the primary hint stream, wherever it is located."
       ],
       [
         "3",

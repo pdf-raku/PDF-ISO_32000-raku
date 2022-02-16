@@ -107,7 +107,7 @@ NOTE The information in this entry can be created or recreated from the informat
 - (Optional; PDF 1.3) A page-piece dictionary associated with the page (see 14.5, "Page-Piece Dictionaries").
 
 =head2 StructParents [integer]
-- (Required if the page contains structural content items; PDF 1.3)The integer key of the page’s entry in the structural parent tree (see 14.7.4.4, "Finding Structure Elements from Content Items").
+- (Required if the page contains structural content items; PDF 1.3) The integer key of the page’s entry in the structural parent tree (see 14.7.4.4, "Finding Structure Elements from Content Items").
 
 =head2 ID [byte string]
 - (Optional; PDF 1.3; indirect reference preferred) The digital identifier of the page’s parent Web Capture content set (see 14.10.6, "Object Attributes Related to Web Capture").

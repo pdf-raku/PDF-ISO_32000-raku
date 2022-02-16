@@ -55,7 +55,7 @@
       [
         "font-stretch",
         "keyword",
-        "Specifies a normal, condensed or extended face from a font family. Supported values from narrowest to widest are ultra-condensed, extra-condensed, condensed, semi-condensed, normal, semi-expanded, expanded, extra-expanded, and ultra-expanded."
+        "Specifies a normal, condensed or extended face from a font family. Supported values from narrowest to widest are ultra-condensed, extra-condensed, condensed, semi-condensed, normal, semi- expanded, expanded, extra-expanded, and ultra-expanded."
       ]
     ]
   }

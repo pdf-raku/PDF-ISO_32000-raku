@@ -15,12 +15,12 @@
       [
         "First",
         "dictionary",
-        "(Required if there are any open or closed outline entries; is an indirect reference) An outline item dictionary representing the first top-level item in the outline."
+        "(Required if there are any open or closed outline entries; is an indirect reference) An outline item dictionary representing the first top- level item in the outline."
       ],
       [
         "Last",
         "dictionary",
-        "(Required if there are any open or closed outline entries; is an indirect reference) An outline item dictionary representing the last top-level item in the outline."
+        "(Required if there are any open or closed outline entries; is an indirect reference) An outline item dictionary representing the last top- level item in the outline."
       ],
       [
         "Count",

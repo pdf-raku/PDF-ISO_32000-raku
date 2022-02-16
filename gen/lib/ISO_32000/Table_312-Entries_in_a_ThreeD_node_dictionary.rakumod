@@ -19,7 +19,7 @@ Table 312 – Entries in a 3D node dictionary
 - (Optional) The type of PDF object that this dictionary describes; if present, is 3DNode for a 3D node dictionary.
 
 =head2 N [text string]
-- (Required) The name of the node being described by the node dictionary. If the Subtype of the corresponding 3D Stream is U3D, this entry corresponds to the field Node block name, as described in the Universal 3D file formatspecification (see Bibliography). In the future, nodes may be described using other 3D conventions.
+- (Required) The name of the node being described by the node dictionary. If the Subtype of the corresponding 3D Stream is U3D, this entry corresponds to the field Node block name, as described in the Universal 3D file format specification (see Bibliography). In the future, nodes may be described using other 3D conventions.
 NOTE When comparing this entry to node names for a particular convention (such as Universal 3D), conforming readers translates between the PDF text encoding used by PDF and the character encoding specified in the 3D stream.
 
 =head2 O [number]

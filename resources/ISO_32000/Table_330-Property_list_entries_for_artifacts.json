@@ -10,7 +10,7 @@
       [
         "Type",
         "name",
-        "(Optional) The type of artifact that this property list describes; if present, is one of the names Pagination, Layout, Page, or (PDF 1.7)Background."
+        "(Optional) The type of artifact that this property list describes; if present, is one of the names Pagination, Layout, Page, or (PDF 1.7) Background."
       ],
       [
         "BBox",

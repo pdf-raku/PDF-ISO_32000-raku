@@ -26,9 +26,9 @@ SA text field. The field data is stored as a PDF text string.
 D A date field. The field data is stored as a PDF date string.
 N A number field. The field data is stored as a PDF number.
 The following values identify the types of file-related fields:
-F The field data is the file name of the embedded file stream, as identified by the UF entry of the file specification, if present; otherwise by the Fentry of the file specification (see Table 44).
-Desc The field data is the description of the embedded file stream, as identified by the Descentry in the file specification dictionary (see Table 44).
-ModDate The field data is the modification date of the embedded file stream, as identified by the ModDateentry in the embedded file parameter dictionary (see Table 46).
+F The field data is the file name of the embedded file stream, as identified by the UF entry of the file specification, if present; otherwise by the F entry of the file specification (see Table 44).
+Desc The field data is the description of the embedded file stream, as identified by the Desc entry in the file specification dictionary (see Table 44).
+ModDate The field data is the modification date of the embedded file stream, as identified by the ModDate entry in the embedded file parameter dictionary (see Table 46).
 CreationDateThe field data is the creation date of the embedded file stream, as identified by the CreationDate entry in the embedded file parameter dictionary (see Table 46).
 Size The field data is the size of the embedded file, as identified by the Size entry in the embedded file parameter dictionary (see Table 46).
 

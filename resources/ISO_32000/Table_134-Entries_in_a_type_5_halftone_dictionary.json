@@ -23,7 +23,7 @@
         "(Optional) The name of the halftone dictionary."
       ],
       [
-        "any colorantname",
+        "any colorant name",
         "dictionary or stream",
         "(Required, one per colorant) The halftone corresponding to the colorant or colour component named by the key. The halftone may be of any type other than 5."
       ],

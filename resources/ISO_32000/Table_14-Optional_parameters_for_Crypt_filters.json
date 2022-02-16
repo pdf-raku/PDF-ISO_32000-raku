@@ -10,7 +10,7 @@
       [
         "Type",
         "name",
-        "(Optional) If present, is CryptFilterDecodeParms for a Cryptfilter decode parameter dictionary."
+        "(Optional) If present, is CryptFilterDecodeParms for a Crypt filter decode parameter dictionary."
       ],
       [
         "Name",

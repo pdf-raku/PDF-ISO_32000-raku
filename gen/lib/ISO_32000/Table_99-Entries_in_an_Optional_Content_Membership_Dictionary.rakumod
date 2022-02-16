@@ -15,7 +15,7 @@ Table 99 – Entries in an Optional Content Membership Dictionary
 =head1 Methods (Entries)
 
 =head2 Type [name]
-- (Required) The type of PDF object that this dictionary describes; shall beOCMD for an optional content membership dictionary.
+- (Required) The type of PDF object that this dictionary describes; is OCMD for an optional content membership dictionary.
 
 =head2 OCGs [dictionary or array]
 - (Optional) A dictionary or array of dictionaries specifying the optional content groups whose states determines the visibility of content controlled by this membership dictionary.

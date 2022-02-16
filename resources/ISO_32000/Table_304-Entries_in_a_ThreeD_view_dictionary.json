@@ -20,7 +20,7 @@
       [
         "IN",
         "text string",
-        "(Optional) The internal name of the view, used to refer to the view from other objects, such as the go-to-3D-view action (see 12.6.4.15, “Go-To-3D-View Actions”)."
+        "(Optional) The internal name of the view, used to refer to the view from other objects, such as the go-to-3D-view action (see 12.6.4.15, “Go-To- 3D-View Actions”)."
       ],
       [
         "MS",
@@ -80,7 +80,7 @@
       [
         "NR",
         "boolean",
-        "(Optional; PDF 1.7) Specifies whether nodes specified in the NA array is returned to their original states (as specified in the 3D artwork) before applying transformation matrices and opacity settings specified in the node dictionaries. If true, the artwork’s 3D node parameters is restored to their original states and then the dictionaries specified by the NA array is applied. If false, the dictionaries specified by the NAarray is applied to the current states of the nodes.\nIn addition to the parameters specified by a 3D node dictionary, this flag should also apply to any runtime parameters used by a conforming reader.\nDefault value: false"
+        "(Optional; PDF 1.7) Specifies whether nodes specified in the NA array is returned to their original states (as specified in the 3D artwork) before applying transformation matrices and opacity settings specified in the node dictionaries. If true, the artwork’s 3D node parameters is restored to their original states and then the dictionaries specified by the NA array is applied. If false, the dictionaries specified by the NA array is applied to the current states of the nodes.\nIn addition to the parameters specified by a 3D node dictionary, this flag should also apply to any runtime parameters used by a conforming reader.\nDefault value: false"
       ]
     ]
   }

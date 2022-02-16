@@ -30,7 +30,7 @@
       [
         "TR",
         "function or name",
-        "(Optional) A function object (see “Functions”) specifying the transfer function to be used in deriving the mask values. The function accepts one input, the computed group alpha or luminosity (depending on the value of the subtype S), and shall return one output, the resulting mask value. The input is in the range 0.0 to 1.0. The computed output is in the range 0.0 to 1.0; if it falls outside this range, it is forced to the nearest valid value. The name Identitymay be specified in place of a function object to designate the identity function. Default value: Identity."
+        "(Optional) A function object (see “Functions”) specifying the transfer function to be used in deriving the mask values. The function accepts one input, the computed group alpha or luminosity (depending on the value of the subtype S), and shall return one output, the resulting mask value. The input is in the range 0.0 to 1.0. The computed output is in the range 0.0 to 1.0; if it falls outside this range, it is forced to the nearest valid value. The name Identity may be specified in place of a function object to designate the identity function. Default value: Identity."
       ]
     ]
   }

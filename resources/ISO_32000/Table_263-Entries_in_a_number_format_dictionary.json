@@ -25,7 +25,7 @@
       [
         "F",
         "name",
-        "(Optional; meaningful only for the last dictionary in a number format array) A name indicating whether and in what manner to display a fractional value from the result of converting to the units of this dictionary by means of the Centry. Valid values is:\nDShow as decimal to the precision specified by the D entry.\nF Show as a fraction with denominator specified by the D entry.\nRNo fractional part; round to the nearest whole unit.\nTNo fractional part; truncate to achieve whole units.\nDefault value: D."
+        "(Optional; meaningful only for the last dictionary in a number format array) A name indicating whether and in what manner to display a fractional value from the result of converting to the units of this dictionary by means of the C entry. Valid values is:\nDShow as decimal to the precision specified by the D entry.\nF Show as a fraction with denominator specified by the D entry.\nRNo fractional part; round to the nearest whole unit.\nTNo fractional part; truncate to achieve whole units.\nDefault value: D."
       ],
       [
         "D",

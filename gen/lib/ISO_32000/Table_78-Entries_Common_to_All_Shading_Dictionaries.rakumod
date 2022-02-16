@@ -26,7 +26,7 @@ Table 78 – Entries Common to All Shading Dictionaries
 7 Tensor-product patch mesh
 
 =head2 ColorSpace [name or array]
-- (Required) The colour space in which colour values shall beexpressed. This may be any device, CIE-based, or special colour space except a Pattern space. See 8.7.4.4, "Colour Space: Special Considerations" for further information.
+- (Required) The colour space in which colour values is expressed. This may be any device, CIE-based, or special colour space except a Pattern space. See 8.7.4.4, "Colour Space: Special Considerations" for further information.
 
 =head2 Background [array]
 - (Optional) An array of colour components appropriate to the colour space, specifying a single background colour value. If present, this colour is used, before any painting operation involving the shading, to fill those portions of the area to be painted that lie outside the bounds of the shading object.

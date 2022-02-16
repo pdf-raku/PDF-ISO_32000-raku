@@ -15,7 +15,7 @@ Table 330 – Property list entries for artifacts
 =head1 Methods (Entries)
 
 =head2 Type [name]
-- (Optional) The type of artifact that this property list describes; if present, is one of the names Pagination, Layout, Page, or (PDF 1.7)Background.
+- (Optional) The type of artifact that this property list describes; if present, is one of the names Pagination, Layout, Page, or (PDF 1.7) Background.
 
 =head2 BBox [rectangle]
 - (Optional; required for background artifacts) An array of four numbers in default user space units giving the coordinates of the left, bottom, right, and top edges, respectively, of the artifact’s bounding box (the rectangle that completely encloses its visible extent).

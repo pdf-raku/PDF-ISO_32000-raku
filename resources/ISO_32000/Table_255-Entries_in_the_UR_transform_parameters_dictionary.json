@@ -25,7 +25,7 @@
       [
         "V",
         "name",
-        "(Optional) The UR transform parameters dictionary version. The value shall be2.2. If an unknown version is present, no rights is enabled.\nNOTE This value is a name object, not a number. Default value: 2.2."
+        "(Optional) The UR transform parameters dictionary version. The value is 2.2. If an unknown version is present, no rights is enabled.\nNOTE This value is a name object, not a number. Default value: 2.2."
       ],
       [
         "Annots",

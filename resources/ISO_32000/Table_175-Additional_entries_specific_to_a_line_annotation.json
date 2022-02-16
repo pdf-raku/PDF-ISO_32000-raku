@@ -25,7 +25,7 @@
       [
         "LE",
         "array",
-        "(Optional; PDF 1.4) An array of two names specifying the line ending styles that is used in drawing the line. The first and second elements of the array specifies the line ending styles for the endpoints defined, respectively, by the first and second pairs of coordinates, (x1 , y1)and (x2 , y2), in the L array. Table 176 shows the possible values. Default value: [ /None /None ]."
+        "(Optional; PDF 1.4) An array of two names specifying the line ending styles that is used in drawing the line. The first and second elements of the array specifies the line ending styles for the endpoints defined, respectively, by the first and second pairs of coordinates, (x1 , y1) and (x2 , y2), in the L array. Table 176 shows the possible values. Default value: [ /None /None ]."
       ],
       [
         "IC",
@@ -45,7 +45,7 @@
       [
         "Cap",
         "boolean",
-        "(Optional; PDF 1.6) If true, the text specified by the Contents or RCentries is replicated as a caption in the appearance of the line, as shown in Figure 61 and Figure 62. The text is rendered in a manner appropriate to the content, taking into account factors such as writing direction.\nDefault value: false."
+        "(Optional; PDF 1.6) If true, the text specified by the Contents or RC entries is replicated as a caption in the appearance of the line, as shown in Figure 61 and Figure 62. The text is rendered in a manner appropriate to the content, taking into account factors such as writing direction.\nDefault value: false."
       ],
       [
         "IT",

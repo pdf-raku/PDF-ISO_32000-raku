@@ -15,12 +15,12 @@
       [
         "tag properties",
         "DP",
-        "Designate a marked-content point with an associated property list. tagshall be a name object indicating the role or significance of the point. properties is either an inline dictionary containing the property list or a name object associated with it in the Properties subdictionary of the current resource dictionary (see 14.6.2, “Property Lists”)."
+        "Designate a marked-content point with an associated property list. tag is a name object indicating the role or significance of the point. properties is either an inline dictionary containing the property list or a name object associated with it in the Properties subdictionary of the current resource dictionary (see 14.6.2, “Property Lists”)."
       ],
       [
         "tag",
         "BMC",
-        "Begin a marked-content sequence terminated by a balancing EMCoperator. tag is a name object indicating the role or significance of the sequence."
+        "Begin a marked-content sequence terminated by a balancing EMC operator. tag is a name object indicating the role or significance of the sequence."
       ],
       [
         "tag properties",

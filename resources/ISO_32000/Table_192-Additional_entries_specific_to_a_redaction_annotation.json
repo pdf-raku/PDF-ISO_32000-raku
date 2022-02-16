@@ -10,7 +10,7 @@
       [
         "Subtype",
         "name",
-        "(Required) The type of annotation that this dictionary describes; shallbe Redact for a redaction annotation."
+        "(Required) The type of annotation that this dictionary describes; is Redact for a redaction annotation."
       ],
       [
         "QuadPoints",
@@ -20,12 +20,12 @@
       [
         "IC",
         "array",
-        "(Optional) An array of three numbers in the range 0.0 to 1.0 specifying the components, in the DeviceRGB colour space, of the interior colour with which to fill the redacted region after the affected content has been removed. If this entry is absent, the interior of the redaction region is left transparent. This entry is ignored if the ROentry is present."
+        "(Optional) An array of three numbers in the range 0.0 to 1.0 specifying the components, in the DeviceRGB colour space, of the interior colour with which to fill the redacted region after the affected content has been removed. If this entry is absent, the interior of the redaction region is left transparent. This entry is ignored if the RO entry is present."
       ],
       [
         "RO",
         "stream",
-        "(Optional) A form XObject specifying the overlay appearance for this redaction annotation. After this redaction is applied and the affected content has been removed, the overlay appearance is drawn such that its origin lines up with the lower-left corner of the annotation rectangle. This form XObject is not necessarily related to other annotation appearances, and may or may not be present in the APdictionary. This entry takes precedence over the IC, OverlayText, DA, and Q entries."
+        "(Optional) A form XObject specifying the overlay appearance for this redaction annotation. After this redaction is applied and the affected content has been removed, the overlay appearance is drawn such that its origin lines up with the lower-left corner of the annotation rectangle. This form XObject is not necessarily related to other annotation appearances, and may or may not be present in the AP dictionary. This entry takes precedence over the IC, OverlayText, DA, and Q entries."
       ],
       [
         "OverlayText",
@@ -45,7 +45,7 @@
       [
         "Q",
         "integer",
-        "(Optional) A code specifying the form of quadding (justification) to be used in laying out the overlay text:\n0 Left-justified\n1 Centered\n2 Right-justified\nThis entry is ignored if the RO entry is present. Default value: 0 (left-justified)."
+        "(Optional) A code specifying the form of quadding (justification) to be used in laying out the overlay text:\n0 Left-justified\n1 Centered\n2 Right-justified\nThis entry is ignored if the RO entry is present. Default value: 0 (left- justified)."
       ]
     ]
   }

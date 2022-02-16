@@ -17,7 +17,7 @@ Table 210 – Additional entries specific to a hide action
 - (Required) The type of action that this dictionary describes; is Hide for a hide action.
 
 =head2 T [dictionary, text string, or array]
-- (Required) The annotation or annotations to be hidden or shown, shall bespecified in any of the following forms:
+- (Required) The annotation or annotations to be hidden or shown, is specified in any of the following forms:
 An indirect reference to an annotation dictionary
 A text string giving the fully qualified field name of an interactive form field whose associated widget annotation or annotations are to be affected (see 12.7.3.2, “Field Names”)
 An array of such dictionaries or text strings

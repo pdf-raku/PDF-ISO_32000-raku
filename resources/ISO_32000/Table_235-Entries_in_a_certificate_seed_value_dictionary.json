@@ -45,7 +45,7 @@
       [
         "URL",
         "ASCII string",
-        "(Optional) A URL, the use for which is defined by the URLTypeentry."
+        "(Optional) A URL, the use for which is defined by the URLType entry."
       ],
       [
         "URLType",

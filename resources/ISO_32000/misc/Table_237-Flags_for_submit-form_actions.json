@@ -10,7 +10,7 @@
       [
         "1",
         "Include/Exclude",
-        "If clear, the Fields array (see Table 236) specifies which fields to include in the submission. (All descendants of the specified fields in the field hierarchy is submitted as well.)\nIf set, the Fields array tells which fields to exclude. All fields in the document’s interactive form is submitted exceptthose listed in the Fields array and those whose NoExport flag (see Table 221) is set and fields with no values if the IncludeNoValueFields flag is clear."
+        "If clear, the Fields array (see Table 236) specifies which fields to include in the submission. (All descendants of the specified fields in the field hierarchy is submitted as well.)\nIf set, the Fields array tells which fields to exclude. All fields in the document’s interactive form is submitted except those listed in the Fields array and those whose NoExport flag (see Table 221) is set and fields with no values if the IncludeNoValueFields flag is clear."
       ],
       [
         "2",
@@ -45,7 +45,7 @@
       [
         "8",
         "IncludeAnnotations",
-        "(PDF 1.4) is used only when the form is being submitted in Forms Data Format (that is, when both the XFDF and ExportFormat flags are clear). If set, the submitted FDF file includes includes all markup annotations in the underlying PDF document (see 12.5.6.2, “Markup Annotations”). If clear, markup annotations does not beincluded."
+        "(PDF 1.4) is used only when the form is being submitted in Forms Data Format (that is, when both the XFDF and ExportFormat flags are clear). If set, the submitted FDF file includes includes all markup annotations in the underlying PDF document (see 12.5.6.2, “Markup Annotations”). If clear, markup annotations is not included."
       ],
       [
         "9",

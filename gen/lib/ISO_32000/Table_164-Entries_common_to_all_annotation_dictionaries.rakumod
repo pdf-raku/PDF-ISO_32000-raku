@@ -58,9 +58,9 @@ This entry is present in screen annotations associated with rendition actions (P
 =head2 Border [array]
 - (Optional) An array specifying the characteristics of the annotation’s border, which is drawn as a rounded rectangle.
 (PDF 1.0) The array consists of three numbers defining the horizontal corner radius, vertical corner radius, and border width, all in default user space units. If the corner radii are 0, the border has square (not rounded) corners; if the border width is 0, no border is drawn.
-(PDF 1.1) The array may have a fourth element, an optional dash arraydefining a pattern of dashes and gaps that is used in drawing the border. The dash array is specified in the same format as in the line dash pattern parameter of the graphics state (see 8.4.3.6, “Line Dash Pattern”).
+(PDF 1.1) The array may have a fourth element, an optional dash array defining a pattern of dashes and gaps that is used in drawing the border. The dash array is specified in the same format as in the line dash pattern parameter of the graphics state (see 8.4.3.6, “Line Dash Pattern”).
 EXAMPLE A Border value of [ 0 0 1 [ 3 2 ] ] specifies a border 1 unit wide, with square corners, drawn with 3-unit dashes alternating with 2-unit gaps.
-NOTE(PDF 1.2) The dictionaries for some annotation types (such as free text and polygon annotations) can include the BSentry. That entry specifies a border style dictionary that has more settings than the array specified for the Border entry. If an annotation dictionary includes the BS entry, then the Border entry is ignored. Default value: [ 0 0 1 ].
+NOTE(PDF 1.2) The dictionaries for some annotation types (such as free text and polygon annotations) can include the BS entry. That entry specifies a border style dictionary that has more settings than the array specified for the Border entry. If an annotation dictionary includes the BS entry, then the Border entry is ignored. Default value: [ 0 0 1 ].
 
 =head2 C [array]
 - (Optional; PDF 1.1) An array of numbers in the range 0.0 to 1.0, representing a colour used for the following purposes:

@@ -35,7 +35,7 @@
       [
         "ByteRange",
         "array",
-        "(Required for all signatures that are part of a signature field and usage rights signatures referenced from the UR3 entry in the permissions dictionary) An array of pairs of integers (starting byte offset, length in bytes) that describes the exact byte range for the digest calculation. Multiple discontiguous byte ranges is used to describe a digest that does not include the signature value (theContents entry) itself."
+        "(Required for all signatures that are part of a signature field and usage rights signatures referenced from the UR3 entry in the permissions dictionary) An array of pairs of integers (starting byte offset, length in bytes) that describes the exact byte range for the digest calculation. Multiple discontiguous byte ranges is used to describe a digest that does not include the signature value (the Contents entry) itself."
       ],
       [
         "Reference",

@@ -35,7 +35,7 @@ If the LL entry is present, this value represents the endpoints of the leader li
 The annotation dictionary’s AP entry, if present, takes precedence over the L and BS entries; see Table 168 and 12.5.5, “Appearance Streams.”
 
 =head2 LE [array]
-- (Optional; PDF 1.4) An array of two names specifying the line ending styles that is used in drawing the line. The first and second elements of the array specifies the line ending styles for the endpoints defined, respectively, by the first and second pairs of coordinates, (x1 , y1)and (x2 , y2), in the L array. Table 176 shows the possible values. Default value: [ /None /None ].
+- (Optional; PDF 1.4) An array of two names specifying the line ending styles that is used in drawing the line. The first and second elements of the array specifies the line ending styles for the endpoints defined, respectively, by the first and second pairs of coordinates, (x1 , y1) and (x2 , y2), in the L array. Table 176 shows the possible values. Default value: [ /None /None ].
 
 =head2 IC [array]
 - (Optional; PDF 1.4) An array of numbers in the range 0.0 to 1.0 specifying the interior color that is used to fill the annotation’s line endings (see Table 176). The number of array elements determines the colour space in which the colour is defined:
@@ -53,7 +53,7 @@ Default value: 0 (no leader lines).
 Default value: 0 (no leader line extensions).
 
 =head2 Cap [boolean]
-- (Optional; PDF 1.6) If true, the text specified by the Contents or RCentries is replicated as a caption in the appearance of the line, as shown in Figure 61 and Figure 62. The text is rendered in a manner appropriate to the content, taking into account factors such as writing direction.
+- (Optional; PDF 1.6) If true, the text specified by the Contents or RC entries is replicated as a caption in the appearance of the line, as shown in Figure 61 and Figure 62. The text is rendered in a manner appropriate to the content, taking into account factors such as writing direction.
 Default value: false.
 
 =head2 IT [name]

@@ -20,7 +20,7 @@
       [
         "color space",
         "name or array",
-        "The current colour space in which colour values shall beinterpreted (see 8.6, \"Colour Spaces\"). There are two separate colour space parameters: one for stroking and one for all other painting operations. Initial value: DeviceGray."
+        "The current colour space in which colour values is interpreted (see 8.6, \"Colour Spaces\"). There are two separate colour space parameters: one for stroking and one for all other painting operations. Initial value: DeviceGray."
       ],
       [
         "color",

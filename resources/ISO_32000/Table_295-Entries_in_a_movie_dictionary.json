@@ -25,7 +25,7 @@
       [
         "Poster",
         "boolean or stream",
-        "(Optional) A flag or stream specifying whether and how a poster imagerepresenting the movie is displayed. If this value is a stream, it contains an image XObject (see 8.9, “Images”) to be displayed as the poster. If it is the boolean value true, the poster image is retrieved from the movie file; if it is false, no poster is displayed. Default value: false."
+        "(Optional) A flag or stream specifying whether and how a poster image representing the movie is displayed. If this value is a stream, it contains an image XObject (see 8.9, “Images”) to be displayed as the poster. If it is the boolean value true, the poster image is retrieved from the movie file; if it is false, no poster is displayed. Default value: false."
       ]
     ]
   }

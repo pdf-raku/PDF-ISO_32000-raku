@@ -40,7 +40,7 @@
       [
         "CreationDate",
         "date",
-        "(Optional) The date and time the document was created, in human-readable form (see 7.9.4, “Dates”)."
+        "(Optional) The date and time the document was created, in human- readable form (see 7.9.4, “Dates”)."
       ],
       [
         "ModDate",

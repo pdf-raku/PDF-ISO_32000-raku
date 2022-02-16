@@ -10,7 +10,7 @@
       [
         "RowSpan",
         "integer",
-        "(Optional; not inheritable) The number of rows in the enclosing table that is spanned by the cell. The cell shall expand by adding rows in the block-progression direction specified by the table’s WritingModeattribute. If this entry is absent, a conforming reader assumes a value of 1.\nThis entry is only be used when the table cell has a structure type of TH or TD or one that is role mapped to structure type TH or TD (see Table 337)."
+        "(Optional; not inheritable) The number of rows in the enclosing table that is spanned by the cell. The cell shall expand by adding rows in the block-progression direction specified by the table’s WritingMode attribute. If this entry is absent, a conforming reader assumes a value of 1.\nThis entry is only be used when the table cell has a structure type of TH or TD or one that is role mapped to structure type TH or TD (see Table 337)."
       ],
       [
         "ColSpan",
@@ -20,7 +20,7 @@
       [
         "Headers",
         "array",
-        "(Optional; not inheritable; PDF 1.5) An array of byte strings, where each string is the element identifier (see the ID entry in Table 323) for a TH structure element that is used as a header associated with this cell.\nThis attribute may apply to header cells (TH) as well as data cells (TD) (see Table 337). Therefore, the headers associated with any cell is those in its Headers array plus those in the Headers array of any THcells in that array, and so on recursively."
+        "(Optional; not inheritable; PDF 1.5) An array of byte strings, where each string is the element identifier (see the ID entry in Table 323) for a TH structure element that is used as a header associated with this cell.\nThis attribute may apply to header cells (TH) as well as data cells (TD) (see Table 337). Therefore, the headers associated with any cell is those in its Headers array plus those in the Headers array of any TH cells in that array, and so on recursively."
       ],
       [
         "Scope",

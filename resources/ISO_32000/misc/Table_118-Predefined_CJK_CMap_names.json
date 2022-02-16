@@ -194,7 +194,7 @@
       ],
       [
         "UniJIS-UCS2-HW-H",
-        "Same as UniJIS-UCS2-H but replaces proportional Latin characters with half-width forms"
+        "Same as UniJIS-UCS2-H but replaces proportional Latin characters with half- width forms"
       ],
       [
         "UniJIS-UCS2-HW-V",
@@ -230,7 +230,7 @@
       ],
       [
         "KSCms-UHC-HW-H",
-        "Same as KSCms-UHC-H but replaces proportional Latin characters with half-width forms"
+        "Same as KSCms-UHC-H but replaces proportional Latin characters with half- width forms"
       ],
       [
         "KSCms-UHC-HW-V",

@@ -33,7 +33,7 @@
         "(Optional) An array of 2 × n numbers specifying the linear mapping of sample values into the range appropriate for the function’s output values. Default value: same as the value of Range."
       ],
       [
-        "other streamattributes",
+        "other stream attributes",
         "(various)",
         "(Optional) Other attributes of the stream that provides the sample values, as appropriate (see Table 5)."
       ]

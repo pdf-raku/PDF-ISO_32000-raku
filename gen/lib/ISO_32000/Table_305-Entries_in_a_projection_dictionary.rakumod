@@ -19,13 +19,13 @@ Table 305 – Entries in a projection dictionary
 =head1 Methods (Entries)
 
 =head2 Subtype [name]
-- (Required) The type of projection. Valid values is O (orthographic) or P(perspective).
+- (Required) The type of projection. Valid values is O (orthographic) or P (perspective).
 
 =head2 CS [name]
-- (Optional) The clipping style. Valid values is XNF (explicit near/far) or ANF(automatic near/far). Default value: ANF.
+- (Optional) The clipping style. Valid values is XNF (explicit near/far) or ANF (automatic near/far). Default value: ANF.
 
 =head2 F [number]
-- (Optional; meaningful only if the value of CS is XNF) The far clipping distance, expressed in the camera coordinate system. No parts of objects whose zcoordinates are greater than the value of this entry are drawn. If this entry is absent, no far clipping occurs.
+- (Optional; meaningful only if the value of CS is XNF) The far clipping distance, expressed in the camera coordinate system. No parts of objects whose z coordinates are greater than the value of this entry are drawn. If this entry is absent, no far clipping occurs.
 
 =head2 N [number]
 - (Meaningful only if the value of CS is XNF; required if the value of Subtype is P) The near clipping distance, expressed in the camera coordinate system. No parts of objects whose z coordinates are less than the value of this entry are drawn. If Subtype is P, the value is positive; if Subtype is O, the value is non-negative, and the default value is 0.

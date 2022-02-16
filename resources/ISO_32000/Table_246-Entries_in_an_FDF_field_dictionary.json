@@ -25,7 +25,7 @@
       [
         "Ff",
         "integer",
-        "(Optional) A set of flags specifying various characteristics of the field (see Table 221, Table 226, Table 228, and Table 230). When imported into an interactive form, the value of this entry replaces that of the Ff entry in the form’s corresponding field dictionary. If this field is present, the SetFf and ClrFfentries, if any, is ignored."
+        "(Optional) A set of flags specifying various characteristics of the field (see Table 221, Table 226, Table 228, and Table 230). When imported into an interactive form, the value of this entry replaces that of the Ff entry in the form’s corresponding field dictionary. If this field is present, the SetFf and ClrFf entries, if any, is ignored."
       ],
       [
         "SetFf",
@@ -40,12 +40,12 @@
       [
         "F",
         "integer",
-        "(Optional) A set of flags specifying various characteristics of the field’s widget annotation (see 12.5.3, “Annotation Flags”). When imported into an interactive form, the value of this entry replaces that of the F entry in the form’s corresponding annotation dictionary. If this field is present, the SetF and ClrFentries, if any, is ignored."
+        "(Optional) A set of flags specifying various characteristics of the field’s widget annotation (see 12.5.3, “Annotation Flags”). When imported into an interactive form, the value of this entry replaces that of the F entry in the form’s corresponding annotation dictionary. If this field is present, the SetF and ClrF entries, if any, is ignored."
       ],
       [
         "SetF",
         "integer",
-        "(Optional) A set of flags to be set (turned on) in the F entry of the form’s corresponding widget annotation dictionary. Bits equal to 1 in SetF causes the corresponding bits in F to be set to 1. This entry is ignored if an Fentry is present in the FDF field dictionary."
+        "(Optional) A set of flags to be set (turned on) in the F entry of the form’s corresponding widget annotation dictionary. Bits equal to 1 in SetF causes the corresponding bits in F to be set to 1. This entry is ignored if an F entry is present in the FDF field dictionary."
       ],
       [
         "ClrF",

@@ -33,7 +33,7 @@ Table 52 – Device-Independent Graphics State Parameters
 - The current clipping path, which defines the boundary against which all output is cropped (see 8.5.4, "Clipping Path Operators"). Initial value: the boundary of the entire imageable portion of the output page.
 
 =head2 colorSpace [name or array]
-- The current colour space in which colour values shall beinterpreted (see 8.6, "Colour Spaces"). There are two separate colour space parameters: one for stroking and one for all other painting operations. Initial value: DeviceGray.
+- The current colour space in which colour values is interpreted (see 8.6, "Colour Spaces"). There are two separate colour space parameters: one for stroking and one for all other painting operations. Initial value: DeviceGray.
 
 =head2 color [(various)]
 - The current colour to be used during painting operations (see 8.6, "Colour Spaces"). The type and interpretation of this parameter depend on the current colour space; for most colour spaces, a colour value consists of one to four numbers. There are two separate colour parameters: one for stroking and one for all other painting operations. Initial value: black.

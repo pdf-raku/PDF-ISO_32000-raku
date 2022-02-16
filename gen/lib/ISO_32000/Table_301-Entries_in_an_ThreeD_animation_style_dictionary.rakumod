@@ -18,7 +18,7 @@ Table 301 – Entries in an 3D animation style dictionary
 - (Optional). The type of PDF object that this dictionary describes; if present, is 3DAnimationStyle.
 
 =head2 Subtype [name]
-- (Optional) The animation style described by this dictionary; see Table 302for valid values. If an animation style is encountered other than those described in Table 302, an animation style of None is used.
+- (Optional) The animation style described by this dictionary; see Table 302 for valid values. If an animation style is encountered other than those described in Table 302, an animation style of None is used.
 Default value: None
 
 =head2 PC [integer]

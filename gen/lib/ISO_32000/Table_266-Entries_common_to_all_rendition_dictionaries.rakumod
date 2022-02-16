@@ -19,7 +19,7 @@ Table 266 – Entries common to all rendition dictionaries
 - (Optional) The type of PDF object that dictionary describes; if present, is Rendition for a rendition object.
 
 =head2 S [name]
-- (Required) The type of rendition that this dictionary describes. May be MRfor media rendition or SR for selector rendition. The rendition is considered non-viable if the conforming reader does not recognize the value of this entry.
+- (Required) The type of rendition that this dictionary describes. May be MR for media rendition or SR for selector rendition. The rendition is considered non-viable if the conforming reader does not recognize the value of this entry.
 
 =head2 N [text string]
 - (Optional) A Unicode-encoded text string specifying the name of the rendition for use in a user interface and for name tree lookup by JavaScript actions.

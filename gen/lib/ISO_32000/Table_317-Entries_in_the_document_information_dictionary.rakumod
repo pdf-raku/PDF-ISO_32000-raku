@@ -38,7 +38,7 @@ Table 317 – Entries in the document information dictionary
 - (Optional) If the document was converted to PDF from another format, the name of the conforming product that converted it to PDF.
 
 =head2 CreationDate [date]
-- (Optional) The date and time the document was created, in human-readable form (see 7.9.4, “Dates”).
+- (Optional) The date and time the document was created, in human- readable form (see 7.9.4, “Dates”).
 
 =head2 ModDate [date]
 - (Required if PieceInfo is present in the document catalogue; otherwise optional; PDF 1.1) The date and time the document was most recently modified, in human-readable form (see 7.9.4, “Dates”).

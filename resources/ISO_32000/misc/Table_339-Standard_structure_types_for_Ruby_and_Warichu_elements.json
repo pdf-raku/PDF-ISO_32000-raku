@@ -12,7 +12,7 @@
       ],
       [
         "RB",
-        "(Ruby base text) The full-size text to which the ruby annotation is applied. RB may contain text, other inline elements, or a mixture of both. It may have the RubyAlignattribute."
+        "(Ruby base text) The full-size text to which the ruby annotation is applied. RB may contain text, other inline elements, or a mixture of both. It may have the RubyAlign attribute."
       ],
       [
         "RT",

@@ -30,7 +30,7 @@ Table 95 – Additional Entries Specific to a Type 1 Form Dictionary
 - (Optional) The type of PDF object that this dictionary describes; if present, is XObject for a form XObject.
 
 =head2 Subtype [name]
-- (Required) The type of XObject that this dictionary describes; shall beForm for a form XObject.
+- (Required) The type of XObject that this dictionary describes; is Form for a form XObject.
 
 =head2 FormType [integer]
 - (Optional) A code identifying the type of form XObject that this dictionary describes. The only valid value is 1. Default value: 1.
@@ -63,11 +63,11 @@ If a Ref entry (see below) is present, the group attributes shall also apply to 
 - (Required if PieceInfo is present; optional otherwise; PDF 1.3) The date and time (see 7.9.4, "Dates") when the form XObject’s contents were most recently modified. If a page-piece dictionary (PieceInfo) is present, the modification date is used to ascertain which of the application data dictionaries it contains correspond to the current content of the form (see 14.5, "Page-Piece Dictionaries").
 
 =head2 StructParent [integer]
-- (Required if the form XObject is a structural content item; PDF 1.3)The integer key of the form XObject’s entry in the structural parent tree (see 14.7.4.4, "Finding Structure Elements from Content Items").
+- (Required if the form XObject is a structural content item; PDF 1.3) The integer key of the form XObject’s entry in the structural parent tree (see 14.7.4.4, "Finding Structure Elements from Content Items").
 
 =head2 StructParents [integer]
 - (Required if the form XObject contains marked-content sequences that are structural content items; PDF 1.3) The integer key of the form XObject’s entry in the structural parent tree (see 14.7.4.4, "Finding Structure Elements from Content Items").
-At most one of the entries StructParent or StructParents shall bepresent. A form XObject is either a content item in its entirety or a container for marked-content sequences that are content items, but not both.
+At most one of the entries StructParent or StructParents is present. A form XObject is either a content item in its entirety or a container for marked-content sequences that are content items, but not both.
 
 =head2 OPI [dictionary]
 - (Optional; PDF 1.2) An OPI version dictionary for the form XObject (see 14.11.7, "Open Prepress Interface (OPI)").

@@ -10,7 +10,7 @@
       [
         "Pages",
         "array",
-        "(Required) An array of indirect references to page objects representing separations of the same document page. One of the page objects in the array is the one with which this separation dictionary is associated, and all of them has separation dictionaries (SeparationInfoentries) containing Pages arrays identical to this one."
+        "(Required) An array of indirect references to page objects representing separations of the same document page. One of the page objects in the array is the one with which this separation dictionary is associated, and all of them has separation dictionaries (SeparationInfo entries) containing Pages arrays identical to this one."
       ],
       [
         "DeviceColorant",

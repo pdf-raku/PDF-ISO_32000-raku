@@ -1,4 +1,4 @@
-{{$NEXT}}
+0.0.10
   - Added new PDF::Tags::Reader dependency. regenerated.
 
 0.0.9

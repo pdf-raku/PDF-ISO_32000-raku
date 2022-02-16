@@ -32,7 +32,7 @@ Table 304 – Entries in a 3D view dictionary
 - (Required) The external name of the view, suitable for presentation in a user interface.
 
 =head2 IN [text string]
-- (Optional) The internal name of the view, used to refer to the view from other objects, such as the go-to-3D-view action (see 12.6.4.15, “Go-To-3D-View Actions”).
+- (Optional) The internal name of the view, used to refer to the view from other objects, such as the go-to-3D-view action (see 12.6.4.15, “Go-To- 3D-View Actions”).
 
 =head2 MS [name]
 - (Optional) A name specifying how the 3D camera-to-world transformation matrix is determined. The following values are valid:
@@ -75,7 +75,7 @@ Default value: a projection dictionary where the value of Subtype is Perspective
 If a node dictionary is present more than once, only the last such dictionary (using a depth-first traversal) is used.
 
 =head2 NR [boolean]
-- (Optional; PDF 1.7) Specifies whether nodes specified in the NA array is returned to their original states (as specified in the 3D artwork) before applying transformation matrices and opacity settings specified in the node dictionaries. If true, the artwork’s 3D node parameters is restored to their original states and then the dictionaries specified by the NA array is applied. If false, the dictionaries specified by the NAarray is applied to the current states of the nodes.
+- (Optional; PDF 1.7) Specifies whether nodes specified in the NA array is returned to their original states (as specified in the 3D artwork) before applying transformation matrices and opacity settings specified in the node dictionaries. If true, the artwork’s 3D node parameters is restored to their original states and then the dictionaries specified by the NA array is applied. If false, the dictionaries specified by the NA array is applied to the current states of the nodes.
 In addition to the parameters specified by a 3D node dictionary, this flag should also apply to any runtime parameters used by a conforming reader.
 Default value: false
 

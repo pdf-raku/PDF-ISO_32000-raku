@@ -25,7 +25,7 @@ Table 178 – Additional entries specific to a polygon or polyline annotation
 - (Required) An array of numbers (see Table 174) specifying the width and dash pattern that represents the alternating horizontal and vertical coordinates, respectively, of each vertex, in default user space.
 
 =head2 LE [array]
-- (Optional; meaningful only for polyline annotations) An array of two names that specifies the line ending styles. The first and second elements of the array specifies the line ending styles for the endpoints defined, respectively, by the first and last pairs of coordinates in the Vertices array. Table 176 shows the possible values. Default value: [ /None /None ].
+- (Optional; meaningful only for polyline annotations) An array of two names that specifies the line ending styles. The first and second elements of the array specifies the line ending styles for the endpoints defined, respectively, by the first and last pairs of coordinates in the Vertices array. Table 176 shows the possible values. Default value: [ / None /None ].
 
 =head2 BS [dictionary]
 - (Optional) A border style dictionary (see Table 166) specifying the width and dash pattern that is used in drawing the line.
@@ -42,7 +42,7 @@ The annotation dictionary’s AP entry, if present, takes precedence over the Ve
 - (Optional; meaningful only for polygon annotations) A border effect dictionary that describes an effect applied to the border described by the BS entry (see Table 167).
 
 =head2 IT [name]
-- (Optional; PDF 1.6) A name that describes the intent of the polygon or polyline annotation (see also Table 170). The following values shall bevalid:
+- (Optional; PDF 1.6) A name that describes the intent of the polygon or polyline annotation (see also Table 170). The following values is valid:
 PolygonCloudThe annotation is intended to function as a cloud object.
 PolyLineDimension(PDF 1.7) The polyline annotation is intended to function as a dimension.
 PolygonDimension(PDF 1.7) The polygon annotation is intended to function as a dimension.

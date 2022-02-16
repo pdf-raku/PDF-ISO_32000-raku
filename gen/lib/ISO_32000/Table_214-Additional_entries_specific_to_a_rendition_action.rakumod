@@ -16,7 +16,7 @@ Table 214 – Additional entries specific to a rendition action
 =head1 Methods (Entries)
 
 =head2 S [name]
-- (Required) The type of action that this dictionary describes; is Renditionfor a rendition action.
+- (Required) The type of action that this dictionary describes; is Rendition for a rendition action.
 
 =head2 R [dictionary]
 - (Required when OP is present with a value of 0 or 4; otherwise optional) A rendition object (see 13.2.3, “Renditions”).

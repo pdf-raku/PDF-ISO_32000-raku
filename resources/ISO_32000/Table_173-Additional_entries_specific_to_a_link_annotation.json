@@ -30,12 +30,12 @@
       [
         "PA",
         "dictionary",
-        "(Optional; PDF 1.3) A URI action (see 12.6.4.7, “URI Actions”) formerly associated with this annotation. When Web Capture (14.10, “ Web Capture”) changes an annotation from a URI to a go-to action (12.6.4.2, “Go-To Actions”), it uses this entry to save the data from the original URI action so that it can be changed back in case the target page for the go-to action is subsequently deleted."
+        "(Optional; PDF 1.3) A URI action (see 12.6.4.7, “URI Actions”) formerly associated with this annotation. When Web Capture (14.10, “ Web Capture”) changes an annotation from a URI to a go-to action (12.6.4.2, “Go-To Actions”), it uses this entry to save the data from the original URI action so that it can be changed back in case the target page for the go- to action is subsequently deleted."
       ],
       [
         "QuadPoints",
         "array",
-        "(Optional; PDF 1.6) An array of 8 × n numbers specifying the coordinates of n quadrilaterals in default user space that comprise the region in which the link is activated. The coordinates for each quadrilateral are given in the order\nx1 y1 x2 y2 x3 y3 x4 y4\nspecifying the four vertices of the quadrilateral in counterclockwise order. For orientation purposes, such as when applying an underline border style, the bottom of a quadrilateral is the line formed by (x1 , y1)and (x2 , y2).\nIf this entry is not present or the conforming reader does not recognize it, the region specified by the Rect entry is used. QuadPointsshall be ignored if any coordinate in the array lies outside the region specified by Rect."
+        "(Optional; PDF 1.6) An array of 8 × n numbers specifying the coordinates of n quadrilaterals in default user space that comprise the region in which the link is activated. The coordinates for each quadrilateral are given in the order\nx1 y1 x2 y2 x3 y3 x4 y4\nspecifying the four vertices of the quadrilateral in counterclockwise order. For orientation purposes, such as when applying an underline border style, the bottom of a quadrilateral is the line formed by (x1 , y1) and (x2 , y2).\nIf this entry is not present or the conforming reader does not recognize it, the region specified by the Rect entry is used. QuadPoints is ignored if any coordinate in the array lies outside the region specified by Rect."
       ],
       [
         "BS",

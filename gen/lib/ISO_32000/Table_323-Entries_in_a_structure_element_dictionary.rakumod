@@ -42,8 +42,8 @@ Table 323 – Entries in a structure element dictionary
 =head2 K [(various)]
 - (Optional) The children of this structure element. The value of this entry may be one of the following objects or an array consisting of one or more of the following objects:
 • A structure element dictionary denoting another structure element
-• An integer marked-content identifier denoting a marked-content sequence
-• A marked-content reference dictionary denoting a marked-content sequence
+• An integer marked-content identifier denoting a marked- content sequence
+• A marked-content reference dictionary denoting a marked- content sequence
 •An object reference dictionary denoting a PDF object Each of these objects other than the first (structure element dictionary) is considered to be a content item; see 14.7.4, “Structure Content” for further discussion of each of these forms of representation. If the value of K is a dictionary containing no Type entry, it is assumed to be a structure element dictionary.
 
 =head2 A [(various)]

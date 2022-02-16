@@ -19,11 +19,11 @@ Table 162 – Entries in a transition dictionary
 =head1 Methods (Entries)
 
 =head2 Type [name]
-- (Optional) The type of PDF object that this dictionary describes; if present, shallbe Trans for a transition dictionary.
+- (Optional) The type of PDF object that this dictionary describes; if present, is Trans for a transition dictionary.
 
 =head2 S [name]
 - (Optional) The transition style that is used when moving to this page from another during a presentation. Default value: R.
-Split Two lines sweep across the screen, revealing the new page. The lines may be either horizontal or vertical and may move inward from the edges of the page or outward from the center, as specified by the Dmand M entries, respectively.
+Split Two lines sweep across the screen, revealing the new page. The lines may be either horizontal or vertical and may move inward from the edges of the page or outward from the center, as specified by the Dm and M entries, respectively.
 Blinds Multiple lines, evenly spaced across the screen, synchronously sweep in the same direction to reveal the new page. The lines may be either horizontal or vertical, as specified by the Dm entry. Horizontal lines move downward; vertical lines move to the right.
 Box A rectangular box sweeps inward from the edges of the page or outward from the center, as specified by the M entry, revealing the new page.
 Wipe A single line sweeps across the screen from one edge to the other in the direction specified by the Di entry, revealing the new page.
@@ -48,7 +48,7 @@ O Outward from the center of the page
 Default value: I.
 
 =head2 Di [number or name]
-- (Optional; Wipe, Glitter, Fly, Cover, Uncover and Push transition styles only)The direction in which the specified transition effect shall moves, expressed in degrees counterclockwise starting from a left-to-right direction. (This differs from the page object’s Rotate entry, which is measured clockwise from the top.)
+- (Optional; Wipe, Glitter, Fly, Cover, Uncover and Push transition styles only) The direction in which the specified transition effect shall moves, expressed in degrees counterclockwise starting from a left-to-right direction. (This differs from the page object’s Rotate entry, which is measured clockwise from the top.)
 If the value is a number, it is one of:
 0 Left to right
 90 Bottom to top (Wipe only)

@@ -15,7 +15,7 @@
       [
         "Subtype",
         "name",
-        "(Required) The type of XObject that this dictionary describes; shall beForm for a form XObject."
+        "(Required) The type of XObject that this dictionary describes; is Form for a form XObject."
       ],
       [
         "FormType",
@@ -65,12 +65,12 @@
       [
         "StructParent",
         "integer",
-        "(Required if the form XObject is a structural content item; PDF 1.3)The integer key of the form XObject’s entry in the structural parent tree (see 14.7.4.4, \"Finding Structure Elements from Content Items\")."
+        "(Required if the form XObject is a structural content item; PDF 1.3) The integer key of the form XObject’s entry in the structural parent tree (see 14.7.4.4, \"Finding Structure Elements from Content Items\")."
       ],
       [
         "StructParents",
         "integer",
-        "(Required if the form XObject contains marked-content sequences that are structural content items; PDF 1.3) The integer key of the form XObject’s entry in the structural parent tree (see 14.7.4.4, \"Finding Structure Elements from Content Items\").\nAt most one of the entries StructParent or StructParents shall bepresent. A form XObject is either a content item in its entirety or a container for marked-content sequences that are content items, but not both."
+        "(Required if the form XObject contains marked-content sequences that are structural content items; PDF 1.3) The integer key of the form XObject’s entry in the structural parent tree (see 14.7.4.4, \"Finding Structure Elements from Content Items\").\nAt most one of the entries StructParent or StructParents is present. A form XObject is either a content item in its entirety or a container for marked-content sequences that are content items, but not both."
       ],
       [
         "OPI",

@@ -20,7 +20,7 @@
       ],
       [
         "TransparentWireframe",
-        "Displays textured and lit geometric shapes (triangles) with an added level of transparency, with single colour opaque edges on top of it. The colour of these edges is determined by the ACentry."
+        "Displays textured and lit geometric shapes (triangles) with an added level of transparency, with single colour opaque edges on top of it. The colour of these edges is determined by the AC entry."
       ],
       [
         "BoundingBox",
@@ -56,7 +56,7 @@
       ],
       [
         "Illustration",
-        "Displays silhouette edges with surfaces, removes obscured lines. The colour of these edges is determined by the AC entry, and the colour of the surfaces is determined by the FCentry."
+        "Displays silhouette edges with surfaces, removes obscured lines. The colour of these edges is determined by the AC entry, and the colour of the surfaces is determined by the FC entry."
       ],
       [
         "SolidOutline",

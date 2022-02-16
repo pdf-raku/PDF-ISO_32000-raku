@@ -55,7 +55,7 @@ This array may contain self-signed certificates.
 EXAMPLE 2 An example of such a string is: (2.16.840.1.113733.1.7.1.1). This field is only be used if the value of Issuer is not empty. The certificate policies extension is described in RFC 3280 (see the Bibliography). The value of the corresponding flag in the Ff entry indicates whether this is a required constraint.
 
 =head2 URL [ASCII string]
-- (Optional) A URL, the use for which is defined by the URLTypeentry.
+- (Optional) A URL, the use for which is defined by the URLType entry.
 
 =head2 URLType [Name]
 - (Optional; PDF 1.7) A name indicating the usage of the URL entry. There are standard uses and there can be implementation-specific uses for this URL. The following value specifies a valid standard usage:

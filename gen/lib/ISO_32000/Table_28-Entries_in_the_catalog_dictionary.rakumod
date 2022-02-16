@@ -68,8 +68,8 @@ The value of this entry is a name object, not a number, and therefore is precede
 - (Optional) A name object specifying the page layout is used when the document is opened:
 SinglePageDisplay one page at a time
 OneColumnDisplay the pages in one column
-TwoColumnLeftDisplay the pages in two columns, with odd-numbered pages on the left
-TwoColumnRightDisplay the pages in two columns, with odd-numbered pages on the right
+TwoColumnLeftDisplay the pages in two columns, with odd- numbered pages on the left
+TwoColumnRightDisplay the pages in two columns, with odd- numbered pages on the right
 TwoPageLeft(PDF 1.5) Display the pages two at a time, with odd-numbered pages on the left
 TwoPageRight(PDF 1.5) Display the pages two at a time, with odd-numbered pages on the right
 Default value: SinglePage.
@@ -94,7 +94,7 @@ Default value: UseNone.
 - (Optional; PDF 1.1) A value specifying a destination that is displayed or an action that is performed when the document is opened. The value is either an array defining a destination (see 12.3.2, "Destinations") or an action dictionary representing an action (12.6, "Actions"). If this entry is absent, the document is opened to the top of the first page at the default magnification factor.
 
 =head2 AA [dictionary]
-- (Optional; PDF 1.4) An additional-actions dictionary defining the actions that is taken in response to various trigger eventsaffecting the document as a whole (see 12.6.3, "Trigger Events").
+- (Optional; PDF 1.4) An additional-actions dictionary defining the actions that is taken in response to various trigger events affecting the document as a whole (see 12.6.3, "Trigger Events").
 
 =head2 URI [dictionary]
 - (Optional; PDF 1.1) A URI dictionary containing document-level information for URI (uniform resource identifier) actions (see 12.6.4.7, "URI Actions").
@@ -140,7 +140,7 @@ Default value: UseNone.
 
 =head2 NeedsRendering [boolean]
 - (Optional; PDF 1.7) A flag used to expedite the display of PDF documents containing XFA forms. It specifies whether the document is regenerated when the document is first opened.
-See the XML Forms Architecture (XFA) Specification(Bibliography).
+See the XML Forms Architecture (XFA) Specification (Bibliography).
 Default value: false.
 
 =end pod

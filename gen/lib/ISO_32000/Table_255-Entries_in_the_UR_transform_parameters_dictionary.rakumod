@@ -31,7 +31,7 @@ If the P entry in the UR transform parameters dictionary is true (PDF 1.6) and g
 - (Optional) A text string that may be used to specify any arbitrary information, such as the reason for adding usage rights to the document.
 
 =head2 V [name]
-- (Optional) The UR transform parameters dictionary version. The value shall be2.2. If an unknown version is present, no rights is enabled.
+- (Optional) The UR transform parameters dictionary version. The value is 2.2. If an unknown version is present, no rights is enabled.
 NOTE This value is a name object, not a number. Default value: 2.2.
 
 =head2 Annots [array]

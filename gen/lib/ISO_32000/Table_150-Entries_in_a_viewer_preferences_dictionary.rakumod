@@ -60,7 +60,7 @@ R2L Right to left (including vertical writing systems, such as Chinese, Japanese
 This entry has no direct effect on the document’s contents or page numbering but may be used to determine the relative positioning of pages when displayed side by side or printed n-up. Default value: L2R.
 
 =head2 ViewArea [name]
-- (Optional; PDF 1.4) The name of the page boundary representing the area of a page that is displayed when viewing the document on the screen. The value is the key designating the relevant page boundary in the page object (see 7.7.3, “Page Tree”and 14.11.2, “Page Boundaries”). If the specified page boundary is not defined in the page object, its default value is used, as specified in Table 30. Default value: CropBox.
+- (Optional; PDF 1.4) The name of the page boundary representing the area of a page that is displayed when viewing the document on the screen. The value is the key designating the relevant page boundary in the page object (see 7.7.3, “Page Tree” and 14.11.2, “Page Boundaries”). If the specified page boundary is not defined in the page object, its default value is used, as specified in Table 30. Default value: CropBox.
 This entry is intended primarily for use by prepress applications that interpret or manipulate the page boundaries as described in 14.11.2, “Page Boundaries.”
 NOTE 1 Most conforming readers disregard it.
 

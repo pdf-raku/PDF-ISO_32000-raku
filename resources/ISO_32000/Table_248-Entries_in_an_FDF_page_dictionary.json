@@ -15,7 +15,7 @@
       [
         "Info",
         "dictionary",
-        "(Optional) An FDF page information dictionary that shall containadditional information about the page."
+        "(Optional) An FDF page information dictionary that contains additional information about the page."
       ]
     ]
   }

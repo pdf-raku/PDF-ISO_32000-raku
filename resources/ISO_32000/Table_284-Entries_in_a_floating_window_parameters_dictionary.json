@@ -20,7 +20,7 @@
       [
         "RT",
         "integer",
-        "(Optional) The window relative to which the floating window is positioned:\n0 The document window\n1 The application window\n2 The full virtual desktop\n3 The monitor specified by M in the media screen parameters MH or BEdictionary (see 9.22)\nDefault value: 0."
+        "(Optional) The window relative to which the floating window is positioned:\n0 The document window\n1 The application window\n2 The full virtual desktop\n3 The monitor specified by M in the media screen parameters MH or BE dictionary (see 9.22)\nDefault value: 0."
       ],
       [
         "P",

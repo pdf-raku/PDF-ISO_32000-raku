@@ -10,7 +10,7 @@
       [
         "S",
         "name",
-        "(Required) The type of action that this dictionary describes; is Moviefor a movie action."
+        "(Required) The type of action that this dictionary describes; is Movie for a movie action."
       ],
       [
         "Annotation",
@@ -20,7 +20,7 @@
       [
         "T",
         "text string",
-        "(Optional) The title of a movie annotation identifying the movie that shall beplayed.\nThe dictionary includes either an Annotation or a T entry but not both."
+        "(Optional) The title of a movie annotation identifying the movie that is played.\nThe dictionary includes either an Annotation or a T entry but not both."
       ],
       [
         "Operation",

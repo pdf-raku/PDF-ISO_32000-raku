@@ -13,7 +13,7 @@ Table 215 – Additional entries specific to a transition action
 =head1 Methods (Entries)
 
 =head2 S [name]
-- (Required) The type of action that this dictionary describes; is Transfor a transition action.
+- (Required) The type of action that this dictionary describes; is Trans for a transition action.
 
 =head2 Trans [dictionary]
 - (Required) The transition to use for the update of the display (see Table 162).

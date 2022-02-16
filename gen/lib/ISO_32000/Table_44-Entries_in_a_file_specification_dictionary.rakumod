@@ -53,11 +53,11 @@ This entry is obsolescent and is not used by conforming writers.
 NOTE The use of this entry improves an application’s chances of finding the intended file and allows it to warn the user if the file has changed since the link was made.
 
 =head2 V [boolean]
-- (Optional; PDF 1.2) A flag indicating whether the file referenced by the file specification is volatile (changes frequently with time). If the value is true, applications does not cache a copy of the file. For example, a movie annotation referencing a URL to a live video camera could set this flag to trueto notify the conforming reader that it should re-acquire the movie each time it is played. Default value: false.
+- (Optional; PDF 1.2) A flag indicating whether the file referenced by the file specification is volatile (changes frequently with time). If the value is true, applications does not cache a copy of the file. For example, a movie annotation referencing a URL to a live video camera could set this flag to true to notify the conforming reader that it should re-acquire the movie each time it is played. Default value: false.
 
 =head2 EF [dictionary]
 - (Required if RF is present; PDF 1.3; amended to include the UF key in PDF 1.7) A dictionary containing a subset of the keys F, UF, DOS, Mac, and Unix, corresponding to the entries by those names in the file specification dictionary. The value of each such key is an embedded file stream (see 7.11.4, "Embedded File Streams") containing the corresponding file. If this entry is present, the Type entry is required and the file specification dictionary is indirectly referenced.
-The F and UF entries is used in place of the DOS, Mac, or Unixentries.
+The F and UF entries is used in place of the DOS, Mac, or Unix entries.
 
 =head2 RF [dictionary]
 - (Optional; PDF 1.3) A dictionary with the same structure as the EF dictionary, which is present. Each key in the RF dictionary is also present in the EF dictionary. Each value is a related files array (see 7.11.4.2, "Related Files Arrays") identifying files that are related to the corresponding file in the EF dictionary. If this entry is present, the Type entry is required and the file specification dictionary is indirectly referenced.

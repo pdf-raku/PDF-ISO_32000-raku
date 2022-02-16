@@ -10,17 +10,17 @@
       [
         "Subtype",
         "name",
-        "(Required) The type of annotation that this dictionary describes; shallbe Popup for a pop-up annotation."
+        "(Required) The type of annotation that this dictionary describes; is Popup for a pop-up annotation."
       ],
       [
         "Parent",
         "dictionary",
-        "(Optional; is an indirect reference) The parent annotation with which this pop-up annotation is associated.\nIf this entry is present, the parent annotation’s Contents, M, C, and Tentries (see Table 168) overrides those of the pop-up annotation itself."
+        "(Optional; is an indirect reference) The parent annotation with which this pop-up annotation is associated.\nIf this entry is present, the parent annotation’s Contents, M, C, and T entries (see Table 168) overrides those of the pop-up annotation itself."
       ],
       [
         "Open",
         "boolean",
-        "(Optional) A flag specifying whether the pop-up annotation shallinitially be displayed open. Default value: false (closed)."
+        "(Optional) A flag specifying whether the pop-up annotation shall initially be displayed open. Default value: false (closed)."
       ]
     ]
   }

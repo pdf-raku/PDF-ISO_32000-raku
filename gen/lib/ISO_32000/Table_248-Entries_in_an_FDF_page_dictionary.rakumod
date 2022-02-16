@@ -16,6 +16,6 @@ Table 248 – Entries in an FDF page dictionary
 - (Required) An array of FDF template dictionaries (see Table 249) that describes the named pages that serve as templates on the page.
 
 =head2 Info [dictionary]
-- (Optional) An FDF page information dictionary that shall containadditional information about the page.
+- (Optional) An FDF page information dictionary that contains additional information about the page.
 
 =end pod

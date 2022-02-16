@@ -22,7 +22,7 @@ PO The annotation is activated as soon as the page containing the annotation is 
 PV The annotation is activated as soon as any part of the page containing the annotation becomes visible.
 XA The annotation remains inactive until explicitly activated by a script or user action.
 NOTE 1 At any one time, only a single page is considered open in a conforming reader, even though more than one page may be visible, depending on the page layout. Default value: XA.
-NOTE 2 For performance reasons, documents intended for viewing in a web browser uses explicit activation (XA). In non-interactive applications, such as printing systems or aggregating conforming reader, PO and PV indicate that the annotation is activated when the page is printed or placed; XA indicates that the annotation never be activated and the normal appearance is used.
+NOTE 2 For performance reasons, documents intended for viewing in a web browser uses explicit activation (XA). In non- interactive applications, such as printing systems or aggregating conforming reader, PO and PV indicate that the annotation is activated when the page is printed or placed; XA indicates that the annotation never be activated and the normal appearance is used.
 
 =head2 AIS [name]
 - (Optional) A name specifying the state of the artwork instance upon activation of the annotation. Valid values are:
@@ -39,7 +39,7 @@ XD The annotation remains active until explicitly deactivated by a script or use
 NOTE 4 At any one time, only a single page is considered open in the conforming reader, even though more than one page may be visible, depending on the page layout. Default value: PI.
 
 =head2 DIS [name]
-- (Optional) A name specifying the state of the artwork instance upon deactivation of the annotation. Valid values are U (uninstantiated), I(instantiated), and L (live). Default value: U.
+- (Optional) A name specifying the state of the artwork instance upon deactivation of the annotation. Valid values are U (uninstantiated), I (instantiated), and L (live). Default value: U.
 NOTE 5 If the value of this entry is L, uninstantiation of instantiated artwork is necessary unless it has been modified. Uninstantiation is never required in non-interactive conforming readers.
 
 =head2 TB [boolean]

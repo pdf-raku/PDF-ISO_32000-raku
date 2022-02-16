@@ -12,7 +12,7 @@
         "Type",
         "name",
         "",
-        "(Optional) The type of PDF object that this dictionary describes; if present, is OPIfor an OPI dictionary."
+        "(Optional) The type of PDF object that this dictionary describes; if present, is OPI for an OPI dictionary."
       ],
       [
         "Version",

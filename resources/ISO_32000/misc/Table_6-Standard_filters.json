@@ -50,7 +50,7 @@
       [
         "JPXDecode",
         "no",
-        "(PDF 1.5) Decompresses data encoded using the wavelet-based JPEG2000 standard, reproducing the original image data."
+        "(PDF 1.5) Decompresses data encoded using the wavelet- based JPEG2000 standard, reproducing the original image data."
       ],
       [
         "Crypt",

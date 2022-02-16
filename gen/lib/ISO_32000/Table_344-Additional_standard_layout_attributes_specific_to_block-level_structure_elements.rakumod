@@ -32,14 +32,14 @@ This attribute is disregarded for the first BLSE placed in a given reference are
 This attribute is disregarded for the last BLSE placed in a given reference area.
 
 =head2 StartIndent [number]
-- (Optional; inheritable) The distance from the start edge of the reference area to that of the BLSE, measured in default user space units in the inline-progression direction. This attribute applies only to structure elements with a Placement attribute of Block or Start (see “General Layout Attributes” in 14.8.5.4, “Layout Attributes”). The attribute is disregarded for elements with other Placementvalues. Default value: 0.
-A negative value for this attribute places the start edge of the BLSE outside that of the reference area. The results are implementation-dependent and may not be supported by all conforming products that process Tagged PDF or by particular export formats.
-If a structure element with a StartIndent attribute is placed adjacent to a floating element with a Placement attribute of Start, the actual value used for the element’s starting indent is its own StartIndentattribute or the inline extent of the adjacent floating element, whichever is greater. This value may be further adjusted by the element’s TextIndent attribute, if any.
+- (Optional; inheritable) The distance from the start edge of the reference area to that of the BLSE, measured in default user space units in the inline-progression direction. This attribute applies only to structure elements with a Placement attribute of Block or Start (see “General Layout Attributes” in 14.8.5.4, “Layout Attributes”). The attribute is disregarded for elements with other Placement values. Default value: 0.
+A negative value for this attribute places the start edge of the BLSE outside that of the reference area. The results are implementation- dependent and may not be supported by all conforming products that process Tagged PDF or by particular export formats.
+If a structure element with a StartIndent attribute is placed adjacent to a floating element with a Placement attribute of Start, the actual value used for the element’s starting indent is its own StartIndent attribute or the inline extent of the adjacent floating element, whichever is greater. This value may be further adjusted by the element’s TextIndent attribute, if any.
 
 =head2 EndIndent [number]
 - (Optional; inheritable) The distance from the end edge of the BLSE to that of the reference area, measured in default user space units in the inline-progression direction. This attribute applies only to structure elements with a Placement attribute of Block or End (see “General Layout Attributes” in 14.8.5.4, “Layout Attributes”). The attribute is disregarded for elements with other Placement values. Default value: 0.
-A negative value for this attribute places the end edge of the BLSE outside that of the reference area. The results are implementation-dependent and may not be supported by all conforming products that process Tagged PDF or by particular export formats.
-If a structure element with an EndIndent attribute is placed adjacent to a floating element with a Placement attribute of End, the actual value used for the element’s ending indent is its own EndIndentattribute or the inline extent of the adjacent floating element, whichever is greater.
+A negative value for this attribute places the end edge of the BLSE outside that of the reference area. The results are implementation- dependent and may not be supported by all conforming products that process Tagged PDF or by particular export formats.
+If a structure element with an EndIndent attribute is placed adjacent to a floating element with a Placement attribute of End, the actual value used for the element’s ending indent is its own EndIndent attribute or the inline extent of the adjacent floating element, whichever is greater.
 
 =head2 TextIndent [number]
 - (Optional; inheritable; applies only to some BLSEs) The additional distance, measured in default user space units in the inline- progression direction, from the start edge of the BLSE, as specified by StartIndent, to that of the first line of text. A negative value indicates a hanging indent. Default value: 0.
@@ -65,7 +65,7 @@ The name Auto in place of a numeric value indicates that no specific width const
 The name Auto in place of a numeric value indicates that no specific height constraint is to be imposed; the element’s height is determined by the intrinsic height of its content. Default value: Auto.
 
 =head2 BlockAlign [name]
-- (Optional; inheritable; table cells only) The alignment, in the block-progression direction, of content within the table cell:
+- (Optional; inheritable; table cells only) The alignment, in the block- progression direction, of content within the table cell:
 Before Before edge of the first child’s allocation rectangle aligned with that of the table cell’s content rectangle.
 Middle Children centered within the table cell. The distance between the before edge of the first child’s allocation rectangle and that of the table cell’s content rectangle is the same as the distance between the after edge of the last child’s allocation rectangle and that of the table cell’s content rectangle.
 After After edge of the last child’s allocation rectangle aligned with that of the table cell’s content rectangle.
@@ -73,7 +73,7 @@ Justify Children aligned with both the before and after edges of the table cell�
 This attribute applies only to elements of structure type TH (Table header) or TD (Table data) and shall control the placement of all BLSEs that are children of the given element. The table cell’s content rectangle (see “Content and Allocation Rectangles” in 14.8.5.4, “Layout Attributes”) shall become the reference area for all of its descendants. Default value: Before.
 
 =head2 InlineAlign [name]
-- (Optional; inheritable; table cells only) The alignment, in the inline-progression direction, of content within the table cell:
+- (Optional; inheritable; table cells only) The alignment, in the inline- progression direction, of content within the table cell:
 Start Start edge of each child’s allocation rectangle aligned with that of the table cell’s content rectangle.
 Center Each child centered within the table cell. The distance between the start edges of the child’s allocation rectangle and the table cell’s content rectangle is the same as the distance between their end edges.
 End End edge of each child’s allocation rectangle aligned with that of the table cell’s content rectangle.

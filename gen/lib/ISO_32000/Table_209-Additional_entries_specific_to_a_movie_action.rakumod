@@ -15,13 +15,13 @@ Table 209 – Additional entries specific to a movie action
 =head1 Methods (Entries)
 
 =head2 S [name]
-- (Required) The type of action that this dictionary describes; is Moviefor a movie action.
+- (Required) The type of action that this dictionary describes; is Movie for a movie action.
 
 =head2 Annotation [dictionary]
 - (Optional) An indirect reference to a movie annotation identifying the movie that is played.
 
 =head2 T [text string]
-- (Optional) The title of a movie annotation identifying the movie that shall beplayed.
+- (Optional) The title of a movie annotation identifying the movie that is played.
 The dictionary includes either an Annotation or a T entry but not both.
 
 =head2 Operation [name]

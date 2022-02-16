@@ -35,7 +35,7 @@
       [
         "CharProcs",
         "dictionary",
-        "(Required) A dictionary in which each key is a glyph name and the value associated with that key is a content stream that constructs and paints the glyph for that character. The stream shallinclude as its first operator either d0 or d1, followed by operators describing one or more graphics objects, which may include path, text, or image objects. See below for more details about Type 3 glyph descriptions."
+        "(Required) A dictionary in which each key is a glyph name and the value associated with that key is a content stream that constructs and paints the glyph for that character. The stream includes as its first operator either d0 or d1, followed by operators describing one or more graphics objects, which may include path, text, or image objects. See below for more details about Type 3 glyph descriptions."
       ],
       [
         "Encoding",

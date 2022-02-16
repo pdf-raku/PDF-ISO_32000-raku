@@ -30,7 +30,7 @@ Table 284 – Entries in a floating window parameters dictionary
 0 The document window
 1 The application window
 2 The full virtual desktop
-3 The monitor specified by M in the media screen parameters MH or BEdictionary (see 9.22)
+3 The monitor specified by M in the media screen parameters MH or BE dictionary (see 9.22)
 Default value: 0.
 
 =head2 P [integer]

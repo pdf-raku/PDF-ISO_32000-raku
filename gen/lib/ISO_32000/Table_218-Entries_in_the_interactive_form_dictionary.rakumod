@@ -19,13 +19,13 @@ Table 218 – Entries in the interactive form dictionary
 =head1 Methods (Entries)
 
 =head2 Fields [array]
-- (Required) An array of references to the document’s root fields(those with no ancestors in the field hierarchy).
+- (Required) An array of references to the document’s root fields (those with no ancestors in the field hierarchy).
 
 =head2 NeedAppearances [boolean]
 - (Optional) A flag specifying whether to construct appearance streams and appearance dictionaries for all widget annotations in the document (see 12.7.3.3, “Variable Text”). Default value: false.
 
 =head2 SigFlags [integer]
-- (Optional; PDF 1.3) A set of flags specifying various document-level characteristics related to signature fields (see Table 219, and 12.7.4.5, “Signature Fields”). Default value: 0.
+- (Optional; PDF 1.3) A set of flags specifying various document- level characteristics related to signature fields (see Table 219, and 12.7.4.5, “Signature Fields”). Default value: 0.
 
 =head2 CO [array]
 - (Required if any fields in the document have additional-actions dictionaries containing a C entry; PDF 1.3) An array of indirect references to field dictionaries with calculation actions, defining the calculation order in which their values will be recalculated when the value of any field changes (see 12.6.3, “Trigger Events”).

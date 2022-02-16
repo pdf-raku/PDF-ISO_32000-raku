@@ -48,7 +48,7 @@ Space for the Contents value must be allocated before the message digest is comp
 If SubFilter is adbe.pkcs7.detached or adbe.pkcs7.sha1, this entry is not used, and the certificate chain is put in the PKCS7 envelope in Contents.
 
 =head2 ByteRange [array]
-- (Required for all signatures that are part of a signature field and usage rights signatures referenced from the UR3 entry in the permissions dictionary) An array of pairs of integers (starting byte offset, length in bytes) that describes the exact byte range for the digest calculation. Multiple discontiguous byte ranges is used to describe a digest that does not include the signature value (theContents entry) itself.
+- (Required for all signatures that are part of a signature field and usage rights signatures referenced from the UR3 entry in the permissions dictionary) An array of pairs of integers (starting byte offset, length in bytes) that describes the exact byte range for the digest calculation. Multiple discontiguous byte ranges is used to describe a digest that does not include the signature value (the Contents entry) itself.
 
 =head2 Reference [array]
 - (Optional; PDF 1.5) An array of signature reference dictionaries (see Table 253).

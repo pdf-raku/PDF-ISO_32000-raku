@@ -45,7 +45,7 @@
       [
         "PageElement",
         "dictionary",
-        "(Optional) A dictionary declaring that the group contains a pagination artifact. It contains one entry, Subtype, whose value is a name that is either HF (header/footer), FG (foreground image or graphic), BG(background image or graphic), or L (logo)."
+        "(Optional) A dictionary declaring that the group contains a pagination artifact. It contains one entry, Subtype, whose value is a name that is either HF (header/footer), FG (foreground image or graphic), BG (background image or graphic), or L (logo)."
       ]
     ]
   }

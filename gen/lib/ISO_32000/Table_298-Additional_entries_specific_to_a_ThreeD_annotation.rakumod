@@ -27,7 +27,7 @@ Table 298 – Additional entries specific to a 3D annotation
 =head2 3DV [(various)]
 - (Optional) An object that specifies the default initial view of the 3D artwork that is used when the annotation is activated. It may be either a 3D view dictionary (see 13.6.4, “3D Views”) or one of the following types specifying an element in the VA array in the 3D stream (see Table 300):
 • An integer specifying an index into the VA array.
-• A text string matching the IN entry in one of the views in the VAarray.
+• A text string matching the IN entry in one of the views in the VA array.
 • A name that indicates the first (F), last (L), or default (D) entries in the VA array. Default value: the default view in the 3D stream object specified by 3DD.
 
 =head2 3DA [dictionary]

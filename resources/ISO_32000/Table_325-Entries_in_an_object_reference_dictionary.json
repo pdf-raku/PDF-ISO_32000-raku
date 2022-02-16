@@ -10,7 +10,7 @@
       [
         "Type",
         "name",
-        "(Required) The type of PDF object that this dictionary describes; is OBJRfor an object reference."
+        "(Required) The type of PDF object that this dictionary describes; is OBJR for an object reference."
       ],
       [
         "Pg",

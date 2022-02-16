@@ -15,7 +15,7 @@ Table 98 – Entries in an Optional Content Group Dictionary
 =head1 Methods (Entries)
 
 =head2 Type [name]
-- (Required) The type of PDF object that this dictionary describes; shall beOCG for an optional content group dictionary.
+- (Required) The type of PDF object that this dictionary describes; is OCG for an optional content group dictionary.
 
 =head2 Name [text string]
 - (Required) The name of the optional content group, suitable for presentation in a reader’s user interface.

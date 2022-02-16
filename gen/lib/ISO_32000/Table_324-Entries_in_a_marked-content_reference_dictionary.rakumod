@@ -23,7 +23,7 @@ Table 324 – Entries in a marked-content reference dictionary
 
 =head2 Stm [stream]
 - (Optional; is an indirect reference) The content stream containing the marked-content sequence. This entry is present only if the marked-content sequence resides in a content stream other than the content stream for the page (see 8.10, “Form XObjects” and 12.5.5, “Appearance Streams”).
-If this entry is absent, the marked-content sequence is contained in the content stream of the page identified by Pg (either in the marked-content reference dictionary or in the parent structure element).
+If this entry is absent, the marked-content sequence is contained in the content stream of the page identified by Pg (either in the marked- content reference dictionary or in the parent structure element).
 
 =head2 StmOwn [(any)]
 - (Optional; is an indirect reference) The PDF object owning the stream identified by Stems annotation to which an appearance stream belongs.

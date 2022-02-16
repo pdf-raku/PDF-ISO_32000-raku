@@ -10,7 +10,7 @@
       [
         "0",
         "",
-        "Miter join. The outer edges of the strokes for the two segments shall beextended until they meet at an angle, as in a picture frame. If the segments meet at too sharp an angle (as defined by the miter limit parameter—see 8.4.3.5, \"Miter Limit\"), a bevel join is used instead."
+        "Miter join. The outer edges of the strokes for the two segments is extended until they meet at an angle, as in a picture frame. If the segments meet at too sharp an angle (as defined by the miter limit parameter—see 8.4.3.5, \"Miter Limit\"), a bevel join is used instead."
       ],
       [
         "1",

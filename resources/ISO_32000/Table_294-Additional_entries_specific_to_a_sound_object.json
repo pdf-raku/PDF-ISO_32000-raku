@@ -35,7 +35,7 @@
       [
         "CO",
         "name",
-        "(Optional) The sound compression format used on the sample data. (This is separate from any stream compression specified by the sound object’s Filterentry; see Table 5 and 7.4, “Filters.”) If this entry is absent, sound compression is not used; the data contains sampled waveforms that is played at R samples per second per channel."
+        "(Optional) The sound compression format used on the sample data. (This is separate from any stream compression specified by the sound object’s Filter entry; see Table 5 and 7.4, “Filters.”) If this entry is absent, sound compression is not used; the data contains sampled waveforms that is played at R samples per second per channel."
       ],
       [
         "CP",

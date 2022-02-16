@@ -48,7 +48,7 @@ Default value: 0 (left-justified).
 - (Optional; PDF 1.6) A name describing the intent of the free text annotation (see also the IT entry in Table 170). The following values is valid:
 FreeTextThe annotation is intended to function as a plain free-text annotation. A plain free-text annotation is also known as a text box comment.
 FreeTextCalloutThe annotation is intended to function as a callout. The callout is associated with an area on the page through the callout line specified in CL.
-FreeTextTypeWriterThe annotation is intended to function as a click-to-type or typewriter object and no callout line is drawn.
+FreeTextTypeWriterThe annotation is intended to function as a click- to-type or typewriter object and no callout line is drawn.
 Default value: FreeText
 
 =head2 BE [dictionary]

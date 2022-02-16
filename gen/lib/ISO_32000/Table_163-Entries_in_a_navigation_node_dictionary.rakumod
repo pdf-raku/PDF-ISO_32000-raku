@@ -32,6 +32,6 @@ Table 163 – Entries in a navigation node dictionary
 - (Optional) The previous navigation node, if any.
 
 =head2 Dur [number]
-- (Optional) The maximum number of seconds before the conforming readershall automatically advance forward to the next navigation node. If this entry is not specified, no automatic advance occurs.
+- (Optional) The maximum number of seconds before the conforming reader shall automatically advance forward to the next navigation node. If this entry is not specified, no automatic advance occurs.
 
 =end pod

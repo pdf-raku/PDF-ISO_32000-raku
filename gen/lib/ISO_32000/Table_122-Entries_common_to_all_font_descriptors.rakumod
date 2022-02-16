@@ -60,7 +60,7 @@ EXAMPLE 3 300 in one font may appear most similar to 500 in another.
 
 =head2 ItalicAngle [number]
 - (Required) The angle, expressed in degrees counterclockwise from the vertical, of the dominant vertical strokes of the font.
-EXAMPLE 4 The 9-o’clock position is 90 degrees, and the 3-o’clock position is –90 degrees. The value is negative for fonts that slope to the right, as almost all italic fonts do.
+EXAMPLE 4 The 9-o’clock position is 90 degrees, and the 3- o’clock position is –90 degrees. The value is negative for fonts that slope to the right, as almost all italic fonts do.
 
 =head2 Ascent [number]
 - (Required, except for Type 3 fonts) The maximum height above the baseline reached by glyphs in this font. The height of glyphs for accented characters is excluded.
@@ -103,6 +103,6 @@ EXAMPLE 4 The 9-o’clock position is 90 degrees, and the 3-o’clock position i
 
 
 =head2 CharSet [ASCII string or byte string]
-- (Optional; meaningful only in Type 1 fonts; PDF 1.1) A string listing the character names defined in a font subset. The names in this string is in PDF syntax—that is, each name preceded by a slash (/). The names may appear in any order. The name . notdef is omitted; it exists in the font subset. If this entry is absent, the only indication of a font subset is the subset tag in the FontNameentry (see 9.6.4, "Font Subsets").
+- (Optional; meaningful only in Type 1 fonts; PDF 1.1) A string listing the character names defined in a font subset. The names in this string is in PDF syntax—that is, each name preceded by a slash (/). The names may appear in any order. The name . notdef is omitted; it exists in the font subset. If this entry is absent, the only indication of a font subset is the subset tag in the FontName entry (see 9.6.4, "Font Subsets").
 
 =end pod

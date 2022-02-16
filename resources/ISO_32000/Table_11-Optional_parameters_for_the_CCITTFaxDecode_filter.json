@@ -10,12 +10,12 @@
       [
         "K",
         "integer",
-        "A code identifying the encoding scheme used:\n< 0 Pure two-dimensional encoding (Group 4)\n=0Pure one-dimensional encoding (Group 3, 1-D)\n> 0 Mixed one- and two-dimensional encoding (Group 3, 2-D), in which a line encoded one-dimensionally may be followed by at most K − 1 lines encoded two-dimensionally\nThe filter distinguish among negative, zero, and positive values of K to determine how to interpret the encoded data; however, it does not distinguish between different positive Kvalues. Default value: 0."
+        "A code identifying the encoding scheme used:\n< 0 Pure two-dimensional encoding (Group 4)\n=0Pure one-dimensional encoding (Group 3, 1-D)\n> 0 Mixed one- and two-dimensional encoding (Group 3, 2-D), in which a line encoded one-dimensionally may be followed by at most K − 1 lines encoded two- dimensionally\nThe filter distinguish among negative, zero, and positive values of K to determine how to interpret the encoded data; however, it does not distinguish between different positive K values. Default value: 0."
       ],
       [
         "EndOfLine",
         "boolean",
-        "A flag indicating whether end-of-line bit patterns is present in the encoding. The CCITTFaxDecode filter always accept end-of-line bit patterns. If EndOfLine is trueend-of-line bit patterns is present.Default value: false."
+        "A flag indicating whether end-of-line bit patterns is present in the encoding. The CCITTFaxDecode filter always accept end-of-line bit patterns. If EndOfLine is true end-of-line bit patterns is present.Default value: false."
       ],
       [
         "EncodedByteAlign",
@@ -35,7 +35,7 @@
       [
         "EndOfBlock",
         "boolean",
-        "A flag indicating whether the filter expects the encoded data to be terminated by an end-of-block pattern, overriding the Rows parameter. If false, the filter stops when it has decoded the number of lines indicated by Rows or when its data has been exhausted, whichever occurs first. The end-of- block pattern is the CCITT end-of-facsimile-block (EOFB) or return-to-control (RTC) appropriate for the Kparameter. Default value: true."
+        "A flag indicating whether the filter expects the encoded data to be terminated by an end-of-block pattern, overriding the Rows parameter. If false, the filter stops when it has decoded the number of lines indicated by Rows or when its data has been exhausted, whichever occurs first. The end-of- block pattern is the CCITT end-of-facsimile-block (EOFB) or return-to-control (RTC) appropriate for the K parameter. Default value: true."
       ],
       [
         "BlackIs1",

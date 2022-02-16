@@ -15,7 +15,7 @@
       [
         "X",
         "array",
-        "(Required) A number format array for measurement of change along the xaxis and, if Y is not present, along the y axis as well. The first element in the array contains the scale factor for converting from default user space units to the largest units in the measuring coordinate system along that axis.\nThe directions of the x and y axes are in the measuring coordinate system and are independent of the page rotation. These directions is determined by the BBox entry of the containing viewport (see Table 260)."
+        "(Required) A number format array for measurement of change along the x axis and, if Y is not present, along the y axis as well. The first element in the array contains the scale factor for converting from default user space units to the largest units in the measuring coordinate system along that axis.\nThe directions of the x and y axes are in the measuring coordinate system and are independent of the page rotation. These directions is determined by the BBox entry of the containing viewport (see Table 260)."
       ],
       [
         "Y",
@@ -40,7 +40,7 @@
       [
         "S",
         "array",
-        "(Optional) A number format array for measurement of the slope of a line. The first element in the array specifies the conversion to the largest slope unit from units represented by the first element in Y divided by the first element in X. The scale factors from X, Y (if present) and CYX (if Y is present) shall beused to convert from default user space to the appropriate units before applying the slope function."
+        "(Optional) A number format array for measurement of the slope of a line. The first element in the array specifies the conversion to the largest slope unit from units represented by the first element in Y divided by the first element in X. The scale factors from X, Y (if present) and CYX (if Y is present) is used to convert from default user space to the appropriate units before applying the slope function."
       ],
       [
         "O",
@@ -50,7 +50,7 @@
       [
         "CYX",
         "number",
-        "(Optional; meaningful only when Y is present) A factor that is used to convert the largest units along the y axis to the largest units along the x axis. It is used for calculations (distance, area, and angle) where the units are be equivalent; if not specified, these calculations may not be performed (which would be the case in situations such as x representing time and yrepresenting temperature). Other calculations (change in x, change in y, and slope) does not require this value."
+        "(Optional; meaningful only when Y is present) A factor that is used to convert the largest units along the y axis to the largest units along the x axis. It is used for calculations (distance, area, and angle) where the units are be equivalent; if not specified, these calculations may not be performed (which would be the case in situations such as x representing time and y representing temperature). Other calculations (change in x, change in y, and slope) does not require this value."
       ]
     ]
   }

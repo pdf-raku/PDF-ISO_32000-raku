@@ -10,7 +10,7 @@
       [
         "Subtype",
         "name",
-        "(Required) The type of annotation that this dictionary describes; shallbe FileAttachment for a file attachment annotation."
+        "(Required) The type of annotation that this dictionary describes; is FileAttachment for a file attachment annotation."
       ],
       [
         "FS",
