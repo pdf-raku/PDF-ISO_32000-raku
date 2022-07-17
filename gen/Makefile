@@ -1,7 +1,9 @@
 # to-json
 PDF=../src/PDF32000_2008.pdf
-
-# -- Stage I -- 
+PDF_URL=https://opensource.adobe.com/dc-acrobat-sdk-docs/standards/pdfstandards/pdf/PDF32000_2008.pdf
+# -- Stage I --
+$(PDF) :
+	wget -O $(PDF) $(PDF_URL)
 XML=PDF-ISO_32000.xml
 
 ROLE_BASE=ISO_32000
@@ -31,7 +33,7 @@ all :
 pdf-to-xml : $(XML)
 
 $(XML) : $(PDF)
-	USE_PDF_NATIVE=1 pdf-tag-dump.raku --omit=Span --atts --max-depth=18 $(PDF) > $(XML);
+	pdf-tag-dump.raku --omit=Span --atts --valid --max-depth=18 $(PDF) > $(XML);
 
 xml-to-json : pdf-to-xml
 	raku ../etc/make-json.raku --make --out-dir=$(RESOURCE_DIR) $(XML)
@@ -55,5 +57,6 @@ clean :
 	rm -vf ../META6.json ../README.md ../resources/ISO_32000-index.json $(RESOURCE_DIR)/*.json $(RESOURCE_DIR)/misc/*.json $(MODULE_DIR)/*.rakumod
 
 # Slowest step is generating the XML extract
-sterile : clean
+realclean : clean
 	rm -vf $(XML)
+	rm -vf $(PDF)

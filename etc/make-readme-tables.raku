@@ -11,17 +11,18 @@ sub MAIN(*@sources) {
         next unless .defined;
         my $io = .IO;
         die "no such file: '$_'" unless $io.e;
-        my $iso-ref = $io.slurp.lines.grep(/^'Table '/)[0];
-        s/'#|' .* 'Table'/Table/ with $iso-ref;
-        my $role-name = .subst(/^'lib/'/,'').subst(/'.rakumod'$/, '').subst(m{'/'}, '::', :g);
-        my $link = "gen/" ~ $_;
-        my $role-ref = "[$iso-ref]($link)";
-        my $role = try (require ::($role-name));
-        die "failed to compile ::($role-name): $_" with $!;
-        my @entries = $role.^methods.map: {'/' ~ .name};
-        say "$role-ref|{@entries.join: ' '}";
-        %entries{$_}.push($role-ref)
-            for @entries;
+        with $io.slurp.lines.first(/^'Table '/) -> $iso-ref {
+            s/'#|' .* 'Table'/Table/ with $iso-ref;
+            my $role-name = .subst(/^'lib/'/,'').subst(/'.rakumod'$/, '').subst(m{'/'}, '::', :g);
+            my $link = "gen/" ~ $_;
+            my $role-ref = "[$iso-ref]($link)";
+            my $role = try (require ::($role-name));
+            die "failed to compile ::($role-name): $_" with $!;
+            my @entries = $role.^methods.map: {'/' ~ .name};
+            say "$role-ref|{@entries.join: ' '}";
+            %entries{$_}.push($role-ref)
+               for @entries;
+        }
     }
     say '';
     say '## Entry to role mappings';
