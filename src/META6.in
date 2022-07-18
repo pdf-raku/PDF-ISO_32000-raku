@@ -15,5 +15,5 @@
   "source-url" : "git://github.com/pdf-raku/PDF-ISO_32000-raku.git",
   "tags" : [ "pdf" ],
   "test-depends" : [ ],
-  "version" : "0.0.10"
+  "version" : "0.0.11"
 }

@@ -11,4 +11,4 @@ test : all
 
 dist: all
 	echo $(BASE)
-	tar --transform 's,^,$(BASE)/,' --exclude=.\* --exclude=\*\~ --exclude=\*.tar.gz -cvzf $(BASE).tar.gz LICENSE Makefile META6.json README.md Changes etc gen/lib lib/ resources/ src/
+	tar --transform 's,^,$(BASE)/,' --exclude=.\* --exclude=\*\~ --exclude=\*.tar.gz -cvzf $(BASE).tar.gz LICENSE Makefile META6.json README.md Changes etc gen/lib lib/ resources/

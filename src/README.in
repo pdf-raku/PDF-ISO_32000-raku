@@ -76,6 +76,19 @@ This module contains:
 - [generated interface roles](https://github.com/pdf-raku/PDF-ISO_32000-raku/blob/master/gen/lib/ISO_32000) for building and validating PDF objects
 - scripts and Makefiles for regenerating the XML tables and roles
 
+### Releasing this module
+
+This module needs to have its version incremented manually. It is then built via `make`. `make dist` is used to build a tar-ball, which
+is then released via `fez`. For example:
+
+```
+$ vi lib/PDF/ISO_32000.rakumod # update version number
+$ make
+$ make test
+$ make dist
+$ fez upload PDF-ISO_32000-9.9.99.tar.gz # upload this version
+```
+
 ## ISO 3200 Roles
 
 The following interface roles have been mined from the ISO-32000 specification
