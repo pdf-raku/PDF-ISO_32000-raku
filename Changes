@@ -1,4 +1,7 @@
-{{$NEXT}}
+0.0.12
+  - Fix broken link in README #4 and other general updates.
+
+0.0.11
   - Remove PDF32000_2008.pdf from source-tree and distribution. Now fetched
     via wget
   - Upload to zef ecosystem

@@ -51,7 +51,7 @@ readme : ../README.md
 meta6 :../resources/ISO_32000-index.json ../META6.json
 
 ../resources/ISO_32000-index.json ../META6.json : ../src/META6.in $(MODULES) $(RESOURCES)
-	raku ../etc/make-meta6.raku $< $(MODULES) $(RESOURCE_NAMES) > ../META6.json
+	raku -I ../lib ../etc/make-meta6.raku $< $(MODULES) $(RESOURCE_NAMES) > ../META6.json
 
 clean : 
 	rm -vf ../META6.json ../README.md ../resources/ISO_32000-index.json $(RESOURCE_DIR)/*.json $(RESOURCE_DIR)/misc/*.json $(MODULE_DIR)/*.rakumod

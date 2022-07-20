@@ -88,11 +88,12 @@ and network access are also required.
 
 ### Maintaining and releasing this module
 
-This module needs to have its version incremented manually. It is then built via `make`. `make dist` is used to build a tar-ball, which
+This module needs to have its Change-log edited and version incremented manually. It is then built via `make`. `make dist` is used to build a tar-ball, which
 is then released via `fez`. For example:
 
 ```
-$ vi lib/PDF/ISO_32000.rakumod # update version number
+$ vim Changes
+$ vim lib/PDF/ISO_32000.rakumod # update version number
 $ make
 $ make test
 $ make dist

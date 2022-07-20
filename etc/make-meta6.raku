@@ -1,5 +1,6 @@
 use v6;
 use JSON::Fast;
+use PDF::ISO_32000;
 
 # Build.pm can also be run standalone 
 sub MAIN(IO() $meta6-in, *@sources) {
@@ -40,5 +41,6 @@ sub MAIN(IO() $meta6-in, *@sources) {
     %provides<PDF::ISO_32000> = 'lib/PDF/ISO_32000.rakumod';
     $meta6<provides> = %provides;
     $meta6<resources> = @resources;
+    $meta6<version> = PDF::ISO_32000.^ver.Str;
     say to-json($meta6, :sorted-keys);
 }
