@@ -6,9 +6,12 @@ all :
 clean :
 	(cd gen && make clean)
 
+realclean :
+	(cd gen && make realclean)
+
 test : all
 	prove -e'raku -I .' -v t
 
 dist: all
 	echo $(BASE)
-	tar --transform 's,^,$(BASE)/,' --exclude=.\* --exclude=\*\~ --exclude=\*.tar.gz -cvzf $(BASE).tar.gz LICENSE Makefile META6.json README.md Changes etc gen/lib lib/ resources/
+	tar --transform 's,^,$(BASE)/,' --exclude=.\* --exclude=\*\~ --exclude=\*.tar.gz -cvzf $(BASE).tar.gz LICENSE Makefile META6.json README.md Changes etc gen/lib lib/ resources/ src/*.in
