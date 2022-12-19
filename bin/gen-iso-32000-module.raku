@@ -25,7 +25,7 @@ sub build(:$caption, :@head, :@rows, :$type = 'role', Str:D :$name) {
         my ($entry, $type, $desc) = .list;
         my @props;
         if ($type ~~ s/' or array'//) || ($type ~~ s/'array or '//) {
-            @props.push: ':item-or-array';
+            @props.push: ':array-or-item';
         }
         
         $entry .= trim;
@@ -35,10 +35,11 @@ sub build(:$caption, :@head, :@rows, :$type = 'role', Str:D :$name) {
 
         unless %seen{$entry}++ {
             if $entry ~~ /:s^ [<ident> *% '-'] $/ {
-                print 'has entry $.';
+                print 'has ';
                 print $type;
-                print ' ';
+                print ' $.';
                 print $entry;
+                print ' is entry';
                 if $desc ~~ m/:i'required'/ {
                     @props.push: ':required';
                 }
@@ -48,7 +49,7 @@ sub build(:$caption, :@head, :@rows, :$type = 'role', Str:D :$name) {
                 print ';';
                 my @desc = $desc.split: "\n";
                 if @desc {
-                    say "\t|# " ~ $_ for @desc;
+                    say "\t# " ~ $_ for @desc;
                 }
                 say '';
             }
@@ -64,8 +65,8 @@ sub build(:$caption, :@head, :@rows, :$type = 'role', Str:D :$name) {
 
 # Build.pm can also be run standalone 
 subset Type of Str where 'class'|'role'|'module';
-sub MAIN(UInt :$table!, Type :$type = 'class', :$name is copy = PDF::ISO_32000.table-index[$table]) {
-    $name ~~ s/^.+'/'//;
+sub MAIN(UInt :$table!, Type :$type = 'class', :$name is copy = 'ISO_32000::' ~ PDF::ISO_32000.table-index[$table]) {
+    $name ~~ s/^\w+'/'//;
     my $ast = PDF::ISO_32000.[$table]
         // die "Unknown table $table";
     build( |$ast, :$name, :$type);
