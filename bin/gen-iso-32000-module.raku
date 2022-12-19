@@ -23,8 +23,10 @@ sub build(:$caption, :@head, :@rows, :$type = 'role', Str:D :$name) {
 
     for @rows {
         my ($entry, $type, $desc) = .list;
+        my $sigil = '$';
         my @props;
         if ($type ~~ s/' or array'//) || ($type ~~ s/'array or '//) {
+            $sigil = '@'; 
             @props.push: ':array-or-item';
         }
         
@@ -37,7 +39,7 @@ sub build(:$caption, :@head, :@rows, :$type = 'role', Str:D :$name) {
             if $entry ~~ /:s^ [<ident> *% '-'] $/ {
                 print 'has ';
                 print $type;
-                print ' $.';
+                print " {$sigil}.";
                 print $entry;
                 print ' is entry';
                 if $desc ~~ m/:i'required'/ {
