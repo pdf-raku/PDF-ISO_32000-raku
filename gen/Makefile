@@ -6,9 +6,18 @@ $(PDF) :
 	wget -O $(PDF) $(PDF_URL)
 XML=PDF-ISO_32000.xml
 
+# export paths
 ROLE_BASE=ISO_32000
-RESOURCE_DIR=../resources/ISO_32000
+EXPORT_REPO=git@github.com:pdf-raku/PDF-ISO_32000-raku.git
+EXPORT_ROOT=../../PDF-ISO_32000-raku
+RESOURCE_DIR=$(EXPORT_ROOT)/resources/ISO_32000
 MODULE_DIR=lib/$(ROLE_BASE)
+
+## Setup
+setup : $(EXPORT_ROOT)
+
+$(EXPORT_ROOT) :
+	git clone $(EXPORT_REPO) $(EXPORT_ROOT)
 
 # -- Stage II --
 SOURCES = $(wildcard $(RESOURCE_DIR)/*.json)
@@ -43,18 +52,18 @@ json-to-raku : $(MODULES)
 $(MODULES): $(MODULE_DIR)/%.rakumod: $(RESOURCE_DIR)/%.json
 	raku ../etc/make-modules.raku --role-name="$(ROLE_BASE)::$(basename $(notdir $@))" $< > $@ 
 
-readme : ../README.md
+readme : $(EXPORT_ROOT)/README.md
 
-../README.md : ../src/README.in $(MODULES)
+$(EXPORT_ROOT)/README.md : $(EXPORT_ROOT)/src/README.in $(MODULES)
 	(cat $< ; raku -I lib ../etc/make-readme-tables.raku $(MODULES)) > $@
 
-meta6 :../resources/ISO_32000-index.json ../META6.json
+meta6 :$(EXPORT_ROOT)/resources/ISO_32000-index.json $(EXPORT_ROOT)/META6.json
 
-../resources/ISO_32000-index.json ../META6.json : ../src/META6.in $(MODULES) $(RESOURCES)
-	raku -I ../lib ../etc/make-meta6.raku $< $(MODULES) $(RESOURCE_NAMES) > ../META6.json
+$(EXPORT_ROOT)/resources/ISO_32000-index.json $(EXPORT_ROOT)/META6.json : $(EXPORT_ROOT)/src/META6.in $(MODULES) $(RESOURCES)
+	raku -I ../lib ../etc/make-meta6.raku $< $(MODULES) $(RESOURCE_NAMES) > $(EXPORT_ROOT)/META6.json
 
 clean : 
-	rm -vf ../META6.json ../README.md ../resources/ISO_32000-index.json $(RESOURCE_DIR)/*.json $(RESOURCE_DIR)/misc/*.json $(MODULE_DIR)/*.rakumod
+	rm -vf $(EXPORT_ROOT)/META6.json $(EXPORT_ROOT)/README.md $(EXPORT_ROOT)/resources/ISO_32000-index.json $(RESOURCE_DIR)/*.json $(RESOURCE_DIR)/misc/*.json $(MODULE_DIR)/*.rakumod
 
 # Slowest step is generating the XML extract
 realclean : clean

@@ -1,7 +1,7 @@
 BASE=PDF-ISO_32000-$(shell raku -I . -M PDF::ISO_32000 -e'say PDF::ISO_32000.^ver.Str')
 
 all :
-	(cd gen && make all)
+	(cd gen && make setup all)
 
 clean :
 	(cd gen && make clean)
