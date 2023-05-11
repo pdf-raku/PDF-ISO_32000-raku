@@ -1,6 +1,6 @@
 {{$NEXT}}
 
-0.0.12  2023-05-12T08:49:26+12:00
+0.0.13  2023-05-12T08:58:32+12:00
   - Factor out building of this module to a separate repo
     git@github.com:pdf-raku/PDF-ISO_32000-Builder-raku.git
     Thus dropping some hefty dependencies (LibXML, PDF::Tags,
