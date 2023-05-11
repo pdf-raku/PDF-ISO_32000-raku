@@ -3,6 +3,8 @@
   "authors": [
     "David Warring"
   ],
+  "build-depends": [
+  ],
   "depends": [
     "JSON::Fast",
     "Method::Also"

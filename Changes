@@ -1,3 +1,12 @@
+{{$NEXT}}
+
+0.0.12  2023-05-12T08:49:26+12:00
+  - Factor out building of this module to a separate repo
+    git@github.com:pdf-raku/PDF-ISO_32000-Builder-raku.git
+    Thus dropping some hefty dependencies (LibXML, PDF::Tags,
+    PDF::Tags::Reader, PDF::Font::Loader).
+  - Release directly via zef (no more `make dist`)
+
 0.0.12
   - Fix broken link in README #4 and other general updates.
 
