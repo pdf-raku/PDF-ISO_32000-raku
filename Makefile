@@ -1,13 +1,17 @@
+
+BUILDER_REPO=git@github.com:pdf-raku/PDF-ISO_32000-Builder-raku.git
+BUILDER_PATH=../PDF-ISO_32000-Builder-raku
+CWD=$(shell pwd)
+
+build : setup
+	(cd $(BUILDER_PATH) && make EXPORT_ROOT=$(CWD))
+
+$(BUILDER_PATH) :
+	git clone $(BUILDER_REPO) $(BUILDER_PATH)
+
+setup : $(BUILDER_PATH)
+
 BASE=PDF-ISO_32000-$(shell raku -I . -M PDF::ISO_32000 -e'say PDF::ISO_32000.^ver.Str')
-
-all :
-	(cd gen && make setup all)
-
-clean :
-	(cd gen && make clean)
-
-realclean :
-	(cd gen && make realclean)
 
 test : all
 	prove -e'raku -I .' -v t
