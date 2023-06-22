@@ -86,20 +86,6 @@ and network access are also required.
 - This module has been developed on Linux using `GNU Make`
 
 
-### Maintaining and releasing this module
-
-This module needs to have its Change-log edited and version incremented manually. It is then built via `make`. `make dist` is used to build a tar-ball, which
-is then released via `fez`. For example:
-
-```
-$ vim Changes
-$ vim lib/PDF/ISO_32000.rakumod # update version number
-$ make
-$ make test
-$ make dist
-$ fez upload --file=PDF-ISO_32000-9.9.99.tar.gz # upload this version
-```
-
 ## ISO 3200 Roles
 
 The following interface roles have been mined from the ISO-32000 specification
