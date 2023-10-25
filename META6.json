@@ -3,13 +3,11 @@
   "authors": [
     "David Warring"
   ],
-  "build-depends": [
-  ],
   "depends": [
     "JSON::Fast",
     "Method::Also"
   ],
-  "description": "Tables and roles, mined from the PDF ISO-32000 specification",
+  "description": "PDF 1.7 Tables and roles, mined from the ISO-32000 specification",
   "license": "Artistic-2.0",
   "name": "PDF::ISO_32000",
   "perl": "6.*",

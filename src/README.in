@@ -50,8 +50,8 @@ say PDF::ISO_32000.table($stream-ops)<caption>; #  Table A.1 – PDF content str
 Roles are available for tables named `*_entries`, or `*_attributes`.
 
 ```
-% p6doc ISO_320000:Table_317-Entries_in_the_document_information_dictionary
-% p6doc ISO_320000:Table_28-Entries_in_the_catalog_dictionary
+% p6doc ISO_32000:Table_317-Entries_in_the_document_information_dictionary
+% p6doc ISO_32000:Table_28-Entries_in_the_catalog_dictionary
 ```
 
 The roles also contain [method stubs](https://docs.raku.org/language/objects#Stubs) for the entries that need to be implemented for the role. For example:
@@ -86,7 +86,7 @@ and network access are also required.
 - This module has been developed on Linux using `GNU Make`
 
 
-## ISO 3200 Roles
+## ISO 32000 Roles
 
 The following interface roles have been mined from the ISO-32000 specification
 
