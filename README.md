@@ -69,6 +69,8 @@ at lib/Catalog.rakumod (Catalog):1
 
 ### Building this module
 
+The companion git repository git@github.com:pdf-raku/PDF-ISO_32000-Builder-raku.git is used to build this module. It will be cloned automatically. Please check this module's META6.json for any missing dependencies.
+
 Note that the `META6.json` and `README.md` are generated. Any edits
 the these files should be made to the sources `src/META6.in` and `src/README.in`, before building.
 
